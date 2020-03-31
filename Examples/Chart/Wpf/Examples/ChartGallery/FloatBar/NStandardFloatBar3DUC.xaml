@@ -1,0 +1,18 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NStandardFloatBar3DUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+		<Label Content="Bar Shape:" Height="28" Name="label1" />
+		<ComboBox Height="23" Name="BarShapeComboBox" SelectionChanged="BarShapeComboBox_SelectionChanged" />
+		<Label Content="Width Percent:" Height="28" Name="label2" />
+		<ScrollBar Height="13" Name="WidthPercentScrollBar" Orientation="Horizontal" ValueChanged="WidthPercentScrollBar_ValueChanged" />
+		<Label Content="Depth Percent:" Height="28" Name="label3" />
+		<ScrollBar Height="13" Name="DepthPercentScrollBar" Orientation="Horizontal" ValueChanged="DepthPercentScrollBar_ValueChanged" />
+		<CheckBox Content="Show Data Labels" Height="16" Name="ShowDataLabelsCheckBox" Checked="ShowDataLabelsCheckBox_Checked" />
+	</StackPanel>
+</Controls:NExampleBaseUC>

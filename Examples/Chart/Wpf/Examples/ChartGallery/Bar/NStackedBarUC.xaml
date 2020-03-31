@@ -1,0 +1,29 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NStackedBarUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="426" d:DesignWidth="303">
+    <StackPanel>
+		<Label Content="Stack Mode:" Height="28" Name="label1" />
+		<ComboBox Height="23" Name="StackModeComboBox" SelectionChanged="StackModeComboBox_SelectionChanged" />
+		<Label Content="Bar Shape:" Height="28" Name="label2" />
+		<ComboBox Height="23" Name="BarShapeComboBox" SelectionChanged="BarShapeComboBox_SelectionChanged" />
+		<Button Content="Positive Data" Margin ="4" Height="23" Name="PositiveDataButton" Click="PositiveDataButton_Click" />
+		<Button Content="Positive and Negative Data" Margin ="4" Height="23" Name="PositiveAndNegativeDataButton" Click="PositiveAndNegativeDataButton_Click" />
+
+		<CheckBox Content="Show Data Labels" Height="16" Name="ShowDataLabelsCheckBox" Click="ShowDataLabelsCheckBox_Checked" />
+
+		<Label Content="First Area Data Labels:" Height="28" Name="label3" />
+		<ComboBox Height="23" Name="FirstAreaDataLabelsComboBox" SelectionChanged="FirstAreaDataLabelsComboBox_SelectionChanged" />
+
+		<Label Content="Second Area Data Labels:" Height="28" Name="label4" />
+		<ComboBox Height="23" Name="SecondAreaDataLabelsComboBox" SelectionChanged="SecondAreaDataLabelsComboBox_SelectionChanged" />
+
+		<Label Content="Third Area Data Labels:" Height="28" Name="label5" />
+		<ComboBox Height="23" Name="ThirdAreaDataLabelsComboBox" SelectionChanged="ThirdAreaDataLabelsComboBox_SelectionChanged" />
+
+	</StackPanel>
+</Controls:NExampleBaseUC>

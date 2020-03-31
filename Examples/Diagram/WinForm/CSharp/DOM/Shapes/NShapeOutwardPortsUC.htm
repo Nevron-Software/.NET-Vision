@@ -1,0 +1,36 @@
+<description>
+	<p>
+		This example demonstrates shape outward ports.
+	</p>
+	<p>
+	    Besides the ability to anchor its location to a specific aspect of the shape to which it belongs,
+	    each port has the option to choose its type in regards to what and how can be connected to it. 
+	</p>
+	<p>
+	    According to this classification, each port can be of the following type:
+	    <ul>
+	     	<li><b>Inward</b>
+	     	- this is the default port type. Plugs and outward ports can be connected to inward ports.
+			</li>
+			<li><b>Outward</b>
+	     	- this type of port does not allow plugs to be connected to it. An outward port however can be connected 
+	     	to an inward port. When connected, the outward port controls the location and orientation of the shape 
+	     	to which it belongs. It will automatically rotate and translate the shape according to the following two                 rules:
+	        <br>
+	        <br>
+	        <ol>
+	            <li>The shape is translated so that the outward port location becomes the current inward port                   location</li>
+	            <li>The shape is rotated so that the outward port direction matches the inward port direction                            </li>
+	        </ol>  	
+			</li>
+			<li><b>Inward and Outward</b>
+	     	- this is a mixure of the above mentioned modes.
+			</li>
+	    </ul>
+	    In this example the red shape has a single outward port - move it to close to another shape to experience outward        port snapping and connections.
+	</p>
+	<p>
+	    In an inward-outward port connection both ports provide direction angles. 
+	    The two direction angles are matched to determine the final angle to which the shape with the outward port must          be rotated.
+	</p>
+</description>

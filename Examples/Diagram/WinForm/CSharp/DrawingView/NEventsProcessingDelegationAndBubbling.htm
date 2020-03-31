@@ -1,0 +1,52 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+		This example demonstrates the user events model, which consists of three major 
+		parts: event processing, event delegation and event bubbling.
+	</p>
+	<p>
+		User events can in general be classified into three categories:
+		<ul>
+			<li>
+			Mouse events
+			<li>
+			Keyboard events
+			<li>
+			Drag drop events
+		</ul>
+		The Nevron Diagram for .NET has a consistent and intuitive model in which it 
+		handles user events.
+	</p>
+	<p>
+		<b>Event Processing</b> refers to the way in which a view processes an user 
+		event. In general the view forwards the event to the respective Process method 
+		of the controller. If there is an active tool the controller will first 
+		dispatch the event to it. Otherwise it will cycle through all currently enabled 
+		tools and ask them to process the event. The processing stops when a tool 
+		indicated that it did process the event.
+	</p>
+	<p>
+		<b>Event Delegation</b> refers to the ability of the view to forward (delegate) 
+		user events to document elements. The view does that with the help of three 
+		tools: NMouseEventDelegatorTool, NKeyboardEventDelegatorTool and 
+		NDragDropEventDelegatorTool. These tools are responsible for calling the 
+		respective methods of the document elements, which implement the 
+		INMouseEventHandler, INKeyboardEventHandler and INDragDropEventHandler 
+		interfaces. Currently these are all NModel derivates and the NDrawingDocument 
+		class. The event delegator tools by themselves do not mark any delegated events 
+		as processed. It is to the developer to specify when a delegated mouse, 
+		keyboard or drag drop event should be considered as processed.
+	</p>
+	<p>
+		<b>Event Bubbling</b> refers to the ability of document elements to "bubble" 
+		events to their parents, if they are not handled. Event delegator tools forward 
+		mouse and drag drop events to the topmost diagram element, which implements the 
+		INMouseEventHandler or INDragDropEventHandler intreface and in the case of a 
+		keyboard event, to the focused diagram element (controlled by the 
+		NDrawingDocument FocusedElementUniqueId property). The default implementation 
+		just fires the event for this element and if the subscriber does not mark the 
+		event as "handled", the event is "bubbled" to the parent element, which 
+		implement the respective interface. If an event is marked as handled the 
+		bubbling stops.
+	</p>
+</description>

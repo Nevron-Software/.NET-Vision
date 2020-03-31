@@ -1,0 +1,15 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NHeatMapContourLabelsUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+	<StackPanel>
+		<CheckBox Content="Show Contour Labels" Margin ="4" Height="16" Name="ShowContourLabelsCheckBox" Click="ShowContourLabelsCheckBox_Click" />
+		<CheckBox Content="Allow Labels To Flip" Margin ="4" Height="16" Name="AllowLabelsToFlipCheckBox" Click="AllowLabelsToFlipCheckBox_Click" />
+		<CheckBox Content="Show Label Background" Margin ="4" Height="16" Name="ShowLabelBackgroundCheckBox" Click="ShowLabelBackgroundCheckBox_Click"/>
+		<CheckBox Content="Clip Contour" Margin ="4" Height="16" Name="ClipContourCheckBox" Click="ClipContourCheckBox_Click"/>
+	</StackPanel>
+</Controls:NExampleBaseUC>

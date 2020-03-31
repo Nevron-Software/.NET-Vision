@@ -1,0 +1,32 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NGaugeScaleLabelsOrientationUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="540" d:DesignWidth="300">
+    <StackPanel>
+        <Label Name="Label1" Content="Anlge Mode:" />
+        <ComboBox Name="AngleModeComboBox" SelectionChanged="AngleModeComboBox_SelectionChanged" />
+        <Label Name="Label2" Content="Custom Angle:" />
+        <ComboBox Name="CustomAngleNumericComboBox" SelectionChanged="CustomAngleNumericComboBox_SelectionChanged" />
+        <CheckBox Name="AllowTextFlipCheckBox" Content="Allow lablels to flip" Click="AllowTextFlipCheckBox_Click" />
+        <GroupBox Header="Radial Gauge">
+            <StackPanel>
+                <Label Name="Lable3" Content="Begin Angle:" />
+                <ScrollBar Orientation="Horizontal" Name="BeginAngleScrollBar" 
+                           Minimum="-360" Maximum="360" SmallChange="1" LargeChange="10" ValueChanged="BeginAngleScrollBar_ValueChanged" />
+                <Label Name="Lable4" Content="Sweep Angle:" />
+                <ScrollBar Orientation="Horizontal" Name="SweepAngleScrollBar" 
+                           Minimum="-350" Maximum="350" SmallChange="1" LargeChange="10" ValueChanged="SweepAngleScrollBar_ValueChanged" />                
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Linear Gauge">
+            <StackPanel>
+                <Label Name="Label5" Content="Orientation:" />
+                <ComboBox Name="LinearGaugeOrientationComboBox" SelectionChanged="LinearGaugeOrientationComboBox_SelectionChanged" /> 
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</Controls:NExampleBaseUC>

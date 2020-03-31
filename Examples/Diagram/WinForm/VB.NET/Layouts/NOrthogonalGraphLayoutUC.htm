@@ -1,0 +1,40 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+        The orthogonal graph layout produces orthogonal graph drawings of all types of graphs
+        (including those with self-loops and duplicate edges). It tries to compact the graph
+        drawing area and also to minimize the number of edge crossings and bends.
+    </p>
+	<p>
+	    The most important properties are:
+		<ul>
+			<li>
+			    <b>CellSpacing</b> - determines the distance between 2 grid cells. For example if a grid
+			    cell is calculated to have a size of 100 x 100 and the CellSpacing property is set to
+			    10, then the cell size will be 120 x 120. Note that the node is always placed in the
+			    middle of the cell.
+			</li>
+			<li>
+			    <b>GridCellSizeMode</b> - this property is an enum with 2 possible values: GridCellSizeMode.
+			    GridBased and GridCellSizeMode.CellBased. If set to the first the maximal size of a
+			    node in the graph is determined and all cells are scaled to that size. More area
+			    efficient is the second value - it causes the dimensions of each column and row
+			    dimensions to be determined according to the size of the cells they contain.
+			</li>
+			<li>
+			    <b>Compact</b> - if set to true, a compaction algorithm will be applied to the embedded
+			    graph. This will decrease the total area of the drawing with 20 to 50 % (in the average
+			    case) at the cost of some additional time needed for the calculations.
+			</li>
+			<li>
+			    <b>PlugSpacing</b> - determines the spacing between the plugs of a node.
+			    You can set a fixed amount of spacing or a proportional spacing, which means that the plugs
+			    are distributed along the whole side of the node.
+			</li>
+		</ul>
+	</p>
+	<p>
+		To experiment with the layout just change its properties from the property grid and click the <b>Layout</b> button. 
+        To see the layout in action on a different graph, just click the <b>Random Graph</b> button. 
+	</p>
+</description>

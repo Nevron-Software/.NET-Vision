@@ -1,0 +1,23 @@
+<!-- Recognized tags -->
+<description>
+	<p>     
+        The barycenter layout method splits the input graph into a set of fixed and free vertices. 
+        Fixed vertices are nailed to the corners of a strictly convex polygon,           
+        while free vertices are placed in the barycenter of their neighbours. 
+        The barycenter force accessible from the <b>BarycenterForce</b> property of the layout is 
+        responsible for attracting the vertices to thier barycenter.
+	</p>
+	<p>
+	    In case there are no fixed vertices this will place all vertices at a single point, 
+	    which is obviously not a good graph drawing. That is why the barycenter layout needs 
+	    at least three fixed vertices.
+	</p>
+	<p>
+	    The minimal amount of fixed vertices is specified by the <b>MinFixedVerticesCount</b> property. 
+	    If the input graph does not have that many fixed vertices, the layout will automatically 
+	    forefill this requirement. This is done by fixing the vertices with the smallest degree.
+	</p>
+	<p>
+	    In this example the fixed vertices are highlighted in orange.
+	</p>
+</description>

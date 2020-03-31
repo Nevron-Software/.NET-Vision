@@ -1,0 +1,24 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NStandardBubbleUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+		<Label Content="Bubble Shape:" Height="28" Name="label1" />
+		<ComboBox Height="23" Name="BubbleShapeComboBox" SelectionChanged="BubbleShapeComboBox_SelectionChanged" />
+		<Label Content="Min Bubble Size:" Height="28" Name="label2" />
+		<ScrollBar Height="13" Name="MinBubbleSizeScrollBar" Orientation="Horizontal" ValueChanged="MinBubbleSizeScrollBar_ValueChanged" />
+		<Label Content="Max Bubble Size:" Height="28" Name="label3" />
+		<ScrollBar Height="13" Name="MaxBubbleSizeScrollBar" Orientation="Horizontal" ValueChanged="MaxBubbleSizeScrollBar_ValueChanged" />
+		<Label Content="Legend Format:" Height="28" Name="label4" />
+		<ComboBox Height="23" Name="LegendFormatComboBox" SelectionChanged="LegendFormatComboBox_SelectionChanged" />
+
+		<CheckBox Content="Enable 3D" Margin ="4" Height="16" Name="Enable3DCheckBox" Click="Enable3DCheckBox_Checked" />
+		<CheckBox Content="Inflate Margins" Margin ="4" Height="16" Name="InflateMarginsCheckBox" Click="InflateMarginsCheckBox_Checked" />
+		<CheckBox Content="Invert Y Axis" Margin ="4" Height="16" Name="InvertYAxisCheckBox" Click="InvertYAxisCheckBox_Checked" />
+		<CheckBox Content="Different Colors" Margin ="4" Height="16" Name="DifferentColorsCheckBox" Click="DifferentColorsCheckBox_Checked" />
+	</StackPanel>
+</Controls:NExampleBaseUC>

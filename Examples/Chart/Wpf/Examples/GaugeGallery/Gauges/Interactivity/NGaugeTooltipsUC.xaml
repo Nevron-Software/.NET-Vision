@@ -1,0 +1,19 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NGaugeTooltipsUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="540" d:DesignWidth="300">
+    <StackPanel>        
+        <Label Name="Label1" Content="Needle Tooltip:" />
+        <TextBox Name="NeedleTooltipTextBox" Text="Needle Tooltip" TextChanged="NeedleTooltipTextBox_TextChanged" />
+        <Label Name="Label2" Content="Marker Tooltip:" />
+        <TextBox Name="MarkerTooltipTextBox" Text="Marker Tooltip" TextChanged="MarkerTooltipTextBox_TextChanged" />
+        <Label Name="Label3" Content="Range Tooltip:" />
+        <TextBox Name="RangeTooltipTextBox" Text="Range Tooltip" TextChanged="RangeTooltipTextBox_TextChanged" />
+        <Label Name="Label4" Content="Scale Tooltip:" />
+        <TextBox Name="ScaleTooltipTextBox" Text="Scale Tooltip" TextChanged="ScaleTooltipTextBox_TextChanged" />
+    </StackPanel>
+</Controls:NExampleBaseUC>

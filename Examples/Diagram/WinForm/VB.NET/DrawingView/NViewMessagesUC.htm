@@ -1,0 +1,35 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+		This example demonstrates the view messages, which appear when certain 
+		operations cannot be completed or commited. This is in most cases caused when 
+		the elements to which you try to apply a certain action do not have the 
+		appropriate permission or some other properties of the object prohibit this 
+		action from being executed.
+	</p>
+	<p>
+		In this example the red shape does not have a <b>Change Style</b> permission. 
+		To explore the behavior of the component when transactions cannot be completed 
+		do the following:
+		<ol>
+			<li>
+				Select the green and the red shapes
+			<li>
+				Right click on the red or green shape to show a context sensitive menu
+			<li>
+				Go to Format - Fill style... and click on it - this will show the fill style editor.
+			<li>
+				Select a fill style and click the OK button
+			</li>
+		</ol>
+		Only the green shape will change its appearance and a designer message 
+		will pop up indicating that the transaction was not completed. Note that not 
+		completed transaction are still committed - e.g. not completed means that only 
+		parts of the transaction failed. 
+	</p>
+	<p>
+		Most of the methods, which record transactions accept an additonal 
+		rollbackOnFail argument, which indicates whether the entire transaction should 
+		fail, if only a part of it failed.
+	</p>
+</description>

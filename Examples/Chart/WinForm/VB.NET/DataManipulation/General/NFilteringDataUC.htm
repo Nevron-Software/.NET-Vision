@@ -1,0 +1,47 @@
+<description>
+Filtering can be very useful if you want to apply some data driven logic in 
+your application.<br>
+<br>
+In this example the items, which are contained in the current filter are 
+displayed in red. The indexes of the current filter are displayed in the Current 
+Filter edit.<br>
+<br>
+Reset Filter button - initializes the filter to contain the entire data series<br>
+Value edit - specifies the value which should be used in the filtering.<br>
+Compare method - specifies the comparison, which must be performed on the data 
+series elements. The possible values are:<br>
+More - the result will contain the data points, which are bigger than the 
+specified value<br>
+Less - the result will contain the data points, which are smaller than the 
+specified value<br>
+Equal - the result will contain the data points, which are equal to the specified 
+value<br>
+MoreOrEqual - the result will contain the data points, which are bigger or equal 
+to the specified value<br>
+LessOrEqual - the result will contain the data points, which are smaller or equal 
+to the specified value<br>
+NotEqual - the result will contain the data points, which are not equal to the 
+specified value<br>
+<br>
+Subset Operation combo - controls the subset operation performed with the previous 
+filtering result. Possible values are:<br>
+Replace - replaces the previous filter and clears the Operation List<br>
+Combine - the current filter is combined with the previous filter (provides the 
+means for a logical OR). For example: Give me the indexes of all data points, which 
+are (smaller than 40 OR bigger than 60).<br>
+Intersect - the current filter is intersected with the previous filter (provides 
+the means for a logical AND). For example: Give me the indexes of all data points, 
+which are (bigger than 40 AND smaller than 60).<br>
+Subtract - the current filter is subtracted from the previous filter. For example: 
+Give me the indexes of all data points, which are (bigger than 40 AND ARE NOT equal 
+to 50).<br>
+<br>
+Operation List - shows the executed filtering commands.<br>
+<br>
+Change Data button - changes the shown data and resets the filter to contain all 
+data points.<br>
+Extract Subset button - removes all data points, which are not members of the 
+current filter.<br>
+Remove Subset button - removes all data points, which are members of the current 
+filter.
+</description>

@@ -1,0 +1,18 @@
+<description>
+Nevron User Interface 4.0 introduces custom command bars (toolbars, menus and context menus) written entirely from scratch. The powerful yet comprehensive common object model provides consistent sharable appearance of commands regardless where they are parented. All common properties are exposed through the "Properties" property of a NCommand object. You may specify visual effects per command such as image fade, image shadow, custom options for a drop-down child menu, etc. You may specify the behaviour of a single command - whether it will always drop-down its child menu or only when clicked in the arrow rect, whether it is selectable or not, whether it can be edited at run-time when the attached NCommandBarsManager (if any) is in "Customize" mode, etc.
+</description>
+<features>
+<ul class="uiList">
+	<li>Unified overall appearance entirely based on pluggable renderers and palettes.
+	<li>CommandStyle - specify the appropriate style for your commands. If style is set to Default a command uses the default command style from its parent. For example it is CommandStyle.Image for a NToolbar and CommandStyle.ImageAndText for a NMenuWindow.
+	<li>Flexible support for separators - actually this is a single property of a command whether it will begin a group.
+	<li>Support for images from imagelists.
+	<li>Controllable ImageSize and CommandSize per command parent.
+	<li>Support for user painting and measuring.
+	<li>Visual effects such as image fade, image shadow, selected and pressed image index.
+	<li>Customizable behaviour - a command might be selectable or not, designable or not, checked or disabled.
+	<li>Native support for nested commands. By default each command that has nested ones will display an arrow indicating that and will display a drop-down menu when clicked in the arrow. But you may specify arrow visibility using ShowArrowStyle and customize the drop-down behaviour using DropDownBehaviour properties respectively.
+	<li>Custom shortcuts - specify any key combination. Currently shortcuts are supported only when a command is registered with a NCommandBarsManager.
+	<li>Support for custom appearance of child menus. You may customize the appearance of the child menu of a command via its Properties.MenuOptions property.
+</ul>
+</features>

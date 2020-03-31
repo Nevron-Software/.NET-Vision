@@ -1,0 +1,24 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NXYErrorBarUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+		<Label Content="Y Error Whisker Size:" Height="28" Name="label1" />
+		<ScrollBar Height="13" Name="YErrorWhiskerSizeScrollBar" Orientation="Horizontal" ValueChanged="YErrorWhiskerSizeScrollBar_ValueChanged" />
+		<CheckBox Content="Show Upper Y Error" Margin ="4" Height="16" Name="ShowUpperYErrorCheckBox" Click="ShowUpperYErrorCheckBox_Checked" />
+		<CheckBox Content="Show Lower Y Error" Margin ="4" Height="16" Name="ShowLowerYErrorCheckBox" Click="ShowLowerYErrorCheckBox_Checked" />
+
+		<Label Content="X Error Whisker Size:" Height="28" Name="label2" />
+		<ScrollBar Height="13" Name="XErrorWhiskerSizeScrollBar" Orientation="Horizontal" ValueChanged="XErrorWhiskerSizeScrollBar_ValueChanged" />
+		<CheckBox Content="Show Upper X Error" Margin ="4" Height="16" Name="ShowUpperXErrorCheckBox" Click="ShowUpperXErrorCheckBox_Checked" />
+		<CheckBox Content="Show Lower X Error" Margin ="4" Height="16" Name="ShowLowerXErrorCheckBox" Click="ShowLowerXErrorCheckBox_Checked" />
+
+		<CheckBox Content="Inflate Margins" Margin ="4" Height="16" Name="InflateMarginsCheckBox" Click="InflateMarginsCheckBox_Checked" />
+		<CheckBox Content="Left Axis Round To Tick" Margin ="4" Height="16" Name="LeftAxisRoundToTickCheckBox" Click="LeftAxisRoundToTickCheckBox_Checked" />
+		<Button Content="Generate Data" Margin ="4" Height="23" Name="GenerateDataButton" Click="GenerateDataButton_Click" />
+	</StackPanel>
+</Controls:NExampleBaseUC>

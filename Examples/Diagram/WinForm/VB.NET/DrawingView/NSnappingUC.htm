@@ -1,0 +1,92 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+		This example demonstrates the view snapping abilities and the way in which they 
+		are controlled via the view snap manager.
+	</p>
+	<p>
+		The snap manager is a drawing view attribute, which is responsible for the 
+		snapping of element bounds, points and angles.
+	</p>
+	<p>
+		In an enviroment, where a coordinate or point can be snapped to multiple 
+		targets, there are two parameters, which determine the target to which the 
+		object eventually snaps to. They are:
+		<ul>
+			<li>
+				<b>Snap Strength</b>
+			- the snap stength is the area around the object in which it attracts 
+			coordinates or points. The snap strength of the objects is controlled by the 
+			NSnapStrength attribute attached to the NSnapManager. The snap strength of the 
+			objects is always measured in pixels, which makes it independent from the view 
+			scale.
+			<li>
+				<b>Snap Priority</b> - the snap priority refers to the order in which the snap 
+				target is determined, when a coordinate or point can be snapped to multiple 
+				snap targets.</li>
+		</ul>
+<P></P>
+	<p>
+		Snapping can in general be divided into&nbsp;four categories:
+		<ul>
+			<li>
+			Snapping of X and Y coordinates (coordinates snapping).
+			<li>
+			Snapping of bounds
+			<li>
+			Snapping of points
+			<li>
+				Snapping of rotation angles</li>
+		</ul>
+<P></P>
+	<p>
+		<b>Coordindate snapping</b> is decoupled, which means that a point X coordinate 
+		can be snapped to one target, while its Y coordinate can be snapped to another 
+		target. Currently there are three types of objects, which can perform 
+		coordinate snapping:
+		<ul>
+			<li>
+			Guidelines
+			<li>
+			Rulers ticks, or simply Rulers
+			<li>
+				Visible grid lines (major lines or major and minor lines), or simply Grid</li>
+		</ul>When a coordinate needs to be snapped, the 
+manager first tries to snap it to guidelines, then to grid and finally to 
+rulers. Coordinate snapping is used by both points and bounds snapping. 
+<P></P>
+	<p>
+		<b>Bounds snapping</b> occurs when the user drags an element inside the drawing 
+		view. When performing bounds snapping the manager tries to find, which of the 
+		following coordinates best snap to the respective coordinate snappers:
+		<ul>
+			<li>
+				Bounds <b>left, center and right</b>
+			are snapped to X coordinate snappers
+			<li>
+				Bounds <b>top, middle and center</b> are snapped to Y coordinate snappers</li>
+		</ul>Bounds snapping also 
+obeys to the snap priorities of coordinate snappers - for example: If the left 
+side is closest to a grid line, but the right side can be snapped to a 
+guideline, it is the right bounds side which will be snapped, since guidelines 
+are with higher priority for snapping than the grid. Bounds snapping takes into 
+account the primary SnapTo setting of the SnapManager. 
+<P></P>
+	<p>
+		<b>Points snapping</b> occurs when the user drags an element handle. When 
+		performing points snapping the manager first tries to snap the point to another 
+		point (for example plug to port). If it cannot snap the point to another point, 
+		then it snaps its X and Y coordinates. The targets to which each individual 
+		point snaps to, is controlled by the respective "SnapTo" setting. The 
+		individual "SnapTo" settings of all points are intersected with primary SnapTo 
+		setting, which means that if you globally prohibit snapping to guidelines, no 
+		point will be snapped to guidelines even if its individual "SnapTo" settings 
+		allow it.
+	</p>
+		<b>Rotation angles snapping</b> occurs when the user drags a rotator handle. When performing 
+rotation snapping, the manager snaps the rotation angle to an exact product of 
+the RotationStep parameter. This is performed if the actual angle to which the 
+user rotated the object is inside the allowed RotationDeviation (that is the 
+amount of acceptable mistake the user can make). 
+<P></P>
+</description>

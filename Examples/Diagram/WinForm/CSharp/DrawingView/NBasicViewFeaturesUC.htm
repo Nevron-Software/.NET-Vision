@@ -1,0 +1,79 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+		This example demonstrates the basic drawing view features, which are:
+	</p>
+	<p>
+		<b>Panning</b>. Panning is the the ability to control the viewport origin. The 
+		viewport origin is the first point in document scene coordinates, which is 
+		displayed by the view. The viewport origin is mapped to the window origin, 
+		which is the first point in view client coordinates which displays document 
+		content.
+	</p>
+	<p>
+		<b>Global visibility</b> gives you control over the global visibility of 
+		particular elements, decorations and effects.
+	</p>
+	<p>
+		<b>Document padding</b> lets you apply a padding to the document bounds. The 
+		total viewport size is calculated by inflating the document bounds with the 
+		document padding.
+	</p>
+	<p>
+		<b>Document shadow</b>. The view provides you with the ability to display a 
+		decoration shadow behind the document bounds.
+	</p>
+	</p>
+		<b>Scaling and zooming</b>. The view provides you with a natural way to apply X and Y scaling 
+		of the document. In case the X and Y scales are equal the effect of scaling is called zooming.
+	<p>
+	<p>
+		<b>View layout</b>. The component support for different types of view layouts:
+		<ul>
+			<li>
+				<i>Normal</i>
+			- the user can freely modify the viewport origin and scale parameters of the 
+			view (pan and zoom the view)
+			<li>
+				<i>Fit</i>
+			- the viewport origin and scales are automatically calculated, so that the 
+			document fits in the view window with preserved aspect ratio.
+			<li>
+				<i>Stretch</i>
+			- the viewport origin and scales are automatically calculated, so that the 
+			document stretches to fill the window. This setting can break the aspect ratio 
+			of the document (scale it irregularly).
+			<li>
+				<i>Stretch to Width</i>
+			- the viewport origin X and scales are automatically calculated, so that the 
+			document stretches to fit the window width. This setting preserves the document 
+			aspect ratio.
+			<li>
+				<i>Stretch to Height</i> - the viewport origin Y and scales are automatically 
+				calculated, so that the document stretches to fit the window height. This 
+				setting preserves the document aspect ratio.</li>
+		</ul>
+	<p>
+	<p>
+		<b>Scrolling and autoscrolling</b>. The view exposes control over different 
+		aspects of scrolling and autoscrolling, such as:
+		<ul>
+			<li>
+				Scrollbars visibility
+			</li>
+			<li>
+				Alignment of the document relative to the view, when no scrollbars should be 
+				displayed
+			</li>
+			<li>
+				Small scroll step (defined in pixels)
+			</li>
+			<li>
+				Delay for autoscrolling (specified in milliseconds)
+			</li>
+			<li>
+				Time between two autoscroll steps (specified in milliseconds)
+			</li>
+		</ul>
+	</p>
+</description>

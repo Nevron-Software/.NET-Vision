@@ -1,0 +1,25 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NStandardFunnel3DUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+		<Label Content="Funnel Radius:" Height="28" Name="label1" />
+		<ScrollBar Height="13" Name="FunnelRadiusScrollBar" Orientation="Horizontal" ValueChanged="FunnelRadiusScrollBar_ValueChanged" />
+		<Label Content="Funnel Point Gap:" Height="28" Name="label2" />
+		<ScrollBar Height="13" Name="FunnelPointGapScrollBar" Orientation="Horizontal" ValueChanged="FunnelPointGapScrollBar_ValueChanged" />
+		<Label Content="Neck Width:" Height="28" Name="label3" />
+		<ScrollBar Height="13" Name="NeckWidthScrollBar" Orientation="Horizontal" ValueChanged="NeckWidthScrollBar_ValueChanged" />
+		<Label Content="Neck Height:" Height="28" Name="label4" />
+		<ScrollBar Height="13" Name="NeckHeightScrollBar" Orientation="Horizontal" ValueChanged="NeckHeightScrollBar_ValueChanged" />
+
+		<Label Content="Funnel Label Mode:" Height="28" Name="label5" />
+		<ComboBox Height="23" Name="FunnelLabelModeComboBox" SelectionChanged="FunnelLabelModeComboBox_SelectionChanged" />
+
+		<Label Content="Label Arrow Length:" Height="28" Name="label6" />
+		<ScrollBar Height="13" Name="LabelArrowLengthScrollBar" Orientation="Horizontal" ValueChanged="LabelArrowLengthScrollBar_ValueChanged" />
+	</StackPanel>
+</Controls:NExampleBaseUC>

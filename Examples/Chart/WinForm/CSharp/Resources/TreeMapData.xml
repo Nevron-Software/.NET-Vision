@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Industries Date="8-May-2004" Source="Yahoo Finance" Size="Market Cap (Billions)" Change="1 Day Price Change (%)">
+	<Industry Id="I1" Name="Services" Size="4393.54" Change="-1.864">
+		<Sector Id="S1" Name="Communications Services" Size="1640.2" Change="-1.8" />
+		<Sector Id="S2" Name="Broadcasting &amp; Cable TV" Size="497" Change="-1.22" />
+		<Sector Id="S3" Name="Retail (Department &amp; Discount)" Size="357.4" Change="-1.35" />
+		<Sector Id="S4" Name="Real Estate Operations" Size="242.3" Change="-3.4" />
+		<Sector Id="S5" Name="Printing &amp; Publishing" Size="216.1" Change="-0.82" />
+		<Sector Id="S6" Name="Retail (Specialty)" Size="208.8" Change="-2.36" />
+		<Sector Id="S7" Name="Business Services" Size="195.8" Change="-0.4" />
+		<Sector Id="S8" Name="Retail (Grocery)" Size="162.8" Change="-1.42" />
+		<Sector Id="S9" Name="Retail (Home Improvement)" Size="120.4" Change="-3.59" />
+		<Sector Id="S10" Name="Restaurants" Size="107.9" Change="-2.87" />
+		<Sector Id="S11" Name="Retail (Drugs)" Size="91.2" Change="-0.49" />
+		<Sector Id="S12" Name="Retail (Apparel)" Size="87" Change="-2.1" />
+		<Sector Id="S13" Name="Hotels &amp; Motels" Size="81.5" Change="-3.04" />
+		<Sector Id="S14" Name="Recreational Activities" Size="65.8" Change="-2.64" />
+		<Sector Id="S15" Name="Advertising" Size="57.7" Change="-1.21" />
+		<Sector Id="S16" Name="Casinos &amp; Gaming" Size="48.3" Change="-3.94" />
+		<Sector Id="S17" Name="Schools" Size="45.5" Change="-2.32" />
+		<Sector Id="S18" Name="Personal Services" Size="33.6" Change="-2.44" />
+		<Sector Id="S19" Name="Retail (Catalog &amp; Mail Order)" Size="32.4" Change="-1.94" />
+		<Sector Id="S20" Name="Waste Management Services" Size="31.1" Change="-1.23" />
+		<Sector Id="S21" Name="Retail (Technology)" Size="26.9" Change="-2.3" />
+		<Sector Id="S22" Name="Motion Pictures" Size="21.9" Change="-1.6" />
+		<Sector Id="S23" Name="Rental &amp; Leasing" Size="12.4" Change="-2.53" />
+		<Sector Id="S24" Name="Security Systems &amp; Services" Size="5.2" Change="-1.93" />
+		<Sector Id="S25" Name="Printing Services" Size="4.3" Change="-0.67" />
+	</Industry>
+	<Industry Id="I2" Name="Financial" Size="4167.36" Change="-1.949">
+		<Sector Id="S1" Name="Money Center Banks" Size="1252.6" Change="-2.19" />
+		<Sector Id="S2" Name="Regional Banks" Size="886.9" Change="-2.24" />
+		<Sector Id="S3" Name="Insurance (Prop. &amp; Casualty)" Size="657.9" Change="-1.06" />
+		<Sector Id="S4" Name="Insurance (Life)" Size="368" Change="-2.54" />
+		<Sector Id="S5" Name="Investment Services" Size="312.8" Change="-2.09" />
+		<Sector Id="S6" Name="Consumer Financial Services" Size="232.3" Change="-2.12" />
+		<Sector Id="S7" Name="S&amp;Ls/Savings Banks" Size="198" Change="-2.17" />
+		<Sector Id="S8" Name="Insurance (Accident &amp; Health)" Size="145.5" Change="-1.91" />
+		<Sector Id="S9" Name="Misc. Financial Services" Size="65.9" Change="-2.28" />
+		<Sector Id="S10" Name="Insurance (Miscellaneous)" Size="47.4" Change="-1.42" />
+	</Industry>
+	<Industry Id="I3" Name="Technology" Size="2845.3" Change="-0.25">
+		<Sector Id="S1" Name="Software &amp; Programming" Size="656.4" Change="-1.16">
+			<Company Id="C1" Name="Microsoft Corporation (MSFT)" Size="278.3" Change="-1.3" />
+			<Company Id="C2" Name="Oracle Corporation (ORCL)" Size="59.2" Change="-0.78" />
+			<Company Id="C3" Name="SAP AG (ADR) (SAP)" Size="46.4" Change="-1.76" />
+			<Company Id="C4" Name="Electronic Arts Inc. (ERTS)" Size="15.5" Change="0.91" />
+			<Company Id="C5" Name="Computer Associates Inter (CA)" Size="15.3" Change="-2.08" />
+			<Company Id="C6" Name="Symantec Corporation (SYMC)" Size="15" Change="-1.43" />
+			<Company Id="C7" Name="SOFTBANK CORP. (ADR) (SFTBF.PK)" Size="14" Change="-4.05" />
+			<Company Id="C8" Name="VERITAS Software Corporat (VRTSE)" Size="11.4" Change="1.25" />
+			<Company Id="C9" Name="Infosys Technologies Limi (INFY)" Size="11.2" Change="-1.79" />
+			<Company Id="C10" Name="Adobe Systems Incorporate (ADBE)" Size="10.4" Change="-1" />
+			<Company Id="C11" Name="Intuit Inc. (INTU)" Size="8" Change="-3.02" />
+			<Company Id="C12" Name="PeopleSoft, Inc. (PSFT)" Size="6.3" Change="-0.69" />
+			<Company Id="C13" Name="Amdocs Limited (DOX)" Size="6" Change="-0.11" />
+			<Company Id="C14" Name="Check Point Software Tech (CHKP)" Size="5.9" Change="1.2" />
+			<Company Id="C15" Name="Siebel Systems, Inc. (SEBL)" Size="5.1" Change="-2.03" />
+			<Company Id="C16" Name="Trend Micro Incorporated (TMIC)" Size="4.8" Change="-4.15" />
+			<Company Id="C17" Name="VeriSign, Inc. (VRSN)" Size="4.4" Change="0.74" />
+			<Company Id="C18" Name="Red Hat, Inc. (RHAT)" Size="4.4" Change="-3.22" />
+			<Company Id="C19" Name="BEA Systems, Inc. (BEAS)" Size="4.3" Change="-0.94" />
+			<Company Id="C20" Name="Autodesk, Inc. (ADSK)" Size="4.2" Change="1.73" />
+			<Company Id="C21" Name="Synopsys, Inc. (SNPS)" Size="4.1" Change="-0.45" />
+			<Company Id="C22" Name="Mercury Interactive Corp. (MERQ)" Size="4" Change="-0.63" />
+			<Company Id="C23" Name="BMC Software, Inc. (BMC)" Size="3.8" Change="-1.97" />
+			<Company Id="C24" Name="Peregrine Systems, Inc. (PRGN.PK)" Size="3.7" Change="-3.85" />
+			<Company Id="C25" Name="Cadence Design Systems (CDN)" Size="3.4" Change="-1.47" />
+			<Company Id="C26" Name="Citrix Systems, Inc. (CTXS)" Size="3.3" Change="-0.5" />
+			<Company Id="C27" Name="CSK Corporation (ADR) (CSKKY)" Size="3.2" Change="-2.57" />
+		</Sector>
+		<Sector Id="S2" Name="Semiconductors" Size="619.9" Change="1.22" />
+		<Sector Id="S3" Name="Communications Equipment" Size="535.9" Change="-0.1" />
+		<Sector Id="S4" Name="Computer Hardware" Size="277.1" Change="0.06" />
+		<Sector Id="S5" Name="Computer Services" Size="250.4" Change="-0.89" />
+		<Sector Id="S6" Name="Electronic Instruments &amp; Controls" Size="154.2" Change="-1.46" />
+		<Sector Id="S7" Name="Computer Peripherals" Size="138.3" Change="0.28" />
+		<Sector Id="S8" Name="Scientific &amp; Technical Instr." Size="78.4" Change="-1.7" />
+		<Sector Id="S9" Name="Computer Storage Devices" Size="55.3" Change="0.07" />
+		<Sector Id="S10" Name="Office Equipment" Size="43.8" Change="-0.77" />
+		<Sector Id="S11" Name="Computer Networks" Size="35.5" Change="-1.35" />
+	</Industry>
+	<Industry Id="I4" Name="Healthcare" Size="2377.89" Change="-0.886">
+		<Sector Id="S1" Name="Major Drugs" Size="1346" Change="-0.45" />
+		<Sector Id="S2" Name="Biotechnology &amp; Drugs" Size="593.3" Change="-1.77" />
+		<Sector Id="S3" Name="Medical Equipment &amp; Supplies" Size="325.4" Change="-0.67" />
+		<Sector Id="S4" Name="Healthcare Facilities" Size="113.2" Change="-1.14" />
+	</Industry>
+	<Industry Id="I5" Name="Energy" Size="1778.73" Change="-2.063">
+		<Sector Id="S1" Name="Oil &amp; Gas - Integrated" Size="1296.2" Change="-1.54" />
+		<Sector Id="S2" Name="Oil &amp; Gas Operations" Size="295.6" Change="-2.27" />
+		<Sector Id="S3" Name="Oil Well Services &amp; Equipment" Size="171.5" Change="-3.05" />
+		<Sector Id="S4" Name="Coal" Size="15.3" Change="-4.54" />
+	</Industry>
+	<Industry Id="I6" Name="Consumer Non-Cyclical" Size="1272.57" Change="-0.899">
+		<Sector Id="S1" Name="Food Processing" Size="339.1" Change="-1.02" />
+		<Sector Id="S2" Name="Personal &amp; Household Products" Size="308.2" Change="-1.12" />
+		<Sector Id="S3" Name="Beverages (Non-Alcoholic)" Size="276" Change="-0.75" />
+		<Sector Id="S4" Name="Tobacco" Size="189.3" Change="-1.24" />
+		<Sector Id="S5" Name="Beverages (Alcoholic)" Size="147.6" Change="1.06" />
+		<Sector Id="S6" Name="Office Supplies" Size="6.6" Change="-1.19" />
+		<Sector Id="S7" Name="Crops" Size="3.4" Change="-1.33" />
+		<Sector Id="S8" Name="Fish/Livestock" Size="2.3" Change="-1.07" />
+	</Industry>
+	<Industry Id="I7" Name="Basic Materials" Size="930.03" Change="-3.2">
+		<Sector Id="S1" Name="Metal Mining" Size="263.7" Change="-4.84" />
+		<Sector Id="S2" Name="Chemical Manufacturing" Size="174.2" Change="-2.68" />
+		<Sector Id="S3" Name="Paper &amp; Paper Products" Size="115.4" Change="-2.33" />
+		<Sector Id="S4" Name="Chemicals - Plastics &amp; Rubber" Size="113.4" Change="-2.99" />
+		<Sector Id="S5" Name="Gold &amp; Silver" Size="98.7" Change="-6.36" />
+		<Sector Id="S6" Name="Iron &amp; Steel" Size="50.2" Change="-4.97" />
+		<Sector Id="S7" Name="Containers &amp; Packaging" Size="45.7" Change="-2.47" />
+		<Sector Id="S8" Name="Misc. Fabricated Products" Size="32" Change="-2.79" />
+		<Sector Id="S9" Name="Forestry &amp; Wood Products" Size="23.5" Change="-3.63" />
+		<Sector Id="S10" Name="Non-Metallic Mining" Size="7.5" Change="-1.77" />
+		<Sector Id="S11" Name="Fabricated Plastic &amp; Rubber" Size="5.7" Change="-2.36" />
+	</Industry>
+	<Industry Id="I8" Name="Consumer Cyclical" Size="790.56" Change="-2.907">
+		<Sector Id="S1" Name="Auto &amp; Truck Manufacturers" Size="363.8" Change="-3.7" />
+		<Sector Id="S2" Name="Audio &amp; Video Equipment" Size="123.8" Change="-3.42" />
+		<Sector Id="S3" Name="Auto &amp; Truck Parts" Size="60.3" Change="-2.77" />
+		<Sector Id="S4" Name="Recreational Products" Size="54.2" Change="-2.46" />
+		<Sector Id="S5" Name="Apparel/Accessories" Size="49.4" Change="-2.29" />
+		<Sector Id="S6" Name="Furniture &amp; Fixtures" Size="33.1" Change="-2.3" />
+		<Sector Id="S7" Name="Footwear" Size="31.5" Change="-2.72" />
+		<Sector Id="S8" Name="Appliance &amp; Tool" Size="27.3" Change="-3.52" />
+		<Sector Id="S9" Name="Photography" Size="24" Change="-1.3" />
+		<Sector Id="S10" Name="Tires" Size="10.3" Change="-2.32" />
+		<Sector Id="S11" Name="Textiles - Non Apparel" Size="10" Change="-2.17" />
+		<Sector Id="S12" Name="Jewelry &amp; Silverware" Size="2.7" Change="0.22" />
+	</Industry>
+	<Industry Id="I9" Name="Utilities" Size="661.07" Change="-2.661">
+		<Sector Id="S1" Name="Electric Utilities" Size="527.8" Change="-2.73" />
+		<Sector Id="S2" Name="Natural Gas Utilities" Size="118.8" Change="-2.37" />
+		<Sector Id="S3" Name="Water Utilities" Size="14.5" Change="-3" />
+	</Industry>
+	<Industry Id="I10" Name="Capital Goods" Size="520.6" Change="-2.024">
+		<Sector Id="S1" Name="Aerospace &amp; Defense" Size="161.5" Change="-0.99" />
+		<Sector Id="S2" Name="Misc. Capital Goods" Size="131.8" Change="-1.98" />
+		<Sector Id="S3" Name="Construction Services" Size="104.9" Change="-4.45" />
+		<Sector Id="S4" Name="Constr. &amp; Agric. Machinery" Size="53.2" Change="-1.39" />
+		<Sector Id="S5" Name="Construction - Raw Materials" Size="52.2" Change="-2.86" />
+		<Sector Id="S6" Name="Constr. - Supplies &amp; Fixtures" Size="12.3" Change="-2.69" />
+		<Sector Id="S7" Name="Mobile Homes &amp; RVs" Size="4.6" Change="-3.63" />
+	</Industry>
+	<Industry Id="I11" Name="Transportation" Size="287.01" Change="-1.597">
+		<Sector Id="S1" Name="Trucking" Size="108.4" Change="-1.32" />
+		<Sector Id="S2" Name="Railroads" Size="63.8" Change="-1.86" />
+		<Sector Id="S3" Name="Airline" Size="43.3" Change="-3.11" />
+		<Sector Id="S4" Name="Misc. Transportation" Size="32.2" Change="-0.82" />
+		<Sector Id="S5" Name="Air Courier" Size="22.4" Change="-0.94" />
+		<Sector Id="S6" Name="Water Transportation" Size="17" Change="-2.55" />
+	</Industry>
+</Industries>

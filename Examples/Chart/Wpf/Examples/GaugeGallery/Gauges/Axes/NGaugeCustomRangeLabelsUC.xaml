@@ -1,0 +1,29 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NGaugeCustomRangeLabelsUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="540" d:DesignWidth="300">
+    <StackPanel>
+        <CheckBox Name="ShowMinRangeCheckBox" Content="Show Min Range" Click="ShowMinRangeCheckBox_Click" />
+        <CheckBox Name="ShowMaxRangeCheckBox" Content="Show Max Range" Click="ShowMaxRangeCheckBox_Click" />
+        <GroupBox Header="Radial Gauge" >
+            <StackPanel>
+                <Label Name="label1" Content="Begin Angle" />
+                <ScrollBar Orientation="Horizontal" Name="BeginAngleScrollBar" ValueChanged="BeginAngleScrollBar_ValueChanged"
+                           Minimum="-360" Maximum="360" SmallChange="1" LargeChange="10" />
+                <Label Name="label2" Content="Sweep Angle" />
+                <ScrollBar Orientation="Horizontal" Name="SweepAngleScrollBar" ValueChanged="SweepAngleScrollBar_ValueChanged" 
+                           Minimum="-350" Maximum="350" SmallChange="1" LargeChange="10" />
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Linear Gauge" >
+            <StackPanel>
+                <Label Name="Label3" Content="Orientation:" />
+                <ComboBox Name="LinearGaugeOrientationComboBox" SelectionChanged="LinearGaugeOrientationComboBox_SelectionChanged" />
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</Controls:NExampleBaseUC>

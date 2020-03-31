@@ -1,0 +1,43 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NGaugeBordersUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="380" d:DesignWidth="300">
+    <StackPanel>
+        <Label Name="Label1" Content="Border Type:" />
+        <ComboBox Name="BorderTypeComboBox" SelectionChanged="BorderTypeComboBox_SelectionChanged" />
+        <DockPanel Margin="0,5,0,0">
+            <Label Name="Label2" Content="Corner Rounding:" HorizontalAlignment="Left"/>
+            <ComboBox Name="RoundRectRoundingComboBox" HorizontalAlignment="Stretch" SelectionChanged="RoundRectRoundingComboBox_SelectionChanged" />
+        </DockPanel>
+        <Label Name="Label3" Content="Radial Gauge Auto Border:" Margin="0,15,0,0"/>
+        <ComboBox Name="RadialGaugeAutoBorderTypeComboBox" SelectionChanged="RadialGaugeAutoBorderTypeComboBox_SelectionChanged" />
+        <DockPanel Margin="0,5,0,0">
+            <Label Name="Label4" Content="Center Rounding:" HorizontalAlignment="Left" />
+            <ComboBox Name="CenterRoundingNumericComboBox" HorizontalAlignment="Stretch" SelectionChanged="CenterRoundingNumericComboBox_SelectionChanged" />
+        </DockPanel>
+        <DockPanel Margin="0,5,0,0">
+            <Label Name="Label5" Content="Edge Rounding:" HorizontalAlignment="Left" />
+            <ComboBox Name="EdgeRoundingNumericComboBox" HorizontalAlignment="Stretch" SelectionChanged="EdgeRoundingNumericComboBox_SelectionChanged" />
+        </DockPanel>
+        <GroupBox Header="Radial Gauge">
+            <StackPanel>
+                <Label Name="Label6" Content="Begin Angle:" />
+                <ScrollBar Name="BeginAngleScrollBar" Orientation="Horizontal" ValueChanged="BeginAngleScrollBar_ValueChanged"
+                           Minimum="-360" Maximum="360" SmallChange="1" LargeChange="10" />
+                <Label Name="Label7" Content="Sweep Angle:" />
+                <ScrollBar Name="SweepAngleScrollBar" Orientation="Horizontal" ValueChanged="SweepAngleScrollBar_ValueChanged"
+                           Minimum="-350" Maximum="350" SmallChange="1" LargeChange="10" />
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Linear Gauge">
+            <StackPanel>
+                <Label Name="Label8" Content="Orientation:" />
+                <ComboBox Name="LinearGaugeOrientationComboBox" SelectionChanged="LinearGaugeOrientationComboBox_SelectionChanged" />
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</Controls:NExampleBaseUC>

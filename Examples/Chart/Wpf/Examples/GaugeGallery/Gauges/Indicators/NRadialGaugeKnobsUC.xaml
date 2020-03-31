@@ -1,0 +1,41 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NRadialGaugeKnobsUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="540" d:DesignWidth="300">
+    <StackPanel>
+        <GroupBox Name="groupBox1" Height="180" Header="Marker:">
+            <StackPanel>
+                    <Label Content="Shape:" Name="Lable1" HorizontalAlignment="Left" Height="28" />
+                    <ComboBox Name="MarkerShapeComboBox" SelectionChanged="MarkerShapeComboBox_SelectionChanged"  Height="24"  />
+                    <Label Content="Offset:" Name="Lable2" HorizontalAlignment="Left" Height="28" />
+                    <ComboBox Name="MarkerOffsetComboBox" SelectionChanged="MarkerOffsetComboBox_SelectionChanged"  Height="24" />
+                    <Label Content="Paint Order:" Name="Lable3" HorizontalAlignment="Left" Height="28" />
+                    <ComboBox Name="MarkerPaintOrderComboBox" SelectionChanged="MarkerPaintOrderComboBox_SelectionChanged"  Height="24" />
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Name="groupBox2" Height="180" Header="Outer Rim:">
+            <StackPanel>
+                <Label Content="Pattern:" Name="Lable4" HorizontalAlignment="Left" Height="28" />
+                <ComboBox Name="OuterRimPatternComboBox" SelectionChanged="OuterRimPatternComboBox_SelectionChanged"  Height="24"  />
+                <Label Content="Repeat Count:" Name="Lable5" HorizontalAlignment="Left" Height="28" />
+                <ComboBox Name="OuterRimPatternRepeatCountComboBox" SelectionChanged="OuterRimPatternRepeatCountComboBox_SelectionChanged"  Height="24" />
+                <Label Content="Radius Offset:" Name="Lable6" HorizontalAlignment="Left" Height="28" />
+                <ComboBox Name="OuterRimRadiusOffsetComboBox" SelectionChanged="OuterRimRadiusOffsetComboBox_SelectionChanged" Height="24" />
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Name="groupBox3" Height="180" Header="Inner Rim:" >
+            <StackPanel>
+                <Label Content="Pattern:" Name="Lable7" HorizontalAlignment="Left" Height="28" />
+                <ComboBox Name="InnerRimPatternComboBox" SelectionChanged="InnerRimPatternComboBox_SelectionChanged"  Height="24"  />
+                <Label Content="Repeat Count:" Name="Lable8" HorizontalAlignment="Left" Height="28" />
+                <ComboBox Name="InnerRimPatternRepeatCountComboBox" SelectionChanged="InnerRimPatternRepeatCountComboBox_SelectionChanged"  Height="24" />
+                <Label Content="Radius Offset:" Name="Lable9" HorizontalAlignment="Left" Height="28" />
+                <ComboBox Name="InnerRimRadiusOffsetComboBox" SelectionChanged="InnerRimRadiusOffsetComboBox_SelectionChanged"  Height="24" />
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</Controls:NExampleBaseUC>

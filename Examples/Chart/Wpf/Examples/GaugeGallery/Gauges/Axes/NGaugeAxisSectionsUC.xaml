@@ -1,0 +1,30 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NGaugeAxisSectionsUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="540" d:DesignWidth="300">
+    <StackPanel>
+        <Label Name="label1" Content="Blue Section:" />
+        <DockPanel>
+            <Label Name="label3" Content="Begin:" />
+            <ComboBox Name="BlueSectionBeginComboBox" SelectionChanged="BlueSectionBeginComboBox_SelectionChanged" />
+         </DockPanel>
+        <DockPanel Margin="0,5,0,0">
+            <Label Name="label4" Content="End:" />
+            <ComboBox Name="BlueSectionEndComboBox" SelectionChanged="BlueSectionEndComboBox_SelectionChanged" />
+        </DockPanel>
+        <Label Name="label2" Content="Red Section:" />
+        <DockPanel Margin="0,5,0,0">
+            <Label Name="label5" Content="Begin:" />
+            <ComboBox Name="RedSectionBeginComboBox" SelectionChanged="RedSectionBeginComboBox_SelectionChanged" />
+        </DockPanel>
+        <DockPanel Margin="0,5,0,0">
+            <Label Name="label6" Content="End:" />
+            <ComboBox Name="RedSectionEndComboBox" SelectionChanged="RedSectionEndComboBox_SelectionChanged" />
+        </DockPanel>
+        <Button Content="Stop Timer" Name="StopStartTimerButton" Click="StopStartTimerButton_Click" Margin="0,15,0,0" />
+    </StackPanel>
+</Controls:NExampleBaseUC>

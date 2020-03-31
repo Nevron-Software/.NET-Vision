@@ -1,0 +1,334 @@
+<ExamplesTree xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Title="C# Examples">
+<Items>
+
+  <Folder Title="What's New in Q2 2007">
+    <Items>
+
+      <Example Title="Gallery Panel - Basic Features" TreePath="GalleryPanel" TypeName="NGalleryPanelUC"/>
+      <Example Title="Gallery Panel - Thumbnail Preview" TreePath="GalleryPanel" TypeName="NGalleryPanelThumbnailPreviewUC"/>
+      <Example Title="Command Bars - ImageText Relation" TreePath="CommandBars" TypeName="NToolbarImageTextRelationUC"/>
+      <Example Title="Task Dialog - Radio Buttons" TreePath="Forms" TypeName="NTaskDialogRadioButtonsUC"/>
+      <Example Title="Docking Panels - Sizing Restrictions" TreePath="DockingPanels" TypeName="NSizingRestrictionsUC" SourceCodeFile="NSizingRestrictionsForm"/>
+      <Example Title="Docking Panels - Visual Tab Navigation" TreePath="DockingPanels" TypeName="NVisualTabNavigationUC" SourceCodeFile="NVisualTabNavigationForm"/>
+      <Example Title="Navigation Pane - Expand/Collapse" TreePath="NavigationPane" TypeName="NNavigationPaneCollapseUC"/>
+      <Example Title="List View" TreePath="ListView" TypeName="NListViewUC"/>
+      <Example Title="Rotator" TreePath="Rotator" TypeName="NRotatorUC"/>
+
+    </Items>
+  </Folder>
+
+  <Folder Title="What's New in Q1 2007">
+    <Items>
+
+      <Example Title="Skinning" TreePath="Skinning" TypeName="NSkinningUC"/>
+      <Example Title="Generic Popup" TreePath="Popup" TypeName="NPopupUC"/>
+      <Example Title="Popup Combo" TreePath="Popup" TypeName="NPopupComboUC"/>
+      <Example Title="Calculator" TreePath="Calculator" TypeName="NCalculatorUC"/>
+      <Example Title="Drop-down Calculator" TreePath="Calculator" TypeName="NCalculatorDropDownUC"/>
+      <Example Title="Tooltip Controller" TreePath="Tooltips" TypeName="NTooltipControllerUC"/>
+      <Example Title="Data Navigator" TreePath="DataNavigator" TypeName="NDataNavigatorUC"/>
+      <Example Title="File Look-up" TreePath="Lookup" TypeName="NFileLookupUC"/>
+
+    </Items>
+  </Folder>
+
+  <Folder Title="What's New in Q4 2006">
+    <Items>
+
+      <Example Title="Localization" TreePath="Localization" TypeName="NLocalizationUC"/>
+      <Example Title="Extended Entry Controls" TreePath="EntryControls" TypeName="NEntryControlsExtendedUC"/>
+      <Example Title="Palette Color Pane" TreePath="Misc" TypeName="NPaletteColorPaneUC"/>
+      <Example Title="Hyper Links" TreePath="Misc" TypeName="NHyperLinkSupportUC"/>
+      <Example Title="Date Time Picker" TreePath="DateTimePicker" TypeName="NDateTimePickerUC"/>
+      <Example Title="Task Dialog - Examples" TreePath="Forms" TypeName="NTaskDialogMessageBoxUC"/>
+      <Example Title="Task Dialog - Properties" TreePath="Forms" TypeName="NTaskDialogExtendedUC"/>
+
+    </Items>
+  </Folder>
+
+  <Folder Title="All Examples">
+    <Items>
+
+      <Folder Title="Skinning" Name="Skinning">
+        <Items>
+          <Example Title="Skinning" TypeName="NSkinningUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Custom Forms" Name="Forms">
+        <Items>
+          <Example Title="Appearance" TypeName="NFormUC" />
+          <Example Title="Caption Buttons" TypeName="NFormCustomCaptionButtonsUC" />
+          <Example Title="Desktop Toolbar" TypeName="NDesktopToolbarUC"/>
+          <Example Title="Task Dialog - Examples" TypeName="NTaskDialogMessageBoxUC"/>
+          <Example Title="Task Dialog - Properties" TypeName="NTaskDialogExtendedUC"/>
+          <Example Title="Task Dialog - Radio Buttons" TypeName="NTaskDialogRadioButtonsUC"/>
+        </Items>
+      </Folder>
+
+      <Folder Title="Docking Panels" Name="DockingPanels">
+        <Items>
+          <Example Title="Basic Features" TypeName="NDockingPanelsBasicFeaturesUC" />
+          <Example Title="Complex Layout Structures" TypeName="NComplexLayoutUC" />
+          <Example Title="Nested Containers" TypeName="NNestedDockContainersUC" />
+          <Example Title="Programmable Functionality" TypeName="NDockingPanelsFunctionalityUC" />
+          <Example Title="Auto Hide Support" TypeName="NAutoHideSupportUC" />
+          <Example Title="Appearance Styles" TypeName="NDockingPanelsStylesUC" />
+          <Example Title="Docking Stickers" TypeName="NDockingStickersUC" />
+          <Example Title="Document View" TypeName="NDocumentViewUC" />
+          <Example Title="Mdi Menu Merge" TypeName="NMdiMenuMergeUC" SourceCodeFile="NMdiMenuMergeForm"/>
+          <Example Title="Border Support" TypeName="NBorderSupportUC" />
+          <Example Title="Layout Persistency" TypeName="NDockingPanelsPersistencyUC" />
+          <Example Title="Design-time Support" TypeName="NDesignTimeSupportUC" SourceCodeFile="NDesignTimeSupportForm" />
+          <Example Title="Command Model" TypeName="NCommandModelUC" SourceCodeFile="NCommandModelForm" />
+          <Example Title="Sticky Floating Frames" TypeName="NStickyFloatingFramesUC" SourceCodeFile="NStickyFloatingFramesForm"/>
+          <Example Title="Mdi Children Custom Frames" TypeName="NMdiChildrenCustomFramesUC" SourceCodeFile="NMdiChildrenCustomFramesForm"/>
+          <Example Title="Sizing Restrictions" TypeName="NSizingRestrictionsUC" SourceCodeFile="NSizingRestrictionsForm"/>
+          <Example Title="Visual Tab Navigation" TypeName="NVisualTabNavigationUC" SourceCodeFile="NVisualTabNavigationForm"/>
+        </Items>
+      </Folder>
+
+      <Folder Title="Command Bars" Name="CommandBars">
+        <Items>
+          <Example Title="Command Appearance" TypeName="NCommandAppearanceUC" />
+          <Example Title="Command Layout" TypeName="NCommandLayoutUC" />
+          <Example Title="Docking Toolbars" TypeName="NDockingToolbarsUC" />
+          <Example Title="Custom Menus" TypeName="NCustomMenusUC" />
+          <Example Title="Context Menus" TypeName="NContextMenusUC" />
+          <Example Title="Persistency" TypeName="NCommandBarsPersistencyUC" />
+          <Example Title="Alpha Blended Images" TypeName="NCommandImageSupportUC" />
+          <Example Title="ImageText Relation" TypeName="NToolbarImageTextRelationUC"/>
+        </Items>
+      </Folder>
+
+      <Folder Title="Entry Controls" Name="EntryControls">
+        <Items>
+          <Example Title="Entry Box" TypeName="NEntryBoxUC" />
+          <Example Title="Extended Entry Controls" TypeName="NEntryControlsExtendedUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Navigation Pane" Name="NavigationPane">
+        <Items>
+          <Example Title="Navigation Pane" TypeName="NNavigationPaneUC" />
+          <Example Title="Expand/Collapse" TypeName="NNavigationPaneCollapseUC"/>
+        </Items>
+      </Folder>
+
+      <Folder Title="Expanders" Name="Expanders">
+        <Items>
+          <Example Title="Default Appearance" TypeName="NExpanderUC" />
+          <Example Title="Custom Appearance" TypeName="NCustomExpanderUC" />
+          <Example Title="Explorer Bar" TypeName="NExplorerBarUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Calculator" Name="Calculator">
+        <Items>
+          <Example Title="Calculator" TypeName="NCalculatorUC"/>
+          <Example Title="Drop-down Calculator" TypeName="NCalculatorDropDownUC"/>
+        </Items>
+      </Folder>
+
+      <Folder Title="Popup" Name="Popup">
+        <Items>
+          <Example Title="Generic Popup" TypeName="NPopupUC"/>
+          <Example Title="Popup Combo" TypeName="NPopupComboUC"/>
+        </Items>
+      </Folder>
+
+      <Folder Title="Data Navigator" Name="DataNavigator">
+        <Items>
+          <Example Title="Data Navigator" TypeName="NDataNavigatorUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Look-up" Name="Lookup">
+        <Items>
+          <Example Title="File Look-up" TypeName="NFileLookupUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Tooltips" Name="Tooltips">
+        <Items>
+          <Example Title="Extended Tooltip" TypeName="NTooltipUC"/>
+          <Example Title="Tooltip Controller" TypeName="NTooltipControllerUC"/>
+        </Items>
+      </Folder>
+
+      <Folder Title="Popup Notify" Name="PopupNotify">
+        <Items>
+          <Example Title="Popup Notify" TypeName="NPopupNotifyUC"/>
+        </Items>
+      </Folder>
+
+      <Folder Title="Decorators" Name="Decorators">
+        <Items>
+          <Example Title="Decorators" TypeName="NDecoratorsUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Sample IDEs" Name="SampleIDEs">
+        <Items>
+          <Example Title="Visual Studio" TypeName="NIDELoadUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Buttons" Name="Buttons">
+        <Items>
+          <Example Title="Standard Buttons" TypeName="NButtonUC" />
+          <Example Title="Check Boxes" TypeName="NCheckBoxUC" />
+          <Example Title="Radio Buttons" TypeName="NRadioButtonUC" />
+          <Example Title="Option Buttons" TypeName="NOptionButtonUC" />
+          <Example Title="Color Buttons" TypeName="NColorButtonUC" />
+          <Example Title="Control Drop-Down Buttons" TypeName="NControlDropDownButtonUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Rich Text Label" Name="Labels">
+        <Items>
+          <Example Title="Default Settings" TypeName="NRichTextLabelUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="GroupBoxes" Name="GroupBoxes">
+        <Items>
+          <Example Title="Group Boxes" TypeName="NGroupBoxUC" />
+          <Example Title="Extended GroupBox" TypeName="NGroupBoxExUC" />
+          <Example Title="Grouper" TypeName="NGrouperUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Combo Boxes" Name="ComboBoxes">
+        <Items>
+          <Example Title="Combo Boxes" TypeName="NComboBoxesUC" />
+          <Example Title="Font Combobox" TypeName="NFontComboBoxUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="List Boxes" Name="ListBoxes">
+        <Items>
+          <Example Title="Standard List Boxes" TypeName="NListBoxUC" />
+          <Example Title="Color List Boxes" TypeName="NColorListBoxUC" />
+          <Example Title="List Box ImageSize" TypeName="NListBoxImageSizeUC" />
+          <Example Title="Font Listbox" TypeName="NFontListBoxUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Miscellaneous" Name="Misc">
+        <Items>
+          <Example Title="Color Pane" TypeName="NColorPaneUC" />
+          <Example Title="Palette Color Pane" TypeName="NPaletteColorPaneUC"/>
+          <Example Title="Color Picker" TypeName="NColorPickerUC" />
+          <Example Title="Color Tools" TypeName="NColorToolsUC" />
+          <Example Title="Line Control" TypeName="NLineControlUC" />
+          <Example Title="Splitter" TypeName="NSplitterUC" />
+          <Example Title="UI Panel" TypeName="NUIPanelUC"/>
+          <Example Title="Hyper Links" TypeName="NHyperLinkSupportUC"/>
+          <Example Title="Rotator" TreePath="Rotator" TypeName="NRotatorUC"/>
+        </Items>
+      </Folder>
+
+      <Folder Title="Panel Bar" Name="PanelBar">
+        <Items>
+          <Example Title="Panel Bar" TypeName="NPanelBarUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Progress Bars" Name="ProgressBars">
+        <Items>
+          <Example Title="Progress Bar" TypeName="NProgressBarUC" />
+          <Example Title="Progress Bar Appearance" TypeName="NProgressBarAppearanceUC" />
+          <Example Title="Waiting Bar" TypeName="NWaitingBarUC" />
+          <Example Title="Waiting Bar Appearance" TypeName="NWaitingBarAppearanceUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Scroll Bars" Name="Scrollbars">
+        <Items>
+          <Example Title="Horizontal Scroll-Bar" TypeName="NHScrollBarUC" />
+          <Example Title="Vertical Scroll-Bar" TypeName="NVScrollBarUC" />
+          <Example Title="Skinned Scroll-Bars" TypeName="NSkinnedScrollBarsUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Track Bar" Name="TrackBar">
+        <Items>
+          <Example Title="Track Bar" TypeName="NTrackBarUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Status Bar" Name="StatusBars">
+        <Items>
+          <Example Title="Status Bar" TypeName="NStatusBarUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Tab Control" Name="TabControl">
+        <Items>
+          <Example Title="Tab Control" TypeName="NTabControlUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Tab Strip" Name="TabStrip">
+        <Items>
+          <Example Title="Tab Strip" TypeName="NTabStripUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Text Boxes" Name="TextBoxes">
+        <Items>
+          <Example Title="Standard Text Boxes" TypeName="NTextBoxUC" />
+          <Example Title="Rich Text Boxes" TypeName="NRichTextBoxUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Translucent Window" Name="TranslucentWindow">
+        <Items>
+          <Example Title="Translucent Window" TypeName="NTranslucentWindowUC" />
+        </Items>
+      </Folder>
+
+      <Folder Title="Tree View" Name="TreeView">
+        <Items>
+          <Example Title="Tree View" TypeName="NTreeViewUC" />
+		</Items>
+		</Folder>
+		
+		<Folder Title="List View" Name="ListView">
+		<Items>
+			<Example Title="List View" TypeName="NListViewUC" />
+		</Items>
+		</Folder>
+		
+		<Folder Title="Up Downs" Name="UpDowns">
+		<Items>
+			<Example Title="Numeric Up Down" TypeName="NNumericUpDownUC" />
+		</Items>
+		</Folder>
+		
+		<Folder Title="Date Time Picker" Name="DateTimePicker">
+		<Items>
+			<Example Title="Date Time Picker" TypeName="NDateTimePickerUC" />
+		</Items>
+		</Folder>
+		
+		<Folder Title="Localization" Name="Localization">
+		<Items>
+			<Example Title="Localization" TypeName="NLocalizationUC" />
+		</Items>
+		</Folder>
+		
+		<Folder Title="Gallery Panel" Name="GalleryPanel">
+		<Items>
+			<Example Title="Basic Features" TypeName="NGalleryPanelUC" />
+			<Example Title="Thumbnail Preview" TypeName="NGalleryPanelThumbnailPreviewUC"/>
+		</Items>
+		</Folder>
+		
+	</Items>
+	</Folder>
+	
+</Items>
+</ExamplesTree>
+

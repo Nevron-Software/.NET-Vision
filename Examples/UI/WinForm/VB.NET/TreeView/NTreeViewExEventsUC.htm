@@ -1,0 +1,7 @@
+<description>
+The example demonstrates the flexibility of the NTreeViewEx event model allowing you to handle, cancel and/or override any existing notification. On the right there are two list-boxes: the top one containing checked items which determine which notifications should be logged and the bottom one containing checked items which determine which notifications should be canceled.
+
+<p>
+All events arrive in the control as a notification from its child items and the object that stores information about the notification is NLightUIItemNotifyData. You may do a switch by the NotifyCode member of the data object and determine what is the upcoming event. Optionally you may mark it as handled or canceled which will prevent the default implementation from being executed.
+</p>
+</description>

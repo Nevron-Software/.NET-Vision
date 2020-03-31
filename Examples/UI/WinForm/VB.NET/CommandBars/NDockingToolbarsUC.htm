@@ -1,0 +1,24 @@
+<description>
+Nevron Command Bars might be encapsulated by a NCommandBarsManager into a powerful docking framework, allowing for advanced visual repositioning and editing of toolbars and commands.
+<p>Creating docking framework programmatically is performed generally in the following major steps:
+<ol type="1">
+	<li>Create a NCommandBarsManager and specify its parent control. The manager internally creates 4 toolbar docks - top, left, bottom and right - and adds them to the Controls collection of the specified parent control.
+	<li>Create the desired Command Contexts (these are common, shareable objects, providing properties for visualizing a command and performing common functionality (execution)). Specify how a command, sharing a context will look like using the NCommandContext.Properties property.
+	<li>Create the desired ranges (ranges are used for populating contexts in the "Customize" dialog of the manager as well as providing information about resetting a toolbar). Arrange the contexts by ranges using each context's RangeID property.
+	<li>Create the toolbars and specify their desired dockstyle (setting DockStyle.None assumes that the toolbar will be floating). Assign each toolbar DefaultRangeID in order the "Reset" command to provide proper functionality. To populate a toolbar with commands simply call its method "Reset()".
+</ol>
+</description>
+<features>
+<ul class="uiList">
+	<li>Unified overall appearance entirely based on pluggable renderers and palettes. Per parent and per manager palette customization.
+	<li>Dock/Undock and redock capabilities of toolbars. Freely repositioned toolbars within parent dock.
+	<li>Command overflow support. When the size of a toolbar becomes less than the total size of its commands exceeding commands are removed and added to the "Hidden Commands" of the pendant command.
+	<li>Add/Remove commands support. By simply checking/unchecking a command from the "Add/Remove Commands" menu you may specify the default visibility of a command.
+	<li>Custom shortcuts. Specify any existing key combination for a valid shorcut. Valid shortcut is one having a modifier(s) key assigned.
+	<li>Advanced visual editor allowing for customizing commands and adding toolbars at run-time.
+	<li>Persistency support. The entire state of the framework might be serialized (binary) to a file and then reloaded.
+</ul>
+</features>
+<remarks>
+For more information about creating docking framework programmatically see the source code of the example.
+</remarks>

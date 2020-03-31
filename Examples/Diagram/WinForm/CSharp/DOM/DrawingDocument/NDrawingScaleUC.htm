@@ -1,0 +1,38 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+	This example demonstrates the ability to configure drawing documents with different drawing scale. In order to explain drawing scale better, following is some background about the drawing logic of the component. 
+	</p>
+	<p>
+	You should know that all content, which resides in the document is measured in the <b>document measurement unit</b>. 
+	The document measurement unit is the unit of measure of its scene and is in its nature a logical measurement unit, 
+	since it may not be the measurement unit used to display the document scene. 
+	</p>
+	<p>
+	The measurement unit in which the content is painted is called <b>world measurement unit</b>. 
+	In case there is no drawing scale the world measurement unit is equal to the document measurement unit. 
+	This is the most common case.
+	</p>
+	<p>
+	Some applications however require to display either too small or too large scenes, which are impossible to 
+	visualize without a drawing scale. You must have a large monitor to display a room of 3x3 meters and there 
+	is no monitor, which can display something measured in kilometers. In these cases you must use a <b>drawing scale</b>.
+	</p>
+	<p>
+	Drawing scale is a user defined ratio between the <b>document measurement unit</b> and the <b>world measurement unit</b>. 
+	For example 1 meter = 1 mm is a commonly used Metric drawing scale. The ratio can however not be 1:1 - you can for example specify:
+	1 meter = 2 mm.
+	</p>
+	<p>
+	Drawing scale helps you work with the document content as if it is measured with the
+	real world measurement unit that you want to use. For example: a room can be defined as a 
+	rectangle with width 3 and height 3 meters in document measurement units. If the 1 meter = 2 mm drawing scale 
+	is applied, on the sceen it will be represented by a rectangle with width 6 mm and height 6 mm.
+	</p>
+	<p>
+	To explore the drawing scale capabilities of the component use the <b>Predefined Scale Systems Combo</b> to select a drawing scale.
+	This will load a schematic scene, which is appropriate for the selected drawing scale. 
+	The example will display the document bounds (in document measurement unit) and 
+	in case an object is selected it will also display the selected object bounds (in document measurement unit).
+	</p>
+</description>

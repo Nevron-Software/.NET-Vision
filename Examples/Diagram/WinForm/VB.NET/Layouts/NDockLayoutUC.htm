@@ -1,0 +1,42 @@
+<!-- Recognized tags -->
+<description>
+	<p>     
+        The dock layout is a space eating cells layout, which places vertices at per-vertex specified docking areas of the currently available layout area.
+	</p>
+	<p>
+	    The most important properties of this layout are:
+		<ul>
+		    <li>
+		        <b>HorizontalContentPlacement and VerticalContentPlacement</b> - determine the default placement
+		            of the cell content in regards to the X or the Y dimension of the cell bounds.
+		    </li>
+		    <li>
+		        <b>HorizontalSpacing and VerticalSpacing</b> - determine the minimal spacing between 2 cells in
+		            horizontal and vertical direction respectively.
+		    </li>
+			<li>
+			    <b>FillMode and FitMode</b> - when the size of the content is smaller than the container size 
+			    the FillMode property is taken into account. If the content size is greater than the container,
+			    then the layout takes the value of the FitMode into account. Possible values are:
+			    <ul>
+			        <li>None - the dock layout does not attemp to resolve the available/insufficient area problem</li>
+			        <li>Equal - the dock inflates/deflates the size of each object with equal amount of space in order
+			            to resolve the available/insufficient area problem</li>
+			        <li>CenterFirst - the dock inflates/deflates the size of the center object in the dock, then the size of the
+			            pair formed by the previous and the next one and so on until the available/insufficient area
+			            problem is ressolved</li>
+			        <li>SidesFirst - the dock inflates/deflates the size of the pair formed by the first and the last
+			            object in the dock, then the size of the pair formed by the next and the previous one and so
+			            on until the available/insufficient area problem is ressolved</li>
+			        <li>ForwardOrder - the bodies are resized in the order they were added</li>
+			        <li>ReverseOrder - the bodies are resized in reverse order to the order they were added</li>
+			    </ul>
+			    In all cases the minimal and maximal size constraints of each shape are not broken, so it is possible
+			    the dock cannot resolve the available/insufficient area problem completely.
+			</li>
+		</ul>
+	</p>
+	<p>
+		To experiment with the layout just change the properties of the layout in the property grid and click the <b>Layout</b> button.
+	</p>
+</description>

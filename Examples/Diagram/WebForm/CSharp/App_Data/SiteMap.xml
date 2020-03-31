@@ -1,0 +1,229 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Links">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Id" msdata:AutoIncrement="true" type="xs:int" />
+                <xs:element name="FromPageId" type="xs:int" minOccurs="0" />
+                <xs:element name="ToPageId" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Pages">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Id" msdata:AutoIncrement="true" type="xs:int" />
+                <xs:element name="ParentId" type="xs:int" minOccurs="0" />
+                <xs:element name="Title" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="URL" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="536870910" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Links" />
+        <xs:field xpath="Id" />
+      </xs:unique>
+      <xs:unique name="Pages_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Pages" />
+        <xs:field xpath="Id" />
+      </xs:unique>
+    </xs:element>
+    <xs:annotation>
+      <xs:appinfo>
+        <msdata:Relationship name="Relation_Pages_Id_Pages_ParentId" msdata:parent="Pages" msdata:child="Pages" msdata:parentkey="Id" msdata:childkey="ParentId" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:schema>
+  <Links>
+    <Id>1</Id>
+    <FromPageId>1</FromPageId>
+    <ToPageId>2</ToPageId>
+  </Links>
+  <Links>
+    <Id>2</Id>
+    <FromPageId>1</FromPageId>
+    <ToPageId>3</ToPageId>
+  </Links>
+  <Links>
+    <Id>3</Id>
+    <FromPageId>1</FromPageId>
+    <ToPageId>4</ToPageId>
+  </Links>
+  <Links>
+    <Id>4</Id>
+    <FromPageId>1</FromPageId>
+    <ToPageId>12</ToPageId>
+  </Links>
+  <Links>
+    <Id>5</Id>
+    <FromPageId>12</FromPageId>
+    <ToPageId>13</ToPageId>
+  </Links>
+  <Links>
+    <Id>6</Id>
+    <FromPageId>12</FromPageId>
+    <ToPageId>14</ToPageId>
+  </Links>
+  <Links>
+    <Id>7</Id>
+    <FromPageId>12</FromPageId>
+    <ToPageId>17</ToPageId>
+  </Links>
+  <Links>
+    <Id>8</Id>
+    <FromPageId>2</FromPageId>
+    <ToPageId>6</ToPageId>
+  </Links>
+  <Links>
+    <Id>9</Id>
+    <FromPageId>2</FromPageId>
+    <ToPageId>7</ToPageId>
+  </Links>
+  <Links>
+    <Id>10</Id>
+    <FromPageId>2</FromPageId>
+    <ToPageId>8</ToPageId>
+  </Links>
+  <Links>
+    <Id>11</Id>
+    <FromPageId>6</FromPageId>
+    <ToPageId>9</ToPageId>
+  </Links>
+  <Links>
+    <Id>12</Id>
+    <FromPageId>7</FromPageId>
+    <ToPageId>10</ToPageId>
+  </Links>
+  <Links>
+    <Id>13</Id>
+    <FromPageId>6</FromPageId>
+    <ToPageId>13</ToPageId>
+  </Links>
+  <Links>
+    <Id>14</Id>
+    <FromPageId>7</FromPageId>
+    <ToPageId>14</ToPageId>
+  </Links>
+  <Links>
+    <Id>15</Id>
+    <FromPageId>8</FromPageId>
+    <ToPageId>17</ToPageId>
+  </Links>
+  <Links>
+    <Id>16</Id>
+    <FromPageId>4</FromPageId>
+    <ToPageId>15</ToPageId>
+  </Links>
+  <Links>
+    <Id>17</Id>
+    <FromPageId>4</FromPageId>
+    <ToPageId>16</ToPageId>
+  </Links>
+  <Links>
+    <Id>18</Id>
+    <FromPageId>9</FromPageId>
+    <ToPageId>13</ToPageId>
+  </Links>
+  <Links>
+    <Id>19</Id>
+    <FromPageId>10</FromPageId>
+    <ToPageId>14</ToPageId>
+  </Links>
+  <Pages>
+    <Id>1</Id>
+    <ParentId>0</ParentId>
+    <Title>Home</Title>
+    <URL>#http://www.nevron.com/Nevron.Home.aspx#</URL>
+  </Pages>
+  <Pages>
+    <Id>2</Id>
+    <ParentId>1</ParentId>
+    <Title>Products</Title>
+    <URL>#http://www.nevron.com/Products.Overview.aspx#</URL>
+  </Pages>
+  <Pages>
+    <Id>3</Id>
+    <ParentId>1</ParentId>
+    <Title>Downloads</Title>
+    <URL>#http://www.nevron.com/Downloads.Download.aspx#</URL>
+  </Pages>
+  <Pages>
+    <Id>4</Id>
+    <ParentId>1</ParentId>
+    <Title>Company</Title>
+    <URL>#http://www.nevron.com/Nevron.Company.AboutUs.aspx#</URL>
+  </Pages>
+  <Pages>
+    <Id>6</Id>
+    <ParentId>2</ParentId>
+    <Title>Nevron Chart for .NET</Title>
+  </Pages>
+  <Pages>
+    <Id>7</Id>
+    <ParentId>2</ParentId>
+    <Title>Nevron Diagram for .NET</Title>
+  </Pages>
+  <Pages>
+    <Id>8</Id>
+    <ParentId>2</ParentId>
+    <Title>Nevron UI for .NET</Title>
+  </Pages>
+  <Pages>
+    <Id>9</Id>
+    <ParentId>6</ParentId>
+    <Title>Online Demo - Chart</Title>
+  </Pages>
+  <Pages>
+    <Id>10</Id>
+    <ParentId>7</ParentId>
+    <Title>Online Demo - Diagram</Title>
+  </Pages>
+  <Pages>
+    <Id>12</Id>
+    <ParentId>1</ParentId>
+    <Title>Online Store</Title>
+  </Pages>
+  <Pages>
+    <Id>13</Id>
+    <ParentId>12</ParentId>
+    <Title>Buy Nevron Chart for .NET</Title>
+  </Pages>
+  <Pages>
+    <Id>14</Id>
+    <ParentId>12</ParentId>
+    <Title>Buy Nevron Diagram for .NET</Title>
+  </Pages>
+  <Pages>
+    <Id>15</Id>
+    <ParentId>4</ParentId>
+    <Title>Success Stories</Title>
+  </Pages>
+  <Pages>
+    <Id>16</Id>
+    <ParentId>4</ParentId>
+    <Title>Contacts</Title>
+  </Pages>
+  <Pages>
+    <Id>17</Id>
+    <ParentId>12</ParentId>
+    <Title>Buy Nevron UI for .NET</Title>
+  </Pages>
+</NewDataSet>

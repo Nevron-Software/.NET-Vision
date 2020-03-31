@@ -1,0 +1,34 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+		This example demonstrates the built in support for image export, 
+		which is implemented by the NImageExporter extension. 
+	</p>
+	<p>
+		When exporting a document, which is defined in some absolute measurement units (i.e. millimiter, inch etc.), 
+		the image exporter provides you with the ability to specify a custom resolution, which must be used for the image export.
+		This is particularly useful if for example you want to general a printer ready bitmap. In this example you can change the 
+		document measurement unit from the <b>Document measurement unit combo</b>. 
+	</p>
+	<p>
+		The image exporter also allows you to export only a portion of the document to image. To test this 
+		functionality do the following:
+		<ol>
+			<li>
+				Select several shapes from the diagram
+			</li>
+			<li>
+				Click the Show Image Export Dialog
+			</li>
+			<li>
+				From the load known bound combo select the Selection Bounds option. 
+				This will cause the image exporter to generate an image for the bounds of the selected objects only.
+			</li>
+		</ol>
+	</p>
+	<p>
+		Related to image export is the Export permission, which specifies whether the element can be exported (to image, SVG etc.)
+		or not. In this example the red shape in the top left corner is protected from export and will 
+		not be present in the generated image. It will of course not be visible in the image export preview also.
+	</p>
+</description>

@@ -1,0 +1,395 @@
+﻿/* General Styles */
+html, body, form
+{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: white;
+}
+
+#rootDiv
+{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: none;
+    vertical-align: top;
+}
+
+table, tbody, tr, td
+{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+/* Tree view */
+.DefaultNode
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #4D4D4D;
+    padding: 4px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.HoveredNode
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #EA530E;
+    padding: 4px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.TopBannerRightCell
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    padding: 0px;
+    padding-bottom: 21px;
+    padding-top: 6px;
+    padding-left: 18px;
+    padding-right: 19px;
+    margin: 0px;
+    text-align: right;
+}
+
+.headerResource
+{
+    padding-bottom: 5px;
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #EA530E;
+}
+
+/* Navigation pane */
+.BaseTable
+{
+    width: 100%;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+.SectionHeader
+{
+    color: #2F2F2F;
+    padding: 6px;
+    background-color: #ECECEC;
+    border-bottom: 2px solid #EA530E;
+}
+
+#NavigationPane_MultiViewHolder
+{
+    width: 100%;
+    padding: 14px;
+    display: block;
+    overflow: auto;
+}
+
+/* Welcome page */
+
+/* Source code highlighter styles */
+.SourceCodeLabel
+{
+    white-space: nowrap;
+}
+
+/* Search control */
+.SearchControlTable
+{
+    width: 90%;
+}
+
+.ResultCell
+{
+    vertical-align: top;
+}
+
+.ResultsListCell
+{
+    /*border: solid 1px red;*/
+    width: 100%;
+    padding: 3px;
+}
+
+.ResultsTable
+{
+    width: 100%;
+    font: 11px Tahoma;
+}
+
+.ResultLink:link
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.ResultLink:visited
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #ec7135;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.ResultLink:hover
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #FFE0B3;
+    color: black;
+    padding: 3px;
+    text-decoration: none;
+}
+
+/* Common Controls */
+.ControlHostCell
+{
+    padding: 2px;
+}
+
+.TextBox
+{
+    width: 95%;
+    font: 11px Tahoma;
+    border: solid 1px #707070;
+}
+
+.ComboBox
+{
+    width: 95%;
+    font: 11px Tahoma;
+    border: solid 1px #707070;
+}
+
+.CheckBox
+{
+    font: 11px Tahoma;
+    white-space: nowrap;
+}
+
+.ListBox
+{
+    width: 95%;
+    font: 11px Tahoma;
+}
+
+.Button
+{
+    font: 11px Tahoma;
+    padding: 2px;
+    border: solid 1px #707070;
+    cursor: pointer;
+}
+
+.ButtonHot
+{
+    font: 11px Tahoma;
+    padding: 2px;
+    border: solid 1px #707070;
+    cursor: pointer;
+}
+
+/* Example layout */
+.Description
+{
+    font-family: Tahoma;
+    font-size: 10pt;
+    background-color: #f4f2f4;
+    border: none;
+    border-bottom: solid 18px #dcdadc;
+    padding: 13px;
+    margin: 0px;
+    margin-top: 3px;
+    margin-right: 3px;
+    text-align: justify;
+    vertical-align: top;
+}
+
+.ControlsPanel
+{
+    font-family: Tahoma;
+    font-size: 10pt;
+    background-color: #f4f2f4;
+    border: none;
+    border-bottom: solid 18px #dcdadc;
+    padding: 13px;
+    margin: 0px;
+    margin-left: 3px;
+    vertical-align: top;
+}
+
+.ImageCell
+{
+    border: none;
+    padding: 13px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/*
+*********************
+**	Session tab control styles
+*********************
+*/
+.TabStrip
+{
+    cursor: default;
+    list-style-type: none;
+    font-family: Tahoma;
+    font-size: 10pt;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    border-bottom: 1px solid #9B9B9B;
+    white-space: nowrap;
+    height: 37px;
+    width: 100%;
+    background-color: #F4F2F4;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.TabCommon
+{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin: 0px;
+    border: 0px;
+    color: #4D4D4D;
+    height: 20px;
+    font-size: 13pt;
+}
+
+.TabStateActive
+{
+    background-color: #FFFFFF;
+    border-left: solid 1px #9B9B9B;
+    border-right: solid 1px #9B9B9B;
+    border-top: solid 3px #EA530E;
+    border-bottom: solid 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 9px;
+}
+
+.TabStateDefault
+{
+    background-color: #F4F2F4;
+    border: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.TabStateHover:hover
+{
+    background-color: #FFFFFF;
+}
+
+/* Welcome Page */
+.TextMain
+{
+    color: #4D4D4D;
+    font-size: 20pt;
+}
+
+.TextSubMainSmall
+{
+    color: #4D4D4D;
+    font-size: 13pt;
+}
+
+.TextSubMain
+{
+    color: #4D4D4D;
+    font-size: 15pt;
+}
+
+.TextFeaturedExample
+{
+    font-family: Tahoma;
+    font-size: 13px;
+    color: #4D4D4D;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/*	Footer styles */
+.footerLink
+{
+    font-family: Tahoma;
+    font-size: 8pt;
+    font-weight: normal;
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+a.footerLink:link
+{
+    font-family: Tahoma;
+    font-size: 8pt;
+    font-weight: normal;
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+a.footerLink:visited
+{
+    font-family: Tahoma;
+    font-size: 8pt;
+    font-weight: normal;
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+a.footerLink:active
+{
+    font-family: Tahoma;
+    font-size: 8pt;
+    font-weight: normal;
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+a.footerLink:hover
+{
+    font-family: Tahoma;
+    font-size: 8pt;
+    font-weight: normal;
+    color: #EA530E;
+    font-weight: normal;
+}

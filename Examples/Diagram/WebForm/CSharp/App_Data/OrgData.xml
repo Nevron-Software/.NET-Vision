@@ -1,0 +1,153 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Employees">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" />
+                <xs:element name="ParentID" type="xs:int" minOccurs="0" />
+                <xs:element name="Name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Position" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Salary" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Birthdate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Biography" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Photo" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Employees" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <Employees>
+    <ID>1</ID>
+    <ParentID>0</ParentID>
+    <Name>William Smith</Name>
+    <Position>President</Position>
+    <Salary>80000</Salary>
+    <Birthdate>1972-01-15T00:00:00+02:00</Birthdate>
+    <Biography>William Smith graduated from NYC with a BSC degree in 1990. He founded the company in 1998. Mr. Smith business skills quickly made the company profitable. He speaks fluently French and German.</Biography>
+    <Photo>man2.jpg</Photo>
+  </Employees>
+  <Employees>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Name>Charlie Good</Name>
+    <Position>VP Marketing</Position>
+    <Salary>50000</Salary>
+    <Birthdate>1977-03-19T00:00:00+02:00</Birthdate>
+    <Biography>Charlie Good graduated from Washington university with a BSC degree in 1995. He joined the company in 2001 and his skills in marketing were quickly recognized.</Biography>
+    <Photo>man1.jpg</Photo>
+  </Employees>
+  <Employees>
+    <ID>3</ID>
+    <ParentID>1</ParentID>
+    <Name>Kevin Tylor</Name>
+    <Position>VP Sales</Position>
+    <Salary>60000</Salary>
+    <Birthdate>1970-09-06T00:00:00+03:00</Birthdate>
+    <Biography>Kevin Taylor graduated from Colorado university with a BSC degree in 1990. He joined the company in 1999. Kevin likes to ski and surf when he's not working overtime.</Biography>
+    <Photo>man4.jpg</Photo>
+  </Employees>
+  <Employees>
+    <ID>4</ID>
+    <ParentID>1</ParentID>
+    <Name>Patricia Holgate</Name>
+    <Position>VP Production</Position>
+    <Salary>55000</Salary>
+    <Birthdate>1980-08-16T00:00:00+03:00</Birthdate>
+    <Biography>Patricia Holgate has a BA degree from St. Lawrence College. Patricia has in depth knowledge in production. She loves music and sports.</Biography>
+    <Photo>woman3.jpg</Photo>
+  </Employees>
+  <Employees>
+    <ID>5</ID>
+    <ParentID>2</ParentID>
+    <Name>Peter Marshall</Name>
+    <Position>Manager</Position>
+    <Salary>40000</Salary>
+    <Birthdate>1978-11-21T00:00:00+02:00</Birthdate>
+    <Biography>Peter Marchall has a BS degree in chemistry from Boston College (1988).</Biography>
+    <Photo>man3.jpg</Photo>
+  </Employees>
+  <Employees>
+    <ID>6</ID>
+    <ParentID>2</ParentID>
+    <Name>Tracy Chapmann</Name>
+    <Position>Manager</Position>
+    <Salary>45000</Salary>
+    <Birthdate>1981-10-30T00:00:00+02:00</Birthdate>
+    <Biography>Tracy Chapmann is a graduate of Sussex University (MA, economics). She has also taken the courses 'Multi-Cultural Selling' and 'Time Management for the Sales Professional'. She is fluent in Japanese.</Biography>
+    <Photo>woman1.jpg</Photo>
+  </Employees>
+  <Employees>
+    <ID>7</ID>
+    <ParentID>3</ParentID>
+    <Name>Jane Buckley</Name>
+    <Position>Manager</Position>
+    <Salary>40000</Salary>
+    <Birthdate>1979-04-11T00:00:00+03:00</Birthdate>
+    <Biography>Jane Buckley has a degree in international marketing from the University of Colorado. She joined the company as a sales representative and was promoted to sales manager.</Biography>
+    <Photo>woman2.jpg</Photo>
+  </Employees>
+  <Employees>
+    <ID>8</ID>
+    <ParentID>3</ParentID>
+    <Name>Dave Zak</Name>
+    <Position>Manager</Position>
+    <Salary>45000</Salary>
+    <Birthdate>1976-03-12T00:00:00+02:00</Birthdate>
+    <Biography>Dave Zak joined the company after completing his military service in 1997. He has also taken the courses 'Multi-Cultural Selling' and 'Time Management for the Sales Professional'.</Biography>
+    <Photo>man5.jpg</Photo>
+  </Employees>
+  <Employees>
+    <ID>9</ID>
+    <ParentID>4</ParentID>
+    <Name>Stephen Maule</Name>
+    <Position>Manager</Position>
+    <Salary>40000</Salary>
+    <Birthdate>1973-05-01T00:00:00+03:00</Birthdate>
+    <Biography>Stephen Maule has a BA degree in Marketing from St. Christopher College. He is fluent in French and German.</Biography>
+    <Photo>man7.jpg</Photo>
+  </Employees>
+  <Employees>
+    <ID>10</ID>
+    <ParentID>4</ParentID>
+    <Name>Steve Tucker</Name>
+    <Position>Manager</Position>
+    <Salary>40000</Salary>
+    <Birthdate>1977-07-14T00:00:00+03:00</Birthdate>
+    <Biography>Steve Tucker has a BA degree in Economics from the university of London. He is fluent in French and German.</Biography>
+    <Photo>man6.jpg</Photo>
+  </Employees>
+</NewDataSet>

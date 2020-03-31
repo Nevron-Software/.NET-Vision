@@ -1,0 +1,66 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+		This example demonstrates the different modes in which shapes can be resized in 
+		groups.
+	</p>
+	<p>
+		When shapes reside in groups you can control the mode in which they are resized 
+		when the group is resized. This is specified by the ResizeInAggregate property. 
+		If the value of this property is set to UseAggregateSettings the shape will be 
+		resized in accordance with the group ResizeAggregatedModels property.
+	</p>
+	<p>
+		The resize modes are a function of two parameters - the type of scaling, which 
+		must be applied to the shape and whether it must be repositioned after scaling.
+	</p>
+	<p>
+		<b>Scale type</b> refers to the way in which the shape must be scaled. In 
+		general there are four scale types:
+		<ul>
+			<li>
+				<b>Affine scale</b>
+			- in affine scaling the group will alter the shape local transformation (i.e. 
+			the shape will be transformed). Affine scaling can be applied in both the X and 
+			Y group resize direction. If the shape is rotated this can skew the shape in 
+			the scale direction.
+			<li>
+				<b>Cartesian scale</b>
+			- in cartesian scaling the group will proportionally scale the shape in its X 
+			and Y resize direction. (i.e. the shape will preserve its orthogonality).
+			<li>
+				<b>Scale 1D</b>
+			- in 1D scaling the group will scale only the start and end points of the 
+			shape.
+			<li>
+				<b>No scale</b> - the shape will not be scaled.
+			</li>
+		</ul>
+	<P></P>
+	<p>
+		<b>Reposition</b> refers to the abilitiy to specify whether the shape pin point 
+		must preserve its location relative to the resized group model bounds (i.e. 
+		whether the shape must be "pinned" to its relative location in group).
+	</p>
+	<p>
+		Examples:
+		<p>
+			<b>ResizeInAggregate.CartesianScaleAndReposition</b> means apply cartesian 
+			scale to the shape and preserve its pin point relative to the group bounds.
+		</p>
+		<p>
+			<b>ResizeInAggregate.AffineScaleXRepositionY</b> means apply affine scale to 
+			the shape in the X direction and preserve its pin point Y position relative to 
+			the group bounds.
+		</p>
+		<p>
+			<b>ResizeInAggregate.RepositionOnly</b> means apply do not scale the the shape, 
+			but preserve its pin point relative to the group bounds.
+		</p>
+	</p>
+	<p>
+		To exlore the resize in aggregate behavior just resize any of the four groups in this example. 
+		For the better demonstration of reposition the pin point of most of the shapes is set to the bottom 
+		right corner of the group to which they belong.
+	</p>
+</description>

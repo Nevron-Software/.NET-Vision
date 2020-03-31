@@ -1,0 +1,12 @@
+<description>
+Since VS 2005 update Nevron Docking Panels support autohiding panels. Any panel might be pinned to any of the root container's edges using either the pin button or programmatically. When a panel is pinned it will not be displayed until the user hovers or selects its correspinding tab in the autohiding tab strip. By default the framework will automatically select autohiding edge. You may however specify a preffered edge where a panel to be autohidden.
+<p>
+The example creates three panels, one hosting a property grid with the panel's TabInfo object selected. Change the AutoHideLocation property to tell the framework what edge to use.
+</p>
+</description>
+<remarks>
+When selecting automatic autohiding edge the following logic is used:
+<p>
+The Panel's parent zone orientation is checked - if it is horizontal the panel will be pinned to either left or right edge; if it is vertical it will be pinned to either top or bottom edge.
+</p>
+</remarks>

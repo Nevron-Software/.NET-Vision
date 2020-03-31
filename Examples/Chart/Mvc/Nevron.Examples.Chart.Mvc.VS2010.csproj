@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1495FAFF-7192-4750-9F34-E1BC99D70237}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nevron.Examples.Chart.Mvc</RootNamespace>
+    <AssemblyName>Nevron.Examples.Chart.Mvc</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Nevron.Chart">
+      <Name>Nevron.Chart</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Chart.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.Chart.ThinWeb">
+      <Name>Nevron.Chart.ThinWeb</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Chart.ThinWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.Examples.Framework.WebForm">
+      <Name>Nevron.Examples.Framework.WebForm</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Examples.Framework.WebForm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.GraphicsGL">
+      <Name>Nevron.GraphicsGL</Name>
+      <HintPath>..\..\..\..\bin\Nevron.GraphicsGL.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.Presentation">
+      <Name>Nevron.Presentation</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.System">
+      <Name>Nevron.System</Name>
+      <HintPath>..\..\..\..\bin\Nevron.System.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.ThinWeb">
+      <Name>Nevron.ThinWeb</Name>
+      <HintPath>..\..\..\..\bin\Nevron.ThinWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\AssemblyInfo.cs" />
+    <Compile Include="Controllers\NIndicatorDragToolExampleController.cs" />
+    <Compile Include="Controllers\NTabController.cs" />
+    <Compile Include="Controllers\NToolbarConfigurationExampleController.cs" />
+    <Compile Include="Controllers\NAutoUpdateExampleController.cs" />
+    <Compile Include="Controllers\NImageMapToolsExampleController.cs" />
+    <Compile Include="Controllers\NServerSideEventsToolExampleController.cs" />
+    <Compile Include="Controllers\NClientSideEventsToolExampleController.cs" />
+    <Compile Include="Controllers\NTrackballToolExampleController.cs" />
+    <Compile Include="Controllers\NDataPanToolExampleController.cs" />
+    <Compile Include="Controllers\NDataZoomToolExampleController.cs" />
+    <Compile Include="Controllers\NGeneralExampleController.cs" />
+    <Compile Include="Controllers\NChartExampleController.cs" />
+    <Compile Include="Controllers\ExamplesController.cs" />
+    <Compile Include="Controllers\NChartController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\NThinControlResult.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frames\Footer.aspx.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frames\NNavigationFrame.aspx.cs">
+      <DependentUpon>NNavigationFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frames\TopBanner.aspx.cs">
+      <DependentUpon>TopBanner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Frames\Footer.aspx" />
+    <Content Include="Frames\NNavigationFrame.aspx" />
+    <Content Include="Frames\TopBanner.aspx" />
+    <Content Include="Frames\white.html" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\BookClosed.ico" />
+    <Content Include="Images\BookOpen.ico" />
+    <Content Include="Images\Bullet.gif" />
+    <Content Include="Images\ConceptCar2.png" />
+    <Content Include="Images\CustomCommandbarImageList.bmp" />
+    <Content Include="Images\CustomTools\John_Rateliff_the_history_of_the_hobbit.jpg" />
+    <Content Include="Images\CustomTools\John_Rateliff_the_history_of_the_hobbit1.jpg" />
+    <Content Include="Images\CustomTools\robert_foster_the_complete_guide_to_middle_earth.jpg" />
+    <Content Include="Images\CustomTools\robert_foster_the_complete_guide_to_middle_earth1.jpg" />
+    <Content Include="Images\CustomTools\tokien_box_set.jpg" />
+    <Content Include="Images\CustomTools\tokien_box_set1.jpg" />
+    <Content Include="Images\CustomTools\tokien_children_of_hurin.jpg" />
+    <Content Include="Images\CustomTools\tokien_children_of_hurin1.jpg" />
+    <Content Include="Images\CustomTools\tokien_Sir_Gawain_and_the_Green_Knight.jpg" />
+    <Content Include="Images\CustomTools\tokien_Sir_Gawain_and_the_Green_Knight1.jpg" />
+    <Content Include="Images\CustomTools\tokien_the_hobbit.jpg" />
+    <Content Include="Images\CustomTools\tokien_the_hobbit1.jpg" />
+    <Content Include="Images\CustomTools\tokien_the_tolkien_reader.jpg" />
+    <Content Include="Images\CustomTools\tokien_the_tolkien_reader1.jpg" />
+    <Content Include="Images\CustomTools\tokien_unfinished_tails.jpg" />
+    <Content Include="Images\CustomTools\tokien_unfinished_tails1.jpg" />
+    <Content Include="Images\CustomTools\tolkien_roverandom.jpg" />
+    <Content Include="Images\CustomTools\tolkien_roverandom1.jpg" />
+    <Content Include="Images\CustomTools\tolkien_The_Annotated_Hobbit.jpg" />
+    <Content Include="Images\CustomTools\tolkien_The_Annotated_Hobbit1.jpg" />
+    <Content Include="Images\CustomTools\tolkien_the_lord_of_the_rings.jpg" />
+    <Content Include="Images\CustomTools\tolkien_the_lord_of_the_rings1.jpg" />
+    <Content Include="Images\CustomTools\tolkien_The_Lost_Road.jpg" />
+    <Content Include="Images\CustomTools\tolkien_The_Lost_Road1.jpg" />
+    <Content Include="Images\diag-small.png" />
+    <Content Include="Images\Diagram.ico" />
+    <Content Include="Images\DiagramLogo.png" />
+    <Content Include="Images\Diagram_Splash.png" />
+    <Content Include="Images\EmptyVehicle.png" />
+    <Content Include="Images\flags.png" />
+    <Content Include="Images\FlowChartBuilder\ConnectShapesIcon.BMP" />
+    <Content Include="Images\FlowChartBuilder\DeleteShapeIcon.BMP" />
+    <Content Include="Images\FlowChartBuilder\EditTextIcon.BMP" />
+    <Content Include="Images\FlowChartBuilder\FillBucketIcon.png" />
+    <Content Include="Images\FlowChartBuilder\MoveShapeIcon.BMP" />
+    <Content Include="Images\FlowChartBuilder\NewShapeIcon.BMP" />
+    <Content Include="Images\FlowChartBuilder\RedoIcon.BMP" />
+    <Content Include="Images\FlowChartBuilder\UndoIcon.BMP" />
+    <Content Include="Images\Footer\footerBG1.gif" />
+    <Content Include="Images\Footer\footerBG2.gif" />
+    <Content Include="Images\Footer\footerBG3.gif" />
+    <Content Include="Images\GIS\mappantool.GIF" />
+    <Content Include="Images\Item.ico" />
+    <Content Include="Images\man1.jpg" />
+    <Content Include="Images\man2.jpg" />
+    <Content Include="Images\man3.jpg" />
+    <Content Include="Images\man4.jpg" />
+    <Content Include="Images\man5.jpg" />
+    <Content Include="Images\man6.jpg" />
+    <Content Include="Images\man7.jpg" />
+    <Content Include="Images\NavigationPane\Contents.gif" />
+    <Content Include="Images\NavigationPane\Search.gif" />
+    <Content Include="Images\OutliningIndicators\ContractedBlock.gif" />
+    <Content Include="Images\OutliningIndicators\ContractedSubBlock.gif" />
+    <Content Include="Images\OutliningIndicators\ExpandedBlockEnd.gif" />
+    <Content Include="Images\OutliningIndicators\ExpandedBlockStart.gif" />
+    <Content Include="Images\OutliningIndicators\ExpandedSubBlockEnd.gif" />
+    <Content Include="Images\OutliningIndicators\ExpandedSubBlockStart.gif" />
+    <Content Include="Images\OutliningIndicators\InBlock.gif" />
+    <Content Include="Images\OutliningIndicators\None.gif" />
+    <Content Include="Images\space.GIF" />
+    <Content Include="Images\TabStrip\lineAboveContent2.gif" />
+    <Content Include="Images\TabStrip\tabs-bg-a.gif" />
+    <Content Include="Images\TabStrip\tabs-bg-i.gif" />
+    <Content Include="Images\tabs\Tab-Background.gif" />
+    <Content Include="Images\tabs\Tab-Body-BGActive.gif" />
+    <Content Include="Images\tabs\Tab-Body-BGInactive.gif" />
+    <Content Include="Images\tabs\Tab-Body-EndLeftActive.gif" />
+    <Content Include="Images\tabs\Tab-Body-EndLeftInactive.gif" />
+    <Content Include="Images\tabs\Tab-Body-EndRightActive.gif" />
+    <Content Include="Images\tabs\Tab-Body-EndRightInactive.gif" />
+    <Content Include="Images\tabs\Tab-Body-LeftisActive.gif" />
+    <Content Include="Images\tabs\Tab-Body-NoneActive.gif" />
+    <Content Include="Images\tabs\Tab-Body-RightisActive.gif" />
+    <Content Include="Images\TreeView\bookClosed.gif" />
+    <Content Include="Images\TreeView\bookOpened.gif" />
+    <Content Include="Images\TreeView\Book_Closed.png" />
+    <Content Include="Images\TreeView\Book_Opened.png" />
+    <Content Include="Images\TreeView\ExampleNode.png" />
+    <Content Include="Images\TreeView\ExampleNodeBlank.png" />
+    <Content Include="Images\TreeView\ExampleNodeSelected.png" />
+    <Content Include="Images\TreeView\ExampleNode_Hot.png" />
+    <Content Include="Images\WebFormBannerSmall.png" />
+    <Content Include="Images\WelcomePage\darkBullet.png" />
+    <Content Include="Images\WelcomePage\orangeBar.png" />
+    <Content Include="Images\WelcomePage\orangeBullet.png" />
+    <Content Include="Images\WelcomePage\splashImage.png" />
+    <Content Include="Images\WelcomePage\th01.png" />
+    <Content Include="Images\WelcomePage\th02.png" />
+    <Content Include="Images\WelcomePage\th03.png" />
+    <Content Include="Images\WelcomePage\th04.png" />
+    <Content Include="Images\WelcomePage\th05.png" />
+    <Content Include="Images\white1px.gif" />
+    <Content Include="Images\woman1.jpg" />
+    <Content Include="Images\woman2.jpg" />
+    <Content Include="Images\woman3.jpg" />
+    <Content Include="Include\Scripts.js" />
+    <Content Include="Include\Styles.css" />
+    <Content Include="Scripts\Scripts.js" />
+    <Content Include="Themes\LunaBlue\Images\NavigationPane\ButtonBackgroundDefault.PNG" />
+    <Content Include="Themes\LunaBlue\Images\NavigationPane\ButtonBackgroundHovered.PNG" />
+    <Content Include="Themes\LunaBlue\Images\NavigationPane\ButtonBackgroundSelected.PNG" />
+    <Content Include="Themes\LunaBlue\Images\NavigationPane\CaptionBackground.PNG" />
+    <Content Include="Themes\LunaBlue\Images\TabControl\Example.PNG" />
+    <Content Include="Themes\LunaBlue\Images\TabControl\ExampleSelected.PNG" />
+    <Content Include="Themes\LunaBlue\Images\TabControl\PageSourceCode.PNG" />
+    <Content Include="Themes\LunaBlue\Images\TabControl\PageSourceCodeSelected.PNG" />
+    <Content Include="Themes\LunaBlue\Images\TabControl\SourceCode.PNG" />
+    <Content Include="Themes\LunaBlue\Images\TabControl\SourceCodeSelected.PNG" />
+    <Content Include="Themes\LunaBlue\Images\TopBanner.PNG" />
+    <Content Include="Themes\LunaBlue\Styles.css" />
+    <Content Include="Themes\OrangeGrey\Images\Chart-single.jpg" />
+    <Content Include="Themes\OrangeGrey\Images\Footer\footerBG3.gif" />
+    <Content Include="Themes\OrangeGrey\Images\Footer\smallHorizontalDarkGreyLine.gif" />
+    <Content Include="Themes\OrangeGrey\Images\Footer\space.GIF" />
+    <Content Include="Themes\OrangeGrey\Images\logo.gif" />
+    <Content Include="Themes\OrangeGrey\Images\NavigationPane\ButtonBackgroundDefault.PNG" />
+    <Content Include="Themes\OrangeGrey\Images\NavigationPane\ButtonBackgroundHovered.PNG" />
+    <Content Include="Themes\OrangeGrey\Images\NavigationPane\ButtonBackgroundSelected.PNG" />
+    <Content Include="Themes\OrangeGrey\Images\NavigationPane\CaptionBackground.PNG" />
+    <Content Include="Themes\OrangeGrey\Images\TabControl2\lineAboveContent1.GIF" />
+    <Content Include="Themes\OrangeGrey\Images\TabControl2\lineAboveContentReverse.gif" />
+    <Content Include="Themes\OrangeGrey\Images\TabControl2\tabs-01.gif" />
+    <Content Include="Themes\OrangeGrey\Images\TabControl2\tabs-02.gif" />
+    <Content Include="Themes\OrangeGrey\Images\TabControl2\tabs-03.gif" />
+    <Content Include="Themes\OrangeGrey\Images\TabControl2\tabs-04.gif" />
+    <Content Include="Themes\OrangeGrey\Images\TabControl2\tabs-05.gif" />
+    <Content Include="Themes\OrangeGrey\Images\TabControl2\tabs-06.gif" />
+    <Content Include="Themes\OrangeGrey\Images\TabControl2\tabs-07.gif" />
+    <Content Include="Themes\OrangeGrey\Images\TabControl\Example.PNG" />
+    <Content Include="Themes\OrangeGrey\Images\TabControl\ExampleSelected.PNG" />
+    <Content Include="Themes\OrangeGrey\Images\TabControl\PageSourceCode.PNG" />
+    <Content Include="Themes\OrangeGrey\Images\TabControl\PageSourceCodeSelected.PNG" />
+    <Content Include="Themes\OrangeGrey\Images\TabControl\SourceCode.PNG" />
+    <Content Include="Themes\OrangeGrey\Images\TabControl\SourceCodeSelected.PNG" />
+    <Content Include="Themes\OrangeGrey\Images\TopBanner.PNG" />
+    <Content Include="Themes\OrangeGrey\Images\TopBannerImg.PNG" />
+    <Content Include="Themes\OrangeGrey\Styles.css" />
+    <Content Include="Views\Examples\NToolbarConfiguration.aspx" />
+    <Content Include="Views\Examples\Tools\NIndicatorDragTool.aspx" />
+    <Content Include="Views\Examples\Tools\NImageMapTools.aspx" />
+    <Content Include="Views\Examples\Tools\NServerSideEventsTool.aspx" />
+    <Content Include="Views\Examples\Tools\NTrackballTool.aspx" />
+    <Content Include="Views\Examples\Tools\NDataPanTool.aspx" />
+    <Content Include="Views\Examples\Tools\NDataZoomTool.aspx" />
+    <Content Include="Views\Examples\Tools\NClientSideEventsTool.aspx" />
+    <Content Include="Views\Examples\NAutoUpdate.aspx" />
+    <Content Include="Views\Examples\Home.aspx" />
+    <Content Include="Views\Examples\NThinWebGeneral.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Code\vssver.scc" />
+    <None Include="Frames\vssver.scc" />
+    <None Include="Images\CustomTools\vssver.scc" />
+    <None Include="Images\FlowChartBuilder\vssver.scc" />
+    <None Include="Images\Footer\vssver.scc" />
+    <None Include="Images\GIS\vssver.scc" />
+    <None Include="Images\NavigationPane\vssver.scc" />
+    <None Include="Images\OutliningIndicators\vssver.scc" />
+    <None Include="Images\TabStrip\vssver.scc" />
+    <None Include="Images\tabs\vssver.scc" />
+    <None Include="Images\TreeView\vssver.scc" />
+    <None Include="Images\vssver.scc" />
+    <None Include="Images\WelcomePage\vssver.scc" />
+    <None Include="Include\vssver.scc" />
+    <None Include="Themes\LunaBlue\Images\NavigationPane\vssver.scc" />
+    <None Include="Themes\LunaBlue\Images\TabControl\vssver.scc" />
+    <None Include="Themes\LunaBlue\Images\vssver.scc" />
+    <None Include="Themes\LunaBlue\vssver.scc" />
+    <None Include="Themes\OrangeGrey\Images\Footer\vssver.scc" />
+    <None Include="Themes\OrangeGrey\Images\NavigationPane\vssver.scc" />
+    <None Include="Themes\OrangeGrey\Images\TabControl2\vssver.scc" />
+    <None Include="Themes\OrangeGrey\Images\TabControl\vssver.scc" />
+    <None Include="Themes\OrangeGrey\Images\vssver.scc" />
+    <None Include="Themes\OrangeGrey\vssver.scc" />
+    <Content Include="Views\Shared\ExamplePage.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>14512</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

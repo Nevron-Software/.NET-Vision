@@ -1,0 +1,18 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NDraggingIndicatorsUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="540" d:DesignWidth="300">
+    <StackPanel>
+        <Label Name="Label1" Content="Indicators Snap Mode:" />
+        <ComboBox Name="IndicatorsSnapModeComboBox" SelectionChanged="IndicatorsSnapModeComboBox_SelectionChanged" />
+        <Label Name="Label2" Content="Origin:" />
+        <ComboBox Name="OriginNumericComboBox" SelectionChanged="OriginNumericComboBox_SelectionChanged" />
+        <Label Name="Label3" Content="Step:" />
+        <ComboBox Name="StepNumericComboBox" SelectionChanged="StepNumericComboBox_SelectionChanged" />
+        <CheckBox Name="AllowDragRangeIndicatorsCheckBox" Click="AllowDragRangeIndicatorsCheckBox_Click" Content="Allow Range Dragging" />
+    </StackPanel>
+</Controls:NExampleBaseUC>

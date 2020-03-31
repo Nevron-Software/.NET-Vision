@@ -1,0 +1,38 @@
+<!-- Recognized tags -->
+<description>
+	<p>     
+        The flow layout represents a constrained cells layout, which arranges the cells in horizontal or vertical lanes. The flow layout does not preserve tabular metrics.
+	</p>
+	<p>
+	    The most important properties are:
+	    <ul>
+	        <li>
+			    <b>Direction</b> - determines the direction in which the layout arranges adjacent cells.
+			</li>
+		    <li>
+		        <b>HorizontalContentPlacement and VerticalContentPlacement</b> - determine the default placement
+		            of the cell content in regards to the X or the Y dimension of the cell bounds.
+		    </li>
+		    <li>
+		        <b>HorizontalSpacing and VerticalSpacing</b> - determine the minimal spacing between 2 cells in
+		            horizontal and vertical direction respectively.
+		    </li>
+	    	<li>
+			    <b>ConstrainMode</b> - defines the mode, in which the flow layout expansion is constrained
+			    in the flow direction. By default set to Size.
+			</li>
+			<li>
+			    <b>JustifyLanes</b> - specifies whether the cells in the lanes must be justified or not.
+			    Only applicable if ConstrainMode is Size. By default set to false.
+			</li>
+			<li>
+			    <b>MaxOrdinal</b> - defines the maximum ordinal to which the layout can expand. Only
+			    applicable if ConstrainMode is set to Ordinal.
+  			</li>
+	    </ul>
+	</p>
+	<p>
+		To experiment with their behavior just change the properties of the layout in the property
+		grid and click the <b>Layout</b> button.
+	</p>
+</description>

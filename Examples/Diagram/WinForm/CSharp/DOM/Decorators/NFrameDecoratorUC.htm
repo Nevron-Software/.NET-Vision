@@ -1,0 +1,15 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+		This example demonstrates expand-collapsible groups, expand-collapse decorators and frame decorators.
+	</p>
+	<p>
+Groups (as any other shape) can be in either expanded or collapsed state. When a shape is collapsed it will typically render only its decorators. The content of the shape - such as graphics primitives, shapes, labels, ports etc. is considered "collapsed" and will therefore not be visible and hit testable. Connectors are also specially adjusted to handle the case when they are not themselves collapsed but link collapsed content.
+	</p>
+	<p>
+The expand-collapse decorator is a decorator, which consists of a symbol and background. Clicking the expand-collapse decorator toggles the expanded-collapsed state of the shape to which it belongs. In this example we have created three groups with expand collapse decorators.
+	</p>
+	<p>
+The frame decorator is a decorated, which is used to add header and/or background to a shape. In this example the three groups have frame decorators too. Note that a shape may be instructed to be considered hit, if a decorator marked as "shape hit testable" is hit. In this example clicking on a frame decorator background, frame or header will select the respective group, since it will be considered hit if the frame decorator is hit.
+	</p>
+</description>

@@ -1,0 +1,30 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+        The radial graph layout layouts the graphs in concentric circles. The vertices with no
+        predecessors are placed in the center and their descendants are placed on the next circle
+        and so on. It produces a straight line graph drawing. The most important properties are:
+    </p>
+	<ul>
+		<li>
+		    <b>Aspect Ratio</b> - determines the aspect (width/height) ratio of the layout.
+		    By default set to 1 which layouts the nodes in a circle. A value different from 1
+		    will make the layout order the nodes in an ellipse.
+		</li>
+		<li>
+		    <b>AutoSizeRings</b> - if set to true the RingRadius property is automatically
+		    calculated to have such value that the total area of the drawing is minimized and there
+		    is no node overlapping.
+		</li>
+		<li>
+		    <b>RingRadius</b> - determines the size of the radius of the first imaginary circle where
+		    nodes are placed. The radius of each other circle is a sum of the RingRadius value and
+		    the radius of the previous circle. This value is automatically determined if the 
+		    AutoSizeRings property is set to true.
+		</li>
+	</ul>
+	<p>
+		To experiment with their behavior just change the properties of the layout in the property
+		grid and click the <b>Layout</b> button.
+	</p>
+</description>

@@ -1,0 +1,16 @@
+<description>
+Nevron User Interface 4.0 introduces entirely custom drawn listbox, which main task is to overcome the limitations of the standard WindowsForms one such as image support per item, custom borders, checkboxes, checkstyle, etc.
+<p>The approach for implementing this is completely different than other cutom-drawn listboxes found in another UI suites. The NListBox object is double buffering painted control which uses complex logic to determine the items that need repainting. Also the list box provides full control over border appearance, using generic approach. Rather than simply painting over the default NC(non-client) area (this is the case found in most UI suites, which causes significant flicker when the control is resized), the listbox overrides NC size calculating and discards any default NC painting, performing its own. Choose among 10 predefined border styles, select base color for drawing border, specify whether the border is interactive - has different state when focused or hovered.
+<p>The NListBox encapsulates the functionality provided by the WindowsForms CheckedListBox control. It provides generic support for per item checked state, check style - standard or radio, CheckedChanged event and CheckedItems property.
+<p>The NListBox control is part of the composite NComboBox control, thus all extended features are available in the combobox also.
+</description>
+<features>
+<ul class="UIList">
+	<li>Unified overall appearance entirely based on pluggable renderers and palettes.
+	<li>Generic border support. Available are 10 predefined borderstyles. User-controllable base border color.
+	<li>Generic support for images. Default image index to be used by all items or per item definable. Default image size to be used when drawing image or per item definable.
+	<li>Generic support for checkboxes. Specify checkbox visibility by using the CheckBoxes property, the style of the checkboxes using the CheckStyle property and get notified of a check changing using the CheckedChanged event.
+	<li>ShowFocusRect - specifies whether the currently focused item will display or not a dotted rectangle around its text area.
+	<li>ColumnOnLeft - specifies whether the renderer will draw a gradient column on the left side of the control. True by default.
+</ul>
+</features>

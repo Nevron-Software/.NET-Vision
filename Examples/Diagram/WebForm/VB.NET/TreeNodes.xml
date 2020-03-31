@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ASP.NET Examples Index">
+	<contentNode Name="Welcome to Nevron Web Examples" NavigateUrl="HomeUC.ascx" />
+	<bookNode Name="ThinWeb" expanded="true">
+		<exampleNode Name="General" NavigateUrl="Examples/ThinWeb/NThinWebGeneralUC.ascx" />
+		<exampleNode Name="Pan Tool" NavigateUrl="Examples/ThinWeb/NPanToolUC.ascx" />
+		<exampleNode Name="Rect Zoom Tool" NavigateUrl="Examples/ThinWeb/NRectZoomToolUC.ascx" />
+		<exampleNode Name="Image Map Tools" NavigateUrl="Examples/ThinWeb/NImageMapToolsUC.ascx" />
+		<exampleNode Name="Server Side Events Tool" NavigateUrl="Examples/ThinWeb/NServerSideEventsToolUC.ascx" />
+		<exampleNode Name="Client Side Events Tool" NavigateUrl="Examples/ThinWeb/NClientSideEventsToolUC.ascx" />
+		<exampleNode Name="Postback Tool" NavigateUrl="Examples/ThinWeb/NPostbackToolUC.ascx" />
+		<exampleNode Name="Auto Update" NavigateUrl="Examples/ThinWeb/NAutoUpdateUC.ascx" />
+		<exampleNode Name="CSS Customization" NavigateUrl="Examples/ThinWeb/NCssCustomizationUC.ascx" />
+	</bookNode>
+	<bookNode Name="Demo Diagrams">
+		<exampleNode Name="Business Company (Org. Chart)" NavigateUrl="Examples/DemoDiagrams/NBusinessCompanyUC.ascx" />
+		<exampleNode Name="Clickomania (The Game)" NavigateUrl="Examples/DemoDiagrams/NClickomaniaGameUC.ascx" />
+		<exampleNode Name="Class Hierarchy (UML Diagram)" NavigateUrl="Examples/DemoDiagrams/NClassHierarchyUC.ascx" />
+		<exampleNode Name="Show/Hide Subtree Decorator" NavigateUrl="Examples/DemoDiagrams/NShowHideSubtreeDecoratorUC.ascx" />
+		<exampleNode Name="Nested Groups" NavigateUrl="Examples/DemoDiagrams/NNestedGroupsUC.ascx" />
+	</bookNode>
+	<bookNode Name="Maps">
+		<exampleNode Name="Map Data Binding" NavigateUrl="Examples/Maps/NMapDataBindingUC.ascx" />
+		<exampleNode Name="Map Projections" NavigateUrl="Examples/Maps/NMapProjectionsUC.ascx" />
+		<exampleNode Name="World Map" NavigateUrl="Examples/Maps/NWorldMapUC.ascx" />
+		<exampleNode Name="World Population" NavigateUrl="Examples/Maps/NWorldPopulationUC.ascx" />
+		<exampleNode Name="Map Drill Down" NavigateUrl="Examples/Maps/NMapDrillDownUC.ascx" />
+	</bookNode>
+	<bookNode Name="Import">
+		<exampleNode Name="Database Schema Import" NavigateUrl = "Examples/Import/NDatabaseSchemaImportUC.ascx" />
+		<exampleNode Name="Graph Data Import" NavigateUrl = "Examples/Import/NGraphDataImportUC.ascx" />
+		<exampleNode Name="Tree Data Import" NavigateUrl = "Examples/Import/NTreeDataImportUC.ascx" />
+		<exampleNode Name="Visio Import" NavigateUrl = "Examples/Import/NVisioImportUC.ascx" />
+	</bookNode>
+	<bookNode Name="Flash">
+		<exampleNode Name="Puzzle Animation" NavigateUrl = "Examples/Flash/NPuzzleAnimationUC.ascx" />
+		<exampleNode Name="Simple Network" NavigateUrl = "Examples/Flash/NSimpleNetworkUC.ascx" />
+		<exampleNode Name="World Cup 2006" NavigateUrl = "Examples/Flash/NWorldCup2006UC.ascx" />
+		<exampleNode Name="Flash Redirect" NavigateUrl = "Examples/Flash/NFlashRedirectUC.ascx" />
+	</bookNode>
+	<bookNode Name="Silverlight">
+		<exampleNode Name="Silverlight Diagram" NavigateUrl="Examples/Silverlight/NXamlExportUC.ascx" />
+	</bookNode>
+	<bookNode Name="PDF">
+		<exampleNode Name="PDF Export" NavigateUrl="Examples/PDF/NPdfExportUC.ascx" />
+	</bookNode>
+	<bookNode Name="SVG">
+		<exampleNode Name="Basic SVG Diagram" NavigateUrl="Examples/WebControl/SVG/NBasicSVGDiagram.ascx" />
+		<exampleNode Name="Interactive SVG Diagram" NavigateUrl="Examples/WebControl/SVG/NInteractiveSVGDiagram.ascx" />
+	</bookNode>
+	<bookNode Name="Layouts">
+		<exampleNode Name="Balloon Tree Layout" NavigateUrl="Examples/Layouts/NBalloonTreeLayoutUC.ascx" />
+		<exampleNode Name="Barycenter Layout" NavigateUrl="Examples/Layouts/NBarycenterLayoutUC.ascx" />
+		<exampleNode Name="Compact Depth Tree Layout" NavigateUrl="Examples/Layouts/NCompactDepthTreeLayoutUC.ascx" />
+		<exampleNode Name="Layered Graph Layout" NavigateUrl="Examples/Layouts/NLayeredGraphLayoutUC.ascx" />
+		<exampleNode Name="Layered Tree Layout" NavigateUrl="Examples/Layouts/NLayeredTreeLayoutUC.ascx" />
+		<exampleNode Name="Orthogonal Graph Layout" NavigateUrl="Examples/Layouts/NOrthogonalGraphLayoutUC.ascx" />
+		<exampleNode Name="Radial Graph Layout" NavigateUrl="Examples/Layouts/NRadialGraphLayoutUC.ascx" />
+		<exampleNode Name="Single Cycle Layout" NavigateUrl="Examples/Layouts/NSingleCycleLayoutUC.ascx" />
+		<exampleNode Name="Spring Layout" NavigateUrl="Examples/Layouts/NSpringLayoutUC.ascx" />
+		<exampleNode Name="Symmetrical Layout" NavigateUrl="Examples/Layouts/NSymmetricalLayoutUC.ascx" />
+		<exampleNode Name="Tip-Over Tree Layout" NavigateUrl="Examples/Layouts/NTipOverTreeLayoutUC.ascx" />
+	</bookNode>
+	<bookNode Name="Printing">
+		<exampleNode Name="Printing in Web Forms" NavigateUrl="Examples/Printing/NPrintingUC.ascx" />
+	</bookNode>
+	<bookNode Name="Shape Factories">
+		<exampleNode Name="Basic Shapes" NavigateUrl = "Examples/ShapeFactories/NBasicShapesUC.ascx" />
+		<exampleNode Name="Brainstorming Shapes" NavigateUrl = "Examples/ShapeFactories/NBrainstormingShapesUC.ascx" />
+		<exampleNode Name="Business Process Shapes" NavigateUrl = "Examples/ShapeFactories/NBusinessProcessShapesUC.ascx" />
+		<exampleNode Name="Electrical Symbols Shapes" NavigateUrl = "Examples/ShapeFactories/NElectricalSymbolsShapesUC.ascx" />
+		<exampleNode Name="Files And Folders Shapes" NavigateUrl = "Examples/ShapeFactories/NFilesAndFoldersShapesUC.ascx" />
+		<exampleNode Name="Flag Shapes" NavigateUrl = "Examples/ShapeFactories/NFlagShapesUC.ascx" />
+		<exampleNode Name="Floor Plan Shapes" NavigateUrl = "Examples/ShapeFactories/NFloorPlanShapesUC.ascx" />
+		<exampleNode Name="Flowcharting Shapes" NavigateUrl = "Examples/ShapeFactories/NFlowchartingShapesUC.ascx" />
+		<exampleNode Name="Food Shapes" NavigateUrl = "Examples/ShapeFactories/NFoodShapesUC.ascx" />
+		<exampleNode Name="Network Shapes" NavigateUrl = "Examples/ShapeFactories/NNetworkShapesUC.ascx" />
+		<exampleNode Name="Simple Network Shapes" NavigateUrl = "Examples/ShapeFactories/NSimpleNetworkShapesUC.ascx" />
+		<exampleNode Name="Symbol Shapes" NavigateUrl = "Examples/ShapeFactories/NSymbolShapesUC.ascx" />
+		<exampleNode Name="Traffic Sign Shapes" NavigateUrl = "Examples/ShapeFactories/NTrafficSignShapesUC.ascx" />
+		<exampleNode Name="Travel Shapes" NavigateUrl = "Examples/ShapeFactories/NTravelShapesUC.ascx" />
+		<exampleNode Name="Weather Shapes" NavigateUrl = "Examples/ShapeFactories/NWeatherShapesUC.ascx" />
+	</bookNode>
+	<bookNode Name="Web Control">
+		<bookNode Name="Getting Started">
+			<exampleNode Name="Image Response" NavigateUrl="Examples/WebControl/GettingStarted/NImageResponseUC.ascx" />
+			<exampleNode Name="Binary Streaming Image" NavigateUrl="Examples/WebControl/GettingStarted/NBinaryStreamingImageUC.ascx" />
+			<exampleNode Name="Image Map" NavigateUrl="Examples/WebControl/GettingStarted/NImageMapResponseUC.ascx" />
+			<exampleNode Name="Image Map and Postback" NavigateUrl="Examples/WebControl/GettingStarted/NImageMapPostbackUC.ascx" />
+		</bookNode>
+		<bookNode Name="AJAX">
+			<bookNode Name="Nevron AJAX Interactive Demos">
+				<exampleNode Name="Flow Chart Builder Demo" NavigateUrl="Examples/WebControl/AJAX/InteractiveDemos/NFlowChartBuilderDemoUC.ascx" />
+				<exampleNode Name="Game of Life Demo" NavigateUrl="Examples/WebControl/AJAX/InteractiveDemos/NGameOfLifeUC.ascx" />
+				<exampleNode Name="Number Puzzle Demo" NavigateUrl="Examples/WebControl/AJAX/InteractiveDemos/NNumberPuzzleUC.ascx" />
+			</bookNode>
+			<bookNode Name="Nevron AJAX Basic Features">
+				<exampleNode Name="Browser Redirect" NavigateUrl="Examples/WebControl/AJAX/BasicFeatures/NBrowserRedirectUC.ascx" />
+				<exampleNode Name="Dynamic Cursor" NavigateUrl="Examples/WebControl/AJAX/BasicFeatures/NDynamicCursorUC.ascx" />
+				<exampleNode Name="Tooltips" NavigateUrl="Examples/WebControl/AJAX/BasicFeatures/NTooltipsUC.ascx" />
+			</bookNode>
+			<bookNode Name="Nevron AJAX Engine">
+				<exampleNode Name="Instant Auto-Refresh" NavigateUrl="Examples/WebControl/AJAX/Engine/NInstantRefreshUC.ascx" />
+				<exampleNode Name="Instant Mouse Events" NavigateUrl="Examples/WebControl/AJAX/Engine/NInstantMouseEventsUC.ascx" />
+				<exampleNode Name="Refresh and Auto-Refresh" NavigateUrl="Examples/WebControl/AJAX/Engine/NRefreshUC.ascx" />
+				<exampleNode Name="Mouse Events" NavigateUrl="Examples/WebControl/AJAX/Engine/NMouseEventsUC.ascx" />
+				<exampleNode Name="Dynamic Image Map" NavigateUrl="Examples/WebControl/AJAX/Engine/NDynamicImageMapUC.ascx" />
+				<exampleNode Name="Client Side Event Queueing" NavigateUrl="Examples/WebControl/AJAX/Engine/NEventQueueingUC.ascx" />
+				<exampleNode Name="Custom Commands and Result Data" NavigateUrl="Examples/WebControl/AJAX/Engine/NCustomCommandsUC.ascx" />
+				<exampleNode Name="Custom Tools" NavigateUrl="Examples/WebControl/AJAX/Engine/NCustomToolsUC.ascx" />
+				<exampleNode Name="Reliability" NavigateUrl="Examples/WebControl/AJAX/Engine/NReliabilityUC.ascx" />
+				<exampleNode Name="Diagnostics" NavigateUrl="Examples/WebControl/AJAX/Engine/NDiagnosticsUC.ascx" />
+			</bookNode>
+		</bookNode>
+		<bookNode Name="Demo Diagrams">
+			<exampleNode Name="Accounting process (Flow Chart)" NavigateUrl = "Examples/WebControl/DemoDiagrams/NAccountingProcessFlowChartUC.ascx" />
+			<exampleNode Name="Bubble Sort (Flow Chart)" NavigateUrl = "Examples/WebControl/DemoDiagrams/NBubbleSortFlowChartUC.ascx" />
+			<exampleNode Name="Explorer Tree (Interactive Diagram)" NavigateUrl = "Examples/WebControl/DemoDiagrams/NExplorerInteractiveDiagramUC.ascx" />
+			<exampleNode Name="Mind Map Diagram" NavigateUrl = "Examples/WebControl/DemoDiagrams/NMindMapDiagramUC.ascx" />
+			<exampleNode Name="Periodic Table (Science Diagram)" NavigateUrl = "Examples/WebControl/DemoDiagrams/NPeriodicTableSceinceDiagramUC.ascx" />
+			<exampleNode Name="Simple State Diagram (Flow Chart)" NavigateUrl = "Examples/WebControl/DemoDiagrams/NSimpleStateDiagramUC.ascx" />
+			<exampleNode Name="Expand/Collapse Decorator" NavigateUrl = "Examples/WebControl/DemoDiagrams/NExpandCollapseDecoratorUC.ascx" />
+		</bookNode>
+	</bookNode>
+</root>

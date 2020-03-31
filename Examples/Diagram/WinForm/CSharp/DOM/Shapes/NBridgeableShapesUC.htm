@@ -1,0 +1,53 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+		This example demonstrates bridgeable shapes and bridges.
+	</p>
+	<p>
+		Bridges (hops) are a special type of decoration of flat open figure paths, 
+		which can be displayed on path self intersections or intersections with other 
+		bridgeable paths below it in the ZOrder. Path primitives, which can display 
+		bridges are called bridgeable paths. Bridgeable paths implement the 
+		INBridgeablePath interface.
+	</p>
+	<p>
+		There are several condinitions, which must be met in order for a bridgeable 
+		path to be able to display bridges. They are:
+		<ol>
+			<li>
+				The bridgeable path must be aggregated by a bridgeable shape (shapes which 
+				implement the INBrideableShape interface).
+			</li>
+			<li>
+				The composed bridge style of the bridgeable path must have a valid bridge style 
+				definition.
+			</li>
+			<li>
+				The bridgeable shape BridgeTargets property must be different from None
+			</li>
+			<li>
+				The bridge manager must be enabled.
+			</li>
+		</ol>
+	</p>
+	<p>
+		Bridge generation obeys to several asthetic criterias, the most important of 
+		which are:
+		<ol>
+			<li>
+				When two bridges, which belong to the same bridgeable path segment overrlap, 
+				they are merged to create a larger bridge.
+			</li>
+			<li>
+				Bridges are not created for intersection points, which are closer than half the 
+				bridge width to the start or end point of the bridgeable path segment to which 
+				they belong.
+			</li>
+		</ol>
+	</p>
+	<p>
+		Although that in this example the bridges are demonstated only with line and polyline shapes, 
+		you should know that step connectors and routable connectors of type Dynamic HV and Dynamic Polyline 
+		are also capable of displaying bridges.
+	</p>
+</description>

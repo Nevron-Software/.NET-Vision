@@ -1,0 +1,56 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+        <b>Nevron Diagram</b> makes it easy to import geographical data from Esri shapefiles. You
+        can import the shapes in separate layers and control the way they are rendered applying
+        various styles to them. Also additional information is provided for each shape
+        (such as Country Name, Area, Population, Currency, etc.)
+    </p>
+    <p>
+        To import maps in you diagrams just follow these simple steps:
+    </p>    
+    <p>        
+        <ol>
+            <li>
+                Create an object of type <b>NEsriMap</b> that will host the geographical data.
+            </li>
+            <li>
+                Add the Esri shapefiles you want to load one by one using the <b>Add</b> method
+                of the map. The Add method returns the created shapefile in case you want
+                to set some of its properties:
+                <ul>
+                    <li>
+                        <b>EnableZoomInRange</b> - Gets/sets whether the objects from the file should only 
+                        be shown if the current zoom factor is in the Min/Max Zoom factor range specified 
+                        by the <b>MinShowZoomFactor</b> and <b>MaxShowZoomFactor</b> properties.
+                    </li>
+                    <li>
+                        <b>NameColumn</b> - Determines the data column from the DBF file to use for naming 
+                        of the diagram elements that are created from this shapefile.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                When finished adding shapefiles to the map, call the <b>Read</b> method to load the data.
+            </li>
+            <li>
+                Call the <b>ImportShapes</b> method to import the loaded shapes in the document.
+                You can control the importing process using the ShapeImporter of the map that has
+                the following properties:
+                <ul>
+                    <li><b>PolygonsAsShapes, PolylinesAsShapes</b> - determine whether to render the objects as shapes or as paths.</li>
+                    <li><b>ImportInMultipleLayers</b> - determines whether to import the data from each Esri file into separate layer.</li>
+                    <li><b>ShapeCreatedListener</b> - if you want to perform additional customization on each diagram element
+                        implement the <b>INShapeCreatedListener</b> interface and set it to this property.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+	</p>
+	<p>
+	    You can play with the example zooming the map in and out using the scrollbar or clicking the scrollbar
+	    and using the mouse wheel afterwards. You can also see the available data for the shapes or navigate
+	    to a city of your choice.
+	</p>
+</description>
+&nbsp;

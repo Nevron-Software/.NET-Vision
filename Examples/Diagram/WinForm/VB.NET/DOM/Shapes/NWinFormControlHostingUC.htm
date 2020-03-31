@@ -1,0 +1,19 @@
+<!-- Recognized tags -->
+<description>
+<p>
+This example demonstrates the Win Form Control hosting shape. It allows you to embed any WinForm control inside a drawing document.
+</p>
+<p>
+A WinForm control hosting shape is created by specifying a valid WinForm control in its constructor. 
+The inplace editing of a WinForm control hosting shape is achieved by a host control, which is instanced in the drawing view.
+</p>
+<p>
+A WinForm control host shape can be instructed to deactivate itself if it looses focus or not via its DeactiveOnLostFocus property (by default set to true).
+In this example all controls are activated by default and are not deactivated when they loose focus.
+</p>
+<p>
+WinForm controls do not support serialization (e.g. there is no way to save/load a WinForm control).
+However WinForm controls have basic support for designer serialization (which is used in Visual Studio for example). 
+The WinForm control host shape exploits the design time serialization capabilties of controls to save and load them.
+</p>
+</description>

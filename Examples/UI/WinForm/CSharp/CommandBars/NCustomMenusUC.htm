@@ -1,0 +1,12 @@
+<description>
+Nevron Command Bars use entirely custom menus. Every menu displayed is a NMenuWindow instance, derived from the base NCommandParent class. Thus you have full control over menus appearance such as menus shadow, shadow color, drop-down delay, animation type, etc. You may also specify different palettes at any level as well as display background images rendered in different ways. The example demonstrates menus using custom MenuOptions, more specifically rendering background images in different ways.
+</description>
+<features>
+<ul class="uiList">
+	<li>Unified overall appearance entirely based on pluggable renderers and palettes. By default NMenuWindow instances are created on demand when a command is dropped, thus you have access to the menu options via the parent command MenuOptions property.
+	<li>User-definable command size, image size, reserved space for images, gradient column on left and option for displaying both image and checkmark.
+	<li>Custom palette per menu. Use Palette.Menu, Palette.ControlLight and Palette.ControlDark to change menu window's appearance.
+	<li>BackgroundImageInfo per menu. Specify an image, draw mode, alpha value and grayscale.
+	<li>Global appearance options, accessible via the NUIManager.MenuOptions. Use these to specify shadow visibility, shadow color, shadow alpha and shadow offset; animation type and animation legth; drop-down delay (the delay when hovering a command which should be dropped-down).
+</ul>
+</features>

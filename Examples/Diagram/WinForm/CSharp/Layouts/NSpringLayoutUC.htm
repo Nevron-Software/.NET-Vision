@@ -1,0 +1,21 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+        The spring layout method is a classical force directed layout, which uses spring and ellectrical forces.
+    </p>
+    <p>
+        Graph edges are threated as springs. Springs aim to ensure that the distance between adjacent vertices is approximately equal to the spring length. The parameters of the spring force are controlled by an instance of the <b>NSpringForce</b> class, accessible from the SpringForce property.
+	</p>
+    <p>
+        Graph vertices are threated as ellectically charged particles, which repel each other. The electical force aims to ensure that vertices should not be close together. The parameters of the electrical force are controlled by an instance of the <b>NElectricalForce</b> class, accessible from the ElectricalForce property.
+    </p>
+	<p>
+	    The spring force accepts per edge defined spring lengths and spring stiffness. In this example the red connectors are with smaller spring lenght are with greater stiffness than the blue connectors. Because of that they tend to be displayed closer to each other.
+	</p>
+	<p> 
+	    The electrical force accepts per vertex provided ellictrac charges. Thus some vertices may be more repulsive than others
+	</p>
+	<p>
+		To experiment with the layout behavior just change the properties of the layout in the property grid and click the <b>Layout</b> button.
+	</p>
+</description>

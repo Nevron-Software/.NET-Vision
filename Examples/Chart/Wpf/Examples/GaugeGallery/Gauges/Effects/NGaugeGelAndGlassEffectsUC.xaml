@@ -1,0 +1,63 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NGaugeGelAndGlassEffectsUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="300">
+    <StackPanel Margin="0,-1,0,1">
+        <Label Name="Label1" Content="Paint Effect:" />
+        <ComboBox Name="PaintEffectComboBox" SelectionChanged="PaintEffectComboBox_SelectionChanged" />
+        <Label Name="Label2" Content="Paint Effect Shape:" />
+        <ComboBox Name="PaintEffectShapeComboBox" SelectionChanged="PaintEffectShapeComboBox_SelectionChanged" />
+        <GroupBox Name="GlassEffectGroupBox" Header="Glass Effect">
+            <StackPanel>
+                <DockPanel>
+                    <Label Name="Label3" Content="Light Direction:" HorizontalAlignment="Left" />
+                    <ComboBox Name="DirectionComboBox" HorizontalAlignment="Stretch" SelectionChanged="DirectionComboBox_SelectionChanged" />                    
+                </DockPanel>
+                <DockPanel Margin="0,10,0,0">
+                    <Label Name="Label4" Content="Light Spread:" HorizontalAlignment="Left" />
+                    <ComboBox Name="SpreadComboBox" HorizontalAlignment="Stretch" SelectionChanged="SpreadComboBox_SelectionChanged" />
+                </DockPanel>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Name="GelEffectGroupBox" Header="Gell Effect">
+            <StackPanel>
+                <DockPanel>
+                    <Label Name="Label5" Content="Left Margin:" HorizontalAlignment="Left" />
+                    <ComboBox Name="LeftMarginComboBox" HorizontalAlignment="Stretch" SelectionChanged="LeftMarginComboBox_SelectionChanged" />
+                </DockPanel>
+                <DockPanel Margin="0,10,0,0">
+                    <Label Name="Label6" Content="Top Margin:" HorizontalAlignment="Left" />
+                    <ComboBox Name="TopMarginComboBox" HorizontalAlignment="Stretch" SelectionChanged="TopMarginComboBox_SelectionChanged" />
+                </DockPanel>
+                <DockPanel Margin="0,10,0,0">
+                    <Label Name="Label7" Content="Right Margin:" HorizontalAlignment="Left" />
+                    <ComboBox Name="RightMarginComboBox" HorizontalAlignment="Stretch" SelectionChanged="RightMarginComboBox_SelectionChanged" />
+                </DockPanel>
+                <DockPanel Margin="0,10,0,0">
+                    <Label Name="Label8" Content="Bottom Margin:" HorizontalAlignment="Left" />
+                    <ComboBox Name="BottomMarginComboBox" HorizontalAlignment="Stretch" SelectionChanged="BottomMarginComboBox_SelectionChanged" />
+                </DockPanel>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Radial Gauge">
+            <StackPanel>
+                <Label Name="Label9" Content="Begin Angle:" />
+                <ScrollBar Name="BeginAngleScrollBar" Orientation="Horizontal" ValueChanged="BeginAngleScrollBar_ValueChanged"
+                           Minimum="-360" Maximum="360" SmallChange="1" LargeChange="10" />
+                <Label Name="Label10" Content="Sweep Angle:" />
+                <ScrollBar Name="SweepAngleScrollBar" Orientation="Horizontal" ValueChanged="SweepAngleScrollBar_ValueChanged"
+                           Minimum="-350" Maximum="350" SmallChange="1" LargeChange="10" />
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Linear Gauge">
+            <StackPanel>
+                <Label Name="Label11" Content="Orientation:" />
+                <ComboBox Name="LinearGaugeOrientationComboBox" SelectionChanged="LinearGaugeOrientationComboBox_SelectionChanged" />
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</Controls:NExampleBaseUC>

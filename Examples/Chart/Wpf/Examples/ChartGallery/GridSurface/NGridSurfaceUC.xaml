@@ -1,0 +1,27 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NGridSurfaceUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+		<Label Content="Fill Mode:" Height="28" Name="label1" />
+		<ComboBox Height="23" Name="FillModeComboBox" SelectionChanged="FillModeComboBox_SelectionChanged" />
+		<CheckBox Content="Smooth Shading" Margin ="4" Height="16" Name="SmoothShadingCheckBox" Click="SmoothShadingCheckBox_Checked" />
+		<CheckBox Content="Smooth Palette" Margin ="4" Height="16" Name="SmoothPaletteCheckBox" Click="SmoothPaletteCheckBox_Checked" />
+
+		<Label Content="Frame Mode:" Height="28" Name="label2" />
+		<ComboBox Height="23" Name="FrameModeComboBox" SelectionChanged="FrameModeComboBox_SelectionChanged" />
+
+		<Label Content="Frame Color Mode:" Height="28" Name="label3" />
+		<ComboBox Height="23" Name="FrameColorModeComboBox" SelectionChanged="FrameColorModeComboBox_SelectionChanged" />
+
+		<CheckBox Content="Draw Flat" Margin ="4" Height="16" Name="DrawFlatCheckBox" Click="DrawFlatCheckBox_Checked" />
+		<ComboBox Height="23" Name="PositionModeComboBox" SelectionChanged="PositionModeComboBox_SelectionChanged" />
+
+		<Label Content="Custom Value:" Height="28" Name="label4" />
+		<ScrollBar Height="13" Name="CustomValueScrollBar" Orientation="Horizontal" ValueChanged="CustomValueScrollBar_ValueChanged" />
+	</StackPanel>
+</Controls:NExampleBaseUC>

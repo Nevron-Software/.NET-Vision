@@ -1,0 +1,38 @@
+<description>
+	<p>
+		This example demonstrates shape ports.
+	</p>
+	<p>
+		Ports are one of the optional shape elements (the other two optional elements 
+		are control points and labels). Ports are connection points to which multiple 
+		plugs can be attached. Ports can be anchored to a specific aspect of the shape 
+		to which they belong, or to any model inside this shape. The actual model to 
+		which a port is anchored is called anchor model.
+	</p>
+	<p>
+		Currently Nevron Diagram for .NET supports the following types of ports:
+		<ul>
+			<li>
+				<b>Dynamic port</b> - this is a port, whose location is aligned relative to the 
+				rotated bounds of the anchor model. Unlike the rest of the ports, which glue 
+				the connected plugs to the port location, the dynamic port can be configured to 
+				glue the plugs in several modes.
+			</li>
+			<li>
+				<b>Bounds port</b>  - this is a port, whose location is aligined relative to the scene 
+				bounds of the anchor model.
+			</li>
+			<li>
+				<b>Rotated bounds port</b> - this is a port, whose location is aligined relative to 
+				the scene protection of the model bounds of the anchor model.
+			</li>
+			<li>
+				<b>Logical line port</b> - this is a port, whose location is positioned at the percent 
+				position along the logical line of the acnhor model.
+			</li>
+		</ul>
+	<p>
+		To explore the ports behavior just select a shape and modify the port properties which 
+		will appear in the Example form.
+	</p>
+</description>

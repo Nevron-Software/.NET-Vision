@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nevron.Diagram.Designer</name>
+    </assembly>
+    <members>
+        <member name="T:Nevron.Diagram.Designer.NDiagramDesignerForm">
+            <summary>
+            The NDiagramDesignerForm represents the diagram designer form
+            </summary>
+            <remarks>
+            The NDiagramDesignerForm encompasses most of the Win Form related features of the 
+            Nevron Diagram for .NET product by exposing a ready to use diagramming application form to the end user.
+            It currently consists from the following components:
+            <para>
+            1. View - used to the edit and preview a drawing document
+            </para>
+            <para>
+            2. Library browser - used to create, edit and reuse library documents
+            </para>
+            <para>
+            3. Property browser - used to edit the designer, active layer, drawing document or selection anchor properties.
+            </para>
+            <para>
+            4. Statusbar - used to display the state of the view
+            </para>
+            The NDiagramDesignerForm is also packed with a command bars manager exposing all currently available diagram commands. 
+            It is also a nice example of the Nevron UI docking library capabilities.
+            </remarks>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.#ctor(System.String)">
+            <summary>
+            Initializing constructor.
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="P:Nevron.Diagram.Designer.NDiagramDesignerForm.LocalizationContextName">
+            <summary>
+            Gets the localization context name for this class.
+            </summary>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.CreateDiagramComponents">
+            <summary>
+            Creates the form components
+            </summary>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.CreateDockingPanels">
+            <summary>
+            Creates the form docking panels
+            </summary>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.GetLibraryBrowserHostVisibility">
+            <summary>
+            Called by the Toggle Library Browser command
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.SetLibraryBrowserHostVisibility(System.Boolean)">
+            <summary>
+            Called by the Toggle Library Browser command
+            </summary>
+            <param name="visible"></param>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.GetPanAndZoomHostVisibility">
+            <summary>
+            Called by the Toggle Pan and Zoom command
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.SetPanAndZoomHostVisibility(System.Boolean)">
+            <summary>
+            Called by the Toggle Pan and Zoom command
+            </summary>
+            <param name="visible"></param>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.GetPropertyBrowserHostVisibility">
+            <summary>
+            Called by the Toggle Property Browser command
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.SetPropertyBrowserHostVisibility(System.Boolean)">
+            <summary>
+            Called by the Toggle Property Browser command
+            </summary>
+            <param name="visible"></param>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.GetPanelHostVisibility(System.Windows.Forms.Control)">
+            <summary>
+            Gets the visibility of the first ancestor docking panel control of the specified control
+            </summary>
+            <param name="control"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.SetPanelHostVisibility(System.Windows.Forms.Control,System.Boolean)">
+            <summary>
+            Sets the visibility of the first ancestor docking panel control of the specified control
+            </summary>
+            <param name="control"></param>
+            <param name="visible"></param>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.Exit">
+            <summary>
+            Called by the diagram commander when the user executes the exit command
+            </summary>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.OnPaletteChanged(Nevron.UI.WinForm.Controls.NPalette,Nevron.UI.WinForm.Controls.PaletteChangeEventArgs)">
+            <summary>
+            Called when the global Nevron UI palette has changed
+            </summary>
+            <param name="palette">new palette</param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.OnClosing(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Overriden to save the currently edited document if it was modified
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nevron.Diagram.Designer.NDiagramDesignerForm.Main(System.String[])">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+    </members>
+</doc>

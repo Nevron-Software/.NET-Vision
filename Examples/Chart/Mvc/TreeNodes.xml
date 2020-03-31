@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ASP.NET Examples Index">
+  <contentNode Name="Welcome to Nevron Chart Mvc Examples" NavigateUrl="Home" />
+  <bookNode Name="What's New" expanded="true">
+    <exampleNode Name="ThinWeb - General" NavigateUrl="NThinWebGeneral" />
+    <exampleNode Name="ThinWeb - Tools - Data Zoom Tool" NavigateUrl="Tools/NDataZoomTool" />
+    <exampleNode Name="ThinWeb - Tools - Data Pan Tool" NavigateUrl="Tools/NDataPanTool" />
+    <exampleNode Name="ThinWeb - Tools - Trackball Tool" NavigateUrl="Tools/NTrackballTool" />
+		<exampleNode Name="ThinWeb - Tools - Indicator Drag Tool" NavigateUrl="Tools/NIndicatorDragTool" />
+    <exampleNode Name="ThinWeb - Tools - Image Map Tools" NavigateUrl="Tools/NImageMapTools" />
+    <exampleNode Name="ThinWeb - Tools - Server Side Events" NavigateUrl="Tools/NServerSideEventsTool" />
+    <exampleNode Name="ThinWeb - Tools - Client Side Events" NavigateUrl="Tools/NClientSideEventsTool" />
+    <exampleNode Name="ThinWeb - Auto Update" NavigateUrl="NAutoUpdate" />
+    <exampleNode Name="ThinWeb - Toolbar" NavigateUrl="NToolbarConfiguration" />
+	</bookNode>
+</root>

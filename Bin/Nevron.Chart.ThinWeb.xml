@@ -1,0 +1,1564 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nevron.Chart.ThinWeb</name>
+    </assembly>
+    <members>
+        <member name="T:Nevron.Chart.ThinWeb.NTogglePanelDragToolAction">
+            <summary>
+            Enables the trackball tool
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NTogglePanelDragToolAction.#ctor">
+            <summary>
+            Initializer constructor
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NToggleChart3DAction">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NToggleChart3DAction.#ctor">
+            <summary>
+            Initializer constructor
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NToggleChartLightingAction">
+            <summary>
+            Toggles the chart lighting
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NToggleChartLightingAction.#ctor">
+            <summary>
+            Initializer constructor
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NToggleChartToolAction">
+            <summary>
+            Base for all chart tool actions
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NToggleDataPanToolAction">
+            <summary>
+            Enables the data pan tool if present the chart controller collection
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NToggleDataPanToolAction.#ctor">
+            <summary>
+            Initializer constructor
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NToggleDataPanToolAction.lIl11IllIl(Nevron.Chart.NChart,System.Int32)">
+            <summary>
+            Safely gets the enabled state of the paging view
+            </summary>
+            <param name="chart"></param>
+            <param name="axisId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NToggleDataZoomToolAction">
+            <summary>
+            Enables the data zoom tool
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NToggleDataZoomToolAction.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NToggleDataZoomToolAction.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializer constructor
+            </summary>
+            <param name="xAxisId"></param>
+            <param name="yAxisId"></param>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NToggleDataZoomToolAction.XAxisId">
+            <summary>
+            Gets or sets the x axis id used for zooming on the currently active chart
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NToggleDataZoomToolAction.YAxisId">
+            <summary>
+            Gets or sets the y axis id used for zooming on the currently active chart
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NToggleDataZoomToolAction.MaxZoomFactor">
+            <summary>
+            Gets or sets the max zoom factor
+            </summary>
+            <remarks>
+            The default zoom factor is 20.
+            </remarks>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NToggleDataZoomToolAction.IsEnabled">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NToggleDataZoomToolAction.GetImage">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NToggleDataZoomToolAction.ToolType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.NToggleDataZoomToolAction.m_XAxisId">
+            <summary>
+            The x axis id
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.NToggleDataZoomToolAction.m_YAxisId">
+            <summary>
+            The y axis id
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.NToggleDataZoomToolAction.m_MaxZoomFactor">
+            <summary>
+            Max zoom factor
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NTogglePanelSelectorToolAction">
+            <summary>
+            Enables the panel selector tool
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NTogglePanelSelectorToolAction.#ctor">
+            <summary>
+            Initializer constructor
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NToggleTrackballToolAction">
+            <summary>
+            Enables the trackball tool
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NToggleTrackballToolAction.#ctor">
+            <summary>
+            Initializer constructor
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.INEndPanelDragCallback">
+            <summary>
+            Implemented by objects that track end drag
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.INEndPanelDragCallback.OnEndDrag(Nevron.Chart.ThinWeb.NThinChartControl,Nevron.Chart.NPanel)">
+            <summary>
+            
+            </summary>
+            <param name="control"></param>
+            <param name="panel"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.INPanelDragCallback.OnPanelLocationChanged(Nevron.Chart.ThinWeb.NThinChartControl,Nevron.Chart.NContentPanel,Nevron.GraphicsCore.NPointL,Nevron.GraphicsCore.NPointL)">
+            <summary>
+            Called when a panel location has changed as a result of drag operation
+            </summary>
+            <param name="control"></param>
+            <param name="panel"></param>
+            <param name="oldValue"></param>
+            <param name="newValue"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.INEndIndicatorDragCallback">
+            <summary>
+            Implemented by objects that track end drag
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.INEndIndicatorDragCallback.OnEndDrag(Nevron.Chart.ThinWeb.NThinChartControl,Nevron.Chart.NIndicator)">
+            <summary>
+            
+            </summary>
+            <param name="control"></param>
+            <param name="chart"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.INActivatePanelCallback.OnActivatePanel(Nevron.Chart.ThinWeb.NThinChartControl,Nevron.Chart.NContentPanel,Nevron.Chart.NContentPanel)">
+            <summary>
+            Called when the currently active panel has changed
+            </summary>
+            <param name="control"></param>
+            <param name="newActivePanel"></param>
+            <param name="oldActivePanel"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.INDataPanCallback.OnDataPan(Nevron.Chart.ThinWeb.NThinChartControl,Nevron.Chart.NCartesianChart,Nevron.Chart.NAxis,Nevron.Chart.NAxis)">
+            <summary>
+            
+            </summary>
+            <param name="control"></param>
+            <param name="chart"></param>
+            <param name="newXRange"></param>
+            <param name="newYRange"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.INDataPointDragCallback.OnTrackball(Nevron.Chart.ThinWeb.NThinChartControl,Nevron.Chart.NChart,System.Single,System.Single)">
+            <summary>
+            Called when the rotation and elevation properties of the currently active chart have changed
+            </summary>
+            <param name="control"></param>
+            <param name="chart"></param>
+            <param name="oldRotation"></param>
+            <param name="oldElevation"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.INDataZoomCallback.OnDataZoom(Nevron.Chart.ThinWeb.NThinChartControl,Nevron.Chart.NCartesianChart,Nevron.Chart.NAxis,Nevron.Chart.NAxis)">
+            <summary>
+            Called when a data zoom has occured
+            </summary>
+            <param name="control"></param>
+            <param name="chart"></param>
+            <param name="horzAxis"></param>
+            <param name="vertAxis"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.INEndTrackballDragCallback">
+            <summary>
+            Implemented by objects that track end drag
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.INEndTrackballDragCallback.OnEndDrag(Nevron.Chart.ThinWeb.NThinChartControl,Nevron.Chart.NChart)">
+            <summary>
+            
+            </summary>
+            <param name="control"></param>
+            <param name="chart"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.INIndicatorDragCallback.OnIndicatorValueChanged(Nevron.Chart.ThinWeb.NThinChartControl,Nevron.Chart.NGaugePanel,Nevron.Chart.NIndicator,System.Double,System.Double)">
+            <summary>
+            Called when a gauge indicator value has changed as a result of drag operation
+            </summary>
+            <param name="control"></param>
+            <param name="gauge"></param>
+            <param name="indicator"></param>
+            <param name="oldValue"></param>
+            <param name="newValue"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.INTrackballCallback">
+            <summary>
+            Implemented by objects that track trackball rotation / elevation change
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.INTrackballCallback.OnTrackball(Nevron.Chart.ThinWeb.NThinChartControl,Nevron.Chart.NChart,System.Single,System.Single)">
+            <summary>
+            Called when the rotation and elevation properties of the currently active chart have changed
+            </summary>
+            <param name="control"></param>
+            <param name="chart"></param>
+            <param name="oldRotation"></param>
+            <param name="oldElevation"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NChartServerSettings">
+            <summary>
+            Provides various settings related to chart tiling
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NChartServerSettings.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NChartServerSettings.EnableTiledZoom">
+            <summary>
+            Whether tiling is enabled
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NChartServerSettings.ShowLoaderImagesForPlotTiles">
+            <summary>
+            Whether to show loader images for chart plot tiles
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NChartServerSettings.ShowLoaderImagesForAxisTiles">
+            <summary>
+            Whether to show loader images for axis tiles
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NChartServerSettings.MinZoomXRange">
+            <summary>
+            Gets / sets the minimum zoom x range length
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NChartServerSettings.MinZoomYRange">
+            <summary>
+            Gets / sets the minimum zoom y range length
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NChartServerSettings.UseTiledRenderingForNonZoomedAxes">
+            <summary>
+            Whether to uze tiled rendering for non zoomed axes
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.NChartServerSettings.lIl111Il11">
+            <summary>
+            Whether tiling is enabled
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.NChartServerSettings.lIl111Il1I">
+            <summary>
+            Minimum zoom x range
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.NChartServerSettings.lIl111IlIl">
+            <summary>
+            Minimum zoom y range
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.NChartServerSettings.lIl111IlI1">
+            <summary>
+            Whether to show loader images for plot tiles
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.NChartServerSettings.lIl111IlII">
+            <summary>
+            Whether to show loader images for axis tiles
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.NChartServerSettings.m_UseTiledRenderingForNonZoomedAxes">
+            <summary>
+            Whether to use tiled rendering for non zoomed axes
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NThinChartControl">
+            <summary>
+            Represents a ThinWeb Chart control
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.Controller">
+            <summary>
+            Gets the tools attached to this control
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.ServerSettings">
+            <summary>
+            Gets or sets the chart settings
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.UpdateDocument">
+            <summary>
+            Gets the chart update document
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.lIl111IIll">
+            <summary>
+            Gets / sets the tiled image server
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.lIl111IIl1">
+            <summary>
+            Gets / sets the panel data list
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.l111I111ll">
+            <summary>
+            Gets the common control settings
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.l111I11111">
+            <summary>
+            Gets the desing time text emitted by the control
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.HitTest(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.HitTest(Nevron.ThinWeb.NBrowserMouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.lIl111IIlI(System.Int32)">
+            <summary>
+            Gets the tiled server serving the specified chart index
+            </summary>
+            <param name="chartIndex"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.lIl111II1l(Nevron.Chart.NCartesianChart)">
+            <summary>
+            Gets the tiled server serving the specified chart
+            </summary>
+            <param name="chartIndex"></param>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.ScrollCallback">
+            <summary>
+            Gets sets a scroll callback
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.GetImage(Nevron.GraphicsCore.INImageFormat,Nevron.GraphicsCore.NSize,Nevron.GraphicsCore.NResolution)">
+            <summary>
+            
+            </summary>
+            <param name="format"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.GetImageMap">
+            <summary>
+            Writes an image map to the specified text writer.
+            </summary>
+            <param name="context"></param>
+            <param name="textWriter"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.l111IIllIl">
+            <summary>
+            
+            </summary>
+            <param name="scriptSources"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.GetController">
+            <summary>
+            Gets an untyped controller
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.l111I111lI">
+            <summary>
+            Initializes the request map
+            </summary>
+            <param name="requestMap"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.l111IIl1ll(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.GetHttpHandlerType">
+            <summary>
+            Gets the http handler type for service requests
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.l111IIl1l1(Nevron.Serialization.PersistencyFormat)">
+            <summary>
+            Saves the document state in the specified peristency format
+            </summary>
+            <param name="format"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.l111IIl1lI(Nevron.Serialization.PersistencyFormat,System.Byte[])">
+            <summary>
+            Loads the document state from the specified peristency format
+            </summary>
+            <param name="format"></param>
+            <param name="bytes"></param>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.Charts">
+            <summary>
+            Gets the charts collection of the component.
+            </summary>
+            <remarks>
+            The charts collection contains the charts displayed in the control canvas.
+            By default there is one Cartesian chart in the collection.
+            </remarks>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.Legends">
+            <summary>
+            Gets the legends collection of the component.
+            </summary>
+            <remarks>
+            The legends collection contains the legends displayed in the control canvas.
+            By default there is one legend in the collection.
+            </remarks>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.Labels">
+            <summary>
+            Gets the labels collection of the component.
+            </summary>
+            <remarks>
+            The labels collection contains the labels displayed in the control canvas.
+            By default the collection is empty.
+            </remarks>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.Gauges">
+            <summary>
+            Gets the gauges collection of the component.
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.NumericDisplays">
+            <summary>
+            Gets the numeric displays collection of the component.
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.StateIndicators">
+            <summary>
+            Gets the state indicators collection of the component.
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.Watermarks">
+            <summary>
+            Gets the watermarks collection of the component.
+            </summary>
+            <remarks>
+            The watermarks collection contains the watermarks displayed in the control canvas.
+            By default the collection is empty.
+            </remarks>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.Panels">
+            <summary>
+            Gets the panels collection of the component.
+            </summary>
+            <remarks>
+            The panels collection contains all the panels displayed in the control canvas. 
+            This includes charts, legends, labels, watermarks, etc.
+            </remarks>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.BackgroundStyle">
+            <summary>
+            Gives you access to the NBackground object applied on the chart background.
+            </summary>
+            <remarks>
+            The NBackground object controls various aspects of the chart background including fill effect, frame and interactivity.
+            </remarks>
+            <example>
+            The following exampe applies a gradient filling on the background.
+            <code lang = 'VB'>
+            NChartControl.Background.FillStyle.SetPredefinedAdvancedGradient(AdvancedGradientScheme.CalmWater2, 13)
+            </code>
+            <code>
+            NChartControl.Background.FillStyle.SetPredefinedAdvancedGradient(AdvancedGradientScheme.CalmWater2, 13);
+            </code>
+            </example>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.InteractivityStyle">
+            <summary>
+            The interactive style associated with the control
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.AnimationsStyle">
+            <summary>
+            Gets or sets the animation style
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.Settings">
+            <summary>
+            Gets the chart settings related to rendering.
+            </summary>
+            <remarks>
+            With the help of the NSettings object you can control various properties related to the chart rendering and appearance.
+            </remarks>
+            <example>
+            The following example enables the jittering feature of the control.
+            <code lang = 'VB'>
+            ' enable the antialiasing of the whole scene
+            NChartControl.Settings.EnableJittering = True
+            NChartControl.Settings.JitteringSteps = 4
+            </code>
+            <code>
+            // enable the antialiasing of the whole scene
+            NChartControl.Settings.EnableJittering = true;
+            NChartControl.Settings.JitteringSteps = 4;
+            </code>
+            </example>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.ServiceManager">
+            <summary>
+            Obtains the services collection of the chart document.
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.Document">
+            <summary>
+            Obtains the current chart document.
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.Serializer">
+            <summary>
+            Gives access to the chart serializer. The serializer
+            can be used to save/load control state through binary, XML and SOAP files.
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.Wizard">
+            <summary>
+            Gives access to the chart wizard object.
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.ImageExporter">
+            <summary>
+            Returns a NImageExport object exposing several image export functions.
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControl.DataBindingManager">
+            <summary>
+            Controls the database integration of the chart control.
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.lIl111II11(Nevron.GraphicsCore.INImageFormat,Nevron.GraphicsCore.NSize,Nevron.GraphicsCore.NResolution,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="format"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.lIl111II1I">
+            <summary>
+            Gets the currently active cartesian chart
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.lIl111IIIl">
+            <summary>
+            Gets the currently active cartesian chart index
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.lIl111III1">
+            <summary>
+            Gets the currently active tiled image server
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.lIl111IIII(Nevron.Chart.NCartesianChart,Nevron.Chart.NViewportD@)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControl.RecalcLayout">
+            <summary>
+            Recalculates the layout of the control
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NChartControlDesigner">
+            <summary>
+            Provides design time support.
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NChartControlDesigner.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NThinChartControlHttpHandler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NThinChartControlHttpHandler.IsReusable">
+            <summary>
+            Gets a value indicating whether another request can use the IHttpHandler instance.
+            </summary>
+            <remarks>
+            Returns true.
+            </remarks>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NThinChartControlHttpHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lI1Il.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl11lI1Il.Instance">
+            <summary>
+            Gets the chart request map instance
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl111ll1I">
+            <summary>
+            Streams non tiled image content to the client
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111ll1I.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl111ll1I.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111ll1I.Process(Nevron.ThinWeb.NRequestContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl11lI11I">
+            <summary>
+            Toggles active chart lighting
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lI11I.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl11lI11I.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lI11I.Process(Nevron.ThinWeb.NRequestContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl11lII1I">
+            <summary>
+            Updates the scrollbar position
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lII1I.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl11lII1I.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lII1I.l111I1II1I">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lII1I.Process(Nevron.ThinWeb.NRequestContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lII1l.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lII1l.l111I1II1I">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lII1l.Process(Nevron.ThinWeb.NRequestContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lII1l.GetServer(Nevron.ThinWeb.NAspNetThinWebControl)">
+            <summary>
+            
+            </summary>
+            <param name="control"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111llI1.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl111llI1.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lII11.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl11lII11.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lII11.GetPlotInfo(Nevron.Chart.lIlIl1Il11)">
+            <summary>
+            
+            </summary>
+            <param name="server"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111l111.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl111l111.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl11lIIlI">
+            <summary>
+            Base for all tiled requests
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIIlI.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIIlI.l111I1II1I">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIIlI.SafeGetAreaInfo(Nevron.ThinWeb.NAspNetThinWebControl,Nevron.Chart.lIlIl1Il11@,Nevron.Chart.NSampledAreaInfo@)">
+            <summary>
+            Safely gets a server + plot info
+            </summary>
+            <param name="control"></param>
+            <param name="server"></param>
+            <param name="areaInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl11lIIl1">
+            <summary>
+            Data zoom request
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIIl1.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl11lIIl1.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIIl1.l111I1II1I">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIIl1.Process(Nevron.ThinWeb.NRequestContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl11lIIll">
+            <summary>
+            Begins an update operation
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIIll.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl11lIIll.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIIll.l111I1II1I">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIIll.Process(Nevron.ThinWeb.NRequestContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl11lIIII">
+            <summary>
+            Begins an update operation
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIIII.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl11lIIII.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIIII.Process(Nevron.ThinWeb.NRequestContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl111l1Il">
+            <summary>
+            Data zoom request
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111l1Il.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl111l1Il.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111l1Il.l111I1II1I">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111l1Il.Process(Nevron.ThinWeb.NRequestContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111l1Il.lIl11Ill11(Nevron.Chart.ThinWeb.NThinChartControl,Nevron.Chart.lIlIl1Il11,Nevron.GraphicsCore.NPoint,Nevron.GraphicsCore.NPoint)">
+            <summary>
+            Performs a data pan by updating the specified tiled server zoom viewport
+            </summary>
+            <param name="chartControl"></param>
+            <param name="tiledServer"></param>
+            <param name="begin"></param>
+            <param name="end"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111l1Il.lIl11Ill1I(Nevron.Chart.ThinWeb.NThinChartControl,Nevron.GraphicsCore.NPoint,Nevron.GraphicsCore.NPoint,System.Boolean)">
+            <summary>
+            Performs a data pan given a start and end point
+            </summary>
+            <param name="chartControl"></param>
+            <param name="chart"></param>
+            <param name="begin"></param>
+            <param name="end"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl111lllI">
+            <summary>
+            Data zoom request
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111lllI.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl111lllI.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111lllI.l111I1II1I">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111lllI.Process(Nevron.ThinWeb.NRequestContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111lllI.lIl11Illl1(Nevron.Chart.ThinWeb.NThinChartControl,Nevron.Chart.NCartesianChart,Nevron.Chart.lIlIl1Il11,Nevron.GraphicsCore.NPointF,Nevron.GraphicsCore.NPointF,System.Boolean,System.Boolean)">
+            <summary>
+            Performs a tiled zoom in / out
+            </summary>
+            <param name="chartControl"></param>
+            <param name="chart"></param>
+            <param name="server"></param>
+            <param name="pt1"></param>
+            <param name="pt2"></param>
+            <param name="allowXZoom"></param>
+            <param name="allowYZoom"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111lllI.Zoom(Nevron.Chart.ThinWeb.NThinChartControl,Nevron.Chart.NCartesianChart,Nevron.GraphicsCore.NPointF,Nevron.GraphicsCore.NPointF,System.Boolean,System.Boolean)">
+            <summary>
+            Performs a normal zoom in/out in case the chart is not tiled
+            </summary>
+            <param name="chartControl"></param>
+            <param name="chart"></param>
+            <param name="pt1"></param>
+            <param name="pt2"></param>
+            <param name="allowXZoom"></param>
+            <param name="allowYZoom"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl11lIII1">
+            <summary>
+            Begins an update operation
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIII1.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl11lIII1.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIII1.Process(Nevron.ThinWeb.NRequestContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl11lIIIl">
+            <summary>
+            Data zoom request
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIIIl.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl11lIIIl.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIIIl.l111I1II1I">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lIIIl.Process(Nevron.ThinWeb.NRequestContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl111l1ll">
+            <summary>
+            Data zoom request
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111l1ll.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl111l1ll.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111l1ll.l111I1II1I">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111l1ll.Process(Nevron.ThinWeb.NRequestContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl111l1lI">
+            <summary>
+            Begins an update operation
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111l1lI.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl111l1lI.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111l1lI.Process(Nevron.ThinWeb.NRequestContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl11lI1I1">
+            <summary>
+            Data zoom request
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lI1I1.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl11lI1I1.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lI1I1.l111I1II1I">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lI1I1.Process(Nevron.ThinWeb.NRequestContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NPanelDragTool">
+            <summary>
+            Represents the panel drag tool
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NPanelDragTool.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NPanelDragTool.PanelDragCallback">
+            <summary>
+            Called when an Panel value has changed
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NPanelDragTool.EndDragCallback">
+            <summary>
+            Called when the tool has finished dragging
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NChartController.GetActivePanel">
+            <summary>
+            Gets the current active panel
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NChartController.SetActivePanel(Nevron.Chart.NContentPanel)">
+            <summary>
+            Sets the current active panel
+            </summary>
+            <param name="panel"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NChartController.lIl111II1I">
+            <summary>
+            Gets the currently active cartesian chart
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NChartController.lIl111IIIl">
+            <summary>
+            Gets the currently active cartesian chart index
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.NChartController.lIl1111l1I">
+            <summary>
+            The guid if the currently active panel
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NChartPlotTool">
+            <summary>
+            Base for all tools that operate on a chart plot (pair of x and y axis)
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NChartPlotTool.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NChartPlotTool.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializer constructor
+            </summary>
+            <param name="xAxisId"></param>
+            <param name="yAxisId"></param>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NChartPlotTool.XAxisId">
+            <summary>
+            Gets or sets the x axis id of the tool
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NChartPlotTool.YAxisId">
+            <summary>
+            Gets or sets the y axis id of the tool
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NChartTool">
+            <summary>
+            Base for all chart tools
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NChartTool.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NChartTool.RequiresActivePanel">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NDataPanTool">
+            <summary>
+            Represents a chart tool that allows the user to click and drag the visible plot area
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NDataPanTool.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NDataPanTool.DataPanCallback">
+            <summary>
+            Gets or sets the data pan callback
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NDataPanTool.AppendCommands(Nevron.ThinWeb.NClientCommandList)">
+            <summary>
+            
+            </summary>
+            <param name="script"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NDataPointDragTool">
+            <summary>
+            Represents the trackball tool
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NDataPointDragTool.TrackballCallback">
+            <summary>
+            Called when the active panel has changed
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NDataZoomTool">
+            <summary>
+            Represents a tool that allows the user to zoom in / out a chart using a rectangular selection.
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NDataZoomTool.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NDataZoomTool.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializer constructor
+            </summary>
+            <param name="xAxisId"></param>
+            <param name="yAxisId"></param>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NDataZoomTool.AllowXAxisZoom">
+            <summary>
+            Gets or sets a value indicating whether x axis zoom is allowed
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NDataZoomTool.AllowYAxisZoom">
+            <summary>
+            Gets or sets a value indicating whether y axis zoom is allowed
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NDataZoomTool.HorizontalAscendingZoom">
+            <summary>
+            Whether dragging the mouse in the positive x direction produces a zoom in
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NDataZoomTool.VerticalAscendingZoom">
+            <summary>
+            Whether dragging the mouse in the positive y direction produces a zoom in
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NDataZoomTool.ZoomOutResetsAxes">
+            <summary>
+            Whether a zoom out operation will reset the axes to their original, non zoomed state
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NDataZoomTool.DataZoomCallback">
+            <summary>
+            Gets or sets the data zoom callback
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NDataZoomTool.l111I11I1l">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NDataZoomTool.AppendCommands(Nevron.ThinWeb.NClientCommandList)">
+            <summary>
+            
+            </summary>
+            <param name="script"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NIndicatorDragTool">
+            <summary>
+            Represents the indicator drag tool
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NIndicatorDragTool.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NIndicatorDragTool.IndicatorDragCallback">
+            <summary>
+            Called when an indicator value has changed
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NIndicatorDragTool.EndDragCallback">
+            <summary>
+            Called when the tool has finished dragging
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NPanelSelectorTool">
+            <summary>
+            Represents a tool that can switch the currently active panel
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.NPanelSelectorTool.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NPanelSelectorTool.ActivatePanelCallback">
+            <summary>
+            Called when the active panel has changed
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.NTrackballTool">
+            <summary>
+            Represents the trackball tool
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NTrackballTool.TrackballCallback">
+            <summary>
+            Called when the active panel has changed
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.NTrackballTool.EndDragCallback">
+            <summary>
+            Called when the trackball has finished dragging
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111ll11.#ctor(Nevron.Chart.ThinWeb.NThinChartControl)">
+            <summary>
+            Initializer constructor
+            </summary>
+            <param name="control"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111ll11.AppendCommands(Nevron.Chart.ThinWeb.lIl111ll1l,Nevron.ThinWeb.NClientCommandList)">
+            <summary>
+            Appends the view update commands
+            </summary>
+            <param name="panelDataList"></param>
+            <param name="commandList"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111ll11.lIl11IlllI(Nevron.Chart.NCartesianChart,System.String,Nevron.ThinWeb.NClientCommandList)">
+            <summary>
+            Appends scrollbars for earch scrollable axis in the specified chart
+            </summary>
+            <param name="chart"></param>
+            <param name="commandList"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111llll.#ctor(Nevron.Chart.ThinWeb.NThinChartControl)">
+            <summary>
+            Initializer constructor
+            </summary>
+            <param name="control"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111llll.lIl11Illll(Nevron.Chart.ThinWeb.lIl111ll1l)">
+            <summary>
+            Appends panel data to the list
+            </summary>
+            <param name="panelDataList"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111llll.AppendCommands(Nevron.Chart.ThinWeb.lIl111ll1l,Nevron.ThinWeb.NClientCommandList)">
+            <summary>
+            Appends the view update commands
+            </summary>
+            <param name="panelDataList"></param>
+            <param name="commandList"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl11lI1II">
+            <summary>
+            Provides methods and properties for configuring the chart horz and vert jscript toolbars
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lI1II.#ctor(Nevron.Chart.NChartRenderingContext,Nevron.Chart.NAxis)">
+            <summary>
+            Initializer constructor
+            </summary>
+            <param name="context"></param>
+            <param name="axis"></param>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl11lI1II.Inverted">
+            <summary>
+            Whether the axis is inverted
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl11lI1II.VirtualLength">
+            <summary>
+            The virtual length of the scrollbar
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl11lI1II.InitialPosition">
+            <summary>
+            Initial position of scrollbar
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl11lI1II.SmallChange">
+            <summary>
+            Small change
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.ThinWeb.lIl11lI1II.LargeChange">
+            <summary>
+            Large change
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl11lI1II.PhysicalToLogicalValue(System.Int32)">
+            <summary>
+            Converts a physical value to logical
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.lIl11lI1II.m_Axis">
+            <summary>
+            The axis containing the scrollbar
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.lIl11lI1II.m_ViewScaleRange">
+            <summary>
+            The view range in scale coordinated
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.lIl11lI1II.m_TotalScaleRange">
+            <summary>
+            The total range in scale coordinated
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.lIl11lI1II.m_Horizontal">
+            <summary>
+            Whether the axis is horizontal
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.lIl11lI1II.m_ZoomFactor">
+            <summary>
+            The current zoom factor
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.lIl11lI1II.m_BeginValueFactor">
+            <summary>
+            The begin value factor
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.lIl11lI1II.m_ViewRange">
+            <summary>
+            The view rnage
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.lIl11lI1II.m_TotalRange">
+            <summary>
+            The total range
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.lIl11lI1II.m_ScrollbarBounds">
+            <summary>
+            The scrollbar bounds
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111lll1.AppendCommands(Nevron.Chart.ThinWeb.lIl111ll1l,Nevron.ThinWeb.NClientCommandList)">
+            <summary>
+            Appends the view update commands
+            </summary>
+            <param name="panelDataList"></param>
+            <param name="commandList"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111l11I.#ctor(Nevron.Chart.NCartesianChart,Nevron.Chart.lIlIl1Il11,System.Guid,System.Guid,System.Guid,System.Guid,System.Guid)">
+            <summary>
+            Initializer constructor
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111l11I.AppendCommands(Nevron.ThinWeb.NClientCommandList)">
+            <summary>
+            
+            </summary>
+            <param name="script"></param>
+        </member>
+        <member name="T:Nevron.Chart.ThinWeb.lIl111llII">
+            <summary>
+            Represents a 2D chart content panel data
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111llII.#ctor(Nevron.Chart.NChart)">
+            <summary>
+            Initializer constructor
+            </summary>
+            <param name="chart"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111llII.AppendCommands(Nevron.ThinWeb.NClientCommandList)">
+            <summary>
+            
+            </summary>
+            <param name="script"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111llIl.#ctor(Nevron.Chart.NContentPanel)">
+            <summary>
+            Initializer constructor
+            </summary>
+            <param name="contentPanel"></param>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.lIl111llIl.lIl11111ll">
+            <summary>
+            Whether the panel is active
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.lIl111llIl.m_ContentArea">
+            <summary>
+            The content area
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ThinWeb.lIl111llIl.lIl11111l1">
+            <summary>
+            The conent panel id
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111ll1l.AppendCommands(Nevron.ThinWeb.NClientCommandList)">
+            <summary>
+            
+            </summary>
+            <param name="script"></param>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111ll1l.FindDataForPanel(Nevron.Chart.NContentPanel)">
+            <summary>
+            
+            </summary>
+            <param name="panel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.ThinWeb.lIl111ll1l.SetActivePanel(Nevron.Chart.NContentPanel)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.lIl111l11l">
+            <summary>
+            Represents a temporary chart state used to set the chart in such a mode that only the back wall is rendered at specific bounds
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.lIl111l11l.Restore">
+            <summary>
+            Restores the chart settings
+            </summary>
+        </member>
+    </members>
+</doc>

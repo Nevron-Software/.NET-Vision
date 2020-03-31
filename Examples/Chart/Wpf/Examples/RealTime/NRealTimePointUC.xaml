@@ -1,0 +1,15 @@
+﻿<Controls:NRealTimeExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NRealTimePointUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="431" d:DesignWidth="315">
+    <StackPanel>
+		<CheckBox Content="Use Hardware Acceleration" Margin="4" Height="16" Name="UseHardwareAccelerationCheckBox" Click="UseHardwareAccelerationCheckBox_Checked" />
+		<Button Content="Stop Timer" Margin="4" Height="23" Name="StartStopTimerButton" Click="StartStopTimerButton_Click" />
+		<Label Content="Data Points Per Sphere:" Margin="4" Height="28" Name="label3" />
+		<ComboBox Height="23" Margin="4" Name="DataPointsPerSphereComboBox" SelectionChanged="DataPointsPerSphereComboBox_SelectionChanged" />
+	</StackPanel>
+</Controls:NRealTimeExampleBaseUC>

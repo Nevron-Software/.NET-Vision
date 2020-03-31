@@ -1,0 +1,1247 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA2F5EC7-891C-468A-AB7C-5B4A869E9623}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Resources\UI.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Nevron.Examples.UI.WinForm</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Nevron.Examples.UI.WinForm</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>http://localhost/Nevron.Examples.UI.WinForm/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;VS2005</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Nevron.Examples.Framework.WinForm">
+      <Name>Nevron.Examples.Framework.WinForm</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Examples.Framework.WinForm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.Presentation">
+      <Name>Nevron.Presentation</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.System">
+      <Name>Nevron.System</Name>
+      <HintPath>..\..\..\..\bin\Nevron.System.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.UI.WinForm.Docking">
+      <Name>Nevron.UI.WinForm.Docking</Name>
+      <HintPath>..\..\..\..\bin\Nevron.UI.WinForm.Docking.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.UI.WinForm.Skins">
+      <Name>Nevron.UI.WinForm.Skins</Name>
+      <HintPath>..\..\..\..\bin\Nevron.UI.WinForm.Skins.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation\NAnimationSurfaceUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Buttons\NButtonUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Buttons\NCheckBoxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Buttons\NColorButtonUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Buttons\NControlDropDownButtonUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Buttons\NOptionButtonUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Buttons\NRadioButtonUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calculator\NCalculatorDropDownUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calculator\NCalculatorUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComboBoxes\NComboBoxesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComboBoxes\NFontComboBoxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommandBars\NCommandAppearanceUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommandBars\NCommandBarsPersistencyUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommandBars\NCommandImageSupportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommandBars\NCommandLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommandBars\NContextMenusUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommandBars\NCustomMenusUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommandBars\NDockingToolbarsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommandBars\NNewCommandContextUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommandBars\NToolbarImageTextRelationUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataGridView\NRptSampleDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataNavigator\NDataNavigatorUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DateTimePicker\NDateTimePickerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Decorators\NDecoratorsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NAutoHideSupportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NAutoHideSupportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NBorderSupportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NBorderSupportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NCommandModelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NCommandModelUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NComplexLayoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NComplexLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NDesignTimeSupportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NDesignTimeSupportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NDockingPanelsBasicFeaturesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NDockingPanelsExampleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NDockingPanelsFunctionalityUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NDockingPanelsPersistencyUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NDockingPanelsStylesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NDockingStickersUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NDocumentViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NDocumentViewUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NMdiChildrenCustomFramesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NMdiChildrenCustomFramesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NMdiMenuMergeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NMdiMenuMergeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NNestedDockContainersUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NSizingRestrictionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NSizingRestrictionsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NStickyFloatingFramesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NStickyFloatingFramesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NVisualTabNavigationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockingPanels\NVisualTabNavigationUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EntryControls\NEntryBoxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EntryControls\NEntryControlsExtendedUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Expanders\NCustomExpanderUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Expanders\NExpanderUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Expanders\NExplorerBarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\NDesktopToolbarContentUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\NDesktopToolbarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\NFormCustomCaptionButtonsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\NFormUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\NTaskDialogExtendedUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\NTaskDialogMessageBoxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\NTaskDialogRadioButtonsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GalleryPanel\NGalleryPanelThumbnailPreviewUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GalleryPanel\NGalleryPanelUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GroupBoxes\NGroupBoxExUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GroupBoxes\NGroupBoxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GroupBoxes\NGrouperUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Labels\NRichTextLabelUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListBoxes\NColorListBoxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListBoxes\NFontListBoxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListBoxes\NListBoxImageSizeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListBoxes\NListBoxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListView\NListViewUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Localization\NLocalizationUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lookup\NFileLookupUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc\NColorPaneUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Misc\NColorPickerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Misc\NColorToolsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Misc\NHyperLinkSupportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Misc\NLineControlUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Misc\NPaletteColorPaneUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Misc\NSplitterUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GalleryPanel\NSystemImagesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GalleryPanel\NSystemImagesUC.Designer.cs">
+      <DependentUpon>NSystemImagesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\NUIPanelUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavigationPane\NNavigationPaneCollapseUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavigationPane\NNavigationPaneUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NUIExamplesConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NUIExamplesLayoutStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Panelbar\NPanelBarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PopupNotify\NPopupNotifyUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Popup\NPopupComboUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Popup\NPopupDropDownUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Popup\NPopupUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProgressBars\NProgressBarAppearanceUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProgressBars\NProgressBarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProgressBars\NWaitingBarAppearanceUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProgressBars\NWaitingBarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RangeSliders\NRangeSlidersUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rotator\NRotatorUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SampleIDEs\NIDELoadUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SampleIDEs\NVisualStudioIDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scrollbars\NHScrollBarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Scrollbars\NSkinnedScrollBarsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Scrollbars\NVScrollBarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Skinning\NIndividualSkinningUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Skinning\NIndividualSkinningUC.Designer.cs">
+      <DependentUpon>NIndividualSkinningUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skinning\NSkinningUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatusBars\NStatusBarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControl\NTabControlUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabStrip\NTabStripUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextBoxes\NMaskedTextBoxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextBoxes\NMaskedTextBoxUC.Designer.cs">
+      <DependentUpon>NMaskedTextBoxUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBoxes\NRichTextBoxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextBoxes\NTextBoxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThemableElements\NThemableElementsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolStrips\NToolStripSkinRendererUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolStrips\NToolStripSkinRendererUC.Designer.cs">
+      <DependentUpon>NToolStripSkinRendererUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tooltips\NTooltipControllerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tooltips\NTooltipUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrackBar\NTrackBarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TranslucentWindow\NTranslucentWindowUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeList\NFileExplorerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeList\NFileExplorerUC.Designer.cs">
+      <DependentUpon>NFileExplorerUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeList\NTreeListCustomHeaderRenderer.cs" />
+    <Compile Include="TreeList\NTreeListCustomRenderingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeList\NTreeListCustomRenderingUC.Designer.cs">
+      <DependentUpon>NTreeListCustomRenderingUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeList\NTreeListCustomSubItemRenderer.cs" />
+    <Compile Include="TreeList\NTreeListDataBindingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeList\NTreeListDataBindingUC.Designer.cs">
+      <DependentUpon>NTreeListDataBindingUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeList\NTreeListFilteringUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeList\NTreeListFilteringUC.Designer.cs">
+      <DependentUpon>NTreeListFilteringUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeList\NTreeListFormattingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeList\NTreeListFormattingUC.Designer.cs">
+      <DependentUpon>NTreeListFormattingUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeList\NTreeListNotesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeList\NTreeListNotesUC.Designer.cs">
+      <DependentUpon>NTreeListNotesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeList\NTreeListOutlookReportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeList\NTreeListOutlookReportUC.Designer.cs">
+      <DependentUpon>NTreeListOutlookReportUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeList\NTreeListUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeList\NTreeListUC.Designer.cs">
+      <DependentUpon>NTreeListUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeList\NTreeListUCHelper.cs" />
+    <Compile Include="TreeView\NTreeViewExAppearanceUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewExAppearanceUC.Designer.cs">
+      <DependentUpon>NTreeViewExAppearanceUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewExCheckBoxesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewExCheckBoxesUC.Designer.cs">
+      <DependentUpon>NTreeViewExCheckBoxesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewExDragDropUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewExDragDropUC.Designer.cs">
+      <DependentUpon>NTreeViewExDragDropUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewExEventsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewExEventsUC.Designer.cs">
+      <DependentUpon>NTreeViewExEventsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewExFilteringUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewExFilteringUC.Designer.cs">
+      <DependentUpon>NTreeViewExFilteringUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewExSortingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewExSortingUC.Designer.cs">
+      <DependentUpon>NTreeViewExSortingUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewExUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewExUC.Designer.cs">
+      <DependentUpon>NTreeViewExUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewExXmlViewerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewExXmlViewerUC.Designer.cs">
+      <DependentUpon>NTreeViewExXmlViewerUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView\NTreeViewUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIAboutDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpDowns\NNumericUpDownUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Animation\NAnimationSurfaceUC.resx">
+      <DependentUpon>NAnimationSurfaceUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buttons\NButtonUC.resx">
+      <DependentUpon>NButtonUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buttons\NCheckBoxUC.resx">
+      <DependentUpon>NCheckBoxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buttons\NColorButtonUC.resx">
+      <DependentUpon>NColorButtonUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buttons\NControlDropDownButtonUC.resx">
+      <DependentUpon>NControlDropDownButtonUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buttons\NOptionButtonUC.resx">
+      <DependentUpon>NOptionButtonUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buttons\NRadioButtonUC.resx">
+      <DependentUpon>NRadioButtonUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculator\NCalculatorDropDownUC.resx">
+      <DependentUpon>NCalculatorDropDownUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculator\NCalculatorUC.resx">
+      <DependentUpon>NCalculatorUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComboBoxes\NComboBoxesUC.resx">
+      <DependentUpon>NComboBoxesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComboBoxes\NFontComboBoxUC.resx">
+      <DependentUpon>NFontComboBoxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandBars\NCommandAppearanceUC.resx">
+      <DependentUpon>NCommandAppearanceUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandBars\NCommandBarsPersistencyUC.resx">
+      <DependentUpon>NCommandBarsPersistencyUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandBars\NCommandImageSupportUC.resx">
+      <DependentUpon>NCommandImageSupportUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandBars\NCommandLayoutUC.resx">
+      <DependentUpon>NCommandLayoutUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandBars\NContextMenusUC.resx">
+      <DependentUpon>NContextMenusUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandBars\NCustomMenusUC.resx">
+      <DependentUpon>NCustomMenusUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandBars\NDockingToolbarsUC.resx">
+      <DependentUpon>NDockingToolbarsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommandBars\NToolbarImageTextRelationUC.resx">
+      <DependentUpon>NToolbarImageTextRelationUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataNavigator\NDataNavigatorUC.resx">
+      <DependentUpon>NDataNavigatorUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateTimePicker\NDateTimePickerUC.resx">
+      <DependentUpon>NDateTimePickerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Decorators\NDecoratorsUC.resx">
+      <DependentUpon>NDecoratorsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingPanels\NAutoHideSupportUC.resx">
+      <DependentUpon>NAutoHideSupportUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingPanels\NCommandModelForm.resx">
+      <DependentUpon>NCommandModelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingPanels\NComplexLayoutUC.resx">
+      <DependentUpon>NComplexLayoutUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingPanels\NDesignTimeSupportForm.resx">
+      <DependentUpon>NDesignTimeSupportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingPanels\NDockingPanelsBasicFeaturesUC.resx">
+      <DependentUpon>NDockingPanelsBasicFeaturesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingPanels\NDockingPanelsExampleForm.resx">
+      <DependentUpon>NDockingPanelsExampleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingPanels\NDocumentViewForm.resx">
+      <DependentUpon>NDocumentViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingPanels\NDocumentViewUC.resx">
+      <DependentUpon>NDocumentViewUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingPanels\NMdiChildrenCustomFramesForm.resx">
+      <DependentUpon>NMdiChildrenCustomFramesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingPanels\NMdiMenuMergeForm.resx">
+      <DependentUpon>NMdiMenuMergeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingPanels\NNestedDockContainersUC.resx">
+      <DependentUpon>NNestedDockContainersUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingPanels\NSizingRestrictionsForm.resx">
+      <DependentUpon>NSizingRestrictionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingPanels\NStickyFloatingFramesForm.resx">
+      <DependentUpon>NStickyFloatingFramesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingPanels\NVisualTabNavigationForm.resx">
+      <DependentUpon>NVisualTabNavigationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntryControls\NEntryBoxUC.resx">
+      <DependentUpon>NEntryBoxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntryControls\NEntryControlsExtendedUC.resx">
+      <DependentUpon>NEntryControlsExtendedUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expanders\NCustomExpanderUC.resx">
+      <DependentUpon>NCustomExpanderUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expanders\NExpanderUC.resx">
+      <DependentUpon>NExpanderUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expanders\NExplorerBarUC.resx">
+      <DependentUpon>NExplorerBarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NDesktopToolbarContentUC.resx">
+      <DependentUpon>NDesktopToolbarContentUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NDesktopToolbarUC.resx">
+      <DependentUpon>NDesktopToolbarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NFormCustomCaptionButtonsUC.resx">
+      <DependentUpon>NFormCustomCaptionButtonsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NFormUC.resx">
+      <DependentUpon>NFormUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NTaskDialogExtendedUC.resx">
+      <DependentUpon>NTaskDialogExtendedUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NTaskDialogMessageBoxUC.resx">
+      <DependentUpon>NTaskDialogMessageBoxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NTaskDialogRadioButtonsUC.resx">
+      <DependentUpon>NTaskDialogRadioButtonsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GalleryPanel\NGalleryPanelThumbnailPreviewUC.resx">
+      <DependentUpon>NGalleryPanelThumbnailPreviewUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GalleryPanel\NGalleryPanelUC.resx">
+      <DependentUpon>NGalleryPanelUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupBoxes\NGroupBoxExUC.resx">
+      <DependentUpon>NGroupBoxExUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupBoxes\NGroupBoxUC.resx">
+      <DependentUpon>NGroupBoxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupBoxes\NGrouperUC.resx">
+      <DependentUpon>NGrouperUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labels\NRichTextLabelUC.resx">
+      <DependentUpon>NRichTextLabelUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBoxes\NColorListBoxUC.resx">
+      <DependentUpon>NColorListBoxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBoxes\NFontListBoxUC.resx">
+      <DependentUpon>NFontListBoxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBoxes\NListBoxImageSizeUC.resx">
+      <DependentUpon>NListBoxImageSizeUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBoxes\NListBoxUC.resx">
+      <DependentUpon>NListBoxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListView\NListViewUC.resx">
+      <DependentUpon>NListViewUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\NLocalizationUC.resx">
+      <DependentUpon>NLocalizationUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\NFileLookupUC.resx">
+      <DependentUpon>NFileLookupUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\NColorPaneUC.resx">
+      <DependentUpon>NColorPaneUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\NColorPickerUC.resx">
+      <DependentUpon>NColorPickerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\NColorToolsUC.resx">
+      <DependentUpon>NColorToolsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\NHyperLinkSupportUC.resx">
+      <DependentUpon>NHyperLinkSupportUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\NLineControlUC.resx">
+      <DependentUpon>NLineControlUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\NPaletteColorPaneUC.resx">
+      <DependentUpon>NPaletteColorPaneUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\NSplitterUC.resx">
+      <DependentUpon>NSplitterUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GalleryPanel\NSystemImagesUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NSystemImagesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\NUIPanelUC.resx">
+      <DependentUpon>NUIPanelUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationPane\NNavigationPaneCollapseUC.resx">
+      <DependentUpon>NNavigationPaneCollapseUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationPane\NNavigationPaneUC.resx">
+      <DependentUpon>NNavigationPaneUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panelbar\NPanelBarUC.resx">
+      <DependentUpon>NPanelBarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopupNotify\close.bmp" />
+    <EmbeddedResource Include="PopupNotify\notification1.bmp" />
+    <EmbeddedResource Include="PopupNotify\notification2.bmp" />
+    <EmbeddedResource Include="PopupNotify\notification3.bmp" />
+    <EmbeddedResource Include="PopupNotify\NPopupNotifyUC.resx">
+      <DependentUpon>NPopupNotifyUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\NPopupComboUC.resx">
+      <DependentUpon>NPopupComboUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\NPopupDropDownUC.resx">
+      <DependentUpon>NPopupDropDownUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\NPopupUC.resx">
+      <DependentUpon>NPopupUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBars\NProgressBarAppearanceUC.resx">
+      <DependentUpon>NProgressBarAppearanceUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBars\NProgressBarUC.resx">
+      <DependentUpon>NProgressBarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBars\NWaitingBarAppearanceUC.resx">
+      <DependentUpon>NWaitingBarAppearanceUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBars\NWaitingBarUC.resx">
+      <DependentUpon>NWaitingBarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RangeSliders\NRangeSlidersUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NRangeSlidersUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Action.bmp" />
+    <EmbeddedResource Include="Resources\Backgrounds\orang021.jpg" />
+    <EmbeddedResource Include="Resources\Docking.bmp" />
+    <EmbeddedResource Include="Resources\ExamplesTree.xml" />
+    <EmbeddedResource Include="Resources\Format.bmp" />
+    <EmbeddedResource Include="Resources\Images\Book.png" />
+    <EmbeddedResource Include="Resources\Images\Clock.png" />
+    <EmbeddedResource Include="Resources\Images\Darts.png" />
+    <EmbeddedResource Include="Resources\Images\Envelope.png" />
+    <EmbeddedResource Include="Resources\Images\Flash.png" />
+    <EmbeddedResource Include="Resources\Images\Flask.png" />
+    <EmbeddedResource Include="Resources\Images\Globe.png" />
+    <EmbeddedResource Include="Resources\Images\Light.png" />
+    <EmbeddedResource Include="Resources\Images\Mobile.png" />
+    <EmbeddedResource Include="Resources\Images\Msn.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\Calendar.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\CalendarSmall.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\Contacts.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\ContactsSmall.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\Folders.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\FoldersSmall.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\Journal.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\JournalSmall.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\Mail.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\MailSmall.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\Notes.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\NotesSmall.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\Shortcuts.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\ShortcutsSmall.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\Tasks.png" />
+    <EmbeddedResource Include="Resources\Images\NavigationPane\TasksSmall.png" />
+    <EmbeddedResource Include="Resources\Images\Pencil.png" />
+    <EmbeddedResource Include="Resources\Images\TaskDialog\computer_48_hot.png" />
+    <EmbeddedResource Include="Resources\Images\TaskDialog\Person.png" />
+    <EmbeddedResource Include="Resources\Layout.bmp" />
+    <EmbeddedResource Include="Resources\Misc.bmp" />
+    <EmbeddedResource Include="Resources\Standard.bmp" />
+    <EmbeddedResource Include="Resources\Test.bmp" />
+    <EmbeddedResource Include="Resources\Themes\Office2007Blue.xml" />
+    <EmbeddedResource Include="Resources\Themes\Office2007Blue_.xml" />
+    <EmbeddedResource Include="Resources\Tools.bmp" />
+    <EmbeddedResource Include="Resources\UI.ico" />
+    <EmbeddedResource Include="Resources\UILogo.png" />
+    <EmbeddedResource Include="Resources\UISplash.png" />
+    <EmbeddedResource Include="Resources\View.bmp" />
+    <EmbeddedResource Include="Rotator\NRotatorUC.resx">
+      <DependentUpon>NRotatorUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleIDEs\Bitmaps\IDEStandard.bmp" />
+    <EmbeddedResource Include="SampleIDEs\Bitmaps\SolutionExplorer.bmp" />
+    <EmbeddedResource Include="SampleIDEs\NIDELoadUC.resx">
+      <DependentUpon>NIDELoadUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleIDEs\NVisualStudioIDE.resx">
+      <DependentUpon>NVisualStudioIDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scrollbars\NHScrollBarUC.resx">
+      <DependentUpon>NHScrollBarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scrollbars\NSkinnedScrollBarsUC.resx">
+      <DependentUpon>NSkinnedScrollBarsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scrollbars\NVScrollBarUC.resx">
+      <DependentUpon>NVScrollBarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skinning\NIndividualSkinningUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NIndividualSkinningUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skinning\NSkinningUC.resx">
+      <DependentUpon>NSkinningUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusBars\NStatusBarUC.resx">
+      <DependentUpon>NStatusBarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControl\NTabControlUC.resx">
+      <DependentUpon>NTabControlUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabStrip\NTabStripUC.resx">
+      <DependentUpon>NTabStripUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextBoxes\NMaskedTextBoxUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NMaskedTextBoxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextBoxes\NRichTextBoxUC.resx">
+      <DependentUpon>NRichTextBoxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextBoxes\NTextBoxUC.resx">
+      <DependentUpon>NTextBoxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemableElements\NThemableElementsUC.resx">
+      <DependentUpon>NThemableElementsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolStrips\NToolStripSkinRendererUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NToolStripSkinRendererUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tooltips\NTooltipControllerUC.resx">
+      <DependentUpon>NTooltipControllerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tooltips\NTooltipUC.resx">
+      <DependentUpon>NTooltipUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrackBar\NTrackBarUC.resx">
+      <DependentUpon>NTrackBarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TranslucentWindow\NTranslucentWindowUC.resx">
+      <DependentUpon>NTranslucentWindowUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeList\NTreeListCustomRenderingUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NTreeListCustomRenderingUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeList\NTreeListDataBindingUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NTreeListDataBindingUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeList\NTreeListFilteringUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NTreeListFilteringUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeList\NTreeListOutlookReportUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NTreeListOutlookReportUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeList\NTreeListUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NTreeListUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView\NTreeViewExAppearanceUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NTreeViewExAppearanceUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView\NTreeViewExCheckBoxesUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NTreeViewExCheckBoxesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView\NTreeViewExDragDropUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NTreeViewExDragDropUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView\NTreeViewExEventsUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NTreeViewExEventsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView\NTreeViewExFilteringUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NTreeViewExFilteringUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView\NTreeViewExSortingUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NTreeViewExSortingUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView\NTreeViewExUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NTreeViewExUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView\NTreeViewExXmlViewerUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NTreeViewExXmlViewerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView\NTreeViewUC.resx">
+      <DependentUpon>NTreeViewUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIAboutDlg.resx">
+      <DependentUpon>UIAboutDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpDowns\NNumericUpDownUC.resx">
+      <DependentUpon>NNumericUpDownUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Animation\NAnimationSurfaceUC.htm" />
+    <Content Include="Buttons\NButtonUC.htm" />
+    <Content Include="Buttons\NCheckBoxUC.htm" />
+    <Content Include="Buttons\NColorButtonUC.htm" />
+    <Content Include="Buttons\NControlDropDownButtonUC.htm" />
+    <Content Include="Buttons\NOptionButtonUC.htm" />
+    <Content Include="Buttons\NRadioButtonUC.htm" />
+    <Content Include="Calculator\NCalculatorDropDownUC.htm" />
+    <Content Include="Calculator\NCalculatorUC.htm" />
+    <Content Include="ComboBoxes\NComboBoxesUC.htm" />
+    <Content Include="ComboBoxes\NFontComboBoxUC.htm" />
+    <Content Include="CommandBars\NCommandAppearanceUC.htm" />
+    <Content Include="CommandBars\NCommandBarsPersistencyUC.htm" />
+    <Content Include="CommandBars\NCommandImageSupportUC.htm" />
+    <Content Include="CommandBars\NCommandLayoutUC.htm" />
+    <Content Include="CommandBars\NContextMenusUC.htm" />
+    <Content Include="CommandBars\NCustomMenusUC.htm" />
+    <Content Include="CommandBars\NDockingToolbarsUC.htm" />
+    <Content Include="CommandBars\NToolbarImageTextRelationUC.htm" />
+    <Content Include="DataGridView\RptSampl.mdb" />
+    <Content Include="DataNavigator\NDataNavigatorUC.htm" />
+    <Content Include="DateTimePicker\NDateTimePickerUC.htm" />
+    <Content Include="Decorators\NDecoratorsUC.htm" />
+    <Content Include="DockingPanels\Include\DockPanelBasicFeatures.png" />
+    <Content Include="DockingPanels\Include\DockPanelsComplexLayoutDiagram.png" />
+    <Content Include="DockingPanels\NAutoHideSupportUC.htm" />
+    <Content Include="DockingPanels\NBorderSupportUC.htm" />
+    <Content Include="DockingPanels\NCommandModelUC.htm" />
+    <Content Include="DockingPanels\NComplexLayoutUC.htm" />
+    <Content Include="DockingPanels\NDesignTimeSupportUC.htm" />
+    <Content Include="DockingPanels\NDockingPanelsBasicFeaturesUC.htm" />
+    <Content Include="DockingPanels\NDockingPanelsFunctionalityUC.htm" />
+    <Content Include="DockingPanels\NDockingPanelsPersistencyUC.htm" />
+    <Content Include="DockingPanels\NDockingPanelsStylesUC.htm" />
+    <Content Include="DockingPanels\NDockingStickersUC.htm" />
+    <Content Include="DockingPanels\NDocumentViewUC.htm" />
+    <Content Include="DockingPanels\NMdiChildrenCustomFramesUC.htm" />
+    <Content Include="DockingPanels\NMdiMenuMergeUC.htm" />
+    <Content Include="DockingPanels\NNestedDockContainersUC.htm" />
+    <Content Include="DockingPanels\NSizingRestrictionsUC.htm" />
+    <Content Include="DockingPanels\NStickyFloatingFramesUC.htm" />
+    <Content Include="DockingPanels\NVisualTabNavigationUC.htm" />
+    <Content Include="EntryControls\NEntryBoxUC.htm" />
+    <Content Include="EntryControls\NEntryControlsExtendedUC.htm" />
+    <Content Include="Expanders\NCustomExpanderUC.htm" />
+    <Content Include="Expanders\NExpanderUC.htm" />
+    <Content Include="Expanders\NExplorerBarUC.htm" />
+    <Content Include="Forms\NDesktopToolbarUC.htm" />
+    <Content Include="Forms\NFormCustomCaptionButtonsUC.htm" />
+    <Content Include="Forms\NFormUC.htm" />
+    <Content Include="Forms\NTaskDialogExtendedUC.htm" />
+    <Content Include="Forms\NTaskDialogMessageBoxUC.htm" />
+    <Content Include="Forms\NTaskDialogRadioButtonsUC.htm" />
+    <Content Include="GalleryPanel\NGalleryPanelThumbnailPreviewUC.htm" />
+    <Content Include="GalleryPanel\NGalleryPanelUC.htm" />
+    <Content Include="GroupBoxes\NGroupBoxExUC.htm" />
+    <Content Include="GroupBoxes\NGroupBoxUC.htm" />
+    <Content Include="GroupBoxes\NGrouperUC.htm" />
+    <Content Include="Labels\NRichTextLabelUC.htm" />
+    <Content Include="ListBoxes\NColorListBoxUC.htm" />
+    <Content Include="ListBoxes\NFontListBoxUC.htm" />
+    <Content Include="ListBoxes\NListBoxImageSizeUC.htm" />
+    <Content Include="ListBoxes\NListBoxUC.htm" />
+    <Content Include="ListView\NListViewUC.htm" />
+    <Content Include="Localization\NLocalizationUC.htm" />
+    <Content Include="Lookup\NFileLookupUC.htm" />
+    <Content Include="Misc\NColorPaneUC.htm" />
+    <Content Include="Misc\NColorPickerUC.htm" />
+    <Content Include="Misc\NColorToolsUC.htm" />
+    <Content Include="Misc\NHyperLinkSupportUC.htm" />
+    <Content Include="Misc\NLineControlUC.htm" />
+    <Content Include="Misc\NPaletteColorPaneUC.htm" />
+    <Content Include="Misc\NSplitterUC.htm" />
+    <Content Include="GalleryPanel\NSystemImagesUC.htm" />
+    <Content Include="Misc\NUIPanelUC.htm" />
+    <Content Include="NavigationPane\NNavigationPaneCollapseUC.htm" />
+    <Content Include="NavigationPane\NNavigationPaneUC.htm" />
+    <Content Include="Panelbar\NPanelBarUC.htm" />
+    <Content Include="PopupNotify\NPopupNotifyUC.htm" />
+    <Content Include="Popup\NPopupComboUC.htm" />
+    <Content Include="Popup\NPopupUC.htm" />
+    <Content Include="ProgressBars\NProgressBarAppearanceUC.htm" />
+    <Content Include="ProgressBars\NProgressBarUC.htm" />
+    <Content Include="ProgressBars\NWaitingBarAppearanceUC.htm" />
+    <Content Include="ProgressBars\NWaitingBarUC.htm" />
+    <None Include="Resources\JournalSmall.png" />
+    <Content Include="RangeSliders\NRangeSlidersUC.htm" />
+    <Content Include="Rotator\NRotatorUC.htm" />
+    <Content Include="SampleIDEs\NIDELoadUC.htm" />
+    <Content Include="Scrollbars\NHScrollBarUC.htm" />
+    <Content Include="Scrollbars\NSkinnedScrollBarsUC.htm" />
+    <Content Include="Scrollbars\NVScrollBarUC.htm" />
+    <EmbeddedResource Include="Skinning\LocalSkins\ButtonsSkin.NevronSkin.xml" />
+    <EmbeddedResource Include="Skinning\LocalSkins\ScrollbarsSkin.NevronSkin.xml" />
+    <Content Include="Skinning\NIndividualSkinningUC.htm" />
+    <Content Include="Skinning\NSkinningUC.htm" />
+    <Content Include="StatusBars\NStatusBarUC.htm" />
+    <Content Include="TabControl\NTabControlUC.htm" />
+    <Content Include="TabStrip\NTabStripUC.htm" />
+    <Content Include="TextBoxes\NMaskedTextBoxUC.htm" />
+    <Content Include="TextBoxes\NRichTextBoxUC.htm" />
+    <Content Include="TextBoxes\NTextBoxUC.htm" />
+    <Content Include="ThemableElements\NThemableElementsUC.htm" />
+    <Content Include="ToolStrips\NToolStripSkinRendererUC.htm" />
+    <Content Include="Tooltips\NTooltipControllerUC.htm" />
+    <Content Include="Tooltips\NTooltipUC.htm" />
+    <Content Include="TrackBar\NTrackBarUC.htm" />
+    <Content Include="TranslucentWindow\NTranslucentWindowUC.htm" />
+    <EmbeddedResource Include="TreeList\Images\Outlook.jpg" />
+    <Content Include="TreeList\NFileExplorerUC.htm" />
+    <Content Include="TreeList\NTreeListCustomRenderingUC.htm" />
+    <Content Include="TreeList\NTreeListDataBindingUC.htm" />
+    <Content Include="TreeList\NTreeListFilteringUC.htm" />
+    <Content Include="TreeList\NTreeListFormattingUC.htm" />
+    <Content Include="TreeList\NTreeListNotesUC.htm" />
+    <Content Include="TreeList\NTreeListOutlookReportUC.htm" />
+    <Content Include="TreeList\NTreeListUC.htm" />
+    <Content Include="TreeView\NTreeViewExAppearanceUC.htm" />
+    <Content Include="TreeView\NTreeViewExCheckBoxesUC.htm" />
+    <Content Include="TreeView\NTreeViewExDragDropUC.htm" />
+    <Content Include="TreeView\NTreeViewExEventsUC.htm" />
+    <Content Include="TreeView\NTreeViewExFilteringUC.htm" />
+    <Content Include="TreeView\NTreeViewExSortingUC.htm" />
+    <Content Include="TreeView\NTreeViewExUC.htm" />
+    <Content Include="TreeView\NTreeViewExXmlViewerUC.htm" />
+    <Content Include="TreeView\NTreeViewUC.htm" />
+    <EmbeddedResource Include="TreeView\Resources\TreeView1.png" />
+    <EmbeddedResource Include="TreeView\Resources\TreeView6.png" />
+    <EmbeddedResource Include="TreeView\Resources\TreeView5.png" />
+    <EmbeddedResource Include="TreeView\Resources\TreeView4.png" />
+    <EmbeddedResource Include="TreeView\Resources\TreeView3.png" />
+    <EmbeddedResource Include="TreeView\Resources\TreeView2.png" />
+    <Content Include="UpDowns\NNumericUpDownUC.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

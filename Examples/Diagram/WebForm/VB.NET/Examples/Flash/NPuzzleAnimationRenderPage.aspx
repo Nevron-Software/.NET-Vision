@@ -1,0 +1,1 @@
+<%@ Page language="vb" Inherits="Nevron.Examples.Diagram.Webform.NPuzzleAnimationRenderPage" CodeFile="NPuzzleAnimationRenderPage.aspx.vb" %>

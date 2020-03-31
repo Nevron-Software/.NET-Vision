@@ -1,0 +1,130 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+        <b>Nevron Diagram</b> makes it easy to import geographical data from Esri shapefiles. You
+        can import the shapes in separate layers and control the way they are rendered applying
+        various styles to them. Also additional information is provided for each shape
+        (such as Country Name, Area, Population, Currency, etc.). When rendering the map, the 3D
+        geographical data must be projected on the plane to produce the 2D map. You can choose from
+        the following projections:
+    </p>
+    <p>        
+        <ol>
+            <li>
+                <b>Aitoff</b> - Proposed by David A. Aitoff in 1889, it is the equatorial form of the
+                azimuthal equidistant projection, but stretched into a 2:1 ellipse while halving the
+                longitude from the central meridian.
+            </li>
+            <li>
+                <b>Bonne</b> - a pseudoconical equal-area map projection. All parallels are standard,
+                with the same scale as the central meridian; parallels are concentric circles. No
+                distortion along the reference parallel or the central meridian.
+            </li>
+            <li>
+                <b>Cylindrical Equal-Area</b> - represents a cylindrical equal-area projection of the
+                Earth. The following is a summary of cylindrical equal-area projection's special cases:
+                <ul>
+                    <li>Lambert - standard parallel of 0 degrees</li>
+                    <li>Behrmann - standard parallel of 30 degrees</li>
+                    <li>Tristan Edwards - standard parallel of 37.383 degrees</li>
+                    <li>Peters - standard parallel of 44.138 degrees</li>
+                    <li>Gall - standard parallel of 45 degrees</li>
+                    <li>Balthasart - standard parallel of 50 degrees</li>
+                </ul>
+            </li>
+            <li>
+                <b>Eckert IV</b> - pseudocylindrical and equal area projection. The central meridian
+                is straight, the 180th meridians are semi-circles, other meridians are elliptical.
+                Scale is true along the parallel at 40:30 North and South.
+            </li>
+            <li>
+                <b>Eckert VI</b> - pseudocylindrical and equal area projection. The central meridian and
+                all parallels are at right angles, all other meridians are sinusoidal curves. Shape
+                distortion increases at the poles. Scale is correct at standard parallels of 49:16 North
+                and South.
+            </li>
+            <li>
+                <b>Equirectangular</b> - projection that maps meridians to equally spaced vertical
+                straight lines, and parallels to equally spaced horizontal straight lines.
+            </li>
+            <li>
+                <b>Hammer</b> - an equal-area map projection, described by Ernst Hammer in 1892.
+                Visually, the Aitoff and Hammer projections are very similar, but the Hammer has seen
+                more use because of its equal-area property.
+            </li>
+            <li>
+                <b>Kavrayskiy VII</b> - a map projection invented by V. V. Kavrayskiy in 1939 for use
+                 as a general purpose pseudocylindrical projection. It has been used in the former Soviet
+                 Union but is almost unknown in the Western world.
+            </li>
+            <li>
+                <b>Mercator</b> - introduced in 1569 by Gerardus Mercator. 
+                It is often described as a cylindrical projection, but it must be derived
+                mathematically. The meridians are equally spaced, parallel vertical lines, 
+                and the parallels of latitude are parallel, horizontal straight lines, 
+                spaced farther and farther apart as their distance from the Equator 
+                increases.
+            </li>
+            <li>
+                <b>Miller Cylindrical</b> - a modified Mercator projection, proposed by Osborn
+                Maitland Miller (1897-1979) in 1942. The parallels of latitude are scaled by a
+                factor of 0.8, projected according to Mercator, and then the result is divided
+                by 0.8 to retain scale along the equator.
+            </li>
+            <li>
+                <b>Mollweide</b> - a pseudocylindrical map projection generally used for global 
+                maps of the world (or sky). Also known as the Babinet projection, homolographic
+                projection, or elliptical projection. It sacrifices fidelity to angle and shape in
+                favor of accurate depiction of area.
+            </li>
+            <li>
+                <b>Orthographic</b> - a perspective (or azimuthal) projection, in which the sphere
+                is projected onto a tangent plane. It depicts a hemisphere of the globe as it appears from
+                outer space. The shapes and areas are distorted, particularly near the edges, but distances
+                are preserved along parallels.
+            </li>
+            <li>
+                <b>Robinson</b> - made in 1988 to show the entire world at once.
+                It was specifically created in an attempt to find the good compromise to the problem of
+                readily showing the whole globe as a flat image. The projection is neither equal-area
+                nor conformal, abandoning both for a compromise.
+            </li>
+            <li>
+                <b>Stereographic</b> - it is a particular mapping (function) that projects a sphere onto
+                a plane. In general, area-preserving map projections are preferred for statistical applications,
+                because they behave well with respect to integration, while angle-preserving (conformal) map
+                projections are preferred for navigation. The stereographic projection falls into the second category.
+            </li>
+            <li>
+                <b>Van der Grinten</b> - neither equal-area nor conformal projection. It projects 
+                the entire Earth into a circle, though the polar regions are subject to extreme distortion.
+                The projection offers pleasant balance of shape and scale distortion. Boundary is a circle;
+                all parallels and meridians are circular arcs (spacing of parallels is arbitrary). No 
+                distortion along the standard parallel at the equator.
+            </li>
+            <li>
+                <b>Wagner VI</b> - a pseudocylindrical whole Earth map projection. Like the Robinson projection,
+                 it is a compromise projection, not having any special attributes other than a pleasing, low
+                 distortion appearance.
+            </li>
+            <li>
+                <b>Winkel Tripel</b> - a modified azimuthal map projection proposed by Oswald Winkel
+                in 1921. The projection is the arithmetic mean of the equirectangular projection and
+                the Aitoff projection. Goldberg & Gott show that the Winkel Tripel is arguably the best
+                overall whole-earth map projection known, producing very small distance errors, small
+                combinations of ellipticity and area errors, and the smallest skewness of any map. In
+                1998, the Winkel Tripel projection replaced the Robinson projection as the standard
+                projection for world maps made by the National Geographic Society.
+            </li>
+        </ol>
+	</p>
+	<p>
+	    You can play with the example zooming the map in and out using the scrollbar or clicking the scrollbar
+	    and using the mouse wheel afterwards. You can also see the available data for the shapes and change
+	    the used projection from the combo box. While you move the cursor over the map, the cursor position
+	    in longitude and lattitude is also shown. The <b>InvertPoint</b> method of the projection is used to calculate
+	    the longitude an lattitude values from the current screen coordinates. Note that the Winkel Tripel
+	    projection does not support this method.
+	</p>
+</description>
+&nbsp;

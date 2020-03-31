@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC77D3A2-2AC6-4EB1-B2B4-EC1260B7E442}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Resources\Diagram.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Nevron.Examples.Diagram.WinForm</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Nevron.Examples.Diagram.WinForm</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Nevron.Examples.Diagram.WinForm/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>2</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.SHDocVw">
+      <Name >AxInterop.SHDocVw</Name>
+      <HintPath >..\..\..\bin\AxInterop.SHDocVw.dll</HintPath>
+      <Private >True</Private>
+    </Reference>
+    <Reference Include="Nevron.Diagram">
+      <Name>Nevron.Diagram</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Diagram.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.Diagram.Shapes">
+      <Name>Nevron.Diagram.Shapes</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Diagram.Shapes.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.Diagram.WinForm">
+      <Name>Nevron.Diagram.WinForm</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Diagram.WinForm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.Examples.Framework.WinForm">
+      <Name>Nevron.Examples.Framework.WinForm</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Examples.Framework.WinForm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.Presentation">
+      <Name>Nevron.Presentation</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.System">
+      <Name>Nevron.System</Name>
+      <HintPath>..\..\..\..\bin\Nevron.System.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.UI.WinForm.Docking">
+      <Name>Nevron.UI.WinForm.Docking</Name>
+      <HintPath>..\..\..\..\bin\Nevron.UI.WinForm.Docking.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.UI.WinForm.Skins">
+      <Name>Nevron.UI.WinForm.Skins</Name>
+      <HintPath>..\..\..\..\bin\Nevron.UI.WinForm.Skins.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Updates.txt" />
+    <None Include="Animations\NHardwareAccelerationUC.htm" />
+    <Content Include="App.ico" />
+    <EmbeddedResource Include="Animations\NHardwareAccelerationUC.resx">
+      <DependentUpon>NHardwareAccelerationUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Resources\Airplane.png" />
+    <None Include="Resources\Data\Computers.vsx">
+    </None>
+    <None Include="Resources\Data\FlowDiagram.ndx">
+    </None>
+    <None Include="DOM\Shapes\NShapeOutwardPortsUC.htm" />
+    <None Include="Import\NTreeDataImportUC.htm" />
+    <None Include="Import\NGraphDataImportUC.htm" />
+    <None Include="Import\NDatabaseSchemaImportUC.htm" />
+    <None Include="Import\NVisioImportUC.htm" />
+    <None Include="Resources\Data\Northwind.mdb" />
+    <None Include="Resources\Data\OrgData.mdb" />
+    <None Include="Resources\Data\SiteMap.mdb" />
+    <None Include="Animations\NWorldCup2006UC.htm" />
+    <None Include="DemoDiagrams\NMindMapDiagramUC.htm" />
+    <None Include="Applications\NClassDesignerUC.htm" />
+    <None Include="Applications\NPipelineEditorUC.htm" />
+    <None Include="Applications\NTicketReservationUC.htm" />
+    <Content Include="DemoDiagrams\NFloorPlanDiagramUC.htm" />
+    <None Include="Applications\NClickomaniaUC.htm" />
+    <None Include="DOM\Decorators\NExpandCollapseDecoratorUC.htm" />
+    <None Include="DOM\Groups\NGroupLayoutUC.htm" />
+    <None Include="DOM\Decorators\NShowHideSubtreeDecoratorUC.htm" />
+    <None Include="DOM\Decorators\NFrameDecoratorUC.htm" />
+    <Content Include="DOM\Groups\NNestedGroupsUC.htm" />
+    <Content Include="DOM\Shapes\NCustomShapesUC.htm" />
+    <None Include="DemoDiagrams\NDiagramClassHierarchyUC.htm" />
+    <None Include="Animations\NSimpleNetworkUC.htm" />
+    <None Include="Animations\NPuzzleAnimationUC.htm" />
+    <Content Include="DOM\Shapes\NWinFormControlHostingUC.htm" />
+    <None Include="Export\NAutocadExportUC.htm" />
+    <None Include="Export\NFlashExportUC.htm" />
+    <None Include="Export\NXamlExportUC.htm" />
+    <None Include="Export\NFlashRedirectUC.htm" />
+    <Content Include="Import\NExcelImportUC.htm" />
+    <Content Include="Layouts\NStressTestUC.htm" />
+    <None Include="Resources\Maps\Sales.mdb">
+    </None>
+    <Content Include="Maps\NMapDataBindingUC.htm" />
+    <Content Include="Maps\NMapDrillDownUC.htm" />
+    <Content Include="Maps\NMapProjectionsUC.htm" />
+    <Content Include="Maps\NWorldMapUC.htm" />
+    <Content Include="Maps\NWorldPopulationUC.htm" />
+    <Content Include="Layouts\NBalloonTreeLayoutUC.htm" />
+    <Content Include="Layouts\NBarycenterLayoutUC.htm" />
+    <Content Include="Layouts\NCompactDepthTreeLayoutUC.htm" />
+    <Content Include="Layouts\NDockLayoutUC.htm" />
+    <Content Include="Layouts\NFlowLayoutUC.htm" />
+    <Content Include="Layouts\NLayeredGraphLayoutUC.htm" />
+    <Content Include="Layouts\NLayeredTreeLayoutUC.htm" />
+    <Content Include="Layouts\NOrthogonalGraphLayoutUC.htm" />
+    <Content Include="Layouts\NRadialGraphLayoutUC.htm" />
+    <Content Include="Layouts\NSingleCycleLayoutUC.htm" />
+    <Content Include="Layouts\NSpringLayoutUC.htm" />
+    <Content Include="Layouts\NStackLayoutUC.htm" />
+    <Content Include="Layouts\NSymmetricalLayoutUC.htm" />
+    <Content Include="Layouts\NTableLayoutUC.htm" />
+    <Content Include="Layouts\NTipOverTreeLayoutUC.htm" />
+    <EmbeddedResource Include="Import\NVisioImportUC.resx">
+      <DependentUpon>NVisioImportUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maps\NMapDrillDownUC.resx">
+      <DependentUpon>NMapDrillDownUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CustomCommandbarImageList.png" />
+    <None Include="ShapeFactories\NBusinessProcessShapesUC.htm" />
+    <None Include="ShapeFactories\NFilesAndFoldersShapesUC.htm" />
+    <EmbeddedResource Include="DemoDiagrams\NCompanyOrgChartUC.resx">
+      <DependentUpon>NCompanyOrgChartUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Decorators\NFrameDecoratorUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NFrameDecoratorUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Groups\NGroupLayoutUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NGroupLayoutUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\NClickomaniaUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NClickomaniaUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Shapes\NWinFormControlHostingUC.resx">
+      <DependentUpon>NWinFormControlHostingUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Animations\NPuzzleAnimationUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NPuzzleAnimationUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Animations\NSimpleNetworkUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NSimpleNetworkUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Animations\NWorldCup2006UC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NWorldCup2006UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NStressTestUC.resx">
+      <DependentUpon>NStressTestUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maps\NMapDataBindingUC.resx">
+      <DependentUpon>NMapDataBindingUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Flags.bmp" />
+    <Compile Include="Animations\NHardwareAccelerationUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\NClassDesignerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\NPipelineEditorUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\NTicketReservationUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\NDiagramExamplesCommandBarsManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\NDiagramExamplesCommandIDs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\NDiagramExamplesConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\NDiagramExamplesDockManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\NDiagramExamplesLayoutStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\NDiagramExampleUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\NEventLogUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\NMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DOM\Groups\NNestedGroupsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Export\NFlashRedirectUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Import\NDatabaseSchemaImportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Import\NExcelImportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Import\NVisioImportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Import\NGraphDataImportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Import\NTreeDataImportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemoDiagrams\NMindMapDiagramUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemoDiagrams\NAccountingProcessFlowChartUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemoDiagrams\NBubbleSortFlowChartUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemoDiagrams\NCompanyOrgChartUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemoDiagrams\NExplorerInteractiveDiagramUC.cs" />
+    <Compile Include="DemoDiagrams\NFloorPlanDiagramUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemoDiagrams\NPeriodicTableSceinceDiagramUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemoDiagrams\NSimpleStateDiagramUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Shapes\NWinFormControlHostingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Animations\NPuzzleAnimationUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Animations\NWorldCup2006UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\DataStructures\NGraphNavigationUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\DataStructures\NGraphTraversalUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Decorators\NFrameDecoratorUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Decorators\NShowHideSubtreeDecoratorUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Decorators\NExpandCollapseDecoratorUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\DrawingDocument\NAbilitiesProtectionAndPermissionsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\DrawingDocument\NDrawingBoundsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\DrawingDocument\NDrawingScaleUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\DrawingDocument\NHistoryTransactionNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DOM\DrawingDocument\NUndoRedoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Groups\NGroupAndUngroupUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Groups\NGroupEmptyBehaviourUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Groups\NGroupLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Groups\NGroupResizeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Groups\NGroupSampleUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Layers\NLayersUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\NClickomaniaUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Shapes\NShapeOutwardPortsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Shapes\NBridgeableShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Shapes\NCustomShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Shapes\NPrimitive1DShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Shapes\NPrimitive2DShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Shapes\NRoutableConnectorsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Shapes\NShapeLabelsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Shapes\NShapePortsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Shapes\NShapeTranslationSlavesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Shapes\NStepAndArrowConnectorsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Shapes\NTextShapeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Stencils\NArrowheadShapesStencilUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Stencils\NCustomArrowheadsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Stencils\NCustomPointsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DOM\Stencils\NPointShapesStencilUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawingView\NBasicViewFeaturesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawingView\NControllerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawingView\NCustomDragDropUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawingView\NDragDropUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawingView\NEventsProcessingDelegationAndBubbling.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawingView\NGridUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawingView\NMultipleViewsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawingView\NRulersUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawingView\NSelectionUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawingView\NSnappingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawingView\NViewMessagesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemoDiagrams\NDiagramClassHierarchyUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Export\NXamlExportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Export\NFlashExportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Export\NExportBaseUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Export\NAutocadExportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Export\NImageExportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Animations\NSimpleNetworkUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Maps\NMapDrillDownUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Serialization\NPersistencyManagerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Printing\NPrintManagerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NStressTestUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Maps\NMapDataBindingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Maps\NMapProjectionsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Maps\NWorldMapUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Maps\NWorldPopulationUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NBalloonTreeLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NBarycenterLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NBasicLayoutsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NCompactDepthTreeLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NDockLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NFlowLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NLayeredGraphLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NLayeredTreeLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NOrthogonalGraphLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NRadialGraphLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NSingleCycleLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NSpringLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NStackLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NSymmetricalLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NTableLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\NTipOverTreeLayoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShapeFactories\NBusinessProcessShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShapeFactories\NFilesAndFoldersShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShapeFactories\NBasicShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShapeFactories\NBrainstormingShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShapeFactories\NElectricalSymbolsShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShapeFactories\NFlagsShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShapeFactories\NFloorPlanShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShapeFactories\NFlowChartingShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShapeFactories\NFoodShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShapeFactories\NNetworkShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShapeFactories\NSimpleNetworkShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShapeFactories\NSymbolShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShapeFactories\NTrafficSignsShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShapeFactories\NTravelShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShapeFactories\NWeatherShapesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualInterfaceComponents\NCommandBarsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualInterfaceComponents\NContextMenusUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualInterfaceComponents\NLibraryBrowserUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualInterfaceComponents\NPanAndZoomControlUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualInterfaceComponents\NStatusBarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualInterfaceComponents\NWizardUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Common\NDiagramExamplesCommandBarsManager.resx">
+      <DependentUpon>NDiagramExamplesCommandBarsManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\NDiagramExampleUC.resx">
+      <DependentUpon>NDiagramExampleUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\NEventLogUC.resx">
+      <DependentUpon>NEventLogUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\NMainForm.resx">
+      <DependentUpon>NMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import\NGraphDataImportUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NGraphDataImportUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import\NTreeDataImportUC.resx">
+      <DependentUpon>NTreeDataImportUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoDiagrams\NFloorPlanDiagramUC.resx">
+      <DependentUpon>NFloorPlanDiagramUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\DataStructures\NGraphNavigationUC.resx">
+      <DependentUpon>NGraphNavigationUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\DataStructures\NGraphTraversalUC.resx">
+      <DependentUpon>NGraphTraversalUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\DrawingDocument\NAbilitiesProtectionAndPermissionsUC.resx">
+      <DependentUpon>NAbilitiesProtectionAndPermissionsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\DrawingDocument\NDrawingBoundsUC.resx">
+      <DependentUpon>NDrawingBoundsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\DrawingDocument\NDrawingScaleUC.resx">
+      <DependentUpon>NDrawingScaleUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\DrawingDocument\NHistoryTransactionNameForm.resx">
+      <DependentUpon>NHistoryTransactionNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\DrawingDocument\NUndoRedoUC.resx">
+      <DependentUpon>NUndoRedoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Groups\NGroupAndUngroupUC.resx">
+      <DependentUpon>NGroupAndUngroupUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Groups\NGroupEmptyBehaviourUC.resx">
+      <DependentUpon>NGroupEmptyBehaviourUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Groups\NGroupResizeUC.resx">
+      <DependentUpon>NGroupResizeUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Layers\NLayersUC.resx">
+      <DependentUpon>NLayersUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Shapes\NBridgeableShapesUC.resx">
+      <DependentUpon>NBridgeableShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Shapes\NCustomShapesUC.resx">
+      <DependentUpon>NCustomShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Shapes\NPrimitive1DShapesUC.resx">
+      <DependentUpon>NPrimitive1DShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Shapes\NPrimitive2DShapesUC.resx">
+      <DependentUpon>NPrimitive2DShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Shapes\NRoutableConnectorsUC.resx">
+      <DependentUpon>NRoutableConnectorsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Shapes\NShapeLabelsUC.resx">
+      <DependentUpon>NShapeLabelsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Shapes\NShapeOutwardPortsUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NShapeOutwardPortsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Shapes\NShapePortsUC.resx">
+      <DependentUpon>NShapePortsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Shapes\NShapeTranslationSlavesUC.resx">
+      <DependentUpon>NShapeTranslationSlavesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Shapes\NStepAndArrowConnectorsUC.resx">
+      <DependentUpon>NStepAndArrowConnectorsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Shapes\NTextShapeUC.resx">
+      <DependentUpon>NTextShapeUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Stencils\NArrowheadShapesStencilUC.resx">
+      <DependentUpon>NArrowheadShapesStencilUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Stencils\NCustomArrowheadsUC.resx">
+      <DependentUpon>NCustomArrowheadsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Stencils\NCustomPointsUC.resx">
+      <DependentUpon>NCustomPointsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOM\Stencils\NPointShapesStencilUC.resx">
+      <DependentUpon>NPointShapesStencilUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingView\NBasicViewFeaturesUC.resx">
+      <DependentUpon>NBasicViewFeaturesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingView\NControllerUC.resx">
+      <DependentUpon>NControllerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingView\NCustomDragDropUC.resx">
+      <DependentUpon>NCustomDragDropUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingView\NDragDropUC.resx">
+      <DependentUpon>NDragDropUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingView\NEventsProcessingDelegationAndBubbling.resx">
+      <DependentUpon>NEventsProcessingDelegationAndBubbling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingView\NGridUC.resx">
+      <DependentUpon>NGridUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingView\NMultipleViewsUC.resx">
+      <DependentUpon>NMultipleViewsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingView\NRulersUC.resx">
+      <DependentUpon>NRulersUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingView\NSelectionUC.resx">
+      <DependentUpon>NSelectionUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingView\NSnappingUC.resx">
+      <DependentUpon>NSnappingUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingView\NViewMessagesUC.resx">
+      <DependentUpon>NViewMessagesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoDiagrams\NDiagramClassHierarchyUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NDiagramClassHierarchyUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\NImageExportUC.resx">
+      <DependentUpon>NImageExportUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Serialization\NPersistencyManagerUC.resx">
+      <DependentUpon>NPersistencyManagerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\NPrintManagerUC.resx">
+      <DependentUpon>NPrintManagerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maps\NMapProjectionsUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NMapProjectionsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maps\NWorldMapUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NWorldMapUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maps\NWorldPopulationUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NWorldPopulationUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NBalloonTreeLayoutUC.resx">
+      <DependentUpon>NBalloonTreeLayoutUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NBarycenterLayoutUC.resx">
+      <DependentUpon>NBarycenterLayoutUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NBasicLayoutsUC.resx">
+      <DependentUpon>NBasicLayoutsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NCompactDepthTreeLayoutUC.resx">
+      <DependentUpon>NCompactDepthTreeLayoutUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NDockLayoutUC.resx">
+      <DependentUpon>NDockLayoutUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NFlowLayoutUC.resx">
+      <DependentUpon>NFlowLayoutUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NLayeredGraphLayoutUC.resx">
+      <DependentUpon>NLayeredGraphLayoutUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NLayeredTreeLayoutUC.resx">
+      <DependentUpon>NLayeredTreeLayoutUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NOrthogonalGraphLayoutUC.resx">
+      <DependentUpon>NOrthogonalGraphLayoutUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NRadialGraphLayoutUC.resx">
+      <DependentUpon>NRadialGraphLayoutUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NSingleCycleLayoutUC.resx">
+      <DependentUpon>NSingleCycleLayoutUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NSpringLayoutUC.resx">
+      <DependentUpon>NSpringLayoutUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NStackLayoutUC.resx">
+      <DependentUpon>NStackLayoutUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NSymmetricalLayoutUC.resx">
+      <DependentUpon>NSymmetricalLayoutUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NTableLayoutUC.resx">
+      <DependentUpon>NTableLayoutUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\NTipOverTreeLayoutUC.resx">
+      <DependentUpon>NTipOverTreeLayoutUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Diagram.ico" />
+    <EmbeddedResource Include="Resources\DiagramLogo.png" />
+    <EmbeddedResource Include="Resources\DiagramSplash.png" />
+    <EmbeddedResource Include="Resources\ExamplesTree.xml" />
+    <EmbeddedResource Include="Resources\man1.jpg" />
+    <EmbeddedResource Include="Resources\man2.jpg" />
+    <EmbeddedResource Include="Resources\man3.jpg" />
+    <EmbeddedResource Include="Resources\man4.jpg" />
+    <EmbeddedResource Include="Resources\man5.jpg" />
+    <EmbeddedResource Include="Resources\man6.jpg" />
+    <EmbeddedResource Include="Resources\man7.jpg" />
+    <EmbeddedResource Include="Resources\woman1.jpg" />
+    <EmbeddedResource Include="Resources\woman2.jpg" />
+    <EmbeddedResource Include="Resources\woman3.jpg" />
+    <EmbeddedResource Include="ShapeFactories\NBusinessProcessShapesUC.resx">
+      <DependentUpon>NBusinessProcessShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFactories\NFilesAndFoldersShapesUC.resx">
+      <DependentUpon>NFilesAndFoldersShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFactories\NBasicShapesUC.resx">
+      <DependentUpon>NBasicShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFactories\NBrainstormingShapesUC.resx">
+      <DependentUpon>NBrainstormingShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFactories\NElectricalSymbolsShapesUC.resx">
+      <DependentUpon>NElectricalSymbolsShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFactories\NFlagsShapesUC.resx">
+      <DependentUpon>NFlagsShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFactories\NFloorPlanShapesUC.resx">
+      <DependentUpon>NFloorPlanShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFactories\NFlowChartingShapesUC.resx">
+      <DependentUpon>NFlowChartingShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFactories\NFoodShapesUC.resx">
+      <DependentUpon>NFoodShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFactories\NNetworkShapesUC.resx">
+      <DependentUpon>NNetworkShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFactories\NSimpleNetworkShapesUC.resx">
+      <DependentUpon>NSimpleNetworkShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFactories\NSymbolShapesUC.resx">
+      <DependentUpon>NSymbolShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFactories\NTrafficSignsShapesUC.resx">
+      <DependentUpon>NTrafficSignsShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFactories\NTravelShapesUC.resx">
+      <DependentUpon>NTravelShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFactories\NWeatherShapesUC.resx">
+      <DependentUpon>NWeatherShapesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualInterfaceComponents\NCommandBarsUC.resx">
+      <DependentUpon>NCommandBarsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualInterfaceComponents\NContextMenusUC.resx">
+      <DependentUpon>NContextMenusUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualInterfaceComponents\NLibraryBrowserUC.resx">
+      <DependentUpon>NLibraryBrowserUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualInterfaceComponents\NPanAndZoomControlUC.resx">
+      <DependentUpon>NPanAndZoomControlUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualInterfaceComponents\NStatusBarUC.resx">
+      <DependentUpon>NStatusBarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualInterfaceComponents\NWizardUC.resx">
+      <DependentUpon>NWizardUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DemoDiagrams\NAccountingProcessFlowChartUC.htm" />
+    <None Include="DemoDiagrams\NBubbleSortFlowChartUC.htm" />
+    <None Include="DemoDiagrams\NCompanyOrgChartUC.htm" />
+    <None Include="DemoDiagrams\NExplorerInteractiveDiagramUC.htm" />
+    <None Include="DemoDiagrams\NPeriodicTableSceinceDiagramUC.htm" />
+    <None Include="DemoDiagrams\NSimpleStateDiagramUC.htm" />
+    <None Include="DOM\DataStructures\NGraphNavigationUC.htm" />
+    <None Include="DOM\DataStructures\NGraphTraversalUC.htm" />
+    <None Include="DOM\DrawingDocument\NAbilitiesProtectionAndPermissionsUC.htm" />
+    <None Include="DOM\DrawingDocument\NDrawingBoundsUC.htm" />
+    <None Include="DOM\DrawingDocument\NDrawingScaleUC.htm" />
+    <None Include="DOM\DrawingDocument\NUndoRedoUC.htm" />
+    <None Include="DOM\Groups\NGroupAndUngroupUC.htm" />
+    <None Include="DOM\Groups\NGroupEmptyBehaviourUC.htm" />
+    <None Include="DOM\Groups\NGroupResizeUC.htm" />
+    <None Include="DOM\Groups\NGroupSampleUC.htm" />
+    <None Include="DOM\Layers\NLayersUC.htm" />
+    <None Include="DOM\Shapes\NBridgeableShapesUC.htm" />
+    <None Include="DOM\Shapes\NPrimitive1DShapesUC.htm" />
+    <None Include="DOM\Shapes\NPrimitive2DShapesUC.htm" />
+    <None Include="DOM\Shapes\NRoutableConnectorsUC.htm" />
+    <None Include="DOM\Shapes\NShapeLabelsUC.htm" />
+    <None Include="DOM\Shapes\NShapePortsUC.htm" />
+    <None Include="DOM\Shapes\NShapeTranslationSlavesUC.htm" />
+    <None Include="DOM\Shapes\NStepAndArrowConnectorsUC.htm" />
+    <None Include="DOM\Shapes\NTextShapeUC.htm" />
+    <None Include="DOM\Stencils\NArrowheadShapesStencilUC.htm" />
+    <None Include="DOM\Stencils\NCustomArrowHeadsUC.htm" />
+    <None Include="DOM\Stencils\NCustomPointsUC.htm" />
+    <None Include="DOM\Stencils\NPointShapesStencilUC.htm" />
+    <None Include="DrawingView\NBasicViewFeaturesUC.htm" />
+    <None Include="DrawingView\NControllerUC.htm" />
+    <None Include="DrawingView\NCustomDragDropUC.htm" />
+    <None Include="DrawingView\NDragDropUC.htm" />
+    <None Include="DrawingView\NEventsProcessingDelegationAndBubbling.htm" />
+    <None Include="DrawingView\NGridUC.htm" />
+    <None Include="DrawingView\NMultipleViewsUC.htm" />
+    <None Include="DrawingView\NRulersUC.htm" />
+    <None Include="DrawingView\NSelectionUC.htm" />
+    <None Include="DrawingView\NSnappingUC.htm" />
+    <None Include="DrawingView\NViewMessagesUC.htm" />
+    <None Include="Export\NImageExportUC.htm" />
+    <None Include="Serialization\NPersistencyManagerUC.htm" />
+    <None Include="Printing\NPrintManagerUC.htm" />
+    <None Include="Resources\Maps\cities.DBF" />
+    <None Include="Resources\Maps\cities.SHP" />
+    <None Include="Resources\Maps\countries.dbf" />
+    <None Include="Resources\Maps\countries.shp" />
+    <None Include="Resources\Maps\rivers.dbf" />
+    <None Include="Resources\Maps\rivers.shp" />
+    <None Include="Layouts\NBasicLayoutsUC.htm" />
+    <None Include="ShapeFactories\NBasicShapesUC.htm" />
+    <None Include="ShapeFactories\NBrainstormingShapesUC.htm" />
+    <None Include="ShapeFactories\NElectricalSymbolsShapesUC.htm" />
+    <None Include="ShapeFactories\NFlagsShapesUC.htm" />
+    <None Include="ShapeFactories\NFloorPlanShapesUC.htm" />
+    <None Include="ShapeFactories\NFlowChartingShapesUC.htm" />
+    <None Include="ShapeFactories\NFoodShapesUC.htm" />
+    <None Include="ShapeFactories\NNetworkShapesUC.htm" />
+    <None Include="ShapeFactories\NSimpleNetworkShapesUC.htm" />
+    <None Include="ShapeFactories\NSymbolShapesUC.htm" />
+    <None Include="ShapeFactories\NTrafficSignsShapesUC.htm" />
+    <None Include="ShapeFactories\NTravelShapesUC.htm" />
+    <None Include="ShapeFactories\NWeatherShapesUC.htm" />
+    <None Include="VisualInterfaceComponents\NCommandBarsUC.htm" />
+    <None Include="VisualInterfaceComponents\NContextMenusUC.htm" />
+    <None Include="VisualInterfaceComponents\NLibraryBrowserUC.htm" />
+    <None Include="VisualInterfaceComponents\NPanAndZoomControlUC.htm" />
+    <None Include="VisualInterfaceComponents\NStatusBarUC.htm" />
+    <None Include="VisualInterfaceComponents\NWizardUC.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,42 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NStandardPieUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="522" d:DesignWidth="300">
+    <StackPanel>
+		<Label Content="Pie Shape:" Height="28" Name="label1" />
+		<ComboBox Height="23" Name="PieShapeComboBox" SelectionChanged="PieShapeComboBox_SelectionChanged" />
+		<Label Content="Edge Percent:" Height="28" Name="label2" />
+		<ScrollBar Height="13" Name="EdgePercentScrollBar" Orientation="Horizontal" ValueChanged="EdgePercentScrollBar_ValueChanged" />
+
+		<Label Content="Outer Radius:" Height="28" Name="label3" />
+		<ScrollBar Height="13" Name="OuterRadiusScrollBar" Orientation="Horizontal" ValueChanged="OuterRadiusScrollBar_ValueChanged" />
+
+		<Label Content="Inner Radius:" Height="28" Name="label4" />
+		<ScrollBar Height="13" Name="InnerRadiusScrollBar" Orientation="Horizontal" ValueChanged="InnerRadiusScrollBar_ValueChanged" />
+
+		<Label Content="Label Mode:" Height="28" Name="label5" />
+		<ComboBox Height="23" Name="LabelModeComboBox" SelectionChanged="LabelModeComboBox_SelectionChanged" />
+
+		<Label Content="Arrow Lenght:" Height="28" Name="label6" />
+		<ScrollBar Height="13" Name="ArrowLengthScrollBar" Orientation="Horizontal" ValueChanged="ArrowLengthScrollBar_ValueChanged" />
+
+		<Label Content="Pointer Lenght:" Height="28" Name="label7" />
+		<ScrollBar Height="13" Name="ArrowPointerLengthScrollBar" Orientation="Horizontal" ValueChanged="PointerLengthScrollBar_ValueChanged" />
+
+		<Label Content="Label Connector Lenght:" Height="28" Name="label8" />
+		<ScrollBar Height="13" Name="LabelConnectorLengthScrollBar" Orientation="Horizontal" ValueChanged="LabelConnectorLengthScrollBar_ValueChanged" />
+
+		<Label Content="Lead-off Arrow Length:" Height="28" Name="label9" />
+		<ScrollBar Height="13" Name="LeadOffArrowLengthScrollBar" Orientation="Horizontal" ValueChanged="LeadOffArrowLengthScrollBar_ValueChanged" />
+
+		<Label Content="Begin Angle:" Height="28" Name="label10" />
+		<ScrollBar Height="13" Name="BeginAngleScrollBar" Orientation="Horizontal" ValueChanged="BeginAngleScrollBar_ValueChanged" />
+
+		<Label Content="Total Angle:" Height="28" Name="label11" />
+		<ScrollBar Height="13" Name="TotalAngleScrollBar" Orientation="Horizontal" ValueChanged="TotalAngleScrollBar_ValueChanged" />
+	</StackPanel>
+</Controls:NExampleBaseUC>

@@ -1,0 +1,29 @@
+<description>
+Nevron User Interface 4.0 introduces Docking Panels. These are powerful tree-based hierarchies of predefined controls that might be redocked or floated using visual feedback at run-time. The unique tree-based layout system allows for practically any complex structure to be achieved in a few lines of code. The dock manager uses advanced logic for getting a valid dockarea and overcomes the limitations of the standard docking behaviour experienced in other products - each docking panel is INDockAreaProvider and each container itself is also such a provider.
+
+<p>Following picture demonstrates how a panel might be docked against the edges of any container:</p>
+
+<p>
+	<img src="DockingPanels/Include/DockPanelBasicFeatures.png">
+</p>
+
+<p>
+The object model is pretty simple - there are two major types of docking panels - NDockingPanel and NDockingPanelContainer. The container hosts a tree of INDockZone objects which are used to position the panels according to the user's needs. The framework must be attached to a valid Form instance. The DockManager will internally create and add a root container with DockStyle.Fill to the form. You have access to it via the Manager's RootContainer property.
+</p>
+
+</description>
+<features>
+<ul class="uiList">
+	<li>Unified overall appearance integrated with the core Nevron UI Rendering System.
+	<li>Control over tabs style, tab align, caption height, buttons and font, splitter size, etc.
+	<li>Pluggable renderers. By default all the panels use the one exposed by the Dock Manager.
+	<li>Pluggable drag handlers. By default all the panels use the one exposed by the Dock Manager.
+	<li>Pluggable layout engines at any level of the tree.
+	<li>Allowed DockStyle.Fill for panel containers.
+	<li>Layout logic - absolute, relative and autosize.
+	<li>Panel permissions. Each panel has permissions specifying what functionality it exposes.
+	<li>Dock area masks - specify the allowed areas for docking per INDockAreaProvider.
+	<li>Event bubbling - each panel fires an event and delegates it to the manager (if not marked as "Handled"). This allows for flexible event handling.
+	<li>Great number of events, most of them cancelable.
+</ul>
+</features>

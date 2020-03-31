@@ -1,0 +1,71 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NGaugeScaleAppearanceUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="540" d:DesignWidth="300">
+    <StackPanel>
+        <Label Name="Label1" Content="Load Predefined Scale Style:" />
+        <ComboBox Name="PredefinedScaleStyleComboBox" SelectionChanged="PredefinedScaleStyleComboBox_SelectionChanged" />
+        <GroupBox Header="Ruler">
+            <StackPanel>
+                <Button Name="RulerFillStyleButton" Content="Fill Style" Click="RulerFillStyleButton_Click" />
+                <Button Name="RulerStrokeStyleButton" Content="Stroke Style"  Margin="0,10,0,10" Click="RulerStrokeStyleButton_Click" />
+                <DockPanel>
+                    <Label Name="label2" Content="Offset:" HorizontalAlignment="Left"/>
+                    <ComboBox Name="RulerOffsetComboBox" SelectionChanged="RulerOffsetComboBox_SelectionChanged"  HorizontalAlignment="Stretch" />
+                </DockPanel>
+                <DockPanel Margin="0,10,0,0">
+                    <Label Name="label3" Content="Length:" HorizontalAlignment="Left"/>
+                    <ComboBox Name="RulerLengthComboBox" SelectionChanged="RulerLengthComboBox_SelectionChanged"  HorizontalAlignment="Stretch" />
+                </DockPanel>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Major Ticks:">
+            <StackPanel>
+                <DockPanel Margin="0,0,0,10">
+                    <Label Name="label4" Content="Shape:" HorizontalAlignment="Left" />
+                    <ComboBox Name="MajorTickShapeComboBox" SelectionChanged="MajorTickShapeComboBox_SelectionChanged" HorizontalAlignment="Stretch" />
+                </DockPanel>
+                <Button Name="MajorTicksFillStyleButton" Content="Fill Style" Click="MajorTicksFillStyleButton_Click" />
+                <Button Name="MajorTicksStrokeStyleButton" Content="Stroke Style"  Margin="0,10,0,10" Click="MajorTicksStrokeStyleButton_Click" />
+                <DockPanel>
+                    <Label Name="label5" Content="Offset:" HorizontalAlignment="Left"/>
+                    <ComboBox Name="MajorTicksOffsetComboBox" SelectionChanged="MajorTicksOffsetComboBox_SelectionChanged"  HorizontalAlignment="Stretch" />
+                </DockPanel>
+                <DockPanel Margin="0,10,0,0">
+                    <Label Name="label6" Content="Length:" HorizontalAlignment="Left"/>
+                    <ComboBox Name="MajorTicksLengthComboBox" SelectionChanged="MajorTicksLengthComboBox_SelectionChanged"  HorizontalAlignment="Stretch" />
+                </DockPanel>
+                <DockPanel Margin="0,10,0,0">
+                    <Label Name="label7" Content="Width:" HorizontalAlignment="Left"/>
+                    <ComboBox Name="MajorTicksWidthComboBox" SelectionChanged="MajorTicksWidthComboBox_SelectionChanged"  HorizontalAlignment="Stretch" />
+                </DockPanel>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Minor Ticks:">
+            <StackPanel>
+                <DockPanel Margin="0,0,0,10">
+                    <Label Name="label8" Content="Shape:" HorizontalAlignment="Left" />
+                    <ComboBox Name="MinorTickShapeComboBox" SelectionChanged="MinorTickShapeComboBox_SelectionChanged"  HorizontalAlignment="Stretch" />
+                </DockPanel>
+                <Button Name="MinorTicksFillStyleButton" Content="Fill Style" Click="MinorTicksFillStyleButton_Click" />
+                <Button Name="MinorTicksStrokeStyleButton" Content="Stroke Style"  Margin="0,10,0,10" Click="MinorTicksStrokeStyleButton_Click" />
+                <DockPanel>
+                    <Label Name="label9" Content="Offset:" HorizontalAlignment="Left"/>
+                    <ComboBox Name="MinorTicksOffsetComboBox" SelectionChanged="MinorTicksOffsetComboBox_SelectionChanged"  HorizontalAlignment="Stretch" />
+                </DockPanel>
+                <DockPanel Margin="0,10,0,0">
+                    <Label Name="label10" Content="Length:" HorizontalAlignment="Left"/>
+                    <ComboBox Name="MinorTicksLengthComboBox" SelectionChanged="MinorTicksLengthComboBox_SelectionChanged"  HorizontalAlignment="Stretch" />
+                </DockPanel>
+                <DockPanel Margin="0,10,0,0">
+                    <Label Name="label11" Content="Width:" HorizontalAlignment="Left"/>
+                    <ComboBox Name="MinorTicksWidthComboBox" SelectionChanged="MinorTicksWidthComboBox_SelectionChanged"  HorizontalAlignment="Stretch" />
+                </DockPanel>
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</Controls:NExampleBaseUC>

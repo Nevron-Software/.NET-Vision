@@ -1,0 +1,21 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NSampledLine2DUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+		<Label Content="Sample Distance:" Height="28" Name="label1" />
+		<ScrollBar Height="13" Name="SampleDistanceScrollBar" Orientation="Horizontal" ValueChanged="SampleDistanceScrollBar_ValueChanged" />
+		<CheckBox Content="Use X Values" Height="16" Name="UseXValuesCheckBox" Click="UseXValuesCheckBox_Checked" />
+		<Label Content="Generator Mode:" Height="28" Name="label3" />
+		<ComboBox Height="23" Name="GeneratorModeComboBox" />
+		<Button Margin ="4" Content="Add 20000 Data Points" Height="23" Name="Add20KDataButton" Click="Add20KDataButton_Click" />
+		<Button Margin ="4" Content="Add 40000 Data Points" Height="23" Name="Add40KDataButton" Click="Add40KDataButton_Click" />
+		<Label Content="Data Point Count:" Height="28" Name="label4" />
+		<TextBox Height="23" Name="DataPointCountTextBox" IsEnabled="False"/>
+		<Button Margin ="4" Content="Clear Data" Height="23" Name="ClearDataButton" Click="ClearDataButton_Click" />
+	</StackPanel>
+</Controls:NExampleBaseUC>

@@ -1,0 +1,21 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+		This example demonstrates how to import shapes from a Visio XML Stencil (VSX file). All you have to do is to
+		add a reference to the Nevron.Diagram.Visio assembly and use the NVisioImporter class to import the shapes from
+		the desired Visio Stencil into a Nevron library document. You can control the way the Visio Importer imports
+		Visio shapes using its properties:
+		<ul>
+			<li>MeasurementUnit - determines the measurement unit the importer should use. By default set to inch
+				(NGraphicsUnit.Inch), because inch is the default measurement unit used in Visio.</li>
+			<li>PreserveShapeHierarchy - Controls whether the importer should preserve the shape hierarchy as in the Visio
+				stencil thus creating nested groups or to import all Visio child shapes as custom paths in a composite shape.
+				By default set to false. If you set this property to true the Visio child shapes will be imported as shapes
+				in a group (or groups nested in a group) thus giving you a great level of control over each child shape and
+				making it possible to use inherited styles. But note that this will also lead to higher memory consumption
+				than the import of the Visio child shapes as custom paths in a composite shape.</li>
+		</ul>
+		
+		Click the <b>&lt;Import Visio Stencil&gt;</b> button to open a dialog for selecting a Visio XML stencil to import.
+	</p>
+</description>

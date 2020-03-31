@@ -1,0 +1,31 @@
+<!-- Recognized tags -->
+<description>
+	<P>
+	The example demonstrates how to use the Nevron Diagram for .NET to create interactive diagrams. 
+	This example uses the following features:
+	<p>
+		1. Event bubbling - in this example the expand/collapse checks are composite shapes, 
+		which bubble events to the expandable shapes (implemented as 
+		groups). Expandable shapes intercept the left mouse down event and if 
+		it was bubbled from the expand-collapse check shape, expand or collapse the respective subtree.
+	</p>
+	<p>
+		2. Shape navigation - in this example we have demonstrated how easy it is 
+		to navigate through the connected shapes with the built-in shape 
+		navigation support.
+	</p>
+	<p>
+		3. Custom shape bounds - in this example the expandable shapes (implememented as groups) 
+		are resized to fit only the rectangle shape (do not include the bounds of the expand-collapse check).
+	</p>
+	<p>
+		4. Resize in aggregate - expand-collapse checks uses RepositionOnly resize in aggregate. 
+		That is why when the expandable shapes are resized the checks preserve their size. 
+	</p>
+	<p>
+		5. Force Directed and Tree Layout - this example does not use predefined 
+		positions for the shapes, but instead performs a tree layout followed by 
+		a force directed layout. Automatic layouts are an indispensable feature when it 
+		comes to reordering large or dynamically generated structures.
+	</p>
+</description>

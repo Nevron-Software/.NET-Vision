@@ -1,0 +1,213 @@
+<ExamplesTree xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Title="C# Examples" Name="">
+<Items>
+  <Folder Title="Featured Examples">
+    <Items>
+      <Example Title="Business Company" TypeName="NCompanyOrgChartUC" TreePath="DemoDiagrams" />
+      <Example Title="Clickomania" TypeName="NClickomaniaUC" TreePath="Applications" />
+      <Example Title="Diagram Class Hierarchy" TypeName="NDiagramClassHierarchyUC" TreePath="DemoDiagrams" />
+      <Example Title="Hardware Acceleration" TypeName="NHardwareAccelerationUC" TreePath="Animations" />
+      <Example Title="Balloon Tree Layout" TypeName="NBalloonTreeLayoutUC" TreePath="Layouts" />
+      <Example Title="Layered Graph Layout" TypeName="NLayeredGraphLayoutUC" TreePath="Layouts" />
+      <Example Title="Nested Groups" TypeName="NNestedGroupsUC" TreePath="Dom/Groups" />
+      <Example Title="Visio Import" TypeName="NVisioImportUC" TreePath="Import" />
+      <Example Title="Map Projections" TypeName="NMapProjectionsUC" TreePath="Maps" />
+      <Example Title="Map Drill Down" TypeName="NMapDrillDownUC" TreePath="Maps" />
+    </Items>
+  </Folder>
+	<Folder Title="Demo Diagrams" Name="DemoDiagrams">
+		<Items>
+			<Example Title="Accounting process (Flow Chart)" TypeName="NAccountingProcessFlowChartUC" DescriptionFile="NAccountingProcessFlowChartUC.htm" CsSourceCodeFile="NAccountingProcessFlowChartUC.cs" />
+			<Example Title="Bubble Sort (Flow Chart)" TypeName="NBubbleSortFlowChartUC" DescriptionFile="NBubbleSortFlowChartUC.htm" CsSourceCodeFile="NBubbleSortFlowChartUC.cs" />
+			<Example Title="Business Company (Org. Chart)" TypeName="NCompanyOrgChartUC" DescriptionFile="NCompanyOrgChartUC.htm" CsSourceCodeFile="NCompanyOrgChartUC.cs" />
+      <Example Title="Diagram Class Hierarchy (UML Diagram)" TypeName="NDiagramClassHierarchyUC" DescriptionFile="NDiagramClassHierarchyUC.htm" CsSourceCodeFile="NDiagramClassHierarchyUC.cs"/>
+			<Example Title="Mind Map Diagram" TypeName="NMindMapDiagramUC" DescriptionFile="NMindMapDiagramUC.htm" CsSourceCodeFile="NMindMapDiagramUC.cs" />
+			<Example Title="Explorer Tree (Interactive Diagram)" TypeName="NExplorerInteractiveDiagramUC" DescriptionFile="NExplorerInteractiveDiagramUC.htm" CsSourceCodeFile="NExplorerInteractiveDiagramUC.cs" />
+      <Example Title="Floor Plan Diagram" TypeName="NFloorPlanDiagramUC" DescriptionFile="NFloorPlanDiagramUC.htm" CsSourceCodeFile="NFloorPlanDiagramUC.cs"/>
+			<Example Title="Periodic Table (Science Diagram)" TypeName="NPeriodicTableSceinceDiagramUC" DescriptionFile="NPeriodicTableSceinceDiagramUC.htm" CsSourceCodeFile="NPeriodicTableSceinceDiagramUC.cs" />
+			<Example Title="Simple State Diagram (Flow Chart)" TypeName="NSimpleStateDiagramUC" DescriptionFile="NSimpleStateDiagramUC.htm" CsSourceCodeFile="NSimpleStateDiagramUC.cs" />
+    </Items>
+	</Folder>
+	<Folder Title="Document Object Model" Name="DOM">
+		<Items>
+			<Folder Title="Document" Name="DrawingDocument">
+				<Items>
+					<Example Title="Abilities, Protection and Permissions" TypeName="NAbilitiesProtectionAndPermissionsUC" DescriptionFile="NAbilitiesProtectionAndPermissionsUC.htm" CsSourceCodeFile="NAbilitiesProtectionAndPermissionsUC.cs" />
+					<Example Title="Drawing Bounds" TypeName="NDrawingBoundsUC" DescriptionFile="NDrawingBoundsUC.htm" CsSourceCodeFile="NDrawingBoundsUC.cs" />
+					<Example Title="Drawing Scale" TypeName="NDrawingScaleUC" DescriptionFile="NDrawingScaleUC.htm" CsSourceCodeFile="NDrawingScaleUC.cs" />
+					<Example Title="Undo and Redo" TypeName="NUndoRedoUC" DescriptionFile="NUndoRedoUC.htm" CsSourceCodeFile="NUndoRedoUC.cs" />
+				</Items>
+			</Folder>
+			<Folder Title="Groups" Name="Groups">
+				<Items>
+          <Example Title="Empty Groups" TypeName="NGroupEmptyBehaviourUC" DescriptionFile="NGroupEmptyBehaviourUC.htm" CsSourceCodeFile="NGroupEmptyBehaviourUC.cs" />
+					<Example Title="Group and Ungroup" TypeName="NGroupAndUngroupUC" DescriptionFile="NGroupAndUngroupUC.htm" CsSourceCodeFile="NGroupAndUngroupUC.cs" />
+          <Example Title="Group Layout" TypeName="NGroupLayoutUC" DescriptionFile="NGroupLayoutUC.htm" CsSourceCodeFile="NGroupLayoutUC.cs" />
+					<Example Title="Group Resize" TypeName="NGroupResizeUC" DescriptionFile="NGroupResizeUC.htm" CsSourceCodeFile="NGroupResizeUC.cs" />
+					<Example Title="Group Sample" TypeName="NGroupSampleUC" DescriptionFile="NGroupSampleUC.htm" CsSourceCodeFile="NGroupSampleUC.cs" />
+					<Example Title="Nested Groups" TypeName="NNestedGroupsUC" DescriptionFile="NNestedGroupsUC.htm" CsSourceCodeFile="NNestedGroupsUC.cs" />
+        </Items>
+			</Folder>
+			<Folder Title="Layers" Name="Layers">
+				<Items>
+					<Example Title="Layers" TypeName="NLayersUC" DescriptionFile="NLayersUC.htm" CsSourceCodeFile="NLayersUC.cs" />
+				</Items>
+			</Folder>
+			<Folder Title="Shapes" Name="Shapes">
+				<Items>
+          <Example Title="Bridgeable Shapes" TypeName="NBridgeableShapesUC" DescriptionFile="NBridgeableShapesUC.htm" CsSourceCodeFile="NBridgeableShapesUC.cs" />
+					<Example Title="Custom Shapes" TypeName="NCustomShapesUC" DescriptionFile="NCustomShapesUC.htm" CsSourceCodeFile="NCustomShapesUC.cs" />
+					<Example Title="Primitive 1D Shapes" TypeName="NPrimitive1DShapesUC" DescriptionFile="NPrimitive1DShapesUC.htm" CsSourceCodeFile="NPrimitive1DShapesUC.cs" />
+					<Example Title="Primitive 2D Shapes" TypeName="NPrimitive2DShapesUC" DescriptionFile="NPrimitive2DShapesUC.htm" CsSourceCodeFile="NPrimitive2DShapesUC.cs" />
+					<Example Title="Routable Connectors" TypeName="NRoutableConnectorsUC" DescriptionFile="NRoutableConnectorsUC.htm" CsSourceCodeFile="NRoutableConnectorsUC.cs" />
+					<Example Title="Shape Labels" TypeName="NShapeLabelsUC" DescriptionFile="NShapeLabelsUC.htm" CsSourceCodeFile="NShapeLabelsUC.cs" />
+          <Example Title="Shape Outward Ports" TypeName="NShapeOutwardPortsUC" DescriptionFile="NShapeOutwardPortsUC.htm" CsSourceCodeFile="NShapeOutwardPortsUC.cs" />
+					<Example Title="Shape Ports" TypeName="NShapePortsUC" DescriptionFile="NShapePortsUC.htm" CsSourceCodeFile="NShapePortsUC.cs" />
+					<Example Title="Shape Translation Slaves" TypeName="NShapeTranslationSlavesUC" DescriptionFile="NShapeTranslationSlavesUC.htm" CsSourceCodeFile="NShapeTranslationSlavesUC.cs" />
+					<Example Title="Step and Arrow Connectors" TypeName="NStepAndArrowConnectorsUC" DescriptionFile="NStepAndArrowConnectorsUC.htm" CsSourceCodeFile="NStepAndArrowConnectorsUC.cs" />
+          <Example Title="Text Shape" TypeName="NTextShapeUC" DescriptionFile="NTextShapeUC.htm" CsSourceCodeFile="NTextShapeUC.cs" />
+          <Example Title="WinForm Control Hosting" TypeName="NWinFormControlHostingUC" DescriptionFile="NWinFormControlHostingUC.htm" CsSourceCodeFile="NWinFormControlHostingUC.cs" />
+				</Items>
+			</Folder>
+      <Folder Title="Decorators" Name="Decorators">
+        <Items>
+          <Example Title="Border Decorator" TypeName="NFrameDecoratorUC" DescriptionFile="NFrameDecoratorUC.htm" CsSourceCodeFile="NFrameDecoratorUC.cs" />
+          <Example Title="Expand/Collapse Decorator" TypeName="NExpandCollapseDecoratorUC" DescriptionFile="NExpandCollapseDecoratorUC.htm" CsSourceCodeFile="NExpandCollapseDecoratorUC.cs" />
+          <Example Title="Show/Hide Subtree Decorator" TypeName="NShowHideSubtreeDecoratorUC" DescriptionFile="NShowHideSubtreeDecoratorUC.htm" CsSourceCodeFile="NShowHideSubtreeDecoratorUC.cs" />
+        </Items>
+      </Folder>
+      <Folder Title="Data Structures" Name="DataStructures">
+        <Items>
+          <Example Title="Graph Navigation" TypeName="NGraphNavigationUC" DescriptionFile="NGraphNavigationUC.htm" CsSourceCodeFile="NGraphNavigationUC.cs" />
+          <Example Title="Graph Traversal" TypeName="NGraphTraversalUC" DescriptionFile="NGraphTraversalUC.htm" CsSourceCodeFile="NGraphTraversalUC.cs" />
+        </Items>
+      </Folder>
+      <Folder Title="Stencils" Name="Stencils">
+				<Items>
+					<Example Title="Arrowhead Shape Stencil" TypeName="NArrowheadShapesStencilUC" DescriptionFile="NArrowheadShapesStencilUC.htm" CsSourceCodeFile="NArrowheadShapesStencilUC.cs" />
+					<Example Title="Custom Arrowheads" TypeName="NCustomArrowheadsUC" DescriptionFile="NCustomArrowheadsUC.htm" CsSourceCodeFile="NCustomArrowheadsUC.cs" />
+					<Example Title="Custom Points" TypeName="NCustomPointsUC" DescriptionFile="NCustomPointsUC.htm" CsSourceCodeFile="NCustomPointsUC.cs" />
+					<Example Title="Point Shape Stencil" TypeName="NPointShapesStencilUC" DescriptionFile="NPointShapesStencilUC.htm" CsSourceCodeFile="NPointShapesStencilUC.cs" />
+				</Items>
+			</Folder>
+    </Items>
+  </Folder>
+	<Folder Title="Drawing View" Name="DrawingView">
+		<Items>
+			<Example Title="Basic View Features" TypeName="NBasicViewFeaturesUC" DescriptionFile="NBasicViewFeaturesUC.htm" CsSourceCodeFile="NBasicViewFeaturesUC.cs" />
+			<Example Title="Controller" TypeName="NControllerUC" DescriptionFile="NControllerUC.htm" CsSourceCodeFile="NControllerUC.cs" />
+			<Example Title="Custom Drag and Drop" TypeName="NCustomDragDropUC" DescriptionFile="NCustomDragDropUC.htm" CsSourceCodeFile="NCustomDragDropUC.cs" />
+			<Example Title="Drag and Drop" TypeName="NDragDropUC" DescriptionFile="NDragDropUC.htm" CsSourceCodeFile="NDragDropUC.cs" />
+			<Example Title="Events Processing, Delegation and Bubbling" TypeName="NEventsProcessingDelegationAndBubbling" DescriptionFile="NEventsProcessingDelegationAndBubbling.htm" CsSourceCodeFile="NEventsProcessingDelegationAndBubbling.cs" />
+			<Example Title="Grid" TypeName="NGridUC" DescriptionFile="NGridUC.htm" CsSourceCodeFile="NGridUC.cs" />
+			<Example Title="Multiple Views" TypeName="NMultipleViewsUC" DescriptionFile="NMultipleViewsUC.htm" CsSourceCodeFile="NMultipleViewsUC.cs" />
+			<Example Title="Rulers" TypeName="NRulersUC" DescriptionFile="NRulersUC.htm" CsSourceCodeFile="NRulersUC.cs" />
+			<Example Title="Selection" TypeName="NSelectionUC" DescriptionFile="NSelectionUC.htm" CsSourceCodeFile="NSelectionUC.cs" />
+			<Example Title="Snapping" TypeName="NSnappingUC" DescriptionFile="NSnappingUC.htm" CsSourceCodeFile="NSnappingUC.cs" />
+			<Example Title="View Messages" TypeName="NViewMessagesUC" DescriptionFile="NViewMessagesUC.htm" CsSourceCodeFile="NViewMessagesUC.cs" />
+		</Items>
+	</Folder>
+	<Folder Title="Export" Name="Export">
+		<Items>
+			<Example Title="Image Export" TypeName="NImageExportUC" DescriptionFile="NImageExportUC.htm" CsSourceCodeFile="NImageExportUC.cs" />
+			<Example Title="AutoCAD Export" TypeName="NAutocadExportUC" DescriptionFile="NAutocadExportUC.htm" CsSourceCodeFile="NAutocadExportUC.cs" />
+			<Example Title="Flash Export" TypeName="NFlashExportUC" DescriptionFile="NFlashExportUC.htm" CsSourceCodeFile="NFlashExportUC.cs" />
+			<Example Title="Flash Redirect" TypeName="NFlashRedirectUC" DescriptionFile="NFlashRedirectUC.htm" CsSourceCodeFile="NFlashRedirectUC.cs" />
+			<Example Title="XAML Export" TypeName="NXamlExportUC" DescriptionFile="NXamlExportUC.htm" CsSourceCodeFile="NXamlExportUC.cs" />
+		</Items>
+	</Folder>
+  <Folder Title="Import" Name="Import">
+    <Items>
+      <Example Title="Database Schema Import" TypeName="NDatabaseSchemaImportUC" DescriptionFile="NDatabaseSchemaImportUC.htm" CsSourceCodeFile="NDatabaseSchemaImportUC.cs"/>
+      <Example Title="Graph Data Import" TypeName="NGraphDataImportUC" DescriptionFile="NGraphDataImportUC.htm" CsSourceCodeFile="NGraphDataImportUC.cs"/>
+			<Example Title="Tree Data Import" TypeName="NTreeDataImportUC" DescriptionFile="NTreeDataImportUC.htm" CsSourceCodeFile="NTreeDataImportUC.cs"/>
+			<Example Title="Visio Import" TypeName="NVisioImportUC" DescriptionFile="NVisioImportUC.htm" CsSourceCodeFile="NVisioImportUC.cs"/>
+			<Example Title="Excel Import" TypeName="NExcelImportUC" TreePath="Import" />
+    </Items>
+  </Folder>
+  <Folder Title="Animations" Name="Animations">     
+    <Items>
+      <Example Title="Hardware Acceleration" TypeName="NHardwareAccelerationUC" DescriptionFile="NHardwareAccelerationUC.htm" CsSourceFile="NHardwareAccelerationUC.cs" />
+      <Example Title="Puzzle Animation" TypeName="NPuzzleAnimationUC" DescriptionFile="NPuzzleAnimationUC.htm" CsSourceCodeFile="NPuzzleAnimationUC.cs" />
+      <Example Title="Simple Network" TypeName="NSimpleNetworkUC" DescriptionFile="NSimpleNetworkUC.htm" CsSourceCodeFile="NSimpleNetworkUC.cs" />
+      <Example Title="World Cup 2006 Diagram" TypeName="NWorldCup2006UC" DescriptionFile="NWorldCup2006UC.htm" CsSourceCodeFile="NWorldCup2006UC.cs"/>
+    </Items>
+  </Folder>
+  <Folder Title="Layouts" Name="Layouts">
+    <Items>
+      <Example Title="Basic Layouts" TypeName="NBasicLayoutsUC" DescriptionFile="NBasicLayoutsUC.htm" CsSourceCodeFile="NBasicLayoutsUC.cs" />
+      <Example Title="Balloon Tree Layout" TypeName="NBalloonTreeLayoutUC" DescriptionFile="NBalloonTreeLayoutUC.htm" CsSourceCodeFile="NBalloonTreeLayoutUC.cs" />
+      <Example Title="Barycenter Layout" TypeName="NBarycenterLayoutUC" DescriptionFile="NBarycenterLayoutUC.htm" CsSourceCodeFile="NBarycenterLayoutUC.cs" />
+      <Example Title="Compact Depth Tree Layout" TypeName="NCompactDepthTreeLayoutUC" DescriptionFile="NCompactDepthTreeLayoutUC.htm" CsSourceCodeFile="NCompactDepthTreeLayoutUC.cs" />
+      <Example Title="Dock Layout" TypeName="NDockLayoutUC" DescriptionFile="NDockLayoutUC.htm" CsSourceCodeFile="NDockLayoutUC.cs" />
+      <Example Title="Flow Layout" TypeName="NFlowLayoutUC" DescriptionFile="NFlowLayoutUC.htm" CsSourceCodeFile="NFlowLayoutUC.cs" />
+      <Example Title="Layered Graph Layout" TypeName="NLayeredGraphLayoutUC" DescriptionFile="NLayeredGraphLayoutUC.htm" CsSourceCodeFile="NLayeredGraphLayoutUC.cs" />
+      <Example Title="Layered Tree Layout" TypeName="NLayeredTreeLayoutUC" DescriptionFile="NLayeredTreeLayoutUC.htm" CsSourceCodeFile="NLayeredTreeLayoutUC.cs" />
+      <Example Title="Orthogonal Graph Layout" TypeName="NOrthogonalGraphLayoutUC" DescriptionFile="NOrthogonalGraphLayoutUC.htm" CsSourceCodeFile="NOrthogonalGraphLayoutUC.cs" />
+      <Example Title="Radial Graph Layout" TypeName="NRadialGraphLayoutUC" DescriptionFile="NRadialGraphLayoutUC.htm" CsSourceCodeFile="NRadialGraphLayoutUC.cs" />
+      <Example Title="Single Cycle Layout" TypeName="NSingleCycleLayoutUC" DescriptionFile="NSingleCycleLayoutUC.htm" CsSourceCodeFile="NSingleCycleLayoutUC.cs" />
+      <Example Title="Spring Layout" TypeName="NSpringLayoutUC" DescriptionFile="NSpringLayoutUC.htm" CsSourceCodeFile="NSpringLayoutUC.cs" />
+      <Example Title="Stack Layout" TypeName="NStackLayoutUC" DescriptionFile="NStackLayoutUC.htm" CsSourceCodeFile="NStackLayoutUC.cs" />
+      <Example Title="Symmetrical Layout" TypeName="NSymmetricalLayoutUC" DescriptionFile="NSymmetricalLayoutUC.htm" CsSourceCodeFile="NSymmetricalLayoutUC.cs" />
+      <Example Title="Table Layout" TypeName="NTableLayoutUC" DescriptionFile="NTableLayoutUC.htm" CsSourceCodeFile="NTableLayoutUC.cs" />
+      <Example Title="Tip-Over Tree Layout" TypeName="NTipOverTreeLayoutUC" DescriptionFile="NTipOverTreeLayoutUC.htm" CsSourceCodeFile="NTipOverTreeLayoutUC.cs" />
+      <Example Title="Stress Test" TypeName="NStressTestUC" DescriptionFile="NStressTestUC.htm" CsSourceCodeFile="NStressTestUC.cs" />
+    </Items>
+  </Folder>
+  <Folder Title="Maps" Name="Maps">
+    <Items>
+      <Example Title="Map Data Binding" TypeName="NMapDataBindingUC" DescriptionFile="NMapDataBindingUC.htm" CsSourceCodeFile="NMapDataBindingUC.cs" />
+      <Example Title="Map Projections" TypeName="NMapProjectionsUC" DescriptionFile="NMapProjectionsUC.htm" CsSourceCodeFile="NMapProjectionsUC.cs" />
+      <Example Title="World Map" TypeName="NWorldMapUC" DescriptionFile="NWorldMapUC.htm" CsSourceCodeFile="NWorldMapUC.cs" />
+			<Example Title="World Population" TypeName="NWorldPopulationUC" DescriptionFile="NWorldPopulationUC.htm" CsSourceCodeFile="NWorldPopulationUC.cs" />
+			<Example Title="Map Drill Down" TypeName="NMapDrillDownUC" DescriptionFile="NMapDrillDownUC.htm" CsSourceCodeFile="NMapDrillDownUC.cs" />
+    </Items>
+  </Folder>
+	<Folder Title="Printing" Name="Printing">
+		<Items>
+			<Example Title="Print Manager" TypeName="NPrintManagerUC" DescriptionFile="NPrintManagerUC.htm" CsSourceCodeFile="NPrintManagerUC.cs" />
+		</Items>
+	</Folder>
+	<Folder Title="Serialization" Name="Serialization">
+		<Items>
+			<Example Title="Persistency Manager" TypeName="NPersistencyManagerUC" DescriptionFile="NPersistencyManagerUC.htm" CsSourceCodeFile="NPersistencyManagerUC.cs" />
+		</Items>
+	</Folder>
+  <Folder Title="Shape Factories" Name="ShapeFactories">
+		<Items>
+			<Example Title="Basic Shapes" TypeName="NBasicShapesUC" DescriptionFile="NBasicShapesUC.htm" CsSourceCodeFile="NBasicShapesUC.cs" />
+			<Example Title="Brainstorming Shapes" TypeName="NBrainstormingShapesUC" DescriptionFile="NBrainstormingShapesUC.htm" CsSourceCodeFile="NBrainstormingShapesUC.cs" />
+			<Example Title="Business Process Shapes" TypeName="NBusinessProcessShapesUC" DescriptionFile="NBusinessProcessShapesUC.htm" CsSourceCodeFile="NBusinessProcessShapesUC.cs" />
+			<Example Title="Electrical Symbols Shapes" TypeName="NElectricalSymbolsShapesUC" DescriptionFile="NElectricalSymbolsShapesUC.htm" CsSourceCodeFile="NElectricalSymbolsShapesUC.cs" />
+			<Example Title="Files And Folders Shapes" TypeName="NFilesAndFoldersShapesUC" DescriptionFile="NFilesAndFoldersShapesUC.htm" CsSourceCodeFile="NFilesAndFoldersShapesUC.cs" />
+			<Example Title="Flags Shapes" TypeName="NFlagsShapesUC" DescriptionFile="NFlagsShapesUC.htm" CsSourceCodeFile="NFlagsShapesUC.cs" />
+			<Example Title="Floor Plan Shapes" TypeName="NFloorPlanShapesUC" DescriptionFile="NFloorPlanShapesUC.htm" CsSourceCodeFile="NFloorPlanShapesUC.cs" />
+			<Example Title="Flow Charting Shapes" TypeName="NFlowChartingShapesUC" DescriptionFile="NFlowChartingShapesUC.htm" CsSourceCodeFile="NFlowChartingShapesUC.cs" />
+			<Example Title="Food Shapes" TypeName="NFoodShapesUC" DescriptionFile="NFoodShapesUC.htm" CsSourceCodeFile="NFoodShapesUC.cs" />
+			<Example Title="Network Shapes" TypeName="NNetworkShapesUC" DescriptionFile="NNetworkShapesUC.htm" CsSourceCodeFile="NNetworkShapesUC.cs" />
+			<Example Title="Simple Network Shapes" TypeName="NSimpleNetworkShapesUC" DescriptionFile="NSimpleNetworkShapesUC.htm" CsSourceCodeFile="NSimpleNetworkShapesUC.cs" />
+			<Example Title="Symbol Shapes" TypeName="NSymbolShapesUC" DescriptionFile="NSymbolShapesUC.htm" CsSourceCodeFile="NSymbolShapesUC.cs" />
+			<Example Title="Traffic Signs Shapes" TypeName="NTrafficSignsShapesUC" DescriptionFile="NTrafficSignsShapesUC.htm" CsSourceCodeFile="NTrafficSignsShapesUC.cs" />
+			<Example Title="Travel Shapes" TypeName="NTravelShapesUC" DescriptionFile="NTravelShapesUC.htm" CsSourceCodeFile="NTravelShapesUC.cs" />
+			<Example Title="Weather Shapes" TypeName="NWeatherShapesUC" DescriptionFile="NWeatherShapesUC.htm" CsSourceCodeFile="NWeatherShapesUC.cs" />
+		</Items>
+	</Folder>
+	<Folder Title="Visual Interface Components" Name="VisualInterfaceComponents">
+		<Items>
+			<Example Title="Command Bars" TypeName="NCommandBarsUC" DescriptionFile="NCommandBarsUC.htm" CsSourceCodeFile="NCommandBarsUC.cs" />
+			<Example Title="Context Menus" TypeName="NContextMenusUC" DescriptionFile="NContextMenusUC.htm" CsSourceCodeFile="NContextMenusUC.cs" />
+			<Example Title="Library Browser" TypeName="NLibraryBrowserUC" DescriptionFile="NLibraryBrowserUC.htm" CsSourceCodeFile="NLibraryBrowserUC.cs" />
+			<Example Title="Pan and Zoom Control" TypeName="NPanAndZoomControlUC" DescriptionFile="NPanAndZoomControlUC.htm" CsSourceCodeFile="NPanAndZoomControlUC.cs" />
+			<Example Title="Status Bar" TypeName="NStatusBarUC" DescriptionFile="NStatusBarUC.htm" CsSourceCodeFile="NStatusBarUC.cs" />
+			<Example Title="Wizard" TypeName="NWizardUC" DescriptionFile="NWizardUC.htm" CsSourceCodeFile="NWizardUC.cs" />
+		</Items>
+	</Folder>
+  <Folder Title="Applications" Name="Applications">
+    <Items>
+      <Example Title="Class Designer" TypeName="NClassDesignerUC" DescriptionFile="NClassDesignerUC.htm" CssSourceCodeFile="NClassDesignerUC.cs" />
+      <Example Title="Clickomania" TypeName="NClickomaniaUC" DescriptionFile="NClickomaniaUC.htm" CssSourceCodeFile="NClickomaniaUC.cs" />
+      <Example Title="Pipeline Editor" TypeName="NPipelineEditorUC" DescriptionFile="NPipelineEditorUC.htm" CssSourceCodeFile="NPipelineEditorUC.cs" />
+      <Example Title="Ticket Reservation" TypeName="NTicketReservationUC" DescriptionFile="NTicketReservationUC.htm" CssSourceCodeFile="NTicketReservationUC.cs" />
+    </Items>
+  </Folder>
+</Items>
+</ExamplesTree>

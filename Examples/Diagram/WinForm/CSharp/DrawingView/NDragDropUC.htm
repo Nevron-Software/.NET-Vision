@@ -1,0 +1,32 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+		This example demonstrates the ability to drag and drop single or multiple shapes between drawing views.
+	</p>
+	<p>
+		In this example we have created an additional drawing view hosting a second 
+		drawing document. They are located in the Example form and the additional 
+		document has blue background color. The view of the blue document has a Move 
+		Tool enabled. This is also valid for the default view, the document of which 
+		has green background color.
+	</p>
+	<p>
+		Initially the move tool of the blue view is configured to perform only drag and 
+		drop. If you drag a shape and release it in the blue view nothing will happen, 
+		since the tool will only create a ghost for the drag and drop operation and 
+		will not perform any translation. To perform drag and drop just drag and drop a 
+		shape from the blue view in the green view. While doing this you can press the 
+		Ctrl key to copy the shape. If the Ctrl key is not pressed the shape will be 
+		moved.
+	</p>
+	<p>
+		Initially the move tool of the green view is configured to only translate 
+		content. If you have dropped a shape from the blue view to the green view 
+		you will not be able to return it in the blue view.
+	</p>
+	<p>
+		To do so you have to modify the green view to support Drag and Drop - you 
+		do so from the <b>Green view move mode combo</b>. The later is also valid 
+		for the blue view, the move mode for which is controlled by the <b>Blue view move mode combo</b>
+	</p>
+</description>

@@ -1,0 +1,31 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+		This example demonstrates the document history service.
+	</p>
+	<p>
+		The document history service is used to record all user and prorammable actions, which modify the document content.
+		All properties and methods of all DOM elements, which modify the respective object state record history operations.
+		History operations can be grouped in transactions, which are logically treated as a single operation. 
+	</p>
+	<p>
+		Transactions can be commited or rolled back. All history actions performed while there is an opened transaction 
+		are recorded in it. If you commit a transaction it will be recorded in the history Undo stack. If you roll it 
+		back the transaction will apply all its actions in reverse order and will not be recorded. 
+		Transactions can be nested.
+	</p>
+	<p>
+		In this example we have created three groups all of them added to the document in single transactions. 
+		You can explore the current state of the history via the History Undo and Redo list boxes.
+	</p>
+	<p>
+		To explore history transactions, click on the <b>Start History Transaction</b> button and specify its name. 
+		Then move the document objects to some arbitrary positions. You can finally either commit or rollback the 
+		transaction by clicking on the Commit or Rollback buttons. In case you click the <b>Commit</b> button the transaction 
+		will become visible in the Undo list. In case you click the <b>Rollback</b> button the document will be restored to 
+		the state it had when you started the transaction.
+	</p>
+	<p>
+		You can Pause and Resume the history service - in this example this is done by the <b>Record History</b> checkbox.
+	</p>
+</description>

@@ -1,0 +1,34 @@
+<!-- Recognized tags -->
+<description>
+	<P>This example demonstrates the different modes in which drawing documents can 
+		determine their bounds (controlled by the AutoBoundsMode combo). Currently 
+		supported are the following modes:</P>
+	<UL>
+		<LI>
+		Custom Non Constrained - in this mode the&nbsp;user specifies the drawing 
+		bounds and the drawing content is not restricted to be positioned outside these 
+		bounds.
+		<LI>
+		Custom Constrained - in this mode the&nbsp;user specifies the drawing bounds 
+		and the drawing content is&nbsp;constrained in them. Try to mode the rectangles 
+		outside the drawing bounds to see how the framework will not allow you to go 
+		outside of them.
+		<LI>
+		Auto Size to Content - in this mode the document automatically determines the 
+		bounds of its content and sizes to fit it.
+		<LI>
+			Auto Inflate to Content - in this mode the document automatically determines 
+			the amount with which its bounds must be inflated in order to fit all content.
+		</LI>
+	</UL>
+	<p>
+		When the document is configured to automatically update its bounds you also 
+		have control over its minimal width and height. The auto bounds padding refers 
+		to the padding with which the document content is inflated before the automatic 
+		bounds are constructed.
+	</p>
+	<p>
+		Please note that the <b>Inflate to Content</b> and <b>Size to Content</b> logic can be 
+		applied even if the document is not configured to automatically inflate or size to its content
+	</p>
+</description>

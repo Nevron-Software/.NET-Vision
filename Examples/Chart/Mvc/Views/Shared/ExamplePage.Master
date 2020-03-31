@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../../Themes/OrangeGrey/Styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body onresize ="adjustRootDivSize()" onload = "adjustRootDivSize()">
+	<script type ="text/javascript" src="/Scripts/Scripts.js">
+
+	</script>
+	<div class="page" id="rootDiv" style="width: 756px; height: 1000px;">
+		<%Html.RenderAction("TabContent", "NTab", new { title = "Example" });%>
+		<div id = "TabControl_MultiViewHolder" style="height:100%;border-right: 1px solid rgb(155, 155, 155); overflow: auto;">
+			<table id="exampleImageTable" style="width: 442px; vertical-align: top;" summary="Image and description table">
+				<tr>
+					<td id="exampleImageCell" class="ImageCell" style="width: 442px; vertical-align: top;">
+						<asp:ContentPlaceHolder ID="ExampleContent" runat="server" />
+					</td>
+				</tr>
+				<tr>
+					<td id="exampleDescriptionCell" style="width: 442px; vertical-align: top;" class="Description">
+							<asp:ContentPlaceHolder ID="ExampleDescription" runat="server" />
+					</td>
+				</tr>
+			</table>
+		</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,2966 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2ED91DC7-AF53-4EB4-85CF-A9A6DE0044A0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Resources\Chart.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Nevron.Examples.Chart.WinForm</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Nevron.Chart">
+      <Name>Nevron.Chart</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Chart.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.Chart.WinForm">
+      <Name>Nevron.Chart.WinForm</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Chart.WinForm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.Examples.Framework.WinForm">
+      <Name>Nevron.Examples.Framework.WinForm</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Examples.Framework.WinForm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.GraphicsGL">
+      <Name>Nevron.GraphicsGL</Name>
+      <HintPath>..\..\..\..\bin\Nevron.GraphicsGL.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.Presentation">
+      <Name>Nevron.Presentation</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.System">
+      <Name>Nevron.System</Name>
+      <HintPath>..\..\..\..\bin\Nevron.System.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.UI.WinForm.Docking">
+      <Name>Nevron.UI.WinForm.Docking</Name>
+      <HintPath>..\..\..\..\bin\Nevron.UI.WinForm.Docking.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.UI.WinForm.Skins">
+      <Name>Nevron.UI.WinForm.Skins</Name>
+      <HintPath>..\..\..\..\bin\Nevron.UI.WinForm.Skins.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataManipulation\DataBinding\Data.mdb" />
+    <None Include="DataManipulation\Importing\DataBinding.mdb" />
+    <EmbeddedResource Include="Axes\Attributes\NStripeLabelsUC.resx">
+      <DependentUpon>NStripeLabelsUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Attributes\NConstLineLabelsUC.resx">
+      <DependentUpon>NConstLineLabelsUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NAxisTicksAppearanceUC.resx">
+      <DependentUpon>NAxisTicksAppearanceUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NViewRangeUC.resx">
+      <DependentUpon>NViewRangeUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NAxisLabelsOrientationUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NAxisLabelsOrientationUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NAxisViewRangeInflateUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NAxisViewRangeInflateUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NCustomRangeLabelsUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NCustomRangeLabelsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NRulerCapsUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NRulerCapsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\ScaleBreaks\NAutomaticScaleBreaksUC.resx">
+      <DependentUpon>NAutomaticScaleBreaksUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\ScaleBreaks\NCustomScaleBreaksUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NCustomScaleBreaksUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\ScaleBreaks\NScaleBreakAppearanceUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NScaleBreakAppearanceUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NTimeSpanScaleUC.resx">
+      <DependentUpon>NTimeSpanScaleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NTableScaleUC.resx">
+      <DependentUpon>NTableScaleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NDynamicYAxisRangeUC.resx">
+      <DependentUpon>NDynamicYAxisRangeUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NDailyScheduleWorkCalendarUC.resx">
+      <DependentUpon>NDailyScheduleWorkCalendarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Area\NAreaPaletteUC.resx">
+      <DependentUpon>NAreaPaletteUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bar\NBarPaletteUC.resx">
+      <DependentUpon>NBarPaletteUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bar\NBarConnectorLinesUC.resx">
+      <DependentUpon>NBarConnectorLinesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bar\NErrorBarUC.resx">
+      <DependentUpon>NErrorBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Pie\NPieSliceRadiusUC.resx">
+      <DependentUpon>NPieSliceRadiusUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\TriangulatedHeatMap\NTriangulatedHeatMapUC.resx">
+      <DependentUpon>NTriangulatedHeatMapUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\TriangulatedHeatMap\NTriangulatedHeatMapContourUC.resx">
+      <DependentUpon>NTriangulatedHeatMapContourUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Vector\NVectorLegendScaleUC.resx">
+      <DependentUpon>NVectorLegendScaleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bubble\NBubbleLegendScaleUC.resx">
+      <DependentUpon>NBubbleLegendScaleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bubble\NBubblePaletteUC.resx">
+      <DependentUpon>NBubblePaletteUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FloatBar\NFloatBarGanttUC.resx">
+      <DependentUpon>NFloatBarGanttUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FloatBar\NFloatBarConnectorLines2DUC.resx">
+      <DependentUpon>NFloatBarConnectorLines2DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Ternary\NTernaryBubbleUC.resx">
+      <DependentUpon>NTernaryBubbleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FloatBar\NFloatBarPaletteUC.resx">
+      <DependentUpon>NFloatBarPaletteUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\GraphicsPath\NGraphicsPathSeriesUC.resx">
+      <DependentUpon>NGraphicsPathSeriesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\GridSurface\NGridSurfaceHorizontalCrossSectionUC.resx">
+      <DependentUpon>NGridSurfaceHorizontalCrossSectionUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\GridSurface\NGridSurfaceIsolinesUC.resx">
+      <DependentUpon>NGridSurfaceIsolinesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\GridSurface\NGridSurfaceVerticalCrossSectionUC.resx">
+      <DependentUpon>NGridSurfaceVerticalCrossSectionUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\GridSurface\NGridSurfaceCustomColorsUC.resx">
+      <DependentUpon>NGridSurfaceCustomColorsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\GridSurface\NGridSurfaceTextureZoningUC.resx">
+      <DependentUpon>NGridSurfaceTextureZoningUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\GridSurface\NRectilinearGridUC.resx">
+      <DependentUpon>NRectilinearGridUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\HeatMap\NHeatMapContourLabelsUC.resx">
+      <DependentUpon>NHeatMapContourLabelsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\HeatMap\NHeatMapCrossSectionXYUC.resx">
+      <DependentUpon>NHeatMapCrossSectionXYUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\HeatMap\NHeatMapCrossSectionUC.resx">
+      <DependentUpon>NHeatMapCrossSectionUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\HeatMap\NWaferChartUC.resx">
+      <DependentUpon>NWaferChartUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\HeatMap\NHeatMapContourUC.resx">
+      <DependentUpon>NHeatMapContourUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\HighLow\NHighLowPaletteUC.resx">
+      <DependentUpon>NHighLowPaletteUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Line\NIntersectLineWithXYValueUC.resx">
+      <DependentUpon>NIntersectLineWithXYValueUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\MeshSurface\NMeshSurfaceIsolinesUC.resx">
+      <DependentUpon>NMeshSurfaceIsolinesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\MeshSurface\NMeshSurfaceCustomColorsUC.resx">
+      <DependentUpon>NMeshSurfaceCustomColorsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\MeshSurface\NLargeMeshSurfaceUC.resx">
+      <DependentUpon>NLargeMeshSurfaceUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\MeshSurface\NMeshSurfaceTextureZoningUC.resx">
+      <DependentUpon>NMeshSurfaceTextureZoningUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\HeatMap\NHeatMapUC.resx">
+      <DependentUpon>NHeatMapUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Pie\NDoughnutPieUC.resx">
+      <DependentUpon>NDoughnutPieUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Point\NPointDropLines3DUC.resx">
+      <DependentUpon>NPointDropLines3DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Point\NPointDropLines2DUC.resx">
+      <DependentUpon>NPointDropLines2DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Ternary\NTernaryPointUC.resx">
+      <DependentUpon>NTernaryPointUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Point\NStandardPointUC.resx">
+      <DependentUpon>NStandardPointUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\QuickPoint\NQuickPointUC.resx">
+      <DependentUpon>NQuickPointUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Polar\NPolarVectorUC.resx">
+      <DependentUpon>NPolarVectorUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Polar\NPolarRangeUC.resx">
+      <DependentUpon>NPolarRangeUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Radar\NCustomRadarAxisAnglesUC.resx">
+      <DependentUpon>NCustomRadarAxisAnglesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\SmoothArea\NSmoothAreaPaletteUC.resx">
+      <DependentUpon>NSmoothAreaPaletteUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\StepLine\NStepLineIntersectionsUC.resx">
+      <DependentUpon>NStepLineIntersectionsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Stock\NStockDataGroupingHitTestingUC.resx">
+      <DependentUpon>NStockDataGroupingHitTestingUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Stock\NStockDataGroupingUC.resx">
+      <DependentUpon>NStockDataGroupingUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\TreeMap\NTreeMapLegendUC.resx">
+      <DependentUpon>NTreeMapLegendUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\TreeMap\NTreeMapDrillDownUC.resx">
+      <DependentUpon>NTreeMapDrillDownUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\TreeMap\NTreeMapUC.resx">
+      <DependentUpon>NTreeMapUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceIsolinesUC.resx">
+      <DependentUpon>NTriangulatedSurfaceIsolinesUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceTextureZoningUC.resx">
+      <DependentUpon>NTriangulatedSurfaceTextureZoningUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Vector\NVectorDirectionModeUC.resx">
+      <DependentUpon>NVectorDirectionModeUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Indicators\NIndicatorPaletteUC.resx">
+      <DependentUpon>NIndicatorPaletteUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\MouseEvents\NHitTestingScaleElementsUC.resx">
+      <DependentUpon>NHitTestingScaleElementsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NCustomScaleDecorations2UC.resx">
+      <DependentUpon>NCustomScaleDecorations2UC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NDateTimeWorkCalendarUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NDateTimeWorkCalendarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NRangeTimelineScaleAdvancedUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NRangeTimelineScaleAdvancedUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NValueTimelineScaleAdvancedUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NValueTimelineScaleAdvancedUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NValueTimelineScaleUC.resx">
+      <DependentUpon>NValueTimelineScaleUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NHierarchicalScaleUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NHierarchicalScaleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NRangeTimelineScaleUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NRangeTimelineScaleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Area\NSampledArea2DUC.resx">
+      <DependentUpon>NSampledArea2DUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\GridSurface\NLargeSurfaceUC.resx">
+      <DependentUpon>NLargeSurfaceUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NAnnotationDragToolUC.resx">
+      <DependentUpon>NAnnotationDragToolUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NPanelZoomToolUC.resx">
+      <DependentUpon>NPanelZoomToolUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NVolumeSelectionToolUC.resx">
+      <DependentUpon>NVolumeSelectionToolUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NRangeSelectionMoveResizeToolUC2.resx">
+      <DependentUpon>NRangeSelectionMoveResizeToolUC2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NRangeSelectionMoveResizeToolUC.resx">
+      <DependentUpon>NRangeSelectionMoveResizeToolUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NPanelZoomAndDragToolsUC.resx">
+      <DependentUpon>NPanelZoomAndDragToolsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NAnimatedDataZoomToolUC.resx">
+      <DependentUpon>NAnimatedDataZoomToolUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NCustomDragToolUC.resx">
+      <DependentUpon>NCustomDragToolUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NCustomToolUC.resx">
+      <DependentUpon>NCustomToolUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NMultipleAxesZoomingAndScrollingUC.resx">
+      <DependentUpon>NMultipleAxesZoomingAndScrollingUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\SeriesAttributes\NSeriesCustomMarkerShapeUC.resx">
+      <DependentUpon>NSeriesCustomMarkerShapeUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\SeriesAttributes\NSeriesZOrderUC.resx">
+      <DependentUpon>NSeriesZOrderUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Guidelines\NTwinGuidelineUC.resx">
+      <DependentUpon>NTwinGuidelineUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Custom\NCustomSeriesUC.resx">
+      <DependentUpon>NCustomSeriesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\GridSurface\NProjectedContourUC.resx">
+      <DependentUpon>NProjectedContourUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Kagi\NKagiUC.resx">
+      <DependentUpon>NKagiUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Line\NSampledLine3DUC.resx">
+      <DependentUpon>NSampledLine3DUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Line\NSampledLine2DUC.resx">
+      <DependentUpon>NSampledLine2DUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Pie\NNonoverlappingLabelsUC.resx">
+      <DependentUpon>NNonoverlappingLabelsUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\PointAndFigure\NPointAndFigureUC.resx">
+      <DependentUpon>NPointAndFigureUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Point\NXYScatterPointClusteredUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NXYScatterPointClusteredUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Point\NXYZScatterPointClusteredUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NXYZScatterPointClusteredUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Polar\NPolarAngleAxisPositionUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NPolarAngleAxisPositionUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Polar\NPolarValueAxisPositionUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NPolarValueAxisPositionUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Polar\NPolarPointUC.resx">
+      <DependentUpon>NPolarPointUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Radar\NRadarAxisTitlesUC.resx">
+      <DependentUpon>NRadarAxisTitlesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Radar\NStackedRadarAreaUC.resx">
+      <DependentUpon>NStackedRadarAreaUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Range\NRange3DUC.resx">
+      <DependentUpon>NRange3DUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Range\NRange2DUC.resx">
+      <DependentUpon>NRange2DUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Renko\NRenkoUC.resx">
+      <DependentUpon>NRenkoUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\StepLine\NSampledStepLine2DUC.resx">
+      <DependentUpon>NSampledStepLine2DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\ThreeLineBreak\NThreeLineBreakUC.resx">
+      <DependentUpon>NThreeLineBreakUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceSimplificationUC.resx">
+      <DependentUpon>NTriangulatedSurfaceSimplificationUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Vector\NVector3DUC.resx">
+      <DependentUpon>NVector3DUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Vector\NVector2DUC.resx">
+      <DependentUpon>NVector2DUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomPainting\NOverlayPaintingUC.resx">
+      <DependentUpon>NOverlayPaintingUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\DataBinding\NBindingToIBindingListUC.resx">
+      <DependentUpon>NBindingToIBindingListUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Importing\NImportingFromCSVUC.resx">
+      <DependentUpon>NImportingFromCSVUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Importing\NImportingFromXLSUC.resx">
+      <DependentUpon>NImportingFromXLSUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\InfinityDataPoints\NInfinityDataPointsGeneralUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NInfinityDataPointsGeneralUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Clocks\NAnalogClockUC.resx">
+      <DependentUpon>NAnalogClockUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Clocks\NDigitalClockUC.resx">
+      <DependentUpon>NDigitalClockUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Effects\NGaugeBackgroundAdornerUC.resx">
+      <DependentUpon>NGaugeBackgroundAdornerUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Effects\NGaugeGelAndGlassEffectsUC.resx">
+      <DependentUpon>NGaugeGelAndGlassEffectsUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Effects\NGaugeBordersUC.resx">
+      <DependentUpon>NGaugeBordersUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Indicators\NIndicatorValueDampeningUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NIndicatorValueDampeningUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Indicators\NRadialGaugeKnobsUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NRadialGaugeKnobsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Indicators\NStateIndicatorsUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NStateIndicatorsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Interactivity\NDraggingIndicatorsUC.resx">
+      <DependentUpon>NDraggingIndicatorsUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Scales\NGaugeCustomRangeLabelsUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NGaugeCustomRangeLabelsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Scales\NGaugeScaleLabelsOrientationUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NGaugeScaleLabelsOrientationUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageExport\NAnimationThemesUC.resx">
+      <DependentUpon>NAnimationThemesUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageExport\NRasterImageExportUC.resx">
+      <DependentUpon>NRasterImageExportUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageExport\NVectorImageExportUC.resx">
+      <DependentUpon>NVectorImageExportUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Annotations\NPieDataPointAnchorUC.resx">
+      <DependentUpon>NPieDataPointAnchorUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\BackgroundDecorator\NBackgroundDecoratorUC.resx">
+      <DependentUpon>NBackgroundDecoratorUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\Aspect\NChartAspect2DUC.resx">
+      <DependentUpon>NChartAspect2DUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\Aspect\NChartAspect3DUC.resx">
+      <DependentUpon>NChartAspect3DUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsAreaUC.resx">
+      <DependentUpon>NAutoLabelsAreaUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsBarUC.resx">
+      <DependentUpon>NAutoLabelsBarUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsClusterStackBarUC.resx">
+      <DependentUpon>NAutoLabelsClusterStackBarUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsLineUC.resx">
+      <DependentUpon>NAutoLabelsLineUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsPolarUC.resx">
+      <DependentUpon>NAutoLabelsPolarUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsRadarUC.resx">
+      <DependentUpon>NAutoLabelsRadarUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsStackLineUC.resx">
+      <DependentUpon>NAutoLabelsStackLineUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsStepLineUC.resx">
+      <DependentUpon>NAutoLabelsStepLineUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsXYPointUC.resx">
+      <DependentUpon>NAutoLabelsXYPointUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsXYZPointUC.resx">
+      <DependentUpon>NAutoLabelsXYZPointUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\Walls\NAutoWallsAndAxesVisibilityUC.resx">
+      <DependentUpon>NAutoWallsAndAxesVisibilityUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Guidelines\NSideGuidelineUC.resx">
+      <DependentUpon>NSideGuidelineUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Labels\NLabelImageEmbeddingUC.resx">
+      <DependentUpon>NLabelImageEmbeddingUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Labels\NLabelFitModesUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NLabelFitModesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Legend\NLegendPaletteItemUC.resx">
+      <DependentUpon>NLegendPaletteItemUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Legend\NLegendItemTextFitModeUC.resx">
+      <DependentUpon>NLegendItemTextFitModeUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Legend\NLegendCustomItemsUC.resx">
+      <DependentUpon>NLegendCustomItemsUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Legend\NLegendWrappingUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NLegendWrappingUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="RealTimeCharts\NRealTimeSurfaceUC.resx">
+      <DependentUpon>NRealTimeSurfaceUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RealTimeCharts\NRealTimeStockUC.resx">
+      <DependentUpon>NRealTimeStockUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RealTimeCharts\NRealTimePointUC.resx">
+      <DependentUpon>NRealTimePointUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RealTimeCharts\NRealTimeBarUC.resx">
+      <DependentUpon>NRealTimeBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RealTimeCharts\NRealTimeLineUC.resx">
+      <DependentUpon>NRealTimeLineUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RealTimeCharts\NRealTimePolarUC.resx">
+      <DependentUpon>NRealTimePolarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DataXYZ.bin" />
+    <EmbeddedResource Include="Resources\DataY.bin" />
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Axes\Attributes\NStripeLabelsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Attributes\NConstLineLabelsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Attributes\NConstLines2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Attributes\NConstLines3DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Attributes\NStripesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NAxisTicksAppearanceUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NViewRangeUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NAxisDockingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NAxisGridlinesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NAxisInterlacedStripesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NAxisLabelsOrientationUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NAxisLabelsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NAxisMinMaxUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NAxisModelCrossingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NAxisViewRangeInflateUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NCustomRangeLabelsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NRulerCapsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\ScaleBreaks\NAutomaticScaleBreaksUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NAxisSectionsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NAxisStripLinesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NAxisTicksUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NAxisTitlesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NAxisValueCrossingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\General\NRulerSizeUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Paging\NDateTimeAxisPagingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Paging\NNumericAxisPagingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\ScaleBreaks\NCustomScaleBreaksUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\ScaleBreaks\NScaleBreakAppearanceUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NTimeSpanScaleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NTableScaleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NDynamicYAxisRangeUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NDailyScheduleWorkCalendarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Area\NAreaPaletteUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bar\NBarPaletteUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bar\NBarConnectorLinesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bar\NErrorBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Pie\NPieSliceRadiusUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\TriangulatedHeatMap\NTriangulatedHeatMapUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\TriangulatedHeatMap\NTriangulatedHeatMapContourUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Vector\NVectorLegendScaleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bubble\NBubbleLegendScaleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bubble\NBubblePaletteUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\FloatBar\NFloatBarGanttUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\FloatBar\NFloatBarConnectorLines2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Ternary\NTernaryBubbleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\FloatBar\NFloatBarPaletteUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\GridSurface\NGridSurfaceHorizontalCrossSectionUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\GridSurface\NGridSurfaceIsolinesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\GridSurface\NGridSurfaceVerticalCrossSectionUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\GridSurface\NGridSurfaceCustomColorsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\GridSurface\NGridSurfaceTextureZoningUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\GridSurface\NRectilinearGridUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\GraphicsPath\NGraphicsPathSeriesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\HeatMap\NHeatMapContourLabelsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\HeatMap\NHeatMapCrossSectionXYUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\HeatMap\NHeatMapCrossSectionUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\HeatMap\NWaferChartUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\HeatMap\NHeatMapContourUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\HighLow\NHighLowPaletteUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Line\NIntersectLineWithXYValueUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\MeshSurface\NMeshSurfaceIsolinesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\MeshSurface\NMeshSurfaceCustomColorsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\MeshSurface\NLargeMeshSurfaceUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\MeshSurface\NMeshSurfaceTextureZoningUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\HeatMap\NHeatMapUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Pie\NDoughnutPieUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Point\NPointDropLines3DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Point\NPointDropLines2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Ternary\NTernaryPointUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Point\NStandardPointUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\QuickPoint\NQuickPointUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Polar\NPolarVectorUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Polar\NPolarRangeUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Radar\NCustomRadarAxisAnglesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\SmoothArea\NSmoothAreaPaletteUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\StepLine\NStepLineIntersectionsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Stock\NStockDataGroupingHitTestingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Stock\NStockDataGroupingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\TreeMap\NTreeMapLegendUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\TreeMap\NTreeMapDrillDownUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\TreeMap\NTreeMapUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceIsolinesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceTextureZoningUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Vector\NVectorDirectionModeUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Indicators\NIndicatorPaletteUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\MouseEvents\NHitTestingScaleElementsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NCustomScaleDecorations2UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NDateTimeWorkCalendarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NRangeTimelineScaleAdvancedUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NValueTimelineScaleAdvancedUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NValueTimelineScaleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NCustomScaleDecorationsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NDateTimeScaleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NHierarchicalScaleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NLinearScaleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NLogarithmicScaleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NOrdinalScaleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Axes\Scaling\NRangeTimelineScaleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Area\NMultiSeriesAreaUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\GridSurface\NLargeSurfaceUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NAnnotationDragToolUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NPanelZoomToolUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NVolumeSelectionToolUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NRangeSelectionMoveResizeToolUC2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NRangeSelectionMoveResizeToolUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NPanelZoomAndDragToolsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NAnimatedDataZoomToolUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NMultipleAxesZoomingAndScrollingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\SeriesAttributes\NSeriesCustomMarkerShapeUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\SeriesAttributes\NSeriesZOrderUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Legend\NLegendPaletteItemUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Legend\NLegendItemTextFitModeUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RealTimeCharts\NRealTimeSurfaceUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RealTimeCharts\NRealTimeStockUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RealTimeCharts\NRealTimePointUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RealTimeCharts\NRealTimeBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RealTimeCharts\NRealTimeAreaUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Area\NSampledArea2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Area\NStackedAreaUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Area\NStandardArea2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Area\NStandardAreaUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Area\NXYScatterAreaUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NCustomDragToolUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NCustomToolUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Guidelines\NTwinGuidelineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bar\NClusterBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bar\NClusterStackCombinationUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bar\NDateTimeBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bar\NDualHorizontalBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bar\NHorizontalBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bar\NManhattanBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bar\NStackedBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bar\NStandardBar2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bar\NStandardBar3DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bar\NXYZScatterClusterUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bar\NXYZScatterStackUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\BoxAndWhiskers\NBoxAndWhiskers2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\BoxAndWhiskers\NDateTimeBoxAndWhiskers2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\BoxAndWhiskers\NPointChartAndBoxPlotUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bubble\NStandardBubbleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bubble\NXYScatterBubbleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Bubble\NXYZScatterBubbleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\ComboCharts\NFinancialChartUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\ComboCharts\NParetoUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Custom\NCustomSeriesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\ErrorBar\NXYErrorBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\ErrorBar\NXYZErrorBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\ErrorBar\NYErrorBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\FloatBar\NClusterFloatBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\FloatBar\NDateTimeFloatBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\FloatBar\NDateTimeStackFloatBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\FloatBar\NHorizontalFloatBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\FloatBar\NStackFloatBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\FloatBar\NStandardFloatBar2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\FloatBar\NStandardFloatBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Funnel\NAdvancedFunnel2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Funnel\NAdvancedFunnel3DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Funnel\NStandardFunnel2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Funnel\NStandardFunnel3DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\GridSurface\NProjectedContourUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\GridSurface\NGridContourUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\GridSurface\NGridEmptyPointsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\GridSurface\NGridFillStyleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\GridSurface\NGridFrameUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\GridSurface\NGridSurfaceUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\GridSurface\NWavesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\HighLow\NAdvancedHighLowUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\HighLow\NStandardHighLow2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\HighLow\NStandardHighLowUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Kagi\NKagiUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\LineStudies\NLineStudiesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Line\NSampledLine3DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Line\NSampledLine2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Line\NMultiSeriesLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Line\NOverlappedLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Line\NStackedLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Line\NStandardLine2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Line\NStandardLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Line\NXYScatterLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Line\NXYZScatterLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\MeshSurface\NMeshEmptyPointsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\MeshSurface\NMeshFillStyleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\MeshSurface\NMeshIntersectedUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\MeshSurface\NMeshSurfaceUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Pie\NNonoverlappingLabelsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Pie\NExplodedPieUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Pie\NGroupedPieUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Pie\NMultiplePiesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Pie\NSortedPieUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Pie\NStandardPieUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\PointAndFigure\NPointAndFigureUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Point\NXYScatterPointClusteredUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Point\NXYScatterPointUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Point\NXYZMultiSeriesPointUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Point\NXYZScatterPointClusteredUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Point\NXYZScatterPointUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Polar\NPolarAngleAxisPositionUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Polar\NPolarValueAxisPositionUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Polar\NPolarPointUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Polar\NPolarAreaUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Polar\NPolarLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Radar\NRadarAxisTitlesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Radar\NStackedRadarAreaUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Radar\NMultiMeasureRadarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Radar\NRadarAreaUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Radar\NRadarLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Range\NRange3DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Range\NRange2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Renko\NRenkoUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Shape\NShapeBarsWithDifferentSizeUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Shape\NShapeHomeUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Shape\NShapeUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Shape\NShapeXYScatterBarsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Shape\NShapeXYZScatterBarsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Shape\NShapeXYZScatterBubbleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\SmoothArea\NDateTimeSmoothAreaUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\SmoothArea\NSmoothArea3DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\SmoothArea\NXYSmoothAreaUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\SmoothLine\NDateTimeSmoothLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\SmoothLine\NStandardSmoothLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\SmoothLine\NXYScatterSmoothLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\SmoothLine\NXYZScatterSmoothLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\StepLine\NDateTimeStepLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\StepLine\NSampledStepLine2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\StepLine\NStandardStepLine2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\StepLine\NStandardStepLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Stock\NStockCandleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Stock\NStockStickUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\ThreeLineBreak\NThreeLineBreakUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceWithCustomColorsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceSimplificationUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Vector\NVector3DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Vector\NVector2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Venn\NFiveSetVennUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Venn\NFourSetVennUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Venn\NThreeSetVennUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\Venn\NTwoSetVennUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoordinateTransformations\ScaleToViewportUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoordinateTransformations\ViewportToScaleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomPainting\NCustomPaintingBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomPainting\NCustomPaintingUsingGDIPlusUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomPainting\NCustomPaintingUsingNevronDeviceUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomPainting\NOverlayPaintingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardGallery\NCarDashboardUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardGallery\NFinancialDashboardUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\DataBinding\NBindingToDataAdapterUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\DataBinding\NBindingToDataTableUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\DataBinding\NBindingToIBindingListUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\EmptyDataPoints\NBubbleEmptyDataPointsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\EmptyDataPoints\NEmptyDataPointsGeneralUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\EmptyDataPoints\NFloatBarEmptyDataPointsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Exporting\NExportingToDataTableUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Functions\Financial\NDirectionalMovementUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Functions\Financial\NMovingAveragesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Functions\Financial\NPriceIndicatorsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Functions\Financial\NRangeIndicatorsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Functions\Financial\NTechnicalPriceIndicatorsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Functions\Financial\NVolumeIndicatorsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Functions\Statistical\NAverageMedianMinMaxUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Functions\Statistical\NBasicFunctionsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Functions\Statistical\NCountStdDevRmsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Functions\Statistical\NCovarianceCorrelationUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Functions\Statistical\NPowerCumulativeExpAverageUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Functions\Statistical\NSumElementsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\General\NEvaluatingDataUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\General\NFilteringDataUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\General\NFindingDataUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\General\NSortingDataUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Importing\NImportingFromCSVUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Importing\NImportingFromDataReaderUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Importing\NImportingFromDataTableAndDataViewUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\Importing\NImportingFromXLSUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManipulation\InfinityDataPoints\NInfinityDataPointsGeneralUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Clocks\NAnalogClockUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Clocks\NDigitalClockUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Effects\NGaugeBackgroundAdornerUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Effects\NGaugeGelAndGlassEffectsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Effects\NGaugeBordersUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Indicators\NIndicatorValueDampeningUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Indicators\NLinearGaugeIndicatorsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Indicators\NRadialGaugeIndicatorsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Indicators\NRadialGaugeKnobsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Indicators\NStateIndicatorsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Interactivity\NDraggingIndicatorsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Interactivity\NGaugeHitTestingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Interactivity\NGaugeTooltipsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Scales\NGaugeCustomLabelsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Scales\NGaugeAxisRulerSizeUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Scales\NGaugeAxisSectionsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Scales\NGaugeCustomRangeLabelsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Scales\NGaugeScaleAppearanceUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\Gauges\Scales\NGaugeScaleLabelsOrientationUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GaugeGallery\NumericDisplay\NNumericDisplayUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImageExport\NAnimationThemesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImageExport\NRasterImageExportUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImageExport\NVectorImageExportUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\MouseEvents\NInteractivePieChartUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\MouseEvents\NTrackingMouseEventsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NAxisScrollToolUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NDataCursorToolUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NDataPanToolUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NDataPointDragToolUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NDataZoomToolUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NDragToolsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interactivity\Tools\NTooltipAndCursorToolsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layout\NBoundsModeFitUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layout\NBoundsModeStretchUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layout\NStackedChartsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NChartExamplesConfig.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NExampleBaseUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NMainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\Annotations\NAnchorPanelsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Annotations\NAnnotationsGeneralUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Annotations\NPieDataPointAnchorUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\BackgroundDecorator\NBackgroundDecoratorUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsRadarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsAreaUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsClusterStackBarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsPolarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsStackLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsStepLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsXYPointUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsXYZPointUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\Aspect\NChartAspect3DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\Aspect\NChartAspect2DUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\SeriesAttributes\NSeriesAppearanceAttributesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\SeriesAttributes\NSeriesDataLabelAttributeUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\SeriesAttributes\NSeriesLegendAttributeUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\SeriesAttributes\NSeriesMarkerAttributeUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\Walls\NAutoWallsAndAxesVisibilityUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Chart\Walls\NWallsGeneralUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Guidelines\NSideGuidelineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Labels\NLabelImageEmbeddingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Labels\NLabelFitModesUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Labels\NLabelGeneralUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Labels\NXMLFormattedTextUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Legend\NLegendCustomItemsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Legend\NLegendWrappingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Legend\NLegendDockingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Legend\NLegendPositionUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Legend\NLegendGeneralUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Legend\NLegendInterlacedUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Legend\NLegendSeriesAssignmentUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Watermarks\NWatermarkGeneralUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Printing\NCustomPrintingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Printing\NMultiPagePrintingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Printing\NPageSettingsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Printing\NPrintedChartAppearanceUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Printing\NPrintingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RealTimeCharts\NRealTimeExampleBaseUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RealTimeCharts\NRealTimeLineUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RealTimeCharts\NRealTimePolarUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Serialization\NSerializingChartObjectsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Serialization\NSerializingTheChartStateUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Styles\BackgroundFrameStyles\NImageFrameStyleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Styles\BackgroundFrameStyles\NStandardFrameStyleUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Styles\FillStyles\NAdvancedGradientUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Styles\FillStyles\NGradientUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Styles\FillStyles\NImageUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Styles\FillStyles\NPatternUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Styles\FillStyles\NSolidColorUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Styles\StyleSheets\NPredefinedStyleSheetsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Styles\StyleSheets\NStyleSheetConfiguratorsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\NCustomChartCommandBarsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\NChartCommandBarsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\NChartGridUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\NVisualEditorsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualEffects\General\NAlphaBlendingUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualEffects\General\NAntialiasingGeneralUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualEffects\General\NJitteringGeneralUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualEffects\General\NLightsUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualEffects\ImageFilters\NBevelAndEmbossFilterUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualEffects\ImageFilters\NGlowFilterUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualEffects\ImageFilters\NLightingFilterUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Axes\Attributes\NConstLines2DUC.resx">
+      <DependentUpon>NConstLines2DUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Attributes\NConstLines3DUC.resx">
+      <DependentUpon>NConstLines3DUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Attributes\NStripesUC.resx">
+      <DependentUpon>NStripesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NAxisDockingUC.resx">
+      <DependentUpon>NAxisDockingUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NAxisGridlinesUC.resx">
+      <DependentUpon>NAxisGridlinesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NAxisInterlacedStripesUC.resx">
+      <DependentUpon>NAxisInterlacedStripesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NAxisLabelsUC.resx">
+      <DependentUpon>NAxisLabelsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NAxisMinMaxUC.resx">
+      <DependentUpon>NAxisMinMaxUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NAxisModelCrossingUC.resx">
+      <DependentUpon>NAxisModelCrossingUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NAxisSectionsUC.resx">
+      <DependentUpon>NAxisSectionsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NAxisStripLinesUC.resx">
+      <DependentUpon>NAxisStripLinesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NAxisTicksUC.resx">
+      <DependentUpon>NAxisTicksUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NAxisTitlesUC.resx">
+      <DependentUpon>NAxisTitlesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NAxisValueCrossingUC.resx">
+      <DependentUpon>NAxisValueCrossingUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\General\NRulerSizeUC.resx">
+      <DependentUpon>NRulerSizeUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Paging\NDateTimeAxisPagingUC.resx">
+      <DependentUpon>NDateTimeAxisPagingUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Paging\NNumericAxisPagingUC.resx">
+      <DependentUpon>NNumericAxisPagingUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NCustomScaleDecorationsUC.resx">
+      <DependentUpon>NCustomScaleDecorationsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NDateTimeScaleUC.resx">
+      <DependentUpon>NDateTimeScaleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NLinearScaleUC.resx">
+      <DependentUpon>NLinearScaleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NLogarithmicScaleUC.resx">
+      <DependentUpon>NLogarithmicScaleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axes\Scaling\NOrdinalScaleUC.resx">
+      <DependentUpon>NOrdinalScaleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Area\NMultiSeriesAreaUC.resx">
+      <DependentUpon>NMultiSeriesAreaUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RealTimeCharts\NRealTimeAreaUC.resx">
+      <DependentUpon>NRealTimeAreaUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Area\NStackedAreaUC.resx">
+      <DependentUpon>NStackedAreaUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Area\NStandardArea2DUC.resx">
+      <DependentUpon>NStandardArea2DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Area\NStandardAreaUC.resx">
+      <DependentUpon>NStandardAreaUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Area\NXYScatterAreaUC.resx">
+      <DependentUpon>NXYScatterAreaUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bar\NClusterBarUC.resx">
+      <DependentUpon>NClusterBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bar\NClusterStackCombinationUC.resx">
+      <DependentUpon>NClusterStackCombinationUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bar\NDateTimeBarUC.resx">
+      <DependentUpon>NDateTimeBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bar\NDualHorizontalBarUC.resx">
+      <DependentUpon>NDualHorizontalBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bar\NHorizontalBarUC.resx">
+      <DependentUpon>NHorizontalBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bar\NManhattanBarUC.resx">
+      <DependentUpon>NManhattanBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bar\NStackedBarUC.resx">
+      <DependentUpon>NStackedBarUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bar\NStandardBar2DUC.resx">
+      <DependentUpon>NStandardBar2DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bar\NStandardBar3DUC.resx">
+      <DependentUpon>NStandardBar3DUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bar\NXYZScatterClusterUC.resx">
+      <DependentUpon>NXYZScatterClusterUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bar\NXYZScatterStackUC.resx">
+      <DependentUpon>NXYZScatterStackUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\BoxAndWhiskers\NBoxAndWhiskers2DUC.resx">
+      <DependentUpon>NBoxAndWhiskers2DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\BoxAndWhiskers\NDateTimeBoxAndWhiskers2DUC.resx">
+      <DependentUpon>NDateTimeBoxAndWhiskers2DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\BoxAndWhiskers\NPointChartAndBoxPlotUC.resx">
+      <DependentUpon>NPointChartAndBoxPlotUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bubble\NStandardBubbleUC.resx">
+      <DependentUpon>NStandardBubbleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bubble\NXYScatterBubbleUC.resx">
+      <DependentUpon>NXYScatterBubbleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Bubble\NXYZScatterBubbleUC.resx">
+      <DependentUpon>NXYZScatterBubbleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\ComboCharts\NFinancialChartUC.resx">
+      <DependentUpon>NFinancialChartUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\ComboCharts\NParetoUC.resx">
+      <DependentUpon>NParetoUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\ErrorBar\NXYErrorBarUC.resx">
+      <DependentUpon>NXYErrorBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\ErrorBar\NXYZErrorBarUC.resx">
+      <DependentUpon>NXYZErrorBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\ErrorBar\NYErrorBarUC.resx">
+      <DependentUpon>NYErrorBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FloatBar\NClusterFloatBarUC.resx">
+      <DependentUpon>NClusterFloatBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FloatBar\NDateTimeFloatBarUC.resx">
+      <DependentUpon>NDateTimeFloatBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FloatBar\NDateTimeStackFloatBarUC.resx">
+      <DependentUpon>NDateTimeStackFloatBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FloatBar\NHorizontalFloatBarUC.resx">
+      <DependentUpon>NHorizontalFloatBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FloatBar\NStackFloatBarUC.resx">
+      <DependentUpon>NStackFloatBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FloatBar\NStandardFloatBar2DUC.resx">
+      <DependentUpon>NStandardFloatBar2DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FloatBar\NStandardFloatBarUC.resx">
+      <DependentUpon>NStandardFloatBarUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Funnel\NAdvancedFunnel2DUC.resx">
+      <DependentUpon>NAdvancedFunnel2DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Funnel\NAdvancedFunnel3DUC.resx">
+      <DependentUpon>NAdvancedFunnel3DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Funnel\NStandardFunnel2DUC.resx">
+      <DependentUpon>NStandardFunnel2DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Funnel\NStandardFunnel3DUC.resx">
+      <DependentUpon>NStandardFunnel3DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\GridSurface\NGridContourUC.resx">
+      <DependentUpon>NGridContourUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\GridSurface\NGridEmptyPointsUC.resx">
+      <DependentUpon>NGridEmptyPointsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\GridSurface\NGridFillStyleUC.resx">
+      <DependentUpon>NGridFillStyleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\GridSurface\NGridFrameUC.resx">
+      <DependentUpon>NGridFrameUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\GridSurface\NGridSurfaceUC.resx">
+      <DependentUpon>NGridSurfaceUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\GridSurface\NWavesUC.resx">
+      <DependentUpon>NWavesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\HighLow\NAdvancedHighLowUC.resx">
+      <DependentUpon>NAdvancedHighLowUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\HighLow\NStandardHighLow2DUC.resx">
+      <DependentUpon>NStandardHighLow2DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\HighLow\NStandardHighLowUC.resx">
+      <DependentUpon>NStandardHighLowUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\LineStudies\NLineStudiesUC.resx">
+      <DependentUpon>NLineStudiesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Line\NMultiSeriesLineUC.resx">
+      <DependentUpon>NMultiSeriesLineUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Line\NOverlappedLineUC.resx">
+      <DependentUpon>NOverlappedLineUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Line\NStackedLineUC.resx">
+      <DependentUpon>NStackedLineUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Line\NStandardLine2DUC.resx">
+      <DependentUpon>NStandardLine2DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Line\NStandardLineUC.resx">
+      <DependentUpon>NStandardLineUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Line\NXYScatterLineUC.resx">
+      <DependentUpon>NXYScatterLineUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Line\NXYZScatterLineUC.resx">
+      <DependentUpon>NXYZScatterLineUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\MeshSurface\NMeshEmptyPointsUC.resx">
+      <DependentUpon>NMeshEmptyPointsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\MeshSurface\NMeshFillStyleUC.resx">
+      <DependentUpon>NMeshFillStyleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\MeshSurface\NMeshIntersectedUC.resx">
+      <DependentUpon>NMeshIntersectedUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\MeshSurface\NMeshSurfaceUC.resx">
+      <DependentUpon>NMeshSurfaceUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Pie\NExplodedPieUC.resx">
+      <DependentUpon>NExplodedPieUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Pie\NGroupedPieUC.resx">
+      <DependentUpon>NGroupedPieUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Pie\NMultiplePiesUC.resx">
+      <DependentUpon>NMultiplePiesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Pie\NSortedPieUC.resx">
+      <DependentUpon>NSortedPieUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Pie\NStandardPieUC.resx">
+      <DependentUpon>NStandardPieUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Point\NXYScatterPointUC.resx">
+      <DependentUpon>NXYScatterPointUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Point\NXYZMultiSeriesPointUC.resx">
+      <DependentUpon>NXYZMultiSeriesPointUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Point\NXYZScatterPointUC.resx">
+      <DependentUpon>NXYZScatterPointUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Polar\NPolarAreaUC.resx">
+      <DependentUpon>NPolarAreaUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Polar\NPolarLineUC.resx">
+      <DependentUpon>NPolarLineUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Radar\NRadarAreaUC.resx">
+      <DependentUpon>NRadarAreaUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Radar\NRadarLineUC.resx">
+      <DependentUpon>NRadarLineUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Shape\NShapeBarsWithDifferentSizeUC.resx">
+      <DependentUpon>NShapeBarsWithDifferentSizeUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Shape\NShapeHomeUC.resx">
+      <DependentUpon>NShapeHomeUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Shape\NShapeUC.resx">
+      <DependentUpon>NShapeUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Shape\NShapeXYScatterBarsUC.resx">
+      <DependentUpon>NShapeXYScatterBarsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Shape\NShapeXYZScatterBarsUC.resx">
+      <DependentUpon>NShapeXYZScatterBarsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Shape\NShapeXYZScatterBubbleUC.resx">
+      <DependentUpon>NShapeXYZScatterBubbleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\SmoothArea\NDateTimeSmoothAreaUC.resx">
+      <DependentUpon>NDateTimeSmoothAreaUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\SmoothArea\NSmoothArea3DUC.resx">
+      <DependentUpon>NSmoothArea3DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\SmoothArea\NXYSmoothAreaUC.resx">
+      <DependentUpon>NXYSmoothAreaUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\SmoothLine\NDateTimeSmoothLineUC.resx">
+      <DependentUpon>NDateTimeSmoothLineUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\SmoothLine\NStandardSmoothLineUC.resx">
+      <DependentUpon>NStandardSmoothLineUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\SmoothLine\NXYScatterSmoothLineUC.resx">
+      <DependentUpon>NXYScatterSmoothLineUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\SmoothLine\NXYZScatterSmoothLineUC.resx">
+      <DependentUpon>NXYZScatterSmoothLineUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\StepLine\NDateTimeStepLineUC.resx">
+      <DependentUpon>NDateTimeStepLineUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\StepLine\NStandardStepLine2DUC.resx">
+      <DependentUpon>NStandardStepLine2DUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\StepLine\NStandardStepLineUC.resx">
+      <DependentUpon>NStandardStepLineUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Stock\NStockCandleUC.resx">
+      <DependentUpon>NStockCandleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Stock\NStockStickUC.resx">
+      <DependentUpon>NStockStickUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceWithCustomColorsUC.resx">
+      <DependentUpon>NTriangulatedSurfaceWithCustomColorsUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceUC.resx">
+      <DependentUpon>NTriangulatedSurfaceUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Venn\NFiveSetVennUC.resx">
+      <DependentUpon>NFiveSetVennUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Venn\NFourSetVennUC.resx">
+      <DependentUpon>NFourSetVennUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Venn\NThreeSetVennUC.resx">
+      <DependentUpon>NThreeSetVennUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\Venn\NTwoSetVennUC.resx">
+      <DependentUpon>NTwoSetVennUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoordinateTransformations\ScaleToViewportUC.resx">
+      <DependentUpon>ScaleToViewportUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoordinateTransformations\ViewportToScaleUC.resx">
+      <DependentUpon>ViewportToScaleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomPainting\NCustomPaintingBase.resx">
+      <DependentUpon>NCustomPaintingBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomPainting\NCustomPaintingUsingGDIPlusUC.resx">
+      <DependentUpon>NCustomPaintingUsingGDIPlusUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomPainting\NCustomPaintingUsingNevronDeviceUC.resx">
+      <DependentUpon>NCustomPaintingUsingNevronDeviceUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardGallery\NCarDashboardUC.resx">
+      <DependentUpon>NCarDashboardUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardGallery\NFinancialDashboardUC.resx">
+      <DependentUpon>NFinancialDashboardUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\DataBinding\NBindingToDataAdapterUC.resx">
+      <DependentUpon>NBindingToDataAdapterUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\DataBinding\NBindingToDataTableUC.resx">
+      <DependentUpon>NBindingToDataTableUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\EmptyDataPoints\NBubbleEmptyDataPointsUC.resx">
+      <DependentUpon>NBubbleEmptyDataPointsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\EmptyDataPoints\NEmptyDataPointsGeneralUC.resx">
+      <DependentUpon>NEmptyDataPointsGeneralUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\EmptyDataPoints\NFloatBarEmptyDataPointsUC.resx">
+      <DependentUpon>NFloatBarEmptyDataPointsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Exporting\NExportingToDataTableUC.resx">
+      <DependentUpon>NExportingToDataTableUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Functions\Financial\NDirectionalMovementUC.resx">
+      <DependentUpon>NDirectionalMovementUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Functions\Financial\NMovingAveragesUC.resx">
+      <DependentUpon>NMovingAveragesUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Functions\Financial\NPriceIndicatorsUC.resx">
+      <DependentUpon>NPriceIndicatorsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Functions\Financial\NRangeIndicatorsUC.resx">
+      <DependentUpon>NRangeIndicatorsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Functions\Financial\NTechnicalPriceIndicatorsUC.resx">
+      <DependentUpon>NTechnicalPriceIndicatorsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Functions\Financial\NVolumeIndicatorsUC.resx">
+      <DependentUpon>NVolumeIndicatorsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Functions\Statistical\NAverageMedianMinMaxUC.resx">
+      <DependentUpon>NAverageMedianMinMaxUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Functions\Statistical\NBasicFunctionsUC.resx">
+      <DependentUpon>NBasicFunctionsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Functions\Statistical\NCountStdDevRmsUC.resx">
+      <DependentUpon>NCountStdDevRmsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Functions\Statistical\NCovarianceCorrelationUC.resx">
+      <DependentUpon>NCovarianceCorrelationUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Functions\Statistical\NPowerCumulativeExpAverageUC.resx">
+      <DependentUpon>NPowerCumulativeExpAverageUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Functions\Statistical\NSumElementsUC.resx">
+      <DependentUpon>NSumElementsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\General\NEvaluatingDataUC.resx">
+      <DependentUpon>NEvaluatingDataUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\General\NFilteringDataUC.resx">
+      <DependentUpon>NFilteringDataUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\General\NFindingDataUC.resx">
+      <DependentUpon>NFindingDataUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\General\NSortingDataUC.resx">
+      <DependentUpon>NSortingDataUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Importing\NImportingFromDataReaderUC.resx">
+      <DependentUpon>NImportingFromDataReaderUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataManipulation\Importing\NImportingFromDataTableAndDataViewUC.resx">
+      <DependentUpon>NImportingFromDataTableAndDataViewUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Indicators\NLinearGaugeIndicatorsUC.resx">
+      <DependentUpon>NLinearGaugeIndicatorsUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Indicators\NRadialGaugeIndicatorsUC.resx">
+      <DependentUpon>NRadialGaugeIndicatorsUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Interactivity\NGaugeHitTestingUC.resx">
+      <DependentUpon>NGaugeHitTestingUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Interactivity\NGaugeTooltipsUC.resx">
+      <DependentUpon>NGaugeTooltipsUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Scales\NGaugeCustomLabelsUC.resx">
+      <DependentUpon>NGaugeCustomLabelsUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Scales\NGaugeAxisRulerSizeUC.resx">
+      <DependentUpon>NGaugeAxisRulerSizeUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Scales\NGaugeAxisSectionsUC.resx">
+      <DependentUpon>NGaugeAxisSectionsUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\Gauges\Scales\NGaugeScaleAppearanceUC.resx">
+      <DependentUpon>NGaugeScaleAppearanceUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaugeGallery\NumericDisplay\NNumericDisplayUC.resx">
+      <DependentUpon>NNumericDisplayUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\MouseEvents\NInteractivePieChartUC.resx">
+      <DependentUpon>NInteractivePieChartUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\MouseEvents\NTrackingMouseEventsUC.resx">
+      <DependentUpon>NTrackingMouseEventsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NAxisScrollToolUC.resx">
+      <DependentUpon>NAxisScrollToolUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NDataCursorToolUC.resx">
+      <DependentUpon>NDataCursorToolUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NDataPanToolUC.resx">
+      <DependentUpon>NDataPanToolUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NDataPointDragToolUC.resx">
+      <DependentUpon>NDataPointDragToolUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NDataZoomToolUC.resx">
+      <DependentUpon>NDataZoomToolUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NDragToolsUC.resx">
+      <DependentUpon>NDragToolsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interactivity\Tools\NTooltipAndCursorToolsUC.resx">
+      <DependentUpon>NTooltipAndCursorToolsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\NBoundsModeFitUC.resx">
+      <DependentUpon>NBoundsModeFitUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\NBoundsModeStretchUC.resx">
+      <DependentUpon>NBoundsModeStretchUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\NStackedChartsUC.resx">
+      <DependentUpon>NStackedChartsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NExampleBaseUC.resx">
+      <DependentUpon>NExampleBaseUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NMainForm.resx">
+      <DependentUpon>NMainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Annotations\NAnchorPanelsUC.resx">
+      <DependentUpon>NAnchorPanelsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Annotations\NAnnotationsGeneralUC.resx">
+      <DependentUpon>NAnnotationsGeneralUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\SeriesAttributes\NSeriesAppearanceAttributesUC.resx">
+      <DependentUpon>NSeriesAppearanceAttributesUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\SeriesAttributes\NSeriesDataLabelAttributeUC.resx">
+      <DependentUpon>NSeriesDataLabelAttributeUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\SeriesAttributes\NSeriesLegendAttributeUC.resx">
+      <DependentUpon>NSeriesLegendAttributeUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\SeriesAttributes\NSeriesMarkerAttributeUC.resx">
+      <DependentUpon>NSeriesMarkerAttributeUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Chart\Walls\NWallsGeneralUC.resx">
+      <DependentUpon>NWallsGeneralUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Labels\NLabelGeneralUC.resx">
+      <DependentUpon>NLabelGeneralUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Labels\NXMLFormattedTextUC.resx">
+      <DependentUpon>NXMLFormattedTextUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Legend\NLegendDockingUC.resx">
+      <DependentUpon>NLegendDockingUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Legend\NLegendPositionUC.resx">
+      <DependentUpon>NLegendPositionUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Legend\NLegendGeneralUC.resx">
+      <DependentUpon>NLegendGeneralUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Legend\NLegendInterlacedUC.resx">
+      <DependentUpon>NLegendInterlacedUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Legend\NLegendSeriesAssignmentUC.resx">
+      <DependentUpon>NLegendSeriesAssignmentUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Watermarks\NWatermarkGeneralUC.resx">
+      <DependentUpon>NWatermarkGeneralUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\NCustomPrintingUC.resx">
+      <DependentUpon>NCustomPrintingUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\NMultiPagePrintingUC.resx">
+      <DependentUpon>NMultiPagePrintingUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\NPageSettingsUC.resx">
+      <DependentUpon>NPageSettingsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\NPrintedChartAppearanceUC.resx">
+      <DependentUpon>NPrintedChartAppearanceUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\NPrintingUC.resx">
+      <DependentUpon>NPrintingUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Back.png" />
+    <EmbeddedResource Include="Resources\Banner.png" />
+    <EmbeddedResource Include="Resources\Bricks.jpg" />
+    <EmbeddedResource Include="Resources\Chart.ico" />
+    <EmbeddedResource Include="Resources\ChartLogo.png" />
+    <EmbeddedResource Include="Resources\ChartSplash.png" />
+    <EmbeddedResource Include="Resources\Cobblestone.jpg" />
+    <EmbeddedResource Include="Resources\ConceptCar1.png" />
+    <EmbeddedResource Include="Resources\ConceptCar2.png" />
+    <EmbeddedResource Include="Resources\ConceptCar3.png" />
+    <EmbeddedResource Include="Resources\Door.jpg" />
+    <EmbeddedResource Include="Resources\ExamplesTree.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Leafs.png" />
+    <EmbeddedResource Include="Resources\Marble.jpg" />
+    <EmbeddedResource Include="Resources\Rooftile.jpg" />
+    <EmbeddedResource Include="Resources\Window.jpg" />
+    <EmbeddedResource Include="Resources\WoodBurl.jpg" />
+    <EmbeddedResource Include="Resources\WoodPlank.jpg" />
+    <EmbeddedResource Include="Serialization\NSerializingChartObjectsUC.resx">
+      <DependentUpon>NSerializingChartObjectsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Serialization\NSerializingTheChartStateUC.resx">
+      <DependentUpon>NSerializingTheChartStateUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Styles\BackgroundFrameStyles\NImageFrameStyleUC.resx">
+      <DependentUpon>NImageFrameStyleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Styles\BackgroundFrameStyles\NStandardFrameStyleUC.resx">
+      <DependentUpon>NStandardFrameStyleUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Styles\FillStyles\NAdvancedGradientUC.resx">
+      <DependentUpon>NAdvancedGradientUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Styles\FillStyles\NGradientUC.resx">
+      <DependentUpon>NGradientUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Styles\FillStyles\NImageUC.resx">
+      <DependentUpon>NImageUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Styles\FillStyles\NPatternUC.resx">
+      <DependentUpon>NPatternUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Styles\FillStyles\NSolidColorUC.resx">
+      <DependentUpon>NSolidColorUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Styles\StyleSheets\NPredefinedStyleSheetsUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NPredefinedStyleSheetsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Styles\StyleSheets\NStyleSheetConfiguratorsUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NStyleSheetConfiguratorsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\NCustomChartCommandBarsUC.resx">
+      <DependentUpon>NCustomChartCommandBarsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\NChartCommandBarsUC.resx">
+      <DependentUpon>NChartCommandBarsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\NChartGridUC.resx">
+      <DependentUpon>NChartGridUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\NVisualEditorsUC.resx">
+      <DependentUpon>NVisualEditorsUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualEffects\General\NAlphaBlendingUC.resx">
+      <DependentUpon>NAlphaBlendingUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualEffects\General\NAntialiasingGeneralUC.resx">
+      <DependentUpon>NAntialiasingGeneralUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualEffects\General\NJitteringGeneralUC.resx">
+      <DependentUpon>NJitteringGeneralUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualEffects\General\NLightsUC.resx">
+      <DependentUpon>NLightsUC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualEffects\ImageFilters\NBevelAndEmbossFilterUC.resx">
+      <DependentUpon>NBevelAndEmbossFilterUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualEffects\ImageFilters\NGlowFilterUC.resx">
+      <DependentUpon>NGlowFilterUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualEffects\ImageFilters\NLightingFilterUC.resx">
+      <DependentUpon>NLightingFilterUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Axes\Attributes\NStripeLabelsUC.htm" />
+    <Content Include="Axes\Attributes\NConstLineLabelsUC.htm" />
+    <Content Include="Axes\Attributes\NConstLines2DUC.htm" />
+    <Content Include="Axes\Attributes\NConstLines3DUC.htm" />
+    <Content Include="Axes\Attributes\NStripesUC.htm" />
+    <Content Include="Axes\General\NAxisTicksAppearanceUC.htm" />
+    <Content Include="Axes\General\NViewRangeUC.htm" />
+    <Content Include="Axes\General\NAxisViewRangeInflateUC.htm" />
+    <Content Include="Axes\General\NCustomRangeLabelsUC.htm" />
+    <Content Include="Axes\General\NRulerCapsUC.htm" />
+    <Content Include="Axes\ScaleBreaks\NScaleBreakAppearanceUC.htm" />
+    <Content Include="Axes\ScaleBreaks\NCustomScaleBreaksUC.htm" />
+    <Content Include="Axes\ScaleBreaks\NAutomaticScaleBreaksUC.htm" />
+    <Content Include="Axes\General\NAxisLabelsOrientationUC.htm" />
+    <Content Include="Axes\General\NAxisDockingUC.htm" />
+    <Content Include="Axes\General\NAxisGridlinesUC.htm" />
+    <Content Include="Axes\General\NAxisInterlacedStripesUC.htm" />
+    <Content Include="Axes\General\NAxisLabelsUC.htm" />
+    <Content Include="Axes\General\NAxisMinMaxUC.htm" />
+    <Content Include="Axes\General\NAxisModelCrossingUC.htm" />
+    <Content Include="Axes\General\NAxisSectionsUC.htm" />
+    <Content Include="Axes\General\NAxisStripLinesUC.htm" />
+    <Content Include="Axes\General\NAxisTicksUC.htm" />
+    <Content Include="Axes\General\NAxisTitlesUC.htm" />
+    <Content Include="Axes\General\NAxisValueCrossingUC.htm" />
+    <Content Include="Axes\General\NRulerSizeUC.htm" />
+    <Content Include="Axes\Paging\NDateTimeAxisPagingUC.htm" />
+    <Content Include="Axes\Paging\NNumericAxisPagingUC.htm" />
+    <Content Include="Axes\Scaling\NTimeSpanScaleUC.htm" />
+    <Content Include="Axes\Scaling\NTableScaleUC.htm" />
+    <Content Include="Axes\Scaling\NDynamicYAxisRangeUC.htm" />
+    <Content Include="Axes\Scaling\NDailyScheduleWorkCalendarUC.htm" />
+    <Content Include="ChartGallery\Area\NAreaPaletteUC.htm" />
+    <Content Include="ChartGallery\Bar\NBarPaletteUC.htm" />
+    <Content Include="ChartGallery\Bar\NBarConnectorLinesUC.htm" />
+    <Content Include="ChartGallery\Bar\NErrorBarUC.htm" />
+    <Content Include="ChartGallery\Pie\NPieSliceRadiusUC.htm" />
+    <Content Include="ChartGallery\TriangulatedHeatMap\NTriangulatedHeatMapUC.htm" />
+    <Content Include="ChartGallery\TriangulatedHeatMap\NTriangulatedHeatMapContourUC.htm" />
+    <Content Include="ChartGallery\Vector\NVectorLegendScaleUC.htm" />
+    <Content Include="ChartGallery\Bubble\NBubbleLegendScaleUC.htm" />
+    <Content Include="ChartGallery\Bubble\NBubblePaletteUC.htm" />
+    <Content Include="ChartGallery\FloatBar\NFloatBarGanttUC.htm" />
+    <Content Include="ChartGallery\FloatBar\NFloatBarConnectorLines2DUC.htm" />
+    <Content Include="ChartGallery\Ternary\NTernaryBubbleUC.htm" />
+    <Content Include="ChartGallery\FloatBar\NFloatBarPaletteUC.htm" />
+    <Content Include="ChartGallery\GridSurface\NGridSurfaceHorizontalCrossSectionUC.htm" />
+    <Content Include="ChartGallery\GridSurface\NGridSurfaceIsolinesUC.htm" />
+    <Content Include="ChartGallery\GridSurface\NGridSurfaceVerticalCrossSectionUC.htm" />
+    <Content Include="ChartGallery\GridSurface\NGridSurfaceCustomColorsUC.htm" />
+    <Content Include="ChartGallery\GridSurface\NGridSurfaceTextureZoningUC.htm" />
+    <Content Include="ChartGallery\GridSurface\NRectilinearGridUC.htm" />
+    <Content Include="ChartGallery\GraphicsPath\NGraphicsPathSeriesUC.htm" />
+    <Content Include="ChartGallery\HeatMap\NHeatMapContourLabelsUC.htm" />
+    <Content Include="ChartGallery\HeatMap\NHeatMapCrossSectionXYUC.htm" />
+    <Content Include="ChartGallery\HeatMap\NHeatMapCrossSectionUC.htm" />
+    <Content Include="ChartGallery\HeatMap\NWaferChartUC.htm" />
+    <Content Include="ChartGallery\HeatMap\NHeatMapContourUC.htm" />
+    <Content Include="ChartGallery\HighLow\NHighLowPaletteUC.htm" />
+    <Content Include="ChartGallery\Line\NIntersectLineWithXYValueUC.htm" />
+    <Content Include="ChartGallery\MeshSurface\NMeshSurfaceIsolinesUC.htm" />
+    <Content Include="ChartGallery\MeshSurface\NMeshSurfaceCustomColorsUC.htm" />
+    <Content Include="ChartGallery\MeshSurface\NLargeMeshSurfaceUC.htm" />
+    <Content Include="ChartGallery\MeshSurface\NMeshSurfaceTextureZoningUC.htm" />
+    <Content Include="ChartGallery\HeatMap\NHeatMapUC.htm" />
+    <Content Include="ChartGallery\Pie\NDoughnutPieUC.htm" />
+    <Content Include="ChartGallery\Point\NPointDropLines3DUC.htm" />
+    <Content Include="ChartGallery\Point\NPointDropLines2DUC.htm" />
+    <Content Include="ChartGallery\Ternary\NTernaryPointUC.htm" />
+    <Content Include="ChartGallery\Point\NStandardPointUC.htm" />
+    <Content Include="ChartGallery\QuickPoint\NQuickPointUC.htm" />
+    <Content Include="ChartGallery\Polar\NPolarVectorUC.htm" />
+    <Content Include="ChartGallery\Polar\NPolarRangeUC.htm" />
+    <Content Include="ChartGallery\Radar\NCustomRadarAxisAnglesUC.htm" />
+    <Content Include="ChartGallery\SmoothArea\NSmoothAreaPaletteUC.htm" />
+    <Content Include="ChartGallery\StepLine\NStepLineIntersectionsUC.htm" />
+    <Content Include="ChartGallery\Stock\NStockDataGroupingHitTestingUC.htm" />
+    <Content Include="ChartGallery\Stock\NStockDataGroupingUC.htm" />
+    <Content Include="ChartGallery\TreeMap\NTreeMapLegendUC.htm" />
+    <Content Include="ChartGallery\TreeMap\NTreeMapDrillDownUC.htm" />
+    <Content Include="ChartGallery\TreeMap\NTreeMapUC.htm" />
+    <Content Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceIsolinesUC.htm" />
+    <Content Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceTextureZoningUC.htm" />
+    <Content Include="ChartGallery\Vector\NVectorDirectionModeUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Indicators\NIndicatorPaletteUC.htm" />
+    <Content Include="Interactivity\MouseEvents\NHitTestingScaleElementsUC.htm" />
+    <Content Include="Axes\Scaling\NCustomScaleDecorations2UC.htm" />
+    <Content Include="Axes\Scaling\NDateTimeWorkCalendarUC.htm" />
+    <Content Include="Axes\Scaling\NRangeTimelineScaleAdvancedUC.htm" />
+    <Content Include="Axes\Scaling\NValueTimelineScaleAdvancedUC.htm" />
+    <Content Include="Axes\Scaling\NValueTimelineScaleUC.htm" />
+    <Content Include="Axes\Scaling\NRangeTimelineScaleUC.htm" />
+    <Content Include="Axes\Scaling\NHierarchicalScaleUC.htm" />
+    <Content Include="Axes\Scaling\NCustomScaleDecorationsUC.htm" />
+    <Content Include="Axes\Scaling\NDateTimeScaleUC.htm" />
+    <Content Include="Axes\Scaling\NLinearScaleUC.htm" />
+    <Content Include="Axes\Scaling\NLogarithmicScaleUC.htm" />
+    <Content Include="Axes\Scaling\NOrdinalScaleUC.htm" />
+    <Content Include="ChartGallery\Area\NMultiSeriesAreaUC.htm" />
+    <Content Include="ChartGallery\GridSurface\NLargeSurfaceUC.htm" />
+    <Content Include="Interactivity\Tools\NAnnotationDragToolUC.htm" />
+    <Content Include="Interactivity\Tools\NPanelZoomToolUC.htm" />
+    <Content Include="Interactivity\Tools\NVolumeSelectionToolUC.htm" />
+    <Content Include="Interactivity\Tools\NRangeSelectionMoveResizeToolUC2.htm" />
+    <Content Include="Interactivity\Tools\NRangeSelectionMoveResizeToolUC.htm" />
+    <Content Include="Interactivity\Tools\NPanelZoomAndDragToolsUC.htm" />
+    <Content Include="Interactivity\Tools\NAnimatedDataZoomToolUC.htm" />
+    <Content Include="Interactivity\Tools\NMultipleAxesZoomingAndScrollingUC.htm" />
+    <Content Include="Panels\Chart\SeriesAttributes\NSeriesCustomMarkerShapeUC.htm" />
+    <Content Include="Panels\Chart\SeriesAttributes\NSeriesZOrderUC.htm" />
+    <Content Include="Panels\Legend\NLegendPaletteItemUC.htm" />
+    <Content Include="Panels\Legend\NLegendItemTextFitModeUC.htm" />
+    <Content Include="RealTimeCharts\NRealTimeSurfaceUC.htm" />
+    <Content Include="RealTimeCharts\NRealTimeStockUC.htm" />
+    <Content Include="RealTimeCharts\NRealTimePointUC.htm" />
+    <Content Include="RealTimeCharts\NRealTimeBarUC.htm" />
+    <Content Include="RealTimeCharts\NRealTimeAreaUC.htm" />
+    <Content Include="ChartGallery\Area\NSampledArea2DUC.htm" />
+    <Content Include="ChartGallery\Area\NStackedAreaUC.htm" />
+    <Content Include="ChartGallery\Area\NStandardArea2DUC.htm" />
+    <Content Include="ChartGallery\Area\NStandardAreaUC.htm" />
+    <Content Include="ChartGallery\Area\NXYScatterAreaUC.htm" />
+    <Content Include="ChartGallery\Bar\NClusterBarUC.htm" />
+    <Content Include="ChartGallery\Bar\NClusterStackCombinationUC.htm" />
+    <Content Include="ChartGallery\Bar\NDateTimeBarUC.htm" />
+    <Content Include="ChartGallery\Bar\NDualHorizontalBarUC.htm" />
+    <Content Include="ChartGallery\Bar\NHorizontalBarUC.htm" />
+    <Content Include="ChartGallery\Bar\NManhattanBarUC.htm" />
+    <Content Include="ChartGallery\Bar\NStackedBarUC.htm" />
+    <Content Include="ChartGallery\Bar\NStandardBar2DUC.htm" />
+    <Content Include="ChartGallery\Bar\NStandardBar3DUC.htm" />
+    <Content Include="ChartGallery\Bar\NXYZScatterClusterUC.htm" />
+    <Content Include="ChartGallery\Bar\NXYZScatterStackUC.htm" />
+    <Content Include="ChartGallery\BoxAndWhiskers\NBoxAndWhiskers2DUC.htm" />
+    <Content Include="ChartGallery\BoxAndWhiskers\NDateTimeBoxAndWhiskers2DUC.htm" />
+    <Content Include="ChartGallery\BoxAndWhiskers\NPointChartAndBoxPlotUC.htm" />
+    <Content Include="ChartGallery\Bubble\NStandardBubbleUC.htm" />
+    <Content Include="ChartGallery\Bubble\NXYScatterBubbleUC.htm" />
+    <Content Include="ChartGallery\Bubble\NXYZScatterBubbleUC.htm" />
+    <Content Include="ChartGallery\ComboCharts\NFinancialChartUC.htm" />
+    <Content Include="ChartGallery\ComboCharts\NParetoUC.htm" />
+    <Content Include="ChartGallery\Custom\NCustomSeriesUC.htm" />
+    <Content Include="ChartGallery\ErrorBar\NXYErrorBarUC.htm" />
+    <Content Include="ChartGallery\ErrorBar\NXYZErrorBarUC.htm" />
+    <Content Include="ChartGallery\ErrorBar\NYErrorBarUC.htm" />
+    <Content Include="ChartGallery\FloatBar\NClusterFloatBarUC.htm" />
+    <Content Include="ChartGallery\FloatBar\NDateTimeFloatBarUC.htm" />
+    <Content Include="ChartGallery\FloatBar\NDateTimeStackFloatBarUC.htm" />
+    <Content Include="ChartGallery\FloatBar\NHorizontalFloatBarUC.htm" />
+    <Content Include="ChartGallery\FloatBar\NStackFloatBarUC.htm" />
+    <Content Include="ChartGallery\FloatBar\NStandardFloatBar2DUC.htm" />
+    <Content Include="ChartGallery\FloatBar\NStandardFloatBarUC.htm" />
+    <Content Include="ChartGallery\Funnel\NAdvancedFunnel2DUC.htm" />
+    <Content Include="ChartGallery\Funnel\NAdvancedFunnel3DUC.htm" />
+    <Content Include="ChartGallery\Funnel\NStandardFunnel2DUC.htm" />
+    <Content Include="ChartGallery\Funnel\NStandardFunnel3DUC.htm" />
+    <Content Include="ChartGallery\GridSurface\NProjectedContourUC.htm" />
+    <Content Include="ChartGallery\GridSurface\NGridContourUC.htm" />
+    <Content Include="ChartGallery\GridSurface\NGridEmptyPointsUC.htm" />
+    <Content Include="ChartGallery\GridSurface\NGridFillStyleUC.htm" />
+    <Content Include="ChartGallery\GridSurface\NGridFrameUC.htm" />
+    <Content Include="ChartGallery\GridSurface\NGridSurfaceUC.htm" />
+    <Content Include="ChartGallery\GridSurface\NWavesUC.htm" />
+    <Content Include="ChartGallery\HighLow\NAdvancedHighLowUC.htm" />
+    <Content Include="ChartGallery\HighLow\NStandardHighLow2DUC.htm" />
+    <Content Include="ChartGallery\HighLow\NStandardHighLowUC.htm" />
+    <Content Include="ChartGallery\Kagi\NKagiUC.htm" />
+    <Content Include="ChartGallery\LineStudies\NLineStudiesUC.htm" />
+    <Content Include="ChartGallery\Line\NSampledLine3DUC.htm" />
+    <Content Include="ChartGallery\Line\NSampledLine2DUC.htm" />
+    <Content Include="ChartGallery\Line\NMultiSeriesLineUC.htm" />
+    <Content Include="ChartGallery\Line\NOverlappedLineUC.htm" />
+    <Content Include="ChartGallery\Line\NStackedLineUC.htm" />
+    <Content Include="ChartGallery\Line\NStandardLine2DUC.htm" />
+    <Content Include="ChartGallery\Line\NStandardLineUC.htm" />
+    <Content Include="ChartGallery\Line\NXYScatterLineUC.htm" />
+    <Content Include="ChartGallery\Line\NXYZScatterLineUC.htm" />
+    <Content Include="ChartGallery\MeshSurface\NMeshEmptyPointsUC.htm" />
+    <Content Include="ChartGallery\MeshSurface\NMeshFillStyleUC.htm" />
+    <Content Include="ChartGallery\MeshSurface\NMeshIntersectedUC.htm" />
+    <Content Include="ChartGallery\MeshSurface\NMeshSurfaceUC.htm" />
+    <Content Include="ChartGallery\Pie\NNonoverlappingLabelsUC.htm" />
+    <Content Include="ChartGallery\Pie\NExplodedPieUC.htm" />
+    <Content Include="ChartGallery\Pie\NGroupedPieUC.htm" />
+    <Content Include="ChartGallery\Pie\NMultiplePiesUC.htm" />
+    <Content Include="ChartGallery\Pie\NSortedPieUC.htm" />
+    <Content Include="ChartGallery\Pie\NStandardPieUC.htm" />
+    <Content Include="ChartGallery\PointAndFigure\NPointAndFigureUC.htm" />
+    <Content Include="ChartGallery\Point\NXYScatterPointClusteredUC.htm" />
+    <Content Include="ChartGallery\Point\NXYZScatterPointClusteredUC.htm" />
+    <Content Include="ChartGallery\Point\NXYScatterPointUC.htm" />
+    <Content Include="ChartGallery\Point\NXYZMultiSeriesPointUC.htm" />
+    <Content Include="ChartGallery\Point\NXYZScatterPointUC.htm" />
+    <Content Include="RealTimeCharts\NRealTimeLineUC.htm" />
+    <Content Include="RealTimeCharts\NRealTimePolarUC.htm" />
+    <Content Include="ChartGallery\Polar\NPolarAngleAxisPositionUC.htm" />
+    <Content Include="ChartGallery\Polar\NPolarValueAxisPositionUC.htm" />
+    <Content Include="ChartGallery\Polar\NPolarPointUC.htm" />
+    <Content Include="ChartGallery\Polar\NPolarAreaUC.htm" />
+    <Content Include="ChartGallery\Polar\NPolarLineUC.htm" />
+    <Content Include="ChartGallery\Radar\NRadarAxisTitlesUC.htm" />
+    <Content Include="ChartGallery\Radar\NStackedRadarAreaUC.htm" />
+    <Content Include="ChartGallery\Radar\NMultiMeasureRadarUC.htm" />
+    <Content Include="ChartGallery\Radar\NRadarAreaUC.htm" />
+    <Content Include="ChartGallery\Radar\NRadarLineUC.htm" />
+    <Content Include="ChartGallery\Range\NRange3DUC.htm" />
+    <Content Include="ChartGallery\Range\NRange2DUC.htm" />
+    <Content Include="ChartGallery\Renko\NRenkoUC.htm" />
+    <Content Include="ChartGallery\Shape\NShapeBarsWithDifferentSizeUC.htm" />
+    <Content Include="ChartGallery\Shape\NShapeHomeUC.htm" />
+    <Content Include="ChartGallery\Shape\NShapeUC.htm" />
+    <Content Include="ChartGallery\Shape\NShapeXYScatterBarsUC.htm" />
+    <Content Include="ChartGallery\Shape\NShapeXYZScatterBarsUC.htm" />
+    <Content Include="ChartGallery\Shape\NShapeXYZScatterBubbleUC.htm" />
+    <Content Include="ChartGallery\SmoothArea\NDateTimeSmoothAreaUC.htm" />
+    <Content Include="ChartGallery\SmoothArea\NSmoothArea3DUC.htm" />
+    <Content Include="ChartGallery\SmoothArea\NXYSmoothAreaUC.htm" />
+    <Content Include="ChartGallery\SmoothLine\NDateTimeSmoothLineUC.htm" />
+    <Content Include="ChartGallery\SmoothLine\NStandardSmoothLineUC.htm" />
+    <Content Include="ChartGallery\SmoothLine\NXYScatterSmoothLineUC.htm" />
+    <Content Include="ChartGallery\SmoothLine\NXYZScatterSmoothLineUC.htm" />
+    <Content Include="ChartGallery\StepLine\NDateTimeStepLineUC.htm" />
+    <Content Include="ChartGallery\StepLine\NSampledStepLine2DUC.htm" />
+    <Content Include="ChartGallery\StepLine\NStandardStepLine2DUC.htm" />
+    <Content Include="ChartGallery\StepLine\NStandardStepLineUC.htm" />
+    <Content Include="ChartGallery\Stock\NStockCandleUC.htm" />
+    <Content Include="ChartGallery\Stock\NStockStickUC.htm" />
+    <Content Include="ChartGallery\ThreeLineBreak\NThreeLineBreakUC.htm" />
+    <Content Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceWithCustomColorsUC.htm" />
+    <Content Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceSimplificationUC.htm" />
+    <Content Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceUC.htm" />
+    <Content Include="ChartGallery\Vector\NVector3DUC.htm" />
+    <Content Include="ChartGallery\Vector\NVector2DUC.htm" />
+    <Content Include="ChartGallery\Venn\NFiveSetVennUC.htm" />
+    <Content Include="ChartGallery\Venn\NFourSetVennUC.htm" />
+    <Content Include="ChartGallery\Venn\NThreeSetVennUC.htm" />
+    <Content Include="ChartGallery\Venn\NTwoSetVennUC.htm" />
+    <Content Include="CoordinateTransformations\ScaleToViewportUC.htm" />
+    <Content Include="CoordinateTransformations\ViewportToScaleUC.htm" />
+    <Content Include="CustomPainting\NCustomPaintingUsingGDIPlusUC.htm" />
+    <Content Include="CustomPainting\NCustomPaintingUsingNevronDeviceUC.htm" />
+    <Content Include="CustomPainting\NOverlayPaintingUC.htm" />
+    <Content Include="DashboardGallery\NCarDashboardUC.htm" />
+    <Content Include="DashboardGallery\NFinancialDashboardUC.htm" />
+    <Content Include="DataManipulation\DataBinding\NBindingToDataAdapterUC.htm" />
+    <Content Include="DataManipulation\DataBinding\NBindingToDataTableUC.htm" />
+    <Content Include="DataManipulation\DataBinding\NBindingToIBindingListUC.htm" />
+    <Content Include="DataManipulation\Importing\NImportingFromCSVUC.htm" />
+    <Content Include="DataManipulation\Importing\NImportingFromXLSUC.htm" />
+    <Content Include="DataManipulation\InfinityDataPoints\NInfinityDataPointsGeneralUC.htm" />
+    <Content Include="DataManipulation\EmptyDataPoints\NBubbleEmptyDataPointsUC.htm" />
+    <Content Include="DataManipulation\EmptyDataPoints\NEmptyDataPointsGeneralUC.htm" />
+    <Content Include="DataManipulation\EmptyDataPoints\NFloatBarEmptyDataPointsUC.htm" />
+    <Content Include="DataManipulation\Exporting\NExportingToDataTableUC.htm" />
+    <Content Include="DataManipulation\Functions\Financial\NDirectionalMovementUC.htm" />
+    <Content Include="DataManipulation\Functions\Financial\NMovingAveragesUC.htm" />
+    <Content Include="DataManipulation\Functions\Financial\NPriceIndicatorsUC.htm" />
+    <Content Include="DataManipulation\Functions\Financial\NRangeIndicatorsUC.htm" />
+    <Content Include="DataManipulation\Functions\Financial\NTechnicalPriceIndicatorsUC.htm" />
+    <Content Include="DataManipulation\Functions\Financial\NVolumeIndicatorsUC.htm" />
+    <Content Include="DataManipulation\Functions\Statistical\NAverageMedianMinMaxUC.htm" />
+    <Content Include="DataManipulation\Functions\Statistical\NBasicFunctionsUC.htm" />
+    <Content Include="DataManipulation\Functions\Statistical\NCountStdDevRmsUC.htm" />
+    <Content Include="DataManipulation\Functions\Statistical\NCovarianceCorrelationUC.htm" />
+    <Content Include="DataManipulation\Functions\Statistical\NPowerCumulativeExpAverageUC.htm" />
+    <Content Include="DataManipulation\Functions\Statistical\NSumElementsUC.htm" />
+    <Content Include="DataManipulation\General\NEvaluatingDataUC.htm" />
+    <Content Include="DataManipulation\General\NFilteringDataUC.htm" />
+    <Content Include="DataManipulation\General\NFindingDataUC.htm" />
+    <Content Include="DataManipulation\General\NSortingDataUC.htm" />
+    <Content Include="DataManipulation\Importing\NImportingFromDataReaderUC.htm" />
+    <Content Include="DataManipulation\Importing\NImportingFromDataTableAndDataViewUC.htm" />
+    <Content Include="GaugeGallery\Clocks\NAnalogClockUC.htm" />
+    <Content Include="GaugeGallery\Clocks\NDigitalClockUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Effects\NGaugeBackgroundAdornerUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Effects\NGaugeGelAndGlassEffectsUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Effects\NGaugeBordersUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Indicators\NStateIndicatorsUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Indicators\NRadialGaugeKnobsUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Indicators\NIndicatorValueDampeningUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Indicators\NLinearGaugeIndicatorsUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Indicators\NRadialGaugeIndicatorsUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Interactivity\NDraggingIndicatorsUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Interactivity\NGaugeHitTestingUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Interactivity\NGaugeTooltipsUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Scales\NGaugeCustomRangeLabelsUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Scales\NGaugeCustomLabelsUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Scales\NGaugeAxisRulerSizeUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Scales\NGaugeAxisSectionsUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Scales\NGaugeScaleAppearanceUC.htm" />
+    <Content Include="GaugeGallery\Gauges\Scales\NGaugeScaleLabelsOrientationUC.htm" />
+    <Content Include="GaugeGallery\NumericDisplay\NNumericDisplayUC.htm" />
+    <Content Include="ImageExport\NAnimationThemesUC.htm" />
+    <Content Include="ImageExport\NRasterImageExportUC.htm" />
+    <Content Include="ImageExport\NVectorImageExportUC.htm" />
+    <Content Include="Interactivity\MouseEvents\NInteractivePieChartUC.htm" />
+    <Content Include="Interactivity\MouseEvents\NTrackingMouseEventsUC.htm" />
+    <Content Include="Interactivity\Tools\NCustomDragToolUC.htm" />
+    <Content Include="Interactivity\Tools\NCustomToolUC.htm" />
+    <Content Include="Interactivity\Tools\NAxisScrollToolUC.htm" />
+    <Content Include="Interactivity\Tools\NDataCursorToolUC.htm" />
+    <Content Include="Interactivity\Tools\NDataPanToolUC.htm" />
+    <Content Include="Interactivity\Tools\NDataPointDragToolUC.htm" />
+    <Content Include="Interactivity\Tools\NDataZoomToolUC.htm" />
+    <Content Include="Interactivity\Tools\NDragToolsUC.htm" />
+    <Content Include="Interactivity\Tools\NTooltipAndCursorToolsUC.htm" />
+    <Content Include="Layout\NBoundsModeFitUC.htm" />
+    <Content Include="Layout\NBoundsModeStretchUC.htm" />
+    <Content Include="Layout\NStackedChartsUC.htm" />
+    <Content Include="Panels\Annotations\NAnchorPanelsUC.htm" />
+    <Content Include="Panels\Annotations\NAnnotationsGeneralUC.htm" />
+    <Content Include="Panels\Annotations\NPieDataPointAnchorUC.htm" />
+    <Content Include="Panels\BackgroundDecorator\NBackgroundDecoratorUC.htm" />
+    <Content Include="Panels\Chart\Aspect\NChartAspect3DUC.htm" />
+    <Content Include="Panels\Chart\Aspect\NChartAspect2DUC.htm" />
+    <Content Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsRadarUC.htm" />
+    <Content Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsAreaUC.htm" />
+    <Content Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsBarUC.htm" />
+    <Content Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsClusterStackBarUC.htm" />
+    <Content Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsLineUC.htm" />
+    <Content Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsPolarUC.htm" />
+    <Content Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsStackLineUC.htm" />
+    <Content Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsStepLineUC.htm" />
+    <Content Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsXYPointUC.htm" />
+    <Content Include="Panels\Chart\AutomaticLabelLayout\NAutoLabelsXYZPointUC.htm" />
+    <Content Include="Panels\Chart\SeriesAttributes\NSeriesAppearanceAttributesUC.htm" />
+    <Content Include="Panels\Chart\SeriesAttributes\NSeriesDataLabelAttributeUC.htm" />
+    <Content Include="Panels\Chart\SeriesAttributes\NSeriesLegendAttributeUC.htm" />
+    <Content Include="Panels\Chart\SeriesAttributes\NSeriesMarkerAttributeUC.htm" />
+    <Content Include="Panels\Chart\Walls\NAutoWallsAndAxesVisibilityUC.htm" />
+    <Content Include="Panels\Chart\Walls\NWallsGeneralUC.htm" />
+    <Content Include="Panels\Guidelines\NTwinGuidelineUC.htm" />
+    <Content Include="Panels\Guidelines\NSideGuidelineUC.htm" />
+    <Content Include="Panels\Labels\NLabelImageEmbeddingUC.htm" />
+    <Content Include="Panels\Labels\NLabelFitModesUC.htm" />
+    <Content Include="Panels\Labels\NLabelGeneralUC.htm" />
+    <Content Include="Panels\Labels\NXMLFormattedTextUC.htm" />
+    <Content Include="Panels\Legend\NLegendCustomItemsUC.htm" />
+    <Content Include="Panels\Legend\NLegendWrappingUC.htm" />
+    <Content Include="Panels\Legend\NLegendDockingUC.htm" />
+    <Content Include="Panels\Legend\NLegendPositionUC.htm" />
+    <Content Include="Panels\Legend\NLegendGeneralUC.htm" />
+    <Content Include="Panels\Legend\NLegendInterlacedUC.htm" />
+    <Content Include="Panels\Legend\NLegendSeriesAssignmentUC.htm" />
+    <Content Include="Panels\Watermarks\NWatermarkGeneralUC.htm" />
+    <Content Include="Printing\NCustomPrintingUC.htm" />
+    <Content Include="Printing\NMultiPagePrintingUC.htm" />
+    <Content Include="Printing\NPageSettingsUC.htm" />
+    <Content Include="Printing\NPrintedChartAppearanceUC.htm" />
+    <Content Include="Printing\NPrintingUC.htm" />
+    <EmbeddedResource Include="Resources\Austria.png" />
+    <EmbeddedResource Include="Resources\Finland.png" />
+    <EmbeddedResource Include="Resources\France.png" />
+    <EmbeddedResource Include="Resources\Germany.png" />
+    <EmbeddedResource Include="Resources\Greece.png" />
+    <EmbeddedResource Include="Resources\Italy.png" />
+    <EmbeddedResource Include="Resources\Poland.png" />
+    <EmbeddedResource Include="Resources\Spain.png" />
+    <EmbeddedResource Include="Resources\Sweden.png" />
+    <EmbeddedResource Include="Resources\UK.png" />
+    <EmbeddedResource Include="Resources\CustomCommandbarImageList.png" />
+    <EmbeddedResource Include="Resources\HeightMap0500.png" />
+    <EmbeddedResource Include="Resources\HeightMap1024.png" />
+    <EmbeddedResource Include="Resources\TreeMapData.xml" />
+    <EmbeddedResource Include="Resources\USMap.png" />
+    <EmbeddedResource Include="Resources\TreeMapDataSmall.xml" />
+    <Content Include="Serialization\NSerializingChartObjectsUC.htm" />
+    <Content Include="Serialization\NSerializingTheChartStateUC.htm" />
+    <Content Include="Styles\BackgroundFrameStyles\NImageFrameStyleUC.htm" />
+    <Content Include="Styles\BackgroundFrameStyles\NStandardFrameStyleUC.htm" />
+    <Content Include="Styles\StyleSheets\NPredefinedStyleSheetsUC.htm" />
+    <Content Include="Styles\StyleSheets\NStyleSheetConfiguratorsUC.htm" />
+    <Content Include="Styles\FillStyles\NAdvancedGradientUC.htm" />
+    <Content Include="Styles\FillStyles\NGradientUC.htm" />
+    <Content Include="Styles\FillStyles\NImageUC.htm" />
+    <Content Include="Styles\FillStyles\NPatternUC.htm" />
+    <Content Include="Styles\FillStyles\NSolidColorUC.htm" />
+    <Content Include="UserInterface\NCustomChartCommandBarsUC.htm" />
+    <Content Include="UserInterface\NChartCommandBarsUC.htm" />
+    <Content Include="UserInterface\NChartGridUC.htm" />
+    <Content Include="UserInterface\NVisualEditorsUC.htm" />
+    <Content Include="VisualEffects\General\NAlphaBlendingUC.htm" />
+    <Content Include="VisualEffects\General\NAntialiasingGeneralUC.htm" />
+    <Content Include="VisualEffects\General\NJitteringGeneralUC.htm" />
+    <Content Include="VisualEffects\General\NLightsUC.htm" />
+    <Content Include="VisualEffects\ImageFilters\NBevelAndEmbossFilterUC.htm" />
+    <Content Include="VisualEffects\ImageFilters\NGlowFilterUC.htm" />
+    <Content Include="VisualEffects\ImageFilters\NLightingFilterUC.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

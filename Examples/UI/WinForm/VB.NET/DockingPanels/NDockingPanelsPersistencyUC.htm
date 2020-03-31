@@ -1,0 +1,6 @@
+<description>
+Since 2006 Q1 release Nevron Docking Panels provide complete layout persistency including panels, documents and styles. You may choose among 5 different persistency formats - Binary, XML, SOAP, CustomBinary and CustomXML. The last two formats are entirely custom and allow for painless migration from one version to another. The persistency features are exposed by a NDockingFrameworkState object which when attached to a valid NDockManager instance may completely serialize/deserialize its state.
+</description>
+<remarks>
+You should give unique string keys to each panel and NControlHost instances for the persistency to work properly. Only the layout is persisted and loading state from one manager to another is not allowed. When deserializing documents you should hook to the state's ResolveDocumentClient event and set the client property of the associated document (because the Windows Forms Control may not be persisted).
+</remarks>

@@ -1,0 +1,21 @@
+﻿<Controls:NExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NClusterBarUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+		<Label Content="Bar Style:" Height="28" Name="label1" />
+		<ComboBox Height="23" Name="BarStyleComboBox" SelectionChanged="BarStyleComboBox_SelectionChanged" />
+		<Label Content="Gap Percent:" Height="28" Name="label2" />
+		<ScrollBar Height="13" Name="GapPercentScrollBar" Orientation="Horizontal" ValueChanged="GapPercentScrollBar_ValueChanged" />
+		<Label Content="Width Percent:" Height="28" Name="label3" />
+		<ScrollBar Height="13" Name="WidthPercentScrollBar" Orientation="Horizontal" ValueChanged="WidthPercentScrollBar_ValueChanged" />
+		<Button Content="Positive Data" Margin ="4" Height="23" Name="PositiveDataButton" Click="PositiveDataButton_Click" />
+		<Button Content="Positive and Negative Data" Margin ="4" Height="23" Name="PositiveAndNegativeDataButton" Click="PositiveAndNegativeDataButton_Click" />
+		<CheckBox Content="Scale the second cluster on the secondary Y axis" Margin ="4" Height="16" Name="ScaleSecondaryClusterCheckBox" Click="ShowDataLabelsCheckBox_Checked" />
+		<CheckBox Content="Enable 3D" Margin ="4" Height="16" Name="Enable3DCheckBox" Click="Enable3DCheckBox_Checked" />
+	</StackPanel>
+</Controls:NExampleBaseUC>

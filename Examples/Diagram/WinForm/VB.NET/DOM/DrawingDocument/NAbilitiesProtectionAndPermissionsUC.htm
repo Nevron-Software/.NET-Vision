@@ -1,0 +1,38 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+		This example demonstrates the diagram elements abilities, protection and 
+		permissions.
+	</p>
+	<p>
+		In Nevron Diagram for .NET each diagram element exposes a set of abilities 
+		(i.e. informs the framework what operations the end user can perform with it). 
+		The element must have the respective ability in order for some operation to be 
+		performed on it. For example: you cannot select an element, which does not have 
+		a Select ability.
+	</p>The element protection defines the 
+subset of the element abilities, which are explicitly disabled. For example: 
+even though a shape has the ability to be selected, the end user will still not 
+be able to select a shape if it is protected from selection. 
+<P></P>
+	<p>
+		The element permissions defines a subset of the element abilities, which are 
+		allowed to the end user. The element permissions are by default computed by 
+		getting the element abilities and removing from them the element protection 
+		(e.g. Abilities - Protection).
+	</p>
+	<p>
+		Elements however can decide to extend the basic permissions calculation and 
+		drop additional permissions as they see fit. For example: a shape will 
+		automatically drop its delete permission if it is the last shape of a group, 
+		which cannot be empty (e.g, the group CanBeEmpty property is set to false). In 
+		this way the user will not be able to delete the shape, although&nbsp;the 
+		shape&nbsp;has the ability to be deleted and is not protected from delete.
+	</p>
+	<p>
+		From a programmers point of view, it is enough to check whether an element has 
+		the respective permission in order to perform some operation with it. If the 
+		developer wants to explicitly disable some element ability all that is needed 
+		is to raise the respective element protection flag.
+	</p>
+</description>

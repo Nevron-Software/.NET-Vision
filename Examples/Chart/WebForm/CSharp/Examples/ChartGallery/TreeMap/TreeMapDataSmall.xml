@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Industries Date="8-May-2004" Source="Yahoo Finance" Size="Market Cap (Billions)" Change="1 Day Price Change (%)">
+	<Industry Id="I1" Name="Services" Size="4393.54" Change="-1.864">
+		<Sector Id="S1" Name="Communications Services" Size="1640.2" Change="-1.8" />
+		<Sector Id="S2" Name="Broadcasting &amp; Cable TV" Size="497" Change="-1.22" />
+		<Sector Id="S3" Name="Retail (Department &amp; Discount)" Size="357.4" Change="-1.35" />
+		<Sector Id="S4" Name="Real Estate Operations" Size="242.3" Change="-3.4" />
+		<Sector Id="S5" Name="Printing &amp; Publishing" Size="216.1" Change="-0.82" />
+	</Industry>
+	<Industry Id="I2" Name="Financial" Size="4167.36" Change="-1.949">
+		<Sector Id="S1" Name="Money Center Banks" Size="1252.6" Change="-2.19" />
+		<Sector Id="S2" Name="Regional Banks" Size="886.9" Change="-2.24" />
+		<Sector Id="S3" Name="Insurance (Prop. &amp; Casualty)" Size="657.9" Change="-1.06" />
+		<Sector Id="S4" Name="Insurance (Life)" Size="368" Change="-2.54" />
+		<Sector Id="S5" Name="Investment Services" Size="312.8" Change="-2.09" />
+		<Sector Id="S6" Name="Consumer Financial Services" Size="232.3" Change="-2.12" />
+	</Industry>
+	<Industry Id="I3" Name="Technology" Size="2845.3" Change="-0.25">
+		<Sector Id="S1" Name="Software &amp; Programming" Size="656.4" Change="-1.16"/>
+		<Sector Id="S2" Name="Semiconductors" Size="619.9" Change="1.22" />
+		<Sector Id="S3" Name="Communications Equipment" Size="535.9" Change="-0.1" />
+		<Sector Id="S4" Name="Computer Hardware" Size="277.1" Change="0.06" />
+		<Sector Id="S5" Name="Computer Services" Size="250.4" Change="-0.89" />
+	</Industry>
+	<Industry Id="I4" Name="Healthcare" Size="2377.89" Change="-0.886">
+		<Sector Id="S1" Name="Major Drugs" Size="1346" Change="-0.45" />
+		<Sector Id="S2" Name="Biotechnology &amp; Drugs" Size="593.3" Change="-1.77" />
+		<Sector Id="S3" Name="Medical Equipment &amp; Supplies" Size="325.4" Change="-0.67" />
+		<Sector Id="S4" Name="Healthcare Facilities" Size="113.2" Change="-1.14" />
+	</Industry>
+	<Industry Id="I5" Name="Energy" Size="1778.73" Change="-2.063">
+		<Sector Id="S1" Name="Oil &amp; Gas - Integrated" Size="1296.2" Change="-1.54" />
+		<Sector Id="S2" Name="Oil &amp; Gas Operations" Size="295.6" Change="-2.27" />
+		<Sector Id="S3" Name="Oil Well Services &amp; Equipment" Size="171.5" Change="-3.05" />
+		<Sector Id="S4" Name="Coal" Size="15.3" Change="-4.54" />
+	</Industry>
+</Industries>

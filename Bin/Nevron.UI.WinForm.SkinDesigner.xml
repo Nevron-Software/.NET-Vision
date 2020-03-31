@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nevron.UI.WinForm.SkinDesigner</name>
+    </assembly>
+    <members>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NBaseDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NLoadAssemblyDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NSkinPropertiesDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Nevron.UI.WinForm.SkinDesigner.NSkinDesigner">
+            <summary>
+            Provides visual interface for editing and modifying an NSkin instance.
+            </summary>
+        </member>
+        <member name="P:Nevron.UI.WinForm.SkinDesigner.NSkinDesigner.EditedSkin">
+            <summary>
+            Gets or sets the skin to be edited.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NSkinDesigner.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NBorderPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NButtonPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NComboBoxPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NCommandBarsPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NContainersPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NDockingPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NExpanderPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NFormPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NGalleryPanelPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NListViewPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NMapNavigatorPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NNavigationPanePreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NPopupMenuPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NPopupNotifyPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NPopupPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NProgressPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NRangeSliderPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NScrollbarPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NSkinControlPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NSkinPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NSpinPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NStatusBarPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NTabPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NTooltipPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NTrackBarPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Nevron.UI.WinForm.SkinDesigner.NTreeListPreview.l1I1l1ll">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NTreeListPreview.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NTreeListPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.NTreeViewPreview.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Nevron.UI.WinForm.SkinDesigner.Program">
+            <summary>
+            Summary description for Program.
+            </summary>
+        </member>
+        <member name="M:Nevron.UI.WinForm.SkinDesigner.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="P:Nevron.UI.WinForm.SkinDesigner.NSkinExplorer.Nodes">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

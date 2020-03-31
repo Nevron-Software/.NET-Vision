@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C2B7952-5B02-446D-AADB-86E50759D2EE}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nevron.Examples.Chart.Mvc</RootNamespace>
+    <AssemblyName>Nevron.Examples.Chart.Mvc</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>
+    </IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Nevron.Chart">
+      <Name>Nevron.Chart</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Chart.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.Chart.ThinWeb">
+      <Name>Nevron.Chart.ThinWeb</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Chart.ThinWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.Examples.Framework.WebForm">
+      <Name>Nevron.Examples.Framework.WebForm</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Examples.Framework.WebForm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.GraphicsGL">
+      <Name>Nevron.GraphicsGL</Name>
+      <HintPath>..\..\..\..\bin\Nevron.GraphicsGL.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.Presentation">
+      <Name>Nevron.Presentation</Name>
+      <HintPath>..\..\..\..\bin\Nevron.Presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.System">
+      <Name>Nevron.System</Name>
+      <HintPath>..\..\..\..\bin\Nevron.System.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nevron.ThinWeb">
+      <Name>Nevron.ThinWeb</Name>
+      <HintPath>..\..\..\..\bin\Nevron.ThinWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\ExamplesController.cs" />
+    <Compile Include="Controllers\NAutoUpdateExampleController.cs" />
+    <Compile Include="Controllers\NChartController.cs" />
+    <Compile Include="Controllers\NChartExampleController.cs" />
+    <Compile Include="Controllers\NClientSideEventsToolExampleController.cs" />
+    <Compile Include="Controllers\NDataPanToolExampleController.cs" />
+    <Compile Include="Controllers\NDataZoomToolExampleController.cs" />
+    <Compile Include="Controllers\NGeneralExampleController.cs" />
+    <Compile Include="Controllers\NImageMapToolsExampleController.cs" />
+    <Compile Include="Controllers\NIndicatorDragToolExampleController.cs" />
+    <Compile Include="Controllers\NServerSideEventsToolExampleController.cs" />
+    <Compile Include="Controllers\NTabController.cs" />
+    <Compile Include="Controllers\NThinControlResult.cs" />
+    <Compile Include="Controllers\NToolbarConfigurationExampleController.cs" />
+    <Compile Include="Controllers\NTrackballToolExampleController.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frames\Footer.aspx.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frames\NNavigationFrame.aspx.cs">
+      <DependentUpon>NNavigationFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frames\TopBanner.aspx.cs">
+      <DependentUpon>TopBanner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Content Include="Default.aspx" />
+    <Content Include="Frames\Footer.aspx" />
+    <Content Include="Frames\NNavigationFrame.aspx" />
+    <Content Include="Frames\TopBanner.aspx" />
+    <Content Include="Frames\white.html" />
+    <Content Include="Global.asax" />
+    <Content Include="HeaderResources.xml" />
+    <Content Include="Images\Bullet.gif" />
+    <Content Include="Images\WelcomePage\orangeBar.png" />
+    <Content Include="Images\WelcomePage\orangeBullet.png" />
+    <Content Include="Images\WelcomePage\splashImage.png" />
+    <Content Include="Images\WelcomePage\th01.png" />
+    <Content Include="Images\WelcomePage\th02.png" />
+    <Content Include="Images\WelcomePage\th03.png" />
+    <Content Include="Images\WelcomePage\th04.png" />
+    <Content Include="Images\WelcomePage\th05.png" />
+    <Content Include="Images\white1px.gif" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\Scripts.js" />
+    <Content Include="Themes\OrangeGrey\Images\Footer\smallHorizontalDarkGreyLine.gif" />
+    <Content Include="Themes\OrangeGrey\Images\Footer\space.GIF" />
+    <Content Include="Themes\OrangeGrey\Images\NavigationPane\ButtonBackgroundDefault.PNG" />
+    <Content Include="Themes\OrangeGrey\Images\NavigationPane\ButtonBackgroundHovered.PNG" />
+    <Content Include="Themes\OrangeGrey\Images\NavigationPane\ButtonBackgroundSelected.PNG" />
+    <Content Include="Themes\OrangeGrey\Images\NavigationPane\CaptionBackground.PNG" />
+    <Content Include="Themes\OrangeGrey\Images\TopBanner.png" />
+    <Content Include="Themes\OrangeGrey\Images\TreeView\bookClosed.png" />
+    <Content Include="Themes\OrangeGrey\Images\TreeView\bookOpened.png" />
+    <Content Include="Themes\OrangeGrey\Images\TreeView\ExampleNodeBlank.png" />
+    <Content Include="Themes\OrangeGrey\Images\TreeView\ExampleNodeSelected.png" />
+    <Content Include="Themes\OrangeGrey\Styles.css" />
+    <Content Include="TreeNodes.xml" />
+    <Content Include="Views\Examples\Home.aspx" />
+    <Content Include="Views\Examples\NAutoUpdate.aspx" />
+    <Content Include="Views\Examples\NThinWebGeneral.aspx" />
+    <Content Include="Views\Examples\NToolbarConfiguration.aspx" />
+    <Content Include="Views\Examples\Tools\NClientSideEventsTool.aspx" />
+    <Content Include="Views\Examples\Tools\NDataPanTool.aspx" />
+    <Content Include="Views\Examples\Tools\NDataZoomTool.aspx" />
+    <Content Include="Views\Examples\Tools\NImageMapTools.aspx" />
+    <Content Include="Views\Examples\Tools\NIndicatorDragTool.aspx" />
+    <Content Include="Views\Examples\Tools\NServerSideEventsTool.aspx" />
+    <Content Include="Views\Examples\Tools\NTrackballTool.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="Themes\LunaBlue\Images\NavigationPane\" />
+    <Folder Include="Themes\LunaBlue\Images\TabControl\" />
+    <Folder Include="Themes\OrangeGrey\Images\TabControl2\" />
+    <Folder Include="Themes\OrangeGrey\Images\TabControl\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controllers\vssver.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Frames\vssver.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\ExamplePage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Index.url" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:7638/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root Name="ASP.NET Examples Index">
+  <contentNode Name="Welcome to Nevron Web Examples" NavigateUrl="HomeUC.ascx" />
+  <bookNode Name="ThinWeb" expanded="true">
+		<exampleNode Name="General" NavigateUrl="Examples/ThinWeb/NThinWebGeneralUC.ascx" />
+		<exampleNode Name="Panel Selector Tool" NavigateUrl="Examples/ThinWeb/NPanelSelectorToolUC.ascx" />
+		<exampleNode Name="Panel Drag Tool" NavigateUrl="Examples/ThinWeb/NPanelDragToolUC.ascx" />
+		<exampleNode Name="Data Zoom Tool" NavigateUrl="Examples/ThinWeb/NDataZoomToolUC.ascx" />
+		<exampleNode Name="Data Pan Tool" NavigateUrl="Examples/ThinWeb/NDataPanToolUC.ascx" />
+		<exampleNode Name="Indicator Drag Tool" NavigateUrl="Examples/ThinWeb/NIndicatorDragToolUC.ascx" />
+		<exampleNode Name="Trackball Tool" NavigateUrl="Examples/ThinWeb/NTrackballToolUC.ascx" />
+		<exampleNode Name="Image Map Tools" NavigateUrl="Examples/ThinWeb/NImageMapToolsUC.ascx" />
+		<exampleNode Name="Server Side Events" NavigateUrl="Examples/ThinWeb/NServerSideEventsToolUC.ascx" />
+		<exampleNode Name="Client Side Events" NavigateUrl="Examples/ThinWeb/NClientSideEventsToolUC.ascx" />
+		<exampleNode Name="Postback Tool" NavigateUrl="Examples/ThinWeb/NPostbackToolUC.ascx" />
+		<exampleNode Name="Auto Update" NavigateUrl="Examples/ThinWeb/NAutoUpdateUC.ascx" />
+		<exampleNode Name="Toolbar" NavigateUrl="Examples/ThinWeb/NToolbarConfigurationUC.ascx" />
+		<exampleNode Name="CSS Customization" NavigateUrl="Examples/ThinWeb/NCssCustomizationUC.ascx" />
+		<exampleNode Name="Custom Commands" NavigateUrl="Examples/ThinWeb/NCustomCommandsUC.ascx" />
+		<exampleNode Name="Custom Requests" NavigateUrl="Examples/ThinWeb/NCustomRequestsUC.ascx" />
+	</bookNode>
+	<bookNode Name="Web Control">
+		<bookNode Name="Getting Started">
+			<exampleNode Name="Basic Chart" NavigateUrl="Examples/WebControl/GettingStarted/NBasicChartUC.ascx" />
+			<exampleNode Name="Image Response" NavigateUrl="Examples/WebControl/GettingStarted/NImageResponseUC.ascx" />
+			<exampleNode Name="Image Map" NavigateUrl="Examples/WebControl/GettingStarted/NImageMapResponseUC.ascx" />
+			<exampleNode Name="Image Map Postback" NavigateUrl="Examples/WebControl/GettingStarted/NImageMapPostbackResponseUC.ascx" />
+			<exampleNode Name="Image Map Postback 2" NavigateUrl="Examples/WebControl/GettingStarted/NImageMapPostbackAdvancedUC.ascx" />
+			<exampleNode Name="Persistent State" NavigateUrl="Examples/WebControl/GettingStarted/NPersistentServerControlUC.ascx" />
+			<exampleNode Name="No Code Behind" NavigateUrl="Examples/WebControl/GettingStarted/NNoCodeBehindUC.ascx" />
+			<exampleNode Name="Binary Streaming Image" NavigateUrl="Examples/WebControl/GettingStarted/NBinaryStreamingImageUC.ascx" />
+			<exampleNode Name="Image Map and Binary Stream" NavigateUrl="Examples/WebControl/GettingStarted/NBinaryStreamingImageWithImageMapUC.ascx" />
+		</bookNode>
+		<bookNode Name="AJAX">
+			<bookNode Name="Nevron AJAX Interactive Demos">
+				<exampleNode Name="Drill Down Demo" NavigateUrl="Examples/WebControl/AJAX/InteractiveDemos/NDrillDownDemoUC.ascx" />
+				<exampleNode Name="Data Zooming Demo" NavigateUrl="Examples/WebControl/AJAX/InteractiveDemos/NDataZoomingDemoUC.ascx" />
+			</bookNode>
+			<bookNode Name="Nevron AJAX Basic Features">
+				<exampleNode Name="Browser Redirect" NavigateUrl="Examples/WebControl/AJAX/BasicFeatures/NBrowserRedirectUC.ascx" />
+				<exampleNode Name="Dynamic Cursor" NavigateUrl="Examples/WebControl/AJAX/BasicFeatures/NDynamicCursorUC.ascx" />
+				<exampleNode Name="Tooltips" NavigateUrl="Examples/WebControl/AJAX/BasicFeatures/NTooltipsUC.ascx" />
+			</bookNode>
+			<bookNode Name="Nevron AJAX Engine">
+				<exampleNode Name="Instant Auto-Refresh" NavigateUrl="Examples/WebControl/AJAX/Engine/NInstantRefreshUC.ascx" />
+				<exampleNode Name="Instant Mouse Events" NavigateUrl="Examples/WebControl/AJAX/Engine/NInstantMouseEventsUC.ascx" />
+				<exampleNode Name="Refresh and Auto-Refresh" NavigateUrl="Examples/WebControl/AJAX/Engine/NRefreshUC.ascx" />
+				<exampleNode Name="Mouse Events" NavigateUrl="Examples/WebControl/AJAX/Engine/NMouseEventsUC.ascx" />
+				<exampleNode Name="Dynamic Image Map" NavigateUrl="Examples/WebControl/AJAX/Engine/NDynamicImageMapUC.ascx" />
+				<exampleNode Name="Client Side Event Queueing" NavigateUrl="Examples/WebControl/AJAX/Engine/NEventQueueingUC.ascx" />
+				<exampleNode Name="Custom Commands and Result Data" NavigateUrl="Examples/WebControl/AJAX/Engine/NCustomCommandsUC.ascx" />
+				<exampleNode Name="Custom Tools" NavigateUrl="Examples/WebControl/AJAX/Engine/NCustomToolsUC.ascx" />
+				<exampleNode Name="Reliability" NavigateUrl="Examples/WebControl/AJAX/Engine/NReliabilityUC.ascx" />
+				<exampleNode Name="Diagnostics" NavigateUrl="Examples/WebControl/AJAX/Engine/NDiagnosticsUC.ascx" />
+			</bookNode>
+		</bookNode>
+		<bookNode Name="Interactive Charting">
+			<exampleNode Name="Image Map" NavigateUrl="Examples/WebControl/GettingStarted/NImageMapResponseUC.ascx" />
+			<exampleNode Name="Image Map Postback" NavigateUrl="Examples/WebControl/GettingStarted/NImageMapPostbackResponseUC.ascx" />
+			<exampleNode Name="Image Map Postback 2" NavigateUrl="Examples/WebControl/GettingStarted/NImageMapPostbackAdvancedUC.ascx" />
+			<exampleNode Name="Capturing Mouse Events" NavigateUrl="Examples/WebControl/InteractiveCharting/NCapturingMouseEventsUC.ascx" />
+			<exampleNode Name="Client Side Script and Postback" NavigateUrl="Examples/WebControl/InteractiveCharting/NCustomClientSideScriptAndPostbackUC.ascx" />
+			<exampleNode Name="SVG and Browser Redirection" NavigateUrl="Examples/SVG/NSVGAndBrowserRedirectionUC.ascx" />
+		</bookNode>
+		<bookNode Name="Printing">
+			<exampleNode Name="Printing in Web Forms" NavigateUrl="Examples/WebControl/Printing/NPrintingUC.ascx" />
+		</bookNode>
+	</bookNode>
+  <bookNode Name="Axes">
+		<bookNode Name="General">
+			<exampleNode Name="Axis Titles" NavigateUrl="Examples/Axes/General/NAxisTitlesUC.ascx" />
+			<exampleNode Name="Axis Labels" NavigateUrl="Examples/Axes/General/NAxisLabelsUC.ascx" />
+      <exampleNode Name="Axis Labels Orientation" NavigateUrl="Examples/Axes/General/NAxisLabelsOrientationUC.ascx" />
+      <exampleNode Name="Axis Ticks" NavigateUrl="Examples/Axes/General/NAxisTicksUC.ascx" />
+			<exampleNode Name="Axis Gridlines" NavigateUrl="Examples/Axes/General/NAxisGridlinesUC.ascx" />
+			<exampleNode Name="Interlace Stripes" NavigateUrl="Examples/Axes/General/NAxisInterlaceStripesUC.ascx" />
+			<exampleNode Name="Strip Lines" NavigateUrl="Examples/Axes/General/NAxisStripLinesUC.ascx" />
+			<exampleNode Name="Sections" NavigateUrl="Examples/Axes/General/NAxisSectionsUC.ascx" />
+			<exampleNode Name="Value Crossing" NavigateUrl="Examples/Axes/General/NAxisValueCrossingUC.ascx" />
+			<exampleNode Name="Model Crossing" NavigateUrl="Examples/Axes/General/NAxisModelCrossingUC.ascx" />
+			<exampleNode Name="Docking" NavigateUrl="Examples/Axes/General/NAxisDockingUC.ascx" />
+			<exampleNode Name="Ruler Size" NavigateUrl="Examples/Axes/General/NRulerSizeUC.ascx" />
+			<exampleNode Name="Ruler Caps" NavigateUrl="Examples/Axes/General/NRulerCapsUC.ascx" />
+			<exampleNode Name="Custom Range Labels" NavigateUrl="Examples/Axes/General/NCustomRangeLabelsUC.ascx"/>
+			<exampleNode Name="Axis Min Max" NavigateUrl="Examples/Axes/General/NAxisMinMaxUC.ascx" />
+      <exampleNode Name="View Range" NavigateUrl="Examples/Axes/General/NViewRangeUC.ascx" />
+		</bookNode>
+		<bookNode Name="Attributes">
+			<exampleNode Name="Axis Stripes" NavigateUrl="Examples/Axes/Attributes/NAxisStripesUC.ascx" />
+			<exampleNode Name="Axis Constant Lines" NavigateUrl="Examples/Axes/Attributes/NConstLinesUC.ascx" />
+      <exampleNode Name="Axis Constant Line Labels" NavigateUrl="Examples/Axes/Attributes/NConstLineLabelsUC.ascx" />
+      <exampleNode Name="Axis Stripe Labels" NavigateUrl="Examples/Axes/Attributes/NAxisStripeLabelsUC.ascx" />
+		</bookNode>
+		<bookNode Name="Scaling">
+			<exampleNode Name="Ordinal Scale" NavigateUrl="Examples/Axes/Scaling/NOrdinalScaleUC.ascx" />
+			<exampleNode Name="Linear Scale" NavigateUrl="Examples/Axes/Scaling/NLinearScaleUC.ascx" />
+			<exampleNode Name="Logarithmic Scale" NavigateUrl="Examples/Axes/Scaling/NLogarithmicScaleUC.ascx" />
+			<exampleNode Name="Date Time Scale" NavigateUrl="Examples/Axes/Scaling/NDateTimeScaleUC.ascx" />
+			<exampleNode Name="Time Span Scale" NavigateUrl="Examples/Axes/Scaling/NTimeSpanScaleUC.ascx"/>
+			<exampleNode Name="Hierarchical Scale" NavigateUrl="Examples/Axes/Scaling/NHierarchicalScaleUC.ascx" />
+			<exampleNode Name="Value Timeline Scale" NavigateUrl="Examples/Axes/Scaling/NValueTimelineScaleUC.ascx" />
+			<exampleNode Name="Range Timeline Scale" NavigateUrl="Examples/Axes/Scaling/NRangeTimelineScaleUC.ascx" />
+      <exampleNode Name="Table Scale" NavigateUrl="Examples/Axes/Scaling/NTableScaleUC.ascx"/>
+			<exampleNode Name="Custom Scale Decorations" NavigateUrl="Examples/Axes/Scaling/NCustomScaleDecorationsUC.ascx" />
+      <exampleNode Name="Custom Scale Decorations 2" NavigateUrl="Examples/Axes\Scaling\NCustomScaleDecorations2UC.ascx" />
+			<exampleNode Name="Dynamic Axis Range" NavigateUrl="Examples/Axes/Scaling/NDynamicAxisRangeUC.ascx" />
+		</bookNode>
+    <bookNode Name="Scale Breaks">
+      <exampleNode Name="Automatic Scale Breaks" NavigateUrl="Examples/Axes/ScaleBreaks/NAutomaticScaleBreaksUC.ascx" />
+      <exampleNode Name="Custom Scale Breaks" NavigateUrl="Examples/Axes/ScaleBreaks/NCustomScaleBreaks.ascx" />
+      <exampleNode Name="Scale Break Appearance" NavigateUrl="Examples/Axes/ScaleBreaks/NScaleBreakAppearanceUC.ascx" />
+    </bookNode>
+  </bookNode>
+	<bookNode Name="Chart Gallery">
+		<bookNode Name="Area">
+			<exampleNode Name="Standard 2D Area" NavigateUrl="Examples/ChartGallery/Area/NStandardArea2DUC.ascx" />
+			<exampleNode Name="Standard 3D Area" NavigateUrl="Examples/ChartGallery/Area/NStandardAreaUC.ascx" />
+			<exampleNode Name="Stacked Area" NavigateUrl="Examples/ChartGallery/Area/NStackedAreaUC.ascx" />
+			<exampleNode Name="Multi Series Area" NavigateUrl="Examples/ChartGallery/Area/NMultiSeriesAreaUC.ascx" />
+			<exampleNode Name="XY Area" NavigateUrl="Examples/ChartGallery/Area/NScatterAreaUC.ascx" />
+			<exampleNode Name="Sampled 2D Area" NavigateUrl="Examples/ChartGallery/Area/NSampledArea2DUC.ascx" />
+      <exampleNode Name="Area Palette" NavigateUrl="Examples/ChartGallery/Area/NAreaPaletteUC.ascx"/>
+		</bookNode>
+		<bookNode Name="Bar">
+      <exampleNode Name="Standard 2D Bar" NavigateUrl="Examples/ChartGallery/Bar/NStandardBar2DUC.ascx" />
+      <exampleNode Name="Standard 3D Bar" NavigateUrl="Examples/ChartGallery/Bar/NStandardBarUC.ascx" />
+			<exampleNode Name="Cluster Bar" NavigateUrl="Examples/ChartGallery/Bar/NClusterBarUC.ascx" />
+			<exampleNode Name="Stacked Bar" NavigateUrl="Examples/ChartGallery/Bar/NStackedBarUC.ascx" />
+			<exampleNode Name="Manhattan Bar" NavigateUrl="Examples/ChartGallery/Bar/NManhattanBarUC.ascx" />
+			<exampleNode Name="Horizontal Bar" NavigateUrl="Examples/ChartGallery/Bar/NHorizontalBarUC.ascx" />
+			<exampleNode Name="Date Time Bars" NavigateUrl="Examples/ChartGallery/Bar/NDateTimeBarUC.ascx" />
+			<exampleNode Name="XYZ Scatter Stack" NavigateUrl="Examples/ChartGallery/Bar/NXYZScatterStackUC.ascx" />
+			<exampleNode Name="XYZ Scatter Cluster" NavigateUrl="Examples/ChartGallery/Bar/NXYZScatterClusterUC.ascx" />
+      <exampleNode Name="Bar Palette" NavigateUrl="Examples/ChartGallery/Bar/NBarPaletteUC.ascx"/>
+			<exampleNode Name="Bar Connector Lines" NavigateUrl="Examples/ChartGallery/Bar/NBarConnectorLinesUC.ascx"/>
+			<exampleNode Name="Error Bar" NavigateUrl="Examples/ChartGallery/Bar/NErrorBarUC.ascx" />
+		</bookNode>
+		<bookNode Name="Box And Whiskers">
+			<exampleNode Name="Standard Box and Whiskers" NavigateUrl="Examples/ChartGallery/BoxAndWhiskers/NBoxAndWhiskers2DUC.ascx" />
+			<exampleNode Name="DateTime Box and Whiskers" NavigateUrl="Examples/ChartGallery/BoxAndWhiskers/NDateTimeBoxAndWhiskers2DUC.ascx" />
+			<exampleNode Name="Point Chart and Box Plot" NavigateUrl="Examples/ChartGallery/BoxAndWhiskers/NPointChartAndBoxPlotUC.ascx" />
+		</bookNode>
+		<bookNode Name="Bubble">
+			<exampleNode Name="Standard Bubble" NavigateUrl="Examples/ChartGallery/Bubble/NStandardBubbleUC.ascx" />
+			<exampleNode Name="XY Scatter Bubble" NavigateUrl="Examples/ChartGallery/Bubble/NXYScatterBubbleUC.ascx" />
+			<exampleNode Name="XYZ Scatter Bubble" NavigateUrl="Examples/ChartGallery/Bubble/NXYZScatterBubbleUC.ascx" />
+			<exampleNode Name="Bubble Palette" NavigateUrl="Examples/ChartGallery/Bubble/NBubblePaletteUC.ascx" />
+		</bookNode>
+		<bookNode Name="Combo Charts">
+			<exampleNode Name="Pareto" NavigateUrl="Examples/ChartGallery/ComboCharts/NParetoChartUC.ascx" />
+			<exampleNode Name="Financial Chart" NavigateUrl="Examples/ChartGallery/ComboCharts/NFinancialChartUC.ascx" />
+		</bookNode>
+		<bookNode Name="Custom">
+			<exampleNode Name="Custom Series" NavigateUrl="Examples/ChartGallery/Custom/NCustomSeriesUC.ascx" />
+		</bookNode>
+		<bookNode Name="Error Bar">
+			<exampleNode Name="Y Error Bar" NavigateUrl="Examples/ChartGallery/ErrorBar/NYErrorBarUC.ascx" />
+			<exampleNode Name="XY Error Bar" NavigateUrl="Examples/ChartGallery/ErrorBar/NXYErrorBarUC.ascx" />
+			<exampleNode Name="XYZ Error Bar" NavigateUrl="Examples/ChartGallery/ErrorBar/NXYZErrorBarUC.ascx" />
+		</bookNode>
+		<bookNode Name="Float Bar">
+			<exampleNode Name="Standard 2D Float Bar" NavigateUrl="Examples/ChartGallery/FloatBar/NStandardFloatBar2DUC.ascx" />
+			<exampleNode Name="Standard 3D Float Bar" NavigateUrl="Examples/ChartGallery/FloatBar/NStandardFloatBarUC.ascx" />
+			<exampleNode Name="Horizontal Float Bar" NavigateUrl="Examples/ChartGallery/FloatBar/NHorizontalFloatBarUC.ascx" />
+			<exampleNode Name="DateTime Float Bar" NavigateUrl="Examples/ChartGallery/FloatBar/NDateTimeFloatBarUC.ascx" />
+			<exampleNode Name="Cluster Float Bar" NavigateUrl="Examples/ChartGallery/FloatBar/NClusterFloatBarUC.ascx" />
+			<exampleNode Name="Stack Float Bar" NavigateUrl="Examples/ChartGallery/FloatBar/NStackFloatBarUC.ascx" />
+			<exampleNode Name="DateTime Stack Float Bar" NavigateUrl="Examples/ChartGallery/FloatBar/NDateTimeStackFloatBarUC.ascx" />
+      <exampleNode Name="Float Bar Palette" NavigateUrl="Examples/ChartGallery/FloatBar/NFloatBarPaletteUC.ascx"/>
+			<exampleNode Name="Float Bar Connector Lines" NavigateUrl="Examples/ChartGallery/FloatBar/NFloatBarConnectorLinesUC.ascx"/>
+			<exampleNode Name="Float Bar Gantt" NavigateUrl="Examples/ChartGallery/FloatBar/NFloatBarGanttUC.ascx"/>
+		</bookNode>
+		<bookNode Name="Funnel">
+			<exampleNode Name="Standard 2D Funnel" NavigateUrl="Examples/ChartGallery/Funnel/NStandardFunnel2DUC.ascx" />
+			<exampleNode Name="Standard 3D Funnel" NavigateUrl="Examples/ChartGallery/Funnel/NStandardFunnel3DUC.ascx" />
+			<exampleNode Name="Advanced 2D Funnel" NavigateUrl="Examples/ChartGallery/Funnel/NAdvancedFunnel2DUC.ascx" />
+			<exampleNode Name="Advanced 3D Funnel" NavigateUrl="Examples/ChartGallery/Funnel/NAdvancedFunnel3DUC.ascx" />
+		</bookNode>
+    <bookNode Name="Graphics Path">
+      <exampleNode Name="Graphics Path" NavigateUrl="Examples/ChartGallery/GraphicsPath/NGraphicsPathUC.ascx"/>
+    </bookNode>
+		<bookNode Name="Grid Surface">
+			<exampleNode Name="General" NavigateUrl="Examples/ChartGallery/GridSurface/NGridSurfaceUC.ascx" />
+			<exampleNode Name="Wireframe" NavigateUrl="Examples/ChartGallery/GridSurface/NGridFrameUC.ascx" />
+			<exampleNode Name="Contour" NavigateUrl="Examples/ChartGallery/GridSurface/NGridContourUC.ascx" />
+			<exampleNode Name="Empty Data Points" NavigateUrl="Examples/ChartGallery/GridSurface/NGridEmptyDataPointsUC.ascx" />
+			<exampleNode Name="Fill Style and Shading" NavigateUrl="Examples/ChartGallery/GridSurface/NGridFillEffectUC.ascx" />
+			<exampleNode Name="Projected Contour" NavigateUrl="Examples/ChartGallery/GridSurface/NProjectedContourUC.ascx" />
+			<exampleNode Name="Large Surface" NavigateUrl="Examples/ChartGallery/GridSurface/NLargeSurfaceUC.ascx" />
+			<exampleNode Name="Texture Zoning" NavigateUrl="Examples/ChartGallery/GridSurface/NGridSurfaceTextureZoningUC.ascx" />
+			<exampleNode Name="Custom Colors" NavigateUrl="Examples/ChartGallery/GridSurface/NGridSurfaceCustomColorsUC.ascx" />
+			<exampleNode Name="Isolines" NavigateUrl="Examples/ChartGallery/GridSurface/NGridSurfaceIsolinesUC.ascx" />
+		</bookNode>
+		<bookNode Name="Heat Map">
+			<exampleNode Name="Heat Map" NavigateUrl="Examples/ChartGallery/HeatMap/NHeatMapUC.ascx" />
+      <exampleNode Name="Heat Map Contour" NavigateUrl="Examples/ChartGallery/HeatMap/NHeatMapContourUC.ascx"/>
+			<exampleNode Name="Heat Map Contour Labels" NavigateUrl="Examples/ChartGallery/HeatMap/NHeatMapContourLabelsUC.ascx" />
+		</bookNode>		
+		<bookNode Name="High Low">
+			<exampleNode Name="Standard 2D High Low" NavigateUrl="Examples/ChartGallery/HighLow/NStandard2DHighLowUC.ascx" />
+			<exampleNode Name="Standard 3D High Low" NavigateUrl="Examples/ChartGallery/HighLow/NStandardHighLowUC.ascx" />
+			<exampleNode Name="XY High Low" NavigateUrl="Examples/ChartGallery/HighLow/NAdvancedHighLowUC.ascx" />
+      <exampleNode Name="High Low Palette" NavigateUrl="Examples/ChartGallery/HighLow/NHighLowPaletteUC.ascx"/>
+		</bookNode>
+		<bookNode Name="Kagi">
+			<exampleNode Name="Kagi" NavigateUrl="Examples/ChartGallery/Kagi/KagiUC.ascx" />
+		</bookNode>
+		<bookNode Name="Line">
+      <exampleNode Name="Standard 2D Line" NavigateUrl="Examples/ChartGallery/Line/NStandardLine2DUC.ascx" />
+      <exampleNode Name="Standard 3D Line" NavigateUrl="Examples/ChartGallery/Line/NStandardLineUC.ascx" />
+			<exampleNode Name="Multi Series Line" NavigateUrl="Examples/ChartGallery/Line/NMultiSeriesLineUC.ascx" />
+			<exampleNode Name="Overlapped Line" NavigateUrl="Examples/ChartGallery/Line/NOverlappedLineUC.ascx" />
+			<exampleNode Name="Stacked Line" NavigateUrl="Examples/ChartGallery/Line/NStackedLineUC.ascx" />
+			<exampleNode Name="XY Scatter Line" NavigateUrl="Examples/ChartGallery/Line/NXYScatterLineUC.ascx" />
+			<exampleNode Name="XYZ Scatter Line" NavigateUrl="Examples/ChartGallery/Line/NXYZScatterLineUC.ascx" />
+			<exampleNode Name="Sampled 2D Line" NavigateUrl="Examples/ChartGallery/Line/NSampledLine2DUC.ascx" />
+			<exampleNode Name="Sampled 3D Line" NavigateUrl="Examples/ChartGallery/Line/NSampledLine3DUC.ascx" />
+			<exampleNode Name="Intersect With X/Y Value" NavigateUrl="Examples/ChartGallery/Line/NIntersectLineWithXYValueUC.ascx" />
+		</bookNode>
+		<bookNode Name="Line Studies">
+			<exampleNode Name="Line Studies" NavigateUrl="Examples/ChartGallery/LineStudies/NLineStudiesUC.ascx" />
+		</bookNode>
+		<bookNode Name="Mesh Surface">
+			<exampleNode Name="General" NavigateUrl="Examples/ChartGallery/MeshSurface/NMeshGeneralUC.ascx" />
+			<exampleNode Name="Intersected Surfaces" NavigateUrl="Examples/ChartGallery/MeshSurface/NMeshIntersectedUC.ascx" />
+			<exampleNode Name="Empty Data Points" NavigateUrl="Examples/ChartGallery/MeshSurface/NMeshEmptyPointsUC.ascx" />
+			<exampleNode Name="Fill Effect" NavigateUrl="Examples/ChartGallery/MeshSurface/NMeshFillEffectUC.ascx" />
+			<exampleNode Name="Texture Zoning" NavigateUrl="Examples/ChartGallery/MeshSurface/NMeshSurfaceTextureZoningUC.ascx" />
+			<exampleNode Name="Custom Colors" NavigateUrl="Examples/ChartGallery/MeshSurface/NMeshSurfaceCustomColorsUC.ascx" />
+			<exampleNode Name="Isolines" NavigateUrl="Examples/ChartGallery/MeshSurface/NMeshSurfaceIsolinesUC.ascx" />
+		</bookNode>
+		<bookNode Name="Pie">
+			<exampleNode Name="Standard Pie" NavigateUrl="Examples/ChartGallery/Pie/NStandardPieUC.ascx" />
+			<exampleNode Name="Exploded Pie" NavigateUrl="Examples/ChartGallery/Pie/NExplodedPieUC.ascx" />
+			<exampleNode Name="Grouped Pie" NavigateUrl="Examples/ChartGallery/Pie/NGroupedPieUC.ascx" />
+			<exampleNode Name="Sorted Pie" NavigateUrl="Examples/ChartGallery/Pie/NSortedPieUC.ascx" />
+      <exampleNode Name="Nonoverlapping Pie Labels" NavigateUrl="Examples/ChartGallery/Pie/NNonoverlappingLabelsUC.ascx" />
+			<exampleNode Name="Pie Slice Radius" NavigateUrl="Examples/ChartGallery/Pie/NPieSliceRadiusUC.ascx" />
+    </bookNode>
+		<bookNode Name="Point">
+			<exampleNode Name="Standard Point" NavigateUrl="Examples/ChartGallery/Point/NStandardPointUC.ascx" />
+			<exampleNode Name="XY Scatter Point" NavigateUrl="Examples/ChartGallery/Point/NXYScatterPointUC.ascx" />
+			<exampleNode Name="XY Scatter Point Cluster" NavigateUrl="Examples/ChartGallery/Point/NXYScatterPointClusterUC.ascx" />
+			<exampleNode Name="XYZ Scatter Point" NavigateUrl="Examples/ChartGallery/Point/NXYZScatterPointUC.ascx" />
+			<exampleNode Name="XYZ Scatter Point Cluster" NavigateUrl="Examples/ChartGallery/Point/NXYZScatterPointClusterUC.ascx" />
+			<exampleNode Name="Point Drop Lines" NavigateUrl="Examples/ChartGallery/Point/NPointDropLinesUC.ascx"/>
+		</bookNode>
+		<bookNode Name="Point And Figure">
+			<exampleNode Name="Point And Figure" NavigateUrl="Examples/ChartGallery/PointAndFigure/PointAndFigureUC.ascx" />
+		</bookNode>
+		<bookNode Name="Polar">
+			<exampleNode Name="Polar Area" NavigateUrl="Examples/ChartGallery/Polar/NPolarAreaUC.ascx"/>
+			<exampleNode Name="Polar Line" NavigateUrl="Examples/ChartGallery/Polar/NPolarLineUC.ascx"/>
+			<exampleNode Name="Polar Point" NavigateUrl="Examples/ChartGallery/Polar/NPolarPointUC.ascx"/>
+      <exampleNode Name="Polar Range" NavigateUrl="Examples/ChartGallery/Polar/NPolarRangeUC.ascx"/>
+      <exampleNode Name="Polar Vector" NavigateUrl="Examples/ChartGallery/Polar/NPolarVectorUC.ascx"/>
+			<exampleNode Name="Value Axis Position" NavigateUrl="Examples/ChartGallery/Polar/NPolarValueAxisPositionUC.ascx"/>
+			<exampleNode Name="Angle Axis Position" NavigateUrl="Examples/ChartGallery/Polar/NPolarAngleAxisPositionUC.ascx"/>
+		</bookNode>
+		<bookNode Name="Radar">
+			<exampleNode Name="Radar Line" NavigateUrl="Examples/ChartGallery/Radar/NRadarLineUC.ascx" />
+			<exampleNode Name="Radar Area" NavigateUrl="Examples/ChartGallery/Radar/NRadarAreaUC.ascx" />
+			<exampleNode Name="Multi Measure Radar" NavigateUrl="Examples/ChartGallery/Radar/NMultiMeasureRadarUC.ascx" />
+			<exampleNode Name="Stacked Radar Area" NavigateUrl="Examples/ChartGallery/Radar/NStackedRadarAreaUC.ascx" />
+			<exampleNode Name="Radar Axis Titles" NavigateUrl="Examples/ChartGallery/Radar/NRadarAxisTitlesUC.ascx" />
+		</bookNode>
+		<bookNode Name="Range">
+			<exampleNode Name="2D Range" NavigateUrl="Examples/ChartGallery/Range/NRange2DUC.ascx" />
+			<exampleNode Name="3D Range" NavigateUrl="Examples/ChartGallery/Range/NRange3DUC.ascx" />
+		</bookNode>
+		<bookNode Name="Renko">
+			<exampleNode Name="Renko" NavigateUrl="Examples/ChartGallery/Renko/RenkoUC.ascx" />
+		</bookNode>
+		<bookNode Name="Shape">
+			<exampleNode Name="Standard" NavigateUrl="Examples/ChartGallery/Shape/NStandardShapeUC.ascx" />
+		</bookNode>
+		<bookNode Name="Smooth Area">
+			<exampleNode Name="Smooth Area" NavigateUrl="Examples/ChartGallery/SmoothArea/NSmoothArea3DUC.ascx" />
+			<exampleNode Name="XY Smooth Area" NavigateUrl="Examples/ChartGallery/SmoothArea/NXYSmoothAreaUC.ascx" />
+			<exampleNode Name="Date-Time Smooth Area" NavigateUrl="Examples/ChartGallery/SmoothArea/NDateTimeSmoothAreaUC.ascx" />
+      <exampleNode Name="Smooth Area Palette" NavigateUrl="Examples/ChartGallery/SmoothArea/NSmoothAreaPaletteUC.ascx"/>
+		</bookNode>
+		<bookNode Name="Smooth Line">
+			<exampleNode Name="Standard Smooth Line" NavigateUrl="Examples/ChartGallery/SmoothLine/NStandardSmoothLineUC.ascx" />
+			<exampleNode Name="DateTime Smooth Line" NavigateUrl="Examples/ChartGallery/SmoothLine/NDateTimeSmoothLineUC.ascx" />
+			<exampleNode Name="XY Smooth Line" NavigateUrl="Examples/ChartGallery/SmoothLine/NXYScatterSmoothLineUC.ascx" />
+			<exampleNode Name="XYZ Smooth Line" NavigateUrl="Examples/ChartGallery/SmoothLine/NXYZScatterSmoothLineUC.ascx" />
+		</bookNode>
+		<bookNode Name="Step Line">
+			<exampleNode Name="2D Step Line" NavigateUrl="Examples/ChartGallery/StepLine/NStandardStepLine2DUC.ascx" />
+			<exampleNode Name="3D Step Line" NavigateUrl="Examples/ChartGallery/StepLine/NStandardStepLineUC.ascx" />
+			<exampleNode Name="DateTime Step Line" NavigateUrl="Examples/ChartGallery/StepLine/NDateTimeStepLineUC.ascx" />
+			<exampleNode Name="Sampled Step Line" NavigateUrl="Examples/ChartGallery/StepLine/NSampledStepLineUC.ascx" />
+		</bookNode>
+		<bookNode Name="Stock">
+			<exampleNode Name="Candle Stock" NavigateUrl="Examples/ChartGallery/Stock/NCandleStockUC.ascx" />
+			<exampleNode Name="Stick Stock" NavigateUrl="Examples/ChartGallery/Stock/NStickStockUC.ascx" />
+			<exampleNode Name="Stock Data Grouping" NavigateUrl="Examples/ChartGallery/Stock/NStockDataGroupingUC.ascx" />
+		</bookNode>
+		<bookNode Name="Ternary">
+			<exampleNode Name="Ternary Point" NavigateUrl="Examples/ChartGallery/Ternary/NTernaryPointUC.ascx" />
+			<exampleNode Name="Ternary Bubble" NavigateUrl="Examples/ChartGallery/Ternary/NTernaryBubbleUC.ascx" />
+		</bookNode>
+		<bookNode Name="Three Line Break">
+			<exampleNode Name="Three Line Break" NavigateUrl="Examples/ChartGallery/ThreeLineBreak/ThreeLineBreakUC.ascx" />
+		</bookNode>
+		<bookNode Name="TreeMap">
+			<exampleNode Name="Three Map" NavigateUrl="Examples/ChartGallery/TreeMap/NTreeMapUC.ascx" />
+		</bookNode>
+		<bookNode Name="Triangulated HeatMap">
+			<exampleNode Name="Triangulated HeatMap" NavigateUrl="Examples/ChartGallery/TriangulatedHeatMap/NTriangulatedHeatMapUC.ascx" />
+			<exampleNode Name="Triangulated HeatMap Contour" NavigateUrl="Examples/ChartGallery/TriangulatedHeatMap/NTriangulatedHeatMapContourUC.ascx" />
+		</bookNode>
+		<bookNode Name="Triangulated Surface">
+			<exampleNode Name="Triangulated Surface" NavigateUrl="Examples/ChartGallery/TriangulatedSurface/NTriangulatedSurfaceUC.ascx" />
+			<exampleNode Name="Custom Colors" NavigateUrl="Examples/ChartGallery/TriangulatedSurface/NSurfaceWithCustomColorsUC.ascx" />
+			<exampleNode Name="Triangulated Surface Simplification" NavigateUrl="Examples/ChartGallery/TriangulatedSurface/NTriangulatedSurfaceSimplificationUC.ascx" />
+		</bookNode>
+		<bookNode Name="Vector">
+			<exampleNode Name="2D Vector" NavigateUrl="Examples/ChartGallery/Vector/NVector2DUC.ascx" />
+			<exampleNode Name="3D Vector" NavigateUrl="Examples/ChartGallery/Vector/NVector3DUC.ascx" />
+			<exampleNode Name="Vector Legend Scale" NavigateUrl="Examples/ChartGallery/Vector/NVectorLegendScaleUC.ascx" />
+		</bookNode>
+		<bookNode Name="Venn">
+			<exampleNode Name="Two Set Venn" NavigateUrl="Examples/ChartGallery/Venn/NTwoSetVennUC.ascx" />
+			<exampleNode Name="Three Set Venn" NavigateUrl="Examples/ChartGallery/Venn/NThreeSetVennUC.ascx" />
+			<exampleNode Name="Four Set Venn" NavigateUrl="Examples/ChartGallery/Venn/NFourSetVennUC.ascx" />
+			<exampleNode Name="Five Set Venn" NavigateUrl="Examples/ChartGallery/Venn/NFiveSetVennUC.ascx" />
+		</bookNode>
+  </bookNode>
+	<bookNode Name="Gauge Gallery">
+    <bookNode Name="Numeric Display">
+      <exampleNode Name="Numeric Display" NavigateUrl="Examples/GaugeGallery/NumericDisplay/NNumericDisplayUC.ascx" />
+    </bookNode>
+    <bookNode Name="Gauges">
+			<bookNode Name="Indicators">
+				<exampleNode Name="Linear Gauge Indicators" NavigateUrl="Examples/GaugeGallery/Gauges/Indicators/NLinearGaugeIndicatorsUC.ascx" />
+				<exampleNode Name="Radial Gauge Indicators" NavigateUrl="Examples/GaugeGallery/Gauges/Indicators/NRadialGaugeIndicatorsUC.ascx" />
+				<exampleNode Name="Radial Gauge Knobs" NavigateUrl="Examples/GaugeGallery/Gauges/Indicators/NRadialGaugeKnobsUC.ascx" />
+			</bookNode>
+      <bookNode Name="Scales">
+        <exampleNode Name="Axis Ruller Size" NavigateUrl="Examples/GaugeGallery/Gauges/Scales/NGaugeAxisRulerSizeUC.ascx" />
+        <exampleNode Name="Scale Appearance" NavigateUrl="Examples/GaugeGallery/Gauges/Scales/NGaugeScaleAppearanceUC.ascx" />
+        <exampleNode Name="Custom Labels" NavigateUrl="Examples/GaugeGallery/Gauges/Scales/NCustomLabelsUC.ascx" />
+				<exampleNode Name="Custom Range Labels" NavigateUrl="Examples/GaugeGallery/Gauges/Scales/NGaugeCustomRangeLabelsUC.ascx" />
+        <exampleNode Name="Scale Labels Orientation" NavigateUrl="Examples/GaugeGallery/Gauges/Scales/NGaugeScaleLabelsOrientationUC.ascx" />
+      </bookNode>
+      <bookNode Name="Effects">
+        <exampleNode Name="Borders" NavigateUrl="Examples/GaugeGallery/Gauges/Effects/NGaugeBordersUC.ascx" />
+        <exampleNode Name="Glass And Gel" NavigateUrl="Examples/GaugeGallery/Gauges/Effects/NGaugeGelAndGlassEffects.ascx" />
+      </bookNode>
+    </bookNode>
+  </bookNode>
+	<bookNode Name="Dashboard Gallery">
+		<exampleNode Name="Car Dashboard" NavigateUrl="Examples/DashboardGallery/NCarDashboardUC.ascx" />
+		<exampleNode Name="Financial Dashboard" NavigateUrl="Examples/DashboardGallery/NFinancialDashboardUC.ascx" />
+	</bookNode>
+  
+	<bookNode Name="Panels">
+		<bookNode Name="Chart">
+      <bookNode Name="Aspect">
+        <exampleNode Name="Aspect 2D" NavigateUrl="Examples/Panels/Chart/Aspect/NChartAspect2DUC.ascx" />
+        <exampleNode Name="Aspect 3D" NavigateUrl="Examples/Panels/Chart/Aspect/NChartAspect3DUC.ascx" />
+      </bookNode>
+			<bookNode Name="Automatic Label Layout">
+				<exampleNode Name="Area" NavigateUrl="Examples/Panels/Chart/AutomaticLabelLayout/NAutoLabelsAreaUC.ascx" />
+				<exampleNode Name="Bar" NavigateUrl="Examples/Panels/Chart/AutomaticLabelLayout/NAutoLabelsBarUC.ascx" />
+				<exampleNode Name="Cluster Stack Bar" NavigateUrl="Examples/Panels/Chart/AutomaticLabelLayout/NAutoLabelsClusterStackBarUC.ascx" />
+				<exampleNode Name="Line" NavigateUrl="Examples/Panels/Chart/AutomaticLabelLayout/NAutoLabelsLineUC.ascx" />
+				<exampleNode Name="Polar" NavigateUrl="Examples/Panels/Chart/AutomaticLabelLayout/NAutoLabelsPolarUC.ascx" />
+				<exampleNode Name="Radar" NavigateUrl="Examples/Panels/Chart/AutomaticLabelLayout/NAutoLabelsRadarUC.ascx" />
+				<exampleNode Name="Stack Line" NavigateUrl="Examples/Panels/Chart/AutomaticLabelLayout/NAutoLabelsStackLineUC.ascx" />
+				<exampleNode Name="Step Line" NavigateUrl="Examples/Panels/Chart/AutomaticLabelLayout/NAutoLabelsStepLineUC.ascx" />
+				<exampleNode Name="XY Point" NavigateUrl="Examples/Panels/Chart/AutomaticLabelLayout/NAutoLabelsXYPointUC.ascx" />
+				<exampleNode Name="XYZ Point" NavigateUrl="Examples/Panels/Chart/AutomaticLabelLayout/NAutoLabelsXYZPointUC.ascx" />
+			</bookNode>
+			<bookNode Name="Series Attributes">
+				<exampleNode Name="Appearance" NavigateUrl="Examples/Panels/Chart/SeriesAttributes/NAppearanceUC.ascx" />
+				<exampleNode Name="Data Labels" NavigateUrl="Examples/Panels/Chart/SeriesAttributes/NDataLabelsUC.ascx" />
+				<exampleNode Name="Markers" NavigateUrl="Examples/Panels/Chart/SeriesAttributes/NMarkersUC.ascx" />
+				<exampleNode Name="Legend" NavigateUrl="Examples/Panels/Chart/SeriesAttributes/NSeriesLegendUC.ascx" />
+				<exampleNode Name="Z Order" NavigateUrl="Examples/Panels/Chart/SeriesAttributes/NSeriesZOrderUC.ascx" />
+				<exampleNode Name="Custom Marker Shape" NavigateUrl="Examples/Panels/Chart/SeriesAttributes/NSeriesCustomMarkerShapeUC.ascx" />
+			</bookNode>
+			<bookNode Name="Walls">
+				<exampleNode Name="Auto Walls and Axes Visibility" NavigateUrl="Examples/Panels/Chart/Walls/NAutoWallsAndAxesVisibilityUC.ascx" />
+			</bookNode>
+		</bookNode>
+		<bookNode Name="Legend">
+			<exampleNode Name="General" NavigateUrl="Examples/Panels/Legend/NLegendGeneralUC.ascx" />
+			<exampleNode Name="Position" NavigateUrl="Examples/Panels/Legend/NLegendPositionUC.ascx" />
+			<exampleNode Name="Custom Legend Items" NavigateUrl="Examples/Panels/Legend/NLegendCustomItemsUC.ascx" />
+			<exampleNode Name="Legend Item Text Fit Mode" NavigateUrl="Examples/Panels/Legend/NLegendItemTextFitModeUC.ascx" />
+		</bookNode>
+
+		<bookNode Name="Annotations">
+			<exampleNode Name="General" NavigateUrl="Examples/Panels/Annotations/NAnnotationsGeneralUC.ascx" />
+			<exampleNode Name="Anchor Panels - Mini Charts" NavigateUrl="Examples/Panels/Annotations/NAnchorPanelsUC.ascx" />
+      <exampleNode Name="Pie Data Point Anchor" NavigateUrl="Examples/Panels/Annotations/NPieDataPointAnchorUC.ascx" />
+		</bookNode>
+
+		<bookNode Name="Labels">
+			<exampleNode Name="General" NavigateUrl="Examples/Panels/Labels/NLabelsGeneralUC.ascx" />
+			<exampleNode Name="XML Formatted" NavigateUrl="Examples/Panels/Labels/NLabelsFormattedUC.ascx" />
+      <exampleNode Name="Image Embedding" NavigateUrl="Examples/Panels/Labels/NLabelsImageEmbeddingUC.ascx" />
+		</bookNode>
+		
+		<bookNode Name="Watermarks">
+			<exampleNode Name="General" NavigateUrl="Examples/Panels/Watermarks/NWatermarksGeneralUC.ascx" />
+		</bookNode>
+
+		<bookNode Name="Background Decorator">
+			<exampleNode Name="General" NavigateUrl="Examples/Panels/BackgroundDecorator/NBackgroundDecoratorUC.ascx" />
+		</bookNode>
+	</bookNode>
+
+	<bookNode Name="Data Manipulation">
+		<bookNode Name="General Data Manipulation">
+			<exampleNode Name="Finding" NavigateUrl="Examples/DataManipulation/General/NFindingUC.ascx" />
+			<exampleNode Name="Filtering" NavigateUrl="Examples/DataManipulation/General/NFilteringUC.ascx" />
+			<exampleNode Name="Sorting" NavigateUrl="Examples/DataManipulation/General/NSortingUC.ascx" />
+			<exampleNode Name="Evaluating" NavigateUrl="Examples/DataManipulation/General/NEvaluatingUC.ascx" />
+		</bookNode>
+
+		<bookNode Name="Empty Data Points">
+			<exampleNode Name="General" NavigateUrl="Examples/DataManipulation/EmptyDataPoints/NEmptyDataPointsUC.ascx" />
+		</bookNode>
+
+		<bookNode Name="Importing">
+			<exampleNode Name="Import from Database" NavigateUrl="Examples/DataManipulation/Importing/NImportFromDatabaseUC.ascx" />
+		</bookNode>
+
+		<bookNode Name="Binding">
+			<exampleNode Name="Bind to Data Adapter" NavigateUrl="Examples/DataManipulation/Binding/NBindingToDataAdapterUC.ascx" />
+			<exampleNode Name="Bind to IBindingList" NavigateUrl="Examples/DataManipulation/Binding/NBindingToIBindingListUC.ascx" />
+		</bookNode>
+
+		<bookNode Name="Functions">
+			<bookNode Name="Statistical">
+				<exampleNode Name="Basic Functions" NavigateUrl="Examples/DataManipulation/Functions/Statistical/NBasicFunctionsUC.ascx" />
+				<exampleNode Name="Average, Min, Max" NavigateUrl="Examples/DataManipulation/Functions/Statistical/NAverageMinMaxUC.ascx" />
+				<exampleNode Name="Sum of Data Items" NavigateUrl="Examples/DataManipulation/Functions/Statistical/NSumElementsUC.ascx" />
+				<exampleNode Name="Power, Cumulative, Exp. Average" NavigateUrl="Examples/DataManipulation/Functions/Statistical/NPowerCumulativeExpAverageUC.ascx" />
+				<exampleNode Name="Count, Standard Deviation, RMS" NavigateUrl="Examples/DataManipulation/Functions/Statistical/NCountStdDevRmsUC.ascx" />
+			</bookNode>
+			<bookNode Name="Financial">
+				<exampleNode Name="Moving Averages" NavigateUrl="Examples/DataManipulation/Functions/Financial/NMovingAveragesUC.ascx" />
+				<exampleNode Name="Price Indicators" NavigateUrl="Examples/DataManipulation/Functions/Financial/NPriceIndicatorsUC.ascx" />
+				<exampleNode Name="Range Indicators" NavigateUrl="Examples/DataManipulation/Functions/Financial/NRangeIndicatorsUC.ascx" />
+				<exampleNode Name="Directional Movement" NavigateUrl="Examples/DataManipulation/Functions/Financial/NDirectionalMovementUC.ascx" />
+				<exampleNode Name="Technical Price Indicators" NavigateUrl="Examples/DataManipulation/Functions/Financial/NTechnicalPriceIndicatorsUC.ascx" />
+				<exampleNode Name="Volume Indicators" NavigateUrl="Examples/DataManipulation/Functions/Financial/NVolumeIndicatorsUC.ascx" />
+			</bookNode>
+		</bookNode>
+	</bookNode>
+
+	<bookNode Name="Custom Painting">
+		<exampleNode Name="Custom Painting with GDI+" NavigateUrl="Examples/CustomPainting/NCustomPaintingUsingGDIPlusUC.ascx" />
+		<exampleNode Name="Custom Painting with Nevron Device" NavigateUrl="Examples/CustomPainting/NCustomPaintingUsingNevronDeviceUC.ascx" />
+	</bookNode>
+
+  <bookNode Name="Styles">
+	  <bookNode Name="Background Borders">
+		  <exampleNode Name="Image Border" NavigateUrl="Examples/Styles/BackgroundBorders/NImageBordersUC.ascx" />
+		  <exampleNode Name="Standard Border" NavigateUrl="Examples/Styles/BackgroundBorders/NStandardBordersUC.ascx" />
+	  </bookNode>
+    <bookNode Name="Style Sheets">
+      <exampleNode Name="Predefined Style Sheets" NavigateUrl="Examples/Styles/StyleSheets/NPredefinedStyleSheetsUC.ascx" />
+    </bookNode>
+  </bookNode>
+
+	<bookNode Name="Flash">
+		<exampleNode Name="Animation Themes 1" NavigateUrl="Examples/Flash/NAnimationThemes1UC.ascx" />
+		<exampleNode Name="Animation Themes 2" NavigateUrl="Examples/Flash/NAnimationThemes2UC.ascx" />
+	</bookNode>
+
+	<bookNode Name="SVG">
+		<exampleNode Name="SVG Chart" NavigateUrl="Examples/SVG/NBasicChartSVGUC.ascx" />
+		<exampleNode Name="SVG and Browser Redirection" NavigateUrl="Examples/SVG/NSVGAndBrowserRedirectionUC.ascx" />
+		<exampleNode Name="SVG and Client Side Scripting" NavigateUrl="Examples/SVG/NSVGAndClientSideScriptingUC.ascx" />
+	</bookNode>
+
+  <bookNode Name="Silverlight">
+    <exampleNode Name="Silverlight Chart" NavigateUrl="Examples/Silverlight/NXamlExportUC.ascx" />
+  </bookNode>
+
+</root>

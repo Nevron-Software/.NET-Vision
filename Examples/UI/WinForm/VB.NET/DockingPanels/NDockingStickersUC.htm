@@ -1,0 +1,18 @@
+<description>
+Since VS 2005 update Nevron Docking Panels support docking stickers and translucent hints - the Visual Studio 2005 docking behaviour. The framework overcomes the standard limitations of other products and extends the docking stickers feature greately. Full control over strickers is provided via the DockingStickerTemplate objects. Provided by default are a total of 16 templates - the well known "Squares" and "Diamonds" as well as lots of fresh new designs which will give your applications distinguished docking behaviour.
+<p>
+Following are the currently editable properties controlling docking strickers and hints:
+<ul>
+	<li>DockingHint - specifies what hint to be used. Currently available are DockingHint.ReversibleFrame and DockingHint.TranslucentFill.
+	<li>DockingStickers - a boolean value specifying whether docking stickers will be displayed.
+	<li>StickerTemplateIndex - specifies which index (template) of the templates collection to be used.
+	<li>StickerTemplates - the collection that contains all the available templates. You may create and use your own custom templates.
+	<li>TranslucentColor - specifies the preffered color to be used when creating translucent filling.
+	<li>Transparency - specifies alpha value (0 - 255) to be used when creating translucent filling.
+	<li>WYSIWYGHints - a boolean value specifying whether when an exact dock preview will be created when hittesting some DockAreaProvider. If this value is true a clone tree of zones will be created internally and the exact bounds that the panel will occupy after drop will be calculated.
+</ul>
+</p>
+</description>
+<remarks>
+You have access to all of these properties via the DockManager's DockingHintStyle.
+</remarks>

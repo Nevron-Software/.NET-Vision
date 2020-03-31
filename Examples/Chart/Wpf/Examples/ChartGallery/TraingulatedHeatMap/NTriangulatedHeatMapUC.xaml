@@ -1,0 +1,18 @@
+﻿<Controls:NRealTimeExampleBaseUC x:Class="Nevron.Examples.Chart.Wpf.NTriangulatedHeatMapUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:Controls="clr-namespace:Nevron.Examples.Chart.Wpf" 		 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+	<StackPanel>
+		<Label Content="Contour Display Mode:" Height="28" Name="label3" />
+		<ComboBox Height="23" Name="ContourDisplayModeComboBox" SelectionChanged="ContourDisplayModeComboBox_SelectionChanged" />
+		<Label Content="Contour Color Mode:" Height="28" Name="label4" />
+		<ComboBox Height="23" Name="ContourColorModeComboBox" SelectionChanged="ContourColorModeComboBox_SelectionChanged" />
+		<CheckBox Content="Show Fill" Margin ="4" Height="16" Name="ShowFillCheckBox" Click="ShowFillCheckBox_Click" />
+		<CheckBox Content="Smooth Palette" Margin ="4" Height="16" Name="SmoothPaletteCheckBox" Click="SmoothPaletteCheckBox_Click" />
+		<CheckBox Content="Show Points" Margin ="4" Height="16" Name="ShowPointsCheckBox" Click="ShowPointsCheckBox_Click"/>
+	</StackPanel>
+</Controls:NRealTimeExampleBaseUC>

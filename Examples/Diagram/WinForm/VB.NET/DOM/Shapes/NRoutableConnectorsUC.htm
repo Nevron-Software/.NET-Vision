@@ -1,0 +1,79 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+		This example demonstrates routable connectors and routing.
+	</p>
+	<p>
+		Routing is the process of finding a path between two points, which strives not 
+		to cross any obstacles and also tries to obey certain aesthetic criterias (such 
+		as minimal number of turns, port orientation etc.).
+	</p>
+	<p>
+		Routing works with three corner stone objects: route, obstacles and routing 
+		manager. A route tries to avoid the current set of obstacles (residing in the 
+		manager container) by obtaining routing points from the routing manager. The 
+		routing manager is responsible for creating and maintaining a routing graph for 
+		the current set of obstacles existing in the container to which the manager is 
+		attached. The manager currently supports two types of routing graphs: grid and 
+		mesh. The route finding uses a generic A-Star algorithm, which is by far the best 
+		known algorithm for fast finding of a route in a graph.
+	</p>
+	<p>
+		In Nevron Diagram for .NET a route can be any 1D shape, which implements the 
+		INRoutableShape interface. Currently this interface is implemented by the 
+		NRoutableConnector class. All 2D shapes are threated as route obstacles.
+	</p>
+	<p>
+		A route can be automatically rerouted in three modes:
+		<ul>
+			<li>
+				<b>Never</b> - the route is never automatically rerouted. You can still reroute the 
+				route by executing the Reroute command (from the context menu or from code).
+			</li>
+			<li>
+				<b>Always</b> - the route is automatically rerouted when any of the obstacles have 
+				changed (i.e. there is a possibility for the route to be rerouted in a better way).
+			</li>
+			<li>
+				<b>When Needed</b> - the route is automatically rerouted when an obstacle is placed on it 
+				(i.e. the route needs to be rerouted cause it crosses an obstacle).
+			</li>
+		</ul>
+	</p>
+	<p>
+		<b>Grid routing</b> is applicable for routable connectors of type Dynamic HV. 
+		In grid routing the manager always outputs a set of points, which are the 
+		vertices of an imaginary grid and hence the produced line segments are 
+		orthogonal. The grid can be built from the intersection of the lines formed by 
+		the obstacles sides or sides and centers (specified by the Grid Type combo). 
+		Also applicable for grid routing is the obstacle type which can be:
+		<ul>
+			<li>
+				<i>RouteAround</i> - a HV connector avoids the obstacle horizontally and 
+				vertically.
+			</li>
+			<li>
+				<i>RouteThrough</i> - a HV connector does not avoid the obstacle (the route 
+				goes through the obstacle)
+			</li>
+			<li>
+				<i>RouteThroughHorizontally</i> - a HV connector can pass only horizontally 
+				through the obstacle
+			</li>
+			<li>
+				<i>RouteThroughVertically</i> - a HV connector can pass only vertically through the obstacle.
+			</li>
+		</ul>
+	</p>
+	<p>
+		<b>Mesh routing</b> is applicable for routable connectors of type Dynamic Polyline and 
+		Curve. In mesh routing the manager outputs a set of points, which connect the 
+		start and end points in the shortest possible way. The mesh routing graph 
+		vertices are constructed by the obstacles corners. The mesh routing graph 
+		connectors do not intersect with any obstacle.
+	</p>
+	<p>
+		The routing manager can be enabled or disabled. When the routing manager is disabled it will only reroute routes when routes request it 
+		(for example if you call the Reroute command from the context menu). Disabling the routing manager will globally disable automatic routing.
+	<p>
+</description></P>

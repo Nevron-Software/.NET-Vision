@@ -1,0 +1,36 @@
+<description>
+	<p>
+		This example demonstrates shape labels.
+	</p>
+	<p>
+		Labels are one of the optional shape elements (the other two optional elements 
+		are ports and control points). Labels are texts, which can be anchored to a specific aspect of the shape 
+		to which they belong, or to any model inside this shape. The actual model to 
+		which a label is anchored is called anchor model.
+	</p>
+	<p>
+		Currently Nevron Diagram for .NET supports the following types of labels:
+		<ul>
+			<li>
+				<b>Bounds Labels</b> - bounds labels are anchored to the scene bounds of the anchor model.
+				In this example the red shape has two bounds labels. If you rotate this shape, the labels will 
+				remain horizontal.
+			</li>
+			<li>
+				<b>Rotated Bounds Labels</b> - rotated bounds labels are anchored to the scene projection of 
+				the model bounds of the anchor model. In this example the blue shape has two rotated bounds labels. 
+				If you rotate this shape, the labels will be rotated with it.
+			</li>
+			<li>
+				<b>Logical Line Labels</b> - logical line labels are anchored to the percent position 
+				of a anchor model logical line. This type of label can be configured to follow the line orientation. 
+				You can also instruct it never to have downward orientation. In this example the polyline shape 
+				has two logical line labels.
+			</li>
+		</ul>
+	</p>
+	<p>
+		To explore the labels behavior just select a shape and modify the label properties, 
+		which will appear in the Example form
+	</p>
+</description>

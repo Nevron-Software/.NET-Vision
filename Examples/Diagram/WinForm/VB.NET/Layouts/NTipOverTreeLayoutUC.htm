@@ -1,0 +1,32 @@
+<!-- Recognized tags -->
+<description>
+	<p>
+        The tip-over tree layout is a tree layout, which uses shapes provided data to determine
+        whether the vertex children should be placed in a row, column or 2 columns. It produces
+        orthogonal tree drawings. The layout satisfies to the following aesthetic criterias:
+        <ul>
+            <li><b>No edge crossings</b> - edges do not cross each other.</li>
+            <li><b>No vertex-vertex overlaps</b> - vertices do not overlap each other.</li>
+            <li><b>No vertex-edge overlaps</b> - vertices do not overlap edges.</li>
+            <li><b>Compactness</b> - you can optimize the compactness of the drawing in both
+                the breadth and depth dimensions of the the tree by setting the <b>Compact</b>
+                property to true.</li>
+        </ul>
+    </p>
+        You can change the tha way the children and the leafs are placed using the corresponding
+        properties. You can also set the children placement for the children of each vertex
+        individually using the <b>TipOverChildrenPlacement</b> property in the LayoutData
+        collection of the shape.
+    <p>
+        This type of layout is typically used in Org Charts, but can also be used in all cases
+        where classical tree layouts (e.g. layouts with uniform parent placement) do not produce
+        width/height ratio compact results.
+    </p>
+    <p>
+        In this example the nodes whose children are arranged in cols are highlighted with orange.
+    </p>
+	<p>
+		To experiment with the layout just change its properties from the property grid and click the <b>Layout</b> button. 
+        To see the layout in action on a different trees, just click the <b>Random Tree</b> button. 
+	</p>
+</description>

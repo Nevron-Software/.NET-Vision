@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nevron.Examples.Framework.WinForm</name>
+    </assembly>
+    <members>
+        <member name="T:Nevron.Examples.Framework.WinForm.NExamplesDockManager">
+            <summary>
+            Summary description for NExamplesDockManager.
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesDockManager.MainContainer">
+            <summary>
+            Gets the main container for the framework.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NExamplesForm">
+            <summary>
+            Summary description for NExamplesForm.
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.CreateMenu">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.CreateDockManager">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.PrepareMainMenu">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.PrepareDockManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.PrepareSkin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.CreatePredefinedControls">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.ClearExample(System.Boolean)">
+            <summary>
+            Clears the current state of the framework.
+            </summary>
+            <param name="clearAll">True to reset description browser and source viewer, false otherwise.</param>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.LoadExample(Nevron.Examples.Framework.WinForm.NExampleEntity)">
+            <summary>
+            
+            </summary>
+            <param name="example"></param>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.LayoutExample">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.CreateExampleControl(Nevron.Examples.Framework.WinForm.NExampleEntity)">
+            <summary>
+            
+            </summary>
+            <param name="example"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.OnFormLoading">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.OnFormLoaded">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.LoadNavigationTree">
+            <summary>
+            Populates the navigation tree control.
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.AttachToEvents">
+            <summary>
+            Attaches to some events in order to perform default action
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.ShowSplash">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.SavePanelsState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.LoadPanelsState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.OnResolveDocumentClient(System.Object,Nevron.UI.WinForm.Controls.DocumentEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.OnConfigPropertyChanged(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="propName"></param>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.OnConfigChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesForm.Config">
+            <summary>
+            Gets or sets the common configuration settings for the examples.
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NExamplesMainMenu">
+            <summary>
+            Represents framework main menu.
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesMainMenu.Form">
+            <summary>
+            Gets the examples form this menu is attached to.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NExampleUserControl">
+            <summary>
+            Base class for all examples.
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExampleUserControl.Initialize">
+            <summary>
+            Performs example specific information loading.
+            Use this method instead of OnLoad() one, which is called only if control is visible.
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExampleUserControl.BeforeInitialize">
+            <summary>
+            Performs example specific information loading.
+            Use this method instead of OnLoad() one, which is called only if control is visible.
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExampleUserControl.AfterInitialize">
+            <summary>
+            Performs example specific information loading.
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExampleUserControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Nevron.Examples.Framework.WinForm.NExampleUserControl.Random">
+            <summary>
+            Random number generator
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NAppSettings">
+            <summary>
+            Summary description for NAppSettings.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NExamplesConfig">
+            <summary>
+            Represents common settings for the examples framework.
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesConfig.ExamplesForm">
+            <summary>
+            Gets the examples form this config is attached to.
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesConfig.SplashImage">
+            <summary>
+            Gets or sets the image to be displayed by the splash form before main form is loaded.
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesConfig.ExamplesNamespace">
+            <summary>
+            Gets/sets the namespace where the framework looks up example user controls
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesConfig.ExampleUCConstructorArguments">
+            <summary>
+            Gets/sets the default array of arguments for the user control creation
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesConfig.TreeResource">
+            <summary>
+            Gets/sets the full path to the resource file containing the xml with the
+            examples tree
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesConfig.TreeResourcePath">
+            <summary>
+            Gets/sets the full path to the resource file containing the xml with the
+            examples tree
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesConfig.FilterSearchResultsByParentTitles">
+            <summary>
+            Gets/sets an array of tree node titles which subitems are not
+            included in search results
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesConfig.EmbeddedResourcesAssembly">
+            <summary>
+            Gets/sets the assembly which provides the default resources reader
+            for assembly-specific resources
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesConfig.FeedbackArguments">
+            <summary>
+            Gets or sets the arguments to be executed when clicked Help->Give Feedback command
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesConfig.ReportBugArguments">
+            <summary>
+            Gets or sets the arguments to be executed when clicked Help->Report Bug command
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesConfig.LayoutStrategy">
+            <summary>
+            Gets or sets the layout strategy to be used when arranging main form's docking panels
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesConfig.ExampleTreeNodeImageIndex">
+            <summary>
+            Gets or sets the image index to be used by the example tree nodes.
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesConfig.ExampleTreeNodeSelectedImageIndex">
+            <summary>
+            Gets or sets the selected image index to be used by the example tree nodes.
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesConfig.SplashVisibleTime">
+            <summary>
+            Gets or sets the amount of milliseconds splash image is visible.
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NExamplesConfig.SearchForVbSourceFiles">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Nevron.Examples.Framework.WinForm.NExamplesConfig.Skin">
+            <summary>
+            Optional skin to be applied on the examples.
+            </summary>
+        </member>
+        <member name="F:Nevron.Examples.Framework.WinForm.NExamplesConfig.AvailableSkins">
+            <summary>
+            The name of the assembly which contains the skins for the examples.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NExamplesLayoutStrategy">
+            <summary>
+            Summary description for NLayoutStrategy.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NCodeHighlighter">
+            <summary>
+            Summary description for NCodeHighlighter.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NCSCodeHighlighter">
+            <summary>
+            Summary description for NCSCodeHighlighter.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NHtmlBuilder">
+            <summary>
+            Summary description for NHtmlBuilder.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NSourceViewControl">
+            <summary>
+            Summary description for NSourceViewControl.
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NSourceViewControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NVBCodeHighlighter">
+            <summary>
+            Summary description for NVBCodeHighlighter.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NWebBrowser">
+            <summary>
+            Summary description for NWebBrowser.
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NWebBrowser.Navigate(System.String)">
+            <summary>
+            Navigates to the specified url.
+            </summary>
+            <param name="url"></param>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NWebBrowser.Display(System.String)">
+            <summary>
+            Displays the desired html in the browser.
+            </summary>
+            <param name="html"></param>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NWebBrowser.LoadFile(System.String)">
+            <summary>
+            Loads the specified file and displays it.
+            </summary>
+            <param name="filePath">The specified file to load.</param>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NWebBrowser.LoadBlank">
+            <summary>
+            Clears the current content (navigates to a blank file).
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NWebBrowser.Reload">
+            <summary>
+            Reloads the current content of the browser.
+            The framework uses this in order to rebuild the Css styles on palette change.
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NWebBrowser.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NExampleEntity">
+            <summary>
+            Summary description for NExampleEntity.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NExampleFolderEntity">
+            <summary>
+            Summary description for NExampleFolderEntity.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NNavigationControl">
+            <summary>
+            Contains the navigation tree + search controls.
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NNavigationControl.NavigationTreeControl">
+            <summary>
+            Gives you access to the navigation tree.
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NNavigationControl.TreeSearchControl">
+            <summary>
+            Gives you access to the tree search control.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NNavigationTreeControl">
+            <summary>
+            Summary description for NNavigationTreeControl.
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NNavigationTreeControl.NavigationTree">
+            <summary>
+            Gives you access to the treeview control.
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NNavigationTreeControl.Toolbar">
+            <summary>
+            Gives you access to the toolbar above the treeview
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NNavigationTreeControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NSearchContext">
+            <summary>
+            Summary description for NSearchSettings.
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NSearchContext.#ctor(System.String[],Nevron.Examples.Framework.WinForm.SearchContent,System.String[],Nevron.Examples.Framework.WinForm.WordMatch)">
+            <summary>
+            Creates a new search context with the specified parameters.
+            </summary>
+            <param name="searchWords"></param>
+            <param name="searchContent"></param>
+            <param name="wordMatch"></param>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NSearchResult">
+            <summary>
+            Summary description for NSearchResult.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NTreeNodeNavigation">
+            <summary>
+            Summary description for NExampleTreeNodeIterator.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NTreeSearchControl">
+            <summary>
+            Summary description for NTreeSearchControl.
+            </summary>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WinForm.NTreeSearchControl.Tree">
+            <summary>
+            Gets or sets the TreeView control this control works onto.
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NTreeSearchControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WinForm.NExamplesHelper">
+            <summary>
+            Provides static support functions
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesHelper.InsertSpacesBeforeUppers(System.String)">
+            <summary>
+            Inserts space between the capital leters of a string
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

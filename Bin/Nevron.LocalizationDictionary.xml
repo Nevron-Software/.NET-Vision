@@ -1,0 +1,3163 @@
+﻿<nevron>
+    <dictionaries>
+        <dictionary name="Global">
+            <entry key="&amp;Restore" value="" />
+            <entry key="Ma&amp;ximize" value="" />
+            <entry key="&amp;Hide" value="" />
+            <entry key="Restore" value="" />
+            <entry key="Maximize" value="" />
+            <entry key="&amp;Auto Hide" value="" />
+            <entry key="Permissions" value="" />
+            <entry key="Allow Hid&amp;e" value="" />
+            <entry key="Allow &amp;Float" value="" />
+            <entry key="Allow Doc&amp;k" value="" />
+            <entry key="Allow &amp;Drag" value="" />
+            <entry key="Allow &amp;Maximize" value="" />
+            <entry key="Allow &amp;AutoHide" value="" />
+            <entry key="&amp;Float" value="" />
+            <entry key="D&amp;ock" value="" />
+            <entry key="Toggle Auto Hide" value="" />
+            <entry key="Auto Hide" value="" />
+            <entry key="OK" value="" />
+            <entry key="Add" value="" />
+            <entry key="Delete" value="" />
+            <entry key="Cancel" value="" />
+            <entry key="EditAreaSeparator" value="" />
+            <entry key="Collection is Empty" value="" />
+            <entry key="NCollectionForm" value="" />
+            <entry key="Must override" value="" />
+            <entry key="object" value="" />
+            <entry key="Close" value="" />
+            <entry key="Apply" value="" />
+            <entry key="NDateTimeSpanEditor" value="" />
+            <entry key="NDomBrowserHostForm" value="" />
+            <entry key="NDomEditorHostForm" value="" />
+            <entry key="Move Down" value="" />
+            <entry key="Move up" value="" />
+            <entry key="General" value="" />
+            <entry key="Name:" value="" />
+            <entry key="Type:" value="" />
+            <entry key="Add Cell" value="" />
+            <entry key="The cell name must not be an empty string" value="" />
+            <entry key="Valid Cell Name Required" value="" />
+            <entry key="Cell type:" value="" />
+            <entry key="Formula Cell Editor" value="" />
+            <entry key="Constant" value="" />
+            <entry key="Formula" value="" />
+            <entry key="Formula:" value="" />
+            <entry key="References:" value="" />
+            <entry key="Insert" value="" />
+            <entry key="Functions:" value="" />
+            <entry key="The following error occured during the formula evaluation: " value="" />
+            <entry key="Formula Error" value="" />
+            <entry key="Sections:" value="" />
+            <entry key="View style:" value="" />
+            <entry key="Section rows" value="" />
+            <entry key="Section cells" value="" />
+            <entry key="Formula Sheet Editor" value="" />
+            <entry key="Value:" value="" />
+            <entry key="Options:" value="" />
+            <entry key="The specified string and type do not represent a valid variant value" value="" />
+            <entry key="Value Error" value="" />
+            <entry key="Length editor" value="" />
+            <entry key="Length:" value="" />
+            <entry key="Margins editor" value="" />
+            <entry key="Left:" value="" />
+            <entry key="Top:" value="" />
+            <entry key="Right:" value="" />
+            <entry key="Bottom:" value="" />
+            <entry key="Measurement system:" value="" />
+            <entry key="Measurement unit:" value="" />
+            <entry key="Point editor" value="" />
+            <entry key="X:" value="" />
+            <entry key="Y:" value="" />
+            <entry key="Size editor" value="" />
+            <entry key="Width:" value="" />
+            <entry key="Height:" value="" />
+            <entry key="NObjectForm" value="" />
+            <entry key="Object Editor" value="" />
+            <entry key="Category:" value="" />
+            <entry key="Shape:" value="" />
+            <entry key="Load Predefined Shape" value="" />
+            <entry key="Interaction style" value="" />
+            <entry key="Line  (1 - dimensional)" value="" />
+            <entry key="Box (2 - dimensional)" value="" />
+            <entry key="Shape type" value="" />
+            <entry key="Group" value="" />
+            <entry key="Shape" value="" />
+            <entry key="Shadow Style..." value="" />
+            <entry key="Stroke Style..." value="" />
+            <entry key="Fill Style..." value="" />
+            <entry key="New Shape" value="" />
+            <entry key="You must provide a valid shape name" value="" />
+            <entry key="Failed to parse the {0} value" value="" />
+            <entry key="StartX:" value="" />
+            <entry key="StartY:" value="" />
+            <entry key="EndX:" value="" />
+            <entry key="EndY:" value="" />
+            <entry key="PinX:" value="" />
+            <entry key="PinY:" value="" />
+            <entry key="Select New Path Command Type" value="" />
+            <entry key="Edit Geometry" value="" />
+            <entry key="Zoom In" value="" />
+            <entry key="Zoom Out" value="" />
+            <entry key="Zoom To Normal" value="" />
+            <entry key="Zoom To Fit" value="" />
+            <entry key="Show Grid" value="" />
+            <entry key="Snap To Grid" value="" />
+            <entry key="Show Alignment Box" value="" />
+            <entry key="Canvas Settings" value="" />
+            <entry key="This operation will replace the currently edited shape. Do you want to proceed?" value="" />
+            <entry key="Replace Current Shape" value="" />
+            <entry key="Smart Shape Editor" value="" />
+            <entry key="New Shape..." value="" />
+            <entry key="Open Shape..." value="" />
+            <entry key="Save Shape..." value="" />
+            <entry key="Load Predefined..." value="" />
+            <entry key="Show Shape Explorer" value="" />
+            <entry key="Show Shape Sheet Editor" value="" />
+            <entry key="Edit Canvas Settings..." value="" />
+            <entry key="Add shape..." value="" />
+            <entry key="Remove shape" value="" />
+            <entry key="Move Shape Up" value="" />
+            <entry key="Move Shape Down" value="" />
+            <entry key="Move end point" value="" />
+            <entry key="Modify geometry" value="" />
+            <entry key="Drag to move pin point." value="" />
+            <entry key="CTRL+Drag to translate shape" value="" />
+            <entry key="Resize shape" value="" />
+            <entry key="Rotate shape" value="" />
+            <entry key="Move start point" value="" />
+            <entry key="Move vertex" value="" />
+            <entry key="New" value="" />
+            <entry key="Move down" value="" />
+            <entry key="Add Animation" value="" />
+            <entry key="Visible" value="" />
+            <entry key="Edge percent:" value="" />
+            <entry key="Style:" value="" />
+            <entry key="Padding" value="" />
+            <entry key="Appearance" value="" />
+            <entry key="Stroke" value="" />
+            <entry key="Edge" value="" />
+            <entry key="Border Style:" value="" />
+            <entry key="Border Style Editor" value="" />
+            <entry key="Border Style" value="" />
+            <entry key="Use automatic" value="" />
+            <entry key="NStyleEditor" value="" />
+            <entry key="Preview:" value="" />
+            <entry key="Ambient:" value="" />
+            <entry key="Diffuse:" value="" />
+            <entry key="Specular:" value="" />
+            <entry key="Emissive:" value="" />
+            <entry key="Shininess:" value="" />
+            <entry key="Material Style Editor" value="" />
+            <entry key="Relative to object" value="" />
+            <entry key="Relative to viewer" value="" />
+            <entry key="Sphere" value="" />
+            <entry key="Stretched" value="" />
+            <entry key="Fitted" value="" />
+            <entry key="Centered" value="" />
+            <entry key="Tiled" value="" />
+            <entry key="Stretched to width" value="" />
+            <entry key="Stretched to height" value="" />
+            <entry key="Crop fitted" value="" />
+            <entry key="X Scale:" value="" />
+            <entry key="Mapping type:" value="" />
+            <entry key="Layout:" value="" />
+            <entry key="Y Scale:" value="" />
+            <entry key="Border color:" value="" />
+            <entry key="Texture Mapping Style Editor" value="" />
+            <entry key="Preview" value="" />
+            <entry key="Background color:" value="" />
+            <entry key="Point properties" value="" />
+            <entry key="Intensity:" value="" />
+            <entry key="Angle:" value="" />
+            <entry key="Color:" value="" />
+            <entry key="Current point" value="" />
+            <entry key="Alias:" value="" />
+            <entry key="Store in gallery" value="" />
+            <entry key="Advanced Gradient Style Editor" value="" />
+            <entry key="Custom" value="" />
+            <entry key="WhiteOnBlack" value="" />
+            <entry key="WhiteOnRed" value="" />
+            <entry key="WhiteOnGreen" value="" />
+            <entry key="WhiteOnBlue" value="" />
+            <entry key="Red" value="" />
+            <entry key="Green" value="" />
+            <entry key="Blue" value="" />
+            <entry key="Sunset" value="" />
+            <entry key="NightFall1" value="" />
+            <entry key="NightFall2" value="" />
+            <entry key="Ocean1" value="" />
+            <entry key="Ocean2" value="" />
+            <entry key="Ocean3" value="" />
+            <entry key="Ocean4" value="" />
+            <entry key="CalmWater1" value="" />
+            <entry key="CalmWater2" value="" />
+            <entry key="Desert1" value="" />
+            <entry key="Desert2" value="" />
+            <entry key="Fire1" value="" />
+            <entry key="Fire2" value="" />
+            <entry key="Fog1" value="" />
+            <entry key="Fog2" value="" />
+            <entry key="Mahogany1" value="" />
+            <entry key="Mahogany2" value="" />
+            <entry key="Gallery" value="" />
+            <entry key="Predefined:" value="" />
+            <entry key="Texture fill style..." value="" />
+            <entry key="Material..." value="" />
+            <entry key="Image filters..." value="" />
+            <entry key="Add to Custom" value="" />
+            <entry key="Edit" value="" />
+            <entry key="Color" value="" />
+            <entry key="Gradient" value="" />
+            <entry key="Image" value="" />
+            <entry key="Hatch" value="" />
+            <entry key="Advanced Gradient" value="" />
+            <entry key="Fill Style:" value="" />
+            <entry key="Begin color:" value="" />
+            <entry key="End Color:" value="" />
+            <entry key="Variants" value="" />
+            <entry key="Shading styles" value="" />
+            <entry key="From Center" value="" />
+            <entry key="From Corner" value="" />
+            <entry key="Diagonal Down" value="" />
+            <entry key="Diagonal Up" value="" />
+            <entry key="Vertical" value="" />
+            <entry key="Horizontal" value="" />
+            <entry key="Colors" value="" />
+            <entry key="Light" value="" />
+            <entry key="Dark" value="" />
+            <entry key="Two colors" value="" />
+            <entry key="One color" value="" />
+            <entry key="Start to End" value="" />
+            <entry key="Foreground color:" value="" />
+            <entry key="Patterns" value="" />
+            <entry key="Light Downward Diagonal" value="" />
+            <entry key="Light Upward Diagonal" value="" />
+            <entry key="Dark Downward Diagonal" value="" />
+            <entry key="Dark Upward Diagonal" value="" />
+            <entry key="Wide Downward Diagonal" value="" />
+            <entry key="Wide Upward Diagonal" value="" />
+            <entry key="Light Vertical" value="" />
+            <entry key="Light Horizontal" value="" />
+            <entry key="Narrow Vertical" value="" />
+            <entry key="Narrow Horizontal" value="" />
+            <entry key="Dark Vertical" value="" />
+            <entry key="Dark Horizontal" value="" />
+            <entry key="Dashed Downward Diagonal" value="" />
+            <entry key="Dashed Upward Diagonal" value="" />
+            <entry key="Dashed Horizontal" value="" />
+            <entry key="Dashed Vertical" value="" />
+            <entry key="Small Confetti" value="" />
+            <entry key="Large Confetti" value="" />
+            <entry key="Zig Zag" value="" />
+            <entry key="Wave" value="" />
+            <entry key="Diagonal Brick" value="" />
+            <entry key="Horizontal Brick" value="" />
+            <entry key="Weave" value="" />
+            <entry key="Plaid" value="" />
+            <entry key="Divot" value="" />
+            <entry key="Dotted Grid" value="" />
+            <entry key="Dotted Diamond" value="" />
+            <entry key="Shingle" value="" />
+            <entry key="Trellis" value="" />
+            <entry key="Small Grid" value="" />
+            <entry key="Large Grid" value="" />
+            <entry key="Small Checker Board" value="" />
+            <entry key="Large Checker Board" value="" />
+            <entry key="Outlined Diamond" value="" />
+            <entry key="Solid Diamond" value="" />
+            <entry key="Forward Diagonal" value="" />
+            <entry key="Backward Diagonal" value="" />
+            <entry key="Diagonal Cross" value="" />
+            <entry key="Transparency:" value="" />
+            <entry key="File name:" value="" />
+            <entry key="Image Files" value="" />
+            <entry key="Bitmap Files" value="" />
+            <entry key="Jpg Files" value="" />
+            <entry key="Tiff Files" value="" />
+            <entry key="Targa Files" value="" />
+            <entry key="Windows Metafiles" value="" />
+            <entry key="Gif Files" value="" />
+            <entry key="Png Files" value="" />
+            <entry key="All Files" value="" />
+            <entry key="Size:" value="" />
+            <entry key="Style" value="" />
+            <entry key="Underline" value="" />
+            <entry key="Strikeout" value="" />
+            <entry key="Bold" value="" />
+            <entry key="Italic" value="" />
+            <entry key="Font" value="" />
+            <entry key="Standard" value="" />
+            <entry key="Frame Style:" value="" />
+            <entry key="Light effect" value="" />
+            <entry key="Light color:" value="" />
+            <entry key="Shadow color:" value="" />
+            <entry key="Outer edge percent:" value="" />
+            <entry key="Inner edge percent:" value="" />
+            <entry key="Size" value="" />
+            <entry key="Corners" value="" />
+            <entry key="Tubes" value="" />
+            <entry key="Bevels" value="" />
+            <entry key="Outer bevel" value="" />
+            <entry key="Dark color:" value="" />
+            <entry key="Inner bevel" value="" />
+            <entry key="Borders" value="" />
+            <entry key="Outer border" value="" />
+            <entry key="Inner border" value="" />
+            <entry key="NTabPage" value="" />
+            <entry key="Add filter" value="" />
+            <entry key="Delete filter" value="" />
+            <entry key="Raster Image" value="" />
+            <entry key="SVG" value="" />
+            <entry key="EMF" value="" />
+            <entry key="PDF" value="" />
+            <entry key="SWF (Flash)" value="" />
+            <entry key="XAML (Silverlight)" value="" />
+            <entry key="Image format:" value="" />
+            <entry key="Compress Content Stream" value="" />
+            <entry key="Raster format:" value="" />
+            <entry key="Bits per pixel:" value="" />
+            <entry key="Quality (JPEG):" value="" />
+            <entry key="You cannot have null values" value="" />
+            <entry key="Attribute" value="" />
+            <entry key="Value" value="" />
+            <entry key="Compress" value="" />
+            <entry key="Add Svg header" value="" />
+            <entry key="Enable interactivity" value="" />
+            <entry key="Embedded images" value="" />
+            <entry key="Embed images in Svg" value="" />
+            <entry key="Attributes" value="" />
+            <entry key="Custom script" value="" />
+            <entry key="Embedded images format:" value="" />
+            <entry key="Url link" value="" />
+            <entry key="Cursor" value="" />
+            <entry key="Tooltip" value="" />
+            <entry key="Custom map area attribute" value="" />
+            <entry key="Add Interactivity Attribute" value="" />
+            <entry key="Gel" value="" />
+            <entry key="Glass" value="" />
+            <entry key="Paint Effect:" value="" />
+            <entry key="Paint Effect Style Editor" value="" />
+            <entry key="Paint Effect Style" value="" />
+            <entry key="None" value="" />
+            <entry key="Solid" value="" />
+            <entry key="Linear blur" value="" />
+            <entry key="Radial blur" value="" />
+            <entry key="Gaussian blur" value="" />
+            <entry key="Offset and scale" value="" />
+            <entry key="Scale:" value="" />
+            <entry key="Fade area" value="" />
+            <entry key="Alignment" value="" />
+            <entry key="Horizontal:" value="" />
+            <entry key="Vertical:" value="" />
+            <entry key="String Format Type:" value="" />
+            <entry key="Text Direction:" value="" />
+            <entry key="Factor:" value="" />
+            <entry key="Predefined" value="" />
+            <entry key="Dash style" value="" />
+            <entry key="Line join:" value="" />
+            <entry key="Dash cap:" value="" />
+            <entry key="Cap and Join" value="" />
+            <entry key="End cap:" value="" />
+            <entry key="Start cap:" value="" />
+            <entry key="Interactivity Style Editor" value="" />
+            <entry key="Interactivity Style" value="" />
+            <entry key="Image Filters Style Editor" value="" />
+            <entry key="Image Filters Style" value="" />
+            <entry key="Animations Style Editor" value="" />
+            <entry key="Animations Style" value="" />
+            <entry key="Fill Style Editor" value="" />
+            <entry key="Fill Style" value="" />
+            <entry key="Stroke Style Editor" value="" />
+            <entry key="Stroke Style" value="" />
+            <entry key="Shadow Style Editor" value="" />
+            <entry key="Shadow Style" value="" />
+            <entry key="Font Style Editor" value="" />
+            <entry key="Font Style" value="" />
+            <entry key="Frame Style Editor" value="" />
+            <entry key="Frame Style" value="" />
+            <entry key="Image Frame Style Editor" value="" />
+            <entry key="Image Frame Style" value="" />
+            <entry key="Standard Frame Style Editor" value="" />
+            <entry key="Standard Frame Style" value="" />
+            <entry key="Background Style Editor" value="" />
+            <entry key="Background Style" value="" />
+            <entry key="Backplane Style Editor" value="" />
+            <entry key="Backplane Style" value="" />
+            <entry key="Text Style Editor" value="" />
+            <entry key="Text Style" value="" />
+            <entry key="Value Formatter Editor" value="" />
+            <entry key="Value Formatter" value="" />
+            <entry key="Text" value="" />
+            <entry key="Allow Word Break" value="" />
+            <entry key="Formatting" value="" />
+            <entry key="Tab size in spaces:" value="" />
+            <entry key="Replace tabs with spaces" value="" />
+            <entry key="Text format:" value="" />
+            <entry key="Position" value="" />
+            <entry key="Offset and Orientation" value="" />
+            <entry key="Orientation:" value="" />
+            <entry key="Culture Info:" value="" />
+            <entry key="Format Specifier:" value="" />
+            <entry key="(Default)" value="" />
+            <entry key="Numeric" value="" />
+            <entry key="Date/Time" value="" />
+            <entry key="Value Formatter:" value="" />
+            <entry key="Default" value="" />
+            <entry key="Segmented Image Editor" value="" />
+            <entry key="Push Button" value="" />
+            <entry key="Check Box" value="" />
+            <entry key="Radio Box" value="" />
+            <entry key="Check Button" value="" />
+            <entry key="Radio Button" value="" />
+            <entry key="Marquee Progress..." value="" />
+            <entry key="Xml Files" value="" />
+            <entry key="Select file:" value="" />
+            <entry key="Footer" value="" />
+            <entry key="Parts And States" value="" />
+            <entry key="Properties" value="" />
+            <entry key="Style Properties" value="" />
+            <entry key="Part Properties" value="" />
+            <entry key="Live Element" value="" />
+            <entry key="New Theme" value="" />
+            <entry key="Open..." value="" />
+            <entry key="Open Existing Theme..." value="" />
+            <entry key="Save..." value="" />
+            <entry key="Saves the current theme to a file" value="" />
+            <entry key="Add Style Entry" value="" />
+            <entry key="Add new style entry" value="" />
+            <entry key="Remove Style Entry" value="" />
+            <entry key="Remove existing style entry" value="" />
+            <entry key="New..." value="" />
+            <entry key="Creates a new empty theme." value="" />
+            <entry key="Theme Designer" value="" />
+            <entry key="BMP (Windows bitmap)" value="" />
+            <entry key="GIF (Graphics Interchange Format )" value="" />
+            <entry key="JPEG (Joint Photographic Experts Group)" value="" />
+            <entry key="Quality" value="" />
+            <entry key="PNG (Portable Network Graphics)" value="" />
+            <entry key="TIFF (Tag Image File Format)" value="" />
+            <entry key="AutoCAD Drawing Interchange" value="" />
+            <entry key="EMF (Extended Metafile)" value="" />
+            <entry key="PDF (Portable Document Format)" value="" />
+            <entry key="SVG (Scalable Vector Graphics)" value="" />
+            <entry key="Adobe Flash" value="" />
+            <entry key="XAML (Extensible Application Markup Language)" value="" />
+            <entry key="(none)" value="" />
+            <entry key="Browse..." value="" />
+            <entry key="Backspace" value="" />
+            <entry key="CE" value="" />
+            <entry key="C" value="" />
+            <entry key="MC" value="" />
+            <entry key="sqrt" value="" />
+            <entry key="MR" value="" />
+            <entry key="MS" value="" />
+            <entry key="M+" value="" />
+            <entry key="&amp;More Colors..." value="" />
+            <entry key="Web" value="" />
+            <entry key="System" value="" />
+            <entry key="Red:" value="" />
+            <entry key="Blue:" value="" />
+            <entry key="Green:" value="" />
+            <entry key="HTML:" value="" />
+            <entry key="Transparency" value="" />
+            <entry key="Index" value="" />
+            <entry key="&amp;Customize..." value="" />
+            <entry key="Undo" value="" />
+            <entry key="Toolbar Options" value="" />
+            <entry key="&amp;Add/Remove Commands" value="" />
+            <entry key="&amp;Hidden Commands" value="" />
+            <entry key="&amp;Reset Toolbar" value="" />
+            <entry key="Sort &amp;Ascending" value="" />
+            <entry key="Sort &amp;Descending" value="" />
+            <entry key="Best &amp;Fit" value="" />
+            <entry key="Best Fit A&amp;ll" value="" />
+            <entry key="Choose &amp;Columns..." value="" />
+            <entry key="&amp;Move" value="" />
+            <entry key="&amp;Size" value="" />
+            <entry key="Mi&amp;nimize" value="" />
+            <entry key="&amp;Close" value="" />
+            <entry key="Yes" value="" />
+            <entry key="No" value="" />
+            <entry key="Abort" value="" />
+            <entry key="Retry" value="" />
+            <entry key="Ignore" value="" />
+            <entry key="Next &amp;Window" value="" />
+            <entry key="&amp;Previous Window" value="" />
+            <entry key="Show &amp;More Buttons" value="" />
+            <entry key="Show &amp;Fewer Buttons" value="" />
+            <entry key="Na&amp;vigation Pane Options..." value="" />
+            <entry key="&amp;Add or Remove Buttons" value="" />
+            <entry key="Collapse Pane" value="" />
+            <entry key="Expand Pane" value="" />
+            <entry key="Configure Buttons" value="" />
+            <entry key="Move &amp;Up" value="" />
+            <entry key="Move &amp;Down" value="" />
+            <entry key="&amp;Reset" value="" />
+            <entry key="Navigation Pane Options" value="" />
+            <entry key="Scroll Left" value="" />
+            <entry key="Scroll Right" value="" />
+            <entry key="Active Tabs" value="" />
+            <entry key="&amp;Undo" value="" />
+            <entry key="Can't Undo" value="" />
+            <entry key="&amp;Redo " value="" />
+            <entry key="Can't Redo" value="" />
+            <entry key="Cu&amp;t" value="" />
+            <entry key="&amp;Copy" value="" />
+            <entry key="&amp;Paste" value="" />
+            <entry key="&amp;Delete" value="" />
+            <entry key="Select &amp;All" value="" />
+            <entry key="&lt;Empty&gt;" value="" />
+            <entry key="&amp;Expand All" value="" />
+            <entry key="Expand By De&amp;pth" value="" />
+            <entry key="Collap&amp;se All" value="" />
+            <entry key="Co&amp;llapse By Depth" value="" />
+            <entry key="&amp;Best Fit" value="" />
+            <entry key="Best &amp;Fit (All Columns)" value="" />
+            <entry key="&amp;Group By This Column" value="" />
+            <entry key="Group By &amp;Box" value="" />
+            <entry key="&amp;Ungroup All" value="" />
+            <entry key="Best &amp;Fit (All Nodes)" value="" />
+            <entry key="Scroll Bar" value="" />
+            <entry key="Add panel" value="" />
+            <entry key="Dock" value="" />
+            <entry key="Cross" value="" />
+            <entry key="Best Visibility Dock" value="" />
+            <entry key="Auto Side Dock" value="" />
+            <entry key="Dock Polar" value="" />
+            <entry key="Cross Polar" value="" />
+            <entry key="Radar" value="" />
+            <entry key="Axis Anchor" value="" />
+            <entry key="Paging View" value="" />
+            <entry key="Content" value="" />
+            <entry key="Range" value="" />
+            <entry key="Page" value="" />
+            <entry key="Axis View" value="" />
+            <entry key="Move Up" value="" />
+            <entry key="Ordinal" value="" />
+            <entry key="Linear" value="" />
+            <entry key="Logarithmic" value="" />
+            <entry key="DateTime" value="" />
+            <entry key="TimeSpan" value="" />
+            <entry key="Price" value="" />
+            <entry key="Hierarchical" value="" />
+            <entry key="Value Timeline" value="" />
+            <entry key="Range Timeline" value="" />
+            <entry key="Angular" value="" />
+            <entry key="Table" value="" />
+            <entry key="Scale" value="" />
+            <entry key="Custom Angle:" value="" />
+            <entry key="Angle Mode:" value="" />
+            <entry key="Allow Label To Flip" value="" />
+            <entry key="Scale Label Angle" value="" />
+            <entry key="Length" value="" />
+            <entry key="Pointer" value="" />
+            <entry key="Vertical alignment:" value="" />
+            <entry key="Arrow dimensions" value="" />
+            <entry key="Format:" value="" />
+            <entry key="Text Style..." value="" />
+            <entry key="Arrow Stroke Style..." value="" />
+            <entry key="Model" value="" />
+            <entry key="Enable lighting" value="" />
+            <entry key="Local viewpoint lighting" value="" />
+            <entry key="Global ambient light:" value="" />
+            <entry key="Light sources" value="" />
+            <entry key="Predefined light scheme" value="" />
+            <entry key="Width" value="" />
+            <entry key="Height" value="" />
+            <entry key="Depth" value="" />
+            <entry key="Point shape:" value="" />
+            <entry key="Vertical align" value="" />
+            <entry key="Dimensions" value="" />
+            <entry key="Automatic depth" value="" />
+            <entry key="Perspective" value="" />
+            <entry key="Orthogonal" value="" />
+            <entry key="Projection" value="" />
+            <entry key="Y Depth:" value="" />
+            <entry key="X Depth:" value="" />
+            <entry key="Perspective angle:" value="" />
+            <entry key="Zoom:" value="" />
+            <entry key="Viewer rotation:" value="" />
+            <entry key="Elevation:" value="" />
+            <entry key="Rotation:" value="" />
+            <entry key="Predefined projections" value="" />
+            <entry key="Trackball" value="" />
+            <entry key="Zoom" value="" />
+            <entry key="Interactivity tool:" value="" />
+            <entry key="InteractivityToolComboBox" value="" />
+            <entry key="Preview Data" value="" />
+            <entry key="Data:" value="" />
+            <entry key="Data Sources:" value="" />
+            <entry key="Data Binding" value="" />
+            <entry key="Data Series:" value="" />
+            <entry key="Series:" value="" />
+            <entry key="Data Binding Wizard" value="" />
+            <entry key="Configure" value="" />
+            <entry key="Worksheet:" value="" />
+            <entry key="Entire" value="" />
+            <entry key="From:" value="" />
+            <entry key="To:" value="" />
+            <entry key="Range:" value="" />
+            <entry key="Microsoft Excel File:" value="" />
+            <entry key="Bind to Microsoft Excel File" value="" />
+            <entry key="Microsoft Excel Files" value="" />
+            <entry key="Use control dimensions" value="" />
+            <entry key="Copy to clipboard" value="" />
+            <entry key="Save to File..." value="" />
+            <entry key="Resolution:" value="" />
+            <entry key="Image Export" value="" />
+            <entry key="No installed printers" value="" />
+            <entry key="Page Setup" value="" />
+            <entry key="Print Preview" value="" />
+            <entry key="Print" value="" />
+            <entry key="Auto" value="" />
+            <entry key="Add row" value="" />
+            <entry key="Delete row" value="" />
+            <entry key="Add column" value="" />
+            <entry key="Delete column" value="" />
+            <entry key="Next page" value="" />
+            <entry key="Prev page" value="" />
+            <entry key="Nevron Chart Binary" value="" />
+            <entry key="Nevron Chart XML" value="" />
+            <entry key="Nevron Chart SOAP" value="" />
+            <entry key="Nevron Chart Custom Binary" value="" />
+            <entry key="Nevron Chart Custom XML" value="" />
+            <entry key="All Nevron Chart files" value="" />
+            <entry key="Chart" value="" />
+            <entry key="Legend" value="" />
+            <entry key="Labels" value="" />
+            <entry key="Lights" value="" />
+            <entry key="Axes" value="" />
+            <entry key="View" value="" />
+            <entry key="Chart Wizard" value="" />
+            <entry key="Currency" value="" />
+            <entry key="Percentage" value="" />
+            <entry key="Scientific" value="" />
+            <entry key="Date" value="" />
+            <entry key="Axis:" value="" />
+            <entry key="Show Axis" value="" />
+            <entry key="Axis Title:" value="" />
+            <entry key="Title Font..." value="" />
+            <entry key="Formatting:" value="" />
+            <entry key="Labels Layout:" value="" />
+            <entry key="Polar Axis" value="" />
+            <entry key="Radar Axis" value="" />
+            <entry key="Primary Y Axis" value="" />
+            <entry key="Secondary Y Axis" value="" />
+            <entry key="Primary X Axis" value="" />
+            <entry key="Secondary X Axis" value="" />
+            <entry key="Depth Axis" value="" />
+            <entry key="Single Fixed" value="" />
+            <entry key="Sunken" value="" />
+            <entry key="Raised" value="" />
+            <entry key="Sunken-Raised" value="" />
+            <entry key="Raised-Sunken" value="" />
+            <entry key="Common" value="" />
+            <entry key="Embed" value="" />
+            <entry key="Emboss" value="" />
+            <entry key="Rounded" value="" />
+            <entry key="RoundedBorder" value="" />
+            <entry key="Rectangular" value="" />
+            <entry key="Thin" value="" />
+            <entry key="Thick" value="" />
+            <entry key="OuterRounded" value="" />
+            <entry key="OpenLeft" value="" />
+            <entry key="OpenRight" value="" />
+            <entry key="Frame Color..." value="" />
+            <entry key="Predefined Border Style:" value="" />
+            <entry key="Chart Subtype:" value="" />
+            <entry key="Chart Type:" value="" />
+            <entry key="2D Charts" value="" />
+            <entry key="3D Charts" value="" />
+            <entry key="Bar" value="" />
+            <entry key="Line" value="" />
+            <entry key="Area" value="" />
+            <entry key="Pie" value="" />
+            <entry key="Point" value="" />
+            <entry key="Bubble" value="" />
+            <entry key="Stock" value="" />
+            <entry key="Float Bar" value="" />
+            <entry key="Grid Surface" value="" />
+            <entry key="Mesh Surface" value="" />
+            <entry key="Triangulated Surface" value="" />
+            <entry key="Polar" value="" />
+            <entry key="High-Low" value="" />
+            <entry key="Smooth Line" value="" />
+            <entry key="Venn" value="" />
+            <entry key="Step Line" value="" />
+            <entry key="Error Bar" value="" />
+            <entry key="Funnel" value="" />
+            <entry key="Box And Whiskers" value="" />
+            <entry key="Smooth Area" value="" />
+            <entry key="Kagi" value="" />
+            <entry key="Renko" value="" />
+            <entry key="Point and Figure" value="" />
+            <entry key="Three Line Break" value="" />
+            <entry key="Standard Bar" value="" />
+            <entry key="Bars with Different Colors" value="" />
+            <entry key="Cluster Bar" value="" />
+            <entry key="Stacked Bar" value="" />
+            <entry key="Stacked Percent Bar" value="" />
+            <entry key="Horizontal Bar" value="" />
+            <entry key="Horizontal Cluster" value="" />
+            <entry key="Horizontal Stacked" value="" />
+            <entry key="Horizontal Stacked Percent" value="" />
+            <entry key="Horizontal Zero Axis" value="" />
+            <entry key="Manhattan Chart" value="" />
+            <entry key="Smooth Edge Bar" value="" />
+            <entry key="Cones" value="" />
+            <entry key="Cylinders" value="" />
+            <entry key="Standard Line" value="" />
+            <entry key="Overlapped Lines" value="" />
+            <entry key="Stacked Lines" value="" />
+            <entry key="Stacked Percent Lines" value="" />
+            <entry key="Standard Line with Markers" value="" />
+            <entry key="Overlapped Lines with Markers" value="" />
+            <entry key="Stacked Lines with Markers" value="" />
+            <entry key="Stacked Percent with Markers" value="" />
+            <entry key="Tape" value="" />
+            <entry key="Standard Area" value="" />
+            <entry key="Stacked Area" value="" />
+            <entry key="Stacked Percent Area" value="" />
+            <entry key="Multiseries Area" value="" />
+            <entry key="Standard Pie" value="" />
+            <entry key="Torus" value="" />
+            <entry key="Exploded Pie" value="" />
+            <entry key="Smooth Edge Pie" value="" />
+            <entry key="Standard Point" value="" />
+            <entry key="Points with Different Colors" value="" />
+            <entry key="XY Scatter" value="" />
+            <entry key="XYZ Scatter" value="" />
+            <entry key="Bubbles with Different Colors" value="" />
+            <entry key="Bubble Zero Axes" value="" />
+            <entry key="Candle" value="" />
+            <entry key="High-Low-Close" value="" />
+            <entry key="Open-High-Low-Close" value="" />
+            <entry key="DateTime Candle" value="" />
+            <entry key="DateTime Stick" value="" />
+            <entry key="Vertical FloatBar" value="" />
+            <entry key="Horizontal FloatBar" value="" />
+            <entry key="Simple Gantt" value="" />
+            <entry key="Zoned Surface" value="" />
+            <entry key="Smooth Palette Zoned Surface" value="" />
+            <entry key="Contour Chart" value="" />
+            <entry key="Wireframe Surface" value="" />
+            <entry key="Radar Line" value="" />
+            <entry key="Radar Line with Markers" value="" />
+            <entry key="Radar Area" value="" />
+            <entry key="Radar Area with Markers" value="" />
+            <entry key="Polar Point" value="" />
+            <entry key="Polar Line" value="" />
+            <entry key="Polar Line With Markers" value="" />
+            <entry key="Polar Area" value="" />
+            <entry key="Polar Area with Markers" value="" />
+            <entry key="XY Scatter Bar" value="" />
+            <entry key="XYZ Scatter Bar" value="" />
+            <entry key="XYZ Scatter Bubble" value="" />
+            <entry key="Standard High-Low" value="" />
+            <entry key="XY High-Low" value="" />
+            <entry key="XY Smooth Line" value="" />
+            <entry key="XYZ Smooth Line" value="" />
+            <entry key="Smooth Line with Markers" value="" />
+            <entry key="XY Smooth Line with Markers" value="" />
+            <entry key="XYZ Smooth Line with Markers" value="" />
+            <entry key="Two Set Venn" value="" />
+            <entry key="Three Set Venn" value="" />
+            <entry key="Four Set Venn" value="" />
+            <entry key="Five Set Venn" value="" />
+            <entry key="Standard Step Line" value="" />
+            <entry key="Step Line with Markers" value="" />
+            <entry key="Y error bars" value="" />
+            <entry key="XY error bars" value="" />
+            <entry key="XYZ error bars" value="" />
+            <entry key="Y error bars with markers" value="" />
+            <entry key="XY error bars with markers" value="" />
+            <entry key="XYZ error bars with markers" value="" />
+            <entry key="Standard Funnel" value="" />
+            <entry key="Funnel with custom X sizes" value="" />
+            <entry key="XY Smooth Area" value="" />
+            <entry key="Smooth Area with Markers" value="" />
+            <entry key="XY Smooth Area with Markers" value="" />
+            <entry key="Header" value="" />
+            <entry key="Label:" value="" />
+            <entry key="Font..." value="" />
+            <entry key="NRectangle" value="" />
+            <entry key="Ellipse" value="" />
+            <entry key="Cut-edge rectangle" value="" />
+            <entry key="Smooth-edge rectangle" value="" />
+            <entry key="Backplane Color..." value="" />
+            <entry key="Horizontal Position:" value="" />
+            <entry key="Center" value="" />
+            <entry key="Left" value="" />
+            <entry key="Right" value="" />
+            <entry key="Backplane Style:" value="" />
+            <entry key="Label Text:" value="" />
+            <entry key="Header Text:" value="" />
+            <entry key="Legend Position:" value="" />
+            <entry key="Top" value="" />
+            <entry key="Bottom" value="" />
+            <entry key="Top-Right" value="" />
+            <entry key="Top-Left" value="" />
+            <entry key="Bottom-Right" value="" />
+            <entry key="Bottom-Left" value="" />
+            <entry key="Legend Data Mode:" value="" />
+            <entry key="Show Legend Shadow" value="" />
+            <entry key="Show Legend" value="" />
+            <entry key="Legend Color..." value="" />
+            <entry key="Data Items" value="" />
+            <entry key="Custom Data" value="" />
+            <entry key="Series" value="" />
+            <entry key="Predefined Light Scheme:" value="" />
+            <entry key="No Lights" value="" />
+            <entry key="Soft Top Left" value="" />
+            <entry key="Soft Frontal" value="" />
+            <entry key="Soft Top Right" value="" />
+            <entry key="Shiny Top Left" value="" />
+            <entry key="Shiny Frontal" value="" />
+            <entry key="Shiny Top Right" value="" />
+            <entry key="Metallic Lustre" value="" />
+            <entry key="Northern Lights" value="" />
+            <entry key="Orthogonal Elevated" value="" />
+            <entry key="Orthogonal Horizontal Left" value="" />
+            <entry key="Orthogonal Horizontal Right" value="" />
+            <entry key="Orthogonal Half" value="" />
+            <entry key="Orthogonal Half Horizontal Left" value="" />
+            <entry key="Orthogonal Half Horizontal Right" value="" />
+            <entry key="Orthogonal Half Rotated" value="" />
+            <entry key="Orthogonal Half Elevated" value="" />
+            <entry key="Orthogonal Top" value="" />
+            <entry key="Perspective Horizontal Left" value="" />
+            <entry key="Perspective Horizontal Right" value="" />
+            <entry key="Perspective Rotated" value="" />
+            <entry key="Perspective Elevated" value="" />
+            <entry key="Perspective Tilted" value="" />
+            <entry key="Predefined Projection:" value="" />
+            <entry key="Left Margin:" value="" />
+            <entry key="Right Margin:" value="" />
+            <entry key="Top Margin:" value="" />
+            <entry key="Bottom Margin:" value="" />
+            <entry key="Fit" value="" />
+            <entry key="Stretch" value="" />
+            <entry key="Bounds Mode:" value="" />
+            <entry key="Predefined Position:" value="" />
+            <entry key="Add Custom Axis" value="" />
+            <entry key="FrontLeft" value="" />
+            <entry key="FrontRight" value="" />
+            <entry key="BackRight" value="" />
+            <entry key="FrontBottom" value="" />
+            <entry key="FrontTop" value="" />
+            <entry key="BackTop" value="" />
+            <entry key="Value Axis" value="" />
+            <entry key="Angle Axis" value="" />
+            <entry key="Stripes" value="" />
+            <entry key="Const Lines" value="" />
+            <entry key="Cursors" value="" />
+            <entry key="Panels" value="" />
+            <entry key="Settings" value="" />
+            <entry key="Range Selections" value="" />
+            <entry key="PrimaryX" value="" />
+            <entry key="SecondaryX" value="" />
+            <entry key="Both" value="" />
+            <entry key="PrimaryY" value="" />
+            <entry key="SecondaryY" value="" />
+            <entry key="Data Points" value="" />
+            <entry key="Scale Series on Custom Axes" value="" />
+            <entry key="Scale Series on Standard Axes" value="" />
+            <entry key="Y Axes:" value="" />
+            <entry key="X Axes:" value="" />
+            <entry key="Empty Data Points" value="" />
+            <entry key="CustomAxis" value="" />
+            <entry key="Add Cartesian Series" value="" />
+            <entry key="Walls" value="" />
+            <entry key="Legend Items" value="" />
+            <entry key="Interlace Styles" value="" />
+            <entry key="Strips" value="" />
+            <entry key="Show Appearance Data" value="" />
+            <entry key="Show Interactivity Data" value="" />
+            <entry key="Update Grid From Series" value="" />
+            <entry key="Update Series From Grid" value="" />
+            <entry key="Binds the Chart to the Grid" value="" />
+            <entry key="Select Series..." value="" />
+            <entry key="Data for Chart" value="" />
+            <entry key="and Series" value="" />
+            <entry key="Redo" value="" />
+            <entry key="Decrease Chart Depth" value="" />
+            <entry key="Decrease Chart Height" value="" />
+            <entry key="Decrease Chart Width" value="" />
+            <entry key="Increase Chart Depth" value="" />
+            <entry key="Increase Chart Height" value="" />
+            <entry key="Increase Chart Width" value="" />
+            <entry key="Predefined Light Model" value="" />
+            <entry key="Toggle Lighting" value="" />
+            <entry key="View 2D" value="" />
+            <entry key="Elevation Down" value="" />
+            <entry key="Elevation Up" value="" />
+            <entry key="Orthogonal Projection" value="" />
+            <entry key="Perspective Projection" value="" />
+            <entry key="Predefined Projection" value="" />
+            <entry key="Rotate Left" value="" />
+            <entry key="Rotate Right" value="" />
+            <entry key="Toggle 3D" value="" />
+            <entry key="Viewer Rotation Left" value="" />
+            <entry key="Viewer Rotation Right" value="" />
+            <entry key="Render Surface" value="" />
+            <entry key="Background Fill Style" value="" />
+            <entry key="Background Frame Style" value="" />
+            <entry key="Nudge Down" value="" />
+            <entry key="Nudge Left" value="" />
+            <entry key="Nudge Right" value="" />
+            <entry key="Nudge Up" value="" />
+            <entry key="Apply Style Sheet" value="" />
+            <entry key="Export Chart Image" value="" />
+            <entry key="Open" value="" />
+            <entry key="Save" value="" />
+            <entry key="Show Chart Editor" value="" />
+            <entry key="Show Chart Wizard" value="" />
+            <entry key="Mouse Offset" value="" />
+            <entry key="Mouse Select" value="" />
+            <entry key="Mouse Zoom" value="" />
+            <entry key="Render Device" value="" />
+            <entry key="All" value="" />
+            <entry key="Data source is not open" value="" />
+            <entry key="The importer is not in importing state" value="" />
+            <entry key="The Document must be specified before you call the Import method" value="" />
+            <entry key="The Document must have an active layer before you call the Import method" value="" />
+            <entry key="The VertexShapesFactory must be specified before you call the Import method" value="" />
+            <entry key="The VertexShapesFactory must be able to create shapes with the {0} name" value="" />
+            <entry key="The EdgeShapesFactory must be able to create shapes with the {0} name" value="" />
+            <entry key="Import is not reentrant" value="" />
+            <entry key="Import must be started before it is ended" value="" />
+            <entry key="The VertexDataSource must be specified before you call the Import method" value="" />
+            <entry key="The EdgeDataSource must be specified before you call the Import method" value="" />
+            <entry key="The VertexIdColumnName must be specified before you call the Import method" value="" />
+            <entry key="The FromVertexIdColumnName must be specified before you call the Import method" value="" />
+            <entry key="The ToVertexIdColumnName must be specified before you call the Import method" value="" />
+            <entry key="The DataSource must be specified before you call the Import method" value="" />
+            <entry key="The IdColumnName must be specified before you call the Import method" value="" />
+            <entry key="The ParentIdColumnName must be specified before you call the Import method" value="" />
+            <entry key="Connectors size width and height must not be 0" value="" />
+            <entry key="Select new element type:" value="" />
+            <entry key="Add Element" value="" />
+            <entry key="Bridge Manager Editor" value="" />
+            <entry key="Content alignment editor" value="" />
+            <entry key="Bottom Center" value="" />
+            <entry key="Bottom Left" value="" />
+            <entry key="Bottom Right" value="" />
+            <entry key="Middle Center" value="" />
+            <entry key="Middle Left" value="" />
+            <entry key="Middle Right" value="" />
+            <entry key="Top Center " value="" />
+            <entry key="Top Left " value="" />
+            <entry key="Top Right" value="" />
+            <entry key="of type" value="" />
+            <entry key="The cloned object must have a default constructor" value="" />
+            <entry key="Invalid id specified" value="" />
+            <entry key="Drawing Settings Editor" value="" />
+            <entry key="Show" value="" />
+            <entry key="Ports" value="" />
+            <entry key="Guidelines" value="" />
+            <entry key="Arrowheads" value="" />
+            <entry key="Shadows" value="" />
+            <entry key="Global visibility editor" value="" />
+            <entry key="Compositing mode:" value="" />
+            <entry key="Interpolation mode:" value="" />
+            <entry key="Pixel offset mode:" value="" />
+            <entry key="Text contrast:" value="" />
+            <entry key="Text rendering hint:" value="" />
+            <entry key="Compositing quality:" value="" />
+            <entry key="Rendering origin X:" value="" />
+            <entry key="Rendering origin Y:" value="" />
+            <entry key="Shape 1D" value="" />
+            <entry key="Shape 2D" value="" />
+            <entry key="Rotation" value="" />
+            <entry key="Bounds" value="" />
+            <entry key="Mid points" value="" />
+            <entry key="Points" value="" />
+            <entry key="Load Predefined:" value="" />
+            <entry key="Rotated bounds" value="" />
+            <entry key="Plugs" value="" />
+            <entry key="Control points" value="" />
+            <entry key="Pin point" value="" />
+            <entry key="Geometry Points" value="" />
+            <entry key="Bounds and rotation" value="" />
+            <entry key="Shape points" value="" />
+            <entry key="Interaction style editor" value="" />
+            <entry key="Interactivie Appearance Editor" value="" />
+            <entry key="All:" value="" />
+            <entry key="The control points collection is not created. Do you want to create it now?" value="" />
+            <entry key="Create control points collection?" value="" />
+            <entry key="The ports collection is not created. Do you want to create it now?" value="" />
+            <entry key="Create ports collection?" value="" />
+            <entry key="The label collection is not created. Do you want to create it now?" value="" />
+            <entry key="Create labels collection?" value="" />
+            <entry key="The decorator collection is not created. Do you want to create it now?" value="" />
+            <entry key="Protect from" value="" />
+            <entry key="Protection editor" value="" />
+            <entry key="Routing Manager Editor" value="" />
+            <entry key="Snap Strength Editor" value="" />
+            <entry key="Snap to" value="" />
+            <entry key="Rulers" value="" />
+            <entry key="Grid" value="" />
+            <entry key="Snap targets editor" value="" />
+            <entry key="Translate with" value="" />
+            <entry key="Translation slaves editor" value="" />
+            <entry key="Save To File..." value="" />
+            <entry key="AutoCAD Exporter" value="" />
+            <entry key="Deflate" value="" />
+            <entry key="Edit padding..." value="" />
+            <entry key="Inflate" value="" />
+            <entry key="Load known bounds:" value="" />
+            <entry key="Export Bounds" value="" />
+            <entry key="Image Options" value="" />
+            <entry key="Copy To Clipboard" value="" />
+            <entry key="Export Drawing To Image File" value="" />
+            <entry key="Image Exporter" value="" />
+            <entry key="Graphics Settings..." value="" />
+            <entry key="Grayscale" value="" />
+            <entry key="Back color:" value="" />
+            <entry key="Emf Files" value="" />
+            <entry key="Exif Files" value="" />
+            <entry key="Icon Files" value="" />
+            <entry key="Wmf Files" value="" />
+            <entry key="PDF files" value="" />
+            <entry key="A0" value="" />
+            <entry key="A1" value="" />
+            <entry key="A2" value="" />
+            <entry key="A3" value="" />
+            <entry key="A4" value="" />
+            <entry key="A5" value="" />
+            <entry key="RA0" value="" />
+            <entry key="RA1" value="" />
+            <entry key="RA2" value="" />
+            <entry key="RA3" value="" />
+            <entry key="RA4" value="" />
+            <entry key="RA5" value="" />
+            <entry key="B0" value="" />
+            <entry key="B1" value="" />
+            <entry key="B2" value="" />
+            <entry key="B3" value="" />
+            <entry key="B4" value="" />
+            <entry key="B5" value="" />
+            <entry key="Quarto" value="" />
+            <entry key="Foolscap" value="" />
+            <entry key="Executive" value="" />
+            <entry key="GovernmentLetter" value="" />
+            <entry key="Letter" value="" />
+            <entry key="Legal" value="" />
+            <entry key="Ledger" value="" />
+            <entry key="Tabloid" value="" />
+            <entry key="Post" value="" />
+            <entry key="Crown" value="" />
+            <entry key="LargePost" value="" />
+            <entry key="Demy" value="" />
+            <entry key="Medium" value="" />
+            <entry key="Royal" value="" />
+            <entry key="Elephant" value="" />
+            <entry key="DoubleDemy" value="" />
+            <entry key="QuadDemy" value="" />
+            <entry key="STMT" value="" />
+            <entry key="Folio" value="" />
+            <entry key="Statement" value="" />
+            <entry key="Size10x14" value="" />
+            <entry key="Compress contents" value="" />
+            <entry key="Page Setup (in points)" value="" />
+            <entry key="Margins" value="" />
+            <entry key="Page Size:" value="" />
+            <entry key="Zoom %:" value="" />
+            <entry key="Layout" value="" />
+            <entry key="Page Rows:" value="" />
+            <entry key="Page Columns:" value="" />
+            <entry key="PDF Exporter" value="" />
+            <entry key="Update preview" value="" />
+            <entry key="pixels" value="" />
+            <entry key="Image not available" value="" />
+            <entry key="Flash movies" value="" />
+            <entry key="Silverlight XAML files" value="" />
+            <entry key="Frames per second:" value="" />
+            <entry key="Flash Exporter" value="" />
+            <entry key="Xaml Exporter" value="" />
+            <entry key="Embed Images" value="" />
+            <entry key="Svg Exporter" value="" />
+            <entry key="Svg Files" value="" />
+            <entry key="Name Column:" value="" />
+            <entry key="Text Column:" value="" />
+            <entry key="Min Zoom:" value="" />
+            <entry key="Max Zoom:" value="" />
+            <entry key="Fill Column:" value="" />
+            <entry key="Start Color:" value="" />
+            <entry key="Color Count:" value="" />
+            <entry key="Shapefiles:" value="" />
+            <entry key="Remove" value="" />
+            <entry key="Add..." value="" />
+            <entry key="Settings:" value="" />
+            <entry key="Standard parallel:" value="" />
+            <entry key="Import in multiple layers:" value="" />
+            <entry key="Map projection:" value="" />
+            <entry key="Parallels render mode:" value="" />
+            <entry key="Meridians render mode:" value="" />
+            <entry key="Represents world map:" value="" />
+            <entry key="Select shapefiles" value="" />
+            <entry key="Map Importer" value="" />
+            <entry key="Fine" value="" />
+            <entry key="Normal" value="" />
+            <entry key="Coarse" value="" />
+            <entry key="ESRI shapefiles" value="" />
+            <entry key="Central meridian:" value="" />
+            <entry key="One page" value="" />
+            <entry key="Two pages" value="" />
+            <entry key="Three pages" value="" />
+            <entry key="Four pages" value="" />
+            <entry key="Six pages" value="" />
+            <entry key="All pages" value="" />
+            <entry key="Print Layout:" value="" />
+            <entry key="Display Page:" value="" />
+            <entry key="Show:" value="" />
+            <entry key="Print..." value="" />
+            <entry key="Page Setup..." value="" />
+            <entry key="Automatic" value="" />
+            <entry key="Custom Name:" value="" />
+            <entry key="Start arrowhead style editor" value="" />
+            <entry key="End arrowhead style editor" value="" />
+            <entry key="Bridge style editor" value="" />
+            <entry key="Failed to save DXF file. Exception was: " value="" />
+            <entry key="Failed to save DXF file" value="" />
+            <entry key="Must be positive and non zero" value="" />
+            <entry key="Failed to save SWF file. Exception was: " value="" />
+            <entry key="Failed to save SWF file" value="" />
+            <entry key="Failed to render bitmap." value="" />
+            <entry key="Failed to render bitmap. Exception was: " value="" />
+            <entry key="Failed to set clipboard content. Exception was: " value="" />
+            <entry key="Failed to set clipboard content." value="" />
+            <entry key="Failed to save image file. Exception was: " value="" />
+            <entry key="Failed to save image file." value="" />
+            <entry key="Failed to save pdf file. Exception was: " value="" />
+            <entry key="Failed to save PDF file" value="" />
+            <entry key="Nevron Library Binary" value="" />
+            <entry key="Nevron Library XML" value="" />
+            <entry key="Nevron Library SOAP" value="" />
+            <entry key="All files" value="" />
+            <entry key="The selected file is not from a recognized format" value="" />
+            <entry key="Nevron Drawing Binary" value="" />
+            <entry key="Nevron Drawing XML" value="" />
+            <entry key="Nevron Drawing SOAP" value="" />
+            <entry key="Nevron Drawing Custom Binary" value="" />
+            <entry key="Nevron Drawing Custom XML" value="" />
+            <entry key="You cannot pass a null drawing to this constructor" value="" />
+            <entry key="Printer settings are not valid. Check whether printer is installed" value="" />
+            <entry key="Failed to save SVG file. Exception was: " value="" />
+            <entry key="Failed to save SVG file" value="" />
+            <entry key="Diagram Event Sink Service" value="" />
+            <entry key="Diagram Smart Paint Service" value="" />
+            <entry key="Document Event Sink Service" value="" />
+            <entry key="Document History Service" value="" />
+            <entry key="Library Image Factory Service" value="" />
+            <entry key="Drawing Smart Paint Service" value="" />
+            <entry key="Drawing Trackers Service" value="" />
+            <entry key="AutoBoundsMode change" value="" />
+            <entry key="AutoBoundsPadding change" value="" />
+            <entry key="AutoBoundsMinSize change" value="" />
+            <entry key="First vertical change" value="" />
+            <entry key="Define Model" value="" />
+            <entry key="Arrow connector type change" value="" />
+            <entry key="Shape type change" value="" />
+            <entry key="Route automatically change" value="" />
+            <entry key="Connections changed" value="" />
+            <entry key="Show All" value="" />
+            <entry key="Hide All" value="" />
+            <entry key="Routable connector type change" value="" />
+            <entry key="Update model bounds" value="" />
+            <entry key="Show elements" value="" />
+            <entry key="Hide elements" value="" />
+            <entry key="Delete elements" value="" />
+            <entry key="Insert elements" value="" />
+            <entry key="Align to grid" value="" />
+            <entry key="Align lefts" value="" />
+            <entry key="Align rights" value="" />
+            <entry key="Align tops" value="" />
+            <entry key="Align bottoms" value="" />
+            <entry key="Align centers" value="" />
+            <entry key="Align middles" value="" />
+            <entry key="Size to grid" value="" />
+            <entry key="Make same width" value="" />
+            <entry key="Make same height" value="" />
+            <entry key="Make same size" value="" />
+            <entry key="Increase width" value="" />
+            <entry key="Increase height" value="" />
+            <entry key="Decrease width" value="" />
+            <entry key="Decrease height" value="" />
+            <entry key="Make horizontal spacing equal" value="" />
+            <entry key="Increase horizontal spacing" value="" />
+            <entry key="Decrease horizontal spacing" value="" />
+            <entry key="Remove horizontal spacing" value="" />
+            <entry key="Make vertical spacing equal" value="" />
+            <entry key="Increase vertical spacing" value="" />
+            <entry key="Decrease vertical spacing" value="" />
+            <entry key="Remove vertical spacing" value="" />
+            <entry key="Center horizontally" value="" />
+            <entry key="Center vertically" value="" />
+            <entry key="Change stroke style" value="" />
+            <entry key="Change shadow style" value="" />
+            <entry key="Change fill style" value="" />
+            <entry key="Change text style" value="" />
+            <entry key="Horizontal text align left" value="" />
+            <entry key="Horizontal text align right" value="" />
+            <entry key="Horizontal text align center" value="" />
+            <entry key="Vertical text align top" value="" />
+            <entry key="Vertical text align bottom" value="" />
+            <entry key="Vertical text align middle" value="" />
+            <entry key="Change bridge style" value="" />
+            <entry key="Change start arrowhead style" value="" />
+            <entry key="Change end arrowhead style" value="" />
+            <entry key="Change point style" value="" />
+            <entry key="Change interactivity" value="" />
+            <entry key="Change style" value="" />
+            <entry key="Change protection" value="" />
+            <entry key="Change interaction style" value="" />
+            <entry key="Remove all nodes" value="" />
+            <entry key="Move elements" value="" />
+            <entry key="Edit plug" value="" />
+            <entry key="Edit port" value="" />
+            <entry key="Edit point" value="" />
+            <entry key="Ungroup" value="" />
+            <entry key="Compose" value="" />
+            <entry key="Decompose" value="" />
+            <entry key="Drop elements" value="" />
+            <entry key="Paste elements" value="" />
+            <entry key="Reroute" value="" />
+            <entry key="Reflex" value="" />
+            <entry key="Modify control point" value="" />
+            <entry key="Reverse" value="" />
+            <entry key="Reverse model" value="" />
+            <entry key="Properties change" value="" />
+            <entry key="Composite change" value="" />
+            <entry key="Inplace Edit" value="" />
+            <entry key="Create connector" value="" />
+            <entry key="Replace primitive" value="" />
+            <entry key="Flip horizontal" value="" />
+            <entry key="Flip vertical" value="" />
+            <entry key="Rotate left" value="" />
+            <entry key="Rotate right" value="" />
+            <entry key="Bring forward" value="" />
+            <entry key="Bring to front" value="" />
+            <entry key="Send backward" value="" />
+            <entry key="Send to back" value="" />
+            <entry key="Merge points" value="" />
+            <entry key="Cut" value="" />
+            <entry key="Copy" value="" />
+            <entry key="Paste" value="" />
+            <entry key="Duplicate" value="" />
+            <entry key="Reorder masters" value="" />
+            <entry key="Scale model" value="" />
+            <entry key="Create shape elements" value="" />
+            <entry key="Destroy shape elements" value="" />
+            <entry key="Change routable connector type" value="" />
+            <entry key="Change start point" value="" />
+            <entry key="Change end point" value="" />
+            <entry key="Connect connection points" value="" />
+            <entry key="Disconnect connection points" value="" />
+            <entry key="Disconnect connected points" value="" />
+            <entry key="Size to text" value="" />
+            <entry key="Expand" value="" />
+            <entry key="Collapse" value="" />
+            <entry key="Connect elements" value="" />
+            <entry key="Import connections" value="" />
+            <entry key="Disconnect elements" value="" />
+            <entry key="Pause/resume routing manager" value="" />
+            <entry key="Pause/resume bridge manager" value="" />
+            <entry key="Single Arrow" value="" />
+            <entry key="Double Arrow" value="" />
+            <entry key="Dynamic HV" value="" />
+            <entry key="Dynamic Polyline" value="" />
+            <entry key="Erm" value="" />
+            <entry key="Dynamic Curve" value="" />
+            <entry key="Size to Content" value="" />
+            <entry key="Inflate to Content" value="" />
+            <entry key="Modify elliptical arc center" value="" />
+            <entry key="Modify x-axis angle and axes ratio" value="" />
+            <entry key="Modify geometry control point" value="" />
+            <entry key="Modify base point" value="" />
+            <entry key="Drag to move segment" value="" />
+            <entry key="SHIFT+Drag to split segment" value="" />
+            <entry key="Start plug" value="" />
+            <entry key="End plug" value="" />
+            <entry key="Plug point" value="" />
+            <entry key="Element and/or element ancestors protection or properties prevent complete execution of this command" value="" />
+            <entry key="Element and/or element ancestors protection or properties prevent the execution of this command" value="" />
+            <entry key="Elliptical Grid" value="" />
+            <entry key="Rectangular Grid" value="" />
+            <entry key="Triangular Grid" value="" />
+            <entry key="Random Graph" value="" />
+            <entry key="Family Tree" value="" />
+            <entry key="Generic Tree" value="" />
+            <entry key="Silverlight Exporter" value="" />
+            <entry key="Failed to save silverlight file. Exception was: " value="" />
+            <entry key="Failed to save Silverlight file" value="" />
+            <entry key="Diagram Designer" value="" />
+            <entry key="Library Browser" value="" />
+            <entry key="Pan and Zoom" value="" />
+            <entry key="Property Browser" value="" />
+            <entry key="Template Properties" value="" />
+            <entry key="Template Wizard" value="" />
+            <entry key="Select Template" value="" />
+            <entry key="Elliptical grid graph with {0} nodes on the rim." value="" />
+            <entry key="Has center node." value="" />
+            <entry key="Each node is connected with the next node on the rim." value="" />
+            <entry key="Each node is also connected with the center node." value="" />
+            <entry key="Generates a random graph with {0} vertices and {1} edges." value="" />
+            <entry key="The number of edges must be greater than or equal to the (number of vertices - 1) in order to generate a connected graph" value="" />
+            <entry key="Too many edges wanted for the graph" value="" />
+            <entry key="Rectangular grid graph with {0} columns and {1} rows." value="" />
+            <entry key="Each cell is connected with the horizontally and vertically adjacent cells." value="" />
+            <entry key="Triangular grid graph with {0} levels." value="" />
+            <entry key="Each cell has two child cells and is connected with them as well as with the adjacent cells from the same level." value="" />
+            <entry key="Family tree with two parents and " value="" />
+            <entry key="Tree with {0} levels and {1} branch elements." value="" />
+            <entry key="Create elliptical arc tool" value="" />
+            <entry key="Create circular arc tool" value="" />
+            <entry key="Create bezier curve tool" value="" />
+            <entry key="Create bridgeable polyline tool" value="" />
+            <entry key="Create bridgeable HV polyline tool" value="" />
+            <entry key="Create closed curve tool" value="" />
+            <entry key="Create curve tool" value="" />
+            <entry key="Create double arrow tool" value="" />
+            <entry key="Create ellipse tool" value="" />
+            <entry key="Create connector tool" value="" />
+            <entry key="Create shape" value="" />
+            <entry key="Create guideline tool" value="" />
+            <entry key="Create line tool" value="" />
+            <entry key="Create bridgeable line tool" value="" />
+            <entry key="Create polygon tool" value="" />
+            <entry key="Create polyline tool" value="" />
+            <entry key="Create rectangle tool" value="" />
+            <entry key="Create single arrow tool" value="" />
+            <entry key="Handle tool" value="" />
+            <entry key="Context menu tool" value="" />
+            <entry key="Mouse wheel scroll and zoom tool" value="" />
+            <entry key="Keyboard tool" value="" />
+            <entry key="Mouse event delegator tool" value="" />
+            <entry key="Drag drop event delegator tool" value="" />
+            <entry key="Keyboard event delegator tool" value="" />
+            <entry key="Selector tool" value="" />
+            <entry key="Move tool" value="" />
+            <entry key="Drag drop target tool" value="" />
+            <entry key="Pan tool" value="" />
+            <entry key="Create text tool" value="" />
+            <entry key="Inplace edit tool" value="" />
+            <entry key="Viewport pan tool" value="" />
+            <entry key="Library selector tool" value="" />
+            <entry key="Library keyboard tool" value="" />
+            <entry key="Library move tool" value="" />
+            <entry key="Library context menu tool" value="" />
+            <entry key="Library drop target tool" value="" />
+            <entry key="Library tooltips tool" value="" />
+            <entry key="Library mouse wheel scroll tool" value="" />
+            <entry key="Change pin point" value="" />
+            <entry key="Snap to geometry point" value="" />
+            <entry key="Snap to port" value="" />
+            <entry key="Connect to port" value="" />
+            <entry key="Drag the element onto the drawing" value="" />
+            <entry key="Format" value="" />
+            <entry key="Action" value="" />
+            <entry key="Main Menu" value="" />
+            <entry key="File" value="" />
+            <entry key="Tools" value="" />
+            <entry key="Help" value="" />
+            <entry key="Library" value="" />
+            <entry key="Do you want to save your changes?" value="" />
+            <entry key="Save your changes" value="" />
+            <entry key="Nudge bottom" value="" />
+            <entry key="Nudge left" value="" />
+            <entry key="Nudge right" value="" />
+            <entry key="Nudge top" value="" />
+            <entry key="Background" value="" />
+            <entry key="Layers" value="" />
+            <entry key="Style sheets" value="" />
+            <entry key="Select All 1D Shapes" value="" />
+            <entry key="Select All 2D Shapes" value="" />
+            <entry key="Select All" value="" />
+            <entry key="Autocad Export" value="" />
+            <entry key="Exit" value="" />
+            <entry key="Flash Export" value="" />
+            <entry key="Map Import" value="" />
+            <entry key="PDF Export" value="" />
+            <entry key="Silverlight Export" value="" />
+            <entry key="Svg Export" value="" />
+            <entry key="Align text bottom" value="" />
+            <entry key="Align text center" value="" />
+            <entry key="Align text left" value="" />
+            <entry key="Align text middle" value="" />
+            <entry key="Align text right" value="" />
+            <entry key="Align text top" value="" />
+            <entry key="Bridge style" value="" />
+            <entry key="End arrowhead style" value="" />
+            <entry key="Protection" value="" />
+            <entry key="Start arrowhead style" value="" />
+            <entry key="About" value="" />
+            <entry key="Template" value="" />
+            <entry key="Center in document horizontally" value="" />
+            <entry key="Center in document vertically" value="" />
+            <entry key="Layout Shapes" value="" />
+            <entry key="Close library" value="" />
+            <entry key="Icons and Details" value="" />
+            <entry key="Icons and Names" value="" />
+            <entry key="Icons Only" value="" />
+            <entry key="List" value="" />
+            <entry key="Thumbnails" value="" />
+            <entry key="New library" value="" />
+            <entry key="Open library" value="" />
+            <entry key="Save library" value="" />
+            <entry key="Align" value="" />
+            <entry key="Composition" value="" />
+            <entry key="Grouping" value="" />
+            <entry key="Nudge" value="" />
+            <entry key="Operations" value="" />
+            <entry key="Order" value="" />
+            <entry key="Rotate or Flip" value="" />
+            <entry key="Spacing" value="" />
+            <entry key="Customize" value="" />
+            <entry key="Bezier curve tool" value="" />
+            <entry key="Circular arc tool" value="" />
+            <entry key="Closed curve tool" value="" />
+            <entry key="Curve tool" value="" />
+            <entry key="Ellipse tool" value="" />
+            <entry key="Elliptical arc tool" value="" />
+            <entry key="Line tool" value="" />
+            <entry key="Polygon tool" value="" />
+            <entry key="Polyline tool" value="" />
+            <entry key="Rectangle tool" value="" />
+            <entry key="Text tool" value="" />
+            <entry key="Pointer tool" value="" />
+            <entry key="Options" value="" />
+            <entry key="Connector tool" value="" />
+            <entry key="Bezier" value="" />
+            <entry key="Side to Top/Bottom" value="" />
+            <entry key="Top/Bottom to Side" value="" />
+            <entry key="Side to Side" value="" />
+            <entry key="Top to Bottom" value="" />
+            <entry key="Snap rotation" value="" />
+            <entry key="Snap to guidelines" value="" />
+            <entry key="Snap to rulers" value="" />
+            <entry key="Status bar" value="" />
+            <entry key="Zoom Percent" value="" />
+            <entry key="Grid style" value="" />
+            <entry key="Interlaced" value="" />
+            <entry key="Interlaced horizontally" value="" />
+            <entry key="Interlaced vertically" value="" />
+            <entry key="Major dots" value="" />
+            <entry key="Major lines" value="" />
+            <entry key="Major minor lines" value="" />
+            <entry key="Render Technology" value="" />
+            <entry key="GDI+" value="" />
+            <entry key="OpenGL Hardware" value="" />
+            <entry key="OpenGL Software" value="" />
+            <entry key="View layout" value="" />
+            <entry key="Stretch to height" value="" />
+            <entry key="Stretch to width" value="" />
+            <entry key="Selection Anchor" value="" />
+            <entry key="Document" value="" />
+            <entry key="Active Layer" value="" />
+            <entry key="Grid Editor" value="" />
+            <entry key="Horizontal Ruler Editor" value="" />
+            <entry key="Vertical Ruler Editor" value="" />
+            <entry key="Snapping Manager Editor" value="" />
+            <entry key="Trackers Appearance Editor" value="" />
+            <entry key="Item size width and height must not be 0" value="" />
+            <entry key="The specified group is not opened in this library browser" value="" />
+            <entry key="Visit Nevron Website" value="" />
+            <entry key="About Nevron Diagram for .NET" value="" />
+            <entry key="Selection" value="" />
+            <entry key="Apply to:" value="" />
+            <entry key="Diagram Options" value="" />
+            <entry key="Mouse pos" value="" />
+            <entry key="Selection bounds" value="" />
+            <entry key="Ready" value="" />
+            <entry key="Double click and type your text" value="" />
+            <entry key="Origin" value="" />
+            <entry key="Cell Size" value="" />
+            <entry key="Units" value="" />
+        </dictionary>
+        <dictionary name="User Interface">
+            <entry key="&amp;Restore" value="" />
+            <entry key="Ma&amp;ximize" value="" />
+            <entry key="&amp;Hide" value="" />
+            <entry key="Restore" value="" />
+            <entry key="Maximize" value="" />
+            <entry key="&amp;Auto Hide" value="" />
+            <entry key="Permissions" value="" />
+            <entry key="Allow Hid&amp;e" value="" />
+            <entry key="Allow &amp;Float" value="" />
+            <entry key="Allow Doc&amp;k" value="" />
+            <entry key="Allow &amp;Drag" value="" />
+            <entry key="Allow &amp;Maximize" value="" />
+            <entry key="Allow &amp;AutoHide" value="" />
+            <entry key="&amp;Float" value="" />
+            <entry key="D&amp;ock" value="" />
+            <entry key="Toggle Auto Hide" value="" />
+            <entry key="Auto Hide" value="" />
+            <entry key="Backspace" value="" />
+            <entry key="CE" value="" />
+            <entry key="C" value="" />
+            <entry key="MC" value="" />
+            <entry key="sqrt" value="" />
+            <entry key="MR" value="" />
+            <entry key="MS" value="" />
+            <entry key="M+" value="" />
+            <entry key="&amp;More Colors..." value="" />
+            <entry key="Standard" value="" />
+            <entry key="Web" value="" />
+            <entry key="System" value="" />
+            <entry key="Custom" value="" />
+            <entry key="Red:" value="" />
+            <entry key="Blue:" value="" />
+            <entry key="Green:" value="" />
+            <entry key="HTML:" value="" />
+            <entry key="Transparency" value="" />
+            <entry key="Index" value="" />
+            <entry key="Undo" value="" />
+            <entry key="Toolbar Options" value="" />
+            <entry key="&amp;Add/Remove Commands" value="" />
+            <entry key="&amp;Hidden Commands" value="" />
+            <entry key="&amp;Customize..." value="" />
+            <entry key="&amp;Reset Toolbar" value="" />
+            <entry key="Sort &amp;Ascending" value="" />
+            <entry key="Sort &amp;Descending" value="" />
+            <entry key="Best &amp;Fit" value="" />
+            <entry key="Best Fit A&amp;ll" value="" />
+            <entry key="Choose &amp;Columns..." value="" />
+            <entry key="&amp;Move" value="" />
+            <entry key="&amp;Size" value="" />
+            <entry key="Mi&amp;nimize" value="" />
+            <entry key="&amp;Close" value="" />
+            <entry key="OK" value="" />
+            <entry key="Yes" value="" />
+            <entry key="No" value="" />
+            <entry key="Abort" value="" />
+            <entry key="Retry" value="" />
+            <entry key="Ignore" value="" />
+            <entry key="Cancel" value="" />
+            <entry key="Next &amp;Window" value="" />
+            <entry key="&amp;Previous Window" value="" />
+            <entry key="None" value="" />
+            <entry key="Show &amp;More Buttons" value="" />
+            <entry key="Show &amp;Fewer Buttons" value="" />
+            <entry key="Na&amp;vigation Pane Options..." value="" />
+            <entry key="&amp;Add or Remove Buttons" value="" />
+            <entry key="Collapse Pane" value="" />
+            <entry key="Expand Pane" value="" />
+            <entry key="Configure Buttons" value="" />
+            <entry key="Move &amp;Up" value="" />
+            <entry key="Move &amp;Down" value="" />
+            <entry key="&amp;Reset" value="" />
+            <entry key="Navigation Pane Options" value="" />
+            <entry key="Close" value="" />
+            <entry key="Scroll Left" value="" />
+            <entry key="Scroll Right" value="" />
+            <entry key="Active Tabs" value="" />
+            <entry key="&amp;Undo" value="" />
+            <entry key="Can't Undo" value="" />
+            <entry key="&amp;Redo " value="" />
+            <entry key="Can't Redo" value="" />
+            <entry key="Cu&amp;t" value="" />
+            <entry key="&amp;Copy" value="" />
+            <entry key="&amp;Paste" value="" />
+            <entry key="&amp;Delete" value="" />
+            <entry key="Select &amp;All" value="" />
+            <entry key="&lt;Empty&gt;" value="" />
+            <entry key="&amp;Expand All" value="" />
+            <entry key="Expand By De&amp;pth" value="" />
+            <entry key="Collap&amp;se All" value="" />
+            <entry key="Co&amp;llapse By Depth" value="" />
+            <entry key="&amp;Best Fit" value="" />
+            <entry key="Best &amp;Fit (All Columns)" value="" />
+            <entry key="&amp;Group By This Column" value="" />
+            <entry key="Group By &amp;Box" value="" />
+            <entry key="&amp;Ungroup All" value="" />
+            <entry key="Best &amp;Fit (All Nodes)" value="" />
+        </dictionary>
+        <dictionary name="Editors">
+            <entry key="OK" value="" />
+            <entry key="Add" value="" />
+            <entry key="Delete" value="" />
+            <entry key="Cancel" value="" />
+            <entry key="EditAreaSeparator" value="" />
+            <entry key="Collection is Empty" value="" />
+            <entry key="NCollectionForm" value="" />
+            <entry key="Must override" value="" />
+            <entry key="object" value="" />
+            <entry key="Close" value="" />
+            <entry key="Apply" value="" />
+            <entry key="NDateTimeSpanEditor" value="" />
+            <entry key="NDomBrowserHostForm" value="" />
+            <entry key="NDomEditorHostForm" value="" />
+            <entry key="Move Down" value="" />
+            <entry key="Move up" value="" />
+            <entry key="General" value="" />
+            <entry key="Name:" value="" />
+            <entry key="Type:" value="" />
+            <entry key="Add Cell" value="" />
+            <entry key="The cell name must not be an empty string" value="" />
+            <entry key="Valid Cell Name Required" value="" />
+            <entry key="Cell type:" value="" />
+            <entry key="Formula Cell Editor" value="" />
+            <entry key="Constant" value="" />
+            <entry key="Formula" value="" />
+            <entry key="Formula:" value="" />
+            <entry key="References:" value="" />
+            <entry key="Insert" value="" />
+            <entry key="Functions:" value="" />
+            <entry key="The following error occured during the formula evaluation: " value="" />
+            <entry key="Formula Error" value="" />
+            <entry key="Sections:" value="" />
+            <entry key="View style:" value="" />
+            <entry key="Section rows" value="" />
+            <entry key="Section cells" value="" />
+            <entry key="Formula Sheet Editor" value="" />
+            <entry key="Value:" value="" />
+            <entry key="Options:" value="" />
+            <entry key="The specified string and type do not represent a valid variant value" value="" />
+            <entry key="Value Error" value="" />
+            <entry key="Length editor" value="" />
+            <entry key="Length:" value="" />
+            <entry key="Margins editor" value="" />
+            <entry key="Left:" value="" />
+            <entry key="Top:" value="" />
+            <entry key="Right:" value="" />
+            <entry key="Bottom:" value="" />
+            <entry key="Measurement system:" value="" />
+            <entry key="Measurement unit:" value="" />
+            <entry key="Point editor" value="" />
+            <entry key="X:" value="" />
+            <entry key="Y:" value="" />
+            <entry key="Size editor" value="" />
+            <entry key="Width:" value="" />
+            <entry key="Height:" value="" />
+            <entry key="NObjectForm" value="" />
+            <entry key="Object Editor" value="" />
+            <entry key="Category:" value="" />
+            <entry key="Shape:" value="" />
+            <entry key="Load Predefined Shape" value="" />
+            <entry key="Interaction style" value="" />
+            <entry key="Line  (1 - dimensional)" value="" />
+            <entry key="Box (2 - dimensional)" value="" />
+            <entry key="Shape type" value="" />
+            <entry key="Group" value="" />
+            <entry key="Shape" value="" />
+            <entry key="Shadow Style..." value="" />
+            <entry key="Stroke Style..." value="" />
+            <entry key="Fill Style..." value="" />
+            <entry key="New Shape" value="" />
+            <entry key="You must provide a valid shape name" value="" />
+            <entry key="Failed to parse the {0} value" value="" />
+            <entry key="StartX:" value="" />
+            <entry key="StartY:" value="" />
+            <entry key="EndX:" value="" />
+            <entry key="EndY:" value="" />
+            <entry key="PinX:" value="" />
+            <entry key="PinY:" value="" />
+            <entry key="Select New Path Command Type" value="" />
+            <entry key="Edit Geometry" value="" />
+            <entry key="Zoom In" value="" />
+            <entry key="Zoom Out" value="" />
+            <entry key="Zoom To Normal" value="" />
+            <entry key="Zoom To Fit" value="" />
+            <entry key="Show Grid" value="" />
+            <entry key="Snap To Grid" value="" />
+            <entry key="Show Alignment Box" value="" />
+            <entry key="Canvas Settings" value="" />
+            <entry key="This operation will replace the currently edited shape. Do you want to proceed?" value="" />
+            <entry key="Replace Current Shape" value="" />
+            <entry key="Smart Shape Editor" value="" />
+            <entry key="New Shape..." value="" />
+            <entry key="Open Shape..." value="" />
+            <entry key="Save Shape..." value="" />
+            <entry key="Load Predefined..." value="" />
+            <entry key="Show Shape Explorer" value="" />
+            <entry key="Show Shape Sheet Editor" value="" />
+            <entry key="Edit Canvas Settings..." value="" />
+            <entry key="Add shape..." value="" />
+            <entry key="Remove shape" value="" />
+            <entry key="Move Shape Up" value="" />
+            <entry key="Move Shape Down" value="" />
+            <entry key="Move end point" value="" />
+            <entry key="Modify geometry" value="" />
+            <entry key="Drag to move pin point." value="" />
+            <entry key="CTRL+Drag to translate shape" value="" />
+            <entry key="Resize shape" value="" />
+            <entry key="Rotate shape" value="" />
+            <entry key="Move start point" value="" />
+            <entry key="Move vertex" value="" />
+            <entry key="New" value="" />
+            <entry key="Move down" value="" />
+            <entry key="Add Animation" value="" />
+            <entry key="Visible" value="" />
+            <entry key="Edge percent:" value="" />
+            <entry key="Style:" value="" />
+            <entry key="Padding" value="" />
+            <entry key="Appearance" value="" />
+            <entry key="Stroke" value="" />
+            <entry key="Edge" value="" />
+            <entry key="Border Style:" value="" />
+            <entry key="Border Style Editor" value="" />
+            <entry key="Border Style" value="" />
+            <entry key="Use automatic" value="" />
+            <entry key="NStyleEditor" value="" />
+            <entry key="Preview:" value="" />
+            <entry key="Ambient:" value="" />
+            <entry key="Diffuse:" value="" />
+            <entry key="Specular:" value="" />
+            <entry key="Emissive:" value="" />
+            <entry key="Shininess:" value="" />
+            <entry key="Material Style Editor" value="" />
+            <entry key="Relative to object" value="" />
+            <entry key="Relative to viewer" value="" />
+            <entry key="Sphere" value="" />
+            <entry key="Stretched" value="" />
+            <entry key="Fitted" value="" />
+            <entry key="Centered" value="" />
+            <entry key="Tiled" value="" />
+            <entry key="Stretched to width" value="" />
+            <entry key="Stretched to height" value="" />
+            <entry key="Crop fitted" value="" />
+            <entry key="X Scale:" value="" />
+            <entry key="Mapping type:" value="" />
+            <entry key="Layout:" value="" />
+            <entry key="Y Scale:" value="" />
+            <entry key="Border color:" value="" />
+            <entry key="Texture Mapping Style Editor" value="" />
+            <entry key="Preview" value="" />
+            <entry key="Background color:" value="" />
+            <entry key="Point properties" value="" />
+            <entry key="Intensity:" value="" />
+            <entry key="Angle:" value="" />
+            <entry key="Color:" value="" />
+            <entry key="Current point" value="" />
+            <entry key="Alias:" value="" />
+            <entry key="Store in gallery" value="" />
+            <entry key="Advanced Gradient Style Editor" value="" />
+            <entry key="Custom" value="" />
+            <entry key="WhiteOnBlack" value="" />
+            <entry key="WhiteOnRed" value="" />
+            <entry key="WhiteOnGreen" value="" />
+            <entry key="WhiteOnBlue" value="" />
+            <entry key="Red" value="" />
+            <entry key="Green" value="" />
+            <entry key="Blue" value="" />
+            <entry key="Sunset" value="" />
+            <entry key="NightFall1" value="" />
+            <entry key="NightFall2" value="" />
+            <entry key="Ocean1" value="" />
+            <entry key="Ocean2" value="" />
+            <entry key="Ocean3" value="" />
+            <entry key="Ocean4" value="" />
+            <entry key="CalmWater1" value="" />
+            <entry key="CalmWater2" value="" />
+            <entry key="Desert1" value="" />
+            <entry key="Desert2" value="" />
+            <entry key="Fire1" value="" />
+            <entry key="Fire2" value="" />
+            <entry key="Fog1" value="" />
+            <entry key="Fog2" value="" />
+            <entry key="Mahogany1" value="" />
+            <entry key="Mahogany2" value="" />
+            <entry key="Gallery" value="" />
+            <entry key="Predefined:" value="" />
+            <entry key="Texture fill style..." value="" />
+            <entry key="Material..." value="" />
+            <entry key="Image filters..." value="" />
+            <entry key="Add to Custom" value="" />
+            <entry key="Edit" value="" />
+            <entry key="Color" value="" />
+            <entry key="Gradient" value="" />
+            <entry key="Image" value="" />
+            <entry key="Hatch" value="" />
+            <entry key="Advanced Gradient" value="" />
+            <entry key="Fill Style:" value="" />
+            <entry key="Begin color:" value="" />
+            <entry key="End Color:" value="" />
+            <entry key="Variants" value="" />
+            <entry key="Shading styles" value="" />
+            <entry key="From Center" value="" />
+            <entry key="From Corner" value="" />
+            <entry key="Diagonal Down" value="" />
+            <entry key="Diagonal Up" value="" />
+            <entry key="Vertical" value="" />
+            <entry key="Horizontal" value="" />
+            <entry key="Colors" value="" />
+            <entry key="Light" value="" />
+            <entry key="Dark" value="" />
+            <entry key="Two colors" value="" />
+            <entry key="One color" value="" />
+            <entry key="Start to End" value="" />
+            <entry key="Foreground color:" value="" />
+            <entry key="Patterns" value="" />
+            <entry key="Light Downward Diagonal" value="" />
+            <entry key="Light Upward Diagonal" value="" />
+            <entry key="Dark Downward Diagonal" value="" />
+            <entry key="Dark Upward Diagonal" value="" />
+            <entry key="Wide Downward Diagonal" value="" />
+            <entry key="Wide Upward Diagonal" value="" />
+            <entry key="Light Vertical" value="" />
+            <entry key="Light Horizontal" value="" />
+            <entry key="Narrow Vertical" value="" />
+            <entry key="Narrow Horizontal" value="" />
+            <entry key="Dark Vertical" value="" />
+            <entry key="Dark Horizontal" value="" />
+            <entry key="Dashed Downward Diagonal" value="" />
+            <entry key="Dashed Upward Diagonal" value="" />
+            <entry key="Dashed Horizontal" value="" />
+            <entry key="Dashed Vertical" value="" />
+            <entry key="Small Confetti" value="" />
+            <entry key="Large Confetti" value="" />
+            <entry key="Zig Zag" value="" />
+            <entry key="Wave" value="" />
+            <entry key="Diagonal Brick" value="" />
+            <entry key="Horizontal Brick" value="" />
+            <entry key="Weave" value="" />
+            <entry key="Plaid" value="" />
+            <entry key="Divot" value="" />
+            <entry key="Dotted Grid" value="" />
+            <entry key="Dotted Diamond" value="" />
+            <entry key="Shingle" value="" />
+            <entry key="Trellis" value="" />
+            <entry key="Small Grid" value="" />
+            <entry key="Large Grid" value="" />
+            <entry key="Small Checker Board" value="" />
+            <entry key="Large Checker Board" value="" />
+            <entry key="Outlined Diamond" value="" />
+            <entry key="Solid Diamond" value="" />
+            <entry key="Forward Diagonal" value="" />
+            <entry key="Backward Diagonal" value="" />
+            <entry key="Diagonal Cross" value="" />
+            <entry key="Transparency:" value="" />
+            <entry key="File name:" value="" />
+            <entry key="Image Files" value="" />
+            <entry key="Bitmap Files" value="" />
+            <entry key="Jpg Files" value="" />
+            <entry key="Tiff Files" value="" />
+            <entry key="Targa Files" value="" />
+            <entry key="Windows Metafiles" value="" />
+            <entry key="Gif Files" value="" />
+            <entry key="Png Files" value="" />
+            <entry key="All Files" value="" />
+            <entry key="Size:" value="" />
+            <entry key="Style" value="" />
+            <entry key="Underline" value="" />
+            <entry key="Strikeout" value="" />
+            <entry key="Bold" value="" />
+            <entry key="Italic" value="" />
+            <entry key="Font" value="" />
+            <entry key="Standard" value="" />
+            <entry key="Frame Style:" value="" />
+            <entry key="Light effect" value="" />
+            <entry key="Light color:" value="" />
+            <entry key="Shadow color:" value="" />
+            <entry key="Outer edge percent:" value="" />
+            <entry key="Inner edge percent:" value="" />
+            <entry key="Size" value="" />
+            <entry key="Corners" value="" />
+            <entry key="Tubes" value="" />
+            <entry key="Bevels" value="" />
+            <entry key="Outer bevel" value="" />
+            <entry key="Dark color:" value="" />
+            <entry key="Inner bevel" value="" />
+            <entry key="Borders" value="" />
+            <entry key="Outer border" value="" />
+            <entry key="Inner border" value="" />
+            <entry key="NTabPage" value="" />
+            <entry key="Add filter" value="" />
+            <entry key="Delete filter" value="" />
+            <entry key="Raster Image" value="" />
+            <entry key="SVG" value="" />
+            <entry key="EMF" value="" />
+            <entry key="PDF" value="" />
+            <entry key="SWF (Flash)" value="" />
+            <entry key="XAML (Silverlight)" value="" />
+            <entry key="Image format:" value="" />
+            <entry key="Compress Content Stream" value="" />
+            <entry key="Raster format:" value="" />
+            <entry key="Bits per pixel:" value="" />
+            <entry key="Quality (JPEG):" value="" />
+            <entry key="You cannot have null values" value="" />
+            <entry key="Attribute" value="" />
+            <entry key="Value" value="" />
+            <entry key="Compress" value="" />
+            <entry key="Add Svg header" value="" />
+            <entry key="Enable interactivity" value="" />
+            <entry key="Embedded images" value="" />
+            <entry key="Embed images in Svg" value="" />
+            <entry key="Attributes" value="" />
+            <entry key="Custom script" value="" />
+            <entry key="Embedded images format:" value="" />
+            <entry key="Url link" value="" />
+            <entry key="Cursor" value="" />
+            <entry key="Tooltip" value="" />
+            <entry key="Custom map area attribute" value="" />
+            <entry key="Add Interactivity Attribute" value="" />
+            <entry key="Gel" value="" />
+            <entry key="Glass" value="" />
+            <entry key="Paint Effect:" value="" />
+            <entry key="Paint Effect Style Editor" value="" />
+            <entry key="Paint Effect Style" value="" />
+            <entry key="None" value="" />
+            <entry key="Solid" value="" />
+            <entry key="Linear blur" value="" />
+            <entry key="Radial blur" value="" />
+            <entry key="Gaussian blur" value="" />
+            <entry key="Offset and scale" value="" />
+            <entry key="Scale:" value="" />
+            <entry key="Fade area" value="" />
+            <entry key="Alignment" value="" />
+            <entry key="Horizontal:" value="" />
+            <entry key="Vertical:" value="" />
+            <entry key="String Format Type:" value="" />
+            <entry key="Text Direction:" value="" />
+            <entry key="Factor:" value="" />
+            <entry key="Predefined" value="" />
+            <entry key="Dash style" value="" />
+            <entry key="Line join:" value="" />
+            <entry key="Dash cap:" value="" />
+            <entry key="Cap and Join" value="" />
+            <entry key="End cap:" value="" />
+            <entry key="Start cap:" value="" />
+            <entry key="Interactivity Style Editor" value="" />
+            <entry key="Interactivity Style" value="" />
+            <entry key="Image Filters Style Editor" value="" />
+            <entry key="Image Filters Style" value="" />
+            <entry key="Animations Style Editor" value="" />
+            <entry key="Animations Style" value="" />
+            <entry key="Fill Style Editor" value="" />
+            <entry key="Fill Style" value="" />
+            <entry key="Stroke Style Editor" value="" />
+            <entry key="Stroke Style" value="" />
+            <entry key="Shadow Style Editor" value="" />
+            <entry key="Shadow Style" value="" />
+            <entry key="Font Style Editor" value="" />
+            <entry key="Font Style" value="" />
+            <entry key="Frame Style Editor" value="" />
+            <entry key="Frame Style" value="" />
+            <entry key="Image Frame Style Editor" value="" />
+            <entry key="Image Frame Style" value="" />
+            <entry key="Standard Frame Style Editor" value="" />
+            <entry key="Standard Frame Style" value="" />
+            <entry key="Background Style Editor" value="" />
+            <entry key="Background Style" value="" />
+            <entry key="Backplane Style Editor" value="" />
+            <entry key="Backplane Style" value="" />
+            <entry key="Text Style Editor" value="" />
+            <entry key="Text Style" value="" />
+            <entry key="Value Formatter Editor" value="" />
+            <entry key="Value Formatter" value="" />
+            <entry key="Text" value="" />
+            <entry key="Allow Word Break" value="" />
+            <entry key="Formatting" value="" />
+            <entry key="Tab size in spaces:" value="" />
+            <entry key="Replace tabs with spaces" value="" />
+            <entry key="Text format:" value="" />
+            <entry key="Position" value="" />
+            <entry key="Offset and Orientation" value="" />
+            <entry key="Orientation:" value="" />
+            <entry key="Culture Info:" value="" />
+            <entry key="Format Specifier:" value="" />
+            <entry key="(Default)" value="" />
+            <entry key="Numeric" value="" />
+            <entry key="Date/Time" value="" />
+            <entry key="Value Formatter:" value="" />
+            <entry key="Default" value="" />
+            <entry key="Segmented Image Editor" value="" />
+            <entry key="Push Button" value="" />
+            <entry key="Check Box" value="" />
+            <entry key="Radio Box" value="" />
+            <entry key="Check Button" value="" />
+            <entry key="Radio Button" value="" />
+            <entry key="Marquee Progress..." value="" />
+            <entry key="Xml Files" value="" />
+            <entry key="Select file:" value="" />
+            <entry key="Footer" value="" />
+            <entry key="Parts And States" value="" />
+            <entry key="Properties" value="" />
+            <entry key="Style Properties" value="" />
+            <entry key="Part Properties" value="" />
+            <entry key="Live Element" value="" />
+            <entry key="New Theme" value="" />
+            <entry key="Open..." value="" />
+            <entry key="Open Existing Theme..." value="" />
+            <entry key="Save..." value="" />
+            <entry key="Saves the current theme to a file" value="" />
+            <entry key="Add Style Entry" value="" />
+            <entry key="Add new style entry" value="" />
+            <entry key="Remove Style Entry" value="" />
+            <entry key="Remove existing style entry" value="" />
+            <entry key="New..." value="" />
+            <entry key="Creates a new empty theme." value="" />
+            <entry key="Theme Designer" value="" />
+            <entry key="BMP (Windows bitmap)" value="" />
+            <entry key="GIF (Graphics Interchange Format )" value="" />
+            <entry key="JPEG (Joint Photographic Experts Group)" value="" />
+            <entry key="Quality" value="" />
+            <entry key="PNG (Portable Network Graphics)" value="" />
+            <entry key="TIFF (Tag Image File Format)" value="" />
+            <entry key="AutoCAD Drawing Interchange" value="" />
+            <entry key="EMF (Extended Metafile)" value="" />
+            <entry key="PDF (Portable Document Format)" value="" />
+            <entry key="SVG (Scalable Vector Graphics)" value="" />
+            <entry key="Adobe Flash" value="" />
+            <entry key="XAML (Extensible Application Markup Language)" value="" />
+            <entry key="(none)" value="" />
+            <entry key="Browse..." value="" />
+            <entry key="&amp;Customize..." value="" />
+        </dictionary>
+        <dictionary name="Tab">
+            <entry key="Close" value="" />
+        </dictionary>
+        <dictionary name="Chart">
+            <entry key="Scroll Bar" value="" />
+            <entry key="None" value="" />
+            <entry key="Add panel" value="" />
+            <entry key="Dock" value="" />
+            <entry key="Cross" value="" />
+            <entry key="Best Visibility Dock" value="" />
+            <entry key="Auto Side Dock" value="" />
+            <entry key="Dock Polar" value="" />
+            <entry key="Cross Polar" value="" />
+            <entry key="Radar" value="" />
+            <entry key="Axis Anchor" value="" />
+            <entry key="Numeric" value="" />
+            <entry key="Date/Time" value="" />
+            <entry key="Paging View" value="" />
+            <entry key="Content" value="" />
+            <entry key="Range" value="" />
+            <entry key="Page" value="" />
+            <entry key="Axis View" value="" />
+            <entry key="Move Up" value="" />
+            <entry key="Move Down" value="" />
+            <entry key="Ordinal" value="" />
+            <entry key="Linear" value="" />
+            <entry key="Logarithmic" value="" />
+            <entry key="DateTime" value="" />
+            <entry key="TimeSpan" value="" />
+            <entry key="Price" value="" />
+            <entry key="Hierarchical" value="" />
+            <entry key="Value Timeline" value="" />
+            <entry key="Range Timeline" value="" />
+            <entry key="Angular" value="" />
+            <entry key="Table" value="" />
+            <entry key="Scale" value="" />
+            <entry key="Custom Angle:" value="" />
+            <entry key="Angle Mode:" value="" />
+            <entry key="Allow Label To Flip" value="" />
+            <entry key="Scale Label Angle" value="" />
+            <entry key="Length" value="" />
+            <entry key="Pointer" value="" />
+            <entry key="Vertical alignment:" value="" />
+            <entry key="Arrow dimensions" value="" />
+            <entry key="Visible" value="" />
+            <entry key="Format:" value="" />
+            <entry key="Text Style..." value="" />
+            <entry key="Arrow Stroke Style..." value="" />
+            <entry key="Model" value="" />
+            <entry key="Enable lighting" value="" />
+            <entry key="Local viewpoint lighting" value="" />
+            <entry key="Global ambient light:" value="" />
+            <entry key="Light sources" value="" />
+            <entry key="Predefined light scheme" value="" />
+            <entry key="General" value="" />
+            <entry key="Width" value="" />
+            <entry key="Height" value="" />
+            <entry key="Depth" value="" />
+            <entry key="Point shape:" value="" />
+            <entry key="Vertical align" value="" />
+            <entry key="Dimensions" value="" />
+            <entry key="Automatic depth" value="" />
+            <entry key="Perspective" value="" />
+            <entry key="Orthogonal" value="" />
+            <entry key="Projection" value="" />
+            <entry key="Y Depth:" value="" />
+            <entry key="X Depth:" value="" />
+            <entry key="Perspective angle:" value="" />
+            <entry key="Zoom:" value="" />
+            <entry key="Type:" value="" />
+            <entry key="Viewer rotation:" value="" />
+            <entry key="Elevation:" value="" />
+            <entry key="Rotation:" value="" />
+            <entry key="Predefined projections" value="" />
+            <entry key="Trackball" value="" />
+            <entry key="Zoom" value="" />
+            <entry key="Interactivity tool:" value="" />
+            <entry key="InteractivityToolComboBox" value="" />
+            <entry key="Preview Data" value="" />
+            <entry key="Delete" value="" />
+            <entry key="Edit" value="" />
+            <entry key="New" value="" />
+            <entry key="Data:" value="" />
+            <entry key="Data Sources:" value="" />
+            <entry key="Data Binding" value="" />
+            <entry key="Data Series:" value="" />
+            <entry key="Series:" value="" />
+            <entry key="Close" value="" />
+            <entry key="Data Binding Wizard" value="" />
+            <entry key="Configure" value="" />
+            <entry key="Worksheet:" value="" />
+            <entry key="Entire" value="" />
+            <entry key="From:" value="" />
+            <entry key="To:" value="" />
+            <entry key="Range:" value="" />
+            <entry key="Microsoft Excel File:" value="" />
+            <entry key="Cancel" value="" />
+            <entry key="Bind to Microsoft Excel File" value="" />
+            <entry key="Microsoft Excel Files" value="" />
+            <entry key="Use control dimensions" value="" />
+            <entry key="Width:" value="" />
+            <entry key="Height:" value="" />
+            <entry key="Size" value="" />
+            <entry key="Copy to clipboard" value="" />
+            <entry key="Save to File..." value="" />
+            <entry key="Resolution:" value="" />
+            <entry key="Image Export" value="" />
+            <entry key="Print Preview" value="" />
+            <entry key="Print" value="" />
+            <entry key="Auto" value="" />
+            <entry key="Zoom In" value="" />
+            <entry key="Zoom Out" value="" />
+            <entry key="Add row" value="" />
+            <entry key="Delete row" value="" />
+            <entry key="Add column" value="" />
+            <entry key="Delete column" value="" />
+            <entry key="Next page" value="" />
+            <entry key="Prev page" value="" />
+            <entry key="No installed printers" value="" />
+            <entry key="Axes" value="" />
+            <entry key="Orientation:" value="" />
+            <entry key="Predefined Position:" value="" />
+            <entry key="OK" value="" />
+            <entry key="Add Custom Axis" value="" />
+            <entry key="FrontLeft" value="" />
+            <entry key="FrontRight" value="" />
+            <entry key="BackRight" value="" />
+            <entry key="FrontBottom" value="" />
+            <entry key="FrontTop" value="" />
+            <entry key="BackTop" value="" />
+            <entry key="Value Axis" value="" />
+            <entry key="Angle Axis" value="" />
+            <entry key="Stripes" value="" />
+            <entry key="Const Lines" value="" />
+            <entry key="Cursors" value="" />
+            <entry key="Range Selections" value="" />
+            <entry key="PrimaryX" value="" />
+            <entry key="SecondaryX" value="" />
+            <entry key="Both" value="" />
+            <entry key="PrimaryY" value="" />
+            <entry key="SecondaryY" value="" />
+            <entry key="Data Points" value="" />
+            <entry key="Scale Series on Custom Axes" value="" />
+            <entry key="Scale Series on Standard Axes" value="" />
+            <entry key="Y Axes:" value="" />
+            <entry key="X Axes:" value="" />
+            <entry key="Empty Data Points" value="" />
+            <entry key="Legend" value="" />
+            <entry key="CustomAxis" value="" />
+            <entry key="Vertical" value="" />
+            <entry key="Add Cartesian Series" value="" />
+            <entry key="Series" value="" />
+            <entry key="Walls" value="" />
+            <entry key="Legend Items" value="" />
+            <entry key="Interlace Styles" value="" />
+            <entry key="Strips" value="" />
+        </dictionary>
+        <dictionary name="PrintManager">
+            <entry key="No installed printers" value="" />
+            <entry key="Page Setup" value="" />
+        </dictionary>
+        <dictionary name="Chart Wizard">
+            <entry key="Chart" value="" />
+            <entry key="Legend" value="" />
+            <entry key="Labels" value="" />
+            <entry key="Lights" value="" />
+            <entry key="Borders" value="" />
+            <entry key="Axes" value="" />
+            <entry key="View" value="" />
+            <entry key="Cancel" value="" />
+            <entry key="OK" value="" />
+            <entry key="Preview:" value="" />
+            <entry key="Chart Wizard" value="" />
+            <entry key="Currency" value="" />
+            <entry key="General" value="" />
+            <entry key="Percentage" value="" />
+            <entry key="Scientific" value="" />
+            <entry key="Date" value="" />
+            <entry key="Axis:" value="" />
+            <entry key="Show Axis" value="" />
+            <entry key="Axis Title:" value="" />
+            <entry key="Title Font..." value="" />
+            <entry key="Formatting:" value="" />
+            <entry key="Labels Layout:" value="" />
+            <entry key="Polar Axis" value="" />
+            <entry key="Radar Axis" value="" />
+            <entry key="Primary Y Axis" value="" />
+            <entry key="Secondary Y Axis" value="" />
+            <entry key="Primary X Axis" value="" />
+            <entry key="Secondary X Axis" value="" />
+            <entry key="Depth Axis" value="" />
+            <entry key="None" value="" />
+            <entry key="Single Fixed" value="" />
+            <entry key="Sunken" value="" />
+            <entry key="Raised" value="" />
+            <entry key="Sunken-Raised" value="" />
+            <entry key="Raised-Sunken" value="" />
+            <entry key="Common" value="" />
+            <entry key="Embed" value="" />
+            <entry key="Emboss" value="" />
+            <entry key="Rounded" value="" />
+            <entry key="RoundedBorder" value="" />
+            <entry key="Rectangular" value="" />
+            <entry key="Thin" value="" />
+            <entry key="Thick" value="" />
+            <entry key="OuterRounded" value="" />
+            <entry key="OpenLeft" value="" />
+            <entry key="OpenRight" value="" />
+            <entry key="Frame Color..." value="" />
+            <entry key="Predefined Border Style:" value="" />
+            <entry key="Chart Subtype:" value="" />
+            <entry key="Chart Type:" value="" />
+            <entry key="2D Charts" value="" />
+            <entry key="3D Charts" value="" />
+            <entry key="Bar" value="" />
+            <entry key="Line" value="" />
+            <entry key="Area" value="" />
+            <entry key="Pie" value="" />
+            <entry key="Point" value="" />
+            <entry key="Bubble" value="" />
+            <entry key="Stock" value="" />
+            <entry key="Float Bar" value="" />
+            <entry key="Grid Surface" value="" />
+            <entry key="Mesh Surface" value="" />
+            <entry key="Triangulated Surface" value="" />
+            <entry key="Radar" value="" />
+            <entry key="Polar" value="" />
+            <entry key="Shape" value="" />
+            <entry key="High-Low" value="" />
+            <entry key="Smooth Line" value="" />
+            <entry key="Venn" value="" />
+            <entry key="Step Line" value="" />
+            <entry key="Error Bar" value="" />
+            <entry key="Funnel" value="" />
+            <entry key="Box And Whiskers" value="" />
+            <entry key="Smooth Area" value="" />
+            <entry key="Kagi" value="" />
+            <entry key="Renko" value="" />
+            <entry key="Point and Figure" value="" />
+            <entry key="Three Line Break" value="" />
+            <entry key="Standard Bar" value="" />
+            <entry key="Bars with Different Colors" value="" />
+            <entry key="Cluster Bar" value="" />
+            <entry key="Stacked Bar" value="" />
+            <entry key="Stacked Percent Bar" value="" />
+            <entry key="Horizontal Bar" value="" />
+            <entry key="Horizontal Cluster" value="" />
+            <entry key="Horizontal Stacked" value="" />
+            <entry key="Horizontal Stacked Percent" value="" />
+            <entry key="Horizontal Zero Axis" value="" />
+            <entry key="Manhattan Chart" value="" />
+            <entry key="Smooth Edge Bar" value="" />
+            <entry key="Cones" value="" />
+            <entry key="Cylinders" value="" />
+            <entry key="Standard Line" value="" />
+            <entry key="Overlapped Lines" value="" />
+            <entry key="Stacked Lines" value="" />
+            <entry key="Stacked Percent Lines" value="" />
+            <entry key="Standard Line with Markers" value="" />
+            <entry key="Overlapped Lines with Markers" value="" />
+            <entry key="Stacked Lines with Markers" value="" />
+            <entry key="Stacked Percent with Markers" value="" />
+            <entry key="Tubes" value="" />
+            <entry key="Tape" value="" />
+            <entry key="Standard Area" value="" />
+            <entry key="Stacked Area" value="" />
+            <entry key="Stacked Percent Area" value="" />
+            <entry key="Multiseries Area" value="" />
+            <entry key="Standard Pie" value="" />
+            <entry key="Torus" value="" />
+            <entry key="Exploded Pie" value="" />
+            <entry key="Smooth Edge Pie" value="" />
+            <entry key="Standard Point" value="" />
+            <entry key="Points with Different Colors" value="" />
+            <entry key="XY Scatter" value="" />
+            <entry key="XYZ Scatter" value="" />
+            <entry key="Bubbles with Different Colors" value="" />
+            <entry key="Bubble Zero Axes" value="" />
+            <entry key="Candle" value="" />
+            <entry key="High-Low-Close" value="" />
+            <entry key="Open-High-Low-Close" value="" />
+            <entry key="DateTime Candle" value="" />
+            <entry key="DateTime Stick" value="" />
+            <entry key="Vertical FloatBar" value="" />
+            <entry key="Horizontal FloatBar" value="" />
+            <entry key="Simple Gantt" value="" />
+            <entry key="Zoned Surface" value="" />
+            <entry key="Smooth Palette Zoned Surface" value="" />
+            <entry key="Contour Chart" value="" />
+            <entry key="Wireframe Surface" value="" />
+            <entry key="Radar Line" value="" />
+            <entry key="Radar Line with Markers" value="" />
+            <entry key="Radar Area" value="" />
+            <entry key="Radar Area with Markers" value="" />
+            <entry key="Polar Point" value="" />
+            <entry key="Polar Line" value="" />
+            <entry key="Polar Line With Markers" value="" />
+            <entry key="Polar Area" value="" />
+            <entry key="Polar Area with Markers" value="" />
+            <entry key="XY Scatter Bar" value="" />
+            <entry key="XYZ Scatter Bar" value="" />
+            <entry key="XYZ Scatter Bubble" value="" />
+            <entry key="Standard High-Low" value="" />
+            <entry key="XY High-Low" value="" />
+            <entry key="XY Smooth Line" value="" />
+            <entry key="XYZ Smooth Line" value="" />
+            <entry key="Smooth Line with Markers" value="" />
+            <entry key="XY Smooth Line with Markers" value="" />
+            <entry key="XYZ Smooth Line with Markers" value="" />
+            <entry key="Two Set Venn" value="" />
+            <entry key="Three Set Venn" value="" />
+            <entry key="Four Set Venn" value="" />
+            <entry key="Five Set Venn" value="" />
+            <entry key="Standard Step Line" value="" />
+            <entry key="Step Line with Markers" value="" />
+            <entry key="Y error bars" value="" />
+            <entry key="XY error bars" value="" />
+            <entry key="XYZ error bars" value="" />
+            <entry key="Y error bars with markers" value="" />
+            <entry key="XY error bars with markers" value="" />
+            <entry key="XYZ error bars with markers" value="" />
+            <entry key="Standard Funnel" value="" />
+            <entry key="Funnel with custom X sizes" value="" />
+            <entry key="XY Smooth Area" value="" />
+            <entry key="Smooth Area with Markers" value="" />
+            <entry key="XY Smooth Area with Markers" value="" />
+            <entry key="Header" value="" />
+            <entry key="Footer" value="" />
+            <entry key="Label:" value="" />
+            <entry key="Font..." value="" />
+            <entry key="NRectangle" value="" />
+            <entry key="Ellipse" value="" />
+            <entry key="Cut-edge rectangle" value="" />
+            <entry key="Smooth-edge rectangle" value="" />
+            <entry key="Backplane Color..." value="" />
+            <entry key="Horizontal Position:" value="" />
+            <entry key="Center" value="" />
+            <entry key="Left" value="" />
+            <entry key="Right" value="" />
+            <entry key="Backplane Style:" value="" />
+            <entry key="Label Text:" value="" />
+            <entry key="Header Text:" value="" />
+            <entry key="Legend Position:" value="" />
+            <entry key="Top" value="" />
+            <entry key="Bottom" value="" />
+            <entry key="Top-Right" value="" />
+            <entry key="Top-Left" value="" />
+            <entry key="Bottom-Right" value="" />
+            <entry key="Bottom-Left" value="" />
+            <entry key="Legend Data Mode:" value="" />
+            <entry key="Show Legend Shadow" value="" />
+            <entry key="Show Legend" value="" />
+            <entry key="Legend Color..." value="" />
+            <entry key="Data Items" value="" />
+            <entry key="Custom Data" value="" />
+            <entry key="Series" value="" />
+            <entry key="Predefined Light Scheme:" value="" />
+            <entry key="No Lights" value="" />
+            <entry key="Soft Top Left" value="" />
+            <entry key="Soft Frontal" value="" />
+            <entry key="Soft Top Right" value="" />
+            <entry key="Shiny Top Left" value="" />
+            <entry key="Shiny Frontal" value="" />
+            <entry key="Shiny Top Right" value="" />
+            <entry key="Metallic Lustre" value="" />
+            <entry key="Northern Lights" value="" />
+            <entry key="Orthogonal" value="" />
+            <entry key="Orthogonal Elevated" value="" />
+            <entry key="Orthogonal Horizontal Left" value="" />
+            <entry key="Orthogonal Horizontal Right" value="" />
+            <entry key="Orthogonal Half" value="" />
+            <entry key="Orthogonal Half Horizontal Left" value="" />
+            <entry key="Orthogonal Half Horizontal Right" value="" />
+            <entry key="Orthogonal Half Rotated" value="" />
+            <entry key="Orthogonal Half Elevated" value="" />
+            <entry key="Orthogonal Top" value="" />
+            <entry key="Perspective" value="" />
+            <entry key="Perspective Horizontal Left" value="" />
+            <entry key="Perspective Horizontal Right" value="" />
+            <entry key="Perspective Rotated" value="" />
+            <entry key="Perspective Elevated" value="" />
+            <entry key="Perspective Tilted" value="" />
+            <entry key="Predefined Projection:" value="" />
+            <entry key="Left Margin:" value="" />
+            <entry key="Right Margin:" value="" />
+            <entry key="Top Margin:" value="" />
+            <entry key="Bottom Margin:" value="" />
+            <entry key="Fit" value="" />
+            <entry key="Stretch" value="" />
+            <entry key="Bounds Mode:" value="" />
+            <entry key="Panels" value="" />
+            <entry key="Settings" value="" />
+        </dictionary>
+        <dictionary name="Chart Commands">
+            <entry key="Show Appearance Data" value="" />
+            <entry key="Show Interactivity Data" value="" />
+            <entry key="Update Grid From Series" value="" />
+            <entry key="Update Series From Grid" value="" />
+            <entry key="Binds the Chart to the Grid" value="" />
+            <entry key="Select Series..." value="" />
+            <entry key="Data for Chart" value="" />
+            <entry key="and Series" value="" />
+            <entry key="OK" value="" />
+            <entry key="Cancel" value="" />
+            <entry key="Undo" value="" />
+            <entry key="Redo" value="" />
+            <entry key="Decrease Chart Depth" value="" />
+            <entry key="Decrease Chart Height" value="" />
+            <entry key="Decrease Chart Width" value="" />
+            <entry key="Increase Chart Depth" value="" />
+            <entry key="Increase Chart Height" value="" />
+            <entry key="Increase Chart Width" value="" />
+            <entry key="Predefined Light Model" value="" />
+            <entry key="Toggle Lighting" value="" />
+            <entry key="View 2D" value="" />
+            <entry key="Elevation Down" value="" />
+            <entry key="Elevation Up" value="" />
+            <entry key="Orthogonal Projection" value="" />
+            <entry key="Perspective Projection" value="" />
+            <entry key="Predefined Projection" value="" />
+            <entry key="Rotate Left" value="" />
+            <entry key="Rotate Right" value="" />
+            <entry key="Toggle 3D" value="" />
+            <entry key="Viewer Rotation Left" value="" />
+            <entry key="Viewer Rotation Right" value="" />
+            <entry key="Zoom In" value="" />
+            <entry key="Zoom Out" value="" />
+            <entry key="Render Surface" value="" />
+            <entry key="Background Fill Style" value="" />
+            <entry key="Background Frame Style" value="" />
+            <entry key="Nudge Down" value="" />
+            <entry key="Nudge Left" value="" />
+            <entry key="Nudge Right" value="" />
+            <entry key="Nudge Up" value="" />
+            <entry key="Apply Style Sheet" value="" />
+            <entry key="Export Chart Image" value="" />
+            <entry key="Open" value="" />
+            <entry key="Page Setup" value="" />
+            <entry key="Print" value="" />
+            <entry key="Save" value="" />
+            <entry key="Show Chart Editor" value="" />
+            <entry key="Show Chart Wizard" value="" />
+            <entry key="Mouse Offset" value="" />
+            <entry key="Mouse Select" value="" />
+            <entry key="Mouse Zoom" value="" />
+            <entry key="Trackball" value="" />
+            <entry key="Render Device" value="" />
+        </dictionary>
+        <dictionary name="Diagram">
+            <entry key="All" value="" />
+            <entry key="None" value="" />
+            <entry key="Data source is not open" value="" />
+            <entry key="The importer is not in importing state" value="" />
+            <entry key="The Document must be specified before you call the Import method" value="" />
+            <entry key="The Document must have an active layer before you call the Import method" value="" />
+            <entry key="The VertexShapesFactory must be specified before you call the Import method" value="" />
+            <entry key="The VertexShapesFactory must be able to create shapes with the {0} name" value="" />
+            <entry key="The EdgeShapesFactory must be able to create shapes with the {0} name" value="" />
+            <entry key="Import is not reentrant" value="" />
+            <entry key="Import must be started before it is ended" value="" />
+            <entry key="The VertexDataSource must be specified before you call the Import method" value="" />
+            <entry key="The EdgeDataSource must be specified before you call the Import method" value="" />
+            <entry key="The VertexIdColumnName must be specified before you call the Import method" value="" />
+            <entry key="The FromVertexIdColumnName must be specified before you call the Import method" value="" />
+            <entry key="The ToVertexIdColumnName must be specified before you call the Import method" value="" />
+            <entry key="The DataSource must be specified before you call the Import method" value="" />
+            <entry key="The IdColumnName must be specified before you call the Import method" value="" />
+            <entry key="The ParentIdColumnName must be specified before you call the Import method" value="" />
+            <entry key="Connectors size width and height must not be 0" value="" />
+            <entry key="Automatic" value="" />
+            <entry key="Shape:" value="" />
+            <entry key="Custom Name:" value="" />
+            <entry key="Fill Style..." value="" />
+            <entry key="Stroke Style..." value="" />
+            <entry key="Start arrowhead style editor" value="" />
+            <entry key="End arrowhead style editor" value="" />
+            <entry key="Bridge style editor" value="" />
+            <entry key="Diagram Event Sink Service" value="" />
+            <entry key="Diagram Smart Paint Service" value="" />
+            <entry key="Document Event Sink Service" value="" />
+            <entry key="Document History Service" value="" />
+            <entry key="Library Image Factory Service" value="" />
+            <entry key="Drawing Smart Paint Service" value="" />
+            <entry key="Drawing Trackers Service" value="" />
+            <entry key="AutoBoundsMode change" value="" />
+            <entry key="AutoBoundsPadding change" value="" />
+            <entry key="AutoBoundsMinSize change" value="" />
+            <entry key="First vertical change" value="" />
+            <entry key="Define Model" value="" />
+            <entry key="Arrow connector type change" value="" />
+            <entry key="Shape type change" value="" />
+            <entry key="Route automatically change" value="" />
+            <entry key="Connections changed" value="" />
+            <entry key="Show All" value="" />
+            <entry key="Hide All" value="" />
+            <entry key="Routable connector type change" value="" />
+            <entry key="Update model bounds" value="" />
+            <entry key="Show elements" value="" />
+            <entry key="Hide elements" value="" />
+            <entry key="Delete elements" value="" />
+            <entry key="Insert elements" value="" />
+            <entry key="Align to grid" value="" />
+            <entry key="Align lefts" value="" />
+            <entry key="Align rights" value="" />
+            <entry key="Align tops" value="" />
+            <entry key="Align bottoms" value="" />
+            <entry key="Align centers" value="" />
+            <entry key="Align middles" value="" />
+            <entry key="Size to grid" value="" />
+            <entry key="Make same width" value="" />
+            <entry key="Make same height" value="" />
+            <entry key="Make same size" value="" />
+            <entry key="Increase width" value="" />
+            <entry key="Increase height" value="" />
+            <entry key="Decrease width" value="" />
+            <entry key="Decrease height" value="" />
+            <entry key="Make horizontal spacing equal" value="" />
+            <entry key="Increase horizontal spacing" value="" />
+            <entry key="Decrease horizontal spacing" value="" />
+            <entry key="Remove horizontal spacing" value="" />
+            <entry key="Make vertical spacing equal" value="" />
+            <entry key="Increase vertical spacing" value="" />
+            <entry key="Decrease vertical spacing" value="" />
+            <entry key="Remove vertical spacing" value="" />
+            <entry key="Center horizontally" value="" />
+            <entry key="Center vertically" value="" />
+            <entry key="Change stroke style" value="" />
+            <entry key="Change shadow style" value="" />
+            <entry key="Change fill style" value="" />
+            <entry key="Change text style" value="" />
+            <entry key="Bold" value="" />
+            <entry key="Italic" value="" />
+            <entry key="Underline" value="" />
+            <entry key="Horizontal text align left" value="" />
+            <entry key="Horizontal text align right" value="" />
+            <entry key="Horizontal text align center" value="" />
+            <entry key="Vertical text align top" value="" />
+            <entry key="Vertical text align bottom" value="" />
+            <entry key="Vertical text align middle" value="" />
+            <entry key="Change bridge style" value="" />
+            <entry key="Change start arrowhead style" value="" />
+            <entry key="Change end arrowhead style" value="" />
+            <entry key="Change point style" value="" />
+            <entry key="Change interactivity" value="" />
+            <entry key="Change style" value="" />
+            <entry key="Change protection" value="" />
+            <entry key="Change interaction style" value="" />
+            <entry key="Remove all nodes" value="" />
+            <entry key="Move elements" value="" />
+            <entry key="Edit plug" value="" />
+            <entry key="Edit port" value="" />
+            <entry key="Edit point" value="" />
+            <entry key="Group" value="" />
+            <entry key="Ungroup" value="" />
+            <entry key="Compose" value="" />
+            <entry key="Decompose" value="" />
+            <entry key="Drop elements" value="" />
+            <entry key="Paste elements" value="" />
+            <entry key="Reroute" value="" />
+            <entry key="Reflex" value="" />
+            <entry key="Modify control point" value="" />
+            <entry key="Reverse" value="" />
+            <entry key="Reverse model" value="" />
+            <entry key="Properties change" value="" />
+            <entry key="Composite change" value="" />
+            <entry key="Inplace Edit" value="" />
+            <entry key="Resize shape" value="" />
+            <entry key="Rotate shape" value="" />
+            <entry key="Create connector" value="" />
+            <entry key="Replace primitive" value="" />
+            <entry key="Flip horizontal" value="" />
+            <entry key="Flip vertical" value="" />
+            <entry key="Rotate left" value="" />
+            <entry key="Rotate right" value="" />
+            <entry key="Bring forward" value="" />
+            <entry key="Bring to front" value="" />
+            <entry key="Send backward" value="" />
+            <entry key="Send to back" value="" />
+            <entry key="Merge points" value="" />
+            <entry key="Cut" value="" />
+            <entry key="Copy" value="" />
+            <entry key="Paste" value="" />
+            <entry key="Duplicate" value="" />
+            <entry key="Reorder masters" value="" />
+            <entry key="Scale model" value="" />
+            <entry key="Create shape elements" value="" />
+            <entry key="Destroy shape elements" value="" />
+            <entry key="Change routable connector type" value="" />
+            <entry key="Change start point" value="" />
+            <entry key="Change end point" value="" />
+            <entry key="Connect connection points" value="" />
+            <entry key="Disconnect connection points" value="" />
+            <entry key="Disconnect connected points" value="" />
+            <entry key="Size to text" value="" />
+            <entry key="Expand" value="" />
+            <entry key="Collapse" value="" />
+            <entry key="Connect elements" value="" />
+            <entry key="Import connections" value="" />
+            <entry key="Disconnect elements" value="" />
+            <entry key="Pause/resume routing manager" value="" />
+            <entry key="Pause/resume bridge manager" value="" />
+            <entry key="Properties" value="" />
+            <entry key="Single Arrow" value="" />
+            <entry key="Double Arrow" value="" />
+            <entry key="Dynamic HV" value="" />
+            <entry key="Dynamic Polyline" value="" />
+            <entry key="Erm" value="" />
+            <entry key="Dynamic Curve" value="" />
+            <entry key="Size to Content" value="" />
+            <entry key="Inflate to Content" value="" />
+            <entry key="Modify elliptical arc center" value="" />
+            <entry key="Modify x-axis angle and axes ratio" value="" />
+            <entry key="Modify geometry control point" value="" />
+            <entry key="Modify base point" value="" />
+            <entry key="Drag to move segment" value="" />
+            <entry key="SHIFT+Drag to split segment" value="" />
+            <entry key="Start plug" value="" />
+            <entry key="End plug" value="" />
+            <entry key="Plug point" value="" />
+            <entry key="Element and/or element ancestors protection or properties prevent complete execution of this command" value="" />
+            <entry key="Element and/or element ancestors protection or properties prevent the execution of this command" value="" />
+            <entry key="Elliptical Grid" value="" />
+            <entry key="Rectangular Grid" value="" />
+            <entry key="Triangular Grid" value="" />
+            <entry key="Random Graph" value="" />
+            <entry key="Family Tree" value="" />
+            <entry key="Generic Tree" value="" />
+        </dictionary>
+        <dictionary name="Diagram Editors">
+            <entry key="Select new element type:" value="" />
+            <entry key="Add Element" value="" />
+            <entry key="Bridge Manager Editor" value="" />
+            <entry key="Content alignment editor" value="" />
+            <entry key="Bottom Center" value="" />
+            <entry key="Bottom Left" value="" />
+            <entry key="Bottom Right" value="" />
+            <entry key="Middle Center" value="" />
+            <entry key="Middle Left" value="" />
+            <entry key="Middle Right" value="" />
+            <entry key="Top Center " value="" />
+            <entry key="Top Left " value="" />
+            <entry key="Top Right" value="" />
+            <entry key="of type" value="" />
+            <entry key="The cloned object must have a default constructor" value="" />
+            <entry key="Invalid id specified" value="" />
+            <entry key="Drawing Settings Editor" value="" />
+            <entry key="None" value="" />
+            <entry key="Show" value="" />
+            <entry key="Ports" value="" />
+            <entry key="Guidelines" value="" />
+            <entry key="Arrowheads" value="" />
+            <entry key="Shadows" value="" />
+            <entry key="Global visibility editor" value="" />
+            <entry key="Compositing mode:" value="" />
+            <entry key="Interpolation mode:" value="" />
+            <entry key="Pixel offset mode:" value="" />
+            <entry key="Text contrast:" value="" />
+            <entry key="Text rendering hint:" value="" />
+            <entry key="Compositing quality:" value="" />
+            <entry key="Rendering origin X:" value="" />
+            <entry key="Rendering origin Y:" value="" />
+            <entry key="Shape 1D" value="" />
+            <entry key="Shape 2D" value="" />
+            <entry key="All" value="" />
+            <entry key="Rotation" value="" />
+            <entry key="Bounds" value="" />
+            <entry key="Mid points" value="" />
+            <entry key="Points" value="" />
+            <entry key="Load Predefined:" value="" />
+            <entry key="Rotated bounds" value="" />
+            <entry key="Plugs" value="" />
+            <entry key="Control points" value="" />
+            <entry key="Pin point" value="" />
+            <entry key="Geometry Points" value="" />
+            <entry key="Bounds and rotation" value="" />
+            <entry key="Shape points" value="" />
+            <entry key="Interaction style editor" value="" />
+            <entry key="Interactivie Appearance Editor" value="" />
+            <entry key="All:" value="" />
+            <entry key="Left:" value="" />
+            <entry key="Right:" value="" />
+            <entry key="Top:" value="" />
+            <entry key="Bottom:" value="" />
+            <entry key="Margins editor" value="" />
+            <entry key="The control points collection is not created. Do you want to create it now?" value="" />
+            <entry key="Create control points collection?" value="" />
+            <entry key="The ports collection is not created. Do you want to create it now?" value="" />
+            <entry key="Create ports collection?" value="" />
+            <entry key="The label collection is not created. Do you want to create it now?" value="" />
+            <entry key="Create labels collection?" value="" />
+            <entry key="The decorator collection is not created. Do you want to create it now?" value="" />
+            <entry key="Protect from" value="" />
+            <entry key="Protection editor" value="" />
+            <entry key="Routing Manager Editor" value="" />
+            <entry key="Snap Strength Editor" value="" />
+            <entry key="Snap to" value="" />
+            <entry key="Rulers" value="" />
+            <entry key="Grid" value="" />
+            <entry key="Snap targets editor" value="" />
+            <entry key="Translate with" value="" />
+            <entry key="Translation slaves editor" value="" />
+            <entry key="AutoCAD Drawing Interchange" value="" />
+            <entry key="Save To File..." value="" />
+            <entry key="AutoCAD Exporter" value="" />
+            <entry key="Deflate" value="" />
+            <entry key="Edit padding..." value="" />
+            <entry key="Inflate" value="" />
+            <entry key="Load known bounds:" value="" />
+            <entry key="Height:" value="" />
+            <entry key="Width:" value="" />
+            <entry key="Y:" value="" />
+            <entry key="X:" value="" />
+            <entry key="Export Bounds" value="" />
+            <entry key="Image Options" value="" />
+            <entry key="Copy To Clipboard" value="" />
+            <entry key="Export Drawing To Image File" value="" />
+            <entry key="Preview" value="" />
+            <entry key="Image Exporter" value="" />
+            <entry key="Graphics Settings..." value="" />
+            <entry key="Grayscale" value="" />
+            <entry key="Resolution:" value="" />
+            <entry key="Bits per pixel:" value="" />
+            <entry key="Format:" value="" />
+            <entry key="Back color:" value="" />
+            <entry key="Bitmap Files" value="" />
+            <entry key="Emf Files" value="" />
+            <entry key="Exif Files" value="" />
+            <entry key="Gif Files" value="" />
+            <entry key="Icon Files" value="" />
+            <entry key="Jpg Files" value="" />
+            <entry key="Png Files" value="" />
+            <entry key="Tiff Files" value="" />
+            <entry key="Wmf Files" value="" />
+            <entry key="PDF files" value="" />
+            <entry key="Custom" value="" />
+            <entry key="A0" value="" />
+            <entry key="A1" value="" />
+            <entry key="A2" value="" />
+            <entry key="A3" value="" />
+            <entry key="A4" value="" />
+            <entry key="A5" value="" />
+            <entry key="RA0" value="" />
+            <entry key="RA1" value="" />
+            <entry key="RA2" value="" />
+            <entry key="RA3" value="" />
+            <entry key="RA4" value="" />
+            <entry key="RA5" value="" />
+            <entry key="B0" value="" />
+            <entry key="B1" value="" />
+            <entry key="B2" value="" />
+            <entry key="B3" value="" />
+            <entry key="B4" value="" />
+            <entry key="B5" value="" />
+            <entry key="Quarto" value="" />
+            <entry key="Foolscap" value="" />
+            <entry key="Executive" value="" />
+            <entry key="GovernmentLetter" value="" />
+            <entry key="Letter" value="" />
+            <entry key="Legal" value="" />
+            <entry key="Ledger" value="" />
+            <entry key="Tabloid" value="" />
+            <entry key="Post" value="" />
+            <entry key="Crown" value="" />
+            <entry key="LargePost" value="" />
+            <entry key="Demy" value="" />
+            <entry key="Medium" value="" />
+            <entry key="Royal" value="" />
+            <entry key="Elephant" value="" />
+            <entry key="DoubleDemy" value="" />
+            <entry key="QuadDemy" value="" />
+            <entry key="STMT" value="" />
+            <entry key="Folio" value="" />
+            <entry key="Statement" value="" />
+            <entry key="Size10x14" value="" />
+            <entry key="Compress contents" value="" />
+            <entry key="Page Setup (in points)" value="" />
+            <entry key="Margins" value="" />
+            <entry key="Page Size:" value="" />
+            <entry key="Zoom %:" value="" />
+            <entry key="Layout" value="" />
+            <entry key="Page Rows:" value="" />
+            <entry key="Page Columns:" value="" />
+            <entry key="Layout:" value="" />
+            <entry key="PDF Exporter" value="" />
+            <entry key="Update preview" value="" />
+            <entry key="Width" value="" />
+            <entry key="pixels" value="" />
+            <entry key="Height" value="" />
+            <entry key="Image not available" value="" />
+            <entry key="Flash movies" value="" />
+            <entry key="Silverlight XAML files" value="" />
+            <entry key="Embedded images format:" value="" />
+            <entry key="Frames per second:" value="" />
+            <entry key="Flash Exporter" value="" />
+            <entry key="Xaml Exporter" value="" />
+            <entry key="Compress" value="" />
+            <entry key="Embed Images" value="" />
+            <entry key="Add Svg header" value="" />
+            <entry key="Enable interactivity" value="" />
+            <entry key="Svg Exporter" value="" />
+            <entry key="Svg Files" value="" />
+            <entry key="Name Column:" value="" />
+            <entry key="Text Column:" value="" />
+            <entry key="Min Zoom:" value="" />
+            <entry key="Max Zoom:" value="" />
+            <entry key="Fill Column:" value="" />
+            <entry key="End Color:" value="" />
+            <entry key="Start Color:" value="" />
+            <entry key="Color Count:" value="" />
+            <entry key="Shapefiles:" value="" />
+            <entry key="Edit" value="" />
+            <entry key="Move down" value="" />
+            <entry key="Move up" value="" />
+            <entry key="Remove" value="" />
+            <entry key="Add..." value="" />
+            <entry key="Settings:" value="" />
+            <entry key="Standard parallel:" value="" />
+            <entry key="Import in multiple layers:" value="" />
+            <entry key="Map projection:" value="" />
+            <entry key="Parallels render mode:" value="" />
+            <entry key="Meridians render mode:" value="" />
+            <entry key="Represents world map:" value="" />
+            <entry key="Select shapefiles" value="" />
+            <entry key="Map Importer" value="" />
+            <entry key="Fine" value="" />
+            <entry key="Normal" value="" />
+            <entry key="Coarse" value="" />
+            <entry key="ESRI shapefiles" value="" />
+            <entry key="Central meridian:" value="" />
+            <entry key="One page" value="" />
+            <entry key="Two pages" value="" />
+            <entry key="Three pages" value="" />
+            <entry key="Four pages" value="" />
+            <entry key="Six pages" value="" />
+            <entry key="All pages" value="" />
+            <entry key="Auto" value="" />
+            <entry key="Print Layout:" value="" />
+            <entry key="Display Page:" value="" />
+            <entry key="Show:" value="" />
+            <entry key="Print..." value="" />
+            <entry key="Page Setup..." value="" />
+            <entry key="Print Preview" value="" />
+            <entry key="Failed to save DXF file. Exception was: " value="" />
+            <entry key="Failed to save DXF file" value="" />
+            <entry key="Must be positive and non zero" value="" />
+            <entry key="Failed to save SWF file. Exception was: " value="" />
+            <entry key="Failed to save SWF file" value="" />
+            <entry key="Failed to render bitmap." value="" />
+            <entry key="Failed to render bitmap. Exception was: " value="" />
+            <entry key="Failed to set clipboard content. Exception was: " value="" />
+            <entry key="Failed to set clipboard content." value="" />
+            <entry key="Failed to save image file. Exception was: " value="" />
+            <entry key="Failed to save image file." value="" />
+            <entry key="Failed to save pdf file. Exception was: " value="" />
+            <entry key="Failed to save PDF file" value="" />
+            <entry key="Nevron Library Binary" value="" />
+            <entry key="Nevron Library XML" value="" />
+            <entry key="Nevron Library SOAP" value="" />
+            <entry key="All files" value="" />
+            <entry key="The selected file is not from a recognized format" value="" />
+            <entry key="Nevron Drawing Binary" value="" />
+            <entry key="Nevron Drawing XML" value="" />
+            <entry key="Nevron Drawing SOAP" value="" />
+            <entry key="Nevron Drawing Custom Binary" value="" />
+            <entry key="Nevron Drawing Custom XML" value="" />
+            <entry key="You cannot pass a null drawing to this constructor" value="" />
+            <entry key="Printer settings are not valid. Check whether printer is installed" value="" />
+            <entry key="Failed to save SVG file. Exception was: " value="" />
+            <entry key="Failed to save SVG file" value="" />
+            <entry key="Silverlight Exporter" value="" />
+            <entry key="Failed to save silverlight file. Exception was: " value="" />
+            <entry key="Failed to save Silverlight file" value="" />
+        </dictionary>
+        <dictionary name="Diagram Designer">
+            <entry key="Diagram Designer" value="" />
+            <entry key="Library Browser" value="" />
+            <entry key="Pan and Zoom" value="" />
+            <entry key="Property Browser" value="" />
+            <entry key="Template Properties" value="" />
+            <entry key="Preview:" value="" />
+            <entry key="Template Wizard" value="" />
+            <entry key="Select Template" value="" />
+            <entry key="Elliptical grid graph with {0} nodes on the rim." value="" />
+            <entry key="Has center node." value="" />
+            <entry key="Each node is connected with the next node on the rim." value="" />
+            <entry key="Each node is also connected with the center node." value="" />
+            <entry key="Generates a random graph with {0} vertices and {1} edges." value="" />
+            <entry key="The number of edges must be greater than or equal to the (number of vertices - 1) in order to generate a connected graph" value="" />
+            <entry key="Too many edges wanted for the graph" value="" />
+            <entry key="Rectangular grid graph with {0} columns and {1} rows." value="" />
+            <entry key="Each cell is connected with the horizontally and vertically adjacent cells." value="" />
+            <entry key="Triangular grid graph with {0} levels." value="" />
+            <entry key="Each cell has two child cells and is connected with them as well as with the adjacent cells from the same level." value="" />
+            <entry key="Family tree with two parents and " value="" />
+            <entry key="Tree with {0} levels and {1} branch elements." value="" />
+            <entry key="Create elliptical arc tool" value="" />
+            <entry key="Create circular arc tool" value="" />
+            <entry key="Create bezier curve tool" value="" />
+            <entry key="Create bridgeable polyline tool" value="" />
+            <entry key="Create bridgeable HV polyline tool" value="" />
+            <entry key="Create closed curve tool" value="" />
+            <entry key="Create curve tool" value="" />
+            <entry key="Create double arrow tool" value="" />
+            <entry key="Create ellipse tool" value="" />
+            <entry key="Create connector tool" value="" />
+            <entry key="Create shape" value="" />
+            <entry key="Create guideline tool" value="" />
+            <entry key="Create line tool" value="" />
+            <entry key="Create bridgeable line tool" value="" />
+            <entry key="Create polygon tool" value="" />
+            <entry key="Create polyline tool" value="" />
+            <entry key="Create rectangle tool" value="" />
+            <entry key="Create single arrow tool" value="" />
+            <entry key="Handle tool" value="" />
+            <entry key="Context menu tool" value="" />
+            <entry key="Mouse wheel scroll and zoom tool" value="" />
+            <entry key="Keyboard tool" value="" />
+            <entry key="Mouse event delegator tool" value="" />
+            <entry key="Drag drop event delegator tool" value="" />
+            <entry key="Keyboard event delegator tool" value="" />
+            <entry key="Selector tool" value="" />
+            <entry key="Move tool" value="" />
+            <entry key="Drag drop target tool" value="" />
+            <entry key="Pan tool" value="" />
+            <entry key="Create text tool" value="" />
+            <entry key="Inplace edit tool" value="" />
+            <entry key="Viewport pan tool" value="" />
+            <entry key="Library selector tool" value="" />
+            <entry key="Library keyboard tool" value="" />
+            <entry key="Library move tool" value="" />
+            <entry key="Library context menu tool" value="" />
+            <entry key="Library drop target tool" value="" />
+            <entry key="Library tooltips tool" value="" />
+            <entry key="Library mouse wheel scroll tool" value="" />
+            <entry key="Resize shape" value="" />
+            <entry key="Change pin point" value="" />
+            <entry key="Rotate shape" value="" />
+            <entry key="Snap to geometry point" value="" />
+            <entry key="Snap to port" value="" />
+            <entry key="Connect to port" value="" />
+            <entry key="Drag the element onto the drawing" value="" />
+            <entry key="Format" value="" />
+            <entry key="View" value="" />
+            <entry key="Action" value="" />
+            <entry key="Main Menu" value="" />
+            <entry key="File" value="" />
+            <entry key="Edit" value="" />
+            <entry key="Insert" value="" />
+            <entry key="Layout" value="" />
+            <entry key="Tools" value="" />
+            <entry key="Help" value="" />
+            <entry key="Standard" value="" />
+            <entry key="Library" value="" />
+            <entry key="Do you want to save your changes?" value="" />
+            <entry key="Save your changes" value="" />
+            <entry key="Bring forward" value="" />
+            <entry key="Bring to front" value="" />
+            <entry key="Compose" value="" />
+            <entry key="Decompose" value="" />
+            <entry key="Flip horizontal" value="" />
+            <entry key="Flip vertical" value="" />
+            <entry key="Group" value="" />
+            <entry key="Nudge bottom" value="" />
+            <entry key="Nudge left" value="" />
+            <entry key="Nudge right" value="" />
+            <entry key="Nudge top" value="" />
+            <entry key="Reflex" value="" />
+            <entry key="Reroute" value="" />
+            <entry key="Reverse" value="" />
+            <entry key="Rotate left" value="" />
+            <entry key="Rotate right" value="" />
+            <entry key="Send backward" value="" />
+            <entry key="Send to back" value="" />
+            <entry key="Ungroup" value="" />
+            <entry key="Update model bounds" value="" />
+            <entry key="Undo" value="" />
+            <entry key="Redo" value="" />
+            <entry key="Background" value="" />
+            <entry key="Layers" value="" />
+            <entry key="Style sheets" value="" />
+            <entry key="Copy" value="" />
+            <entry key="Cut" value="" />
+            <entry key="Delete" value="" />
+            <entry key="Paste" value="" />
+            <entry key="Select All 1D Shapes" value="" />
+            <entry key="Select All 2D Shapes" value="" />
+            <entry key="Select All" value="" />
+            <entry key="Autocad Export" value="" />
+            <entry key="Exit" value="" />
+            <entry key="Flash Export" value="" />
+            <entry key="Image Export" value="" />
+            <entry key="Map Import" value="" />
+            <entry key="New" value="" />
+            <entry key="Open" value="" />
+            <entry key="Page Setup" value="" />
+            <entry key="PDF Export" value="" />
+            <entry key="Print" value="" />
+            <entry key="Print Preview" value="" />
+            <entry key="Save" value="" />
+            <entry key="Silverlight Export" value="" />
+            <entry key="Svg Export" value="" />
+            <entry key="Align text bottom" value="" />
+            <entry key="Align text center" value="" />
+            <entry key="Align text left" value="" />
+            <entry key="Align text middle" value="" />
+            <entry key="Align text right" value="" />
+            <entry key="Align text top" value="" />
+            <entry key="Bridge style" value="" />
+            <entry key="End arrowhead style" value="" />
+            <entry key="Fill Style" value="" />
+            <entry key="Interaction style" value="" />
+            <entry key="Interactivity Style" value="" />
+            <entry key="Protection" value="" />
+            <entry key="Shadow Style" value="" />
+            <entry key="Start arrowhead style" value="" />
+            <entry key="Stroke Style" value="" />
+            <entry key="Text Style" value="" />
+            <entry key="Bold" value="" />
+            <entry key="Italic" value="" />
+            <entry key="Underline" value="" />
+            <entry key="About" value="" />
+            <entry key="Template" value="" />
+            <entry key="Align bottoms" value="" />
+            <entry key="Align centers" value="" />
+            <entry key="Align lefts" value="" />
+            <entry key="Align middles" value="" />
+            <entry key="Align rights" value="" />
+            <entry key="Align to grid" value="" />
+            <entry key="Align tops" value="" />
+            <entry key="Center in document horizontally" value="" />
+            <entry key="Center in document vertically" value="" />
+            <entry key="Decrease horizontal spacing" value="" />
+            <entry key="Decrease vertical spacing" value="" />
+            <entry key="Increase horizontal spacing" value="" />
+            <entry key="Increase vertical spacing" value="" />
+            <entry key="Make horizontal spacing equal" value="" />
+            <entry key="Make same height" value="" />
+            <entry key="Make same size" value="" />
+            <entry key="Make same width" value="" />
+            <entry key="Make vertical spacing equal" value="" />
+            <entry key="Remove horizontal spacing" value="" />
+            <entry key="Remove vertical spacing" value="" />
+            <entry key="Layout Shapes" value="" />
+            <entry key="Size to grid" value="" />
+            <entry key="Close library" value="" />
+            <entry key="Icons and Details" value="" />
+            <entry key="Icons and Names" value="" />
+            <entry key="Icons Only" value="" />
+            <entry key="List" value="" />
+            <entry key="Thumbnails" value="" />
+            <entry key="New library" value="" />
+            <entry key="Open library" value="" />
+            <entry key="Save library" value="" />
+            <entry key="Align" value="" />
+            <entry key="Center" value="" />
+            <entry key="Composition" value="" />
+            <entry key="Grouping" value="" />
+            <entry key="Nudge" value="" />
+            <entry key="Operations" value="" />
+            <entry key="Order" value="" />
+            <entry key="Rotate or Flip" value="" />
+            <entry key="Size" value="" />
+            <entry key="Spacing" value="" />
+            <entry key="Customize" value="" />
+            <entry key="Bezier curve tool" value="" />
+            <entry key="Circular arc tool" value="" />
+            <entry key="Closed curve tool" value="" />
+            <entry key="Curve tool" value="" />
+            <entry key="Ellipse tool" value="" />
+            <entry key="Elliptical arc tool" value="" />
+            <entry key="Line tool" value="" />
+            <entry key="Polygon tool" value="" />
+            <entry key="Polyline tool" value="" />
+            <entry key="Rectangle tool" value="" />
+            <entry key="Text tool" value="" />
+            <entry key="Pointer tool" value="" />
+            <entry key="Options" value="" />
+            <entry key="Connector tool" value="" />
+            <entry key="Bezier" value="" />
+            <entry key="Double Arrow" value="" />
+            <entry key="Dynamic Curve" value="" />
+            <entry key="Dynamic HV" value="" />
+            <entry key="Dynamic Polyline" value="" />
+            <entry key="Erm" value="" />
+            <entry key="Line" value="" />
+            <entry key="Single Arrow" value="" />
+            <entry key="Side to Top/Bottom" value="" />
+            <entry key="Top/Bottom to Side" value="" />
+            <entry key="Side to Side" value="" />
+            <entry key="Top to Bottom" value="" />
+            <entry key="Arrowheads" value="" />
+            <entry key="Grid" value="" />
+            <entry key="Guidelines" value="" />
+            <entry key="Ports" value="" />
+            <entry key="Rulers" value="" />
+            <entry key="Shadows" value="" />
+            <entry key="Snap rotation" value="" />
+            <entry key="Snap To Grid" value="" />
+            <entry key="Snap to guidelines" value="" />
+            <entry key="Snap to rulers" value="" />
+            <entry key="Status bar" value="" />
+            <entry key="Zoom In" value="" />
+            <entry key="Zoom Out" value="" />
+            <entry key="Zoom Percent" value="" />
+            <entry key="Fit" value="" />
+            <entry key="Stretch" value="" />
+            <entry key="Width" value="" />
+            <entry key="Height" value="" />
+            <entry key="Grid style" value="" />
+            <entry key="Interlaced" value="" />
+            <entry key="Interlaced horizontally" value="" />
+            <entry key="Interlaced vertically" value="" />
+            <entry key="Major dots" value="" />
+            <entry key="Major lines" value="" />
+            <entry key="Major minor lines" value="" />
+            <entry key="Render Technology" value="" />
+            <entry key="GDI+" value="" />
+            <entry key="OpenGL Hardware" value="" />
+            <entry key="OpenGL Software" value="" />
+            <entry key="View layout" value="" />
+            <entry key="Normal" value="" />
+            <entry key="Stretch to height" value="" />
+            <entry key="Stretch to width" value="" />
+            <entry key="Selection Anchor" value="" />
+            <entry key="Document" value="" />
+            <entry key="Active Layer" value="" />
+            <entry key="Grid Editor" value="" />
+            <entry key="Shape:" value="" />
+            <entry key="Width:" value="" />
+            <entry key="Height:" value="" />
+            <entry key="Horizontal Ruler Editor" value="" />
+            <entry key="Vertical Ruler Editor" value="" />
+            <entry key="Snapping Manager Editor" value="" />
+            <entry key="Trackers Appearance Editor" value="" />
+            <entry key="Item size width and height must not be 0" value="" />
+            <entry key="The specified group is not opened in this library browser" value="" />
+            <entry key="Close" value="" />
+            <entry key="Visit Nevron Website" value="" />
+            <entry key="About Nevron Diagram for .NET" value="" />
+            <entry key="Selection" value="" />
+            <entry key="Apply to:" value="" />
+            <entry key="Layout:" value="" />
+            <entry key="Diagram Options" value="" />
+            <entry key="Mouse pos" value="" />
+            <entry key="Selection bounds" value="" />
+            <entry key="Ready" value="" />
+            <entry key="Double click and type your text" value="" />
+            <entry key="Origin" value="" />
+            <entry key="Cell Size" value="" />
+            <entry key="Units" value="" />
+        </dictionary>
+    </dictionaries>
+</nevron>

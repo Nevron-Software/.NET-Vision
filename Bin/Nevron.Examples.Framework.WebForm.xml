@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nevron.Examples.Framework.WebForm</name>
+    </assembly>
+    <members>
+        <member name="T:Nevron.Examples.Framework.WebForm.NCodeHighlighter">
+            <summary>
+            Summary description for NCodeHighlighter.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WebForm.NCSCodeHighlighter">
+            <summary>
+            Summary description for NCSCodeHighlighter.
+            </summary>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WebForm.NVBCodeHighlighter">
+            <summary>
+            Summary description for NVBCodeHighlighter.
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WebForm.NTab.CreateTab(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="test"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Nevron.Examples.Framework.WebForm.NTabStrip.SelectedTab">
+            <summary>
+            Gets the selected tab
+            </summary>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WebForm.NTabStrip.AddTab(Nevron.Examples.Framework.WebForm.NTab)">
+            <summary>
+            Adds the tab to this tab strip
+            </summary>
+            <param name="tab"></param>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WebForm.NTabStrip.GetHtml">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WebForm.NTabStrip.RaisePostBackEvent(System.String)">
+            <summary>
+            Region raises the postback event
+            </summary>
+            <param name="eventArgument"></param>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WebForm.NTabStrip.GetBeforeSpacingColumnHtml">
+            <summary>
+            Gets before spacing column html
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WebForm.NTabStrip.GetAfterSpacingColumnHtml">
+            <summary>
+            gets after spacing table column
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Examples.Framework.WebForm.NTreeView.#ctor(Nevron.Examples.Framework.WebForm.NTreeNodeTargetFormatter)">
+            <summary>
+            Initializer constructor
+            </summary>
+            <param name="formatter"></param>
+        </member>
+        <member name="T:Nevron.Examples.Framework.WebForm.NDynamicPage">
+            <summary>
+            Represents a page which renders its content dynamically
+            </summary>
+        </member>
+    </members>
+</doc>

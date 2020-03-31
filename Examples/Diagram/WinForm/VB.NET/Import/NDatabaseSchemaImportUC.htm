@@ -1,0 +1,15 @@
+<!-- Recognized tags -->
+<description>
+    <p>
+     This example demonstrates how easy you can import the structure of a complex database in <b>Nevron Diagram</b>.
+     All you have to do is to create an instance of the <b>NDatabaseImporter</b> class and call its <b>Import</b> method
+     with the apropriate connection string. Currently the importer can draw the structure of DataSet objects,
+     XSD schemas, Access and SQL databases. You can control the importing process using the following properties:
+     <ul>
+        <li><b>ImportInActiveLayer</b> - determines whether to import the schema in the active layer or in a new layer named after the data set. By default set to false.</li>
+        <li><b>LinksBelowTables</b> - if set to true the links will be drawn below the tables, otherwise they will be drawn above them. By default set to true.</li>
+        <li><b>ConnectorType</b> - determines the type of the connector to use for the data relations. By default set to ErmConnector, which is a connector that
+        behaves as the connector used in Microsoft Access Relationships diagram.</li>
+     </ul>
+    </p> 
+</description>
