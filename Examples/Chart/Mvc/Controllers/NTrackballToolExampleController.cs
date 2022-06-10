@@ -1,4 +1,7 @@
 ﻿using System.Drawing;
+using System.IO;
+using System.Web.Mvc;
+using System.Web;
 using Nevron.Chart;
 using Nevron.Chart.ThinWeb;
 using Nevron.GraphicsCore;

@@ -162,32 +162,33 @@ Namespace Nevron.Examples.Chart.WebForm
 			Dim reader As BinaryReader = Nothing
 
 			Try
-
 				' fill the XYZ data from a binary resource
 				Dim path As String = MapPathSecure(TemplateSourceDirectory) & "\DataXYZ.bin"
 				stream = New FileStream(path, FileMode.Open, FileAccess.Read)
 				reader = New BinaryReader(stream)
 
-				Dim nDataPointsCount As Integer = CInt(Fix(stream.Length)) / 12
+				Dim nDataPointsCount As Integer = CInt(stream.Length) \ 12
+
+				'surface.Data.SetCapacity(nDataPointsCount);
+				Dim data(nDataPointsCount - 1) As NVector3DF
 
 				' fill Y values
-				Dim i As Integer = 0
-				Do While i < nDataPointsCount
-					surface.Values.Add(reader.ReadSingle())
-					i += 1
-				Loop
+				For i As Integer = 0 To nDataPointsCount - 1
+					data(i).Y = reader.ReadSingle()
+				Next i
 
-				i = 0
-				Do While i < nDataPointsCount
-					surface.XValues.Add(reader.ReadSingle())
-					i += 1
-				Loop
+				' fill X values
+				For i As Integer = 0 To nDataPointsCount - 1
+					data(i).X = reader.ReadSingle()
+				Next i
 
-				i = 0
-				Do While i < nDataPointsCount
-					surface.ZValues.Add(reader.ReadSingle())
-					i += 1
-				Loop
+				' fill Z values
+				For i As Integer = 0 To nDataPointsCount - 1
+					data(i).Z = reader.ReadSingle()
+				Next i
+
+				surface.Data.Clear()
+				surface.Data.AddValues(data)
 			Finally
 				If Not reader Is Nothing Then
 					reader.Close()

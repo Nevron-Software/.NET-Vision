@@ -1,14 +1,6 @@
-﻿Imports System
-Imports System.Collections
-Imports System.ComponentModel
-Imports System.Drawing
-Imports System.Data
-Imports System.Windows.Forms
-Imports Nevron.Dom
-Imports Nevron.Editors
-Imports Nevron.GraphicsCore
+﻿Imports System.ComponentModel
 Imports Nevron.Chart
-Imports Nevron.SmartShapes
+Imports Nevron.GraphicsCore
 
 Namespace Nevron.Examples.Chart.WinForm
 	<ToolboxItem(False)> _

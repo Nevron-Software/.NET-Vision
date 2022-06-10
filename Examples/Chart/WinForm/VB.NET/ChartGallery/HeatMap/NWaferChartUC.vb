@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Drawing
@@ -9,9 +8,10 @@ Imports Nevron.GraphicsCore
 Imports Nevron.UI
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
-	Public Partial Class NWaferChartUC
+	<ToolboxItem(False)>
+	Partial Public Class NWaferChartUC
 		Inherits NExampleBaseUC
+
 		''' <summary> 
 		''' Required designer variable.
 		''' </summary>
@@ -19,7 +19,6 @@ Namespace Nevron.Examples.Chart.WinForm
 
 		Private m_HeatMap As NHeatMapSeries
 		Private WithEvents InterpolateImageCheckBox As UI.WinForm.Controls.NCheckBox
-		Private m_SizeY As Integer = 200
 
 		Public Sub New()
 			InitializeComponent()
@@ -28,9 +27,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		''' <summary> 
 		''' Clean up any resources being used.
 		''' </summary>
-		Protected Overrides Overloads Sub Dispose(ByVal disposing As Boolean)
+		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 			If disposing Then
-				If Not components Is Nothing Then
+				If components IsNot Nothing Then
 					components.Dispose()
 				End If
 
@@ -52,7 +51,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.InterpolateImageCheckBox.Size = New System.Drawing.Size(150, 24)
 			Me.InterpolateImageCheckBox.TabIndex = 15
 			Me.InterpolateImageCheckBox.Text = "Interpolate Image"
-'			Me.InterpolateImageCheckBox.CheckedChanged += New System.EventHandler(Me.InterpolateImageCheckBox_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.InterpolateImageCheckBox.CheckedChanged += new System.EventHandler(this.InterpolateImageCheckBox_CheckedChanged);
 			' 
 			' NWaferChartUC
 			' 
@@ -69,7 +69,7 @@ Namespace Nevron.Examples.Chart.WinForm
 			MyBase.Initialize()
 
 			' set a chart title
-			Dim title As NLabel = New NLabel("Heat Map Contour")
+			Dim title As New NLabel("Wafer Chart")
 			title.TextStyle.FontStyle = New NFontStyle("Times New Roman", 18, FontStyle.Italic)
 			title.TextStyle.FillStyle = New NColorFillStyle(GreyBlue)
 
@@ -82,23 +82,24 @@ Namespace Nevron.Examples.Chart.WinForm
 			Dim data As NHeatMapData = m_HeatMap.Data
 
 			m_HeatMap.Palette.Mode = PaletteMode.AutoFixedEntryCount
-			m_HeatMap.Palette.AutoPaletteColors = New NArgbColorValue() { New NArgbColorValue(Color.Green), New NArgbColorValue(Color.Red) }
+			m_HeatMap.Palette.AutoPaletteColors = New NArgbColorValue() {
+				New NArgbColorValue(Color.Green),
+				New NArgbColorValue(Color.Red)
+			}
 			m_HeatMap.Palette.SmoothPalette = True
 
 			Dim gridSizeX As Integer = 100
 			Dim gridSizeY As Integer = 100
 			data.SetGridSize(gridSizeX, gridSizeY)
 
-			Dim centerX As Integer = gridSizeX / 2
-			Dim centerY As Integer = gridSizeY / 2
+			Dim centerX As Integer = gridSizeX \ 2
+			Dim centerY As Integer = gridSizeY \ 2
 
-			Dim radius As Integer = gridSizeX / 2
-			Dim rand As Random = New Random()
+			Dim radius As Integer = gridSizeX \ 2
+			Dim rand As New Random()
 
-			Dim y As Integer = 0
-			Do While y < gridSizeY
-				Dim x As Integer = 0
-				Do While x < gridSizeX
+			For y As Integer = 0 To gridSizeY - 1
+				For x As Integer = 0 To gridSizeX - 1
 					Dim dx As Integer = x - centerX
 					Dim dy As Integer = y - centerY
 
@@ -110,10 +111,8 @@ Namespace Nevron.Examples.Chart.WinForm
 					Else
 						data.SetValue(x, y, Double.NaN)
 					End If
-					x += 1
-				Loop
-				y += 1
-			Loop
+				Next x
+			Next y
 		End Sub
 
 		Private Sub InterpolateImageCheckBox_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs) Handles InterpolateImageCheckBox.CheckedChanged

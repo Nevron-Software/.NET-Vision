@@ -12,7 +12,7 @@ Imports Nevron.Chart
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NExplodedPieUC
 		Inherits NExampleBaseUC
 

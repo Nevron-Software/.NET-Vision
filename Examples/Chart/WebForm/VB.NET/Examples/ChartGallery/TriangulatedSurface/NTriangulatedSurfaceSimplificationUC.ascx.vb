@@ -33,9 +33,9 @@ Namespace Nevron.Examples.Chart.WebForm
 				' setup chart
 				Dim chart As NChart = nChartControl1.Charts(0)
 				chart.Enable3D = True
-				chart.Width = 60.0f
-				chart.Depth = 60.0f
-				chart.Height = 30.0f
+				chart.Width = 60.0F
+				chart.Depth = 60.0F
+				chart.Height = 30.0F
 				chart.LightModel.SetPredefinedLightModel(PredefinedLightModel.ShinyTopLeft)
 				chart.Projection.SetPredefinedProjection(PredefinedProjection.PerspectiveTilted)
 				chart.Projection.Elevation = 30
@@ -50,7 +50,7 @@ Namespace Nevron.Examples.Chart.WebForm
 				scaleY.RoundToTickMax = False
 				scaleY.RoundToTickMin = False
 				scaleY.MinTickDistance = New NLength(10, NGraphicsUnit.Point)
-				scaleY.MajorGridStyle.ShowAtWalls = New ChartWallType() { ChartWallType.Left, ChartWallType.Back }
+				scaleY.MajorGridStyle.ShowAtWalls = New ChartWallType() {ChartWallType.Left, ChartWallType.Back}
 				scaleY.MajorGridStyle.LineStyle.Pattern = LinePattern.Dot
 				chart.Axis(StandardAxis.PrimaryY).ScaleConfigurator = scaleY
 
@@ -58,7 +58,7 @@ Namespace Nevron.Examples.Chart.WebForm
 				Dim scaleX As NLinearScaleConfigurator = New NLinearScaleConfigurator()
 				scaleX.RoundToTickMax = False
 				scaleX.RoundToTickMin = False
-				scaleX.MajorGridStyle.ShowAtWalls = New ChartWallType() { ChartWallType.Floor, ChartWallType.Back }
+				scaleX.MajorGridStyle.ShowAtWalls = New ChartWallType() {ChartWallType.Floor, ChartWallType.Back}
 				scaleX.MajorGridStyle.LineStyle.Pattern = LinePattern.Dot
 				chart.Axis(StandardAxis.PrimaryX).ScaleConfigurator = scaleX
 
@@ -66,7 +66,7 @@ Namespace Nevron.Examples.Chart.WebForm
 				Dim scaleZ As NLinearScaleConfigurator = New NLinearScaleConfigurator()
 				scaleZ.RoundToTickMax = False
 				scaleZ.RoundToTickMin = False
-				scaleZ.MajorGridStyle.ShowAtWalls = New ChartWallType() { ChartWallType.Floor, ChartWallType.Left }
+				scaleZ.MajorGridStyle.ShowAtWalls = New ChartWallType() {ChartWallType.Floor, ChartWallType.Left}
 				scaleZ.MajorGridStyle.LineStyle.Pattern = LinePattern.Dot
 				chart.Axis(StandardAxis.Depth).ScaleConfigurator = scaleZ
 
@@ -78,23 +78,10 @@ Namespace Nevron.Examples.Chart.WebForm
 				surface.PaletteSteps = 10
 				surface.ValueFormatter.FormatSpecifier = "0.00"
 				surface.FillStyle = New NColorFillStyle(Color.YellowGreen)
-				surface.UsePreciseGeometry = True
-
-				' set clustering parameters
-				surface.ClusterMode = ClusterMode.Enabled
-				surface.ClusterDistanceFactor = 0.01
-
-				FillData()
 			End If
 
-			Dim chart1 As NChart = nChartControl1.Charts(0)
-			Dim surface1 As NTriangulatedSurfaceSeries = CType(chart1.Series(0), NTriangulatedSurfaceSeries)
+			FillData()
 
-			If SimplifySurfaceCheckBox.Checked Then
-				surface1.ClusterMode = ClusterMode.Enabled
-			Else
-				surface1.ClusterMode = ClusterMode.Disabled
-			End If
 		End Sub
 
 		Private Sub FillData()
@@ -115,6 +102,9 @@ Namespace Nevron.Examples.Chart.WebForm
 			Dim cx As Double = -3.0
 			Dim cz As Double = -5.0
 
+			Dim vectorData((countZ * countX) - 1) As NVector3DD
+			Dim index As Integer = 0
+
 			For n As Integer = 0 To countZ - 1
 				Dim z As Double = rangeZ.Begin + n * stepZ
 
@@ -124,11 +114,20 @@ Namespace Nevron.Examples.Chart.WebForm
 					Dim dz As Double = cz - z
 					Dim distance As Double = Math.Sqrt(dx * dx + dz * dz)
 
-					surface.Values.Add(Math.Sin(distance) * Math.Exp(-distance * 0.1))
-					surface.XValues.Add(x)
-					surface.ZValues.Add(z)
+					vectorData(index) = New NVector3DD(x, Math.Sin(distance) * Math.Exp(-distance * 0.1), z)
+					index += 1
 				Next m
 			Next n
+
+			If SimplifySurfaceCheckBox.Checked Then
+				Dim simplifier As New NPointSetSimplifier3D()
+				simplifier.DistanceFactor = 0.01
+
+				vectorData = simplifier.Simplify(vectorData)
+			End If
+
+			surface.Data.Clear()
+			surface.Data.AddValues(vectorData)
 		End Sub
 	End Class
 End Namespace

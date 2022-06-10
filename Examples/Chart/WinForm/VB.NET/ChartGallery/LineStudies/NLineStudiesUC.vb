@@ -14,7 +14,7 @@ Imports Nevron.Chart
 Imports Nevron.Chart.Functions
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NLineStudiesUC
 		Inherits NExampleBaseUC
 

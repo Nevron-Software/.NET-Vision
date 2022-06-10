@@ -91,9 +91,10 @@ namespace Nevron.Examples.Chart.WinForm
 		{
 			base.Initialize();
 
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.HighSpeed;
+			// Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window;
 
-            nChartControl1.Panels.Clear();
+			nChartControl1.Panels.Clear();
 
 			// set a chart title
 			NLabel title = new NLabel("Grid Surface Cross Section");
@@ -443,13 +444,13 @@ namespace Nevron.Examples.Chart.WinForm
             switch (m_DragPlaneSurface)
             {
                 case DragPlaneSurface.XY:
-                    viewToScale = new NViewToScale3DTransformation(this.GetView().Context, chart, (int)StandardAxis.PrimaryX, (int)StandardAxis.PrimaryY, (int)StandardAxis.Depth, m_OriginalPosition.Z);
+                    viewToScale = new NViewToScale3DTransformation(chart, (int)StandardAxis.PrimaryX, (int)StandardAxis.PrimaryY, (int)StandardAxis.Depth, m_OriginalPosition.Z);
                     break;
                 case DragPlaneSurface.XZ:
-                    viewToScale = new NViewToScale3DTransformation(this.GetView().Context, chart, (int)StandardAxis.PrimaryX, (int)StandardAxis.Depth, (int)StandardAxis.PrimaryY, m_OriginalPosition.Y);
+                    viewToScale = new NViewToScale3DTransformation(chart, (int)StandardAxis.PrimaryX, (int)StandardAxis.Depth, (int)StandardAxis.PrimaryY, m_OriginalPosition.Y);
                     break;
                 case DragPlaneSurface.ZY:
-                    viewToScale = new NViewToScale3DTransformation(this.GetView().Context, chart, (int)StandardAxis.Depth, (int)StandardAxis.PrimaryY, (int)StandardAxis.PrimaryX, m_OriginalPosition.X);
+                    viewToScale = new NViewToScale3DTransformation(chart, (int)StandardAxis.Depth, (int)StandardAxis.PrimaryY, (int)StandardAxis.PrimaryX, m_OriginalPosition.X);
                     break;
                 default:
                     Debug.Assert(false); // new drag plane

@@ -1,14 +1,8 @@
-using System;
-using System.Data;
-using System.Drawing;
-using System.Web;
-using System.Web.UI.WebControls;
-using System.Web.UI.HtmlControls;
-using System.IO;	
-using Nevron.Examples.Framework.WebForm;
-using Nevron.GraphicsCore;
 using Nevron.Chart;
-using Nevron.Chart.WebForm;
+using Nevron.GraphicsCore;
+using System;
+using System.Drawing;
+using System.IO;
 
 namespace Nevron.Examples.Chart.WebForm
 {
@@ -161,25 +155,29 @@ namespace Nevron.Examples.Chart.WebForm
 
 				int nDataPointsCount = (int)stream.Length / 12;
 
+				NTriangulatedSurfaceData surfaceData = surface.Data;
+				surfaceData.SetCount(nDataPointsCount);
+				surfaceData.UseColors = true;
+
 				// fill Y values and colors
-				for(int i = 0; i < nDataPointsCount; i++)
+				for (int i = 0; i < nDataPointsCount; i++)
 				{
 					float y = 300 - reader.ReadSingle();
 
-					surface.Values.Add(y);
-					surface.Colors.Add(GetColorFromValue(y));
+					surfaceData.SetYValue(i, y);
+					surfaceData.SetColor(i, GetColorFromValue(y));
 				}
 
 				// fill X values
-				for(int i = 0; i < nDataPointsCount; i++)
+				for (int i = 0; i < nDataPointsCount; i++)
 				{
-					surface.XValues.Add(reader.ReadSingle());
+					surfaceData.SetXValue(i, reader.ReadSingle());
 				}
 
 				// fill Z values
-				for(int i = 0; i < nDataPointsCount; i++)
+				for (int i = 0; i < nDataPointsCount; i++)
 				{
-					surface.ZValues.Add(reader.ReadSingle());
+					surfaceData.SetZValue(i, reader.ReadSingle());
 				}
 			}
 			finally

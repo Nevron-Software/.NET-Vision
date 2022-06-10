@@ -144,11 +144,11 @@ namespace Nevron.Examples.Diagram.WinForm
 
 			NEsriMapImporter mapImporter = new NEsriMapImporter();
 
-			// Create the shapefile
-			NEsriShapefile shapefile = new NEsriShapefile(Path.Combine(Application.StartupPath, fileName));
+            // Create the shapefile
+            NEsriShapefile shapefile = new NEsriShapefile(Path.Combine(Application.StartupPath, fileName));
 			shapefile.NameColumn = nameColumn;
 			shapefile.TextColumn = textColumn;
-			mapImporter.AddLayer(shapefile);
+            mapImporter.AddLayer(shapefile);
 
 			// Import the map
 			mapImporter.Read();

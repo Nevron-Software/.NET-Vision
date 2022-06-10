@@ -1,15 +1,19 @@
 ﻿Imports System
+Imports System.Collections
 Imports System.ComponentModel
 Imports System.Drawing
+Imports System.Drawing.Drawing2D
+Imports System.Data
 Imports System.Windows.Forms
-Imports Microsoft.VisualBasic
-Imports Nevron.Chart
-Imports Nevron.Chart.Windows
 Imports Nevron.Dom
 Imports Nevron.GraphicsCore
+Imports Nevron.Editors
+Imports Nevron.Chart
+Imports Nevron.Chart.WinForm
+Imports Nevron.Chart.Windows
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NNonoverlappingLabelsUC
 		Inherits NExampleBaseUC
 

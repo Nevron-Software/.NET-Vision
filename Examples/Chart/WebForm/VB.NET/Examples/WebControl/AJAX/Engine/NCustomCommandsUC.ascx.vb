@@ -111,7 +111,6 @@ Namespace Nevron.Examples.Chart.WebForm
 			Dim command As NCallbackCommand = args.Command
 			Dim resultBuilder As NAjaxXmlTransportBuilder = args.ResultBuilder
 
-			Dim pieSeries As NPieSeries
 			Select Case command.Name
 				Case "queryCurrentAngle"
 					'	build a custom response data section

@@ -8,7 +8,7 @@ Imports System.ComponentModel
 Imports System.Drawing
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NFloatBarGanttUC
 		Inherits NExampleBaseUC
 

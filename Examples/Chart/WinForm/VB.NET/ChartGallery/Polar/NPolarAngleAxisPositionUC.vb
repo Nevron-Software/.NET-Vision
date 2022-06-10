@@ -10,7 +10,7 @@ Imports Nevron.Editors
 Imports Nevron.Chart
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NPolarAngleAxisPositionUC
 		Inherits NExampleBaseUC
 
@@ -288,15 +288,14 @@ Namespace Nevron.Examples.Chart.WinForm
 		End Sub
 
 		Private Sub ApplyColorToAxis(ByVal axis As NAxis, ByVal color As Color)
-'INSTANT VB NOTE: The variable scale was renamed since Visual Basic does not handle local variables named the same as class members well:
-			Dim scale_Renamed As NStandardScaleConfigurator = CType(axis.ScaleConfigurator, NStandardScaleConfigurator)
+			Dim scale As NStandardScaleConfigurator = CType(axis.ScaleConfigurator, NStandardScaleConfigurator)
 
-			scale_Renamed.RulerStyle.BorderStyle.Color = color
-			scale_Renamed.OuterMajorTickStyle.LineStyle.Color = color
-			scale_Renamed.OuterMinorTickStyle.LineStyle.Color = color
-			scale_Renamed.InnerMajorTickStyle.LineStyle.Color = color
-			scale_Renamed.InnerMinorTickStyle.LineStyle.Color = color
-			scale_Renamed.LabelStyle.TextStyle.FillStyle = New NColorFillStyle(color)
+			scale.RulerStyle.BorderStyle.Color = color
+			scale.OuterMajorTickStyle.LineStyle.Color = color
+			scale.OuterMinorTickStyle.LineStyle.Color = color
+			scale.InnerMajorTickStyle.LineStyle.Color = color
+			scale.InnerMinorTickStyle.LineStyle.Color = color
+			scale.LabelStyle.TextStyle.FillStyle = New NColorFillStyle(color)
 
 			axis.InvalidateScale()
 		End Sub

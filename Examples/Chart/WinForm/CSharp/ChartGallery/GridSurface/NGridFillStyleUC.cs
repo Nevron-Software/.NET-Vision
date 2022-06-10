@@ -119,7 +119,9 @@ namespace Nevron.Examples.Chart.WinForm
 		{
 			base.Initialize();
 
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.HighSpeed;
+			// Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window;
+
 			nChartControl1.Controller.Tools.Add(new NPanelSelectorTool());
 			nChartControl1.Controller.Tools.Add(new NTrackballTool());
 

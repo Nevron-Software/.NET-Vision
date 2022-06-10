@@ -12,7 +12,7 @@ Imports Nevron.Chart
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NPieSliceRadiusUC
 		Inherits NExampleBaseUC
 
@@ -92,44 +92,6 @@ Namespace Nevron.Examples.Chart.WinForm
 			' apply style sheet
 			Dim styleSheet As NStyleSheet = NStyleSheet.CreatePredefinedStyleSheet(PredefinedStyleSheet.FreshMultiColor)
 			styleSheet.Apply(nChartControl1.Document)
-
-			FillDetachments()
-		End Sub
-
-		Private Sub FillDetachments()
-			m_Pie.Detachments.Clear()
-
-			For i As Integer = 0 To m_Pie.Values.Count - 1
-				m_Pie.Detachments.Add(0.0)
-			Next i
-		End Sub
-
-		Private Sub RemoveExplosionsButton_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-			' set all pie detachments to 0
-			For i As Integer = 0 To m_Pie.Detachments.Count - 1
-				m_Pie.Detachments(i) = 0.0
-			Next i
-
-			nChartControl1.Refresh()
-		End Sub
-
-		Private Sub ExplodeSmallestButton_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-			Dim nIndex As Integer = m_Pie.Values.FindMinValue()
-			m_Pie.Detachments(nIndex) = 5.0F
-			nChartControl1.Refresh()
-		End Sub
-
-		Private Sub ExpodeBiggestButton_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-			Dim nIndex As Integer = m_Pie.Values.FindMaxValue()
-			m_Pie.Detachments(nIndex) = 5.0F
-			nChartControl1.Refresh()
-		End Sub
-
-		Private Sub ChangeDataButton_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-			m_Pie.Values.FillRandomRange(Random, 5, 1, 60)
-			FillDetachments()
-
-			nChartControl1.Refresh()
 		End Sub
 	End Class
 End Namespace

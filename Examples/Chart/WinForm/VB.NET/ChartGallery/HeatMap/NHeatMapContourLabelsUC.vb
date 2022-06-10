@@ -6,7 +6,7 @@ Imports System.Drawing
 Imports System.Windows.Forms
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Partial Public Class NHeatMapContourLabelsUC
 		Inherits NExampleBaseUC
 

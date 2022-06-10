@@ -315,6 +315,9 @@ namespace Nevron.Examples.Chart.WinForm
 
 		private void VectorLengthScaleModeCombo_SelectedIndexChanged(object sender, EventArgs e)
 		{
+			if (m_Vector == null)
+				return;
+
 			m_Vector.VectorLengthScale.Mode = (VectorLengthScaleMode)VectorLengthScaleModeComboBox.SelectedIndex;
 
 			switch (m_Vector.VectorLengthScale.Mode)
@@ -336,24 +339,36 @@ namespace Nevron.Examples.Chart.WinForm
 
 		private void TextOffsetNumericUpDown_ValueChanged(object sender, EventArgs e)
 		{
+			if (m_Vector == null)
+				return;
+
 			m_Vector.VectorLengthScale.TextOffset = new NLength((int)TextOffsetNumericUpDown.Value);
 			nChartControl1.Refresh();
 		}
 
 		private void TableCellOffsetNumericUpDown_ValueChanged(object sender, EventArgs e)
 		{
+			if (m_Vector == null)
+				return;
+
 			m_Vector.VectorLengthScale.TableCellOffset = new NLength((int)TableCellOffsetNumericUpDown.Value);
 			nChartControl1.Refresh();
 		}
 
 		private void VectorLengthScaleStepsUpDown_ValueChanged(object sender, EventArgs e)
 		{
+			if (m_Vector == null)
+				return;
+
 			m_Vector.VectorLengthScale.Steps = (int)VectorLengthScaleStepsNumericUpDown.Value;
 			nChartControl1.Refresh();
 		}
 
 		private void RoundValuesCheckBox_CheckedChanged(object sender, EventArgs e)
 		{
+			if (m_Vector == null)
+				return;
+
 			m_Vector.VectorLengthScale.RoundValues = RoundValuesCheckBox.Checked;
 			nChartControl1.Refresh();
 		}

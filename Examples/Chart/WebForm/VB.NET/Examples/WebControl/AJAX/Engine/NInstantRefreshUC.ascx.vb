@@ -84,7 +84,10 @@ Namespace Nevron.Examples.Chart.WebForm
 
 		Private Sub GenerateDateTimeData(ByVal s As NLineSeries, ByVal nCount As Integer)
 			s.ClearDataPoints()
-			Dim dateTime As DateTime = DateTime.Now.AddMilliseconds(-nCount * nChartControl1.AsyncRefreshInterval)
+			Dim dt As New DateTime
+			dt = DateTime.Now
+			dt = dt.AddMilliseconds(-nCount * nChartControl1.AsyncRefreshInterval)
+
 			Dim dPrev As Double = 100
 			Dim value As Double
 			Dim dataPoint As NDataPoint
@@ -94,8 +97,8 @@ Namespace Nevron.Examples.Chart.WebForm
 				dataPoint = New NDataPoint(value)
 				s.AddDataPoint(dataPoint)
 				dPrev = CDbl(s.Values(s.Values.Count - 1))
-				dateTime = dateTime.AddMilliseconds(nChartControl1.AsyncRefreshInterval)
-				s.XValues.Add(dateTime)
+				dt = dt.AddMilliseconds(nChartControl1.AsyncRefreshInterval)
+				s.XValues.Add(dt)
 				i += 1
 			Loop
 		End Sub

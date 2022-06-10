@@ -9,7 +9,7 @@ Imports Nevron.UI
 Imports Nevron.Chart.Windows
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Partial Public Class NGraphicsPathSeriesUC
 		Inherits NExampleBaseUC
 

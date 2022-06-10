@@ -6,7 +6,7 @@ Imports System.Drawing
 Imports System.Windows.Forms
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NVectorDirectionModeUC
 		Inherits NExampleBaseUC
 
@@ -68,24 +68,20 @@ Namespace Nevron.Examples.Chart.WinForm
 			' MaxVectorLengthNumericUpDown
 			' 
 			Me.MaxVectorLengthNumericUpDown.Location = New System.Drawing.Point(11, 82)
-			Me.MaxVectorLengthNumericUpDown.Minimum = New Decimal(New Integer() { 1, 0, 0, 0})
+			Me.MaxVectorLengthNumericUpDown.Minimum = 1
 			Me.MaxVectorLengthNumericUpDown.Name = "MaxVectorLengthNumericUpDown"
 			Me.MaxVectorLengthNumericUpDown.Size = New System.Drawing.Size(151, 20)
 			Me.MaxVectorLengthNumericUpDown.TabIndex = 11
 			Me.MaxVectorLengthNumericUpDown.Value = New Decimal(New Integer() { 50, 0, 0, 0})
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.MaxVectorLengthNumericUpDown.ValueChanged += new System.EventHandler(this.MaxVectorLengthNumericUpDown_ValueChanged);
 			' 
 			' MinVectorLengthNumericUpDown
 			' 
 			Me.MinVectorLengthNumericUpDown.Location = New System.Drawing.Point(8, 27)
-			Me.MinVectorLengthNumericUpDown.Minimum = New Decimal(New Integer() { 1, 0, 0, 0})
+			Me.MinVectorLengthNumericUpDown.Minimum = 1
 			Me.MinVectorLengthNumericUpDown.Name = "MinVectorLengthNumericUpDown"
 			Me.MinVectorLengthNumericUpDown.Size = New System.Drawing.Size(151, 20)
 			Me.MinVectorLengthNumericUpDown.TabIndex = 9
 			Me.MinVectorLengthNumericUpDown.Value = New Decimal(New Integer() { 50, 0, 0, 0})
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.MinVectorLengthNumericUpDown.ValueChanged += new System.EventHandler(this.MinVectorLengthNumericUpDown_ValueChanged);
 			' 
 			' NVectorDirectionModeUC
 			' 
@@ -199,21 +195,22 @@ Namespace Nevron.Examples.Chart.WinForm
 			Return Color.FromArgb(r, g, b)
 		End Function
 
-        Private Sub MinVectorLengthNumericUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles MinVectorLengthNumericUpDown.ValueChanged
-            If m_Vector Is Nothing Then
-                Return
-            End If
-            m_Vector.MinVectorLength = New NLength(CSng(MinVectorLengthNumericUpDown.Value), NGraphicsUnit.Point)
-            nChartControl1.Refresh()
-        End Sub
+		Private Sub MinVectorLengthNumericUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles MinVectorLengthNumericUpDown.ValueChanged
+			If m_Vector Is Nothing Then
+				Return
+			End If
 
-        Private Sub MaxVectorLengthNumericUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles MaxVectorLengthNumericUpDown.ValueChanged
-            If m_Vector Is Nothing Then
-                Return
-            End If
+			m_Vector.MinVectorLength = New NLength(CSng(MinVectorLengthNumericUpDown.Value), NGraphicsUnit.Point)
+			nChartControl1.Refresh()
+		End Sub
 
-            m_Vector.MaxVectorLength = New NLength(CSng(MaxVectorLengthNumericUpDown.Value), NGraphicsUnit.Point)
-            nChartControl1.Refresh()
-        End Sub
+		Private Sub MaxVectorLengthNumericUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles MaxVectorLengthNumericUpDown.ValueChanged
+			If m_Vector Is Nothing Then
+				Return
+			End If
+
+			m_Vector.MaxVectorLength = New NLength(CSng(MaxVectorLengthNumericUpDown.Value), NGraphicsUnit.Point)
+			nChartControl1.Refresh()
+		End Sub
 	End Class
 End Namespace

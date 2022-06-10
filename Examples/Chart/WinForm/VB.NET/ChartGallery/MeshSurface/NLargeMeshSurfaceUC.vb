@@ -12,7 +12,7 @@ Imports Nevron.Chart.WinForm
 Imports Nevron.Chart.Windows
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NLargeMeshSurfaceUC
 		Inherits NExampleBaseUC
 
@@ -111,7 +111,7 @@ Namespace Nevron.Examples.Chart.WinForm
 			surface.SyncPaletteWithAxisScale = False
 			surface.PaletteSteps = 8
 			surface.ValueFormatter.FormatSpecifier = "0.00"
-			surface.CellTriangulationMode = MeshSurfaceCellTriangulationMode.Diagonal1
+			surface.CellTriangulationMode = SurfaceCellTriangulationMode.Diagonal1
 			surface.FrameMode = SurfaceFrameMode.None
 			surface.FillMode = SurfaceFillMode.ZoneTexture
 			surface.ShadingMode = ShadingMode.Smooth

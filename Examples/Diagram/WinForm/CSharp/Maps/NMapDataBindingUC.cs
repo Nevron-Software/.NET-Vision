@@ -259,7 +259,7 @@ namespace Nevron.Examples.Diagram.WinForm
             m_MapImporter.Read();
             
             // Create a data binding source
-			NMapOleDbDataBindingSource source = new NMapOleDbDataBindingSource(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source={0}\..\..\..\Resources\Maps\Sales.mdb");
+			NMapOleDbDataBindingSource source = new NMapOleDbDataBindingSource(string.Format(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source={0}\..\..\Resources\Maps\Sales.mdb", Application.StartupPath));
 			source.SelectQuery = "SELECT * FROM Sales";
 
 			// Create a data binding context

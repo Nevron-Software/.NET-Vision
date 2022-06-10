@@ -89,7 +89,7 @@ namespace Nevron.Examples.Chart.Wpf
 			surface.SyncPaletteWithAxisScale = false;
 			surface.PaletteSteps = 8;
 			surface.ValueFormatter.FormatSpecifier = "0.00";
-			surface.CellTriangulationMode = MeshSurfaceCellTriangulationMode.Diagonal1;
+			surface.CellTriangulationMode = SurfaceCellTriangulationMode.Diagonal1;
 			surface.FrameMode = SurfaceFrameMode.None;
 			surface.FillMode = SurfaceFillMode.ZoneTexture;
 			surface.ShadingMode = ShadingMode.Smooth;

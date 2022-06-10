@@ -34,6 +34,7 @@ namespace Nevron.Examples.Chart.WinForm
 		private System.Windows.Forms.Label label5;
 		private Nevron.UI.WinForm.Controls.NGroupBox nGroupBox4;
 		private UI.WinForm.Controls.NComboBox PaletteLegendModeComboBox;
+		private UI.WinForm.Controls.NCheckBox LogYAxisCheckBox;
 		private System.ComponentModel.Container components = null;
 
 		public NGridSurfaceUC()
@@ -84,6 +85,7 @@ namespace Nevron.Examples.Chart.WinForm
 		private void InitializeComponent()
 		{
 			this.nGroupBox3 = new Nevron.UI.WinForm.Controls.NGroupBox();
+			this.PaletteLegendModeComboBox = new Nevron.UI.WinForm.Controls.NComboBox();
 			this.smoothPaletteCheck = new Nevron.UI.WinForm.Controls.NCheckBox();
 			this.nGroupBox2 = new Nevron.UI.WinForm.Controls.NGroupBox();
 			this.smoothShadingCheck = new Nevron.UI.WinForm.Controls.NCheckBox();
@@ -100,7 +102,7 @@ namespace Nevron.Examples.Chart.WinForm
 			this.label1 = new System.Windows.Forms.Label();
 			this.positionModeCombo = new Nevron.UI.WinForm.Controls.NComboBox();
 			this.drawFlatCheck = new Nevron.UI.WinForm.Controls.NCheckBox();
-			this.PaletteLegendModeComboBox = new Nevron.UI.WinForm.Controls.NComboBox();
+			this.LogYAxisCheckBox = new Nevron.UI.WinForm.Controls.NCheckBox();
 			this.nGroupBox3.SuspendLayout();
 			this.nGroupBox2.SuspendLayout();
 			this.nGroupBox1.SuspendLayout();
@@ -118,6 +120,17 @@ namespace Nevron.Examples.Chart.WinForm
 			this.nGroupBox3.TabIndex = 6;
 			this.nGroupBox3.TabStop = false;
 			this.nGroupBox3.Text = "Palette";
+			// 
+			// PaletteLegendModeComboBox
+			// 
+			this.PaletteLegendModeComboBox.ListProperties.CheckBoxDataMember = "";
+			this.PaletteLegendModeComboBox.ListProperties.DataSource = null;
+			this.PaletteLegendModeComboBox.ListProperties.DisplayMember = "";
+			this.PaletteLegendModeComboBox.Location = new System.Drawing.Point(17, 56);
+			this.PaletteLegendModeComboBox.Name = "PaletteLegendModeComboBox";
+			this.PaletteLegendModeComboBox.Size = new System.Drawing.Size(142, 21);
+			this.PaletteLegendModeComboBox.TabIndex = 4;
+			this.PaletteLegendModeComboBox.SelectedIndexChanged += new System.EventHandler(this.PaletteLegendModeComboBox_SelectedIndexChanged);
 			// 
 			// smoothPaletteCheck
 			// 
@@ -288,25 +301,25 @@ namespace Nevron.Examples.Chart.WinForm
 			this.drawFlatCheck.Text = "Draw Flat";
 			this.drawFlatCheck.CheckedChanged += new System.EventHandler(this.DrawFlatCheck_CheckedChanged);
 			// 
-			// PaletteLegendModeComboBox
+			// LogYAxisCheckBox
 			// 
-			this.PaletteLegendModeComboBox.ListProperties.CheckBoxDataMember = "";
-			this.PaletteLegendModeComboBox.ListProperties.DataSource = null;
-			this.PaletteLegendModeComboBox.ListProperties.DisplayMember = "";
-			this.PaletteLegendModeComboBox.Location = new System.Drawing.Point(17, 56);
-			this.PaletteLegendModeComboBox.Name = "PaletteLegendModeComboBox";
-			this.PaletteLegendModeComboBox.Size = new System.Drawing.Size(142, 21);
-			this.PaletteLegendModeComboBox.TabIndex = 4;
-			this.PaletteLegendModeComboBox.SelectedIndexChanged += new System.EventHandler(this.PaletteLegendModeComboBox_SelectedIndexChanged);
+			this.LogYAxisCheckBox.ButtonProperties.BorderOffset = 2;
+			this.LogYAxisCheckBox.Location = new System.Drawing.Point(18, 517);
+			this.LogYAxisCheckBox.Name = "LogYAxisCheckBox";
+			this.LogYAxisCheckBox.Size = new System.Drawing.Size(142, 21);
+			this.LogYAxisCheckBox.TabIndex = 5;
+			this.LogYAxisCheckBox.Text = "Logarithmic Y Axis";
+			this.LogYAxisCheckBox.CheckedChanged += new System.EventHandler(this.LogYAxisCheckBox_CheckedChanged);
 			// 
 			// NGridSurfaceUC
 			// 
+			this.Controls.Add(this.LogYAxisCheckBox);
 			this.Controls.Add(this.nGroupBox3);
 			this.Controls.Add(this.nGroupBox2);
 			this.Controls.Add(this.nGroupBox1);
 			this.Controls.Add(this.nGroupBox4);
 			this.Name = "NGridSurfaceUC";
-			this.Size = new System.Drawing.Size(180, 496);
+			this.Size = new System.Drawing.Size(180, 594);
 			this.nGroupBox3.ResumeLayout(false);
 			this.nGroupBox2.ResumeLayout(false);
 			this.nGroupBox1.ResumeLayout(false);
@@ -320,7 +333,9 @@ namespace Nevron.Examples.Chart.WinForm
 		{
 			base.Initialize();
 
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.None;
+			// Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window;
+
 			nChartControl1.Controller.Tools.Add(new NPanelSelectorTool());
 			nChartControl1.Controller.Tools.Add(new NTrackballTool());
 
@@ -354,7 +369,7 @@ namespace Nevron.Examples.Chart.WinForm
 			surface.Name = "Surface";
 			surface.Legend.Mode = SeriesLegendMode.SeriesLogic;
 			surface.PositionValue = 10.0;
-			surface.Data.SetGridSize(31, 32);
+			surface.Data.SetGridSize(100, 100);
 			surface.SyncPaletteWithAxisScale = false;
 			surface.PaletteSteps = 8;
 			surface.ValueFormatter.FormatSpecifier = "0.00";
@@ -424,6 +439,7 @@ namespace Nevron.Examples.Chart.WinForm
 
 			nChartControl1.Refresh();
 		}
+
 		private void FillModeCombo_SelectedIndexChanged(object sender, System.EventArgs e)
 		{
 			NChart chart = nChartControl1.Charts[0];
@@ -533,6 +549,22 @@ namespace Nevron.Examples.Chart.WinForm
 			NGridSurfaceSeries surface = (NGridSurfaceSeries)chart.Series[0];
 
 			surface.Legend.PaletteLegendMode = (PaletteLegendMode)PaletteLegendModeComboBox.SelectedIndex;
+			nChartControl1.Refresh();
+		}
+
+		private void LogYAxisCheckBox_CheckedChanged(object sender, EventArgs e)
+		{
+			NChart chart = nChartControl1.Charts[0];
+
+			if (LogYAxisCheckBox.Checked)
+			{
+				chart.Axis(StandardAxis.PrimaryY).ScaleConfigurator = new NLogarithmicScaleConfigurator();
+			}
+			else
+			{
+				chart.Axis(StandardAxis.PrimaryY).ScaleConfigurator = new NLinearScaleConfigurator();
+			}
+
 			nChartControl1.Refresh();
 		}
 	}

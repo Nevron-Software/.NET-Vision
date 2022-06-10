@@ -16,7 +16,7 @@ Imports Nevron.Chart.Windows
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NGridFillStyleUC
 		Inherits NExampleBaseUC
 
@@ -116,7 +116,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		Public Overrides Sub Initialize()
 			MyBase.Initialize()
 
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.HighSpeed
+			' Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window
+
 			nChartControl1.Controller.Tools.Add(New NPanelSelectorTool())
 			nChartControl1.Controller.Tools.Add(New NTrackballTool())
 

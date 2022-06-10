@@ -1,13 +1,18 @@
-﻿Imports System.ComponentModel
+﻿Imports System
+Imports System.Collections
+Imports System.ComponentModel
 Imports System.Drawing
-Imports Microsoft.VisualBasic
-Imports Nevron.Chart
+Imports System.Data
+Imports System.Diagnostics
+Imports System.Windows.Forms
 Imports Nevron.Dom
 Imports Nevron.GraphicsCore
+Imports Nevron.Editors
+Imports Nevron.Chart
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NCustomRadarAxisAnglesUC
 		Inherits NExampleBaseUC
 

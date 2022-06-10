@@ -11,6 +11,7 @@
     <exampleNode Name="ThinWeb - Tools - Server Side Events" NavigateUrl="Tools/NServerSideEventsTool" />
     <exampleNode Name="ThinWeb - Tools - Client Side Events" NavigateUrl="Tools/NClientSideEventsTool" />
     <exampleNode Name="ThinWeb - Auto Update" NavigateUrl="NAutoUpdate" />
+    <exampleNode Name="ThinWeb - Custom Requests" NavigateUrl="NCustomRequests" />
     <exampleNode Name="ThinWeb - Toolbar" NavigateUrl="NToolbarConfiguration" />
 	</bookNode>
 </root>

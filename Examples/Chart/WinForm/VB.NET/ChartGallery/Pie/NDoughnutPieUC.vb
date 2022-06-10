@@ -12,7 +12,7 @@ Imports Nevron.Chart
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NDoughnutPieUC
 		Inherits NExampleBaseUC
 
@@ -88,8 +88,7 @@ Namespace Nevron.Examples.Chart.WinForm
 			m_PieChart.Size = New NSizeL(New NLength(70, NRelativeUnit.ParentPercentage), New NLength(70, NRelativeUnit.ParentPercentage))
 			m_PieChart.InnerRadius = New NLength(10, NRelativeUnit.ParentPercentage)
 
-'INSTANT VB NOTE: The variable random was renamed since Visual Basic does not handle local variables named the same as class members well:
-			Dim random_Renamed As New Random()
+			Dim random As New Random()
 			Dim labels() As String = { "Ships", "Trains", "Automobiles", "Airplanes" }
 
 			For i As Integer = 0 To 3
@@ -115,7 +114,7 @@ Namespace Nevron.Examples.Chart.WinForm
 				pieSeries.LabelMode = PieLabelMode.Center
 
 				For j As Integer = 0 To labels.Length - 1
-					pieSeries.Values.Add(20 + random_Renamed.Next(100))
+					pieSeries.Values.Add(20 + random.Next(100))
 					pieSeries.Labels.Add(labels(j))
 				Next j
 			Next i

@@ -9,7 +9,7 @@ Imports Nevron.Chart
 Imports Nevron.Chart.WinForm
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NDateTimeStackFloatBarUC
 		Inherits NExampleBaseUC
 

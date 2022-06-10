@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.ComponentModel
 Imports System.Drawing
 Imports System.Windows.Forms
@@ -9,9 +8,10 @@ Imports Nevron.GraphicsCore
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NStockDataGroupingUC
 		Inherits NExampleBaseUC
+
 		Private m_Stock As NStockSeries
 		Private WithEvents GroupingModeComboBox As UI.WinForm.Controls.NComboBox
 		Private label2 As Label
@@ -35,9 +35,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		''' <summary> 
 		''' Clean up any resources being used.
 		''' </summary>
-		Protected Overrides Overloads Sub Dispose(ByVal disposing As Boolean)
+		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 			If disposing Then
-				If Not components Is Nothing Then
+				If components IsNot Nothing Then
 					components.Dispose()
 				End If
 			End If
@@ -64,8 +64,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.ShowCloseCheckBox = New Nevron.UI.WinForm.Controls.NCheckBox()
 			Me.ShowAsStickCheckBox = New Nevron.UI.WinForm.Controls.NCheckBox()
 			Me.ShowDataLabelsCheckBox = New Nevron.UI.WinForm.Controls.NCheckBox()
-			CType(Me.MinGroupDistanceUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.GroupPercentWidthNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.MinGroupDistanceUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.GroupPercentWidthNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
 			' 
 			' GroupingModeComboBox
@@ -77,7 +77,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.GroupingModeComboBox.Name = "GroupingModeComboBox"
 			Me.GroupingModeComboBox.Size = New System.Drawing.Size(151, 21)
 			Me.GroupingModeComboBox.TabIndex = 1
-'			Me.GroupingModeComboBox.SelectedIndexChanged += New System.EventHandler(Me.GroupingModeComboBox_SelectedIndexChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.GroupingModeComboBox.SelectedIndexChanged += new System.EventHandler(this.GroupingModeComboBox_SelectedIndexChanged);
 			' 
 			' label2
 			' 
@@ -105,7 +106,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.MinGroupDistanceUpDown.Size = New System.Drawing.Size(151, 20)
 			Me.MinGroupDistanceUpDown.TabIndex = 3
 			Me.MinGroupDistanceUpDown.Value = New Decimal(New Integer() { 20, 0, 0, 0})
-'			Me.MinGroupDistanceUpDown.ValueChanged += New System.EventHandler(Me.MinGroupDistanceUpDown_ValueChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.MinGroupDistanceUpDown.ValueChanged += new System.EventHandler(this.MinGroupDistanceUpDown_ValueChanged);
 			' 
 			' label3
 			' 
@@ -125,7 +127,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.CustomDateTimeSpanComboBox.Name = "CustomDateTimeSpanComboBox"
 			Me.CustomDateTimeSpanComboBox.Size = New System.Drawing.Size(151, 21)
 			Me.CustomDateTimeSpanComboBox.TabIndex = 5
-'			Me.CustomDateTimeSpanComboBox.SelectedIndexChanged += New System.EventHandler(Me.CustomDateTimeSpanComboBox_SelectedIndexChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.CustomDateTimeSpanComboBox.SelectedIndexChanged += new System.EventHandler(this.CustomDateTimeSpanComboBox_SelectedIndexChanged);
 			' 
 			' GroupPercentWidthNumericUpDown
 			' 
@@ -135,7 +138,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.GroupPercentWidthNumericUpDown.Size = New System.Drawing.Size(151, 20)
 			Me.GroupPercentWidthNumericUpDown.TabIndex = 7
 			Me.GroupPercentWidthNumericUpDown.Value = New Decimal(New Integer() { 50, 0, 0, 0})
-'			Me.GroupPercentWidthNumericUpDown.ValueChanged += New System.EventHandler(Me.GroupPercentWidthNumericUpDown_ValueChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.GroupPercentWidthNumericUpDown.ValueChanged += new System.EventHandler(this.GroupPercentWidthNumericUpDown_ValueChanged);
 			' 
 			' label4
 			' 
@@ -154,7 +158,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.ShowHighLowCheckBox.Size = New System.Drawing.Size(151, 24)
 			Me.ShowHighLowCheckBox.TabIndex = 9
 			Me.ShowHighLowCheckBox.Text = "Show High Low"
-'			Me.ShowHighLowCheckBox.CheckedChanged += New System.EventHandler(Me.ShowHighLowCheckBox_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.ShowHighLowCheckBox.CheckedChanged += new System.EventHandler(this.ShowHighLowCheckBox_CheckedChanged);
 			' 
 			' ShowOpenCheckBox
 			' 
@@ -164,7 +169,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.ShowOpenCheckBox.Size = New System.Drawing.Size(151, 24)
 			Me.ShowOpenCheckBox.TabIndex = 10
 			Me.ShowOpenCheckBox.Text = "Show Open"
-'			Me.ShowOpenCheckBox.CheckedChanged += New System.EventHandler(Me.ShowOpenCheckBox_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.ShowOpenCheckBox.CheckedChanged += new System.EventHandler(this.ShowOpenCheckBox_CheckedChanged);
 			' 
 			' ShowCloseCheckBox
 			' 
@@ -174,7 +180,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.ShowCloseCheckBox.Size = New System.Drawing.Size(151, 24)
 			Me.ShowCloseCheckBox.TabIndex = 11
 			Me.ShowCloseCheckBox.Text = "Show Close"
-'			Me.ShowCloseCheckBox.CheckedChanged += New System.EventHandler(Me.ShowCloseCheckBox_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.ShowCloseCheckBox.CheckedChanged += new System.EventHandler(this.ShowCloseCheckBox_CheckedChanged);
 			' 
 			' ShowAsStickCheckBox
 			' 
@@ -184,7 +191,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.ShowAsStickCheckBox.Size = New System.Drawing.Size(151, 24)
 			Me.ShowAsStickCheckBox.TabIndex = 8
 			Me.ShowAsStickCheckBox.Text = "Draw as Stick"
-'			Me.ShowAsStickCheckBox.CheckedChanged += New System.EventHandler(Me.ShowAsStickCheckBox_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.ShowAsStickCheckBox.CheckedChanged += new System.EventHandler(this.ShowAsStickCheckBox_CheckedChanged);
 			' 
 			' ShowDataLabelsCheckBox
 			' 
@@ -194,7 +202,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.ShowDataLabelsCheckBox.Size = New System.Drawing.Size(151, 24)
 			Me.ShowDataLabelsCheckBox.TabIndex = 12
 			Me.ShowDataLabelsCheckBox.Text = "Show Data Labels"
-'			Me.ShowDataLabelsCheckBox.CheckedChanged += New System.EventHandler(Me.ShowDataLabelsCheckBox_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.ShowDataLabelsCheckBox.CheckedChanged += new System.EventHandler(this.ShowDataLabelsCheckBox_CheckedChanged);
 			' 
 			' NStockDataGroupingUC
 			' 
@@ -213,8 +222,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.Controls.Add(Me.label2)
 			Me.Name = "NStockDataGroupingUC"
 			Me.Size = New System.Drawing.Size(176, 376)
-			CType(Me.MinGroupDistanceUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.GroupPercentWidthNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me.MinGroupDistanceUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me.GroupPercentWidthNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.ResumeLayout(False)
 			Me.PerformLayout()
 
@@ -235,12 +244,12 @@ Namespace Nevron.Examples.Chart.WinForm
 			Dim chart As NCartesianChart = CType(nChartControl1.Charts(0), NCartesianChart)
 			chart.BoundsMode = BoundsMode.Stretch
 
-			Dim rs As NRangeSelection = New NRangeSelection()
+			Dim rs As New NRangeSelection()
 			rs.VerticalValueSnapper = New NAxisRulerMinMaxSnapper()
 			chart.RangeSelections.Add(rs)
 
 			' setup X axis
-			Dim scaleX As NValueTimelineScaleConfigurator = New NValueTimelineScaleConfigurator()
+			Dim scaleX As New NValueTimelineScaleConfigurator()
 			scaleX.FirstRow.GridStyle.ShowAtWalls = New ChartWallType() { ChartWallType.Back }
 			scaleX.FirstRow.GridStyle.LineStyle = New NStrokeStyle(1, Color.FromArgb(225, 225, 225))
 			scaleX.FirstRow.UseGridStyle = True
@@ -255,7 +264,7 @@ Namespace Nevron.Examples.Chart.WinForm
 			scaleX.ThirdRow.InnerTickStyle.Visible = False
 
 			' calendar
-			Dim wdr As NWeekDayRule = New NWeekDayRule(WeekDayBit.All)
+			Dim wdr As New NWeekDayRule(WeekDayBit.All)
 			wdr.Saturday = False
 			wdr.Sunday = False
 			scaleX.Calendar.Rules.Add(wdr)
@@ -271,7 +280,7 @@ Namespace Nevron.Examples.Chart.WinForm
 			scaleY.InnerMajorTickStyle.Visible = False
 
 			Dim stripFill As NFillStyle = New NColorFillStyle(Color.FromArgb(234, 233, 237))
-			Dim stripStyle As NScaleStripStyle = New NScaleStripStyle(stripFill, Nothing, True, 1, 0, 1, 1)
+			Dim stripStyle As New NScaleStripStyle(stripFill, Nothing, True, 1, 0, 1, 1)
 			stripStyle.ShowAtWalls = New ChartWallType() { ChartWallType.Back }
 			stripStyle.Interlaced = True
 			scaleY.StripStyles.Add(stripStyle)
@@ -284,15 +293,15 @@ Namespace Nevron.Examples.Chart.WinForm
 			m_Stock.DownFillStyle = New NColorFillStyle(Color.Crimson)
 			m_Stock.DownStrokeStyle.Color = Color.Crimson
 			m_Stock.HighLowStrokeStyle.Color = Color.Black
-			m_Stock.CandleWidth = New NLength(1.2f, NRelativeUnit.ParentPercentage)
+			m_Stock.CandleWidth = New NLength(1.2F, NRelativeUnit.ParentPercentage)
 			m_Stock.UseXValues = True
 			m_Stock.InflateMargins = True
-			m_Stock.DataLabelStyle.Format = "open - <open>" & Constants.vbCrLf & "close - <close>"
+			m_Stock.DataLabelStyle.Format = "open - <open>" & ControlChars.CrLf & "close - <close>"
 
 			' add some stock items
 			Const numDataPoints As Integer = 10000
 			GenerateOHLCData(m_Stock, 100.0, numDataPoints, New NRange1DD(60, 140))
-			FillStockDates(m_Stock, numDataPoints, DateTime.Now - New TimeSpan(CInt(Fix(numDataPoints * 1.2)), 0, 0, 0))
+			FillStockDates(m_Stock, numDataPoints, Date.Now - New TimeSpan(CInt(Math.Truncate(numDataPoints * 1.2)), 0, 0, 0))
 
 			nChartControl1.Controller.Tools.Add(New NPanelSelectorTool())
 			nChartControl1.Controller.Tools.Add(New NAxisScrollTool())
@@ -310,7 +319,7 @@ Namespace Nevron.Examples.Chart.WinForm
 			GroupingModeComboBox.FillFromEnum(GetType(StockGroupingMode))
 
 			CustomDateTimeSpanComboBox.SelectedIndex = 2
-			GroupingModeComboBox.SelectedIndex = CInt(Fix(StockGroupingMode.AutoDateTimeSpan))
+			GroupingModeComboBox.SelectedIndex = CInt(StockGroupingMode.AutoDateTimeSpan)
 
 			ShowHighLowCheckBox.Checked = True
 			ShowOpenCheckBox.Checked = True
@@ -330,16 +339,16 @@ Namespace Nevron.Examples.Chart.WinForm
 			GroupPercentWidthNumericUpDown.Enabled = True
 
 			Select Case GroupingModeComboBox.SelectedIndex
-				Case CInt(Fix(StockGroupingMode.None))
+				Case CInt(StockGroupingMode.None)
 					m_Stock.GroupingMode = StockGroupingMode.None
 					GroupPercentWidthNumericUpDown.Enabled = False
-				Case CInt(Fix(StockGroupingMode.AutoDateTimeSpan))
+				Case CInt(StockGroupingMode.AutoDateTimeSpan)
 					m_Stock.GroupingMode = StockGroupingMode.AutoDateTimeSpan
 					MinGroupDistanceUpDown.Enabled = True
-				Case CInt(Fix(StockGroupingMode.CustomDateTimeSpan))
+				Case CInt(StockGroupingMode.CustomDateTimeSpan)
 					m_Stock.GroupingMode = StockGroupingMode.CustomDateTimeSpan
 					CustomDateTimeSpanComboBox.Enabled = True
-				Case CInt(Fix(StockGroupingMode.SynchronizeWithMajorTick))
+				Case CInt(StockGroupingMode.SynchronizeWithMajorTick)
 					m_Stock.GroupingMode = StockGroupingMode.SynchronizeWithMajorTick
 				Case Else
 			End Select
@@ -416,11 +425,7 @@ Namespace Nevron.Examples.Chart.WinForm
 				Return
 			End If
 
-			If ShowAsStickCheckBox.Checked Then
-				m_Stock.CandleStyle = CandleStyle.Stick
-			Else
-				m_Stock.CandleStyle = CandleStyle.Bar
-			End If
+			m_Stock.CandleStyle = If(ShowAsStickCheckBox.Checked, CandleStyle.Stick, CandleStyle.Bar)
 			nChartControl1.Refresh()
 
 			ShowOpenCheckBox.Enabled = ShowAsStickCheckBox.Checked

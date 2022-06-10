@@ -1,5 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System.ComponentModel
+﻿Imports System.ComponentModel
 Imports System.Diagnostics
 Imports System.Drawing
 Imports System.Windows.Forms
@@ -9,9 +8,10 @@ Imports Nevron.GraphicsCore
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NStandardPieUC
 		Inherits NExampleBaseUC
+
 		Private label1 As System.Windows.Forms.Label
 		Private label2 As System.Windows.Forms.Label
 		Private label3 As System.Windows.Forms.Label
@@ -47,9 +47,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		''' <summary> 
 		''' Clean up any resources being used.
 		''' </summary>
-		Protected Overloads Overrides Sub Dispose(ByVal disposing As Boolean)
+		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 			If disposing Then
-				If Not components Is Nothing Then
+				If components IsNot Nothing Then
 					components.Dispose()
 				End If
 			End If
@@ -57,7 +57,7 @@ Namespace Nevron.Examples.Chart.WinForm
 		End Sub
 
 
-#Region "Component Designer generated code"
+		#Region "Component Designer generated code"
 		''' <summary> 
 		''' Required method for Designer support - do not modify 
 		''' the contents of this method with the code editor.
@@ -112,7 +112,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.PieShapeCombo.Name = "PieShapeCombo"
 			Me.PieShapeCombo.Size = New System.Drawing.Size(151, 21)
 			Me.PieShapeCombo.TabIndex = 1
-			'			Me.PieShapeCombo.SelectedIndexChanged += New System.EventHandler(Me.PieShapeCombo_SelectedIndexChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.PieShapeCombo.SelectedIndexChanged += new System.EventHandler(this.PieShapeCombo_SelectedIndexChanged);
 			' 
 			' label4
 			' 
@@ -130,7 +131,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.BeginAngleScroll.Name = "BeginAngleScroll"
 			Me.BeginAngleScroll.Size = New System.Drawing.Size(151, 16)
 			Me.BeginAngleScroll.TabIndex = 7
-			'			Me.BeginAngleScroll.ValueChanged += New Nevron.UI.WinForm.Controls.ScrollBarEventHandler(Me.BeginAngleScroll_Scroll);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.BeginAngleScroll.ValueChanged += new Nevron.UI.WinForm.Controls.ScrollBarEventHandler(this.BeginAngleScroll_Scroll);
 			' 
 			' label5
 			' 
@@ -148,7 +150,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.TotalAngleScroll.Name = "TotalAngleScroll"
 			Me.TotalAngleScroll.Size = New System.Drawing.Size(151, 16)
 			Me.TotalAngleScroll.TabIndex = 9
-			'			Me.TotalAngleScroll.ValueChanged += New Nevron.UI.WinForm.Controls.ScrollBarEventHandler(Me.TotalAngleScroll_Scroll);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.TotalAngleScroll.ValueChanged += new Nevron.UI.WinForm.Controls.ScrollBarEventHandler(this.TotalAngleScroll_Scroll);
 			' 
 			' label6
 			' 
@@ -167,7 +170,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.PieLabelModeCombo.Name = "PieLabelModeCombo"
 			Me.PieLabelModeCombo.Size = New System.Drawing.Size(153, 21)
 			Me.PieLabelModeCombo.TabIndex = 11
-			'			Me.PieLabelModeCombo.SelectedIndexChanged += New System.EventHandler(Me.PieLabelModeCombo_SelectedIndexChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.PieLabelModeCombo.SelectedIndexChanged += new System.EventHandler(this.PieLabelModeCombo_SelectedIndexChanged);
 			' 
 			' label7
 			' 
@@ -186,7 +190,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.ArrowLengthScroll.Name = "ArrowLengthScroll"
 			Me.ArrowLengthScroll.Size = New System.Drawing.Size(153, 16)
 			Me.ArrowLengthScroll.TabIndex = 16
-			'			Me.ArrowLengthScroll.ValueChanged += New Nevron.UI.WinForm.Controls.ScrollBarEventHandler(Me.ArrowLengthScroll_Scroll);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.ArrowLengthScroll.ValueChanged += new Nevron.UI.WinForm.Controls.ScrollBarEventHandler(this.ArrowLengthScroll_Scroll);
 			' 
 			' label8
 			' 
@@ -205,7 +210,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.ArrowPointerLengthScroll.Name = "ArrowPointerLengthScroll"
 			Me.ArrowPointerLengthScroll.Size = New System.Drawing.Size(153, 16)
 			Me.ArrowPointerLengthScroll.TabIndex = 18
-			'			Me.ArrowPointerLengthScroll.ValueChanged += New Nevron.UI.WinForm.Controls.ScrollBarEventHandler(Me.ArrowPointerLengthScroll_Scroll);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.ArrowPointerLengthScroll.ValueChanged += new Nevron.UI.WinForm.Controls.ScrollBarEventHandler(this.ArrowPointerLengthScroll_Scroll);
 			' 
 			' EdgePercentScroll
 			' 
@@ -217,7 +223,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.EdgePercentScroll.Name = "EdgePercentScroll"
 			Me.EdgePercentScroll.Size = New System.Drawing.Size(151, 16)
 			Me.EdgePercentScroll.TabIndex = 23
-			'			Me.EdgePercentScroll.ValueChanged += New Nevron.UI.WinForm.Controls.ScrollBarEventHandler(Me.PieEdgeScrollBar_Scroll);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.EdgePercentScroll.ValueChanged += new Nevron.UI.WinForm.Controls.ScrollBarEventHandler(this.PieEdgeScrollBar_Scroll);
 			' 
 			' label3
 			' 
@@ -236,7 +243,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.InnerRadiusScroll.Name = "InnerRadiusScroll"
 			Me.InnerRadiusScroll.Size = New System.Drawing.Size(151, 16)
 			Me.InnerRadiusScroll.TabIndex = 27
-			'			Me.InnerRadiusScroll.ValueChanged += New Nevron.UI.WinForm.Controls.ScrollBarEventHandler(Me.InnerRadiusScroll_ValueChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.InnerRadiusScroll.ValueChanged += new Nevron.UI.WinForm.Controls.ScrollBarEventHandler(this.InnerRadiusScroll_ValueChanged);
 			' 
 			' label2
 			' 
@@ -255,7 +263,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.OuterRadiusScroll.Name = "OuterRadiusScroll"
 			Me.OuterRadiusScroll.Size = New System.Drawing.Size(151, 16)
 			Me.OuterRadiusScroll.TabIndex = 25
-			'			Me.OuterRadiusScroll.ValueChanged += New Nevron.UI.WinForm.Controls.ScrollBarEventHandler(Me.OuterRadiusScroll_ValueChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.OuterRadiusScroll.ValueChanged += new Nevron.UI.WinForm.Controls.ScrollBarEventHandler(this.OuterRadiusScroll_ValueChanged);
 			' 
 			' label9
 			' 
@@ -314,7 +323,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.ConnectorLengthScroll.Name = "ConnectorLengthScroll"
 			Me.ConnectorLengthScroll.Size = New System.Drawing.Size(153, 16)
 			Me.ConnectorLengthScroll.TabIndex = 20
-			'			Me.ConnectorLengthScroll.ValueChanged += New Nevron.UI.WinForm.Controls.ScrollBarEventHandler(Me.ConnectorLengthScroll_ValueChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.ConnectorLengthScroll.ValueChanged += new Nevron.UI.WinForm.Controls.ScrollBarEventHandler(this.ConnectorLengthScroll_ValueChanged);
 			' 
 			' label11
 			' 
@@ -333,7 +343,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.LeadOffLengthScroll.Name = "LeadOffLengthScroll"
 			Me.LeadOffLengthScroll.Size = New System.Drawing.Size(153, 16)
 			Me.LeadOffLengthScroll.TabIndex = 22
-			'			Me.LeadOffLengthScroll.ValueChanged += New Nevron.UI.WinForm.Controls.ScrollBarEventHandler(Me.LeadOffLengthScroll_ValueChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.LeadOffLengthScroll.ValueChanged += new Nevron.UI.WinForm.Controls.ScrollBarEventHandler(this.LeadOffLengthScroll_ValueChanged);
 			' 
 			' nGroupBox2
 			' 
@@ -376,7 +387,7 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.ResumeLayout(False)
 
 		End Sub
-#End Region
+		#End Region
 
 		Public Overrides Sub Initialize()
 			MyBase.Initialize()
@@ -395,13 +406,13 @@ Namespace Nevron.Examples.Chart.WinForm
 			Dim legend As NLegend = nChartControl1.Legends(0)
 			legend.SetPredefinedLegendStyle(PredefinedLegendStyle.BottomRight)
 
-			Dim pieChart As NPieChart = New NPieChart()
+			Dim pieChart As New NPieChart()
 			pieChart.Enable3D = True
 
 			nChartControl1.Charts.Clear()
 			nChartControl1.Charts.Add(pieChart)
 
-			Dim ls As NPointLightSource = New NPointLightSource()
+			Dim ls As New NPointLightSource()
 			ls.CoordinateMode = LightSourceCoordinateMode.Camera
 			ls.Position = New NVector3DF(0, 0, 50)
 			ls.Ambient = Color.FromArgb(30, 30, 30)
@@ -416,10 +427,11 @@ Namespace Nevron.Examples.Chart.WinForm
 			pieChart.DisplayOnLegend = nChartControl1.Legends(0)
 			pieChart.Location = New NPointL(New NLength(20, NRelativeUnit.ParentPercentage), New NLength(20, NRelativeUnit.ParentPercentage))
 			pieChart.Size = New NSizeL(New NLength(60, NRelativeUnit.ParentPercentage), New NLength(60, NRelativeUnit.ParentPercentage))
+			pieChart.InnerRadius = New NLength(20, NRelativeUnit.ParentPercentage)
 
 			Dim pieSeries As NPieSeries = CType(pieChart.Series.Add(SeriesType.Pie), NPieSeries)
 			pieSeries.BorderStyle.Color = Color.LemonChiffon
-			pieChart.InnerRadius = New NLength(20, NRelativeUnit.ParentPercentage)
+
 			pieSeries.DataLabelStyle.ArrowLength = New NLength(10, NGraphicsUnit.Point)
 			pieSeries.DataLabelStyle.ArrowPointerLength = New NLength(0, NGraphicsUnit.Point)
 
@@ -438,22 +450,22 @@ Namespace Nevron.Examples.Chart.WinForm
 
 			' init form controls
 			PieShapeCombo.FillFromEnum(GetType(PieStyle))
-			PieShapeCombo.SelectedIndex = CInt(Fix(PieStyle.Ring))
+			PieShapeCombo.SelectedIndex = CInt(PieStyle.Ring)
 
 			PieLabelModeCombo.FillFromEnum(GetType(PieLabelMode))
 			PieLabelModeCombo.SelectedIndex = 0
 
-			EdgePercentScroll.Value = CInt(Fix(pieSeries.PieEdgePercent))
-			OuterRadiusScroll.Value = CInt(Fix(pieChart.Radius.Value))
-			InnerRadiusScroll.Value = CInt(Fix(pieChart.InnerRadius.Value))
+			EdgePercentScroll.Value = CInt(Math.Truncate(pieSeries.PieEdgePercent))
+			OuterRadiusScroll.Value = CInt(Math.Truncate(pieChart.Radius.Value))
+			InnerRadiusScroll.Value = CInt(Math.Truncate(pieChart.InnerRadius.Value))
 
-			ArrowLengthScroll.Value = CInt(Fix(pieSeries.DataLabelStyle.ArrowLength.Value))
-			ArrowPointerLengthScroll.Value = CInt(Fix(pieSeries.DataLabelStyle.ArrowPointerLength.Value))
-			ConnectorLengthScroll.Value = CInt(Fix(pieSeries.ConnectorLength.Value))
-			LeadOffLengthScroll.Value = CInt(Fix(pieSeries.LeadOffArrowLength.Value))
+			ArrowLengthScroll.Value = CInt(Math.Truncate(pieSeries.DataLabelStyle.ArrowLength.Value))
+			ArrowPointerLengthScroll.Value = CInt(Math.Truncate(pieSeries.DataLabelStyle.ArrowPointerLength.Value))
+			ConnectorLengthScroll.Value = CInt(Math.Truncate(pieSeries.ConnectorLength.Value))
+			LeadOffLengthScroll.Value = CInt(Math.Truncate(pieSeries.LeadOffArrowLength.Value))
 
-			BeginAngleScroll.Value = CInt(Fix(pieChart.BeginAngle))
-			TotalAngleScroll.Value = CInt(Fix(pieChart.TotalAngle))
+			BeginAngleScroll.Value = CInt(Math.Truncate(pieChart.BeginAngle))
+			TotalAngleScroll.Value = CInt(Math.Truncate(pieChart.TotalAngle))
 		End Sub
 
 		Private Sub PieShapeCombo_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles PieShapeCombo.SelectedIndexChanged

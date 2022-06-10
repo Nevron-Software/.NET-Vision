@@ -10,7 +10,7 @@ Imports Nevron.Chart
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NVectorLegendScaleUC
 		Inherits NExampleBaseUC
 
@@ -188,7 +188,7 @@ Namespace Nevron.Examples.Chart.WinForm
 			MyBase.Initialize()
 
 			' set a chart title
-			Dim title As New NLabel("Vector Direction Mode")
+			Dim title As New NLabel("Vector Legend Scale")
 			title.TextStyle.FontStyle = New NFontStyle("Times New Roman", 18, FontStyle.Italic)
 			title.TextStyle.FillStyle = New NColorFillStyle(GreyBlue)
 
@@ -197,7 +197,7 @@ Namespace Nevron.Examples.Chart.WinForm
 
 			' setup chart
 			Dim chart As NChart = nChartControl1.Charts(0)
-			'chart.Enable3D = true;
+
 			chart.Width = 55.0F
 			chart.Height = 55.0F
 
@@ -289,62 +289,62 @@ Namespace Nevron.Examples.Chart.WinForm
 		End Function
 
 
-        Private Sub VectorLengthScaleModeCombo_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles VectorLengthScaleModeComboBox.SelectedIndexChanged
-            If m_Vector Is Nothing Then
-                Return
-            End If
+		Private Sub VectorLengthScaleModeCombo_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles VectorLengthScaleModeComboBox.SelectedIndexChanged
+			m_Vector.VectorLengthScale.Mode = CType(VectorLengthScaleModeComboBox.SelectedIndex, VectorLengthScaleMode)
 
-            m_Vector.VectorLengthScale.Mode = CType(VectorLengthScaleModeComboBox.SelectedIndex, VectorLengthScaleMode)
+			Select Case m_Vector.VectorLengthScale.Mode
+				Case VectorLengthScaleMode.LeftToRight, VectorLengthScaleMode.RightToLeft
+					m_Vector.VectorLengthScale.TextStyle.StringFormatStyle.HorzAlign = HorzAlign.Center
+					m_Vector.VectorLengthScale.TextStyle.StringFormatStyle.VertAlign = VertAlign.Top
+				Case VectorLengthScaleMode.TopToBottom, VectorLengthScaleMode.BottomToTop
+					m_Vector.VectorLengthScale.TextStyle.StringFormatStyle.HorzAlign = HorzAlign.Right
+					m_Vector.VectorLengthScale.TextStyle.StringFormatStyle.VertAlign = VertAlign.Center
+			End Select
 
-            Select Case m_Vector.VectorLengthScale.Mode
-                Case VectorLengthScaleMode.LeftToRight, VectorLengthScaleMode.RightToLeft
-                    m_Vector.VectorLengthScale.TextStyle.StringFormatStyle.HorzAlign = HorzAlign.Center
-                    m_Vector.VectorLengthScale.TextStyle.StringFormatStyle.VertAlign = VertAlign.Top
-                Case VectorLengthScaleMode.TopToBottom, VectorLengthScaleMode.BottomToTop
-                    m_Vector.VectorLengthScale.TextStyle.StringFormatStyle.HorzAlign = HorzAlign.Right
-                    m_Vector.VectorLengthScale.TextStyle.StringFormatStyle.VertAlign = VertAlign.Center
-            End Select
+			nChartControl1.Refresh()
+		End Sub
 
-            nChartControl1.Refresh()
-        End Sub
+		Private Sub TextOffsetNumericUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles TextOffsetNumericUpDown.ValueChanged
+			If m_Vector Is Nothing Then
+				Return
+			End If
 
-        Private Sub TextOffsetNumericUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles TextOffsetNumericUpDown.ValueChanged
-            If m_Vector Is Nothing Then
-                Return
-            End If
+			m_Vector.VectorLengthScale.TextOffset = New NLength(CInt(Math.Truncate(TextOffsetNumericUpDown.Value)))
+			nChartControl1.Refresh()
+		End Sub
 
-            m_Vector.VectorLengthScale.TextOffset = New NLength(CInt(Math.Truncate(TextOffsetNumericUpDown.Value)))
-            nChartControl1.Refresh()
-        End Sub
+		Private Sub TableCellOffsetNumericUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles TableCellOffsetNumericUpDown.ValueChanged
+			If m_Vector Is Nothing Then
+				Return
+			End If
 
-        Private Sub TableCellOffsetNumericUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles TableCellOffsetNumericUpDown.ValueChanged
-            If m_Vector Is Nothing Then
-                Return
-            End If
+			m_Vector.VectorLengthScale.TableCellOffset = New NLength(CInt(Math.Truncate(TableCellOffsetNumericUpDown.Value)))
+			nChartControl1.Refresh()
+		End Sub
 
-            m_Vector.VectorLengthScale.TableCellOffset = New NLength(CInt(Math.Truncate(TableCellOffsetNumericUpDown.Value)))
-            nChartControl1.Refresh()
-        End Sub
+		Private Sub VectorLengthScaleStepsUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles VectorLengthScaleStepsNumericUpDown.ValueChanged
+			If m_Vector Is Nothing Then
+				Return
+			End If
 
-        Private Sub VectorLengthScaleStepsUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles VectorLengthScaleStepsNumericUpDown.ValueChanged
-            If m_Vector Is Nothing Then
-                Return
-            End If
+			m_Vector.VectorLengthScale.Steps = CInt(Math.Truncate(VectorLengthScaleStepsNumericUpDown.Value))
+			nChartControl1.Refresh()
+		End Sub
 
-            m_Vector.VectorLengthScale.Steps = CInt(Math.Truncate(VectorLengthScaleStepsNumericUpDown.Value))
-            nChartControl1.Refresh()
-        End Sub
+		Private Sub RoundValuesCheckBox_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs) Handles RoundValuesCheckBox.CheckedChanged
+			If m_Vector Is Nothing Then
+				Return
+			End If
 
-        Private Sub RoundValuesCheckBox_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs) Handles RoundValuesCheckBox.CheckedChanged
-            If m_Vector Is Nothing Then
-                Return
-            End If
-
-            m_Vector.VectorLengthScale.RoundValues = RoundValuesCheckBox.Checked
-            nChartControl1.Refresh()
-        End Sub
+			m_Vector.VectorLengthScale.RoundValues = RoundValuesCheckBox.Checked
+			nChartControl1.Refresh()
+		End Sub
 
 		Private Sub StrokeStyleButton_Click(ByVal sender As Object, ByVal e As EventArgs) Handles StrokeStyleButton.Click
+			If m_Vector Is Nothing Then
+				Return
+			End If
+
 			Dim strokeStyleResult As NStrokeStyle = Nothing
 
 			If NStrokeStyleTypeEditor.Edit(m_Vector.VectorLengthScale.StrokeStyle, strokeStyleResult) Then

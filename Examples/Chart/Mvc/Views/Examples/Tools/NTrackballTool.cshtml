@@ -1,0 +1,11 @@
+﻿@{
+	Layout = "~/Views/Shared/_ExampleLayoutPage.cshtml";
+}
+
+@section ExampleContent {
+	@{ Html.RenderAction("Script", "NTrackballToolExample");}
+	@{ Html.RenderAction("Content", "NTrackballToolExample");}
+}
+@section ExampleDescription {
+	The NTrackballTool allows you to change the elevation and rotation of the currently active chart. Press the left mouse button over the chart and drag to change the elevation and rotation.
+}

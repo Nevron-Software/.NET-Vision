@@ -104,21 +104,29 @@ namespace Nevron.Examples.Chart.WebForm
 
 				int nDataPointsCount = (int)stream.Length / 12;
 
+				//surface.Data.SetCapacity(nDataPointsCount);
+				NVector3DF[] data = new NVector3DF[nDataPointsCount];
+
 				// fill Y values
 				for (int i = 0; i < nDataPointsCount; i++)
 				{
-					surface.Values.Add(reader.ReadSingle());
+					data[i].Y = reader.ReadSingle();
 				}
 
+				// fill X values
 				for (int i = 0; i < nDataPointsCount; i++)
 				{
-					surface.XValues.Add(reader.ReadSingle());
+					data[i].X = reader.ReadSingle();
 				}
 
+				// fill Z values
 				for (int i = 0; i < nDataPointsCount; i++)
 				{
-					surface.ZValues.Add(reader.ReadSingle());
+					data[i].Z = reader.ReadSingle();
 				}
+
+				surface.Data.Clear();
+				surface.Data.AddValues(data);
 			}
 			finally
 			{

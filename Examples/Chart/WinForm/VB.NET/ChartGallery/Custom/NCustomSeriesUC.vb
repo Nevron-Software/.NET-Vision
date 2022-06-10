@@ -1,5 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.ComponentModel
 Imports System.Drawing
 Imports System.Drawing.Drawing2D
@@ -7,9 +6,10 @@ Imports Nevron.Chart
 Imports Nevron.GraphicsCore
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NCustomSeriesUC
 		Inherits NExampleBaseUC
+
 		Private components As System.ComponentModel.Container = Nothing
 
 		Public Sub New()
@@ -19,9 +19,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		''' <summary>
 		''' Clean up any resources being used.
 		''' </summary>
-		Protected Overrides Overloads Sub Dispose(ByVal disposing As Boolean)
+		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 			If disposing Then
-				If Not components Is Nothing Then
+				If components IsNot Nothing Then
 					components.Dispose()
 				End If
 			End If
@@ -56,17 +56,28 @@ Namespace Nevron.Examples.Chart.WinForm
 			Dim chart As NChart = nChartControl1.Charts(0)
 
 			' configure X axis
-			Dim linearScale As NLinearScaleConfigurator = New NLinearScaleConfigurator()
+			Dim linearScale As New NLinearScaleConfigurator()
 			chart.Axis(StandardAxis.PrimaryX).ScaleConfigurator = linearScale
 
 			' add a custom series and set its callback object
-			Dim customSeries As NCustomSeries = New NCustomSeries()
+			Dim customSeries As New NCustomSeries()
 			chart.Series.Add(customSeries)
 
 			' create a paint callback object for the custom series
-			Dim callback As MyCustomBezierSeries = New MyCustomBezierSeries(chart, customSeries)
+			Dim callback As New MyCustomBezierSeries(chart, customSeries)
 			customSeries.Callback = callback
-			callback.Points = New NPointF() { New NPointF(10, 20), New NPointF(55, 60), New NPointF(65, 180), New NPointF(110, 102), New NPointF(150, 99), New NPointF(225, 180), New NPointF(190, 202), New NPointF(160, 221), New NPointF(230, 45), New NPointF(200, 21) }
+			callback.Points = New NPointF() {
+				New NPointF(10, 20),
+				New NPointF(55, 60),
+				New NPointF(65, 180),
+				New NPointF(110, 102),
+				New NPointF(150, 99),
+				New NPointF(225, 180),
+				New NPointF(190, 202),
+				New NPointF(160, 221),
+				New NPointF(230, 45),
+				New NPointF(200, 21)
+			}
 
 			' apply layout
 			ConfigureStandardLayout(chart, title, Nothing)
@@ -76,9 +87,10 @@ Namespace Nevron.Examples.Chart.WinForm
 			styleSheet.Apply(nChartControl1.Document)
 		End Sub
 
-		<Serializable> _
+		<Serializable>
 		Private Class MyCustomBezierSeries
-            Implements INCustomSeriesCallback
+			Implements INCustomSeriesCallback
+
 			#Region "Constructors"
 
 			Public Sub New(ByVal chart As NChart, ByVal series As NCustomSeries)
@@ -100,101 +112,98 @@ Namespace Nevron.Examples.Chart.WinForm
 			''' </summary>
 			''' <param name="rangeX"></param>
 			''' <param name="rangeY"></param>
-            Public Sub GetAxisRanges(<System.Runtime.InteropServices.Out()> ByRef rangeX As NRange1DD, <System.Runtime.InteropServices.Out()> ByRef rangeY As NRange1DD) Implements INCustomSeriesCallback.GetAxisRanges
+			Public Sub GetAxisRanges(<System.Runtime.InteropServices.Out()> ByRef rangeX As NRange1DD, <System.Runtime.InteropServices.Out()> ByRef rangeY As NRange1DD) Implements INCustomSeriesCallback.GetAxisRanges
+				If (Points Is Nothing) OrElse (Points.Length = 0) Then
+					rangeX.Begin = Double.NaN
+					rangeX.End = Double.NaN
+					rangeY.Begin = Double.NaN
+					rangeY.End = Double.NaN
+				Else
+'INSTANT VB WARNING: An assignment within expression was extracted from the following statement:
+'ORIGINAL LINE: rangeX.@End = rangeX.Begin = Points[0].X;
+					rangeX.Begin = Points(0).X
+					rangeX.End = rangeX.Begin
+'INSTANT VB WARNING: An assignment within expression was extracted from the following statement:
+'ORIGINAL LINE: rangeY.@End = rangeY.Begin = Points[0].Y;
+					rangeY.Begin = Points(0).Y
+					rangeY.End = rangeY.Begin
 
-                If (Points Is Nothing) OrElse (Points.Length = 0) Then
-                    rangeX.Begin = Double.NaN
-                    rangeX.End = Double.NaN
-                    rangeY.Begin = Double.NaN
-                    rangeY.End = Double.NaN
-                Else
-                    'TODO: INSTANT VB TODO TASK: Assignments within expressions are not supported in VB.NET
-                    'ORIGINAL LINE: rangeX.End = rangeX.Begin = Points[0].X;
-                    rangeX.End = rangeX.Begin = Points(0).X
-                    'TODO: INSTANT VB TODO TASK: Assignments within expressions are not supported in VB.NET
-                    'ORIGINAL LINE: rangeY.End = rangeY.Begin = Points[0].Y;
-                    rangeY.End = rangeY.Begin = Points(0).Y
+					For i As Integer = 1 To Points.Length - 1
+						Dim point As NPointF = Points(i)
 
-                    Dim i As Integer = 1
-                    Do While i < Points.Length
-                        Dim point As NPointF = Points(i)
+						If point.X > rangeX.End Then
+							rangeX.End = point.X
+						ElseIf point.X < rangeX.Begin Then
+							rangeX.Begin = point.X
+						End If
 
-                        If point.X > rangeX.End Then
-                            rangeX.End = point.X
-                        ElseIf point.X < rangeX.Begin Then
-                            rangeX.Begin = point.X
-                        End If
+						If point.Y > rangeY.End Then
+							rangeY.End = point.Y
+						ElseIf point.Y < rangeY.Begin Then
+							rangeY.Begin = point.Y
+						End If
+					Next i
 
-                        If point.Y > rangeY.End Then
-                            rangeY.End = point.Y
-                        ElseIf point.Y < rangeY.Begin Then
-                            rangeY.Begin = point.Y
-                        End If
-                        i += 1
-                    Loop
-
-                    rangeX.Inflate(0.1 * rangeX.GetLength())
-                    rangeY.Inflate(0.1 * rangeY.GetLength())
-                End If
-            End Sub
+					rangeX.Inflate(0.1 * rangeX.GetLength())
+					rangeY.Inflate(0.1 * rangeY.GetLength())
+				End If
+			End Sub
 			''' <summary>
 			''' Performs custom painting
 			''' </summary>
 			''' <param name="context"></param>
 			''' <param name="graphics"></param>
-            Public Sub Paint2D(ByVal context As NChartRenderingContext2D, ByVal graphics As NGraphics) Implements INCustomSeriesCallback.Paint2D
-                Dim vecView As NVector3DF = New NVector3DF()
-                Dim vecModel As NVector3DF = New NVector3DF()
-                Dim rulerX As NScaleRuler = m_Chart.Axis(m_Series.HorizontalAxes(0)).Scale.Ruler
-                Dim rulerY As NScaleRuler = m_Chart.Axis(m_Series.VerticalAxes(0)).Scale.Ruler
+			Public Sub Paint2D(ByVal context As NChartRenderingContext2D, ByVal graphics As NGraphics) Implements INCustomSeriesCallback.Paint2D
+				Dim vecView As New NVector3DF()
+				Dim vecModel As New NVector3DF()
+				Dim rulerX As NScaleRuler = m_Chart.Axis(m_Series.HorizontalAxes(0)).Scale.Ruler
+				Dim rulerY As NScaleRuler = m_Chart.Axis(m_Series.VerticalAxes(0)).Scale.Ruler
 
-                ' current number of accumulated Bezier points
-                Dim bpCount As Integer = 0
+				' current number of accumulated Bezier points
+				Dim bpCount As Integer = 0
 
-                ' accumulated Bezier points
-                Dim bezierPoints As PointF() = New PointF(3) {}
+				' accumulated Bezier points
+				Dim bezierPoints(3) As PointF
 
-                Dim i As Integer = 0
-                Do While i < Points.Length
-                    ' Transform values to chart model coorinates
-                    vecModel.X = rulerX.LogicalToScale(Points(i).X)
-                    vecModel.Y = rulerY.LogicalToScale(Points(i).Y)
+				For i As Integer = 0 To Points.Length - 1
+					' Transform values to chart model coorinates
+					vecModel.X = rulerX.LogicalToScale(Points(i).X)
+					vecModel.Y = rulerY.LogicalToScale(Points(i).Y)
 
-                    ' Transform model coordinates to view coordinates
-                    m_Chart.TransformModelToClient(vecModel, vecView)
+					' Transform model coordinates to view coordinates
+					m_Chart.TransformModelToClient(vecModel, vecView)
 
-                    ' Draw the current point
-                    Dim isControlPoint As Boolean = (i Mod 3) <> 0
-                    If isControlPoint Then
-                        Dim rect As NRectangleF = New NRectangleF(vecView.X - 3, vecView.Y - 3, 6, 6)
-                        graphics.PaintEllipse(ControlPointFill, Nothing, rect)
-                    Else
-                        Dim rect As NRectangleF = New NRectangleF(vecView.X - 5, vecView.Y - 5, 10, 10)
-                        graphics.PaintEllipse(PointFill, Nothing, rect)
-                    End If
+					' Draw the current point
+					Dim isControlPoint As Boolean = (i Mod 3) <> 0
+					If isControlPoint Then
+						Dim rect As New NRectangleF(vecView.X - 3, vecView.Y - 3, 6, 6)
+						graphics.PaintEllipse(ControlPointFill, Nothing, rect)
+					Else
+						Dim rect As New NRectangleF(vecView.X - 5, vecView.Y - 5, 10, 10)
+						graphics.PaintEllipse(PointFill, Nothing, rect)
+					End If
 
-                    ' Accumulate Bezier point
-                    bezierPoints(bpCount) = New PointF(vecView.X, vecView.Y)
-                    bpCount += 1
+					' Accumulate Bezier point
+					bezierPoints(bpCount) = New PointF(vecView.X, vecView.Y)
+					bpCount += 1
 
-                    If bpCount = 4 Then
-                        ' Draw tangents
-                        graphics.DrawLine(TangentStroke, New NPointF(bezierPoints(0)), New NPointF(bezierPoints(1)))
-                        graphics.DrawLine(TangentStroke, New NPointF(bezierPoints(2)), New NPointF(bezierPoints(3)))
+					If bpCount = 4 Then
+						' Draw tangents
+						graphics.DrawLine(TangentStroke, New NPointF(bezierPoints(0)), New NPointF(bezierPoints(1)))
+						graphics.DrawLine(TangentStroke, New NPointF(bezierPoints(2)), New NPointF(bezierPoints(3)))
 
-                        ' Draw Bezier line
-                        Dim path As GraphicsPath = New GraphicsPath()
-                        path.AddBezier(bezierPoints(0), bezierPoints(1), bezierPoints(2), bezierPoints(3))
-                        graphics.PaintPath(Nothing, BezierStroke, path)
-                        path.Dispose()
+						' Draw Bezier line
+						Dim path As New GraphicsPath()
+						path.AddBezier(bezierPoints(0), bezierPoints(1), bezierPoints(2), bezierPoints(3))
+						graphics.PaintPath(Nothing, BezierStroke, path)
+						path.Dispose()
 
-                        ' Update accumultaed points
-                        bezierPoints(0) = bezierPoints(3)
-                        bpCount = 1
-                    End If
-                    i += 1
-                Loop
-            End Sub
+						' Update accumultaed points
+						bezierPoints(0) = bezierPoints(3)
+						bpCount = 1
+					End If
+				Next i
+			End Sub
 
 			#End Region
 
@@ -202,7 +211,7 @@ Namespace Nevron.Examples.Chart.WinForm
 
 			Private m_Chart As NChart
 			Private m_Series As NCustomSeries
-			Public Points As NPointF()
+			Public Points() As NPointF
 			Public PointFill As NFillStyle
 			Public ControlPointFill As NFillStyle
 			Public BezierStroke As NStrokeStyle

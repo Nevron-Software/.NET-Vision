@@ -176,9 +176,9 @@
 			<exampleNode Name="Advanced 2D Funnel" NavigateUrl="Examples/ChartGallery/Funnel/NAdvancedFunnel2DUC.ascx" />
 			<exampleNode Name="Advanced 3D Funnel" NavigateUrl="Examples/ChartGallery/Funnel/NAdvancedFunnel3DUC.ascx" />
 		</bookNode>
-    <bookNode Name="Graphics Path">
-      <exampleNode Name="Graphics Path" NavigateUrl="Examples/ChartGallery/GraphicsPath/NGraphicsPathUC.ascx"/>
-    </bookNode>
+		<bookNode Name="Graphics Path">
+			<exampleNode Name="Graphics Path" NavigateUrl="Examples/ChartGallery/GraphicsPath/NGraphicsPathUC.ascx"/>
+		</bookNode>
 		<bookNode Name="Grid Surface">
 			<exampleNode Name="General" NavigateUrl="Examples/ChartGallery/GridSurface/NGridSurfaceUC.ascx" />
 			<exampleNode Name="Wireframe" NavigateUrl="Examples/ChartGallery/GridSurface/NGridFrameUC.ascx" />
@@ -326,6 +326,10 @@
 			<exampleNode Name="Three Set Venn" NavigateUrl="Examples/ChartGallery/Venn/NThreeSetVennUC.ascx" />
 			<exampleNode Name="Four Set Venn" NavigateUrl="Examples/ChartGallery/Venn/NFourSetVennUC.ascx" />
 			<exampleNode Name="Five Set Venn" NavigateUrl="Examples/ChartGallery/Venn/NFiveSetVennUC.ascx" />
+		</bookNode>
+		<bookNode Name="Vertex Surface">
+			<exampleNode Name="Fill Custom Colors" NavigateUrl="Examples/ChartGallery/VertexSurface/NVertexSurfaceFillCustomColorsUC.ascx" />
+			<exampleNode Name="Line Custom Colors" NavigateUrl="Examples/ChartGallery/VertexSurface/NVertexSurfaceLineCustomColorsUC.ascx" />
 		</bookNode>
   </bookNode>
 	<bookNode Name="Gauge Gallery">

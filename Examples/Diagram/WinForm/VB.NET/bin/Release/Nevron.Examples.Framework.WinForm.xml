@@ -133,12 +133,6 @@
             Gets or sets the common configuration settings for the examples.
             </summary>
         </member>
-        <member name="M:Nevron.Examples.Framework.WinForm.NExamplesForm.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
-            </summary>
-        </member>
         <member name="T:Nevron.Examples.Framework.WinForm.NExamplesMainMenu">
             <summary>
             Represents framework main menu.
@@ -169,12 +163,6 @@
         <member name="M:Nevron.Examples.Framework.WinForm.NExampleUserControl.AfterInitialize">
             <summary>
             Performs example specific information loading.
-            </summary>
-        </member>
-        <member name="M:Nevron.Examples.Framework.WinForm.NExampleUserControl.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
-            the contents of this method with the code editor.
             </summary>
         </member>
         <member name="F:Nevron.Examples.Framework.WinForm.NExampleUserControl.Random">
@@ -306,12 +294,6 @@
             Summary description for NSourceViewControl.
             </summary>
         </member>
-        <member name="M:Nevron.Examples.Framework.WinForm.NSourceViewControl.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
-            the contents of this method with the code editor.
-            </summary>
-        </member>
         <member name="T:Nevron.Examples.Framework.WinForm.NVBCodeHighlighter">
             <summary>
             Summary description for NVBCodeHighlighter.
@@ -349,12 +331,6 @@
             <summary>
             Reloads the current content of the browser.
             The framework uses this in order to rebuild the Css styles on palette change.
-            </summary>
-        </member>
-        <member name="M:Nevron.Examples.Framework.WinForm.NWebBrowser.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
-            the contents of this method with the code editor.
             </summary>
         </member>
         <member name="T:Nevron.Examples.Framework.WinForm.NExampleEntity">
@@ -397,12 +373,6 @@
             Gives you access to the toolbar above the treeview
             </summary>
         </member>
-        <member name="M:Nevron.Examples.Framework.WinForm.NNavigationTreeControl.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
-            the contents of this method with the code editor.
-            </summary>
-        </member>
         <member name="T:Nevron.Examples.Framework.WinForm.NSearchContext">
             <summary>
             Summary description for NSearchSettings.
@@ -434,12 +404,6 @@
         <member name="P:Nevron.Examples.Framework.WinForm.NTreeSearchControl.Tree">
             <summary>
             Gets or sets the TreeView control this control works onto.
-            </summary>
-        </member>
-        <member name="M:Nevron.Examples.Framework.WinForm.NTreeSearchControl.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
-            the contents of this method with the code editor.
             </summary>
         </member>
         <member name="T:Nevron.Examples.Framework.WinForm.NExamplesHelper">

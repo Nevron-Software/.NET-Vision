@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections
 Imports System.ComponentModel
 Imports System.Drawing
@@ -11,9 +10,10 @@ Imports Nevron.Chart
 Imports System.Diagnostics
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NQuickPointUC
 		Inherits NExampleBaseUC
+
 		Private m_QuickPoint As NQuickPointSeries
 		Private WithEvents UseHardwareAccelerationCheckBox As UI.WinForm.Controls.NCheckBox
 		Private WithEvents ChangeDataButton As UI.WinForm.Controls.NButton
@@ -29,9 +29,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		''' <summary> 
 		''' Clean up any resources being used.
 		''' </summary>
-		Protected Overrides Overloads Sub Dispose(ByVal disposing As Boolean)
+		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 			If disposing Then
-				If Not components Is Nothing Then
+				If components IsNot Nothing Then
 					components.Dispose()
 				End If
 			End If
@@ -60,7 +60,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.UseHardwareAccelerationCheckBox.Size = New System.Drawing.Size(170, 24)
 			Me.UseHardwareAccelerationCheckBox.TabIndex = 7
 			Me.UseHardwareAccelerationCheckBox.Text = "Use Hardware Acceleration"
-'			Me.UseHardwareAccelerationCheckBox.CheckedChanged += New System.EventHandler(Me.UseHardwareAccelerationCheckBox_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.UseHardwareAccelerationCheckBox.CheckedChanged += new System.EventHandler(this.UseHardwareAccelerationCheckBox_CheckedChanged);
 			' 
 			' ChangeDataButton
 			' 
@@ -69,7 +70,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.ChangeDataButton.Size = New System.Drawing.Size(153, 23)
 			Me.ChangeDataButton.TabIndex = 9
 			Me.ChangeDataButton.Text = "Change Data"
-'			Me.ChangeDataButton.Click += New System.EventHandler(Me.ChangeDataButton_Click);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.ChangeDataButton.Click += new System.EventHandler(this.ChangeDataButton_Click);
 			' 
 			' label1
 			' 
@@ -88,7 +90,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.MaxPointCountCombo.Name = "MaxPointCountCombo"
 			Me.MaxPointCountCombo.Size = New System.Drawing.Size(153, 21)
 			Me.MaxPointCountCombo.TabIndex = 1
-'			Me.MaxPointCountCombo.SelectedIndexChanged += New System.EventHandler(Me.MaxPointCountCombo_SelectedIndexChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.MaxPointCountCombo.SelectedIndexChanged += new System.EventHandler(this.MaxPointCountCombo_SelectedIndexChanged);
 			' 
 			' Enable3DCheckBox
 			' 
@@ -98,7 +101,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.Enable3DCheckBox.Size = New System.Drawing.Size(170, 24)
 			Me.Enable3DCheckBox.TabIndex = 10
 			Me.Enable3DCheckBox.Text = "Enable 3D"
-'			Me.Enable3DCheckBox.CheckedChanged += New System.EventHandler(Me.Enable3DCheckBox_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.Enable3DCheckBox.CheckedChanged += new System.EventHandler(this.Enable3DCheckBox_CheckedChanged);
 			' 
 			' NQuickPointUC
 			' 
@@ -132,7 +136,7 @@ Namespace Nevron.Examples.Chart.WinForm
 			m_Chart.LightModel.SetPredefinedLightModel(PredefinedLightModel.MetallicLustre)
 
 			' add interlace stripe
-			Dim s As NLinearScaleConfigurator = New NLinearScaleConfigurator()
+			Dim s As New NLinearScaleConfigurator()
 			m_Chart.Axis(StandardAxis.PrimaryY).ScaleConfigurator = CreateScale(New ChartWallType() { ChartWallType.Back, ChartWallType.Left })
 			m_Chart.Axis(StandardAxis.PrimaryX).ScaleConfigurator = CreateScale(New ChartWallType() { ChartWallType.Back, ChartWallType.Floor })
 			m_Chart.Axis(StandardAxis.Depth).ScaleConfigurator = CreateScale(New ChartWallType() { ChartWallType.Left, ChartWallType.Floor })
@@ -161,17 +165,15 @@ Namespace Nevron.Examples.Chart.WinForm
 			Enable3DCheckBox.Checked = True
 		End Sub
 
-		Private Function CreateScale(ByVal stripeWalls As ChartWallType()) As NLinearScaleConfigurator
+		Private Function CreateScale(ByVal stripeWalls() As ChartWallType) As NLinearScaleConfigurator
 			' add interlace stripe
-			Dim linearScale As NLinearScaleConfigurator = New NLinearScaleConfigurator()
-			Dim stripStyle As NScaleStripStyle = New NScaleStripStyle(New NColorFillStyle(Color.Beige), Nothing, True, 0, 0, 1, 1)
+			Dim linearScale As New NLinearScaleConfigurator()
+			Dim stripStyle As New NScaleStripStyle(New NColorFillStyle(Color.Beige), Nothing, True, 0, 0, 1, 1)
 			stripStyle.Interlaced = True
 
-			Dim i As Integer = 0
-			Do While i < stripeWalls.Length
+			For i As Integer = 0 To stripeWalls.Length - 1
 				stripStyle.SetShowAtWall(stripeWalls(i), True)
-				i += 1
-			Loop
+			Next i
 
 			linearScale.StripStyles.Add(stripStyle)
 
@@ -193,11 +195,7 @@ Namespace Nevron.Examples.Chart.WinForm
 		End Function
 
 		Private Sub UseHardwareAccelerationCheckBox_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs) Handles UseHardwareAccelerationCheckBox.CheckedChanged
-			If UseHardwareAccelerationCheckBox.Checked Then
-				nChartControl1.Settings.RenderSurface = RenderSurface.Window
-			Else
-				nChartControl1.Settings.RenderSurface = RenderSurface.Bitmap
-			End If
+			nChartControl1.Settings.RenderSurface = If(UseHardwareAccelerationCheckBox.Checked, RenderSurface.Window, RenderSurface.Bitmap)
 		End Sub
 
 		Private Sub MaxPointCountCombo_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles MaxPointCountCombo.SelectedIndexChanged
@@ -217,19 +215,17 @@ Namespace Nevron.Examples.Chart.WinForm
 			Dim lastIndex As Integer = m_QuickPoint.Values.Count
 
 			Dim groupCount As Integer = 20
-			Dim groupPointCount As Integer = pointCount / groupCount
+			Dim groupPointCount As Integer = pointCount \ groupCount
 
-			Dim group As Integer = 0
-			Do While group < groupCount
-				Dim centerX As Double = rand.Next(1000000) / 1000
-				Dim centerY As Double = rand.Next(1000000) / 1000
-				Dim centerZ As Double = rand.Next(1000000) / 1000
+			For group As Integer = 0 To groupCount - 1
+				Dim centerX As Double = rand.Next(1000000) \ 1000
+				Dim centerY As Double = rand.Next(1000000) \ 1000
+				Dim centerZ As Double = rand.Next(1000000) \ 1000
 
-				Dim radius As Integer = rand.Next(1000000) / 1000 + 200
-				Dim color As Color = Color.FromArgb(CByte(rand.Next(255)), CByte(rand.Next(255)), CByte(rand.Next(255)))
+				Dim radius As Integer = rand.Next(1000000) \ 1000 + 200
+				Dim color As Color = System.Drawing.Color.FromArgb(CByte(rand.Next(255)), CByte(rand.Next(255)), CByte(rand.Next(255)))
 
-				Dim i As Integer = 0
-				Do While i < groupPointCount
+				For i As Integer = 0 To groupPointCount - 1
 					Dim pitch As Double = rand.Next(100000) / 100000.0 * Math.PI * 2
 					Dim latitude As Double = rand.Next(100000) / 100000.0 * Math.PI * 2
 					Dim res As Double = radius * Math.Sin(pitch)
@@ -241,10 +237,8 @@ Namespace Nevron.Examples.Chart.WinForm
 
 					m_QuickPoint.Colors(lastIndex) = color
 					lastIndex += 1
-					i += 1
-				Loop
-				group += 1
-			Loop
+				Next i
+			Next group
 
 			nChartControl1.Refresh()
 		End Sub

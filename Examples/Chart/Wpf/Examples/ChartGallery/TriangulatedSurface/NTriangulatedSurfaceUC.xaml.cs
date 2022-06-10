@@ -151,27 +151,34 @@ namespace Nevron.Examples.Chart.Wpf
 			{
 				// fill the XYZ data from a binary resource
 				stream = NResourceHelper.GetResourceStream(GetType().Assembly, "DataXYZ.bin", "Nevron.Examples.Chart.Wpf.Resources");
-
 				reader = new BinaryReader(stream);
 
 				int nDataPointsCount = (int)stream.Length / 12;
 
+				//surface.Data.SetCapacity(nDataPointsCount);
+				NVector3DF[] data = new NVector3DF[nDataPointsCount];
+
 				// fill Y values
 				for (int i = 0; i < nDataPointsCount; i++)
 				{
-					surface.Values.Add(reader.ReadSingle());
+					data[i].Y = reader.ReadSingle();
 				}
 
 				// fill X values
 				for (int i = 0; i < nDataPointsCount; i++)
 				{
-					surface.XValues.Add(reader.ReadSingle());
+					data[i].X = reader.ReadSingle();
 				}
 
 				// fill Z values
 				for (int i = 0; i < nDataPointsCount; i++)
 				{
-					surface.ZValues.Add(reader.ReadSingle());
+					data[i].Z = reader.ReadSingle();
+				}
+
+				for (int i = 0; i < nDataPointsCount; i++)
+				{
+					surface.Data.AddValue(data[i]);
 				}
 			}
 			finally

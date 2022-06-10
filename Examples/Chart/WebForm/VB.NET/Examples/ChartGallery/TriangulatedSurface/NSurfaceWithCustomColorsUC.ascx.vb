@@ -145,31 +145,28 @@ Namespace Nevron.Examples.Chart.WebForm
 				stream = New FileStream(path, FileMode.Open, FileAccess.Read)
 				reader = New BinaryReader(stream)
 
-				Dim nDataPointsCount As Integer = CInt(Fix(stream.Length)) / 12
+				Dim nDataPointsCount As Integer = CInt(stream.Length) \ 12
+
+				surface.Data.SetCount(nDataPointsCount)
+				surface.Data.UseColors = True
 
 				' fill Y values and colors
-				Dim i As Integer = 0
-				Do While i < nDataPointsCount
+				For i As Integer = 0 To nDataPointsCount - 1
 					Dim y As Single = 300 - reader.ReadSingle()
 
-					surface.Values.Add(y)
-					surface.Colors.Add(GetColorFromValue(y))
-					i += 1
-				Loop
+					surface.Data.SetYValue(i, y)
+					surface.Data.SetColor(i, GetColorFromValue(y))
+				Next i
 
 				' fill X values
-				i = 0
-				Do While i < nDataPointsCount
-					surface.XValues.Add(reader.ReadSingle())
-					i += 1
-				Loop
+				For i As Integer = 0 To nDataPointsCount - 1
+					surface.Data.SetXValue(i, reader.ReadSingle())
+				Next i
 
 				' fill Z values
-				i = 0
-				Do While i < nDataPointsCount
-					surface.ZValues.Add(reader.ReadSingle())
-					i += 1
-				Loop
+				For i As Integer = 0 To nDataPointsCount - 1
+					surface.Data.SetZValue(i, reader.ReadSingle())
+				Next i
 			Finally
 				If Not reader Is Nothing Then
 					reader.Close()

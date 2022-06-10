@@ -1,15 +1,10 @@
+using Nevron.Chart;
+using Nevron.Chart.Windows;
+using Nevron.GraphicsCore;
 using System;
-using System.Collections;
 using System.ComponentModel;
 using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Data;
 using System.Windows.Forms;
-using Nevron.GraphicsCore;
-using Nevron.Editors;
-using Nevron.Chart;
-using Nevron.Chart.WinForm;
-using Nevron.Chart.Windows;
 
 namespace Nevron.Examples.Chart.WinForm
 {
@@ -113,8 +108,9 @@ namespace Nevron.Examples.Chart.WinForm
 		{
 			base.Initialize();
 
-			//nChartControl1.Settings.RenderSurface = RenderSurface.Window;
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.None;
+			// Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window;
+
 			nChartControl1.Controller.Tools.Clear();
 			nChartControl1.Controller.Tools.Add(new NPanelSelectorTool());
 			nChartControl1.Controller.Tools.Add(new NTrackballTool());
@@ -150,22 +146,9 @@ namespace Nevron.Examples.Chart.WinForm
 			surface.ShadingMode = ShadingMode.Smooth;
 			surface.FillMode = SurfaceFillMode.CustomColors;
 			surface.FrameMode = SurfaceFrameMode.None;
-			surface.FrameColorMode = SurfaceFrameColorMode.CustomColors;
-			surface.FrameStrokeStyle.Color = Color.Red;
-			surface.FrameStrokeStyle.Width = new NLength(4);
 
 			surface.Data.UseColors = true;
 			surface.Data.SetGridSize(50, 50);
-
-			// define a custom palette
-			surface.Palette.Clear();
-			surface.Palette.Add(-3, DarkOrange);
-			surface.Palette.Add(-2.5, LightOrange);
-			surface.Palette.Add(-1, LightGreen);
-			surface.Palette.Add(0, Turqoise);
-			surface.Palette.Add(2, Blue);
-			surface.Palette.Add(3, Purple);
-			surface.Palette.Add(4, BeautifulRed);
 
 			// generate data
 			GenerateSurfaceData(surface);

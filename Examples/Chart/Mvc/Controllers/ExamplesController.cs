@@ -1,4 +1,7 @@
-﻿using System.Web.Mvc;
+﻿using Nevron.Chart.ThinWeb;
+using Nevron.GraphicsCore;
+using System.IO;
+using System.Web.Mvc;
 
 namespace Nevron.Examples.Chart.Mvc
 {
@@ -31,14 +34,16 @@ namespace Nevron.Examples.Chart.Mvc
         {
             if (url != null && url.Length > 0)
             {
-                return View(url );
+                return View(url);
             }
             else
             {
                 return View("Home");
             }
 
-//            return Redirect(this."/Views/Examples/" + url + ".aspx");
+            //            return Redirect(this."/Views/Examples/" + url + ".aspx");
         }
+
+
     }
 }

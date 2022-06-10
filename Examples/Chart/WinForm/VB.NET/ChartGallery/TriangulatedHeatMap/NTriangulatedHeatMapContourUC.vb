@@ -10,7 +10,7 @@ Imports Nevron.Editors
 Imports Nevron.Chart.Windows
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Partial Public Class NTriangulatedHeatMapContourUC
 		Inherits NExampleBaseUC
 
@@ -177,7 +177,14 @@ Namespace Nevron.Examples.Chart.WinForm
 		End Sub
 
 		Private Sub GenerateData()
-            Dim points() As NPointD = {New NPointD(3.1, 0.1), New NPointD(1.5, 2.0), New NPointD(1.5, 0.5), New NPointD(2, 0), New NPointD(1.5, 3.4), New NPointD(1.3, 3)}
+			Dim points() As NPointD = {
+				New NPointD(3.1, 0.1),
+				New NPointD(1.5, 2.0),
+				New NPointD(1.5, 0.5),
+				New NPointD(2, 0),
+				New NPointD(1.5, 3.4),
+				New NPointD(1.3, 3)
+			}
 			Dim pointsIntensity() As Double = { 30, 10, 30, 20, 40, 20 }
 
 			Dim rand As New Random()

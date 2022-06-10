@@ -1,832 +1,856 @@
 <ExamplesTree xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Title="C# Examples">
-<Items>
-  <Folder Title="All Examples">
 	<Items>
-		<Folder Title="Chart Gallery" Name="ChartGallery">
-		<Items>
-			
-			<Folder Title="Area" Name="Area">
-				<Items>
-					<Example Title="Standard 2D Area" TypeName="NStandardArea2DUC" />
-					<Example Title="Standard 3D Area" TypeName="NStandardAreaUC" />
-					<Example Title="Stacked Area" TypeName="NStackedAreaUC" />
-					<Example Title="Multiple Area Series" TypeName="NMultiSeriesAreaUC" />
-					<Example Title="XY Area" TypeName="NXYScatterAreaUC" />
-					<Example Title="Sampled 2D Area" TypeName="NSampledArea2DUC" />"
-          <Example Title="Area Palette" TypeName="NAreaPaletteUC" />
-				</Items>
-			</Folder>
-			
-			<Folder Title="Bar" Name="Bar">
+		<Folder Title="What's New">
 			<Items>
-				<Example Title="Standard 2D Bar" TypeName="NStandardBar2DUC" />
-				<Example Title="Standard 3D Bar" TypeName="NStandardBar3DUC" />
-				<Example Title="Cluster Bar" TypeName="NClusterBarUC" />
-				<Example Title="Stacked Bar" TypeName="NStackedBarUC" />
-				<Example Title="Manhattan Bar" TypeName="NManhattanBarUC" />
-				<Example Title="Horizontal Bar" TypeName="NHorizontalBarUC" />
-				<Example Title="Dual Horizontal Bar" TypeName="NDualHorizontalBarUC" />
-				<Example Title="Cluster Stack Combination" TypeName="NClusterStackCombinationUC" />
-				<Example Title="DateTime Bars" TypeName="NDateTimeBarUC" />
-				<Example Title="XYZ Scatter Stack" TypeName="NXYZScatterStackUC" />
-				<Example Title="XYZ Scatter Cluster" TypeName="NXYZScatterClusterUC" />
-        <Example Title="Bar Palette" TypeName="NBarPaletteUC" />
-				<Example Title="Bar Connector Lines" TypeName="NBarConnectorLinesUC" />
-				<Example Title="Error Bar" TypeName="NErrorBarUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Box And Whiskers" Name="BoxAndWhiskers">
-				<Items>
-					<Example Title="Standard Box and Whiskers" TypeName="NBoxAndWhiskers2DUC" />
-					<Example Title="DateTime Box and Whiskers" TypeName="NDateTimeBoxAndWhiskers2DUC" />
-					<Example Title="Point Chart and Box Plot" TypeName="NPointChartAndBoxPlotUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Bubble" Name="Bubble">
-				<Items>
-					<Example Title="Standard Bubble" TypeName="NStandardBubbleUC" />
-					<Example Title="XY Scatter Bubble" TypeName="NXYScatterBubbleUC" />
-					<Example Title="XYZ Scatter Bubble" TypeName="NXYZScatterBubbleUC" />
-					<Example Title="Bubble Palette" TypeName ="NBubblePaletteUC" />
-					<Example Title="Bubble Legend Scale" TypeName="NBubbleLegendScaleUC"/>
-				</Items>
-			</Folder>
-
-			<Folder Title="Combo Charts" Name="ComboCharts">
-				<Items>
-					<Example Title="Pareto" TypeName="NParetoUC" />
-					<Example Title="Financial Chart" TypeName="NDateTimeWorkCalendarUC" TreePath ="Axes\Scaling\" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Custom" Name="Custom">
-				<Items>
-					<Example Title ="Custom Series" TypeName ="NCustomSeriesUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Error Bar" Name="ErrorBar">
-				<Items>
-					<Example Title="Y Error Bar" TypeName="NYErrorBarUC" />
-					<Example Title="XY Error Bar" TypeName="NXYErrorBarUC" />
-					<Example Title="XYZ Error Bar" TypeName="NXYZErrorBarUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Float Bar" Name="FloatBar">
-				<Items>
-					<Example Title="2D Float Bar" TypeName="NStandardFloatBar2DUC" />
-					<Example Title="3D Float Bar" TypeName="NStandardFloatBarUC" />
-					<Example Title="Horizontal Float Bar" TypeName="NHorizontalFloatBarUC" />
-					<Example Title="DateTime Float Bar" TypeName="NDateTimeFloatBarUC" />
-					<Example Title="Cluster Float Bar" TypeName="NClusterFloatBarUC" />
-					<Example Title="Stack Float Bar" TypeName="NStackFloatBarUC" />
-					<Example Title="DateTime Stack Float Bar" TypeName="NDateTimeStackFloatBarUC" />
-          <Example Title="Float Bar Palette" TypeName="NFloatBarPaletteUC" />
-					<Example Title="Float Bar Connector Lines" TypeName="NFloatBarConnectorLines2DUC" />
-					<Example Title="Gantt" TypeName="NFloatBarGanttUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Funnel" Name="Funnel">
-				<Items>
-					<Example Title="Standard 3D Funnel" TypeName="NStandardFunnel3DUC" />
-					<Example Title="Standard 2D Funnel" TypeName="NStandardFunnel2DUC" />
-					<Example Title="Advanced 3D Funnel" TypeName="NAdvancedFunnel3DUC" />
-					<Example Title="Advanced 2D Funnel" TypeName="NAdvancedFunnel2DUC" />
-				</Items>
-			</Folder>
-
-      <Folder Title="Graphics Path" Name="GraphicsPath">
-        <Items>
-          <Example Title="Graphics Path" TypeName="NGraphicsPathSeriesUC" />
-        </Items>
-      </Folder>  
-
-			<Folder Title="Grid Surface" Name="GridSurface">
-				<Items>
-					<Example Title="General" TypeName="NGridSurfaceUC" />
-					<Example Title="Wireframe" TypeName="NGridFrameUC" />
-					<Example Title="Contour" TypeName="NGridContourUC" />
-					<Example Title="Empty Data Points" TypeName="NGridEmptyPointsUC" />
-					<Example Title="Fill Style" TypeName="NGridFillStyleUC" />
-					<Example Title="Waves" TypeName="NWavesUC" />
-					<Example Title="Projected Contour" TypeName="NProjectedContourUC" />
-					<Example Title="Large Surface" TypeName="NLargeSurfaceUC" />
-					<Example Title="Texture Zoning" TypeName="NGridSurfaceTextureZoningUC" />
-					<Example Title="Custom Colors" TypeName ="NGridSurfaceCustomColorsUC" />
-					<Example Title="Rectilinear Grid" TypeName="NRectilinearGridUC" />
-					<Example Title="Vertical Cross Section" TypeName ="NGridSurfaceVerticalCrossSectionUC" />
-					<Example Title="Horizontal Cross Section" TypeName ="NGridSurfaceHorizontalCrossSectionUC" />
-					<Example Title="Isolines" TypeName="NGridSurfaceIsolinesUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Heat Map" Name="HeatMap">
-				<Items>
-					<Example Title="Heat Map" TypeName="NHeatMapUC" />
-          <Example Title="Heat Map - Contour" TypeName ="NHeatMapContourUC" />
-					<Example Title="Heat Map - Contour Labels" TypeName ="NHeatMapContourLabelsUC" TreePath="ChartGallery\HeatMap"/>
-          <Example Title="Cross Section" TypeName ="NHeatMapCrossSectionUC" />
-          <Example Title="Cross Section XY" TypeName ="NHeatMapCrossSectionXYUC" />
-          <Example Title="Wafer Chart" TypeName ="NWaferChartUC" />
-				</Items>
-			</Folder>	
-
-			<Folder Title="High Low" Name="HighLow">
-				<Items>
-					<Example Title="2D High Low" TypeName="NStandardHighLow2DUC" />
-					<Example Title="3D High Low" TypeName="NStandardHighLowUC" />
-					<Example Title="Advanced High Low" TypeName="NAdvancedHighLowUC" />
-          <Example Title="High Low Palette" TypeName="NHighLowPaletteUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Kagi" Name="Kagi">
-				<Items>
-					<Example Title="Kagi" TypeName="NKagiUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Line" Name="Line">
-			<Items>
-				<Example Title="Standard 2D Line" TypeName="NStandardLine2DUC" />
-				<Example Title="Standard 3D Line" TypeName="NStandardLineUC" />
-				<Example Title="Sampled 2D Line" TypeName="NSampledLine2DUC" />
-				<Example Title="Sampled 3D Line" TypeName="NSampledLine3DUC" />
-				<Example Title="Overlapped Line" TypeName="NOverlappedLineUC" />
-				<Example Title="Stacked Line" TypeName="NStackedLineUC" />
-				<Example Title="Multiseries Line" TypeName="NMultiSeriesLineUC" />
-				<Example Title="XY Scatter Line" TypeName="NXYScatterLineUC" />
-				<Example Title="XYZ Scatter Line" TypeName="NXYZScatterLineUC" />
-				<Example Title="Intersect with X/Y Value" TypeName ="NIntersectLineWithXYValueUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Line Studies" Name="LineStudies">
-				<Items>
-					<Example Title="Line Studies" TypeName="NLineStudiesUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Mesh Surface" Name="MeshSurface">
-				<Items>
-					<Example Title="General" TypeName="NMeshSurfaceUC" />
-					<Example Title="Intersected Surfaces" TypeName="NMeshIntersectedUC" />
-					<Example Title="Empty Data Points" TypeName="NMeshEmptyPointsUC" />
-					<Example Title="Fill Style" TypeName="NMeshFillStyleUC" />
-					<Example Title="Texture Zoning" TypeName="NMeshSurfaceTextureZoningUC" />
-					<Example Title="Custom Colors" TypeName ="NMeshSurfaceCustomColorsUC" />
-					<Example Title="Large Surface" TypeName="NLargeMeshSurfaceUC" />
-					<Example Title="Isolines" TypeName="NMeshSurfaceIsolinesUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Pie" Name="Pie">
-				<Items>
-					<Example Title="3D Pie Chart" TypeName="NStandardPieUC" />
-					<Example Title="Exploded Pie" TypeName="NExplodedPieUC" />
-					<Example Title="Sorted Pie" TypeName="NSortedPieUC" />
-					<Example Title="Grouped Pie" TypeName="NGroupedPieUC" />
-					<Example Title="Nonoverlapping Labels" TypeName="NNonoverlappingLabelsUC" />
-					<Example Title="Multiple Pies" TypeName="NMultiplePiesUC" />
-					<Example Title="Doughnut Pie" TypeName ="NDoughnutPieUC" />
-					<Example Title="Pie Slice Radius" TypeName ="NPieSliceRadiusUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Point" Name="Point">
-				<Items>
-					<Example Title="Standard Point" TypeName="NStandardPointUC" />
-					<Example Title="XY Scatter Point" TypeName="NXYScatterPointUC" />
-					<Example Title="XYZ Scatter Point" TypeName="NXYZScatterPointUC" />
-					<Example Title="XY Scatter Point Cluster" TypeName="NXYScatterPointClusteredUC"  />
-					<Example Title="XYZ Scatter Point Cluster" TypeName="NXYZScatterPointClusteredUC" />
-					<Example Title="Multi Series XYZ Scatter Point" TypeName="NXYZMultiSeriesPointUC" />
-					<Example Title="Point Drop Lines 2D" TypeName="NPointDropLines2DUC" />
-					<Example Title="Point Drop Lines 3D" TypeName="NPointDropLines3DUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Point and Figure" Name="PointAndFigure">
-				<Items>
-					<Example Title="Point and Figure" TypeName="NPointAndFigureUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Polar" Name="Polar">
-				<Items>
-					<Example Title="Polar Area" TypeName="NPolarAreaUC" />
-					<Example Title="Polar Line" TypeName="NPolarLineUC" />
-					<Example Title="Polar Point" TypeName="NPolarPointUC" />
-          <Example Title="Polar Range" TypeName ="NPolarRangeUC" />
-          <Example Title="Polar Vector" TypeName ="NPolarVectorUC" />
-					<Example Title="Value Axis Position" TypeName="NPolarValueAxisPositionUC" />
-					<Example Title="Angle Axis Position" TypeName="NPolarAngleAxisPositionUC" />
-				</Items>
-			</Folder>
-
-      <Folder Title="Quick Point" Name="QuickPoint">
-        <Items>
-          <Example Title="Quick Point" TypeName ="NQuickPointUC" TreePath="ChartGallery\QuickPoint\"/>
-        </Items>
-      </Folder>          
-
-			<Folder Title="Radar" Name="Radar">
-				<Items>
-					<Example Title="Radar Line" TypeName="NRadarLineUC" />
-					<Example Title="Radar Area" TypeName="NRadarAreaUC" />
-					<Example Title="Multi Measure Radar" TypeName="NMultiMeasureRadarUC" />
-					<Example Title="Stacked Radar Area" TypeName="NStackedRadarAreaUC" />
-					<Example Title="Radar Axis Titles" TypeName="NRadarAxisTitlesUC" />
-          <Example Title="Custom Axis Angles" TypeName ="NCustomRadarAxisAnglesUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Range" Name="Range">
-				<Items>
-					<Example Title="2D Range Series" TypeName="NRange2DUC" />
-					<Example Title="3D Range Series" TypeName="NRange3DUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Renko" Name="Renko">
-				<Items>
-					<Example Title="Renko" TypeName="NRenkoUC"/>
-				</Items>
-			</Folder>
-
-			<Folder Title="Shape" Name="Shape">
-				<Items>
-					<Example Title="3D Shapes" TypeName="NShapeUC" />
-					<Example Title="3D Modeling with Shapes" TypeName="NShapeHomeUC" />
-					<Example Title="Bars with Different Size" TypeName="NShapeBarsWithDifferentSizeUC" />
-					<Example Title="XY Scatter Bars" TypeName="NShapeXYScatterBarsUC" />
-					<Example Title="XYZ Scatter Bars" TypeName="NShapeXYZScatterBarsUC" />
-					<Example Title="XYZ Scatter Bubble" TypeName="NShapeXYZScatterBubbleUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Smooth Area" Name="SmoothArea">
-				<Items>
-					<Example Title="Smooth Area" TypeName="NSmoothArea3DUC" />
-					<Example Title="XY Smooth Area" TypeName="NXYSmoothAreaUC" />
-					<Example Title="Date-Time Smooth Area" TypeName="NDateTimeSmoothAreaUC" />
-          <Example Title="Smooth Area Palette" TypeName="NSmoothAreaPaletteUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Smooth Line" Name="SmoothLine">
-			<Items>
-				<Example Title="Standard Smooth Line" TypeName="NStandardSmoothLineUC" />
-				<Example Title="DateTime Smooth Line" TypeName="NDateTimeSmoothLineUC" />
-				<Example Title="XY Smooth Line" TypeName="NXYScatterSmoothLineUC" />
-				<Example Title="XYZ Smooth Line" TypeName="NXYZScatterSmoothLineUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Step Line" Name="StepLine">
-				<Items>
-					<Example Title="2D Step Line" TypeName="NStandardStepLine2DUC" />
-					<Example Title="3D Step Line" TypeName="NStandardStepLineUC" />
-					<Example Title="2D Sampled Step Line" TypeName="NSampledStepLine2DUC" />
-					<Example Title="DateTime Step Line" TypeName="NDateTimeStepLineUC" />
-					<Example Title="Step Line Intersections" TypeName="NStepLineIntersectionsUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Stock" Name="Stock">
-			<Items>
-				<Example Title="Candle" TypeName="NStockCandleUC" />
-				<Example Title="Stick" TypeName="NStockStickUC" />
-				<Example Title="Stock Data Grouping" TypeName="NStockDataGroupingUC" />
-				<Example Title="Stock Data Grouping - Hit Testing" TypeName="NStockDataGroupingHitTestingUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Ternary" Name="Ternary">
-				<Items>
-					<Example Title="Ternary Point" TypeName="NTernaryPointUC" />
-					<Example Title="Ternary Bubble" TypeName="NTernaryBubbleUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Three Line Break" Name="ThreeLineBreak">
-				<Items>
-					<Example Title="Three Line Break" TypeName="NThreeLineBreakUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Tree Map" Name="TreeMap">
-				<Items>
-					<Example Title="Tree Map" TypeName ="NTreeMapUC" />
-					<Example Title="Tree Map Legend" TypeName ="NTreeMapLegendUC" />
-					<Example Title="Tree Map Drill Down" TypeName ="NTreeMapDrillDownUC" />
-				</Items>
-			</Folder>
-			<Folder Title="Triangulated HeatMap" Name="TriangulatedHeatMap">
-				<Items>
-					<Example Title="Triangulated HeatMap" TypeName="NTriangulatedHeatMapUC" />
-					<Example Title="Triangulated HeatMap Contour" TypeName="NTriangulatedHeatMapContourUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Triangulated Surface" Name="TriangulatedSurface">
-				<Items>
-					<Example Title="Triangulated Surface" TypeName="NTriangulatedSurfaceUC" />
-					<Example Title="Custom Colors" TypeName="NTriangulatedSurfaceWithCustomColorsUC" />
-					<Example Title="Surface Simplification" TypeName ="NTriangulatedSurfaceSimplificationUC" />
-					<Example Title="Texture Zoning" TypeName="NTriangulatedSurfaceTextureZoningUC" />
-					<Example Title="Isolines" TypeName="NTriangulatedSurfaceIsolinesUC"/>
-				</Items>
-			</Folder>
-
-			<Folder Title="Vector" Name="Vector">
-				<Items>
-					<Example Title="2D Vector Series" TypeName="NVector2DUC" />
-					<Example Title="3D Vector Series" TypeName="NVector3DUC" />
-					<Example Title="Vector Direction Mode" TypeName="NVectorDirectionModeUC" />
-					<Example Title="Vector Legend Scale" TypeName="NVectorLegendScaleUC" />
-				</Items>
-			</Folder>
-
-			<Folder Title="Venn" Name="Venn">
-			<Items>
-				<Example Title="Two Set Venn" TypeName="NTwoSetVennUC" />
-				<Example Title="Three Set Venn" TypeName="NThreeSetVennUC" />
-				<Example Title="Four Set Venn" TypeName="NFourSetVennUC" />
-				<Example Title="Five Set Venn" TypeName="NFiveSetVennUC" />
-			</Items>
-			</Folder>
-
-		</Items>
-		</Folder>
-		
-		<Folder Title="Gauge Gallery" Name="GaugeGallery">
-		<Items>
-			<Folder Title="Numeric Display" Name="NumericDisplay">
-			<Items>
-				<Example Title="Numeric Led Display" TypeName="NNumericDisplayUC" />
-			</Items>
-			</Folder>
-			<Folder Title="Gauges" Name="Gauges">
-			<Items>
-				<Folder Title="Indicators" Name="Indicators">
-				<Items>
-					<Example Title="Linear Gauge Indicators" TypeName="NLinearGaugeIndicatorsUC" />
-					<Example Title="Radial Gauge Indicators" TypeName="NRadialGaugeIndicatorsUC" />
-					<Example Title="Knob Indicator" TypeName="NRadialGaugeKnobsUC" />
-					<Example Title="State Indicators" TypeName="NStateIndicatorsUC" />
-					<Example Title="Value Dampening" TypeName="NIndicatorValueDampeningUC" />
-					<Example Title="Indicator Palette" TypeName ="NIndicatorPaletteUC" />
-				</Items>
-				</Folder>
-				<Folder Title="Axes" Name="Scales">
-				<Items>
-					<Example Title="Axis Ruler Size" TypeName="NGaugeAxisRulerSizeUC" />
-					<Example Title="Axis Sections" TypeName="NGaugeAxisSectionsUC" />
-					<Example Title="Scale Appearance" TypeName="NGaugeScaleAppearanceUC" />
-					<Example Title="Custom Labels" TypeName="NGaugeCustomLabelsUC" />
-					<Example Title="Custom Range Labels" TypeName="NGaugeCustomRangeLabelsUC" />
-					<Example Title="Labels Orientation" TypeName="NGaugeScaleLabelsOrientationUC" />
-				</Items>
-				</Folder>
-				<Folder Title="Interactivity" Name="Interactivity">
-				<Items>
-					<Example Title="Tooltips" TypeName="NGaugeTooltipsUC" />
-					<Example Title="Hit Testing" TypeName="NGaugeHitTestingUC" />
-					<Example Title="Dragging Indicators" TypeName="NDraggingIndicatorsUC" />
-				</Items>
-        </Folder>
-        <Folder Title="Effects" Name="Effects">
-          <Items>
-            <Example Title="Borders" TypeName="NGaugeBordersUC" />
-            <Example Title="Glass and Gel Effects" TypeName="NGaugeGelAndGlassEffectsUC" />
-            <Example Title="Background Adorner" TypeName="NGaugeBackgroundAdornerUC" />
-          </Items>
-        </Folder>
-			</Items>
-			</Folder>
-			<Folder Title="Clocks" Name="Clocks">
-			<Items>
-				<Example Title="Digital Clock" TypeName="NDigitalClockUC" />
-				<Example Title="Analog Clock" TypeName="NAnalogClockUC" />
-			</Items>
-			</Folder>
-		</Items>
-		</Folder>
-		
-		<Folder Title="Dashboard Gallery" Name="DashboardGallery">
-		<Items>
-			<Example Title="Car Dashboard" TypeName="NCarDashboardUC" />
-			<Example Title="Financial Dashboard" TypeName="NFinancialDashboardUC" />
-			<Example Title="Battery Meter Dashboard" TypeName="NDigitalClockUC" TreePath="GaugeGallery\Clocks" />
-		</Items>
-		</Folder>
-		
-		<Folder Title="Axes" Name="Axes">
-		<Items>
-			<Folder Title="General" Name="General">
-			<Items>
-				<Example Title="Axis Titles" TypeName="NAxisTitlesUC" />
-				<Example Title="Axis Labels" TypeName="NAxisLabelsUC" />
-				<Example Title="Axis Labels Orientation" TypeName ="NAxisLabelsOrientationUC" />
-				<Example Title="Ticks" TypeName="NAxisTicksUC" />
-				<Example Title="Ticks Appearance" TypeName="NAxisTicksAppearanceUC" />
-				<Example Title="Gridlines" TypeName="NAxisGridlinesUC" />
-				<Example Title="Interlace Stripes" TypeName="NAxisInterlacedStripesUC" />
-				<Example Title="Strip Lines" TypeName="NAxisStripLinesUC" />
-				<Example Title="Sections" TypeName="NAxisSectionsUC" />
-				<Example Title="Value Crossing" TypeName="NAxisValueCrossingUC" />
-				<Example Title="Model Crossing" TypeName="NAxisModelCrossingUC" />
-				<Example Title="Docking" TypeName="NAxisDockingUC" />
-				<Example Title="Polar Value Axis Position" TypeName="NPolarValueAxisPositionUC" TreePath="ChartGallery\Polar" />
-				<Example Title="Polar Angle Axis Position" TypeName="NPolarAngleAxisPositionUC" TreePath="ChartGallery\Polar" />
-				<Example Title="Ruler Size" TypeName="NRulerSizeUC" />
-				<Example Title="Ruler Caps" TypeName="NRulerCapsUC" />
-				<Example Title="View Range Inflate" TypeName="NAxisViewRangeInflateUC"/>
-				<Example Title="Custom Range Labels" TypeName="NCustomRangeLabelsUC"/>
-				<Example Title="Min Max" TypeName="NAxisMinMaxUC" />
-        <Example Title="View Range" TypeName ="NViewRangeUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Attributes" Name="Attributes">
-			<Items>
-				<Example Title="Constlines 2D" TypeName="NConstLines2DUC" />
-				<Example Title="Constlines 3D" TypeName="NConstLines3DUC" />
-				<Example Title="ConstLine Labels" TypeName = "NConstLineLabelsUC" />
-				<Example Title="Stripes" TypeName="NStripesUC" />
-				<Example Title="Stripe Labels" TypeName = "NStripeLabelsUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Paging" Name="Paging">
-			<Items>
-				<Example Title="Numeric Paging" TypeName="NNumericAxisPagingUC" />
-				<Example Title="Date Time Paging" TypeName="NDateTimeAxisPagingUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Scaling" Name="Scaling">
-			<Items>
-				<Example Title="Ordinal Scale" TypeName="NOrdinalScaleUC" />
-				<Example Title="Linear Scale" TypeName="NLinearScaleUC" />
-				<Example Title="Logarithmic Scale" TypeName="NLogarithmicScaleUC" />
-				<Example Title="Date Time Scale" TypeName="NDateTimeScaleUC" />
-				<Example Title="Time Span Scale" TypeName="NTimeSpanScaleUC" />
-				<Example Title="Date Time Work Calendar" TypeName="NDateTimeWorkCalendarUC" />
-				<Example Title="Daily Schedule Work Calendar" TypeName="NDailyScheduleWorkCalendarUC" />
-				<Example Title="Value Timeline Scale" TypeName="NValueTimelineScaleUC" />
-				<Example Title="Value Timeline Scale Advanced" TypeName="NValueTimelineScaleAdvancedUC" />
-				<Example Title="Range Timeline Scale" TypeName="NRangeTimelineScaleUC" />
-				<Example Title="Range Timeline Scale Advanced" TypeName="NRangeTimelineScaleAdvancedUC" />
-				<Example Title="Hierarchical Scale" TypeName="NHierarchicalScaleUC" />
-        <Example Title="Table Scale" TypeName ="NTableScaleUC" />
-				<Example Title="Dynamic Axis Range" TypeName ="NDynamicYAxisRangeUC" />
-				<Example Title="Custom Scale Decorations" TypeName="NCustomScaleDecorationsUC" />
-        <Example Title="Custom Scale Decorations 2" TypeName="NCustomScaleDecorations2UC" />
-			</Items>
-			</Folder>
-			
-      <Folder Title="Scale Breaks" Name="ScaleBreaks">
-        <Items>
-          <Example Title="Auto Scale Breaks" TypeName="NAutomaticScaleBreaksUC" />
-          <Example Title="Custom Scale Breaks" TypeName="NCustomScaleBreaksUC" />
-          <Example Title="Scale Break Appearance" TypeName="NScaleBreakAppearanceUC" />
-        </Items>
-      </Folder>
-		</Items>
-		</Folder>
-		
-		<Folder Title="Panels" Name="Panels">
-		<Items>
-			<Folder Title="Annotations" Name="Annotations">
-			<Items>
-				<Example Title="General" TypeName="NAnnotationsGeneralUC" />
-				<Example Title="Anchor Panels - Mini Charts" TypeName="NAnchorPanelsUC" />
-				<Example Title="Pie Data Point Anchor" TypeName="NPieDataPointAnchorUC" />
-			</Items>
-			</Folder>
-			<Folder Title="Chart" Name="Chart">
-			<Items>
-				<Folder Title="Aspect" Name="Aspect">
+				<Folder Title="Vertex Surface" Name="ChartGallery\VertexSurface">
 					<Items>
-						<Example Title="Aspect 2D" TypeName="NChartAspect2DUC" />
-						<Example Title="Aspect 3D" TypeName="NChartAspect3DUC" />
-          			</Items>
+						<Example Title="Vertex Surface - General" TypeName="NVertexSurfaceUC" />
+						<Example Title="Vertex Surface - Line Custom Colors" TypeName="NVertexSurfaceLineCustomColorsUC" />
+						<Example Title="Vertex Surface - Fill Custom Colors" TypeName="NVertexSurfaceFillCustomColorsUC" />
+						<Example Title="Vertex Surface - Custom Indices" TypeName="NVertexSurfaceCustomIndicesUC" />
+					</Items>
 				</Folder>
-				<Folder Title="Automatic Label Layout" Name="AutomaticLabelLayout">
-				<Items>
-					<Example Title="Area" TypeName="NAutoLabelsAreaUC" />
-					<Example Title="Bar" TypeName="NAutoLabelsBarUC" />
-					<Example Title="Cluster Stack Bar" TypeName="NAutoLabelsClusterStackBarUC" />
-					<Example Title="Line" TypeName="NAutoLabelsLineUC" />
-					<Example Title="Polar" TypeName="NAutoLabelsPolarUC" />
-					<Example Title="Radar" TypeName="NAutoLabelsRadarUC" />
-					<Example Title="Stack Line" TypeName="NAutoLabelsStackLineUC" />
-					<Example Title="Step Line" TypeName="NAutoLabelsStepLineUC" />
-					<Example Title="XY Point" TypeName="NAutoLabelsXYPointUC" />
-					<Example Title="XYZ Point" TypeName="NAutoLabelsXYZPointUC" />
-				</Items>
+			</Items>	
+		</Folder>
+		<Folder Title="All Examples">
+			<Items>
+				<Folder Title="Chart Gallery" Name="ChartGallery">
+					<Items>
+						<Folder Title="Area" Name="Area">
+							<Items>
+								<Example Title="Standard 2D Area" TypeName="NStandardArea2DUC" />
+								<Example Title="Standard 3D Area" TypeName="NStandardAreaUC" />
+								<Example Title="Stacked Area" TypeName="NStackedAreaUC" />
+								<Example Title="Multiple Area Series" TypeName="NMultiSeriesAreaUC" />
+								<Example Title="XY Area" TypeName="NXYScatterAreaUC" />
+								<Example Title="Sampled 2D Area" TypeName="NSampledArea2DUC" />"
+								<Example Title="Area Palette" TypeName="NAreaPaletteUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Bar" Name="Bar">
+							<Items>
+								<Example Title="Standard 2D Bar" TypeName="NStandardBar2DUC" />
+								<Example Title="Standard 3D Bar" TypeName="NStandardBar3DUC" />
+								<Example Title="Cluster Bar" TypeName="NClusterBarUC" />
+								<Example Title="Stacked Bar" TypeName="NStackedBarUC" />
+								<Example Title="Manhattan Bar" TypeName="NManhattanBarUC" />
+								<Example Title="Horizontal Bar" TypeName="NHorizontalBarUC" />
+								<Example Title="Dual Horizontal Bar" TypeName="NDualHorizontalBarUC" />
+								<Example Title="Cluster Stack Combination" TypeName="NClusterStackCombinationUC" />
+								<Example Title="DateTime Bars" TypeName="NDateTimeBarUC" />
+								<Example Title="XYZ Scatter Stack" TypeName="NXYZScatterStackUC" />
+								<Example Title="XYZ Scatter Cluster" TypeName="NXYZScatterClusterUC" />
+								<Example Title="Bar Palette" TypeName="NBarPaletteUC" />
+								<Example Title="Bar Connector Lines" TypeName="NBarConnectorLinesUC" />
+								<Example Title="Error Bar" TypeName="NErrorBarUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Box And Whiskers" Name="BoxAndWhiskers">
+							<Items>
+								<Example Title="Standard Box and Whiskers" TypeName="NBoxAndWhiskers2DUC" />
+								<Example Title="DateTime Box and Whiskers" TypeName="NDateTimeBoxAndWhiskers2DUC" />
+								<Example Title="Point Chart and Box Plot" TypeName="NPointChartAndBoxPlotUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Bubble" Name="Bubble">
+							<Items>
+								<Example Title="Standard Bubble" TypeName="NStandardBubbleUC" />
+								<Example Title="XY Scatter Bubble" TypeName="NXYScatterBubbleUC" />
+								<Example Title="XYZ Scatter Bubble" TypeName="NXYZScatterBubbleUC" />
+								<Example Title="Bubble Palette" TypeName ="NBubblePaletteUC" />
+								<Example Title="Bubble Legend Scale" TypeName="NBubbleLegendScaleUC"/>
+							</Items>
+						</Folder>
+
+						<Folder Title="Combo Charts" Name="ComboCharts">
+							<Items>
+								<Example Title="Pareto" TypeName="NParetoUC" />
+								<Example Title="Financial Chart" TypeName="NDateTimeWorkCalendarUC" TreePath ="Axes\Scaling\" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Custom" Name="Custom">
+							<Items>
+								<Example Title ="Custom Series" TypeName ="NCustomSeriesUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Error Bar" Name="ErrorBar">
+							<Items>
+								<Example Title="Y Error Bar" TypeName="NYErrorBarUC" />
+								<Example Title="XY Error Bar" TypeName="NXYErrorBarUC" />
+								<Example Title="XYZ Error Bar" TypeName="NXYZErrorBarUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Float Bar" Name="FloatBar">
+							<Items>
+								<Example Title="2D Float Bar" TypeName="NStandardFloatBar2DUC" />
+								<Example Title="3D Float Bar" TypeName="NStandardFloatBarUC" />
+								<Example Title="Horizontal Float Bar" TypeName="NHorizontalFloatBarUC" />
+								<Example Title="DateTime Float Bar" TypeName="NDateTimeFloatBarUC" />
+								<Example Title="Cluster Float Bar" TypeName="NClusterFloatBarUC" />
+								<Example Title="Stack Float Bar" TypeName="NStackFloatBarUC" />
+								<Example Title="DateTime Stack Float Bar" TypeName="NDateTimeStackFloatBarUC" />
+								<Example Title="Float Bar Palette" TypeName="NFloatBarPaletteUC" />
+								<Example Title="Float Bar Connector Lines" TypeName="NFloatBarConnectorLines2DUC" />
+								<Example Title="Gantt" TypeName="NFloatBarGanttUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Funnel" Name="Funnel">
+							<Items>
+								<Example Title="Standard 3D Funnel" TypeName="NStandardFunnel3DUC" />
+								<Example Title="Standard 2D Funnel" TypeName="NStandardFunnel2DUC" />
+								<Example Title="Advanced 3D Funnel" TypeName="NAdvancedFunnel3DUC" />
+								<Example Title="Advanced 2D Funnel" TypeName="NAdvancedFunnel2DUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Graphics Path" Name="GraphicsPath">
+							<Items>
+								<Example Title="Graphics Path" TypeName="NGraphicsPathSeriesUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Grid Surface" Name="GridSurface">
+							<Items>
+								<Example Title="General" TypeName="NGridSurfaceUC" />
+								<Example Title="Wireframe" TypeName="NGridFrameUC" />
+								<Example Title="Contour" TypeName="NGridContourUC" />
+								<Example Title="Empty Data Points" TypeName="NGridEmptyPointsUC" />
+								<Example Title="Fill Style" TypeName="NGridFillStyleUC" />
+								<Example Title="Waves" TypeName="NWavesUC" />
+								<Example Title="Projected Contour" TypeName="NProjectedContourUC" />
+								<Example Title="Large Grid Surface" TypeName="NLargeGridSurfaceUC" />
+								<Example Title="Texture Zoning" TypeName="NGridSurfaceZoningUC" />
+								<Example Title="Custom Colors" TypeName ="NGridSurfaceCustomColorsUC" />
+								<Example Title="Vertical Cross Section" TypeName ="NGridSurfaceVerticalCrossSectionUC" />
+								<Example Title="Horizontal Cross Section" TypeName ="NGridSurfaceHorizontalCrossSectionUC" />
+								<Example Title="Isolines" TypeName="NGridSurfaceIsolinesUC" />
+								<Example Title="Grid Surface - Realtime" TypeName="NGridSurfaceRealtimeUC" />
+								<Example Title="Grid Surface - Spacing" TypeName="NGridSurfaceSpacingUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Heat Map" Name="HeatMap">
+							<Items>
+								<Example Title="Heat Map" TypeName="NHeatMapUC" />
+								<Example Title="Heat Map - Contour" TypeName ="NHeatMapContourUC" />
+								<Example Title="Heat Map - Contour Labels" TypeName ="NHeatMapContourLabelsUC" TreePath="ChartGallery\HeatMap"/>
+								<Example Title="Cross Section" TypeName ="NHeatMapCrossSectionUC" />
+								<Example Title="Cross Section XY" TypeName ="NHeatMapCrossSectionXYUC" />
+								<Example Title="Wafer Chart" TypeName ="NWaferChartUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="High Low" Name="HighLow">
+							<Items>
+								<Example Title="2D High Low" TypeName="NStandardHighLow2DUC" />
+								<Example Title="3D High Low" TypeName="NStandardHighLowUC" />
+								<Example Title="Advanced High Low" TypeName="NAdvancedHighLowUC" />
+								<Example Title="High Low Palette" TypeName="NHighLowPaletteUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Kagi" Name="Kagi">
+							<Items>
+								<Example Title="Kagi" TypeName="NKagiUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Line" Name="Line">
+							<Items>
+								<Example Title="Standard 2D Line" TypeName="NStandardLine2DUC" />
+								<Example Title="Standard 3D Line" TypeName="NStandardLineUC" />
+								<Example Title="Sampled 2D Line" TypeName="NSampledLine2DUC" />
+								<Example Title="Sampled 3D Line" TypeName="NSampledLine3DUC" />
+								<Example Title="Overlapped Line" TypeName="NOverlappedLineUC" />
+								<Example Title="Stacked Line" TypeName="NStackedLineUC" />
+								<Example Title="Multiseries Line" TypeName="NMultiSeriesLineUC" />
+								<Example Title="XY Scatter Line" TypeName="NXYScatterLineUC" />
+								<Example Title="XYZ Scatter Line" TypeName="NXYZScatterLineUC" />
+								<Example Title="Intersect with X/Y Value" TypeName ="NIntersectLineWithXYValueUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Line Studies" Name="LineStudies">
+							<Items>
+								<Example Title="Line Studies" TypeName="NLineStudiesUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Mesh Surface" Name="MeshSurface">
+							<Items>
+								<Example Title="General" TypeName="NMeshSurfaceUC" />
+								<Example Title="Intersected Surfaces" TypeName="NMeshIntersectedUC" />
+								<Example Title="Empty Data Points" TypeName="NMeshEmptyPointsUC" />
+								<Example Title="Fill Style" TypeName="NMeshFillStyleUC" />
+								<Example Title="Texture Zoning" TypeName="NMeshSurfaceZoningUC" />
+								<Example Title="Custom Colors" TypeName ="NMeshSurfaceCustomColorsUC" />
+								<Example Title="Large Surface" TypeName="NLargeMeshSurfaceUC" />
+								<Example Title="Isolines" TypeName="NMeshSurfaceIsolinesUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Pie" Name="Pie">
+							<Items>
+								<Example Title="3D Pie Chart" TypeName="NStandardPieUC" />
+								<Example Title="Exploded Pie" TypeName="NExplodedPieUC" />
+								<Example Title="Sorted Pie" TypeName="NSortedPieUC" />
+								<Example Title="Grouped Pie" TypeName="NGroupedPieUC" />
+								<Example Title="Nonoverlapping Labels" TypeName="NNonoverlappingLabelsUC" />
+								<Example Title="Multiple Pies" TypeName="NMultiplePiesUC" />
+								<Example Title="Doughnut Pie" TypeName ="NDoughnutPieUC" />
+								<Example Title="Pie Slice Radius" TypeName ="NPieSliceRadiusUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Point" Name="Point">
+							<Items>
+								<Example Title="Standard Point" TypeName="NStandardPointUC" />
+								<Example Title="XY Scatter Point" TypeName="NXYScatterPointUC" />
+								<Example Title="XYZ Scatter Point" TypeName="NXYZScatterPointUC" />
+								<Example Title="XY Scatter Point Cluster" TypeName="NXYScatterPointClusteredUC"  />
+								<Example Title="XYZ Scatter Point Cluster" TypeName="NXYZScatterPointClusteredUC" />
+								<Example Title="Multi Series XYZ Scatter Point" TypeName="NXYZMultiSeriesPointUC" />
+								<Example Title="Point Drop Lines 2D" TypeName="NPointDropLines2DUC" />
+								<Example Title="Point Drop Lines 3D" TypeName="NPointDropLines3DUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Point and Figure" Name="PointAndFigure">
+							<Items>
+								<Example Title="Point and Figure" TypeName="NPointAndFigureUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Polar" Name="Polar">
+							<Items>
+								<Example Title="Polar Area" TypeName="NPolarAreaUC" />
+								<Example Title="Polar Line" TypeName="NPolarLineUC" />
+								<Example Title="Polar Point" TypeName="NPolarPointUC" />
+								<Example Title="Polar Range" TypeName ="NPolarRangeUC" />
+								<Example Title="Polar Vector" TypeName ="NPolarVectorUC" />
+								<Example Title="Value Axis Position" TypeName="NPolarValueAxisPositionUC" />
+								<Example Title="Angle Axis Position" TypeName="NPolarAngleAxisPositionUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Quick Point" Name="QuickPoint">
+							<Items>
+								<Example Title="Quick Point" TypeName ="NQuickPointUC" TreePath="ChartGallery\QuickPoint\"/>
+							</Items>
+						</Folder>
+
+						<Folder Title="Radar" Name="Radar">
+							<Items>
+								<Example Title="Radar Line" TypeName="NRadarLineUC" />
+								<Example Title="Radar Area" TypeName="NRadarAreaUC" />
+								<Example Title="Multi Measure Radar" TypeName="NMultiMeasureRadarUC" />
+								<Example Title="Stacked Radar Area" TypeName="NStackedRadarAreaUC" />
+								<Example Title="Radar Axis Titles" TypeName="NRadarAxisTitlesUC" />
+								<Example Title="Custom Axis Angles" TypeName ="NCustomRadarAxisAnglesUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Range" Name="Range">
+							<Items>
+								<Example Title="2D Range Series" TypeName="NRange2DUC" />
+								<Example Title="3D Range Series" TypeName="NRange3DUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Renko" Name="Renko">
+							<Items>
+								<Example Title="Renko" TypeName="NRenkoUC"/>
+							</Items>
+						</Folder>
+
+						<Folder Title="Shape" Name="Shape">
+							<Items>
+								<Example Title="3D Shapes" TypeName="NShapeUC" />
+								<Example Title="3D Modeling with Shapes" TypeName="NShapeHomeUC" />
+								<Example Title="Bars with Different Size" TypeName="NShapeBarsWithDifferentSizeUC" />
+								<Example Title="XY Scatter Bars" TypeName="NShapeXYScatterBarsUC" />
+								<Example Title="XYZ Scatter Bars" TypeName="NShapeXYZScatterBarsUC" />
+								<Example Title="XYZ Scatter Bubble" TypeName="NShapeXYZScatterBubbleUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Smooth Area" Name="SmoothArea">
+							<Items>
+								<Example Title="Smooth Area" TypeName="NSmoothArea3DUC" />
+								<Example Title="XY Smooth Area" TypeName="NXYSmoothAreaUC" />
+								<Example Title="Date-Time Smooth Area" TypeName="NDateTimeSmoothAreaUC" />
+								<Example Title="Smooth Area Palette" TypeName="NSmoothAreaPaletteUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Smooth Line" Name="SmoothLine">
+							<Items>
+								<Example Title="Standard Smooth Line" TypeName="NStandardSmoothLineUC" />
+								<Example Title="DateTime Smooth Line" TypeName="NDateTimeSmoothLineUC" />
+								<Example Title="XY Smooth Line" TypeName="NXYScatterSmoothLineUC" />
+								<Example Title="XYZ Smooth Line" TypeName="NXYZScatterSmoothLineUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Step Line" Name="StepLine">
+							<Items>
+								<Example Title="2D Step Line" TypeName="NStandardStepLine2DUC" />
+								<Example Title="3D Step Line" TypeName="NStandardStepLineUC" />
+								<Example Title="2D Sampled Step Line" TypeName="NSampledStepLine2DUC" />
+								<Example Title="DateTime Step Line" TypeName="NDateTimeStepLineUC" />
+								<Example Title="Step Line Intersections" TypeName="NStepLineIntersectionsUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Stock" Name="Stock">
+							<Items>
+								<Example Title="Candle" TypeName="NStockCandleUC" />
+								<Example Title="Stick" TypeName="NStockStickUC" />
+								<Example Title="Stock Data Grouping" TypeName="NStockDataGroupingUC" />
+								<Example Title="Stock Data Grouping - Hit Testing" TypeName="NStockDataGroupingHitTestingUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Ternary" Name="Ternary">
+							<Items>
+								<Example Title="Ternary Point" TypeName="NTernaryPointUC" />
+								<Example Title="Ternary Bubble" TypeName="NTernaryBubbleUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Three Line Break" Name="ThreeLineBreak">
+							<Items>
+								<Example Title="Three Line Break" TypeName="NThreeLineBreakUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Tree Map" Name="TreeMap">
+							<Items>
+								<Example Title="Tree Map" TypeName ="NTreeMapUC" />
+								<Example Title="Tree Map Legend" TypeName ="NTreeMapLegendUC" />
+								<Example Title="Tree Map Drill Down" TypeName ="NTreeMapDrillDownUC" />
+							</Items>
+						</Folder>
+						<Folder Title="Triangulated HeatMap" Name="TriangulatedHeatMap">
+							<Items>
+								<Example Title="Triangulated HeatMap" TypeName="NTriangulatedHeatMapUC" />
+								<Example Title="Triangulated HeatMap Contour" TypeName="NTriangulatedHeatMapContourUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Triangulated Surface" Name="TriangulatedSurface">
+							<Items>
+								<Example Title="Triangulated Surface" TypeName="NTriangulatedSurfaceUC" />
+								<Example Title="Custom Colors" TypeName="NTriangulatedSurfaceWithCustomColorsUC" />
+								<Example Title="Surface Simplification" TypeName ="NTriangulatedSurfaceSimplificationUC" />
+								<Example Title="Texture Zoning" TypeName="NTriangulatedSurfaceZoningUC" />
+								<Example Title="Isolines" TypeName="NTriangulatedSurfaceIsolinesUC"/>
+								<Example Title="Realtime Triangulation" TypeName="NTriangulatedSurfaceRealtimeUC"/>
+							</Items>
+						</Folder>
+
+						<Folder Title="Vector" Name="Vector">
+							<Items>
+								<Example Title="2D Vector Series" TypeName="NVector2DUC" />
+								<Example Title="3D Vector Series" TypeName="NVector3DUC" />
+								<Example Title="Vector Direction Mode" TypeName="NVectorDirectionModeUC" />
+								<Example Title="Vector Legend Scale" TypeName="NVectorLegendScaleUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Venn" Name="Venn">
+							<Items>
+								<Example Title="Two Set Venn" TypeName="NTwoSetVennUC" />
+								<Example Title="Three Set Venn" TypeName="NThreeSetVennUC" />
+								<Example Title="Four Set Venn" TypeName="NFourSetVennUC" />
+								<Example Title="Five Set Venn" TypeName="NFiveSetVennUC" />
+							</Items>
+						</Folder>
+
+            <Folder Title="Vertex Surface" Name="VertexSurface">
+              <Items>
+                <Example Title="General" TypeName="NVertexSurfaceUC" />
+                <Example Title="Line Custom Colors" TypeName="NVertexSurfaceLineCustomColorsUC" />
+                <Example Title="Fill Custom Colors" TypeName="NVertexSurfaceFillCustomColorsUC" />
+                <Example Title="Custom Indices" TypeName="NVertexSurfaceCustomIndicesUC" />
+              </Items>
+            </Folder>
+
+           </Items>
 				</Folder>
 
-				<Folder Title="SeriesAttributes" Name="SeriesAttributes">
+				<Folder Title="Gauge Gallery" Name="GaugeGallery">
 					<Items>
-						<Example Title="Appearance" TypeName="NSeriesAppearanceAttributesUC" />
-						<Example Title="Markers" TypeName="NSeriesMarkerAttributeUC" />
-						<Example Title="Custom Marker Shape" TypeName ="NSeriesCustomMarkerShapeUC" />
-						<Example Title="Data Labels" TypeName="NSeriesDataLabelAttributeUC" />
-						<Example Title="Legend" TypeName="NSeriesLegendAttributeUC" />
-						<Example Title="Z Order" TypeName="NSeriesZOrderUC" />
+						<Folder Title="Numeric Display" Name="NumericDisplay">
+							<Items>
+								<Example Title="Numeric Led Display" TypeName="NNumericDisplayUC" />
+							</Items>
+						</Folder>
+						<Folder Title="Gauges" Name="Gauges">
+							<Items>
+								<Folder Title="Indicators" Name="Indicators">
+									<Items>
+										<Example Title="Linear Gauge Indicators" TypeName="NLinearGaugeIndicatorsUC" />
+										<Example Title="Radial Gauge Indicators" TypeName="NRadialGaugeIndicatorsUC" />
+										<Example Title="Knob Indicator" TypeName="NRadialGaugeKnobsUC" />
+										<Example Title="State Indicators" TypeName="NStateIndicatorsUC" />
+										<Example Title="Value Dampening" TypeName="NIndicatorValueDampeningUC" />
+										<Example Title="Indicator Palette" TypeName ="NIndicatorPaletteUC" />
+									</Items>
+								</Folder>
+								<Folder Title="Axes" Name="Scales">
+									<Items>
+										<Example Title="Axis Ruler Size" TypeName="NGaugeAxisRulerSizeUC" />
+										<Example Title="Axis Sections" TypeName="NGaugeAxisSectionsUC" />
+										<Example Title="Scale Appearance" TypeName="NGaugeScaleAppearanceUC" />
+										<Example Title="Custom Labels" TypeName="NGaugeCustomLabelsUC" />
+										<Example Title="Custom Range Labels" TypeName="NGaugeCustomRangeLabelsUC" />
+										<Example Title="Labels Orientation" TypeName="NGaugeScaleLabelsOrientationUC" />
+									</Items>
+								</Folder>
+								<Folder Title="Interactivity" Name="Interactivity">
+									<Items>
+										<Example Title="Tooltips" TypeName="NGaugeTooltipsUC" />
+										<Example Title="Hit Testing" TypeName="NGaugeHitTestingUC" />
+										<Example Title="Dragging Indicators" TypeName="NDraggingIndicatorsUC" />
+									</Items>
+								</Folder>
+								<Folder Title="Effects" Name="Effects">
+									<Items>
+										<Example Title="Borders" TypeName="NGaugeBordersUC" />
+										<Example Title="Glass and Gel Effects" TypeName="NGaugeGelAndGlassEffectsUC" />
+										<Example Title="Background Adorner" TypeName="NGaugeBackgroundAdornerUC" />
+									</Items>
+								</Folder>
+							</Items>
+						</Folder>
+						<Folder Title="Clocks" Name="Clocks">
+							<Items>
+								<Example Title="Digital Clock" TypeName="NDigitalClockUC" />
+								<Example Title="Analog Clock" TypeName="NAnalogClockUC" />
+							</Items>
+						</Folder>
 					</Items>
 				</Folder>
 
-				<Folder Title="Walls" Name="Walls">
-				<Items>
-					<Example Title="General" TypeName="NWallsGeneralUC" />
-					<Example Title="Auto Walls and Axes Visibility" TypeName="NAutoWallsAndAxesVisibilityUC" />
-				</Items>
-				</Folder>
-			</Items>
-			</Folder>
-
-			<Folder Title="Legend" Name="Legend">
-			<Items>
-				<Example Title="General" TypeName="NLegendGeneralUC" />
-				<Example Title="Position" TypeName="NLegendPositionUC" />
-				<Example Title="Docking" TypeName="NLegendDockingUC" />
-				<Example Title="Series Assignment" TypeName="NLegendSeriesAssignmentUC" />
-				<Example Title="Interlaced" TypeName="NLegendInterlacedUC" />
-        <Example Title="Wrapping" TypeName="NLegendWrappingUC" />
-        <Example Title="Custom Legend Items" TypeName="NLegendCustomItemsUC" />
-				<Example Title="Palette Item" TypeName="NLegendPaletteItemUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Labels" Name="Labels">
-			<Items>
-				<Example Title="General" TypeName="NLabelGeneralUC" />
-        <Example Title="Fit Modes" TypeName="NLabelFitModesUC" />
-        <Example Title="Image Embedding" TypeName = "NLabelImageEmbeddingUC" />
-				<Example Title="XML formatted text" TypeName="NXMLFormattedTextUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Guidelines" Name="Guidelines">
-				<Items>
-					<Example Title="Side Guideline" TypeName="NSideGuidelineUC" />
-					<Example Title="Twin Guideline" TypeName="NTwinGuidelineUC" />
-				</Items>
-			</Folder>
-			
-			<Folder Title="Watermarks" Name="Watermarks">
-			<Items>
-				<Example Title="General" TypeName="NWatermarkGeneralUC" />
-			</Items>
-			</Folder>
-		
-			<Folder Title="Background Decorator" Name="BackgroundDecorator">
-			<Items>
-				<Example Title="General" TypeName="NBackgroundDecoratorUC" />
-			</Items>
-			</Folder>
-		</Items>
-		</Folder>
-
-		<Folder Title="Real Time Charts" Name="RealTimeCharts">
-			<Items>
-				<Example Title="Real Time Polar" TypeName ="NRealTimePolarUC" />
-				<Example Title="Real Time Line" TypeName ="NRealTimeLineUC" />
-				<Example Title="Real Time Area" TypeName="NRealTimeAreaUC" />
-				<Example Title="Real Time Bar" TypeName="NRealTimeBarUC" />
-				<Example Title="Real Time Point" TypeName="NRealTimePointUC" />
-				<Example Title="Real Time Stock" TypeName="NRealTimeStockUC" />
-				<Example Title="Real Time Surface" TypeName="NRealTimeSurfaceUC" />
-			</Items>
-		</Folder>
-
-		<Folder Title="Data Manipulation" Name="DataManipulation">
-		<Items>
-			<Folder Title="General" Name="General">
-			<Items>
-				<Example Title="Finding" TypeName="NFindingDataUC" />
-				<Example Title="Filtering" TypeName="NFilteringDataUC" />
-				<Example Title="Sorting" TypeName="NSortingDataUC" />
-				<Example Title="Evaluating" TypeName="NEvaluatingDataUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Data Binding" Name="DataBinding">
-			<Items>
-				<Example Title="Binding to Data Adapter" TypeName="NBindingToDataAdapterUC" />
-				<Example Title="Binding to Data Table" TypeName="NBindingToDataTableUC" />
-				<Example Title="Binding to IBindingList" TypeName="NBindingToIBindingListUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Empty Data Points" Name="EmptyDataPoints">
-			<Items>
-				<Example Title="General Example" TypeName="NEmptyDataPointsGeneralUC" />
-				<Example Title="Float Bar, High Low" TypeName="NFloatBarEmptyDataPointsUC" />
-				<Example Title="Bubble" TypeName="NBubbleEmptyDataPointsUC" />
-			</Items>
-			</Folder>
-      <Folder Title="Infinity Data Points" Name="InfinityDataPoints">
-      <Items>
-        <Example Title="General" TypeName="NInfinityDataPointsGeneralUC" />
-       </Items>
-      </Folder>
-
-			<Folder Title="Exporting" Name="Exporting">
-			<Items>
-				<Example Title="Export to DataTable" TypeName="NExportingToDataTableUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Importing" Name="Importing">
-			<Items>
-				<Example Title="From OleDbDataReader" TypeName="NImportingFromDataReaderUC" />
-				<Example Title="From DataTable and DataView" TypeName="NImportingFromDataTableAndDataViewUC" />
-				<Example Title="From CSV" TypeName="NImportingFromCSVUC" />
-				<Example Title="From Excel" TypeName="NImportingFromXLSUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Functions" Name="Functions">
-			<Items>
-				<Folder Title="Statistical" Name="Statistical">
-				<Items>
-					<Example Title="Basic Functions" TypeName="NBasicFunctionsUC" />
-					<Example Title="Average, Median, Min, Max" TypeName="NAverageMedianMinMaxUC" />
-					<Example Title="Sum of Data Items" TypeName="NSumElementsUC" />
-					<Example Title="Power, Cumulative, Exp. Average" TypeName="NPowerCumulativeExpAverageUC" />
-					<Example Title="Count, Standard Deviation, RMS" TypeName="NCountStdDevRmsUC" />
-					<Example Title="Covariance and Correlation" TypeName="NCovarianceCorrelationUC" />
-				</Items>
+				<Folder Title="Dashboard Gallery" Name="DashboardGallery">
+					<Items>
+						<Example Title="Car Dashboard" TypeName="NCarDashboardUC" />
+						<Example Title="Financial Dashboard" TypeName="NFinancialDashboardUC" />
+						<Example Title="Battery Meter Dashboard" TypeName="NDigitalClockUC" TreePath="GaugeGallery\Clocks" />
+					</Items>
 				</Folder>
 
-				<Folder Title="Financial" Name="Financial">
-				<Items>
-					<Example Title="Moving Averages" TypeName="NMovingAveragesUC" />
-					<Example Title="Price Indicators" TypeName="NPriceIndicatorsUC" />
-					<Example Title="Range Indicators" TypeName="NRangeIndicatorsUC" />
-					<Example Title="Directional Movement" TypeName="NDirectionalMovementUC" />
-					<Example Title="Technical Price Indicators" TypeName="NTechnicalPriceIndicatorsUC" />
-					<Example Title="Volume Indicators" TypeName="NVolumeIndicatorsUC" />
-				</Items>
+				<Folder Title="Axes" Name="Axes">
+					<Items>
+						<Folder Title="General" Name="General">
+							<Items>
+								<Example Title="Axis Titles" TypeName="NAxisTitlesUC" />
+								<Example Title="Axis Labels" TypeName="NAxisLabelsUC" />
+								<Example Title="Axis Labels Orientation" TypeName ="NAxisLabelsOrientationUC" />
+								<Example Title="Ticks" TypeName="NAxisTicksUC" />
+								<Example Title="Ticks Appearance" TypeName="NAxisTicksAppearanceUC" />
+								<Example Title="Gridlines" TypeName="NAxisGridlinesUC" />
+								<Example Title="Interlace Stripes" TypeName="NAxisInterlacedStripesUC" />
+								<Example Title="Strip Lines" TypeName="NAxisStripLinesUC" />
+								<Example Title="Sections" TypeName="NAxisSectionsUC" />
+								<Example Title="Value Crossing" TypeName="NAxisValueCrossingUC" />
+								<Example Title="Value Crossing 3D" TypeName="NAxisValueCrossing3DUC" />
+								<Example Title="Model Crossing" TypeName="NAxisModelCrossingUC" />
+								<Example Title="Docking" TypeName="NAxisDockingUC" />
+								<Example Title="Polar Value Axis Position" TypeName="NPolarValueAxisPositionUC" TreePath="ChartGallery\Polar" />
+								<Example Title="Polar Angle Axis Position" TypeName="NPolarAngleAxisPositionUC" TreePath="ChartGallery\Polar" />
+								<Example Title="Ruler Size" TypeName="NRulerSizeUC" />
+								<Example Title="Ruler Caps" TypeName="NRulerCapsUC" />
+								<Example Title="View Range Inflate" TypeName="NAxisViewRangeInflateUC"/>
+								<Example Title="Custom Range Labels" TypeName="NCustomRangeLabelsUC"/>
+								<Example Title="Min Max" TypeName="NAxisMinMaxUC" />
+								<Example Title="View Range" TypeName ="NViewRangeUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Attributes" Name="Attributes">
+							<Items>
+								<Example Title="Constlines 2D" TypeName="NConstLines2DUC" />
+								<Example Title="Constlines 3D" TypeName="NConstLines3DUC" />
+								<Example Title="ConstLine Labels" TypeName = "NConstLineLabelsUC" />
+								<Example Title="Stripes" TypeName="NStripesUC" />
+								<Example Title="Stripe Labels" TypeName = "NStripeLabelsUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Paging" Name="Paging">
+							<Items>
+								<Example Title="Numeric Paging" TypeName="NNumericAxisPagingUC" />
+								<Example Title="Date Time Paging" TypeName="NDateTimeAxisPagingUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Scaling" Name="Scaling">
+							<Items>
+								<Example Title="Ordinal Scale" TypeName="NOrdinalScaleUC" />
+								<Example Title="Linear Scale" TypeName="NLinearScaleUC" />
+								<Example Title="Logarithmic Scale" TypeName="NLogarithmicScaleUC" />
+								<Example Title="Date Time Scale" TypeName="NDateTimeScaleUC" />
+								<Example Title="Time Span Scale" TypeName="NTimeSpanScaleUC" />
+								<Example Title="Date Time Work Calendar" TypeName="NDateTimeWorkCalendarUC" />
+								<Example Title="Daily Schedule Work Calendar" TypeName="NDailyScheduleWorkCalendarUC" />
+								<Example Title="Value Timeline Scale" TypeName="NValueTimelineScaleUC" />
+								<Example Title="Value Timeline Scale Advanced" TypeName="NValueTimelineScaleAdvancedUC" />
+								<Example Title="Range Timeline Scale" TypeName="NRangeTimelineScaleUC" />
+								<Example Title="Range Timeline Scale Advanced" TypeName="NRangeTimelineScaleAdvancedUC" />
+								<Example Title="Hierarchical Scale" TypeName="NHierarchicalScaleUC" />
+								<Example Title="Table Scale" TypeName ="NTableScaleUC" />
+								<Example Title="Dynamic Axis Range" TypeName ="NDynamicYAxisRangeUC" />
+								<Example Title="Custom Scale Decorations" TypeName="NCustomScaleDecorationsUC" />
+								<Example Title="Custom Scale Decorations 2" TypeName="NCustomScaleDecorations2UC" />
+								<Example Title="Custom Scale Decorations 2" TypeName="NCustomScaleDecorations2UC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Scale Breaks" Name="ScaleBreaks">
+							<Items>
+								<Example Title="Auto Scale Breaks" TypeName="NAutomaticScaleBreaksUC" />
+								<Example Title="Custom Scale Breaks" TypeName="NCustomScaleBreaksUC" />
+								<Example Title="Scale Break Appearance" TypeName="NScaleBreakAppearanceUC" />
+							</Items>
+						</Folder>
+					</Items>
+				</Folder>
+
+				<Folder Title="Panels" Name="Panels">
+					<Items>
+						<Folder Title="Annotations" Name="Annotations">
+							<Items>
+								<Example Title="General" TypeName="NAnnotationsGeneralUC" />
+								<Example Title="Anchor Panels - Mini Charts" TypeName="NAnchorPanelsUC" />
+								<Example Title="Pie Data Point Anchor" TypeName="NPieDataPointAnchorUC" />
+							</Items>
+						</Folder>
+						<Folder Title="Chart" Name="Chart">
+							<Items>
+								<Folder Title="Aspect" Name="Aspect">
+									<Items>
+										<Example Title="Aspect 2D" TypeName="NChartAspect2DUC" />
+										<Example Title="Aspect 3D" TypeName="NChartAspect3DUC" />
+									</Items>
+								</Folder>
+								<Folder Title="Automatic Label Layout" Name="AutomaticLabelLayout">
+									<Items>
+										<Example Title="Area" TypeName="NAutoLabelsAreaUC" />
+										<Example Title="Bar" TypeName="NAutoLabelsBarUC" />
+										<Example Title="Cluster Stack Bar" TypeName="NAutoLabelsClusterStackBarUC" />
+										<Example Title="Line" TypeName="NAutoLabelsLineUC" />
+										<Example Title="Polar" TypeName="NAutoLabelsPolarUC" />
+										<Example Title="Radar" TypeName="NAutoLabelsRadarUC" />
+										<Example Title="Stack Line" TypeName="NAutoLabelsStackLineUC" />
+										<Example Title="Step Line" TypeName="NAutoLabelsStepLineUC" />
+										<Example Title="XY Point" TypeName="NAutoLabelsXYPointUC" />
+										<Example Title="XYZ Point" TypeName="NAutoLabelsXYZPointUC" />
+									</Items>
+								</Folder>
+
+								<Folder Title="SeriesAttributes" Name="SeriesAttributes">
+									<Items>
+										<Example Title="Appearance" TypeName="NSeriesAppearanceAttributesUC" />
+										<Example Title="Markers" TypeName="NSeriesMarkerAttributeUC" />
+										<Example Title="Custom Marker Shape" TypeName ="NSeriesCustomMarkerShapeUC" />
+										<Example Title="Data Labels" TypeName="NSeriesDataLabelAttributeUC" />
+										<Example Title="Legend" TypeName="NSeriesLegendAttributeUC" />
+										<Example Title="Z Order" TypeName="NSeriesZOrderUC" />
+									</Items>
+								</Folder>
+
+								<Folder Title="Walls" Name="Walls">
+									<Items>
+										<Example Title="General" TypeName="NWallsGeneralUC" />
+										<Example Title="Auto Walls and Axes Visibility" TypeName="NAutoWallsAndAxesVisibilityUC" />
+									</Items>
+								</Folder>
+							</Items>
+						</Folder>
+
+						<Folder Title="Legend" Name="Legend">
+							<Items>
+								<Example Title="General" TypeName="NLegendGeneralUC" />
+								<Example Title="Position" TypeName="NLegendPositionUC" />
+								<Example Title="Docking" TypeName="NLegendDockingUC" />
+								<Example Title="Series Assignment" TypeName="NLegendSeriesAssignmentUC" />
+								<Example Title="Interlaced" TypeName="NLegendInterlacedUC" />
+								<Example Title="Wrapping" TypeName="NLegendWrappingUC" />
+								<Example Title="Custom Legend Items" TypeName="NLegendCustomItemsUC" />
+								<Example Title="Palette Item" TypeName="NLegendPaletteItemUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Labels" Name="Labels">
+							<Items>
+								<Example Title="General" TypeName="NLabelGeneralUC" />
+								<Example Title="Fit Modes" TypeName="NLabelFitModesUC" />
+								<Example Title="Image Embedding" TypeName = "NLabelImageEmbeddingUC" />
+								<Example Title="XML formatted text" TypeName="NXMLFormattedTextUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Guidelines" Name="Guidelines">
+							<Items>
+								<Example Title="Side Guideline" TypeName="NSideGuidelineUC" />
+								<Example Title="Twin Guideline" TypeName="NTwinGuidelineUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Watermarks" Name="Watermarks">
+							<Items>
+								<Example Title="General" TypeName="NWatermarkGeneralUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Background Decorator" Name="BackgroundDecorator">
+							<Items>
+								<Example Title="General" TypeName="NBackgroundDecoratorUC" />
+							</Items>
+						</Folder>
+					</Items>
+				</Folder>
+
+				<Folder Title="Real Time Charts" Name="RealTimeCharts">
+					<Items>
+						<Example Title="Real Time Polar" TypeName ="NRealTimePolarUC" />
+						<Example Title="Real Time Line" TypeName ="NRealTimeLineUC" />
+						<Example Title="Real Time Area" TypeName="NRealTimeAreaUC" />
+						<Example Title="Real Time Bar" TypeName="NRealTimeBarUC" />
+						<Example Title="Real Time Point" TypeName="NRealTimePointUC" />
+						<Example Title="Real Time Stock" TypeName="NRealTimeStockUC" />
+						<Example Title="Real Time Surface" TypeName="NRealTimeSurfaceUC" />
+					</Items>
+				</Folder>
+
+				<Folder Title="Data Manipulation" Name="DataManipulation">
+					<Items>
+						<Folder Title="General" Name="General">
+							<Items>
+								<Example Title="Finding" TypeName="NFindingDataUC" />
+								<Example Title="Filtering" TypeName="NFilteringDataUC" />
+								<Example Title="Sorting" TypeName="NSortingDataUC" />
+								<Example Title="Evaluating" TypeName="NEvaluatingDataUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Data Binding" Name="DataBinding">
+							<Items>
+								<Example Title="Binding to Data Adapter" TypeName="NBindingToDataAdapterUC" />
+								<Example Title="Binding to Data Table" TypeName="NBindingToDataTableUC" />
+								<Example Title="Binding to IBindingList" TypeName="NBindingToIBindingListUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Empty Data Points" Name="EmptyDataPoints">
+							<Items>
+								<Example Title="General Example" TypeName="NEmptyDataPointsGeneralUC" />
+								<Example Title="Float Bar, High Low" TypeName="NFloatBarEmptyDataPointsUC" />
+								<Example Title="Bubble" TypeName="NBubbleEmptyDataPointsUC" />
+							</Items>
+						</Folder>
+						<Folder Title="Infinity Data Points" Name="InfinityDataPoints">
+							<Items>
+								<Example Title="General" TypeName="NInfinityDataPointsGeneralUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Exporting" Name="Exporting">
+							<Items>
+								<Example Title="Export to DataTable" TypeName="NExportingToDataTableUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Importing" Name="Importing">
+							<Items>
+								<Example Title="From OleDbDataReader" TypeName="NImportingFromDataReaderUC" />
+								<Example Title="From DataTable and DataView" TypeName="NImportingFromDataTableAndDataViewUC" />
+								<Example Title="From CSV" TypeName="NImportingFromCSVUC" />
+								<Example Title="From Excel" TypeName="NImportingFromXLSUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Functions" Name="Functions">
+							<Items>
+								<Folder Title="Statistical" Name="Statistical">
+									<Items>
+										<Example Title="Basic Functions" TypeName="NBasicFunctionsUC" />
+										<Example Title="Average, Median, Min, Max" TypeName="NAverageMedianMinMaxUC" />
+										<Example Title="Sum of Data Items" TypeName="NSumElementsUC" />
+										<Example Title="Power, Cumulative, Exp. Average" TypeName="NPowerCumulativeExpAverageUC" />
+										<Example Title="Count, Standard Deviation, RMS" TypeName="NCountStdDevRmsUC" />
+										<Example Title="Covariance and Correlation" TypeName="NCovarianceCorrelationUC" />
+									</Items>
+								</Folder>
+
+								<Folder Title="Financial" Name="Financial">
+									<Items>
+										<Example Title="Moving Averages" TypeName="NMovingAveragesUC" />
+										<Example Title="Price Indicators" TypeName="NPriceIndicatorsUC" />
+										<Example Title="Range Indicators" TypeName="NRangeIndicatorsUC" />
+										<Example Title="Directional Movement" TypeName="NDirectionalMovementUC" />
+										<Example Title="Technical Price Indicators" TypeName="NTechnicalPriceIndicatorsUC" />
+										<Example Title="Volume Indicators" TypeName="NVolumeIndicatorsUC" />
+									</Items>
+								</Folder>
+							</Items>
+						</Folder>
+					</Items>
+				</Folder>
+
+				<Folder Title="Layout" Name="Layout">
+					<Items>
+						<Example Title="Bounds Mode - Fit" TypeName="NBoundsModeFitUC" />
+						<Example Title="Bounds Mode - Stretch" TypeName="NBoundsModeStretchUC" />
+						<Example Title="Stacked Charts" TypeName="NStackedChartsUC" />
+						<Example Title="Multiple Pies" TypeName="NMultiplePiesUC" TreePath = "ChartGallery\Pie" />
+						<Example Title="Dual Horizontal Bar" TypeName="NDualHorizontalBarUC" TreePath = "ChartGallery\Bar" />
+						<Example Title="Watermarks" TypeName="NWatermarkGeneralUC" TreePath = "Panels\Watermarks" />
+						<Example Title="Aligning Chart Areas" TypeName="NAxisScrollToolUC" TreePath="Interactivity\Tools" />
+					</Items>
+				</Folder>
+
+				<Folder Title="Interactivity" Name="Interactivity">
+					<Items>
+						<Folder Title="Mouse Events" Name="MouseEvents">
+							<Items>
+								<Example Title="Tracking Mouse Events" TypeName="NTrackingMouseEventsUC" />
+								<Example Title="Interactive Pie Chart" TypeName="NInteractivePieChartUC" />
+								<Example Title="Axes - Hit Testing Scale Elements" TypeName ="NHitTestingScaleElementsUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Tools" Name="Tools">
+							<Items>
+								<Example Title="Drag Operations" TypeName="NDragToolsUC" />
+								<Example Title="Tooltip and Cursor Tool" TypeName="NTooltipAndCursorToolsUC" />
+								<Example Title="Data Zoom Tool" TypeName="NDataZoomToolUC" />
+								<Example Title="Panel Zoom Tool" TypeName="NPanelZoomToolUC" />
+								<Example Title="Animated Data Zoom Tool" TypeName="NAnimatedDataZoomToolUC" />
+								<Example Title="Data Cursor Tool" TypeName="NDataCursorToolUC" />
+								<Example Title="Data Pan Tool" TypeName="NDataPanToolUC" />
+								<Example Title="Data Point Drag Tool" TypeName="NDataPointDragToolUC" />
+								<Example Title="Annotation Drag Tool" TypeName="NAnnotationDragToolUC" />
+								<Example Title="Axis Scroll Tool" TypeName="NAxisScrollToolUC" />
+								<Example Title="Custom Tool" TypeName="NCustomToolUC" />
+								<Example Title="Custom Drag Tool" TypeName="NCustomDragToolUC" />
+								<Example Title="Multiple Axes Zooming and Scrolling" TypeName="NMultipleAxesZoomingAndScrollingUC" />
+								<Example Title="Range Selection Move Resize Tool" TypeName="NRangeSelectionMoveResizeToolUC"/>
+								<Example Title="Range Selection Move Resize Tool 2" TypeName="NRangeSelectionMoveResizeToolUC2"/>
+								<Example Title="Volume Selection Tool" TypeName="NVolumeSelectionToolUC"/>
+							</Items>
+						</Folder>
+					</Items>
+				</Folder>
+
+				<Folder Title="Styles" Name="Styles">
+					<Items>
+						<Folder Title="Fill Styles" Name="FillStyles">
+							<Items>
+								<Example Title="Solid Colors and Materials" TypeName="NSolidColorUC" />
+								<Example Title="Gradients" TypeName="NGradientUC" />
+								<Example Title="Images" TypeName="NImageUC" />
+								<Example Title="Patterns" TypeName="NPatternUC" />
+								<Example Title="Advanced Gradients" TypeName="NAdvancedGradientUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Background Frame Styles" Name="BackgroundFrameStyles">
+							<Items>
+								<Example Title="Standard Frame Style" TypeName="NStandardFrameStyleUC" />
+								<Example Title="Image Frame Style (Skin)" TypeName="NImageFrameStyleUC" />
+							</Items>
+						</Folder>
+						<Folder Title="Style Sheets"  Name="StyleSheets">
+							<Items>
+								<Example Title="Predefined Style Sheets" TypeName="NPredefinedStyleSheetsUC"/>
+								<Example Title="Style Sheet Configurators" TypeName="NStyleSheetConfiguratorsUC"/>
+							</Items>
+						</Folder>
+					</Items>
+				</Folder>
+
+				<Folder Title="Visual Effects" Name="VisualEffects">
+					<Items>
+						<Folder Title="General" Name="General">
+							<Items>
+								<Example Title="Lights" TypeName="NLightsUC" />
+								<Example Title="Antialiasing" TypeName="NAntialiasingGeneralUC" />
+								<Example Title="Alpha Blending" TypeName="NAlphaBlendingUC" />
+								<Example Title="Jittering" TypeName="NJitteringGeneralUC" />
+							</Items>
+						</Folder>
+
+						<Folder Title="Image Filters" Name="ImageFilters">
+							<Items>
+								<Example Title="Lighting Filter" TypeName="NLightingFilterUC" />
+								<Example Title="Bevel and Emboss Filter" TypeName="NBevelAndEmbossFilterUC" />
+								<Example Title="Glow Filter" TypeName="NGlowFilterUC" />
+							</Items>
+						</Folder>
+					</Items>
+				</Folder>
+
+				<Folder Title="Custom Painting" Name="CustomPainting">
+					<Items>
+						<Example Title="Custom Painting Using GDI+" TypeName="NCustomPaintingUsingGDIPlusUC" />
+						<Example Title="Custom Painting Nevron Device" TypeName="NCustomPaintingUsingNevronDeviceUC" />
+						<Example Title="Painting in Overlay" TypeName ="NOverlayPaintingUC" />
+						<Example Title="Custom Series" TypeName ="NCustomSeriesUC" TreePath ="ChartGallery\Custom" />
+					</Items>
+				</Folder>
+
+				<Folder Title="Coordinate Transformations" Name="CoordinateTransformations">
+					<Items>
+						<Example Title="Scale to Viewport" TypeName="ScaleToViewportUC" />
+						<Example Title="Viewport to Scale" TypeName="ViewportToScaleUC" />
+					</Items>
+				</Folder>
+
+				<Folder Title="Printing" Name="Printing">
+					<Items>
+						<Example Title="Printing" TypeName="NPrintingUC" />
+						<Example Title="Page Settings" TypeName="NPageSettingsUC" />
+						<Example Title="Multi Page Printing" TypeName="NMultiPagePrintingUC" />
+						<Example Title="Custom Printing" TypeName="NCustomPrintingUC" />
+						<Example Title="Printed Chart Appearance" TypeName="NPrintedChartAppearanceUC" />
+					</Items>
+				</Folder>
+
+				<Folder Title="Serialization" Name="Serialization">
+					<Items>
+						<Example Title="Chart Objects" TypeName="NSerializingChartObjectsUC" />
+						<Example Title="Control State" TypeName="NSerializingTheChartStateUC" />
+					</Items>
+				</Folder>
+
+				<Folder Title="User Interface" Name="UserInterface">
+					<Items>
+						<Example Title="Chart Data Grid" TypeName="NChartGridUC" />
+						<Example Title="Command Bars" TypeName="NChartCommandBarsUC" />
+						<Example Title="Editors Available at Runtime" TypeName="NVisualEditorsUC" />
+						<Example Title="Custom Command Bars" TypeName="NCustomChartCommandBarsUC" />
+					</Items>
+				</Folder>
+
+				<Folder Title="Image Export" Name="ImageExport">
+					<Items>
+						<Example Title="Raster Image Export" TypeName="NRasterImageExportUC" />
+						<Example Title="Vector Image Export" TypeName="NVectorImageExportUC" />
+						<Example Title="Animation Themes" TypeName="NAnimationThemesUC" />
+					</Items>
 				</Folder>
 			</Items>
-			</Folder>
-		</Items>
 		</Folder>
 
-		<Folder Title="Layout" Name="Layout">
-		<Items>
-			<Example Title="Bounds Mode - Fit" TypeName="NBoundsModeFitUC" />
-			<Example Title="Bounds Mode - Stretch" TypeName="NBoundsModeStretchUC" />
-			<Example Title="Stacked Charts" TypeName="NStackedChartsUC" />
-			<Example Title="Multiple Pies" TypeName="NMultiplePiesUC" TreePath = "ChartGallery\Pie" />
-			<Example Title="Dual Horizontal Bar" TypeName="NDualHorizontalBarUC" TreePath = "ChartGallery\Bar" />
-			<Example Title="Watermarks" TypeName="NWatermarkGeneralUC" TreePath = "Panels\Watermarks" />
-			<Example Title="Aligning Chart Areas" TypeName="NAxisScrollToolUC" TreePath="Interactivity\Tools" />
-		</Items>
-		</Folder>
-
-		<Folder Title="Interactivity" Name="Interactivity">
-		<Items>
-			<Folder Title="Mouse Events" Name="MouseEvents">
-			<Items>
-				<Example Title="Tracking Mouse Events" TypeName="NTrackingMouseEventsUC" />
-				<Example Title="Interactive Pie Chart" TypeName="NInteractivePieChartUC" />
-				<Example Title="Axes - Hit Testing Scale Elements" TypeName ="NHitTestingScaleElementsUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Tools" Name="Tools">
-        <Items>
-          <Example Title="Drag Operations" TypeName="NDragToolsUC" />
-          <Example Title="Tooltip and Cursor Tool" TypeName="NTooltipAndCursorToolsUC" />
-          <Example Title="Data Zoom Tool" TypeName="NDataZoomToolUC" />
-					<Example Title="Panel Zoom Tool" TypeName="NPanelZoomToolUC" />
-          <Example Title="Animated Data Zoom Tool" TypeName="NAnimatedDataZoomToolUC" />
-          <Example Title="Data Cursor Tool" TypeName="NDataCursorToolUC" />
-          <Example Title="Data Pan Tool" TypeName="NDataPanToolUC" />
-          <Example Title="Data Point Drag Tool" TypeName="NDataPointDragToolUC" />
-					<Example Title="Annotation Drag Tool" TypeName="NAnnotationDragToolUC" />
-          <Example Title="Axis Scroll Tool" TypeName="NAxisScrollToolUC" />
-          <Example Title="Custom Tool" TypeName="NCustomToolUC" />
-          <Example Title="Custom Drag Tool" TypeName="NCustomDragToolUC" />
-          <Example Title="Multiple Axes Zooming and Scrolling" TypeName="NMultipleAxesZoomingAndScrollingUC" />
-          <Example Title="Range Selection Move Resize Tool" TypeName="NRangeSelectionMoveResizeToolUC"/>
-          <Example Title="Range Selection Move Resize Tool 2" TypeName="NRangeSelectionMoveResizeToolUC2"/>
-					<Example Title="Volume Selection Tool" TypeName="NVolumeSelectionToolUC"/>
-        </Items>
-			</Folder>
-		</Items>
-		</Folder>
-
-		<Folder Title="Styles" Name="Styles">
-		<Items>
-			<Folder Title="Fill Styles" Name="FillStyles">
-			<Items>
-				<Example Title="Solid Colors and Materials" TypeName="NSolidColorUC" />
-				<Example Title="Gradients" TypeName="NGradientUC" />
-				<Example Title="Images" TypeName="NImageUC" />
-				<Example Title="Patterns" TypeName="NPatternUC" />
-				<Example Title="Advanced Gradients" TypeName="NAdvancedGradientUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Background Frame Styles" Name="BackgroundFrameStyles">
-			<Items>
-				<Example Title="Standard Frame Style" TypeName="NStandardFrameStyleUC" />
-				<Example Title="Image Frame Style (Skin)" TypeName="NImageFrameStyleUC" />
-			</Items>
-			</Folder>
-      <Folder Title="Style Sheets"  Name="StyleSheets">
-      <Items>
-        <Example Title="Predefined Style Sheets" TypeName="NPredefinedStyleSheetsUC"/>
-        <Example Title="Style Sheet Configurators" TypeName="NStyleSheetConfiguratorsUC"/>
-		  </Items>
-      </Folder>
-    </Items>
-		</Folder>
-
-		<Folder Title="Visual Effects" Name="VisualEffects">
-		<Items>
-			<Folder Title="General" Name="General">
-			<Items>
-				<Example Title="Lights" TypeName="NLightsUC" />
-				<Example Title="Antialiasing" TypeName="NAntialiasingGeneralUC" />
-				<Example Title="Alpha Blending" TypeName="NAlphaBlendingUC" />
-				<Example Title="Jittering" TypeName="NJitteringGeneralUC" />
-			</Items>
-			</Folder>
-
-			<Folder Title="Image Filters" Name="ImageFilters">
-			<Items>
-				<Example Title="Lighting Filter" TypeName="NLightingFilterUC" />
-				<Example Title="Bevel and Emboss Filter" TypeName="NBevelAndEmbossFilterUC" />
-				<Example Title="Glow Filter" TypeName="NGlowFilterUC" />
-			</Items>
-			</Folder>
-		</Items>
-		</Folder>
-
-		<Folder Title="Custom Painting" Name="CustomPainting">
-		<Items>
-			<Example Title="Custom Painting Using GDI+" TypeName="NCustomPaintingUsingGDIPlusUC" />
-			<Example Title="Custom Painting Nevron Device" TypeName="NCustomPaintingUsingNevronDeviceUC" />
-			<Example Title="Painting in Overlay" TypeName ="NOverlayPaintingUC" />
-			<Example Title="Custom Series" TypeName ="NCustomSeriesUC" TreePath ="ChartGallery\Custom" />
-		</Items>
-		</Folder>
-
-		<Folder Title="Coordinate Transformations" Name="CoordinateTransformations">
-		<Items>
-			<Example Title="Scale to Viewport" TypeName="ScaleToViewportUC" />
-			<Example Title="Viewport to Scale" TypeName="ViewportToScaleUC" />
-		</Items>
-		</Folder>
-
-		<Folder Title="Printing" Name="Printing">
-		<Items>
-			<Example Title="Printing" TypeName="NPrintingUC" />
-			<Example Title="Page Settings" TypeName="NPageSettingsUC" />
-			<Example Title="Multi Page Printing" TypeName="NMultiPagePrintingUC" />
-			<Example Title="Custom Printing" TypeName="NCustomPrintingUC" />
-			<Example Title="Printed Chart Appearance" TypeName="NPrintedChartAppearanceUC" />
-		</Items>
-		</Folder>
-
-		<Folder Title="Serialization" Name="Serialization">
-		<Items>
-			<Example Title="Chart Objects" TypeName="NSerializingChartObjectsUC" />
-			<Example Title="Control State" TypeName="NSerializingTheChartStateUC" />
-		</Items>
-		</Folder>
-
-		<Folder Title="User Interface" Name="UserInterface">
-		<Items>
-			<Example Title="Chart Data Grid" TypeName="NChartGridUC" />
-			<Example Title="Command Bars" TypeName="NChartCommandBarsUC" />
-			<Example Title="Editors Available at Runtime" TypeName="NVisualEditorsUC" />
-      <Example Title="Custom Command Bars" TypeName="NCustomChartCommandBarsUC" />
-		</Items>
-		</Folder>
-
-		<Folder Title="Image Export" Name="ImageExport">
-		<Items>
-			<Example Title="Raster Image Export" TypeName="NRasterImageExportUC" />
-			<Example Title="Vector Image Export" TypeName="NVectorImageExportUC" />
-			<Example Title="Animation Themes" TypeName="NAnimationThemesUC" />
-		</Items>
-		</Folder>
 	</Items>
-	</Folder>
-
-</Items>
 </ExamplesTree>

@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections
 Imports System.ComponentModel
 Imports System.Drawing
@@ -11,270 +10,257 @@ Imports Nevron.Chart.WinForm
 
 
 Namespace Nevron.Examples.Chart.WinForm
-    <ToolboxItem(False)> _
-    Public Class NExampleBaseUC
-        Inherits Nevron.Examples.Framework.WinForm.NExampleUserControl
-        Friend nChartControl1 As NChartControl = Nothing
+	<ToolboxItem(False)>
+	Public Class NExampleBaseUC
+		Inherits Nevron.Examples.Framework.WinForm.NExampleUserControl
 
-        Public Sub New()
-            InitializeComponent()
-        End Sub
+		Friend nChartControl1 As NChartControl = Nothing
 
-#Region "Component Designer generated code"
-        ''' <summary> 
-        ''' Required method for Designer support - do not modify 
-        ''' the contents of this method with the code editor.
-        ''' </summary>
-        Private Sub InitializeComponent()
-            ' 
-            ' NExampleBaseUC
-            ' 
-            Me.Name = "NExampleBaseUC"
+		Public Sub New()
+			InitializeComponent()
+		End Sub
 
-        End Sub
-#End Region
+		#Region "Component Designer generated code"
+		''' <summary> 
+		''' Required method for Designer support - do not modify 
+		''' the contents of this method with the code editor.
+		''' </summary>
+		Private Sub InitializeComponent()
+			' 
+			' NExampleBaseUC
+			' 
+			Me.Name = "NExampleBaseUC"
 
-        Friend Shared Function RandomColor() As Color
-            Return Color.FromArgb(Random.Next(255), Random.Next(255), Random.Next(255))
-        End Function
+		End Sub
+		#End Region
 
-        Friend Sub GenerateOHLCData(ByVal s As NStockSeries, ByVal dPrevClose As Double, ByVal nCount As Integer, ByVal range As NRange1DD)
-            Dim open, high, low, close As Double
+		Friend Shared Function RandomColor() As Color
+			Return Color.FromArgb(Random.Next(255), Random.Next(255), Random.Next(255))
+		End Function
 
-            s.ClearDataPoints()
+		Friend Sub GenerateOHLCData(ByVal s As NStockSeries, ByVal dPrevClose As Double, ByVal nCount As Integer, ByVal range As NRange1DD)
+			Dim open, high, low, close As Double
 
-            Dim nIndex As Integer = 0
-            Do While nIndex < nCount
-                open = dPrevClose
-                Dim upward As Boolean = False
+			s.ClearDataPoints()
 
-                If range.Begin > dPrevClose Then
-                    upward = True
-                ElseIf range.End < dPrevClose Then
-                    upward = False
-                Else
-                    upward = Random.NextDouble() > 0.5
-                End If
+			For nIndex As Integer = 0 To nCount - 1
+				open = dPrevClose
+				Dim upward As Boolean = False
 
-                If upward Then
-                    ' upward price change
-                    close = open + (2 + (Random.NextDouble() * 20))
-                    high = close + (Random.NextDouble() * 10)
-                    low = open - (Random.NextDouble() * 10)
-                Else
-                    ' downward price change
-                    close = open - (2 + (Random.NextDouble() * 20))
-                    high = open + (Random.NextDouble() * 10)
-                    low = close - (Random.NextDouble() * 10)
-                End If
+				If range.Begin > dPrevClose Then
+					upward = True
+				ElseIf range.End < dPrevClose Then
+					upward = False
+				Else
+					upward = Random.NextDouble() > 0.5
+				End If
 
-                If low < 1 Then
-                    low = 1
-                End If
+				If upward Then
+					' upward price change
+					close = open + (2 + (Random.NextDouble() * 20))
+					high = close + (Random.NextDouble() * 10)
+					low = open - (Random.NextDouble() * 10)
+				Else
+					' downward price change
+					close = open - (2 + (Random.NextDouble() * 20))
+					high = open + (Random.NextDouble() * 10)
+					low = close - (Random.NextDouble() * 10)
+				End If
 
-                dPrevClose = close
+				If low < 1 Then
+					low = 1
+				End If
 
-                s.OpenValues.Add(open)
-                s.HighValues.Add(high)
-                s.LowValues.Add(low)
-                s.CloseValues.Add(close)
-                nIndex += 1
-            Loop
-        End Sub
-        Friend Sub GenerateOHLCData(ByVal s As NStockSeries, ByVal dPrevClose As Double, ByVal nCount As Integer)
-            Dim open, high, low, close As Double
+				dPrevClose = close
 
-            s.ClearDataPoints()
+				s.OpenValues.Add(open)
+				s.HighValues.Add(high)
+				s.LowValues.Add(low)
+				s.CloseValues.Add(close)
+			Next nIndex
+		End Sub
+		Friend Sub GenerateOHLCData(ByVal s As NStockSeries, ByVal dPrevClose As Double, ByVal nCount As Integer)
+			Dim open, high, low, close As Double
 
-            Dim nIndex As Integer = 0
-            Do While nIndex < nCount
-                open = dPrevClose
+			s.ClearDataPoints()
 
-                If dPrevClose < 25 OrElse Random.NextDouble() > 0.5 Then
-                    ' upward price change
-                    close = open + (2 + (Random.NextDouble() * 20))
-                    high = close + (Random.NextDouble() * 10)
-                    low = open - (Random.NextDouble() * 10)
-                Else
-                    ' downward price change
-                    close = open - (2 + (Random.NextDouble() * 20))
-                    high = open + (Random.NextDouble() * 10)
-                    low = close - (Random.NextDouble() * 10)
-                End If
+			For nIndex As Integer = 0 To nCount - 1
+				open = dPrevClose
 
-                If low < 1 Then
-                    low = 1
-                End If
+				If dPrevClose < 25 OrElse Random.NextDouble() > 0.5 Then
+					' upward price change
+					close = open + (2 + (Random.NextDouble() * 20))
+					high = close + (Random.NextDouble() * 10)
+					low = open - (Random.NextDouble() * 10)
+				Else
+					' downward price change
+					close = open - (2 + (Random.NextDouble() * 20))
+					high = open + (Random.NextDouble() * 10)
+					low = close - (Random.NextDouble() * 10)
+				End If
 
-                dPrevClose = close
+				If low < 1 Then
+					low = 1
+				End If
 
-                s.OpenValues.Add(open)
-                s.HighValues.Add(high)
-                s.LowValues.Add(low)
-                s.CloseValues.Add(close)
-                nIndex += 1
-            Loop
-        End Sub
-        Friend Sub FillStockDates(ByVal stock As NStockSeries, ByVal count As Integer)
-            FillStockDates(stock, count, New DateTime(2009, 1, 5))
-        End Sub
-        Friend Sub FillStockDates(ByVal stock As NStockSeries, ByVal count As Integer, ByVal startDate As DateTime)
-            stock.XValues.Clear()
+				dPrevClose = close
 
-            Dim dt As DateTime = startDate
+				s.OpenValues.Add(open)
+				s.HighValues.Add(high)
+				s.LowValues.Add(low)
+				s.CloseValues.Add(close)
+			Next nIndex
+		End Sub
+		Friend Sub FillStockDates(ByVal stock As NStockSeries, ByVal count As Integer)
+			FillStockDates(stock, count, New Date(2009, 1, 5))
+		End Sub
+		Friend Sub FillStockDates(ByVal stock As NStockSeries, ByVal count As Integer, ByVal startDate As Date)
+			stock.XValues.Clear()
 
-            Dim i As Integer = 0
-            Do While i < count
-                If dt.DayOfWeek <> DayOfWeek.Saturday AndAlso dt.DayOfWeek <> DayOfWeek.Sunday Then
-                    stock.XValues.Add(dt.ToOADate())
-                    i += 1
-                End If
+			Dim dt As Date = startDate
 
-                dt = dt.AddDays(1)
-            Loop
-        End Sub
+			Dim i As Integer = 0
+			Do While i < count
+				If dt.DayOfWeek <> DayOfWeek.Saturday AndAlso dt.DayOfWeek <> DayOfWeek.Sunday Then
+					stock.XValues.Add(dt.ToOADate())
+					i += 1
+				End If
 
-        Friend Sub ConfigureStandardLayout(ByVal chart As NChart, ByVal title As NLabel, ByVal legend As NLegend)
-            nChartControl1.Panels.Clear()
+				dt = dt.AddDays(1)
+			Loop
+		End Sub
 
-            If Not title Is Nothing Then
-                nChartControl1.Panels.Add(title)
+		Friend Sub ConfigureStandardLayout(ByVal chart As NChart, ByVal title As NLabel, ByVal legend As NLegend)
+			nChartControl1.Panels.Clear()
 
-                title.DockMode = PanelDockMode.Top
-                title.Padding = New NMarginsL(5, 8, 5, 4)
-            End If
+			If title IsNot Nothing Then
+				nChartControl1.Panels.Add(title)
 
-            If Not legend Is Nothing Then
-                nChartControl1.Panels.Add(legend)
+				title.DockMode = PanelDockMode.Top
+				title.Padding = New NMarginsL(5, 8, 5, 4)
+			End If
 
-                legend.DockMode = PanelDockMode.Right
-                legend.Padding = New NMarginsL(1, 1, 5, 5)
-            End If
+			If legend IsNot Nothing Then
+				nChartControl1.Panels.Add(legend)
 
-            If Not chart Is Nothing Then
-                nChartControl1.Panels.Add(chart)
+				legend.DockMode = PanelDockMode.Right
+				legend.Padding = New NMarginsL(1, 1, 5, 5)
+			End If
 
-                Dim topPad As Single
-                If (title Is Nothing) Then
-                    topPad = 11
-                Else
-                    topPad = 8
-                End If
-                Dim rightPad As Single
-                If (legend Is Nothing) Then
-                    rightPad = 11
-                Else
-                    rightPad = 4
-                End If
+			If chart IsNot Nothing Then
+				nChartControl1.Panels.Add(chart)
 
-                If chart.BoundsMode = BoundsMode.None Then
-                    If chart.Enable3D OrElse Not (TypeOf chart Is NCartesianChart) Then
-                        chart.BoundsMode = BoundsMode.Fit
-                    Else
-                        chart.BoundsMode = BoundsMode.Stretch
-                    End If
-                End If
+				Dim topPad As Single = If(title Is Nothing, 11, 8)
+				Dim rightPad As Single = If(legend Is Nothing, 11, 4)
 
-                chart.DockMode = PanelDockMode.Fill
-                chart.Padding = New NMarginsL(New NLength(11, NRelativeUnit.ParentPercentage), New NLength(topPad, NRelativeUnit.ParentPercentage), New NLength(rightPad, NRelativeUnit.ParentPercentage), New NLength(11, NRelativeUnit.ParentPercentage))
-            End If
-        End Sub
+				If chart.BoundsMode = BoundsMode.None Then
+					If chart.Enable3D OrElse Not (TypeOf chart Is NCartesianChart) Then
+						chart.BoundsMode = BoundsMode.Fit
+					Else
+						chart.BoundsMode = BoundsMode.Stretch
+					End If
+				End If
 
-        Friend Shared monthValues As Double() = New Double() {16, 19, 16, 15, 18, 19, 24, 21, 22, 17, 19, 15}
-        Friend Shared monthLetters As String() = New String() {"J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"}
-        Friend Shared weekDays As String() = New String() {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"}
+				chart.DockMode = PanelDockMode.Fill
+				chart.Padding = New NMarginsL(New NLength(11, NRelativeUnit.ParentPercentage), New NLength(topPad, NRelativeUnit.ParentPercentage), New NLength(rightPad, NRelativeUnit.ParentPercentage), New NLength(11, NRelativeUnit.ParentPercentage))
+			End If
+		End Sub
 
-        Friend Shared DarkOrange As Color = Color.FromArgb(238, 66, 14)
-        Friend Shared LightOrange As Color = Color.FromArgb(254, 181, 25)
-        Friend Shared LightGreen As Color = Color.FromArgb(126, 190, 58)
-        Friend Shared Turqoise As Color = Color.FromArgb(2, 138, 122)
-        Friend Shared Blue As Color = Color.FromArgb(2, 90, 156)
-        Friend Shared Purple As Color = Color.FromArgb(78, 46, 134)
-        Friend Shared BeautifulRed As Color = Color.FromArgb(170, 30, 96)
-        Friend Shared Red As Color = Color.FromArgb(225, 7, 24)
-        Friend Shared Gold As Color = Color.FromArgb(253, 202, 25)
-        Friend Shared LimeGreen As Color = Color.FromArgb(206, 222, 62)
-        Friend Shared Green As Color = Color.FromArgb(1, 157, 96)
-        Friend Shared SeaBlue As Color = Color.FromArgb(2, 117, 137)
-        Friend Shared LightPurple As Color = Color.FromArgb(69, 72, 165)
-        Friend Shared DarkFuchsia As Color = Color.FromArgb(123, 22, 98)
-        Friend Shared GreyBlue As Color = Color.FromArgb(68, 90, 108)
+		Friend Shared monthValues() As Double = { 16, 19, 16, 15, 18, 19, 24, 21, 22, 17, 19, 15 }
+		Friend Shared monthLetters() As String = { "J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D" }
+		Friend Shared weekDays() As String = { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" }
 
-    End Class
+		Friend Shared DarkOrange As Color = Color.FromArgb(238, 66, 14)
+		Friend Shared LightOrange As Color = Color.FromArgb(254, 181, 25)
+		Friend Shared LightGreen As Color = Color.FromArgb(126, 190, 58)
+		Friend Shared Turqoise As Color = Color.FromArgb(2, 138, 122)
+		Friend Shared Blue As Color = Color.FromArgb(2, 90, 156)
+		Friend Shared Purple As Color = Color.FromArgb(78, 46, 134)
+		Friend Shared BeautifulRed As Color = Color.FromArgb(170, 30, 96)
+		Friend Shared Red As Color = Color.FromArgb(225, 7, 24)
+		Friend Shared Gold As Color = Color.FromArgb(253, 202, 25)
+		Friend Shared LimeGreen As Color = Color.FromArgb(206, 222, 62)
+		Friend Shared Green As Color = Color.FromArgb(1, 157, 96)
+		Friend Shared SeaBlue As Color = Color.FromArgb(2, 117, 137)
+		Friend Shared LightPurple As Color = Color.FromArgb(69, 72, 165)
+		Friend Shared DarkFuchsia As Color = Color.FromArgb(123, 22, 98)
+		Friend Shared GreyBlue As Color = Color.FromArgb(68, 90, 108)
 
-    Friend Class NStockDataGenerator
-        Private m_Rand As Random
-        Private m_Range As NRange1DD
-        Private m_nDirection As Integer
-        Private m_nStepsInCurrentTrend As Integer
-        Private m_dValue As Double
-        Private m_dReversalPorbability As Double
-        Private m_dReversalFactor As Double
-        Private m_dValueScale As Double
+	End Class
 
-        Friend Sub New(ByVal range As NRange1DD, ByVal reversalFactor As Double, ByVal valueScale As Double)
-            m_Rand = New Random()
-            m_Range = range
-            m_nDirection = 1
-            m_nStepsInCurrentTrend = 0
-            m_dValue = 0
-            m_dReversalPorbability = 0
-            m_dReversalFactor = reversalFactor
-            m_dValueScale = valueScale
-        End Sub
+	Friend Class NStockDataGenerator
+		Private m_Rand As Random
+		Private m_Range As NRange1DD
+		Private m_nDirection As Integer
+		Private m_nStepsInCurrentTrend As Integer
+		Private m_dValue As Double
+		Private m_dReversalPorbability As Double
+		Private m_dReversalFactor As Double
+		Private m_dValueScale As Double
 
-        Friend Sub Reset()
-            m_nDirection = 1
-            m_nStepsInCurrentTrend = 0
-            m_dValue = (m_Range.Begin + m_Range.End) / 2
-            m_dReversalPorbability = 0
-        End Sub
+		Friend Sub New(ByVal range As NRange1DD, ByVal reversalFactor As Double, ByVal valueScale As Double)
+			m_Rand = New Random()
+			m_Range = range
+			m_nDirection = 1
+			m_nStepsInCurrentTrend = 0
+			m_dValue = 0
+			m_dReversalPorbability = 0
+			m_dReversalFactor = reversalFactor
+			m_dValueScale = valueScale
+		End Sub
 
-        Friend Function GetNextValue() As Double
-            Dim nNewValueDirection As Integer = 0
+		Friend Sub Reset()
+			m_nDirection = 1
+			m_nStepsInCurrentTrend = 0
+			m_dValue = (m_Range.Begin + m_Range.End) / 2
+			m_dReversalPorbability = 0
+		End Sub
 
-            If m_dValue <= m_Range.Begin Then
-                If m_nDirection = -1 Then
-                    m_dReversalPorbability = 1.0
-                Else
-                    m_dReversalPorbability = 0.0
-                End If
+		Friend Function GetNextValue() As Double
+			Dim nNewValueDirection As Integer = 0
 
-                nNewValueDirection = 1
-            ElseIf m_dValue >= m_Range.End Then
-                If m_nDirection = 1 Then
-                    m_dReversalPorbability = 1.0
-                Else
-                    m_dReversalPorbability = 0.0
-                End If
+			If m_dValue <= m_Range.Begin Then
+				If m_nDirection = -1 Then
+					m_dReversalPorbability = 1.0
+				Else
+					m_dReversalPorbability = 0.0
+				End If
 
-                nNewValueDirection = -1
-            Else
-                If m_Rand.NextDouble() < 0.8 Then
-                    nNewValueDirection = m_nDirection
-                Else
-                    nNewValueDirection = -m_nDirection
-                End If
+				nNewValueDirection = 1
+			ElseIf m_dValue >= m_Range.End Then
+				If m_nDirection = 1 Then
+					m_dReversalPorbability = 1.0
+				Else
+					m_dReversalPorbability = 0.0
+				End If
 
-                m_dReversalPorbability += m_nStepsInCurrentTrend * m_dReversalFactor
-            End If
+				nNewValueDirection = -1
+			Else
+				If m_Rand.NextDouble() < 0.80 Then
+					nNewValueDirection = m_nDirection
+				Else
+					nNewValueDirection = -m_nDirection
+				End If
 
-            If m_Rand.NextDouble() < m_dReversalPorbability Then
-                m_nDirection = -m_nDirection
-                m_dReversalPorbability = 0
-                m_nStepsInCurrentTrend = 0
-            Else
-                m_nStepsInCurrentTrend += 1
-            End If
+				m_dReversalPorbability += m_nStepsInCurrentTrend * m_dReversalFactor
+			End If
 
-            m_dValue += nNewValueDirection * m_Rand.NextDouble() * m_dValueScale
+			If m_Rand.NextDouble() < m_dReversalPorbability Then
+				m_nDirection = -m_nDirection
+				m_dReversalPorbability = 0
+				m_nStepsInCurrentTrend = 0
+			Else
+				m_nStepsInCurrentTrend += 1
+			End If
 
-            Return m_dValue
-        End Function
-    End Class
+			m_dValue += nNewValueDirection * m_Rand.NextDouble() * m_dValueScale
 
-    Friend Enum ExampleLayout
-        Standard
-        WideScreen
-    End Enum
+			Return m_dValue
+		End Function
+	End Class
+
+	Friend Enum ExampleLayout
+		Standard
+		WideScreen
+	End Enum
 End Namespace

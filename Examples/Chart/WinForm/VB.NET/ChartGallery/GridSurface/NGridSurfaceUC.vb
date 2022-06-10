@@ -12,7 +12,7 @@ Imports Nevron.Chart.WinForm
 Imports Nevron.Chart.Windows
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NGridSurfaceUC
 		Inherits NExampleBaseUC
 
@@ -323,7 +323,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		Public Overrides Sub Initialize()
 			MyBase.Initialize()
 
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.None
+			' Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window
+
 			nChartControl1.Controller.Tools.Add(New NPanelSelectorTool())
 			nChartControl1.Controller.Tools.Add(New NTrackballTool())
 
@@ -357,7 +359,7 @@ Namespace Nevron.Examples.Chart.WinForm
 			surface.Name = "Surface"
 			surface.Legend.Mode = SeriesLegendMode.SeriesLogic
 			surface.PositionValue = 10.0
-			surface.Data.SetGridSize(31, 32)
+			surface.Data.SetGridSize(100, 100)
 			surface.SyncPaletteWithAxisScale = False
 			surface.PaletteSteps = 8
 			surface.ValueFormatter.FormatSpecifier = "0.00"
@@ -425,6 +427,7 @@ Namespace Nevron.Examples.Chart.WinForm
 
 			nChartControl1.Refresh()
 		End Sub
+
 		Private Sub FillModeCombo_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles fillModeCombo.SelectedIndexChanged
 			Dim chart As NChart = nChartControl1.Charts(0)
 			Dim surface As NGridSurfaceSeries = CType(chart.Series(0), NGridSurfaceSeries)

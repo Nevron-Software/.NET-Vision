@@ -1,21 +1,16 @@
-Imports Microsoft.VisualBasic
+﻿Imports Nevron.Chart
+Imports Nevron.Chart.Windows
+Imports Nevron.GraphicsCore
 Imports System
-Imports System.Collections
 Imports System.ComponentModel
 Imports System.Drawing
-Imports System.Drawing.Drawing2D
-Imports System.Data
 Imports System.Windows.Forms
-Imports Nevron.GraphicsCore
-Imports Nevron.Editors
-Imports Nevron.Chart
-Imports Nevron.Chart.WinForm
-Imports Nevron.Chart.Windows
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NGridSurfaceCustomColorsUC
 		Inherits NExampleBaseUC
+
 		Private WithEvents SmoothShadingCheckBox As UI.WinForm.Controls.NCheckBox
 		Private WithEvents HasFillingCheckBox As UI.WinForm.Controls.NCheckBox
 		Private WithEvents FrameModeCombo As UI.WinForm.Controls.NComboBox
@@ -29,9 +24,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		''' <summary> 
 		''' Clean up any resources being used.
 		''' </summary>
-		Protected Overrides Overloads Sub Dispose(ByVal disposing As Boolean)
+		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 			If disposing Then
-				If Not components Is Nothing Then
+				If components IsNot Nothing Then
 					components.Dispose()
 				End If
 			End If
@@ -58,7 +53,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.SmoothShadingCheckBox.Size = New System.Drawing.Size(160, 20)
 			Me.SmoothShadingCheckBox.TabIndex = 1
 			Me.SmoothShadingCheckBox.Text = "Smooth Shading"
-'			Me.SmoothShadingCheckBox.CheckedChanged += New System.EventHandler(Me.SmoothShadingCheckBox_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.SmoothShadingCheckBox.CheckedChanged += new System.EventHandler(this.SmoothShadingCheckBox_CheckedChanged);
 			' 
 			' HasFillingCheckBox
 			' 
@@ -68,7 +64,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.HasFillingCheckBox.Size = New System.Drawing.Size(160, 20)
 			Me.HasFillingCheckBox.TabIndex = 2
 			Me.HasFillingCheckBox.Text = "Has Filling"
-'			Me.HasFillingCheckBox.CheckedChanged += New System.EventHandler(Me.HasFillingCheckBox_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.HasFillingCheckBox.CheckedChanged += new System.EventHandler(this.HasFillingCheckBox_CheckedChanged);
 			' 
 			' FrameModeCombo
 			' 
@@ -79,7 +76,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.FrameModeCombo.Name = "FrameModeCombo"
 			Me.FrameModeCombo.Size = New System.Drawing.Size(151, 21)
 			Me.FrameModeCombo.TabIndex = 4
-'			Me.FrameModeCombo.SelectedIndexChanged += New System.EventHandler(Me.FrameModeCombo_SelectedIndexChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.FrameModeCombo.SelectedIndexChanged += new System.EventHandler(this.FrameModeCombo_SelectedIndexChanged);
 			' 
 			' label1
 			' 
@@ -107,8 +105,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		Public Overrides Sub Initialize()
 			MyBase.Initialize()
 
-			'nChartControl1.Settings.RenderSurface = RenderSurface.Window;
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.None
+			' Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window
+
 			nChartControl1.Controller.Tools.Clear()
 			nChartControl1.Controller.Tools.Add(New NPanelSelectorTool())
 			nChartControl1.Controller.Tools.Add(New NTrackballTool())
@@ -121,9 +120,9 @@ Namespace Nevron.Examples.Chart.WinForm
 			' setup chart
 			Dim chart As NChart = nChartControl1.Charts(0)
 			chart.Enable3D = True
-			chart.Width = 60.0f
-			chart.Depth = 60.0f
-			chart.Height = 25.0f
+			chart.Width = 60.0F
+			chart.Depth = 60.0F
+			chart.Height = 25.0F
 			chart.Projection.SetPredefinedProjection(PredefinedProjection.PerspectiveTilted)
 			chart.LightModel.SetPredefinedLightModel(PredefinedLightModel.ShinyTopLeft)
 
@@ -139,27 +138,14 @@ Namespace Nevron.Examples.Chart.WinForm
 			ordinalScale.DisplayDataPointsBetweenTicks = False
 
 			' add the surface series
-			Dim surface As NGridSurfaceSeries = New NGridSurfaceSeries()
+			Dim surface As New NGridSurfaceSeries()
 			chart.Series.Add(surface)
 			surface.ShadingMode = ShadingMode.Smooth
 			surface.FillMode = SurfaceFillMode.CustomColors
 			surface.FrameMode = SurfaceFrameMode.None
-			surface.FrameColorMode = SurfaceFrameColorMode.CustomColors
-			surface.FrameStrokeStyle.Color = Color.Red
-			surface.FrameStrokeStyle.Width = New NLength(4)
 
 			surface.Data.UseColors = True
 			surface.Data.SetGridSize(50, 50)
-
-			' define a custom palette
-			surface.Palette.Clear()
-			surface.Palette.Add(-3, DarkOrange)
-			surface.Palette.Add(-2.5, LightOrange)
-			surface.Palette.Add(-1, LightGreen)
-			surface.Palette.Add(0, Turqoise)
-			surface.Palette.Add(2, Blue)
-			surface.Palette.Add(3, Purple)
-			surface.Palette.Add(4, BeautifulRed)
 
 			' generate data
 			GenerateSurfaceData(surface)
@@ -187,12 +173,12 @@ Namespace Nevron.Examples.Chart.WinForm
 
 			z = -(dIntervalZ / 2)
 
-			Dim semiWidth As Single = CSng(Math.Min(nCountX / 2, nCountZ / 2))
+			Dim semiWidth As Single = CSng(Math.Min(nCountX \ 2, nCountZ \ 2))
 			Dim startColor As Color = Color.Red
 			Dim endColor As Color = Color.Green
 
-			Dim centerX As Integer = nCountX / 2
-			Dim centerZ As Integer = nCountZ / 2
+			Dim centerX As Integer = nCountX \ 2
+			Dim centerZ As Integer = nCountZ \ 2
 
 			Dim j As Integer = 0
 			Do While j < nCountZ
@@ -220,17 +206,17 @@ Namespace Nevron.Examples.Chart.WinForm
 		End Sub
 
 		Public Shared Function InterpolateColors(ByVal color1 As Color, ByVal color2 As Color, ByVal factor As Single) As Color
-			If factor > 1.0f Then
-				factor = 1.0f
+			If factor > 1.0F Then
+				factor = 1.0F
 			End If
 
-			Dim num1 As Integer = (CInt(Fix(color1.R)))
-			Dim num2 As Integer = (CInt(Fix(color1.G)))
-			Dim num3 As Integer = (CInt(Fix(color1.B)))
+			Dim num1 As Integer = (CInt(color1.R))
+			Dim num2 As Integer = (CInt(color1.G))
+			Dim num3 As Integer = (CInt(color1.B))
 
-			Dim num4 As Integer = (CInt(Fix(color2.R)))
-			Dim num5 As Integer = (CInt(Fix(color2.G)))
-			Dim num6 As Integer = (CInt(Fix(color2.B)))
+			Dim num4 As Integer = (CInt(color2.R))
+			Dim num5 As Integer = (CInt(color2.G))
+			Dim num6 As Integer = (CInt(color2.B))
 
 			Dim num7 As Byte = CByte(((CSng(num1)) + ((CSng(num4 - num1)) * factor)))
 			Dim num8 As Byte = CByte(((CSng(num2)) + ((CSng(num5 - num2)) * factor)))
@@ -242,22 +228,14 @@ Namespace Nevron.Examples.Chart.WinForm
 		Private Sub SmoothShadingCheckBox_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs) Handles SmoothShadingCheckBox.CheckedChanged
 			Dim gridSurface As NGridSurfaceSeries = CType(nChartControl1.Charts(0).Series(0), NGridSurfaceSeries)
 
-			If SmoothShadingCheckBox.Checked Then
-				gridSurface.ShadingMode = ShadingMode.Smooth
-			Else
-				gridSurface.ShadingMode = ShadingMode.Flat
-			End If
+			gridSurface.ShadingMode = If(SmoothShadingCheckBox.Checked, ShadingMode.Smooth, ShadingMode.Flat)
 			nChartControl1.Refresh()
 		End Sub
 
 		Private Sub HasFillingCheckBox_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs) Handles HasFillingCheckBox.CheckedChanged
 			Dim gridSurface As NGridSurfaceSeries = CType(nChartControl1.Charts(0).Series(0), NGridSurfaceSeries)
 
-			If HasFillingCheckBox.Checked Then
-				gridSurface.FillMode = SurfaceFillMode.CustomColors
-			Else
-				gridSurface.FillMode = SurfaceFillMode.None
-			End If
+			gridSurface.FillMode = If(HasFillingCheckBox.Checked, SurfaceFillMode.CustomColors, SurfaceFillMode.None)
 			nChartControl1.Refresh()
 		End Sub
 

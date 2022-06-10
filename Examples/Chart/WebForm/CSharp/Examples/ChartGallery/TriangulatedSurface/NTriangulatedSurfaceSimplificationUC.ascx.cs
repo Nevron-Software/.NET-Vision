@@ -80,26 +80,11 @@ namespace Nevron.Examples.Chart.WebForm
                 surface.PaletteSteps = 10;
                 surface.ValueFormatter.FormatSpecifier = "0.00";
                 surface.FillStyle = new NColorFillStyle(Color.YellowGreen);
-                surface.UsePreciseGeometry = true;
-
-                // set clustering parameters
-                surface.ClusterMode = ClusterMode.Enabled;
-                surface.ClusterDistanceFactor = 0.01;
 
                 FillData();
             }
 
-            NChart chart1 = nChartControl1.Charts[0];
-            NTriangulatedSurfaceSeries surface1 = (NTriangulatedSurfaceSeries)chart1.Series[0];
-
-			if (SimplifySurfaceCheckBox.Checked)
-            {
-                surface1.ClusterMode = ClusterMode.Enabled;
-            }
-            else
-            {
-                surface1.ClusterMode = ClusterMode.Disabled;
-            }
+            FillData();
         }
 
         private void FillData()
@@ -121,6 +106,9 @@ namespace Nevron.Examples.Chart.WebForm
             double cx = -3.0;
             double cz = -5.0;
 
+            NVector3DD[] vectorData = new NVector3DD[countZ * countX];
+            int index = 0;
+
             for (int n = 0; n < countZ; n++)
             {
                 double z = rangeZ.Begin + n * stepZ;
@@ -132,11 +120,22 @@ namespace Nevron.Examples.Chart.WebForm
                     double dz = cz - z;
                     double distance = Math.Sqrt(dx * dx + dz * dz);
 
-                    surface.Values.Add(Math.Sin(distance) * Math.Exp(-distance * 0.1));
-                    surface.XValues.Add(x);
-                    surface.ZValues.Add(z);
+                    vectorData[index] = new NVector3DD(x, Math.Sin(distance) * Math.Exp(-distance * 0.1), z);
+                    index++;
                 }
             }
+
+            if (SimplifySurfaceCheckBox.Checked)
+			{
+                NPointSetSimplifier3D pointSetSimplifier3D = new NPointSetSimplifier3D();
+                pointSetSimplifier3D.DistanceFactor = 0.01f;
+
+                vectorData = pointSetSimplifier3D.Simplify(vectorData);
+            }
+
+            surface.Data.Clear();
+            surface.Data.AddValues(vectorData);
+
         }
 	}
 }

@@ -124,7 +124,8 @@ namespace Nevron.Examples.Chart.WinForm
 		{
 			base.Initialize();
 
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.HighSpeed;
+			// Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window;
 
 			// set a chart title
 			NLabel title = new NLabel("Contour Chart");

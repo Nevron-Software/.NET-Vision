@@ -6,7 +6,7 @@ Imports System.ComponentModel
 Imports System.Drawing
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NPointDropLines3DUC
 		Inherits NExampleBaseUC
 
@@ -127,13 +127,12 @@ Namespace Nevron.Examples.Chart.WinForm
 			m_Point.Size = New NLength(10, NGraphicsUnit.Point)
 			m_Point.DataLabelStyle.Visible = False
 
-'INSTANT VB NOTE: The variable random was renamed since Visual Basic does not handle local variables named the same as class members well:
-			Dim random_Renamed As New Random()
+			Dim random As New Random()
 
 			For i As Integer = 0 To 99 Step 5
-				m_Point.Values.Add(random_Renamed.Next(200) - 100)
-				m_Point.XValues.Add(random_Renamed.Next(200) - 100)
-				m_Point.ZValues.Add(random_Renamed.Next(200) - 100)
+				m_Point.Values.Add(random.Next(200) - 100)
+				m_Point.XValues.Add(random.Next(200) - 100)
+				m_Point.ZValues.Add(random.Next(200) - 100)
 			Next i
 
 			' apply layout

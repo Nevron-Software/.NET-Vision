@@ -1,16 +1,11 @@
+using Nevron.Chart;
+using Nevron.Chart.Windows;
+using Nevron.GraphicsCore;
+using Nevron.UI;
 using System;
-using System.Collections;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
 using System.IO;
-using System.Windows.Forms;
-using Nevron.UI;
-using Nevron.GraphicsCore;
-using Nevron.Editors;
-using Nevron.Chart;
-using Nevron.Chart.WinForm;
-using Nevron.Chart.Windows;
 
 
 namespace Nevron.Examples.Chart.WinForm
@@ -18,6 +13,8 @@ namespace Nevron.Examples.Chart.WinForm
 	[ToolboxItem(false)]
 	public class NProjectedContourUC : NExampleBaseUC
 	{
+		private UI.WinForm.Controls.NCheckBox UseHardwareAccelerationCheckBox;
+		private UI.WinForm.Controls.NCheckBox EnableShaderRenderingCheckBox;
 		private System.ComponentModel.Container components = null;
 
 		public NProjectedContourUC()
@@ -47,11 +44,35 @@ namespace Nevron.Examples.Chart.WinForm
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.UseHardwareAccelerationCheckBox = new Nevron.UI.WinForm.Controls.NCheckBox();
+			this.EnableShaderRenderingCheckBox = new Nevron.UI.WinForm.Controls.NCheckBox();
 			this.SuspendLayout();
 			// 
-			// NProjectedContourUC
+			// UseHardwareAccelerationCheckBox
 			// 
-			this.Name = "NProjectedContourUC";
+			this.UseHardwareAccelerationCheckBox.ButtonProperties.BorderOffset = 2;
+			this.UseHardwareAccelerationCheckBox.Location = new System.Drawing.Point(3, 5);
+			this.UseHardwareAccelerationCheckBox.Name = "UseHardwareAccelerationCheckBox";
+			this.UseHardwareAccelerationCheckBox.Size = new System.Drawing.Size(171, 20);
+			this.UseHardwareAccelerationCheckBox.TabIndex = 1;
+			this.UseHardwareAccelerationCheckBox.Text = "Use Hardware Acceleration";
+			this.UseHardwareAccelerationCheckBox.CheckedChanged += new System.EventHandler(this.UseHardwareAccelerationCheckBox_CheckedChanged);
+			// 
+			// EnableShaderRenderingCheckBox
+			// 
+			this.EnableShaderRenderingCheckBox.ButtonProperties.BorderOffset = 2;
+			this.EnableShaderRenderingCheckBox.Location = new System.Drawing.Point(3, 31);
+			this.EnableShaderRenderingCheckBox.Name = "EnableShaderRenderingCheckBox";
+			this.EnableShaderRenderingCheckBox.Size = new System.Drawing.Size(171, 20);
+			this.EnableShaderRenderingCheckBox.TabIndex = 2;
+			this.EnableShaderRenderingCheckBox.Text = "Enable Shader Rendering";
+			this.EnableShaderRenderingCheckBox.CheckedChanged += new System.EventHandler(this.EnableShaderRenderingCheckBox_CheckedChanged);
+			// 
+			// NFastProjectedContourUC
+			// 
+			this.Controls.Add(this.EnableShaderRenderingCheckBox);
+			this.Controls.Add(this.UseHardwareAccelerationCheckBox);
+			this.Name = "NFastProjectedContourUC";
 			this.Size = new System.Drawing.Size(169, 116);
 			this.ResumeLayout(false);
 
@@ -62,7 +83,9 @@ namespace Nevron.Examples.Chart.WinForm
 		{
 			base.Initialize();
 
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.HighSpeed;
+			// Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window;
+
 			nChartControl1.Controller.Tools.Add(new NPanelSelectorTool());
 			nChartControl1.Controller.Tools.Add(new NTrackballTool());
 
@@ -116,6 +139,9 @@ namespace Nevron.Examples.Chart.WinForm
 			surface.ShadingMode = ShadingMode.Smooth;
 			SetupCommonSurfaceProperties(surface);
 
+			// fill both surfaces with the same data
+			FillData(surface);
+
 			// add a surface series
 			NGridSurfaceSeries contour = new NGridSurfaceSeries();
 			chart.Series.Add(contour);
@@ -127,6 +153,12 @@ namespace Nevron.Examples.Chart.WinForm
 			contour.ShadingMode = ShadingMode.Flat;
 			SetupCommonSurfaceProperties(contour);
 
+			// fill both surfaces with the same data
+			FillData(contour);
+
+			NPalette palette = contour.Palette;
+			palette.Mode = PaletteMode.Custom;
+
 			contour.AutomaticPalette = false;
 			contour.Palette.Clear();
 			contour.Palette.Add(250, Color.FromArgb(112, 211, 162));
@@ -137,14 +169,16 @@ namespace Nevron.Examples.Chart.WinForm
 			contour.Palette.Add(370, Color.FromArgb(198, 170, 165));
 			contour.Palette.Add(400, Color.FromArgb(255, 0, 0));
 
-			// fill both surfaces with the same data
-			FillData(surface, contour);
+			contour.Palette.Add(0, Color.Red);
+			contour.Palette.Add(100, Color.Blue);
 
 			// apply layout
 			ConfigureStandardLayout(chart, title, nChartControl1.Legends[0]);
+
+			UseHardwareAccelerationCheckBox.Checked = true;
 		}
 
-		private void FillData(NGridSurfaceSeries surface, NGridSurfaceSeries contour)
+		private void FillData(NGridSurfaceSeries surface)
 		{
 			Stream stream = null;
 			BinaryReader reader = null;
@@ -160,7 +194,6 @@ namespace Nevron.Examples.Chart.WinForm
 				int sizeZ = sizeX;
 
 				surface.Data.SetGridSize(sizeX, sizeZ);
-				contour.Data.SetGridSize(sizeX, sizeZ);
 
 				for (int z = 0; z < sizeZ; z++)
 				{
@@ -168,7 +201,6 @@ namespace Nevron.Examples.Chart.WinForm
 					{
 						double value = 300 + 0.3 * (double)reader.ReadSingle();
 						surface.Data.SetValue(x, z, value);
-						contour.Data.SetValue(x, z, value);
 					}
 				}
 			}
@@ -206,6 +238,24 @@ namespace Nevron.Examples.Chart.WinForm
 			{
 				wall.VisibilityMode = WallVisibilityMode.Auto;
 			}
+		}
+
+		private void EnableShaderRenderingCheckBox_CheckedChanged(object sender, EventArgs e)
+		{
+			NChart chart = nChartControl1.Charts[0];
+
+			foreach (NGridSurfaceSeries surface in chart.Series)
+			{
+				surface.EnableShaderRendering = EnableShaderRenderingCheckBox.Checked;
+			}
+
+			nChartControl1.Refresh();
+		}
+
+		private void UseHardwareAccelerationCheckBox_CheckedChanged(object sender, EventArgs e)
+		{
+			nChartControl1.Settings.RenderSurface = UseHardwareAccelerationCheckBox.Checked ? RenderSurface.Window : RenderSurface.Bitmap;
+			EnableShaderRenderingCheckBox.Enabled = UseHardwareAccelerationCheckBox.Checked;
 		}
 	}
 }

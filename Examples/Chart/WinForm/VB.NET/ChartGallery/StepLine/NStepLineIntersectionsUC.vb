@@ -11,7 +11,7 @@ Imports System.Collections.Generic
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NStepLineIntersectionsUC
 		Inherits NExampleBaseUC
 

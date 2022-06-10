@@ -110,6 +110,9 @@ namespace Nevron.Examples.Chart.WinForm
 		{
 			base.Initialize();
 
+			// Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window;
+
 			// set a chart title
 			NLabel title = nChartControl1.Labels.AddHeader("Wireframe Surface");
 			title.TextStyle.FontStyle = new NFontStyle("Times New Roman", 18, FontStyle.Italic);

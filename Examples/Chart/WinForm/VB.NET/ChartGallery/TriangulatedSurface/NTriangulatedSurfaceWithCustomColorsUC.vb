@@ -14,7 +14,7 @@ Imports Nevron.Chart.Windows
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NTriangulatedSurfaceWithCustomColorsUC
 		Inherits NExampleBaseUC
 
@@ -57,7 +57,6 @@ Namespace Nevron.Examples.Chart.WinForm
 			End If
 			MyBase.Dispose(disposing)
 		End Sub
-
 
 		#Region "Component Designer generated code"
 		''' <summary> 
@@ -192,7 +191,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		Public Overrides Sub Initialize()
 			MyBase.Initialize()
 
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.None
+			' Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window
+
 			nChartControl1.Controller.Tools.Add(New NPanelSelectorTool())
 			nChartControl1.Controller.Tools.Add(New NTrackballTool())
 
@@ -279,22 +280,25 @@ Namespace Nevron.Examples.Chart.WinForm
 
 				Dim nDataPointsCount As Integer = CInt(stream.Length) \ 12
 
+				surface.Data.SetCount(nDataPointsCount)
+				surface.Data.UseColors = True
+
 				' fill Y values and colors
 				For i As Integer = 0 To nDataPointsCount - 1
 					Dim y As Single = 300 - reader.ReadSingle()
 
-					surface.Values.Add(y)
-					surface.Colors.Add(GetColorFromValue(y))
+					surface.Data.SetYValue(i, y)
+					surface.Data.SetColor(i, GetColorFromValue(y))
 				Next i
 
 				' fill X values
 				For i As Integer = 0 To nDataPointsCount - 1
-					surface.XValues.Add(reader.ReadSingle())
+					surface.Data.SetXValue(i, reader.ReadSingle())
 				Next i
 
 				' fill Z values
 				For i As Integer = 0 To nDataPointsCount - 1
-					surface.ZValues.Add(reader.ReadSingle())
+					surface.Data.SetZValue(i, reader.ReadSingle())
 				Next i
 			Finally
 				If reader IsNot Nothing Then

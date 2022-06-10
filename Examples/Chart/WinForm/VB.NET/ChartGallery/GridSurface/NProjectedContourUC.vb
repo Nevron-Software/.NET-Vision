@@ -1,23 +1,20 @@
-﻿Imports System
-Imports System.Collections
+﻿Imports Nevron.Chart
+Imports Nevron.Chart.Windows
+Imports Nevron.GraphicsCore
+Imports Nevron.UI
+Imports System
 Imports System.ComponentModel
 Imports System.Drawing
-Imports System.Data
 Imports System.IO
-Imports System.Windows.Forms
-Imports Nevron.UI
-Imports Nevron.GraphicsCore
-Imports Nevron.Editors
-Imports Nevron.Chart
-Imports Nevron.Chart.WinForm
-Imports Nevron.Chart.Windows
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NProjectedContourUC
 		Inherits NExampleBaseUC
 
+		Private WithEvents UseHardwareAccelerationCheckBox As UI.WinForm.Controls.NCheckBox
+		Private WithEvents EnableShaderRenderingCheckBox As UI.WinForm.Controls.NCheckBox
 		Private components As System.ComponentModel.Container = Nothing
 
 		Public Sub New()
@@ -42,11 +39,37 @@ Namespace Nevron.Examples.Chart.WinForm
 		''' the contents of this method with the code editor.
 		''' </summary>
 		Private Sub InitializeComponent()
+			Me.UseHardwareAccelerationCheckBox = New Nevron.UI.WinForm.Controls.NCheckBox()
+			Me.EnableShaderRenderingCheckBox = New Nevron.UI.WinForm.Controls.NCheckBox()
 			Me.SuspendLayout()
 			' 
-			' NProjectedContourUC
+			' UseHardwareAccelerationCheckBox
 			' 
-			Me.Name = "NProjectedContourUC"
+			Me.UseHardwareAccelerationCheckBox.ButtonProperties.BorderOffset = 2
+			Me.UseHardwareAccelerationCheckBox.Location = New System.Drawing.Point(3, 5)
+			Me.UseHardwareAccelerationCheckBox.Name = "UseHardwareAccelerationCheckBox"
+			Me.UseHardwareAccelerationCheckBox.Size = New System.Drawing.Size(171, 20)
+			Me.UseHardwareAccelerationCheckBox.TabIndex = 1
+			Me.UseHardwareAccelerationCheckBox.Text = "Use Hardware Acceleration"
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.UseHardwareAccelerationCheckBox.CheckedChanged += new System.EventHandler(this.UseHardwareAccelerationCheckBox_CheckedChanged);
+			' 
+			' EnableShaderRenderingCheckBox
+			' 
+			Me.EnableShaderRenderingCheckBox.ButtonProperties.BorderOffset = 2
+			Me.EnableShaderRenderingCheckBox.Location = New System.Drawing.Point(3, 31)
+			Me.EnableShaderRenderingCheckBox.Name = "EnableShaderRenderingCheckBox"
+			Me.EnableShaderRenderingCheckBox.Size = New System.Drawing.Size(171, 20)
+			Me.EnableShaderRenderingCheckBox.TabIndex = 2
+			Me.EnableShaderRenderingCheckBox.Text = "Enable Shader Rendering"
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.EnableShaderRenderingCheckBox.CheckedChanged += new System.EventHandler(this.EnableShaderRenderingCheckBox_CheckedChanged);
+			' 
+			' NFastProjectedContourUC
+			' 
+			Me.Controls.Add(Me.EnableShaderRenderingCheckBox)
+			Me.Controls.Add(Me.UseHardwareAccelerationCheckBox)
+			Me.Name = "NFastProjectedContourUC"
 			Me.Size = New System.Drawing.Size(169, 116)
 			Me.ResumeLayout(False)
 
@@ -56,7 +79,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		Public Overrides Sub Initialize()
 			MyBase.Initialize()
 
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.HighSpeed
+			' Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window
+
 			nChartControl1.Controller.Tools.Add(New NPanelSelectorTool())
 			nChartControl1.Controller.Tools.Add(New NTrackballTool())
 
@@ -110,6 +135,9 @@ Namespace Nevron.Examples.Chart.WinForm
 			surface.ShadingMode = ShadingMode.Smooth
 			SetupCommonSurfaceProperties(surface)
 
+			' fill both surfaces with the same data
+			FillData(surface)
+
 			' add a surface series
 			Dim contour As New NGridSurfaceSeries()
 			chart.Series.Add(contour)
@@ -121,6 +149,12 @@ Namespace Nevron.Examples.Chart.WinForm
 			contour.ShadingMode = ShadingMode.Flat
 			SetupCommonSurfaceProperties(contour)
 
+			' fill both surfaces with the same data
+			FillData(contour)
+
+			Dim palette As NPalette = contour.Palette
+			palette.Mode = PaletteMode.Custom
+
 			contour.AutomaticPalette = False
 			contour.Palette.Clear()
 			contour.Palette.Add(250, Color.FromArgb(112, 211, 162))
@@ -131,14 +165,16 @@ Namespace Nevron.Examples.Chart.WinForm
 			contour.Palette.Add(370, Color.FromArgb(198, 170, 165))
 			contour.Palette.Add(400, Color.FromArgb(255, 0, 0))
 
-			' fill both surfaces with the same data
-			FillData(surface, contour)
+			contour.Palette.Add(0, Color.Red)
+			contour.Palette.Add(100, Color.Blue)
 
 			' apply layout
 			ConfigureStandardLayout(chart, title, nChartControl1.Legends(0))
+
+			UseHardwareAccelerationCheckBox.Checked = True
 		End Sub
 
-		Private Sub FillData(ByVal surface As NGridSurfaceSeries, ByVal contour As NGridSurfaceSeries)
+		Private Sub FillData(ByVal surface As NGridSurfaceSeries)
 			Dim stream As Stream = Nothing
 			Dim reader As BinaryReader = Nothing
 
@@ -152,13 +188,11 @@ Namespace Nevron.Examples.Chart.WinForm
 				Dim sizeZ As Integer = sizeX
 
 				surface.Data.SetGridSize(sizeX, sizeZ)
-				contour.Data.SetGridSize(sizeX, sizeZ)
 
 				For z As Integer = 0 To sizeZ - 1
 					For x As Integer = 0 To sizeX - 1
 						Dim value As Double = 300 + 0.3 * CDbl(reader.ReadSingle())
 						surface.Data.SetValue(x, z, value)
-						contour.Data.SetValue(x, z, value)
 					Next x
 				Next z
 			Finally
@@ -192,6 +226,21 @@ Namespace Nevron.Examples.Chart.WinForm
 			For Each wall As NChartWall In chart.Walls
 				wall.VisibilityMode = WallVisibilityMode.Auto
 			Next wall
+		End Sub
+
+		Private Sub EnableShaderRenderingCheckBox_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs) Handles EnableShaderRenderingCheckBox.CheckedChanged
+			Dim chart As NChart = nChartControl1.Charts(0)
+
+			For Each surface As NGridSurfaceSeries In chart.Series
+				surface.EnableShaderRendering = EnableShaderRenderingCheckBox.Checked
+			Next surface
+
+			nChartControl1.Refresh()
+		End Sub
+
+		Private Sub UseHardwareAccelerationCheckBox_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs) Handles UseHardwareAccelerationCheckBox.CheckedChanged
+			nChartControl1.Settings.RenderSurface = If(UseHardwareAccelerationCheckBox.Checked, RenderSurface.Window, RenderSurface.Bitmap)
+			EnableShaderRenderingCheckBox.Enabled = UseHardwareAccelerationCheckBox.Checked
 		End Sub
 	End Class
 End Namespace

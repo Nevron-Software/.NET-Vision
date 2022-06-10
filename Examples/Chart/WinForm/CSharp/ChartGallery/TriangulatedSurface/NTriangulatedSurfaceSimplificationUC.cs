@@ -1,16 +1,9 @@
+using Nevron.Chart;
+using Nevron.Chart.Windows;
+using Nevron.GraphicsCore;
 using System;
-using System.Collections;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.IO;
-using System.Windows.Forms;
-using Nevron.UI;
-using Nevron.GraphicsCore;
-using Nevron.Editors;
-using Nevron.Chart;
-using Nevron.Chart.WinForm;
-using Nevron.Chart.Windows;
 
 
 namespace Nevron.Examples.Chart.WinForm
@@ -374,7 +367,9 @@ namespace Nevron.Examples.Chart.WinForm
 		{
 			base.Initialize();
 
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.None;
+			// Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window;
+
 			nChartControl1.Settings.JitterMode = JitterMode.Disabled;
 			nChartControl1.Controller.Tools.Add(new NPanelSelectorTool());
 			nChartControl1.Controller.Tools.Add(new NTrackballTool());
@@ -427,11 +422,7 @@ namespace Nevron.Examples.Chart.WinForm
 			surface.SyncPaletteWithAxisScale = false;
 			surface.ValueFormatter.FormatSpecifier = "0.00";
 			surface.FillStyle = new NColorFillStyle(Color.YellowGreen);
-			surface.UsePreciseGeometry = true;
 
-			// set clustering parameters
-			surface.ClusterMode = ClusterMode.Enabled;
-			surface.ClusterDistanceFactor = 0.01;
 
 			FillData();
 
@@ -449,73 +440,77 @@ namespace Nevron.Examples.Chart.WinForm
 			customValueScroll.Value = 100;
 		}
 
+		NVector3DD[] m_SurfaceVectorData;
+
 		private void FillData()
 		{
+			if (nChartControl1 == null)
+				return;
+
 			NChart chart = nChartControl1.Charts[0];
 			NTriangulatedSurfaceSeries surface = (NTriangulatedSurfaceSeries)chart.Series[0];
+			NTriangulatedSurfaceData surfaceData = surface.Data;
 
-			Random rand = new Random();
-
-			const int countX = 100;
-			const int countZ = 100;
-
-			NRange1DD rangeX = new NRange1DD(-10, 10);
-			NRange1DD rangeZ = new NRange1DD(-10, 10);
-
-			double stepX = rangeX.GetLength() / (countX - 1);
-			double stepZ = rangeZ.GetLength() / (countZ - 1);
-
-			double cx = -3.0;
-			double cz = -5.0;
-
-			for (int n = 0; n < countZ; n++)
+			if (m_SurfaceVectorData == null)
 			{
-				double z = rangeZ.Begin + n * stepZ;
+				Random rand = new Random();
 
-				for (int m = 0; m < countX; m++)
+				const int countX = 100;
+				const int countZ = 100;
+
+				NRange1DD rangeX = new NRange1DD(-10, 10);
+				NRange1DD rangeZ = new NRange1DD(-10, 10);
+
+				double stepX = rangeX.GetLength() / (countX - 1);
+				double stepZ = rangeZ.GetLength() / (countZ - 1);
+
+				double cx = -3.0;
+				double cz = -5.0;
+				
+				NVector3DD[] vectorData = new NVector3DD[countZ * countX];
+				int index = 0;
+
+				for (int n = 0; n < countZ; n++)
 				{
-					double x = rangeX.Begin + m * stepX;
-					double dx = cx - x;
-					double dz = cz - z;
-					double distance = Math.Sqrt(dx * dx + dz * dz);
+					double z = rangeZ.Begin + n * stepZ;
 
-					surface.Values.Add(Math.Sin(distance) * Math.Exp(-distance * 0.1));
-					surface.XValues.Add(x);
-					surface.ZValues.Add(z);
+					for (int m = 0; m < countX; m++)
+					{
+						double x = rangeX.Begin + m * stepX;
+						double dx = cx - x;
+						double dz = cz - z;
+						double distance = Math.Sqrt(dx * dx + dz * dz);
+
+						vectorData[index++] = new NVector3DD(x, Math.Sin(distance) * Math.Exp(-distance * 0.1), z);
+					}
 				}
+
+				m_SurfaceVectorData = vectorData;
 			}
+
+			NVector3DD[] newSurfaceVectorData = m_SurfaceVectorData;
+
+			if (enableClusteringCheck.Checked)
+			{
+				NPointSetSimplifier3D simplifier = new NPointSetSimplifier3D();
+				simplifier.DistanceFactor = (double)distanceFactorNumericUpDown.Value;
+
+				newSurfaceVectorData = simplifier.Simplify(newSurfaceVectorData);
+			}
+
+			surfaceData.Clear();
+			surfaceData.AddValues(newSurfaceVectorData);
+
+			nChartControl1.Refresh();
 		}
 
 		private void EnableClusteringCheck_CheckedChanged(object sender, EventArgs e)
 		{
-			if (nChartControl1 == null)
-				return;
-
-			NChart chart = nChartControl1.Charts[0];
-			NTriangulatedSurfaceSeries surface = (NTriangulatedSurfaceSeries)chart.Series[0];
-
-			if (enableClusteringCheck.Checked)
-			{
-				surface.ClusterMode = ClusterMode.Enabled;
-			}
-			else
-			{
-				surface.ClusterMode = ClusterMode.Disabled;
-			}
-
-			nChartControl1.Refresh();
+			FillData();
 		}
 		private void DistanceFactorNumericUpDown_ValueChanged(object sender, EventArgs e)
 		{
-			if (nChartControl1 == null)
-				return;
-
-			NChart chart = nChartControl1.Charts[0];
-			NTriangulatedSurfaceSeries surface = (NTriangulatedSurfaceSeries)chart.Series[0];
-
-			surface.ClusterDistanceFactor = (double)distanceFactorNumericUpDown.Value;
-
-			nChartControl1.Refresh();
+			FillData();
 		}
 		private void SmoothShadingCheck_CheckedChanged(object sender, System.EventArgs e)
 		{

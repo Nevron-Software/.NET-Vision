@@ -101,24 +101,26 @@ Namespace Nevron.Examples.Chart.WebForm
 
 				Dim nDataPointsCount As Integer = CInt(Fix(stream.Length)) / 12
 
+				'surface.Data.SetCapacity(nDataPointsCount);
+				Dim data(nDataPointsCount - 1) As NVector3DF
+
 				' fill Y values
-				Dim i As Integer = 0
-				Do While i < nDataPointsCount
-					surface.Values.Add(reader.ReadSingle())
-					i += 1
-				Loop
+				For i As Integer = 0 To nDataPointsCount - 1
+					data(i).Y = reader.ReadSingle()
+				Next i
 
-				i = 0
-				Do While i < nDataPointsCount
-					surface.XValues.Add(reader.ReadSingle())
-					i += 1
-				Loop
+				' fill X values
+				For i As Integer = 0 To nDataPointsCount - 1
+					data(i).X = reader.ReadSingle()
+				Next i
 
-				i = 0
-				Do While i < nDataPointsCount
-					surface.ZValues.Add(reader.ReadSingle())
-					i += 1
-				Loop
+				' fill Z values
+				For i As Integer = 0 To nDataPointsCount - 1
+					data(i).Z = reader.ReadSingle()
+				Next i
+
+				surface.Data.Clear()
+				surface.Data.AddValues(data)
 			Finally
 				If Not reader Is Nothing Then
 					reader.Close()

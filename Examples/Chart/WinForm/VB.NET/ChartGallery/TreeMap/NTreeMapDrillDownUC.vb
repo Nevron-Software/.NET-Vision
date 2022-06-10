@@ -12,7 +12,7 @@ Imports Nevron.GraphicsCore
 Imports Nevron.Chart.Windows
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Partial Public Class NTreeMapDrillDownUC
 		Inherits NExampleBaseUC
 

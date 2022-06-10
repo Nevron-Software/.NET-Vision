@@ -7,7 +7,7 @@ Imports System.Drawing
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NTernaryBubbleUC
 		Inherits NExampleBaseUC
 

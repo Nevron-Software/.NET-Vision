@@ -225,12 +225,18 @@ namespace Nevron.Examples.Chart.WinForm
 
 		private void MinVectorLengthNumericUpDown_ValueChanged(object sender, EventArgs e)
 		{
+			if (m_Vector == null)
+				return;
+
 			m_Vector.MinVectorLength = new NLength((float)MinVectorLengthNumericUpDown.Value, NGraphicsUnit.Point);
 			nChartControl1.Refresh();
 		}
 
 		private void MaxVectorLengthNumericUpDown_ValueChanged(object sender, EventArgs e)
 		{
+			if (m_Vector == null)
+				return;
+
 			m_Vector.MaxVectorLength = new NLength((float)MaxVectorLengthNumericUpDown.Value, NGraphicsUnit.Point);
 			nChartControl1.Refresh();
 		}

@@ -16,7 +16,7 @@ Imports System.Runtime.CompilerServices
 <Assembly: AssemblyConfiguration("")>
 <Assembly: AssemblyCompany("Nevron Software")>
 <Assembly: AssemblyProduct("")>
-<Assembly: AssemblyCopyright("Copyright Â© 1998 - 2020 Nevron Software")>
+<Assembly: AssemblyCopyright("Copyright © 1998 - 2014 Nevron Software")>
 <Assembly: AssemblyTrademark("")>
 <Assembly: AssemblyCulture("")>
 
@@ -31,7 +31,7 @@ Imports System.Runtime.CompilerServices
 ' You can specify all the values or you can default the Revision and Build Numbers 
 ' by using the '*' as shown below:
 
-<Assembly: AssemblyVersion("20.3.18.12")>
+<Assembly: AssemblyVersion("4.0.0.0")>
 
 '
 ' In order to sign your assembly you must specify a key to use. Refer to the 

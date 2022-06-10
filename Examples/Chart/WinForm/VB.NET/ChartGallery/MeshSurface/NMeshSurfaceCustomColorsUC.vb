@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections
 Imports System.ComponentModel
 Imports System.Drawing
@@ -15,9 +14,10 @@ Imports Nevron.Chart.WinForm
 Imports Nevron.Chart.Windows
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NMeshSurfaceCustomColorsUC
 		Inherits NExampleBaseUC
+
 		Private WithEvents smoothShadingCheck As Nevron.UI.WinForm.Controls.NCheckBox
 		Private components As System.ComponentModel.Container = Nothing
 
@@ -28,9 +28,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		''' <summary> 
 		''' Clean up any resources being used.
 		''' </summary>
-		Protected Overrides Overloads Sub Dispose(ByVal disposing As Boolean)
+		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 			If disposing Then
-				If Not components Is Nothing Then
+				If components IsNot Nothing Then
 					components.Dispose()
 				End If
 			End If
@@ -55,7 +55,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.smoothShadingCheck.Size = New System.Drawing.Size(163, 20)
 			Me.smoothShadingCheck.TabIndex = 5
 			Me.smoothShadingCheck.Text = "Smooth Shading"
-'			Me.smoothShadingCheck.CheckedChanged += New System.EventHandler(Me.SmoothShadingCheck_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.smoothShadingCheck.CheckedChanged += new System.EventHandler(this.SmoothShadingCheck_CheckedChanged);
 			' 
 			' NMeshSurfaceCustomColorsUC
 			' 
@@ -87,9 +88,9 @@ Namespace Nevron.Examples.Chart.WinForm
 			' configure the chart
 			Dim chart As NChart = nChartControl1.Charts(0)
 			chart.Enable3D = True
-			chart.Width = 55.0f
-			chart.Depth = 55.0f
-			chart.Height = 55.0f
+			chart.Width = 55.0F
+			chart.Depth = 55.0F
+			chart.Height = 55.0F
 			chart.Projection.SetPredefinedProjection(PredefinedProjection.PerspectiveTilted)
 
 			chart.Axis(StandardAxis.PrimaryX).View = New NRangeAxisView(New NRange1DD(-120, 120), True, True)
@@ -97,7 +98,7 @@ Namespace Nevron.Examples.Chart.WinForm
 			chart.Axis(StandardAxis.Depth).View = New NRangeAxisView(New NRange1DD(-120, 120), True, True)
 
 			' setup axes
-			Dim linearScale As NLinearScaleConfigurator = New NLinearScaleConfigurator()
+			Dim linearScale As New NLinearScaleConfigurator()
 			linearScale.MajorGridStyle.SetShowAtWall(ChartWallType.Floor, True)
 			linearScale.MajorGridStyle.SetShowAtWall(ChartWallType.Back, True)
 			linearScale.RoundToTickMax = False
@@ -149,22 +150,15 @@ Namespace Nevron.Examples.Chart.WinForm
 			Dim endBeta As Double = NMath.PI2
 			Dim betaStep As Double = NMath.PI2 / n
 
-			Dim arrPrecomputedData As NVector2DD() = New NVector2DD(m - 1){}
+			Dim arrPrecomputedData(m - 1) As NVector2DD
 
-			Dim i As Integer = 0
-			Do While i < m
+			For i As Integer = 0 To m - 1
 				' calculate the current angle, its cos and sin
-				Dim alpha As Double
-				If (i = lastM) Then
-					alpha = endAlpha
-				Else
-					alpha = (beginAlpha + i * alphaStep)
-				End If
+				Dim alpha As Double = If(i = lastM, (endAlpha), (beginAlpha + i * alphaStep))
 
 				arrPrecomputedData(i).X = Math.Cos(alpha)
 				arrPrecomputedData(i).Y = Math.Sin(alpha)
-				i += 1
-			Loop
+			Next i
 
 			Dim vertexIndex As Integer = 0
 
@@ -176,22 +170,15 @@ Namespace Nevron.Examples.Chart.WinForm
 
 			Dim offset As Single = -100
 
-			Dim j As Integer = 0
-			Do While j < n
+			For j As Integer = 0 To n - 1
 				' calculate the current beta angle
-				Dim beta As Double
-				If (j = lastN) Then
-					beta = endBeta
-				Else
-					beta = (beginBeta + j * betaStep)
-				End If
+				Dim beta As Double = If(j = lastN, (endBeta), (beginBeta + j * betaStep))
 				Dim fCosBeta As Double = CSng(Math.Cos(beta))
 				Dim fSinBeta As Double = CSng(Math.Sin(beta))
 
 				offset = -100
 
-				i = 0
-				Do While i < m
+				For i As Integer = 0 To m - 1
 					Dim fCosAlpha As Double = arrPrecomputedData(i).X
 					Dim fSinAlpha As Double = arrPrecomputedData(i).Y
 
@@ -213,24 +200,22 @@ Namespace Nevron.Examples.Chart.WinForm
 					surface.Data.SetColor(i, j, InterpolateColors(beginColor, endColor, CSng(i) / CSng(100))) '(length - (radius1 - radius2)) / radius2));
 
 					vertexIndex += 1
-					i += 1
-				Loop
-				j += 1
-			Loop
+				Next i
+			Next j
 		End Sub
 
 		Public Shared Function InterpolateColors(ByVal color1 As Color, ByVal color2 As Color, ByVal factor As Double) As Color
-			If factor > 1.0f Then
-				factor = 1.0f
+			If factor > 1.0F Then
+				factor = 1.0F
 			End If
 
-			Dim num1 As Integer = (CInt(Fix(color1.R)))
-			Dim num2 As Integer = (CInt(Fix(color1.G)))
-			Dim num3 As Integer = (CInt(Fix(color1.B)))
+			Dim num1 As Integer = (CInt(color1.R))
+			Dim num2 As Integer = (CInt(color1.G))
+			Dim num3 As Integer = (CInt(color1.B))
 
-			Dim num4 As Integer = (CInt(Fix(color2.R)))
-			Dim num5 As Integer = (CInt(Fix(color2.G)))
-			Dim num6 As Integer = (CInt(Fix(color2.B)))
+			Dim num4 As Integer = (CInt(color2.R))
+			Dim num5 As Integer = (CInt(color2.G))
+			Dim num6 As Integer = (CInt(color2.B))
 
 			Dim num7 As Byte = CByte(((CSng(num1)) + ((CSng(num4 - num1)) * factor)))
 			Dim num8 As Byte = CByte(((CSng(num2)) + ((CSng(num5 - num2)) * factor)))

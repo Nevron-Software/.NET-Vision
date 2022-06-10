@@ -9,7 +9,7 @@ Imports Nevron.Chart.WinForm
 Imports Nevron.Chart.Windows
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NFiveSetVennUC
 		Inherits NExampleBaseUC
 

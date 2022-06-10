@@ -100,11 +100,6 @@ namespace Nevron.Examples.Chart.Wpf
 			surface.SyncPaletteWithAxisScale = false;
 			surface.ValueFormatter.FormatSpecifier = "0.00";
 			surface.FillStyle = new NColorFillStyle(Color.YellowGreen);
-			surface.UsePreciseGeometry = true;
-
-			// set clustering parameters
-			surface.ClusterMode = ClusterMode.Enabled;
-			surface.ClusterDistanceFactor = 0.01;
 
 			FillData();
 			// apply layout
@@ -113,41 +108,68 @@ namespace Nevron.Examples.Chart.Wpf
 			SimplifySurfaceCheckBox.IsChecked = true;
 			SimplifySurfaceCheckBox_Click(null, null);
 		}
+		NVector3DD[] m_SurfaceVectorData;
+
 		private void FillData()
 		{
+			if (nChartControl1 == null)
+				return;
+
 			NChart chart = nChartControl1.Charts[0];
 			NTriangulatedSurfaceSeries surface = (NTriangulatedSurfaceSeries)chart.Series[0];
+			NTriangulatedSurfaceData surfaceData = surface.Data;
 
-			Random rand = new Random();
-
-			const int countX = 100;
-			const int countZ = 100;
-
-			NRange1DD rangeX = new NRange1DD(-10, 10);
-			NRange1DD rangeZ = new NRange1DD(-10, 10);
-
-			double stepX = rangeX.GetLength() / (countX - 1);
-			double stepZ = rangeZ.GetLength() / (countZ - 1);
-
-			double cx = -3.0;
-			double cz = -5.0;
-
-			for (int n = 0; n < countZ; n++)
+			if (m_SurfaceVectorData == null)
 			{
-				double z = rangeZ.Begin + n * stepZ;
+				Random rand = new Random();
 
-				for (int m = 0; m < countX; m++)
+				const int countX = 100;
+				const int countZ = 100;
+
+				NRange1DD rangeX = new NRange1DD(-10, 10);
+				NRange1DD rangeZ = new NRange1DD(-10, 10);
+
+				double stepX = rangeX.GetLength() / (countX - 1);
+				double stepZ = rangeZ.GetLength() / (countZ - 1);
+
+				double cx = -3.0;
+				double cz = -5.0;
+
+				NVector3DD[] vectorData = new NVector3DD[countZ * countX];
+				int index = 0;
+
+				for (int n = 0; n < countZ; n++)
 				{
-					double x = rangeX.Begin + m * stepX;
-					double dx = cx - x;
-					double dz = cz - z;
-					double distance = Math.Sqrt(dx * dx + dz * dz);
+					double z = rangeZ.Begin + n * stepZ;
 
-					surface.Values.Add(Math.Sin(distance) * Math.Exp(-distance * 0.1));
-					surface.XValues.Add(x);
-					surface.ZValues.Add(z);
+					for (int m = 0; m < countX; m++)
+					{
+						double x = rangeX.Begin + m * stepX;
+						double dx = cx - x;
+						double dz = cz - z;
+						double distance = Math.Sqrt(dx * dx + dz * dz);
+
+						vectorData[index++] = new NVector3DD(x, Math.Sin(distance) * Math.Exp(-distance * 0.1), z);
+					}
 				}
+
+				m_SurfaceVectorData = vectorData;
 			}
+
+			NVector3DD[] newSurfaceVectorData = m_SurfaceVectorData; ;
+
+			if (SimplifySurfaceCheckBox.IsChecked.Value)
+			{
+				NPointSetSimplifier3D simplifier = new NPointSetSimplifier3D();
+				simplifier.DistanceFactor = 0.01;
+
+				newSurfaceVectorData = simplifier.Simplify(newSurfaceVectorData);
+			}
+
+			surfaceData.Clear();
+			surfaceData.AddValues(newSurfaceVectorData);
+
+			nChartControl1.Refresh();
 		}
 
 		private void SimplifySurfaceCheckBox_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -155,17 +177,7 @@ namespace Nevron.Examples.Chart.Wpf
 			if (nChartControl1 == null)
 				return;
 
-			NChart chart = nChartControl1.Charts[0];
-			NTriangulatedSurfaceSeries surface = (NTriangulatedSurfaceSeries)chart.Series[0];
-
-			if (SimplifySurfaceCheckBox.IsChecked.Value)
-			{
-				surface.ClusterMode = ClusterMode.Enabled;
-			}
-			else
-			{
-				surface.ClusterMode = ClusterMode.Disabled;
-			}
+			FillData();
 
 			nChartControl1.Refresh();
 		}

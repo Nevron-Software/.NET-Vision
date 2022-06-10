@@ -12,7 +12,7 @@ Imports Nevron.Dom
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NBarPaletteUC
 		Inherits NExampleBaseUC
 
@@ -208,11 +208,10 @@ Namespace Nevron.Examples.Chart.WinForm
 		End Sub
 
 		Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs) Handles timer1.Tick
-'INSTANT VB NOTE: The variable random was renamed since Visual Basic does not handle local variables named the same as class members well:
-			Dim random_Renamed As New Random()
+			Dim random As New Random()
 
 			For i As Integer = 0 To m_Bar.Values.Count - 1
-				Dim value As Double = (m_AxisRange.Begin + m_AxisRange.End) / 2.0 + Math.Sin(m_IndicatorPhase(i) * NMath.Degree2Rad) * m_AxisRange.GetLength() / 2 + random_Renamed.Next(20)
+				Dim value As Double = (m_AxisRange.Begin + m_AxisRange.End) / 2.0 + Math.Sin(m_IndicatorPhase(i) * NMath.Degree2Rad) * m_AxisRange.GetLength() / 2 + random.Next(20)
 				value = m_AxisRange.GetValueInRange(value)
 
 				m_Bar.Values(i) = value

@@ -9,7 +9,7 @@ Imports Nevron.UI
 Imports Nevron.Editors
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Partial Public Class NHeatMapContourUC
 		Inherits NExampleBaseUC
 

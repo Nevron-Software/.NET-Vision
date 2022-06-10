@@ -10,7 +10,7 @@ Imports Nevron.Chart
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NStandardLine2DUC
 		Inherits NExampleBaseUC
 

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Drawing;
 using Nevron.Chart;
 using Nevron.GraphicsCore;
@@ -12,6 +13,11 @@ namespace Nevron.Examples.Chart.WebForm
             // enable jittering (full scene antialiasing)
             nChartControl1.Settings.JitterMode = JitterMode.Enabled;
 			nChartControl1.Panels.Clear();
+
+			// modify the chart alt tag (for section 508 compatiblity)
+			Hashtable hashTable = new Hashtable();
+			hashTable.Add("alt", "Chart Image");
+			nChartControl1.Attributes = hashTable;
 
 			// apply background image border
 			NImageFrameStyle frame = new NImageFrameStyle();

@@ -11,7 +11,7 @@ Imports Nevron.Chart
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NStackedRadarAreaUC
 		Inherits NExampleBaseUC
 
@@ -300,19 +300,18 @@ Namespace Nevron.Examples.Chart.WinForm
 			Dim chart As NRadarChart = CType(nChartControl1.Charts(0), NRadarChart)
 			Dim series1 As NRadarAreaSeries = CType(chart.Series(1), NRadarAreaSeries)
 			Dim series2 As NRadarAreaSeries = CType(chart.Series(2), NRadarAreaSeries)
-'INSTANT VB NOTE: The variable scale was renamed since Visual Basic does not handle local variables named the same as class members well:
-			Dim scale_Renamed As NStandardScaleConfigurator = CType(m_Chart.Axis(StandardAxis.Radar).ScaleConfigurator, NStandardScaleConfigurator)
+			Dim scale As NStandardScaleConfigurator = CType(m_Chart.Axis(StandardAxis.Radar).ScaleConfigurator, NStandardScaleConfigurator)
 
 			Select Case StackModeCombo.SelectedIndex
 				Case 0
 					series1.MultiAreaMode = MultiAreaMode.Stacked
 					series2.MultiAreaMode = MultiAreaMode.Stacked
-					scale_Renamed.LabelValueFormatter = New NNumericValueFormatter(NumericValueFormat.General)
+					scale.LabelValueFormatter = New NNumericValueFormatter(NumericValueFormat.General)
 
 				Case 1
 					series1.MultiAreaMode = MultiAreaMode.StackedPercent
 					series2.MultiAreaMode = MultiAreaMode.StackedPercent
-					scale_Renamed.LabelValueFormatter = New NNumericValueFormatter(NumericValueFormat.Percentage)
+					scale.LabelValueFormatter = New NNumericValueFormatter(NumericValueFormat.Percentage)
 			End Select
 
 			nChartControl1.Refresh()

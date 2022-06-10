@@ -1,15 +1,11 @@
-Imports Microsoft.VisualBasic
-Imports System
-Imports System.Drawing
-Imports System.Windows.Forms
-Imports Nevron.Chart.WinForm
+﻿Imports Nevron.Chart.WinForm
 Imports Nevron.Examples.Framework.WinForm
 Imports Nevron.UI.WinForm.Docking
-Imports Nevron.UI.WinForm.Controls
 
 Namespace Nevron.Examples.Chart.WinForm
 	Public Class NMainForm
 		Inherits NExamplesForm
+
 		#Region "Fields"
 
 		Friend chartControl As NChartControl
@@ -53,7 +49,7 @@ Namespace Nevron.Examples.Chart.WinForm
 		''' </summary>
 		Private Sub InitializeComponent()
 			Me.Name = "MainForm"
-			Me.Text = "Nevron Chart for .NET - C# examples"
+			Me.Text = "Nevron Chart for .NET - VB.NET examples"
 		End Sub
 
 		#End Region
@@ -63,9 +59,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		''' <summary>
 		''' The main entry point for the application.
 		''' </summary>
-		<STAThread> _
+		<STAThread>
 		Shared Sub Main()
-			Dim form As NMainForm = New NMainForm()
+			Dim form As New NMainForm()
 
 			Application.Run(form)
 		End Sub
@@ -103,15 +99,10 @@ Namespace Nevron.Examples.Chart.WinForm
 			Dim nWidth As Integer = uc.Width + 10
 			Dim nHeight As Integer = uc.Height + 60
 
-			Dim newLayout As ExampleLayout
-			If (nWidth > 330) Then
-				newLayout = ExampleLayout.WideScreen
-			Else
-				newLayout = ExampleLayout.Standard
-			End If
+			Dim newLayout As ExampleLayout = If(nWidth > 330, ExampleLayout.WideScreen, ExampleLayout.Standard)
 
 			If m_CurrentLayout = newLayout Then
-				If Not ExamplePanel.ParentZone Is Nothing Then
+				If ExamplePanel.ParentZone IsNot Nothing Then
 					If newLayout = ExampleLayout.WideScreen Then
 						ExamplePanel.SizeInfo.AbsoluteSize = New Size(0, nHeight)
 					ElseIf newLayout = ExampleLayout.Standard Then
@@ -127,7 +118,7 @@ Namespace Nevron.Examples.Chart.WinForm
 					Dim zone As INDockZone = DockManager.m_ControlHost.ParentZone
 					Dim dpHost As NDockingPanelHost = FindDockingPanelHostInZone(zone)
 
-					If Not dpHost Is Nothing Then
+					If dpHost IsNot Nothing Then
 						ExamplePanel.PerformDock(dpHost, DockStyle.Fill, 0)
 					Else
 						ExamplePanel.PerformDock(zone, DockStyle.Bottom, 0)
@@ -142,7 +133,7 @@ Namespace Nevron.Examples.Chart.WinForm
 		End Sub
 
 		Protected Overrides Function CreateExampleControl(ByVal example As NExampleEntity) As NExampleUserControl
-			Dim uc As NExampleBaseUC = CType(MyBase.CreateExampleControl(example), NExampleBaseUC)
+			Dim uc As NExampleBaseUC = DirectCast(MyBase.CreateExampleControl(example), NExampleBaseUC)
 
 			uc.nChartControl1 = chartControl
 
@@ -165,7 +156,7 @@ Namespace Nevron.Examples.Chart.WinForm
 			For Each child As INDockZoneChild In zone.Children
 				Dim host As NDockingPanelHost = TryCast(child, NDockingPanelHost)
 
-				If Not host Is Nothing Then
+				If host IsNot Nothing Then
 					Return host
 				End If
 			Next child
@@ -175,41 +166,40 @@ Namespace Nevron.Examples.Chart.WinForm
 		Private Sub SetupToolbarCommands()
 			Return
 
-			chartCommandBarsManager.Toolbars("Aspect").Visible = False
-			chartCommandBarsManager.Toolbars("Panel").Visible = False
-			chartCommandBarsManager.Toolbars("Format").Visible = False
-
-			Dim standardCommands As NCommandCollection = chartCommandBarsManager.Toolbars("Standard").Commands
-			standardCommands.RemoveAt(7)
-			standardCommands.RemoveAt(6)
-			standardCommands.RemoveAt(5)
-			standardCommands.RemoveAt(1)
-			standardCommands.RemoveAt(0)
-
-			Dim toolsCommands As NCommandCollection = chartCommandBarsManager.Toolbars("Tools").Commands
-			toolsCommands.RemoveAt(3)
-			toolsCommands.RemoveAt(2)
-
-			Dim projectionCommands As NCommandCollection = chartCommandBarsManager.Toolbars("Projection").Commands
-			projectionCommands.RemoveAt(12)
-			projectionCommands.RemoveAt(8)
-			projectionCommands.RemoveAt(7)
-			projectionCommands.RemoveAt(6)
-			projectionCommands.RemoveAt(5)
-			projectionCommands.RemoveAt(4)
-			projectionCommands.RemoveAt(3)
-			projectionCommands.RemoveAt(2)
-			projectionCommands.RemoveAt(1)
-
-			Dim i As Integer = 0
-			Do While i < chartCommandBarsManager.Toolbars.Count
-				Dim toolbar As NDockingToolbar = chartCommandBarsManager.Toolbars(i)
-				toolbar.HasPendantCommand = False
-				toolbar.AllowHide = False
-				toolbar.AllowDelete = False
-				toolbar.RowIndex = 0
-				i += 1
-			Loop
+'			chartCommandBarsManager.Toolbars["Aspect"].Visible = false;
+'			chartCommandBarsManager.Toolbars["Panel"].Visible = false;
+'			chartCommandBarsManager.Toolbars["Format"].Visible = false;
+'
+'			NCommandCollection standardCommands = chartCommandBarsManager.Toolbars["Standard"].Commands;
+'			standardCommands.RemoveAt(7);
+'			standardCommands.RemoveAt(6);
+'			standardCommands.RemoveAt(5);
+'			standardCommands.RemoveAt(1);
+'			standardCommands.RemoveAt(0);
+'
+'			NCommandCollection toolsCommands = chartCommandBarsManager.Toolbars["Tools"].Commands;
+'			toolsCommands.RemoveAt(3);
+'			toolsCommands.RemoveAt(2);
+'
+'			NCommandCollection projectionCommands = chartCommandBarsManager.Toolbars["Projection"].Commands;
+'			projectionCommands.RemoveAt(12);
+'			projectionCommands.RemoveAt(8);
+'			projectionCommands.RemoveAt(7);
+'			projectionCommands.RemoveAt(6);
+'			projectionCommands.RemoveAt(5);
+'			projectionCommands.RemoveAt(4);
+'			projectionCommands.RemoveAt(3);
+'			projectionCommands.RemoveAt(2);
+'			projectionCommands.RemoveAt(1);
+'
+'			for (int i = 0; i < chartCommandBarsManager.Toolbars.Count; i++)
+'			{
+'				NDockingToolbar toolbar = chartCommandBarsManager.Toolbars[i];
+'				toolbar.HasPendantCommand = false;
+'				toolbar.AllowHide = false;
+'				toolbar.AllowDelete = false;
+'				toolbar.RowIndex = 0;
+'			}
 		End Sub
 
 		#End Region

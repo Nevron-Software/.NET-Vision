@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Drawing
@@ -13,10 +12,11 @@ Imports Nevron.Chart.WinForm
 Imports Nevron.Chart.Windows
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NWavesUC
 		Inherits NExampleBaseUC
-		Private m_Oscillators As List(Of Oscillator) = New List(Of Oscillator)()
+
+		Private m_Oscillators As New List(Of Oscillator)()
 		Private WithEvents m_Timer As System.Windows.Forms.Timer
 		Private WithEvents AddWaveButton As Nevron.UI.WinForm.Controls.NButton
 		Private IndicatorLabel As System.Windows.Forms.Label
@@ -41,9 +41,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		''' <summary>
 		''' Clean up any resources being used.
 		''' </summary>
-		Protected Overrides Overloads Sub Dispose(ByVal disposing As Boolean)
+		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 			If disposing Then
-				If Not components Is Nothing Then
+				If components IsNot Nothing Then
 					components.Dispose()
 				End If
 			End If
@@ -68,7 +68,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			' 
 			' timer1
 			' 
-'			Me.m_Timer.Tick += New System.EventHandler(Me.timer1_Tick);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.m_Timer.Tick += new System.EventHandler(this.timer1_Tick);
 			' 
 			' AddWaveButton
 			' 
@@ -77,7 +78,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.AddWaveButton.Size = New System.Drawing.Size(122, 23)
 			Me.AddWaveButton.TabIndex = 0
 			Me.AddWaveButton.Text = "Add Wave"
-'			Me.AddWaveButton.Click += New System.EventHandler(Me.AddWaveButton_Click);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.AddWaveButton.Click += new System.EventHandler(this.AddWaveButton_Click);
 			' 
 			' IndicatorLabel
 			' 
@@ -95,7 +97,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.RenderToWindowCheck.Size = New System.Drawing.Size(149, 20)
 			Me.RenderToWindowCheck.TabIndex = 3
 			Me.RenderToWindowCheck.Text = "Render to window"
-'			Me.RenderToWindowCheck.CheckedChanged += New System.EventHandler(Me.RenderToWindowCheck_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.RenderToWindowCheck.CheckedChanged += new System.EventHandler(this.RenderToWindowCheck_CheckedChanged);
 			' 
 			' SemiTransparentCheck
 			' 
@@ -105,7 +108,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.SemiTransparentCheck.Size = New System.Drawing.Size(175, 20)
 			Me.SemiTransparentCheck.TabIndex = 4
 			Me.SemiTransparentCheck.Text = "Semi transparent surface"
-'			Me.SemiTransparentCheck.CheckedChanged += New System.EventHandler(Me.SemiTransparentCheck_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.SemiTransparentCheck.CheckedChanged += new System.EventHandler(this.SemiTransparentCheck_CheckedChanged);
 			' 
 			' smoothShadingCheck
 			' 
@@ -115,7 +119,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.smoothShadingCheck.Size = New System.Drawing.Size(152, 20)
 			Me.smoothShadingCheck.TabIndex = 2
 			Me.smoothShadingCheck.Text = "Smooth Shading"
-'			Me.smoothShadingCheck.CheckedChanged += New System.EventHandler(Me.SmoothShadingCheck_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.smoothShadingCheck.CheckedChanged += new System.EventHandler(this.SmoothShadingCheck_CheckedChanged);
 			' 
 			' NWavesUC
 			' 
@@ -134,7 +139,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		Public Overrides Sub Initialize()
 			MyBase.Initialize()
 
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.None
+			' Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window
+
 			nChartControl1.Controller.Tools.Add(New NPanelSelectorTool())
 			nChartControl1.Controller.Tools.Add(New NTrackballTool())
 
@@ -150,9 +157,9 @@ Namespace Nevron.Examples.Chart.WinForm
 			' setup chart
 			Dim chart As NChart = nChartControl1.Charts(0)
 			chart.Enable3D = True
-			chart.Width = 55.0f
-			chart.Depth = 55.0f
-			chart.Height = 20.0f
+			chart.Width = 55.0F
+			chart.Depth = 55.0F
+			chart.Height = 20.0F
 			chart.Projection.SetPredefinedProjection(PredefinedProjection.PerspectiveTilted)
 			chart.LightModel.SetPredefinedLightModel(PredefinedLightModel.GlitterLeft)
 
@@ -195,15 +202,11 @@ Namespace Nevron.Examples.Chart.WinForm
 			Dim nCountX As Integer = surface.Data.GridSizeX
 			Dim nCountZ As Integer = surface.Data.GridSizeZ
 
-			Dim j As Integer = 0
-			Do While j < nCountZ
-				Dim i As Integer = 0
-				Do While i < nCountX
+			For j As Integer = 0 To nCountZ - 1
+				For i As Integer = 0 To nCountX - 1
 					surface.Data.SetValue(i, j, 0.0)
-					i += 1
-				Loop
-				j += 1
-			Loop
+				Next i
+			Next j
 		End Sub
 
 		Private Sub GenerateWaves()
@@ -260,8 +263,7 @@ Namespace Nevron.Examples.Chart.WinForm
 		Private Function CalulateWavesAtPoint(ByVal x As Double, ByVal z As Double) As Double
 			Dim dValue As Double = 0
 
-			Dim i As Integer = 0
-			Do While i < m_Oscillators.Count
+			For i As Integer = 0 To m_Oscillators.Count - 1
 				Dim osc As Oscillator = m_Oscillators(i)
 
 				Dim distX As Double = x - osc.m_dCenterX
@@ -269,8 +271,7 @@ Namespace Nevron.Examples.Chart.WinForm
 				Dim dist As Double = Math.Sqrt(distX * distX + distZ * distZ)
 
 				dValue += osc.m_dAmplitude * Math.Sin(dist - osc.m_dTime) * Math.Exp(-dist * 0.05)
-				i += 1
-			Loop
+			Next i
 
 			Return dValue
 		End Function
@@ -283,7 +284,7 @@ Namespace Nevron.Examples.Chart.WinForm
 				IndicatorLabel.BackColor = Color.Red
 			End If
 
-			Dim osc As Oscillator = New Oscillator()
+			Dim osc As New Oscillator()
 			osc.m_nFrame = 0
 			osc.m_dCenterX = 10.0 - Random.NextDouble() * 20
 			osc.m_dCenterZ = 10.0 - Random.NextDouble() * 20
@@ -312,12 +313,7 @@ Namespace Nevron.Examples.Chart.WinForm
 		End Sub
 
 		Private Sub SemiTransparentCheck_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles SemiTransparentCheck.CheckedChanged
-			Dim fPercent As Single
-			If SemiTransparentCheck.Checked Then
-				fPercent = 20
-			Else
-				fPercent = 0
-			End If
+			Dim fPercent As Single = If(SemiTransparentCheck.Checked, 20, 0)
 
 			Dim chart As NChart = nChartControl1.Charts(0)
 			Dim surface As NGridSurfaceSeries = CType(chart.Series(0), NGridSurfaceSeries)

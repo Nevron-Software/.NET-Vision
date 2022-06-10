@@ -13,7 +13,7 @@ Imports Nevron.Chart.Windows
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NFinancialChartUC
 		Inherits NExampleBaseUC
 

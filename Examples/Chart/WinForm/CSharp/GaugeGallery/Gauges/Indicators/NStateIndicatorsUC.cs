@@ -367,10 +367,6 @@ namespace Nevron.Examples.Chart.WinForm
 			m_Speed = GetSpeedFromRotation();
 			m_SpeedIndicator.Value = m_Speed;
 
-			if (m_Speed > 140)
-			{
-				Debug.WriteLine("Intercept");
-			}
 			if (m_Speed > 0)
 			{
 				m_SpeedStateIndicator.Value = m_Speed;

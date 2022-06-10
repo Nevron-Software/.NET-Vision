@@ -9,7 +9,7 @@ Imports Nevron.Editors
 Imports Nevron.Chart
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NXYZScatterLineUC
 		Inherits NExampleBaseUC
 

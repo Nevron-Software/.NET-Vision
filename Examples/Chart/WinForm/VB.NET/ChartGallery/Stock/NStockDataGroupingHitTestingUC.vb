@@ -1,16 +1,20 @@
 ﻿Imports System
+Imports System.Resources
+Imports System.Collections
 Imports System.ComponentModel
 Imports System.Drawing
-Imports System.Text
+Imports System.Data
 Imports System.Windows.Forms
-Imports Microsoft.VisualBasic
+Imports Nevron.Dom
+Imports Nevron.GraphicsCore
+Imports Nevron.Editors
 Imports Nevron.Chart
 Imports Nevron.Chart.Windows
-Imports Nevron.GraphicsCore
+Imports System.Text
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NStockDataGroupingHitTestingUC
 		Inherits NExampleBaseUC
 
@@ -159,7 +163,7 @@ Namespace Nevron.Examples.Chart.WinForm
 			' add some stock items
 			Const numDataPoints As Integer = 10000
 			GenerateOHLCData(m_Stock, 100.0, numDataPoints, New NRange1DD(60, 140))
-			FillStockDates(m_Stock, numDataPoints, Date.Now - New TimeSpan(CInt(Fix(numDataPoints * 1.2)), 0, 0, 0))
+			FillStockDates(m_Stock, numDataPoints, Date.Now - New TimeSpan(CInt(Math.Truncate(numDataPoints * 1.2)), 0, 0, 0))
 
 			nChartControl1.Controller.Tools.Add(New NPanelSelectorTool())
 			nChartControl1.Controller.Tools.Add(New NAxisScrollTool())

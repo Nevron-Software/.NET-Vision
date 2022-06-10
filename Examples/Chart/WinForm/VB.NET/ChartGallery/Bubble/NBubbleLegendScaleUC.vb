@@ -10,7 +10,7 @@ Imports Nevron.Chart
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NBubbleLegendScaleUC
 		Inherits NExampleBaseUC
 
@@ -216,8 +216,6 @@ Namespace Nevron.Examples.Chart.WinForm
 			m_Bubble = CType(m_Chart.Series.Add(SeriesType.Bubble), NBubbleSeries)
 			m_Bubble.DataLabelStyle.VertAlign = VertAlign.Center
 			m_Bubble.DataLabelStyle.Visible = False
-			m_Bubble.Legend.Mode = SeriesLegendMode.DataPoints
-			m_Bubble.Legend.Format = "Size <size>, Value <value>"
 			m_Bubble.MinSize = New NLength(7.0F, NRelativeUnit.ParentPercentage)
 			m_Bubble.MaxSize = New NLength(16.0F, NRelativeUnit.ParentPercentage)
 
@@ -256,60 +254,59 @@ Namespace Nevron.Examples.Chart.WinForm
 			BubbleScaleModeCombo_SelectedIndexChanged(Nothing, Nothing)
 		End Sub
 
-        Private Sub BubbleScaleModeCombo_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles BubbleScaleModeCombo.SelectedIndexChanged
-            If m_Bubble Is Nothing Then
-                Return
-            End If
+		Private Sub BubbleScaleModeCombo_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles BubbleScaleModeCombo.SelectedIndexChanged
+			If m_Bubble Is Nothing Then
+				Return
+			End If
 
-            m_Bubble.BubbleSizeScale.Mode = CType(BubbleScaleModeCombo.SelectedIndex, BubbleSizeScaleMode)
+			m_Bubble.BubbleSizeScale.Mode = CType(BubbleScaleModeCombo.SelectedIndex, BubbleSizeScaleMode)
 
-            Select Case m_Bubble.BubbleSizeScale.Mode
-                Case BubbleSizeScaleMode.ConcentricDown, BubbleSizeScaleMode.ConcentricUp
-                    m_Bubble.BubbleSizeScale.TextStyle.StringFormatStyle.HorzAlign = HorzAlign.Center
-                    TableCellOffsetNumericUpDown.Enabled = False
-                Case BubbleSizeScaleMode.TableAscending, BubbleSizeScaleMode.TableDescending
-                    m_Bubble.BubbleSizeScale.TextStyle.StringFormatStyle.HorzAlign = HorzAlign.Left
-                    TableCellOffsetNumericUpDown.Enabled = True
-            End Select
+			Select Case m_Bubble.BubbleSizeScale.Mode
+				Case BubbleSizeScaleMode.ConcentricDown, BubbleSizeScaleMode.ConcentricUp
+					m_Bubble.BubbleSizeScale.TextStyle.StringFormatStyle.HorzAlign = HorzAlign.Center
+					TableCellOffsetNumericUpDown.Enabled = False
+				Case BubbleSizeScaleMode.TableAscending, BubbleSizeScaleMode.TableDescending
+					m_Bubble.BubbleSizeScale.TextStyle.StringFormatStyle.HorzAlign = HorzAlign.Left
+					TableCellOffsetNumericUpDown.Enabled = True
+			End Select
 
-            nChartControl1.Refresh()
-        End Sub
+			nChartControl1.Refresh()
+		End Sub
 
-        Private Sub TextOffsetNumericUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles TextOffsetNumericUpDown.ValueChanged
-            If m_Bubble Is Nothing Then
-                Return
-            End If
+		Private Sub TextOffsetNumericUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles TextOffsetNumericUpDown.ValueChanged
+			If m_Bubble Is Nothing Then
+				Return
+			End If
 
-            m_Bubble.BubbleSizeScale.TextOffset = New NLength(CInt(Math.Truncate(TextOffsetNumericUpDown.Value)))
-            nChartControl1.Refresh()
-        End Sub
+			m_Bubble.BubbleSizeScale.TextOffset = New NLength(CInt(Math.Truncate(TextOffsetNumericUpDown.Value)))
+			nChartControl1.Refresh()
+		End Sub
 
-        Private Sub TableCellOffsetNumericUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles TableCellOffsetNumericUpDown.ValueChanged
-            If m_Bubble Is Nothing Then
-                Return
-            End If
+		Private Sub TableCellOffsetNumericUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles TableCellOffsetNumericUpDown.ValueChanged
+			If m_Bubble Is Nothing Then
+				Return
+			End If
 
-            m_Bubble.BubbleSizeScale.TableCellOffset = New NLength(CInt(Math.Truncate(TableCellOffsetNumericUpDown.Value)))
-            nChartControl1.Refresh()
-        End Sub
+			m_Bubble.BubbleSizeScale.TableCellOffset = New NLength(CInt(Math.Truncate(TableCellOffsetNumericUpDown.Value)))
+			nChartControl1.Refresh()
+		End Sub
 
-        Private Sub BubbleScaleStepsUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles BubbleScaleStepsUpDown.ValueChanged
-            If m_Bubble Is Nothing Then
-                Return
-            End If
+		Private Sub BubbleScaleStepsUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles BubbleScaleStepsUpDown.ValueChanged
+			If m_Bubble Is Nothing Then
+				Return
+			End If
+			m_Bubble.BubbleSizeScale.Steps = CInt(Math.Truncate(BubbleScaleStepsUpDown.Value))
+			nChartControl1.Refresh()
+		End Sub
 
-            m_Bubble.BubbleSizeScale.Steps = CInt(Math.Truncate(BubbleScaleStepsUpDown.Value))
-            nChartControl1.Refresh()
-        End Sub
+		Private Sub RoundValuesCheckBox_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs) Handles RoundValuesCheckBox.CheckedChanged
+			If m_Bubble Is Nothing Then
+				Return
+			End If
 
-        Private Sub RoundValuesCheckBox_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs) Handles RoundValuesCheckBox.CheckedChanged
-            If m_Bubble Is Nothing Then
-                Return
-            End If
-
-            m_Bubble.BubbleSizeScale.RoundValues = RoundValuesCheckBox.Checked
-            nChartControl1.Refresh()
-        End Sub
+			m_Bubble.BubbleSizeScale.RoundValues = RoundValuesCheckBox.Checked
+			nChartControl1.Refresh()
+		End Sub
 
 		Private Sub StrokeStyleButton_Click(ByVal sender As Object, ByVal e As EventArgs) Handles StrokeStyleButton.Click
 			Dim strokeStyleResult As NStrokeStyle = Nothing

@@ -11,7 +11,7 @@ Imports Nevron.Chart.WinForm
 Imports Nevron.Chart.Windows
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class ViewportToScaleUC
 		Inherits NExampleBaseUC
 
@@ -373,7 +373,7 @@ Namespace Nevron.Examples.Chart.WinForm
 			Dim zAxis As NAxis = m_Chart.Axis(StandardAxis.Depth)
 
 			If CreatePointAtPlaneComboBox.SelectedIndex = 0 Then
-				viewToScale = New NViewToScale3DTransformation(nChartControl1.View.Context, m_Chart, CInt(StandardAxis.PrimaryX), CInt(StandardAxis.Depth), CInt(StandardAxis.PrimaryY), CDbl(XZPlaneValueNumericUpDown.Value))
+				viewToScale = New NViewToScale3DTransformation(m_Chart, CInt(StandardAxis.PrimaryX), CInt(StandardAxis.Depth), CInt(StandardAxis.PrimaryY), CDbl(XZPlaneValueNumericUpDown.Value))
 
 				If viewToScale.Transform(ptViewPoint, vecScalePoint) Then
 					If ClampValuesToRulerCheckBox.Checked Then
@@ -386,7 +386,7 @@ Namespace Nevron.Examples.Chart.WinForm
 					nChartControl1.Refresh()
 				End If
 			Else
-				viewToScale = New NViewToScale3DTransformation(nChartControl1.View.Context, m_Chart, CInt(StandardAxis.PrimaryX), CInt(StandardAxis.PrimaryY), CInt(StandardAxis.Depth), CDbl(XYPlaneValueNumericUpDown.Value))
+				viewToScale = New NViewToScale3DTransformation(m_Chart, CInt(StandardAxis.PrimaryX), CInt(StandardAxis.PrimaryY), CInt(StandardAxis.Depth), CDbl(XYPlaneValueNumericUpDown.Value))
 
 				If viewToScale.Transform(ptViewPoint, vecScalePoint) Then
 					If ClampValuesToRulerCheckBox.Checked Then

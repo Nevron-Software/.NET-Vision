@@ -10,7 +10,7 @@ Imports Nevron.UI
 Imports System.Drawing
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Partial Public Class NTreeMapLegendUC
 		Inherits NExampleBaseUC
 

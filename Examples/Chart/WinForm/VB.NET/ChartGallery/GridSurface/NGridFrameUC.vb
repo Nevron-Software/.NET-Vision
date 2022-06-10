@@ -1,21 +1,16 @@
-Imports Microsoft.VisualBasic
+﻿Imports Nevron.Chart
+Imports Nevron.Chart.Windows
+Imports Nevron.Editors
+Imports Nevron.GraphicsCore
 Imports System
-Imports System.Collections
 Imports System.ComponentModel
 Imports System.Drawing
-Imports System.Drawing.Drawing2D
-Imports System.Data
-Imports System.Windows.Forms
-Imports Nevron.GraphicsCore
-Imports Nevron.Editors
-Imports Nevron.Chart
-Imports Nevron.Chart.WinForm
-Imports Nevron.Chart.Windows
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NGridFrameUC
 		Inherits NExampleBaseUC
+
 		Private m_Chart As NChart
 		Private m_Surface As NGridSurfaceSeries
 		Private WithEvents paletteFrameCheck As Nevron.UI.WinForm.Controls.NCheckBox
@@ -31,15 +26,14 @@ Namespace Nevron.Examples.Chart.WinForm
 		''' <summary> 
 		''' Clean up any resources being used.
 		''' </summary>
-		Protected Overrides Overloads Sub Dispose(ByVal disposing As Boolean)
+		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 			If disposing Then
-				If Not components Is Nothing Then
+				If components IsNot Nothing Then
 					components.Dispose()
 				End If
 			End If
 			MyBase.Dispose(disposing)
 		End Sub
-
 
 		#Region "Component Designer generated code"
 		''' <summary> 
@@ -61,7 +55,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.paletteFrameCheck.Size = New System.Drawing.Size(157, 20)
 			Me.paletteFrameCheck.TabIndex = 0
 			Me.paletteFrameCheck.Text = "Palette Frame"
-'			Me.paletteFrameCheck.CheckedChanged += New System.EventHandler(Me.paletteFrameCheck_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.paletteFrameCheck.CheckedChanged += new System.EventHandler(this.paletteFrameCheck_CheckedChanged);
 			' 
 			' smoothPaletteCheck
 			' 
@@ -72,7 +67,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.smoothPaletteCheck.Size = New System.Drawing.Size(157, 20)
 			Me.smoothPaletteCheck.TabIndex = 1
 			Me.smoothPaletteCheck.Text = "Smooth Palette"
-'			Me.smoothPaletteCheck.CheckedChanged += New System.EventHandler(Me.smoothPaletteCheck_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.smoothPaletteCheck.CheckedChanged += new System.EventHandler(this.smoothPaletteCheck_CheckedChanged);
 			' 
 			' antialiasCheck
 			' 
@@ -82,7 +78,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.antialiasCheck.Size = New System.Drawing.Size(157, 21)
 			Me.antialiasCheck.TabIndex = 2
 			Me.antialiasCheck.Text = "Antialiasing"
-'			Me.antialiasCheck.CheckedChanged += New System.EventHandler(Me.antialiasCheck_CheckedChanged);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.antialiasCheck.CheckedChanged += new System.EventHandler(this.antialiasCheck_CheckedChanged);
 			' 
 			' lineStyleButton
 			' 
@@ -91,7 +88,8 @@ Namespace Nevron.Examples.Chart.WinForm
 			Me.lineStyleButton.Size = New System.Drawing.Size(157, 27)
 			Me.lineStyleButton.TabIndex = 3
 			Me.lineStyleButton.Text = "Line Style..."
-'			Me.lineStyleButton.Click += New System.EventHandler(Me.lineStyleButton_Click);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.lineStyleButton.Click += new System.EventHandler(this.lineStyleButton_Click);
 			' 
 			' NGridFrameUC
 			' 
@@ -110,6 +108,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		Public Overrides Sub Initialize()
 			MyBase.Initialize()
 
+			' Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window
+
 			' set a chart title
 			Dim title As NLabel = nChartControl1.Labels.AddHeader("Wireframe Surface")
 			title.TextStyle.FontStyle = New NFontStyle("Times New Roman", 18, FontStyle.Italic)
@@ -118,11 +119,13 @@ Namespace Nevron.Examples.Chart.WinForm
 			' setup chart
 			m_Chart = nChartControl1.Charts(0)
 			m_Chart.Enable3D = True
-			m_Chart.Width = 60.0f
-			m_Chart.Depth = 60.0f
-			m_Chart.Height = 25.0f
+			m_Chart.Width = 60.0F
+			m_Chart.Depth = 60.0F
+			m_Chart.Height = 25.0F
 			m_Chart.Projection.SetPredefinedProjection(PredefinedProjection.PerspectiveTilted)
 			m_Chart.LightModel.SetPredefinedLightModel(PredefinedLightModel.ShinyTopLeft)
+
+			nChartControl1.Controller.Tools.Add(New NPanelSelectorTool())
 			nChartControl1.Controller.Tools.Add(New NTrackballTool())
 
 			' setup axes
@@ -216,16 +219,12 @@ Namespace Nevron.Examples.Chart.WinForm
 		End Sub
 
 		Private Sub antialiasCheck_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles antialiasCheck.CheckedChanged
-			If antialiasCheck.Checked Then
-				nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.AntiAlias
-			Else
-				nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.None
-			End If
+			nChartControl1.Settings.ShapeRenderingMode = If(antialiasCheck.Checked, ShapeRenderingMode.AntiAlias, ShapeRenderingMode.None)
 			nChartControl1.Refresh()
 		End Sub
 
 		Private Sub lineStyleButton_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles lineStyleButton.Click
-			Dim strokeStyleResult As NStrokeStyle
+			Dim strokeStyleResult As NStrokeStyle = Nothing
 
 			If NStrokeStyleTypeEditor.Edit(m_Surface.FrameStrokeStyle, strokeStyleResult) Then
 				m_Surface.FrameStrokeStyle = strokeStyleResult

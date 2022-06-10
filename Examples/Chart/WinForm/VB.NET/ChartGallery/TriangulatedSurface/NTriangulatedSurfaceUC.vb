@@ -14,7 +14,7 @@ Imports Nevron.Chart.Windows
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NTriangulatedSurfaceUC
 		Inherits NExampleBaseUC
 
@@ -308,7 +308,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		Public Overrides Sub Initialize()
 			MyBase.Initialize()
 
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.None
+			' Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window
+
 			nChartControl1.Controller.Tools.Add(New NPanelSelectorTool())
 			nChartControl1.Controller.Tools.Add(New NTrackballTool())
 
@@ -390,20 +392,26 @@ Namespace Nevron.Examples.Chart.WinForm
 
 				Dim nDataPointsCount As Integer = CInt(stream.Length) \ 12
 
+				'surface.Data.SetCapacity(nDataPointsCount);
+				Dim data(nDataPointsCount - 1) As NVector3DF
+
 				' fill Y values
 				For i As Integer = 0 To nDataPointsCount - 1
-					surface.Values.Add(reader.ReadSingle())
+					data(i).Y = reader.ReadSingle()
 				Next i
 
 				' fill X values
 				For i As Integer = 0 To nDataPointsCount - 1
-					surface.XValues.Add(reader.ReadSingle())
+					data(i).X = reader.ReadSingle()
 				Next i
 
 				' fill Z values
 				For i As Integer = 0 To nDataPointsCount - 1
-					surface.ZValues.Add(reader.ReadSingle())
+					data(i).Z = reader.ReadSingle()
 				Next i
+
+				surface.Data.Clear()
+				surface.Data.AddValues(data)
 			Finally
 				If reader IsNot Nothing Then
 					reader.Close()

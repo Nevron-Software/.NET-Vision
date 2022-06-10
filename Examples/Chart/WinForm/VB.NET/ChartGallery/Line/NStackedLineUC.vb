@@ -10,7 +10,7 @@ Imports Nevron.Editors
 Imports Nevron.Chart
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NStackedLineUC
 		Inherits NExampleBaseUC
 
@@ -323,19 +323,18 @@ Namespace Nevron.Examples.Chart.WinForm
 		End Sub
 
 		Private Sub StackModeCombo_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles StackModeCombo.SelectedIndexChanged
-'INSTANT VB NOTE: The variable scale was renamed since Visual Basic does not handle local variables named the same as class members well:
-			Dim scale_Renamed As NStandardScaleConfigurator = TryCast(m_Chart.Axis(StandardAxis.PrimaryY).ScaleConfigurator, NStandardScaleConfigurator)
+			Dim scale As NStandardScaleConfigurator = TryCast(m_Chart.Axis(StandardAxis.PrimaryY).ScaleConfigurator, NStandardScaleConfigurator)
 
 			Select Case StackModeCombo.SelectedIndex
 				Case 0
 					m_Line2.MultiLineMode = MultiLineMode.Stacked
 					m_Line3.MultiLineMode = MultiLineMode.Stacked
-					scale_Renamed.LabelValueFormatter = New NNumericValueFormatter(NumericValueFormat.General)
+					scale.LabelValueFormatter = New NNumericValueFormatter(NumericValueFormat.General)
 
 				Case 1
 					m_Line2.MultiLineMode = MultiLineMode.StackedPercent
 					m_Line3.MultiLineMode = MultiLineMode.StackedPercent
-					scale_Renamed.LabelValueFormatter = New NNumericValueFormatter(NumericValueFormat.Percentage)
+					scale.LabelValueFormatter = New NNumericValueFormatter(NumericValueFormat.Percentage)
 			End Select
 
 			nChartControl1.Refresh()

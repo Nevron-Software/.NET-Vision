@@ -10,7 +10,7 @@ Imports Nevron.Editors
 Imports Nevron.Chart
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NGridContourUC
 		Inherits NExampleBaseUC
 
@@ -123,7 +123,8 @@ Namespace Nevron.Examples.Chart.WinForm
 		Public Overrides Sub Initialize()
 			MyBase.Initialize()
 
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.HighSpeed
+			' Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window
 
 			' set a chart title
 			Dim title As New NLabel("Contour Chart")

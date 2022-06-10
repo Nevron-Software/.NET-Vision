@@ -1,20 +1,13 @@
-﻿Imports System
-Imports System.Collections
+﻿Imports Nevron.Chart
+Imports Nevron.Chart.Windows
+Imports Nevron.GraphicsCore
+Imports System
 Imports System.ComponentModel
 Imports System.Drawing
-Imports System.Data
-Imports System.IO
-Imports System.Windows.Forms
-Imports Nevron.UI
-Imports Nevron.GraphicsCore
-Imports Nevron.Editors
-Imports Nevron.Chart
-Imports Nevron.Chart.WinForm
-Imports Nevron.Chart.Windows
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NTriangulatedSurfaceSimplificationUC
 		Inherits NExampleBaseUC
 
@@ -366,7 +359,9 @@ Namespace Nevron.Examples.Chart.WinForm
 		Public Overrides Sub Initialize()
 			MyBase.Initialize()
 
-			nChartControl1.Settings.ShapeRenderingMode = ShapeRenderingMode.None
+			' Enable GPU acceleration
+			nChartControl1.Settings.RenderSurface = RenderSurface.Window
+
 			nChartControl1.Settings.JitterMode = JitterMode.Disabled
 			nChartControl1.Controller.Tools.Add(New NPanelSelectorTool())
 			nChartControl1.Controller.Tools.Add(New NTrackballTool())
@@ -419,11 +414,7 @@ Namespace Nevron.Examples.Chart.WinForm
 			surface.SyncPaletteWithAxisScale = False
 			surface.ValueFormatter.FormatSpecifier = "0.00"
 			surface.FillStyle = New NColorFillStyle(Color.YellowGreen)
-			surface.UsePreciseGeometry = True
 
-			' set clustering parameters
-			surface.ClusterMode = ClusterMode.Enabled
-			surface.ClusterDistanceFactor = 0.01
 
 			FillData()
 
@@ -441,67 +432,73 @@ Namespace Nevron.Examples.Chart.WinForm
 			customValueScroll.Value = 100
 		End Sub
 
+		Private m_SurfaceVectorData() As NVector3DD
+
 		Private Sub FillData()
+			If nChartControl1 Is Nothing Then
+				Return
+			End If
+
 			Dim chart As NChart = nChartControl1.Charts(0)
 			Dim surface As NTriangulatedSurfaceSeries = CType(chart.Series(0), NTriangulatedSurfaceSeries)
+			Dim surfaceData As NTriangulatedSurfaceData = surface.Data
 
-			Dim rand As New Random()
+			If m_SurfaceVectorData Is Nothing Then
+				Dim rand As New Random()
 
-			Const countX As Integer = 100
-			Const countZ As Integer = 100
+				Const countX As Integer = 100
+				Const countZ As Integer = 100
 
-			Dim rangeX As New NRange1DD(-10, 10)
-			Dim rangeZ As New NRange1DD(-10, 10)
+				Dim rangeX As New NRange1DD(-10, 10)
+				Dim rangeZ As New NRange1DD(-10, 10)
 
-			Dim stepX As Double = rangeX.GetLength() / (countX - 1)
-			Dim stepZ As Double = rangeZ.GetLength() / (countZ - 1)
+				Dim stepX As Double = rangeX.GetLength() / (countX - 1)
+				Dim stepZ As Double = rangeZ.GetLength() / (countZ - 1)
 
-			Dim cx As Double = -3.0
-			Dim cz As Double = -5.0
+				Dim cx As Double = -3.0
+				Dim cz As Double = -5.0
 
-			For n As Integer = 0 To countZ - 1
-				Dim z As Double = rangeZ.Begin + n * stepZ
+				Dim vectorData((countZ * countX) - 1) As NVector3DD
+				Dim index As Integer = 0
 
-				For m As Integer = 0 To countX - 1
-					Dim x As Double = rangeX.Begin + m * stepX
-					Dim dx As Double = cx - x
-					Dim dz As Double = cz - z
-					Dim distance As Double = Math.Sqrt(dx * dx + dz * dz)
+				For n As Integer = 0 To countZ - 1
+					Dim z As Double = rangeZ.Begin + n * stepZ
 
-					surface.Values.Add(Math.Sin(distance) * Math.Exp(-distance * 0.1))
-					surface.XValues.Add(x)
-					surface.ZValues.Add(z)
-				Next m
-			Next n
+					For m As Integer = 0 To countX - 1
+						Dim x As Double = rangeX.Begin + m * stepX
+						Dim dx As Double = cx - x
+						Dim dz As Double = cz - z
+						Dim distance As Double = Math.Sqrt(dx * dx + dz * dz)
+
+						vectorData(index) = New NVector3DD(x, Math.Sin(distance) * Math.Exp(-distance * 0.1), z)
+						index += 1
+					Next m
+				Next n
+
+				m_SurfaceVectorData = vectorData
+			End If
+
+			Dim newSurfaceVectorData() As NVector3DD = m_SurfaceVectorData
+
+
+			If enableClusteringCheck.Checked Then
+				Dim simplifier As New NPointSetSimplifier3D()
+				simplifier.DistanceFactor = CDbl(distanceFactorNumericUpDown.Value)
+
+				newSurfaceVectorData = simplifier.Simplify(newSurfaceVectorData)
+			End If
+
+			surfaceData.Clear()
+			surfaceData.AddValues(newSurfaceVectorData)
+
+			nChartControl1.Refresh()
 		End Sub
 
 		Private Sub EnableClusteringCheck_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs) Handles enableClusteringCheck.CheckedChanged
-			If nChartControl1 Is Nothing Then
-				Return
-			End If
-
-			Dim chart As NChart = nChartControl1.Charts(0)
-			Dim surface As NTriangulatedSurfaceSeries = CType(chart.Series(0), NTriangulatedSurfaceSeries)
-
-			If enableClusteringCheck.Checked Then
-				surface.ClusterMode = ClusterMode.Enabled
-			Else
-				surface.ClusterMode = ClusterMode.Disabled
-			End If
-
-			nChartControl1.Refresh()
+			FillData()
 		End Sub
 		Private Sub DistanceFactorNumericUpDown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles distanceFactorNumericUpDown.ValueChanged
-			If nChartControl1 Is Nothing Then
-				Return
-			End If
-
-			Dim chart As NChart = nChartControl1.Charts(0)
-			Dim surface As NTriangulatedSurfaceSeries = CType(chart.Series(0), NTriangulatedSurfaceSeries)
-
-			surface.ClusterDistanceFactor = CDbl(distanceFactorNumericUpDown.Value)
-
-			nChartControl1.Refresh()
+			FillData()
 		End Sub
 		Private Sub SmoothShadingCheck_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles smoothShadingCheck.CheckedChanged
 			If nChartControl1 Is Nothing Then

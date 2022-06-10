@@ -392,7 +392,7 @@ namespace Nevron.Examples.Chart.WinForm
 
 			if (CreatePointAtPlaneComboBox.SelectedIndex == 0)
 			{
-				viewToScale = new NViewToScale3DTransformation(nChartControl1.View.Context, m_Chart, (int)StandardAxis.PrimaryX, (int)StandardAxis.Depth, (int)StandardAxis.PrimaryY, (double)XZPlaneValueNumericUpDown.Value);
+				viewToScale = new NViewToScale3DTransformation(m_Chart, (int)StandardAxis.PrimaryX, (int)StandardAxis.Depth, (int)StandardAxis.PrimaryY, (double)XZPlaneValueNumericUpDown.Value);
 
 				if (viewToScale.Transform(ptViewPoint, ref vecScalePoint))
 				{
@@ -409,7 +409,7 @@ namespace Nevron.Examples.Chart.WinForm
 			}
 			else
 			{
-				viewToScale = new NViewToScale3DTransformation(nChartControl1.View.Context, m_Chart, (int)StandardAxis.PrimaryX, (int)StandardAxis.PrimaryY, (int)StandardAxis.Depth, (double)XYPlaneValueNumericUpDown.Value);
+				viewToScale = new NViewToScale3DTransformation(m_Chart, (int)StandardAxis.PrimaryX, (int)StandardAxis.PrimaryY, (int)StandardAxis.Depth, (double)XYPlaneValueNumericUpDown.Value);
 
 				if (viewToScale.Transform(ptViewPoint, ref vecScalePoint))
 				{

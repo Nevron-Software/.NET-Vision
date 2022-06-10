@@ -11,7 +11,7 @@ Imports Nevron.Chart
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NBoxAndWhiskers2DUC
 		Inherits NExampleBaseUC
 

@@ -9,12 +9,6 @@
             Represents a chart control serializer
             </summary>
         </member>
-        <member name="M:Nevron.Chart.Wpf.NChartControlSerializer.#ctor(Nevron.Chart.Wpf.NChartControl)">
-            <summary>
-            Initializer constructor
-            </summary>
-            <param name="control"></param>
-        </member>
         <member name="M:Nevron.Chart.Wpf.NChartControlSerializer.SaveControlStateToFile">
             <summary>
             Shows a save file dialog and saves the current control state to file.
@@ -88,17 +82,6 @@
             You're responsible for the stream creation and closure. The filter parameters is used only when the format is CustomXML or CustomBinary.
             </remarks>
         </member>
-        <member name="M:Nevron.Chart.Wpf.NChartControlSerializer.LoadState(System.Object)">
-            <summary>
-            Loads the control state from an object
-            </summary>
-            <param name="state"></param>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NChartControlSerializer.lIl11lIlIl">
-            <summary>
-            Gets the file filter for save / load dialogs
-            </summary>
-        </member>
         <member name="T:Nevron.Chart.Wpf.NChartControlState">
             <summary>
             Summary description for NChartControlState.
@@ -123,11 +106,6 @@
         <member name="M:Nevron.Chart.Wpf.NChartControl.#ctor">
             <summary>
             Default constructor
-            </summary>
-        </member>
-        <member name="P:Nevron.Chart.Wpf.NChartControl.PixelSize">
-            <summary>
-            Gets the pixel size of the control
             </summary>
         </member>
         <member name="P:Nevron.Chart.Wpf.NChartControl.View">
@@ -211,270 +189,15 @@
             </summary>
             <param name="drawingContext"></param>
         </member>
-        <member name="M:Nevron.Chart.Wpf.NChartControl.Dip2Px(System.Double)">
+        <member name="M:Nevron.Chart.Wpf.NChartControl.Dispose">
             <summary>
-            Converts a dip to pixel
+            
             </summary>
-            <param name="dip"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NChartControl.OnSizeChanged(System.Object,System.Windows.SizeChangedEventArgs)">
-            <summary>
-            Called when the ActualWidth or ActualHeight of the framework element has changed.
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
         </member>
         <member name="T:Nevron.Chart.Wpf.NState">
             <summary>
             Summary description for NState.
             </summary>
-        </member>
-        <member name="T:Nevron.Chart.Wpf.Properties.Resources">
-            <summary>
-              A strongly-typed resource class, for looking up localized strings, etc.
-            </summary>
-        </member>
-        <member name="P:Nevron.Chart.Wpf.Properties.Resources.ResourceManager">
-            <summary>
-              Returns the cached ResourceManager instance used by this class.
-            </summary>
-        </member>
-        <member name="P:Nevron.Chart.Wpf.Properties.Resources.Culture">
-            <summary>
-              Overrides the current thread's CurrentUICulture property for all
-              resource lookups using this strongly typed resource class.
-            </summary>
-        </member>
-        <member name="T:Nevron.Chart.Wpf.NWpfGLBitmapRenderSurface">
-            <summary>
-            OpenGL bitmap rendering surface
-            </summary>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGLBitmapRenderSurface.#ctor(Nevron.GraphicsGL.l1IlllI1II,Nevron.GraphicsCore.NSize,Nevron.GraphicsCore.NResolution)">
-            <summary>
-            Initializer constructor
-            </summary>
-            <param name="settings"></param>
-            <param name="size"></param>
-            <param name="resolution"></param>
-            <param name="useOpenGL2DGraphics"></param>
-        </member>
-        <member name="P:Nevron.Chart.Wpf.NWpfGLBitmapRenderSurface.Is2D">
-            <summary>
-            Gets whether this is a window surface
-            </summary>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGLBitmapRenderSurface.Resize(Nevron.GraphicsCore.NSize)">
-            <summary>
-            Called to resize the render surface
-            </summary>
-            <param name="size"></param>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGLBitmapRenderSurface.Paint(System.Windows.Media.DrawingContext,Nevron.Chart.Wpf.NWpfChartControlView)">
-            <summary>
-            Paints the render surface on the target writable bitmap
-            </summary>
-            <param name="bitmap"></param>
-            <param name="view"></param>
-        </member>
-        <member name="P:Nevron.Chart.Wpf.NWpfGLBitmapRenderSurface.l1IlIlII1l">
-            <summary>
-            Whether this is a bitmap render surface
-            </summary>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGLBitmapRenderSurface.CreateMemoryDC">
-            <summary>
-            Creates the memory DC
-            </summary>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGLBitmapRenderSurface.l1IlI1Ill1">
-            <summary>
-            Creates an output bitmap with the specified size
-            </summary>
-            <param name="rSize"></param>
-            <param name="colorDepth"></param>
-            <param name="openGL2DGraphics"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGLRenderSurface.#ctor(Nevron.GraphicsGL.l1IlllI1II,Nevron.GraphicsCore.NSize,Nevron.GraphicsCore.NResolution)">
-            <summary>
-            Initializer constructor
-            </summary>
-            <param name="settings"></param>
-            <param name="size"></param>
-            <param name="resolution"></param>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGLRenderSurface.SetupPixelFormat(System.IntPtr)">
-            <summary>
-            
-            </summary>
-            <param name="hDC"></param>
-            <param name="flags"></param>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGLRenderSurface.InitPixelFormatDescriptor(System.Int32)">
-            <summary>
-            Inits the pixel format descriptor
-            </summary>
-            <param name="flags"></param>
-        </member>
-        <member name="T:Nevron.Chart.Wpf.NWpfGdiRenderSurface">
-            <summary>
-            Represents a GDI bitmap render surface.
-            </summary>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGdiRenderSurface.#ctor(Nevron.GraphicsCore.NSize,Nevron.GraphicsCore.NResolution)">
-            <summary>
-            Creates a new bitmap render surface with the specified size and resolution
-            </summary>
-            <param name="size"></param>
-            <param name="resolution"></param>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGdiRenderSurface.Paint(System.Windows.Media.DrawingContext,Nevron.Chart.Wpf.NWpfChartControlView)">
-            <summary>
-            Paints the render surface on the target writable bitmap
-            </summary>
-            <param name="bitmap"></param>
-            <param name="view"></param>
-        </member>
-        <member name="T:Nevron.Chart.Wpf.NWpfGLWindowRenderSurface">
-            <summary>
-            OpenGL bitmap rendering surface
-            </summary>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGLWindowRenderSurface.#ctor(Nevron.GraphicsGL.l1IlllI1II,Nevron.GraphicsCore.NSize,Nevron.GraphicsCore.NResolution)">
-            <summary>
-            Initializer constructor
-            </summary>
-            <param name="settings"></param>
-            <param name="size"></param>
-            <param name="resolution"></param>
-            <param name="useOpenGL2DGraphics"></param>
-        </member>
-        <member name="P:Nevron.Chart.Wpf.NWpfGLWindowRenderSurface.Is2D">
-            <summary>
-            Gets whether this is a window surface
-            </summary>
-        </member>
-        <member name="P:Nevron.Chart.Wpf.NWpfGLWindowRenderSurface.IsWindow">
-            <summary>
-            Gets whether this is a window surface
-            </summary>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGLWindowRenderSurface.CreateWritableBitmap">
-            <summary>
-            Creates a writable bitmap
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGLWindowRenderSurface.Paint(System.Windows.Media.DrawingContext,Nevron.Chart.Wpf.NWpfChartControlView)">
-            <summary>
-            Paints the render surface on the target writable bitmap
-            </summary>
-            <param name="bitmap"></param>
-            <param name="view"></param>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGLWindowRenderSurface.l1IlII1III">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGLWindowRenderSurface.l1IlII1II1">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGLWindowRenderSurface.l1IlII1I1I(System.IntPtr)">
-            <summary>
-            
-            </summary>
-            <param name="hInstance"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfGLWindowRenderSurface.InnerWindowProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)">
-            <summary>
-            
-            </summary>
-            <param name="hwnd"></param>
-            <param name="message"></param>
-            <param name="wParam"></param>
-            <param name="lParam"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Nevron.Chart.Wpf.NWpfRenderSurface">
-            <summary>
-            Represents a GDI bitmap render surface.
-            </summary>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfRenderSurface.#ctor(Nevron.GraphicsCore.NSize,Nevron.GraphicsCore.NResolution)">
-            <summary>
-            Initializer constructor
-            </summary>
-            <param name="size"></param>
-            <param name="resolution"></param>
-        </member>
-        <member name="P:Nevron.Chart.Wpf.NWpfRenderSurface.IsWindow">
-            <summary>
-            Gets whether this is a window surface
-            </summary>
-        </member>
-        <member name="P:Nevron.Chart.Wpf.NWpfRenderSurface.Is2D">
-            <summary>
-            Gets whether this is a window surface
-            </summary>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfRenderSurface.l111ll1lll(System.Boolean)">
-            <summary>
-            Clears the state of this render surface
-            </summary>
-            <param name="dispose"></param>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfRenderSurface.Invalidate(System.Boolean,System.Boolean)">
-            <summary>
-            Invalidates the contents of this render surface
-            </summary>
-            <param name="content"></param>
-            <param name="overlay"></param>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfRenderSurface.Resize(Nevron.GraphicsCore.NSize)">
-            <summary>
-            Called to resize the render surface
-            </summary>
-            <param name="size"></param>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfRenderSurface.Invalidate">
-            <summary>
-            Invalidates the contents of the render suface
-            </summary>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfRenderSurface.GetWritableBitmap">
-            <summary>
-            Gets the current writable bitmap
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfRenderSurface.CreateWritableBitmap">
-            <summary>
-            Creates a writable bitmap
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfRenderSurface.Paint(System.Windows.Media.DrawingContext,Nevron.Chart.Wpf.NWpfChartControlView)">
-            <summary>
-            Paints the render surface on the target writable bitmap
-            </summary>
-            <param name="bitmap"></param>
-            <param name="view"></param>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfRenderSurface.CopyBitmapRect(System.Drawing.Bitmap)">
-            <summary>
-            Copies a rectangle from the source bitmap to the desitionation bitmap. 
-            The source and the target must be locked prior to the call.
-            </summary>
-            <param name="source"></param>
-            <param name="target"></param>
-            <param name="rect"></param>
         </member>
         <member name="T:Nevron.Chart.Wpf.NWpfChartControlView">
             <summary>
@@ -487,16 +210,6 @@
             </summary>
             <param name="document"></param>
             <param name="outerControl"></param>
-        </member>
-        <member name="P:Nevron.Chart.Wpf.NWpfChartControlView.lIIll1lIl1">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Nevron.Chart.Wpf.NWpfChartControlView.lIIll1lIlI">
-            <summary>
-            Gets the inner window handle
-            </summary>
         </member>
         <member name="P:Nevron.Chart.Wpf.NWpfChartControlView.OuterControl">
             <summary>
@@ -538,55 +251,25 @@
             <param name="serviceType">service type</param>
             <returns>service instance or null if a service of this type cannot be located</returns>
         </member>
-        <member name="P:Nevron.Chart.Wpf.NWpfChartControlView.l1lIlI111I1">
-            <summary>
-            Returns true if this is a control view
-            </summary>
-        </member>
-        <member name="P:Nevron.Chart.Wpf.NWpfChartControlView.Cursor">
-            <summary>
-            Gets / sets the mouse cursor
-            </summary>
-        </member>
-        <member name="P:Nevron.Chart.Wpf.NWpfChartControlView.lI1II1II11">
-            <summary>
-            Gets / sets the mouse capture
-            </summary>
-        </member>
-        <member name="P:Nevron.Chart.Wpf.NWpfChartControlView.ClientMousePosition">
-            <summary>
-            Gets the mouse position in client coordinates
-            </summary>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfChartControlView.Focus">
-            <summary>
-            Focuses the view
-            </summary>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfChartControlView.SetTooltip(Nevron.GraphicsCore.NPointF,System.String,Nevron.Chart.Windows.NTooltipTool)">
-            <summary>
-            Sets a tooltip
-            </summary>
-            <param name="mousePosition"></param>
-            <param name="tooltip"></param>
-            <param name="tool"></param>
-        </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfChartControlView.ClearTooltip">
-            <summary>
-            Clears the tooltip
-            </summary>
-        </member>
         <member name="M:Nevron.Chart.Wpf.NWpfChartControlView.CreateContext">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Chart.Wpf.NWpfChartControlView.lIIIIIlI11(System.Boolean@,System.Boolean@)">
+        <member name="P:Nevron.Internal.layd.SupportsVertexBuffers">
             <summary>
-            
+            Returns true if the render surface supports vertex buffers
             </summary>
-            <param name="use2DSurface"></param>
-            <param name="useWindowSurface"></param>
+        </member>
+        <member name="P:Nevron.Internal.layd.SupportsShaders">
+            <summary>
+            Returns true if the render surface supports shaders
+            </summary>
+        </member>
+        <member name="M:Nevron.Internal.pcyd.Invalidate">
+            <summary>
+            Invalidates the contents of the render suface
+            </summary>
         </member>
     </members>
 </doc>

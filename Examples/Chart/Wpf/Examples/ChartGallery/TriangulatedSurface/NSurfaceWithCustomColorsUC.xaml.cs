@@ -148,25 +148,29 @@ namespace Nevron.Examples.Chart.Wpf
 
 				int nDataPointsCount = (int)stream.Length / 12;
 
+				NTriangulatedSurfaceData surfaceData = surface.Data;
+				surfaceData.SetCount(nDataPointsCount);
+				surfaceData.UseColors = true;
+
 				// fill Y values and colors
 				for (int i = 0; i < nDataPointsCount; i++)
 				{
 					float y = 300 - reader.ReadSingle();
 
-					surface.Values.Add(y);
-					surface.Colors.Add(GetColorFromValue(y));
+					surfaceData.SetYValue(i, y);
+					surfaceData.SetColor(i, GetColorFromValue(y));
 				}
 
 				// fill X values
 				for (int i = 0; i < nDataPointsCount; i++)
 				{
-					surface.XValues.Add(reader.ReadSingle());
+					surfaceData.SetXValue(i, reader.ReadSingle());
 				}
 
 				// fill Z values
 				for (int i = 0; i < nDataPointsCount; i++)
 				{
-					surface.ZValues.Add(reader.ReadSingle());
+					surfaceData.SetZValue(i, reader.ReadSingle());
 				}
 			}
 			finally
@@ -178,6 +182,7 @@ namespace Nevron.Examples.Chart.Wpf
 					stream.Close();
 			}
 		}
+
 		private Color GetColorFromValue(float y)
 		{
 			Color color = Color.Black;

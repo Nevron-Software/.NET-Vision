@@ -10,7 +10,7 @@ Imports Nevron.Editors
 Imports Nevron.Chart
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NStandardFloatBarUC
 		Inherits NExampleBaseUC
 

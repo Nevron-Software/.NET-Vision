@@ -7,7 +7,7 @@ Imports System.Drawing
 Imports System.Windows.Forms
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NPointDropLines2DUC
 		Inherits NExampleBaseUC
 

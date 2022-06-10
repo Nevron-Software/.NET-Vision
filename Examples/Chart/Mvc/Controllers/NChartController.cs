@@ -57,10 +57,13 @@ namespace Nevron.Examples.Chart.Mvc
         /// Renders the initial content of the chart on the page
         /// </summary>
         /// <returns></returns>
+        [ValidateInput(false)]
         public ActionResult Content()
         {
             NThinChartControl control = this.Control;
             control.ConfigureInitialResponse();
+
+            control.ServerSettings.Css.StateHover = "border: 1px solid rgb(38, 148, 232);background: rgb(255, 0, 0);";
 
             Initialize(control);
             
@@ -71,6 +74,7 @@ namespace Nevron.Examples.Chart.Mvc
         /// </summary>
         /// <param name="request"></param>
         /// <returns></returns>
+        [ValidateInput(false)]
         public ActionResult Service(string request)
         {
 			NThinChartControl ntcc = new NThinChartControl();
@@ -81,6 +85,7 @@ namespace Nevron.Examples.Chart.Mvc
         /// Renders the control script
         /// </summary>
         /// <returns></returns>
+        [ValidateInput(false)]
         public ActionResult Script()
         {
 			return new NThinControlResult(new NTextResponseOutput(NTextResponseOutput.m_MimeHTML, this.Control.GetIncludeScript()));

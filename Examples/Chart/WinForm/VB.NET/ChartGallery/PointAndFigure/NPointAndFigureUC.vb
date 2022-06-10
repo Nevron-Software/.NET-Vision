@@ -12,7 +12,7 @@ Imports System.Text
 
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NPointAndFigureUC
 		Inherits NExampleBaseUC
 

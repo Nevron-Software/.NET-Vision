@@ -11,7 +11,7 @@ Imports Nevron.Chart
 Imports System.Text
 
 Namespace Nevron.Examples.Chart.WinForm
-	<ToolboxItem(False)> _
+	<ToolboxItem(False)>
 	Public Class NThreeLineBreakUC
 		Inherits NExampleBaseUC
 
