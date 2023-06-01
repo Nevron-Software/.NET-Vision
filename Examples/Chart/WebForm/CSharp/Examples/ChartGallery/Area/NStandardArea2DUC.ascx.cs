@@ -33,7 +33,7 @@ namespace Nevron.Examples.Chart.WebForm
 				OriginTextBox.Text = "0";
 			}
 
-            nChartControl1.BackgroundStyle.FrameStyle.Visible = false;
+			nChartControl1.BackgroundStyle.FrameStyle.Visible = false;
 
 			// set a chart title
 			NLabel title = nChartControl1.Labels.AddHeader("2D Area Chart");

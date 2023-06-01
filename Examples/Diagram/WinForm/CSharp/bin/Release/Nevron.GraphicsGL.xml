@@ -277,383 +277,383 @@
             
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.SupportsAnimation">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.SupportsAnimation">
             <summary>
             Determines whether this device supports animation.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.AnimationBounds">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.AnimationBounds">
             <summary>
             Gets or sets the animation bounds. Regarded only when AnimationBoundsMode is set to context
             </summary>
         </member>
-        <member name="M:Nevron.Internal.lvec.ClearStyles(Nevron.GraphicsCore.DeviceStyle)">
+        <member name="M:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.ClearStyles(Nevron.GraphicsCore.DeviceStyle)">
             <summary>
             Clears style state and optionally updates the painter 
             </summary>
-            <param name="wvec"></param>
+            <param name="styles_34312_obf"></param>
         </member>
-        <member name="P:Nevron.Internal.lvec.RenderTechnology">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.RenderTechnology">
             <summary>
             Obtains the rendering technology of the device
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.FillStyle">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.FillStyle">
             <summary>
             Gets / sets the current fill style.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.FillColor">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.FillColor">
             <summary>
             Sets the current fill color.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.StrokeStyle">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.StrokeStyle">
             <summary>
             Gets / sets the current stroke style.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.ImageFiltersStyle">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.ImageFiltersStyle">
             <summary>
             Gets / sets the current image filters style.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.Painter">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.Painter">
             <summary>
             Obtains the current painter
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.Transform">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.Transform">
             <summary>
             Gets/sets the world transformation for this device object.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.TextureBoundsProvider">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.TextureBoundsProvider">
             <summary>
             The bounds providers used to calculate bounds for texture mapping
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.ClipPath">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.ClipPath">
             <summary>
             Gets / sets the current clip path
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.ClipInfo">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.ClipInfo">
             <summary>
             Gets / sets the current clip path
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.ImageFiltersBoundsProvider">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.ImageFiltersBoundsProvider">
             <summary>
             The bounds privder used to calculate bounds for image filters canvas
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.TextureMappingOrientation">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.TextureMappingOrientation">
             <summary>
             The orientation applied on textures when mapping them on objects
             </summary>
         </member>
-        <member name="M:Nevron.Internal.lvec.TranslateTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)">
+        <member name="M:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.TranslateTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)">
             <summary>
             Applies the specified translation to the transformation matrix of this Graphics object.
             </summary>
-            <param name="xvec"></param>
-            <param name="yvec"></param>
-            <param name="awec"></param>
+            <param name="dx_34313_obf"></param>
+            <param name="dy_34314_obf"></param>
+            <param name="matrixOrder_34315_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.lvec.ScaleTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)">
+        <member name="M:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.ScaleTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)">
             <summary>
             Applies the specified scaling operation to the transformation matrix of this Graphics object by prepending it to the object's transformation matrix.
             </summary>
-            <param name="bwec"></param>
-            <param name="cwec"></param>
-            <param name="dwec"></param>
+            <param name="sx_34316_obf"></param>
+            <param name="sy_34317_obf"></param>
+            <param name="matrixOrder_34318_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.lvec.RotateTransform(System.Single,System.Drawing.Drawing2D.MatrixOrder)">
+        <member name="M:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.RotateTransform(System.Single,System.Drawing.Drawing2D.MatrixOrder)">
             <summary>
             Applies the specified rotation to the transformation matrix of this Graphics object.
             </summary>
-            <param name="ewec"></param>
-            <param name="fwec"></param>
+            <param name="angle_34319_obf"></param>
+            <param name="matrixOrder_34320_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.lvec.ResetTransform">
+        <member name="M:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.ResetTransform">
             <summary>
             Resets the world transformation matrix of this Graphics object to the identity matrix.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.ColorTransform">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.ColorTransform">
             <summary>
             Gets / sets the color transform object associated with this device
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.Palette">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.Palette">
             <summary>
             Gets / sets the device color palette
             </summary>
         </member>
-        <member name="M:Nevron.Internal.lvec.Clear">
+        <member name="M:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.Clear">
             <summary>
             Clears all current drawings fromt he render surface this device is attached to.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.lvec.Clear(System.Drawing.Color)">
+        <member name="M:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.Clear(System.Drawing.Color)">
             <summary>
             
             </summary>
-            <param name="gwec"></param>
+            <param name="color_34321_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.lvec.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NPointF)">
+        <member name="M:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NPointF)">
             <summary>
             Draws the specified Image object, using its original physical size, at the specified location.
             </summary>
-            <param name="hwec"></param>
-            <param name="iwec"></param>
+            <param name="image_34322_obf"></param>
+            <param name="point_34323_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.lvec.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NRectangleF)">
+        <member name="M:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NRectangleF)">
             <summary>
             Draws the specified Image object to the specified rectangle
             </summary>
-            <param name="jwec"></param>
-            <param name="kwec"></param>
+            <param name="image_34324_obf"></param>
+            <param name="rect_34325_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.lvec.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NRectangleF,Nevron.GraphicsCore.NRectangleF,System.Drawing.GraphicsUnit)">
+        <member name="M:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NRectangleF,Nevron.GraphicsCore.NRectangleF,System.Drawing.GraphicsUnit)">
             <summary>
             Draws the specified portion of the specified Image object at the specified location and with the specified size.
             </summary>
-            <param name="lwec"></param>
-            <param name="mwec"></param>
-            <param name="nwec"></param>
-            <param name="owec"></param>
+            <param name="image_34326_obf"></param>
+            <param name="destRect_34327_obf"></param>
+            <param name="srcRect_34328_obf"></param>
+            <param name="srcUnit_34329_obf"></param>
         </member>
-        <member name="P:Nevron.Internal.lvec.FontStyle">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.FontStyle">
             <summary>
             Gets / sets the current font style.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lvec.TextRenderingMode">
+        <member name="P:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.TextRenderingMode">
             <summary>
             Gets/sets the text rendering mode.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.lvec.SetDefaultFontStyle">
+        <member name="M:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.SetDefaultFontStyle">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.lvec.MeasureString(System.String)">
+        <member name="M:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.MeasureString(System.String)">
             <summary>
             Measures the specified string when drawn with the active font style.
             </summary>
-            <param name="pwec"></param>
+            <param name="s_34330_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.lvec.MeasureString(System.String,Nevron.GraphicsCore.NSizeF)">
+        <member name="M:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.MeasureString(System.String,Nevron.GraphicsCore.NSizeF)">
             <summary>
             Measures the specified string when drawn with the active font style.
             </summary>
-            <param name="qwec"></param>
-            <param name="rwec"></param>
+            <param name="s_34331_obf"></param>
+            <param name="layoutArea_34332_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.lvec.MeasureString(System.String,System.Int32,System.Int32)">
+        <member name="M:Nevron.Internal.GL2DRasterImageMapDevice_34301_obf.MeasureString(System.String,System.Int32,System.Int32)">
             <summary>
             Measures the portion of the string specified by the start and end indices when drawn with the active font style.
             </summary>
-            <param name="swec"></param>
-            <param name="twec"></param>
-            <param name="uwec"></param>
+            <param name="s_34333_obf"></param>
+            <param name="startIndex_34334_obf"></param>
+            <param name="length_34335_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.hbgc.GetBitmapHolder(System.Drawing.Imaging.PixelFormat,Nevron.GraphicsCore.NResolution)">
+        <member name="M:Nevron.Internal.GLBitmapRenderSurfaceBase_35047_obf.GetBitmapHolder(System.Drawing.Imaging.PixelFormat,Nevron.GraphicsCore.NResolution)">
             <summary>
             Gets a bitmap representing the render surface
             </summary>
-            <param name="wbgc"></param>
-            <param name="xbgc"></param>
+            <param name="pixelFormat_35062_obf"></param>
+            <param name="resolution_35063_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.hbgc.GetBitmap(System.Boolean@)">
+        <member name="M:Nevron.Internal.GLBitmapRenderSurfaceBase_35047_obf.GetBitmap(System.Boolean@)">
             <summary>
             Gets the current bitmap of the render surface
             </summary>
-            <param name="ybgc">if this value is set to true you must dispose the bitmap</param>
+            <param name="ownBitmap_35064_obf">if this value is set to true you must dispose the bitmap</param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.hbgc.SetTransparent">
+        <member name="M:Nevron.Internal.GLBitmapRenderSurfaceBase_35047_obf.SetTransparent">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.lcgc.Invalidate">
+        <member name="M:Nevron.Internal.GLBitmapRenderSurface_35076_obf.Invalidate">
             <summary>
             Invalidates the contents of the render suface
             </summary>
         </member>
-        <member name="M:Nevron.Internal.lcgc.Paint(System.Object,System.Windows.Forms.PaintEventArgs,Nevron.GraphicsCore.INContentPainter)">
+        <member name="M:Nevron.Internal.GLBitmapRenderSurface_35076_obf.Paint(System.Object,System.Windows.Forms.PaintEventArgs,Nevron.GraphicsCore.INContentPainter)">
             <summary>
             Called to paint the render surface on the specified args and with the specified content
             </summary>
-            <param name="wcgc"></param>
-            <param name="xcgc"></param>
-            <param name="ycgc"></param>
+            <param name="sender_35087_obf"></param>
+            <param name="e_35088_obf"></param>
+            <param name="contentPainter_35089_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.lcgc.SetControlStyles(System.Boolean,System.Boolean,Nevron.GraphicsCore.INControlStyleControl)">
+        <member name="M:Nevron.Internal.GLBitmapRenderSurface_35076_obf.SetControlStyles(System.Boolean,System.Boolean,Nevron.GraphicsCore.INControlStyleControl)">
             <summary>
             
             </summary>
-            <param name="adgc"></param>
-            <param name="bdgc"></param>
-            <param name="cdgc"></param>
+            <param name="transparentBackrgound_35090_obf"></param>
+            <param name="needsOverlay_35091_obf"></param>
+            <param name="control_35092_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.lcgc.BeforeOverlayPaint(System.Object,System.Windows.Forms.PaintEventArgs)">
+        <member name="M:Nevron.Internal.GLBitmapRenderSurface_35076_obf.BeforeOverlayPaint(System.Object,System.Windows.Forms.PaintEventArgs)">
             <summary>
             Called before any overlay drawing commands are executed to the device attached to this render surface
             </summary>
         </member>
-        <member name="M:Nevron.Internal.lcgc.AfterOverlayPaint(System.Object,System.Windows.Forms.PaintEventArgs)">
+        <member name="M:Nevron.Internal.GLBitmapRenderSurface_35076_obf.AfterOverlayPaint(System.Object,System.Windows.Forms.PaintEventArgs)">
             <summary>
             Called after any overlay drawing commands are executed to the device attached to this render surface
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ofgc.RequiresInteractivity">
+        <member name="P:Nevron.Internal.GLDevice_35154_obf.RequiresInteractivity">
             <summary>
             Returns true if the device requires interactivity
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ofgc.ActivateInteractivityStyle(Nevron.GraphicsCore.NInteractivityStyle)">
+        <member name="M:Nevron.Internal.GLDevice_35154_obf.ActivateInteractivityStyle(Nevron.GraphicsCore.NInteractivityStyle)">
             <summary>
             Activates the specified interactivity style
             </summary>
-            <param name="rfgc"></param>
+            <param name="interactivityStyle_35157_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.ofgc.ActivateElement(Nevron.Dom.INElement)">
+        <member name="M:Nevron.Internal.GLDevice_35154_obf.ActivateElement(Nevron.Dom.INElement)">
             <summary>
             Activates an element.
             </summary>
-            <param name="sfgc"></param>
+            <param name="element_35158_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.ofgc.ActivateAtomicElement(Nevron.Dom.INAtomicElement)">
+        <member name="M:Nevron.Internal.GLDevice_35154_obf.ActivateAtomicElement(Nevron.Dom.INAtomicElement)">
             <summary>
             Activates an atomic element.
             </summary>
-            <param name="tfgc"></param>
+            <param name="atomicElement_35159_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.ofgc.ActivateAtom(System.Int32)">
+        <member name="M:Nevron.Internal.GLDevice_35154_obf.ActivateAtom(System.Int32)">
             <summary>
             Activates an atom.
             </summary>
-            <param name="xfgc"></param>
+            <param name="atomId_35163_obf"></param>
         </member>
-        <member name="P:Nevron.Internal.ofgc.Resolution">
+        <member name="P:Nevron.Internal.GLDevice_35154_obf.Resolution">
             <summary>
             Gets the resolution of this Device object.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ofgc.LengthConverter">
+        <member name="P:Nevron.Internal.GLDevice_35154_obf.LengthConverter">
             <summary>
             Gets the length converter associated with this device
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ofgc.RenderTechnology">
+        <member name="P:Nevron.Internal.GLDevice_35154_obf.RenderTechnology">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ofgc.RenderSurface">
+        <member name="P:Nevron.Internal.GLDevice_35154_obf.RenderSurface">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ofgc.ColorTransform">
+        <member name="P:Nevron.Internal.GLDevice_35154_obf.ColorTransform">
             <summary>
             Gets / sets the color transform object associated with this device
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ofgc.Palette">
+        <member name="P:Nevron.Internal.GLDevice_35154_obf.Palette">
             <summary>
             Gets / sets the device color palette
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ofgc.DisposeUnusedObjects">
+        <member name="M:Nevron.Internal.GLDevice_35154_obf.DisposeUnusedObjects">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Nevron.Internal.rogc.SupportsVertexBuffers">
+        <member name="P:Nevron.Internal.GLRenderSurface_35382_obf.SupportsVertexBuffers">
             <summary>
             Returns true if the render surface supports vertex buffers
             </summary>
         </member>
-        <member name="P:Nevron.Internal.rogc.SupportsShaders">
+        <member name="P:Nevron.Internal.GLRenderSurface_35382_obf.SupportsShaders">
             <summary>
             Returns true if the render surface supports shaders
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ypgc.GetHashCode">
+        <member name="M:Nevron.Internal.GLRenderSurfaceInfo_35414_obf.GetHashCode">
             <summary>
             Overriden to remove compile warning
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.xqgc.Paint(System.Object,System.Windows.Forms.PaintEventArgs,Nevron.GraphicsCore.INContentPainter)">
+        <member name="M:Nevron.Internal.GLWindowRenderSurface_35438_obf.Paint(System.Object,System.Windows.Forms.PaintEventArgs,Nevron.GraphicsCore.INContentPainter)">
             <summary>
             Called to paint the render surface on the specified args and with the specified content
             </summary>
-            <param name="brgc"></param>
-            <param name="crgc"></param>
-            <param name="drgc"></param>
+            <param name="sender_35441_obf"></param>
+            <param name="e_35442_obf"></param>
+            <param name="contentPainter_35443_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.xqgc.SetControlStyles(System.Boolean,System.Boolean,Nevron.GraphicsCore.INControlStyleControl)">
+        <member name="M:Nevron.Internal.GLWindowRenderSurface_35438_obf.SetControlStyles(System.Boolean,System.Boolean,Nevron.GraphicsCore.INControlStyleControl)">
             <summary>
             
             </summary>
-            <param name="hrgc"></param>
-            <param name="irgc"></param>
-            <param name="jrgc"></param>
+            <param name="transparentBackrgound_35447_obf"></param>
+            <param name="needsOverlay_35448_obf"></param>
+            <param name="control_35449_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.xqgc.Activate">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Nevron.Internal.xqgc.BeforePaint">
+        <member name="M:Nevron.Internal.GLWindowRenderSurface_35438_obf.Activate">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.xqgc.AfterPaint">
+        <member name="M:Nevron.Internal.GLWindowRenderSurface_35438_obf.BeforePaint">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.xqgc.Invalidate">
+        <member name="M:Nevron.Internal.GLWindowRenderSurface_35438_obf.AfterPaint">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Internal.GLWindowRenderSurface_35438_obf.Invalidate">
             <summary>
             Invalidates the contents of the render suface
             </summary>
         </member>
-        <member name="M:Nevron.Internal.pboc.Dispose">
+        <member name="M:Nevron.Internal.NGLProgram_40153_obf.Dispose">
             <summary>
             Destroys the texture
             </summary>
         </member>
-        <member name="M:Nevron.Internal.gcoc.Dispose">
+        <member name="M:Nevron.Internal.NGLShader_40169_obf.Dispose">
             <summary>
             Destroys the texture
             </summary>
         </member>
-        <member name="M:Nevron.Internal.qcoc.Equals(System.Object)">
+        <member name="M:Nevron.Internal.NGLBufferKeyEx_40179_obf.Equals(System.Object)">
             <summary>
             
             </summary>
-            <param name="tcoc"></param>
+            <param name="obj_40182_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.qcoc.GetHashCode">
+        <member name="M:Nevron.Internal.NGLBufferKeyEx_40179_obf.GetHashCode">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.saqc.Dispose">
+        <member name="M:Nevron.Internal.NGLBuffer_41381_obf.Dispose">
             <summary>
             Destroys the texture
             </summary>

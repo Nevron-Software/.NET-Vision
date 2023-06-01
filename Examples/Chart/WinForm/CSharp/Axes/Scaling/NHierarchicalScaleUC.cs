@@ -287,7 +287,7 @@ namespace Nevron.Examples.Chart.WinForm
 
 			for (int i = 0; i < 2; i++)
 			{
-				NHierarchicalScaleNode yearNode = new NHierarchicalScaleNode(0, (i + 2007).ToString());
+				NHierarchicalScaleNode yearNode = new NHierarchicalScaleNode(0, (i + 2022).ToString());
 				yearNode.LabelStyle.TickMode = (RangeLabelTickMode)GroupRowIndividualModeComboBox.SelectedIndex; 				
 				nodes.AddChild(yearNode);
 

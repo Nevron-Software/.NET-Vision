@@ -146,7 +146,7 @@ namespace Nevron.Examples.Chart.WinForm
 			}
 
 			// generate X values
-			DateTime dt = new DateTime(2007, 5, 24, 11, 0, 0);
+			DateTime dt = new DateTime(2022, 5, 24, 11, 0, 0);
 
 			for(int i = 0; i < nCount; i++)
 			{

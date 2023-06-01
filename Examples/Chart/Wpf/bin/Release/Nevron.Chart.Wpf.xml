@@ -256,17 +256,17 @@
             
             </summary>
         </member>
-        <member name="P:Nevron.Internal.layd.SupportsVertexBuffers">
+        <member name="P:Nevron.Internal.NWpfGLRenderSurface_61963_obf.SupportsVertexBuffers">
             <summary>
             Returns true if the render surface supports vertex buffers
             </summary>
         </member>
-        <member name="P:Nevron.Internal.layd.SupportsShaders">
+        <member name="P:Nevron.Internal.NWpfGLRenderSurface_61963_obf.SupportsShaders">
             <summary>
             Returns true if the render surface supports shaders
             </summary>
         </member>
-        <member name="M:Nevron.Internal.pcyd.Invalidate">
+        <member name="M:Nevron.Internal.NWpfRenderSurface_62017_obf.Invalidate">
             <summary>
             Invalidates the contents of the render suface
             </summary>

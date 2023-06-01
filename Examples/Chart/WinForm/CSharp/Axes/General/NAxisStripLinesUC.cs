@@ -131,7 +131,7 @@ namespace Nevron.Examples.Chart.WinForm
 			NDateTimeRangeSamplerProvider provider = new NDateTimeRangeSamplerProvider();
 			provider.SamplingMode = SamplingMode.CustomStep;
 			provider.UseOrigin = true;
-			provider.Origin = new DateTime(2007, 2, 19);
+			provider.Origin = new DateTime(2022, 2, 19);
 			provider.CustomStep = new NDateTimeSpan(1, NDateTimeUnit.Day);
 			stripStyle.RangeSamplerProvider = provider;
 
@@ -198,12 +198,12 @@ namespace Nevron.Examples.Chart.WinForm
 			// create a strip line highlighting the working days
 			if (HighLightRangeComboBox.SelectedIndex == 0)
 			{
-				origin = new DateTime(2007, 2, 19);
+				origin = new DateTime(2022, 2, 19);
 				stripStyle = new NScaleStripStyle(new NColorFillStyle(Color.Beige), null, true, 0, 0, 2, 5);
 			}
 			else
 			{
-				origin = new DateTime(2007, 2, 17);
+				origin = new DateTime(2022, 2, 17);
                 stripStyle = new NScaleStripStyle(new NColorFillStyle(Color.Beige), null, true, 0, 0, 5, 2);
 			}
 

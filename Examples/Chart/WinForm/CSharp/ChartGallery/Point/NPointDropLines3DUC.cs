@@ -96,7 +96,7 @@ namespace Nevron.Examples.Chart.WinForm
 			base.Initialize();
 
 			// set a chart title
-			NLabel title = nChartControl1.Labels.AddHeader("2D Point Chart Droplines");
+			NLabel title = nChartControl1.Labels.AddHeader("3D Point Chart Droplines");
 			title.TextStyle.FontStyle = new NFontStyle("Times New Roman", 18, FontStyle.Italic);
 
 			// setup chart

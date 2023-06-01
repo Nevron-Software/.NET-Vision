@@ -254,7 +254,7 @@ namespace Nevron.Examples.Chart.WinForm
 			NStockDataGenerator dataGenerator = new NStockDataGenerator(new NRange1DD(50, 350), 0.02, 10);
 			dataGenerator.Reset();
 
-			DateTime dt = new DateTime(2007, 1, 1);
+			DateTime dt = new DateTime(2022, 1, 1);
 
 			for(int i = 0; i < 20; i++)
 			{

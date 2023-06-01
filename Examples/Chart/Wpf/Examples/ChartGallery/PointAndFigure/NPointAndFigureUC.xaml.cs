@@ -100,7 +100,7 @@ namespace Nevron.Examples.Chart.Wpf
 			m_PointAndFigure.HighValues.AddRange(highValues);
 			m_PointAndFigure.LowValues.AddRange(lowValues);
 
-			DateTime dt = new DateTime(2007, 1, 1);
+			DateTime dt = new DateTime(2022, 1, 1);
 
 			for (int i = 0; i < 20; i++)
 			{

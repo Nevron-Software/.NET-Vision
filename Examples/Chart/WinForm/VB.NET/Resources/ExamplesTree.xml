@@ -1,17 +1,5 @@
 <ExamplesTree xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Title="VB.NET Examples">
 	<Items>
-		<Folder Title="What's New">
-			<Items>
-				<Folder Title="Vertex Surface" Name="ChartGallery\VertexSurface">
-					<Items>
-						<Example Title="Vertex Surface - General" TypeName="NVertexSurfaceUC" />
-						<Example Title="Vertex Surface - Line Custom Colors" TypeName="NVertexSurfaceLineCustomColorsUC" />
-						<Example Title="Vertex Surface - Fill Custom Colors" TypeName="NVertexSurfaceFillCustomColorsUC" />
-						<Example Title="Vertex Surface - Custom Indices" TypeName="NVertexSurfaceCustomIndicesUC" />
-					</Items>
-				</Folder>
-			</Items>
-		</Folder>
 		<Folder Title="All Examples">
 			<Items>
 				<Folder Title="Chart Gallery" Name="ChartGallery">

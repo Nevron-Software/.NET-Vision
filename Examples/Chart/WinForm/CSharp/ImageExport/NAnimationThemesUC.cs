@@ -406,12 +406,12 @@ namespace Nevron.Examples.Chart.WinForm
 			// configure axes
 			NOrdinalScaleConfigurator ordinalScale = chart.Axis(StandardAxis.PrimaryX).ScaleConfigurator as NOrdinalScaleConfigurator;
 			ordinalScale.AutoLabels = false;
-			ordinalScale.Labels.Add("2004");
-			ordinalScale.Labels.Add("2005");
-			ordinalScale.Labels.Add("2006");
-			ordinalScale.Labels.Add("2007");
-			ordinalScale.Labels.Add("2008");
-			ordinalScale.Labels.Add("2009");
+			ordinalScale.Labels.Add("2015");
+			ordinalScale.Labels.Add("2016");
+			ordinalScale.Labels.Add("2017");
+			ordinalScale.Labels.Add("2018");
+			ordinalScale.Labels.Add("2019");
+			ordinalScale.Labels.Add("2020");
 
 			// add interlace stripe
 			NLinearScaleConfigurator linearScale = chart.Axis(StandardAxis.PrimaryY).ScaleConfigurator as NLinearScaleConfigurator;

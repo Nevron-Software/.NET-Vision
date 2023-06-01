@@ -16897,7 +16897,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Diagram.WinForm.NGrid.xake.LocalizationContextName">
+        <member name="P:Nevron.Diagram.WinForm.NGrid.NGridPainter_68862_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
@@ -17176,14 +17176,14 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Diagram.WinForm.NRuler.reke.Equals(System.Object)">
+        <member name="M:Nevron.Diagram.WinForm.NRuler.NBitmapPaintInfo_68956_obf.Equals(System.Object)">
             <summary>
             
             </summary>
-            <param name="teke"></param>
+            <param name="obj_68958_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Diagram.WinForm.NRuler.reke.GetHashCode">
+        <member name="M:Nevron.Diagram.WinForm.NRuler.NBitmapPaintInfo_68956_obf.GetHashCode">
             <summary>
             
             </summary>
@@ -22631,57 +22631,57 @@
             </summary>
             <param name="e"></param>
         </member>
-        <member name="P:Nevron.Internal.fhee.LocalizationContextName">
+        <member name="P:Nevron.Internal.NGridTypeEditor_65268_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.phee.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NHandleStyleTypeEditorUC_65278_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.phee.LocalizationContextName">
+        <member name="P:Nevron.Internal.NHandleStyleTypeEditorUC_65278_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.xiee.LocalizationContextName">
+        <member name="P:Nevron.Internal.NLibraryViewItemLayoutTypeEditor_65311_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ejee.LocalizationContextName">
+        <member name="P:Nevron.Internal.NRulerTypeEditor_65317_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jjee.LocalizationContextName">
+        <member name="P:Nevron.Internal.NSnapManagerTypeEditor_65322_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ojee.LocalizationContextName">
+        <member name="P:Nevron.Internal.NTrackersAppearanceTypeEditor_65327_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.gjje.LocalizationContextName">
+        <member name="P:Nevron.Internal.NLayoutShapesUC_68445_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.gjje.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NLayoutShapesUC_68445_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.tjee.LocalizationContextName">
+        <member name="P:Nevron.Internal.NOptionsUC_65332_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.tjee.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NOptionsUC_65332_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>

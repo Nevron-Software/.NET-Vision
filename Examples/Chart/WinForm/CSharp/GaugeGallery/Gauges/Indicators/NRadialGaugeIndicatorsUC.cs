@@ -80,14 +80,18 @@ namespace Nevron.Examples.Chart.WinForm
 			// create the radial gauge
 			m_RadialGauge = new NRadialGaugePanel();
             m_RadialGauge.PaintEffect = new NGlassEffectStyle();
-            m_RadialGauge.BorderStyle = new NEdgeBorderStyle(BorderShape.Auto);
+			NEdgeBorderStyle edgeBorder = new NEdgeBorderStyle(BorderShape.Auto);
+			edgeBorder.OuterBevelWidth = new NLength(0);
+			edgeBorder.MiddleBevelWidth = new NLength(0);
+			edgeBorder.InnerBevelWidth = new NLength(0);
+			m_RadialGauge.BorderStyle = edgeBorder;
 			m_RadialGauge.ContentAlignment = ContentAlignment.MiddleCenter;
 			m_RadialGauge.Location = new NPointL(new NLength(50, NRelativeUnit.ParentPercentage), new NLength(55, NRelativeUnit.ParentPercentage));
 			m_RadialGauge.Size = new NSizeL(new NLength(80, NRelativeUnit.ParentPercentage), new NLength(80, NRelativeUnit.ParentPercentage));
             m_RadialGauge.BackgroundFillStyle = new NGradientFillStyle(Color.DarkGray, Color.Black);
 
-            // configure scale
-            NGaugeAxis axis = (NGaugeAxis)m_RadialGauge.Axes[0];
+			// configure scale
+			NGaugeAxis axis = (NGaugeAxis)m_RadialGauge.Axes[0];
             NStandardScaleConfigurator scale = (NStandardScaleConfigurator)axis.ScaleConfigurator;
 
             scale.SetPredefinedScaleStyle(PredefinedScaleStyle.Presentation);

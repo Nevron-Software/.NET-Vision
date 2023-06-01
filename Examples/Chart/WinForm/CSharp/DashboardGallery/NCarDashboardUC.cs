@@ -54,7 +54,6 @@ namespace Nevron.Examples.Chart.WinForm
 			base.Dispose(disposing);
 		}
 
-
 		public override void Initialize()
 		{
 			nChartControl1.Panels.Clear();

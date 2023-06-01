@@ -2894,642 +2894,642 @@
             <param name="inObj"></param>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.lqk.LocalizationContextName">
+        <member name="P:Nevron.Internal.NAddCellUC_6616_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.lqk.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NAddCellUC_6616_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.xqk.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NCheckOptionsUC_6628_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ask.LocalizationContextName">
+        <member name="P:Nevron.Internal.NFormulaCellEditorUC_6655_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ask.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NFormulaCellEditorUC_6655_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.wsk.LocalizationContextName">
+        <member name="P:Nevron.Internal.NFormulaEditorUC_6677_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.wsk.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NFormulaEditorUC_6677_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mxk.LocalizationContextName">
+        <member name="P:Nevron.Internal.NValueEditorUC_6792_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.mxk.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NValueEditorUC_6792_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.tcl.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NMeasurementUnitEditorUC_6899_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.tcl.LocalizationContextName">
+        <member name="P:Nevron.Internal.NMeasurementUnitEditorUC_6899_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hrl.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NImageSelector_7262_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.aam.LocalizationContextName">
+        <member name="P:Nevron.Internal.NEndPointHandle_7455_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.bam.LocalizationContextName">
+        <member name="P:Nevron.Internal.NGeometryControlHandle_7456_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ham.LocalizationContextName">
+        <member name="P:Nevron.Internal.NHandle_7462_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.wam.UpdateReferences(Nevron.INReferenceProvider)">
+        <member name="M:Nevron.Internal.NHandleCollection_7477_obf.UpdateReferences(Nevron.INReferenceProvider)">
             <summary>
             
             </summary>
-            <param name="xam"></param>
+            <param name="provider_7478_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.wam.CreateNonSerializedObjects">
+        <member name="M:Nevron.Internal.NHandleCollection_7477_obf.CreateNonSerializedObjects">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.wam.GetReferenceProvider">
+        <member name="M:Nevron.Internal.NHandleCollection_7477_obf.GetReferenceProvider">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.wam.ProvideReference(System.Type)">
+        <member name="M:Nevron.Internal.NHandleCollection_7477_obf.ProvideReference(System.Type)">
             <summary>
             
             </summary>
-            <param name="yam"></param>
+            <param name="parentType_7479_obf"></param>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.wam.Item(System.Int32)">
+        <member name="P:Nevron.Internal.NHandleCollection_7477_obf.Item(System.Int32)">
             <summary>
             Gets/sets the handle at the specified index
             </summary>
         </member>
-        <member name="M:Nevron.Internal.wam.OnValidate(System.Object)">
+        <member name="M:Nevron.Internal.NHandleCollection_7477_obf.OnValidate(System.Object)">
             <summary>
             
             </summary>
             <param name="value"></param>
         </member>
-        <member name="M:Nevron.Internal.wam.OnClear">
+        <member name="M:Nevron.Internal.NHandleCollection_7477_obf.OnClear">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.wam.OnInsertComplete(System.Int32,System.Object)">
+        <member name="M:Nevron.Internal.NHandleCollection_7477_obf.OnInsertComplete(System.Int32,System.Object)">
             <summary>
             Overriden to call the OnChanged method
             </summary>
-            <param name="qbm"></param>
+            <param name="index_7496_obf"></param>
             <param name="value"></param>
         </member>
-        <member name="M:Nevron.Internal.wam.OnRemoveComplete(System.Int32,System.Object)">
+        <member name="M:Nevron.Internal.NHandleCollection_7477_obf.OnRemoveComplete(System.Int32,System.Object)">
             <summary>
             Overriden to call the OnChanged method
             </summary>
-            <param name="rbm"></param>
+            <param name="index_7497_obf"></param>
             <param name="value"></param>
         </member>
-        <member name="M:Nevron.Internal.wam.OnSetComplete(System.Int32,System.Object,System.Object)">
+        <member name="M:Nevron.Internal.NHandleCollection_7477_obf.OnSetComplete(System.Int32,System.Object,System.Object)">
             <summary>
             Overriden to call the OnChanged method
             </summary>
-            <param name="sbm"></param>
-            <param name="tbm"></param>
-            <param name="ubm"></param>
+            <param name="index_7498_obf"></param>
+            <param name="oldobj_7499_obf"></param>
+            <param name="newobj_7500_obf"></param>
         </member>
-        <member name="P:Nevron.Internal.ecm.LocalizationContextName">
+        <member name="P:Nevron.Internal.NPinHandle_7509_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.fcm.LocalizationContextName">
+        <member name="P:Nevron.Internal.NResizeHandle_7510_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.icm.LocalizationContextName">
+        <member name="P:Nevron.Internal.NRotatorHandle_7513_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jcm.LocalizationContextName">
+        <member name="P:Nevron.Internal.NStartPointHandle_7514_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.kcm.LocalizationContextName">
+        <member name="P:Nevron.Internal.NVertexHandle_7515_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ocm.LocalizationContextName">
+        <member name="P:Nevron.Internal.NLoadPredefinedShapeUC_7519_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ocm.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NLoadPredefinedShapeUC_7519_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jdm.LocalizationContextName">
+        <member name="P:Nevron.Internal.NNewShapeUC_7539_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.jdm.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NNewShapeUC_7539_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.uem.LocalizationContextName">
+        <member name="P:Nevron.Internal.NSelectNewPathCommandTypeUC_7575_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.uem.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NSelectNewPathCommandTypeUC_7575_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.dfm.ProvideReference(System.Type)">
+        <member name="M:Nevron.Internal.NSmartShapeCanvas_7583_obf.ProvideReference(System.Type)">
             <summary>
             
             </summary>
-            <param name="efm"></param>
+            <param name="parentType_7584_obf"></param>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.dfm.LocalizationContextName">
+        <member name="P:Nevron.Internal.NSmartShapeCanvas_7583_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.dfm.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NSmartShapeCanvas_7583_obf.Dispose(System.Boolean)">
             <summary>
             Overriden to dispose resources used by the editor
             </summary>
-            <param name="hgm"></param>
+            <param name="disposing_7612_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.dfm.OnPaint(System.Windows.Forms.PaintEventArgs)">
+        <member name="M:Nevron.Internal.NSmartShapeCanvas_7583_obf.OnPaint(System.Windows.Forms.PaintEventArgs)">
             <summary>
             Overriden to paint the canvas
             </summary>
-            <param name="igm"></param>
+            <param name="e_7613_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.dfm.OnResize(System.EventArgs)">
+        <member name="M:Nevron.Internal.NSmartShapeCanvas_7583_obf.OnResize(System.EventArgs)">
             <summary>
             Overriden to update the editor
             </summary>
-            <param name="jgm"></param>
+            <param name="e_7614_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.dfm.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+        <member name="M:Nevron.Internal.NSmartShapeCanvas_7583_obf.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
             <summary>
             Handles the mouse down event
             </summary>
-            <param name="kgm"></param>
+            <param name="e_7615_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.dfm.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+        <member name="M:Nevron.Internal.NSmartShapeCanvas_7583_obf.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
             <summary>
             Handles the mouse move event
             </summary>
-            <param name="lgm"></param>
+            <param name="e_7616_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.dfm.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+        <member name="M:Nevron.Internal.NSmartShapeCanvas_7583_obf.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
             <summary>
             Handles the mouse move up
             </summary>
-            <param name="mgm"></param>
+            <param name="e_7617_obf"></param>
         </member>
-        <member name="P:Nevron.Internal.kkm.LocalizationContextName">
+        <member name="P:Nevron.Internal.NSmartShapeCanvasSettingsEditorUC_7715_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.kkm.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NSmartShapeCanvasSettingsEditorUC_7715_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.jmm.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NSmartShapeExplorerUC_7764_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jmm.LocalizationContextName">
+        <member name="P:Nevron.Internal.NSmartShapeExplorerUC_7764_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.bom.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NAnimationsStyleEditorUC_7806_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.bom.LocalizationContextName">
+        <member name="P:Nevron.Internal.NAnimationsStyleEditorUC_7806_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.bom.Style">
+        <member name="P:Nevron.Internal.NAnimationsStyleEditorUC_7806_obf.Style">
             <summary>
             Gets/sets the NAnimationStyle object to edit.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.yom.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NBackgroundStyleEditorUC_7829_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.yom.Style">
+        <member name="P:Nevron.Internal.NBackgroundStyleEditorUC_7829_obf.Style">
             <summary>
             Gets/sets the NBackgroundStyle object to edit.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ppm.LocalizationContextName">
+        <member name="P:Nevron.Internal.NBackplaneStyleEditorUC_7845_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ppm.Style">
+        <member name="P:Nevron.Internal.NBackplaneStyleEditorUC_7845_obf.Style">
             <summary>
             Gets/sets the backplane style to edit.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ppm.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NBackplaneStyleEditorUC_7845_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.dum.LocalizationContextName">
+        <member name="P:Nevron.Internal.NAdvancedGradientEditor_7958_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.egn.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NAdvancedGradientFillStyleUC_8234_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.egn.LocalizationContextName">
+        <member name="P:Nevron.Internal.NAdvancedGradientFillStyleUC_8234_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.egn.SaveRegistryInformation">
+        <member name="M:Nevron.Internal.NAdvancedGradientFillStyleUC_8234_obf.SaveRegistryInformation">
             <summary>
             You may override this function in order to store information in the registry.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.egn.Style">
+        <member name="P:Nevron.Internal.NAdvancedGradientFillStyleUC_8234_obf.Style">
             <summary>
             Get or sets the FillStyle displayed by this editor.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ain.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NColorFillStyleEditorUC_8280_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ain.LocalizationContextName">
+        <member name="P:Nevron.Internal.NColorFillStyleEditorUC_8280_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ain.Style">
+        <member name="P:Nevron.Internal.NColorFillStyleEditorUC_8280_obf.Style">
             <summary>
             Get or sets the FillStyle displayed by this editor.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.tin.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NFillStyleEditorBaseUC_8299_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.kjn.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NGradientFillStyleEditorUC_8315_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.kjn.LocalizationContextName">
+        <member name="P:Nevron.Internal.NGradientFillStyleEditorUC_8315_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.kjn.Style">
+        <member name="P:Nevron.Internal.NGradientFillStyleEditorUC_8315_obf.Style">
             <summary>
             Get or sets the FillStyle displayed by this editor.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.wmn.Style">
+        <member name="P:Nevron.Internal.NHatchFillStyleEditorUC_8402_obf.Style">
             <summary>
             Get or sets the FillStyle displayed by this editor.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.wmn.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NHatchFillStyleEditorUC_8402_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.wmn.LocalizationContextName">
+        <member name="P:Nevron.Internal.NHatchFillStyleEditorUC_8402_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.oon.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NImageFillStyleEditorUC_8444_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.oon.LocalizationContextName">
+        <member name="P:Nevron.Internal.NImageFillStyleEditorUC_8444_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.oon.Style">
+        <member name="P:Nevron.Internal.NImageFillStyleEditorUC_8444_obf.Style">
             <summary>
             Get or sets the FillStyle displayed by this editor.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.sqn.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NTextureFillStyleEditorUC_8498_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.drn.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NFontStyleEditorUC_8508_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.drn.LocalizationContextName">
+        <member name="P:Nevron.Internal.NFontStyleEditorUC_8508_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.drn.Style">
+        <member name="P:Nevron.Internal.NFontStyleEditorUC_8508_obf.Style">
             <summary>
             Gets/sets NFontStyle object to edit.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.eyn.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NImageFiltersStyleEditorUC_8684_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.eyn.LocalizationContextName">
+        <member name="P:Nevron.Internal.NImageFiltersStyleEditorUC_8684_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.eyn.Style">
+        <member name="P:Nevron.Internal.NImageFiltersStyleEditorUC_8684_obf.Style">
             <summary>
             Get or sets the ImageFiltersStyle edited by this editor.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.iao.LocalizationContextName">
+        <member name="P:Nevron.Internal.NPdfImageFormatEditorUC_8713_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.iao.Style">
+        <member name="P:Nevron.Internal.NPdfImageFormatEditorUC_8713_obf.Style">
             <summary>
             Gets/sets the style to edit.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.iao.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NPdfImageFormatEditorUC_8713_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.qao.LocalizationContextName">
+        <member name="P:Nevron.Internal.NXamlImageFormatEditorUC_8721_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.qao.Style">
+        <member name="P:Nevron.Internal.NXamlImageFormatEditorUC_8721_obf.Style">
             <summary>
             Gets/sets the style to edit.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.qao.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NXamlImageFormatEditorUC_8721_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.wao.LocalizationContextName">
+        <member name="P:Nevron.Internal.NSwfImageFormatEditorUC_8727_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.wao.Style">
+        <member name="P:Nevron.Internal.NSwfImageFormatEditorUC_8727_obf.Style">
             <summary>
             Gets/sets the style to edit.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.wao.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NSwfImageFormatEditorUC_8727_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.dbo.Style">
+        <member name="P:Nevron.Internal.NEmfImageFormatEditorUC_8733_obf.Style">
             <summary>
             Gets/sets the style to edit.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.dbo.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NEmfImageFormatEditorUC_8733_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.jbo.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NRasterImageFormatEditorUC_8739_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jbo.LocalizationContextName">
+        <member name="P:Nevron.Internal.NRasterImageFormatEditorUC_8739_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jbo.Style">
+        <member name="P:Nevron.Internal.NRasterImageFormatEditorUC_8739_obf.Style">
             <summary>
             Gets/sets the style to edit.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.aco.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NSvgImageFormatEditorUC_8755_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.aco.LocalizationContextName">
+        <member name="P:Nevron.Internal.NSvgImageFormatEditorUC_8755_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.aco.Style">
+        <member name="P:Nevron.Internal.NSvgImageFormatEditorUC_8755_obf.Style">
             <summary>
             Gets/sets the NSvgImageFormat object to edit.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.wco.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NInteractivityStyleEditorUC_8777_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.wco.LocalizationContextName">
+        <member name="P:Nevron.Internal.NInteractivityStyleEditorUC_8777_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.wco.Style">
+        <member name="P:Nevron.Internal.NInteractivityStyleEditorUC_8777_obf.Style">
             <summary>
             Gets/sets the NInteractivityStyle object to edit.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.feo.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NShadowStyleEditorUC_8810_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.feo.LocalizationContextName">
+        <member name="P:Nevron.Internal.NShadowStyleEditorUC_8810_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.feo.Style">
+        <member name="P:Nevron.Internal.NShadowStyleEditorUC_8810_obf.Style">
             <summary>
             Gets/sets NShadowStyle object to edit.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.kfo.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NStringFormatStyleEditorUC_8840_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.kfo.LocalizationContextName">
+        <member name="P:Nevron.Internal.NStringFormatStyleEditorUC_8840_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.kfo.Style">
+        <member name="P:Nevron.Internal.NStringFormatStyleEditorUC_8840_obf.Style">
             <summary>
             Gets/sets NStrokeStyle object to edit.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.fho.Style">
+        <member name="P:Nevron.Internal.NStrokeStyleEditorUC_8885_obf.Style">
             <summary>
             Gets/sets NStrokeStyle object to edit.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.fho.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NStrokeStyleEditorUC_8885_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.fho.LocalizationContextName">
+        <member name="P:Nevron.Internal.NStrokeStyleEditorUC_8885_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.sjo.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NAppearanceStylePreviewUC_8948_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.sjo.Style">
+        <member name="P:Nevron.Internal.NAppearanceStylePreviewUC_8948_obf.Style">
             <summary>
             Controls the background style of the preview.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.dko.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NTextStyleEditorUC_8958_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.dko.LocalizationContextName">
+        <member name="P:Nevron.Internal.NTextStyleEditorUC_8958_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.dko.Style">
+        <member name="P:Nevron.Internal.NTextStyleEditorUC_8958_obf.Style">
             <summary>
             Gets/sets the text style to edit.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.nmo.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NDateTimeValueFormatterEditorUC_9018_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.nmo.Style">
+        <member name="P:Nevron.Internal.NDateTimeValueFormatterEditorUC_9018_obf.Style">
             <summary>
             Gets/sets the style to edit.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.rmo.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NGenericValueFormatterEditorUC_9022_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.rmo.LocalizationContextName">
+        <member name="P:Nevron.Internal.NGenericValueFormatterEditorUC_9022_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.kno.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NNumericValueFormatterEditorUC_9040_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.kno.Style">
+        <member name="P:Nevron.Internal.NNumericValueFormatterEditorUC_9040_obf.Style">
             <summary>
             Gets/sets the style to edit.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.bpo.LocalizationContextName">
+        <member name="P:Nevron.Internal.NThemeClassLivePreview_9081_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.qso.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NRectangleUC_9171_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_Equality(Nevron.Internal.jpp,Nevron.Internal.jpp)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_Equality(Nevron.Internal.NComplex_9714_obf,Nevron.Internal.NComplex_9714_obf)">
             <summary>
             Determines whether a is equal to b
             </summary>
@@ -3537,7 +3537,7 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_Inequality(Nevron.Internal.jpp,Nevron.Internal.jpp)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_Inequality(Nevron.Internal.NComplex_9714_obf,Nevron.Internal.NComplex_9714_obf)">
             <summary>
             Determines whether a is not equal to b
             </summary>
@@ -3545,14 +3545,14 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_UnaryPlus(Nevron.Internal.jpp)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_UnaryPlus(Nevron.Internal.NComplex_9714_obf)">
             <summary>
             Unary plus
             </summary>
             <param name="a"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_Addition(Nevron.Internal.jpp,Nevron.Internal.jpp)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_Addition(Nevron.Internal.NComplex_9714_obf,Nevron.Internal.NComplex_9714_obf)">
             <summary>
             Addition operator
             </summary>
@@ -3560,7 +3560,7 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_Addition(Nevron.Internal.jpp,System.Double)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_Addition(Nevron.Internal.NComplex_9714_obf,System.Double)">
             <summary>
             Addition operator
             </summary>
@@ -3568,7 +3568,7 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_Addition(System.Double,Nevron.Internal.jpp)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_Addition(System.Double,Nevron.Internal.NComplex_9714_obf)">
             <summary>
             Addition operator
             </summary>
@@ -3576,14 +3576,14 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_UnaryNegation(Nevron.Internal.jpp)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_UnaryNegation(Nevron.Internal.NComplex_9714_obf)">
             <summary>
             Unary minus
             </summary>
             <param name="a"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_Subtraction(Nevron.Internal.jpp,Nevron.Internal.jpp)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_Subtraction(Nevron.Internal.NComplex_9714_obf,Nevron.Internal.NComplex_9714_obf)">
             <summary>
             Subtraction operator
             </summary>
@@ -3591,7 +3591,7 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_Subtraction(Nevron.Internal.jpp,System.Double)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_Subtraction(Nevron.Internal.NComplex_9714_obf,System.Double)">
             <summary>
             Subtraction operator
             </summary>
@@ -3599,7 +3599,7 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_Subtraction(System.Double,Nevron.Internal.jpp)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_Subtraction(System.Double,Nevron.Internal.NComplex_9714_obf)">
             <summary>
             Subtraction operator
             </summary>
@@ -3607,7 +3607,7 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_Multiply(Nevron.Internal.jpp,Nevron.Internal.jpp)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_Multiply(Nevron.Internal.NComplex_9714_obf,Nevron.Internal.NComplex_9714_obf)">
             <summary>
             Multiplication operator
             </summary>
@@ -3615,7 +3615,7 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_Multiply(Nevron.Internal.jpp,System.Double)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_Multiply(Nevron.Internal.NComplex_9714_obf,System.Double)">
             <summary>
             Multiplication with scalar operator
             </summary>
@@ -3623,7 +3623,7 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_Multiply(System.Double,Nevron.Internal.jpp)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_Multiply(System.Double,Nevron.Internal.NComplex_9714_obf)">
             <summary>
             Multiplication with scalar operator
             </summary>
@@ -3631,7 +3631,7 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_Division(Nevron.Internal.jpp,Nevron.Internal.jpp)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_Division(Nevron.Internal.NComplex_9714_obf,Nevron.Internal.NComplex_9714_obf)">
             <summary>
             Division operator
             </summary>
@@ -3639,7 +3639,7 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_Division(Nevron.Internal.jpp,System.Double)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_Division(Nevron.Internal.NComplex_9714_obf,System.Double)">
             <summary>
             Division by scalar operator
             </summary>
@@ -3647,7 +3647,7 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.op_Division(System.Double,Nevron.Internal.jpp)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.op_Division(System.Double,Nevron.Internal.NComplex_9714_obf)">
             <summary>
             Division by scalar operator
             </summary>
@@ -3655,26 +3655,26 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.Equals(System.Object)">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.Equals(System.Object)">
             <summary>
             Determines whether the specified object is equal to the current one.
             </summary>
-            <param name="wpp"></param>
+            <param name="obj_9727_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.GetHashCode">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.GetHashCode">
             <summary>
             Returns the hash code of the current object.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jpp.ToString">
+        <member name="M:Nevron.Internal.NComplex_9714_obf.ToString">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.wfq.op_Multiply(Nevron.Internal.wfq,Nevron.Internal.wfq)">
+        <member name="M:Nevron.Internal.NMatrix4F_10102_obf.op_Multiply(Nevron.Internal.NMatrix4F_10102_obf,Nevron.Internal.NMatrix4F_10102_obf)">
             <summary>
             Multiplies the specified matrices.
             </summary>
@@ -3682,469 +3682,469 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.wyq.CompareTo(Nevron.Internal.wyq)">
+        <member name="M:Nevron.Internal.NEdgeRasterizationInfo_10577_obf.CompareTo(Nevron.Internal.NEdgeRasterizationInfo_10577_obf)">
             <summary>
             Compares this edge with the given one by X value.
             </summary>
-            <param name="bar"></param>
+            <param name="other_10581_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.wyq.ToString">
+        <member name="M:Nevron.Internal.NEdgeRasterizationInfo_10577_obf.ToString">
             <summary>
             Gets the string representation of this object.
             </summary>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.jsr.SupportsAnimation">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.SupportsAnimation">
             <summary>
             Determines whether this device supports animation.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jsr.AnimationBounds">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.AnimationBounds">
             <summary>
             Gets or sets the animation bounds. Regarded only when AnimationBoundsMode is set to context
             </summary>
         </member>
-        <member name="M:Nevron.Internal.jsr.ClearStyles(Nevron.GraphicsCore.DeviceStyle)">
+        <member name="M:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.ClearStyles(Nevron.GraphicsCore.DeviceStyle)">
             <summary>
             Clears style state and optionally updates the painter 
             </summary>
-            <param name="ssr"></param>
+            <param name="styles_11046_obf"></param>
         </member>
-        <member name="P:Nevron.Internal.jsr.RenderTechnology">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.RenderTechnology">
             <summary>
             Obtains the rendering technology of the device
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jsr.FillStyle">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.FillStyle">
             <summary>
             Gets or sets the current fill style.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jsr.FillColor">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.FillColor">
             <summary>
             Sets the current fill color.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jsr.StrokeStyle">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.StrokeStyle">
             <summary>
             Gets or sets the current stroke style.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jsr.ImageFiltersStyle">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.ImageFiltersStyle">
             <summary>
             Gets or sets the current image filters style.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jsr.Painter">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.Painter">
             <summary>
             Obtains the current painter
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jsr.Transform">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.Transform">
             <summary>
             Gets/sets the world transformation for this device object.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jsr.TextureBoundsProvider">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.TextureBoundsProvider">
             <summary>
             The bounds providers used to calculate bounds for texture mapping
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jsr.ClipPath">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.ClipPath">
             <summary>
             Gets or sets the current clip path
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jsr.ClipInfo">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.ClipInfo">
             <summary>
             Gets or sets the current clip path
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jsr.ImageFiltersBoundsProvider">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.ImageFiltersBoundsProvider">
             <summary>
             The bounds privder used to calculate bounds for image filters canvas
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jsr.TextureMappingOrientation">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.TextureMappingOrientation">
             <summary>
             The orientation applied on textures when mapping them on objects
             </summary>
         </member>
-        <member name="M:Nevron.Internal.jsr.TranslateTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)">
+        <member name="M:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.TranslateTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)">
             <summary>
             Applies the specified translation to the transformation matrix of this Graphics object.
             </summary>
-            <param name="tsr"></param>
-            <param name="usr"></param>
-            <param name="vsr"></param>
+            <param name="dx_11047_obf"></param>
+            <param name="dy_11048_obf"></param>
+            <param name="matrixOrder_11049_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.jsr.ScaleTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)">
+        <member name="M:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.ScaleTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)">
             <summary>
             Applies the specified scaling operation to the transformation matrix of this Graphics object by prepending it to the object's transformation matrix.
             </summary>
-            <param name="wsr"></param>
-            <param name="xsr"></param>
-            <param name="ysr"></param>
+            <param name="sx_11050_obf"></param>
+            <param name="sy_11051_obf"></param>
+            <param name="matrixOrder_11052_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.jsr.RotateTransform(System.Single,System.Drawing.Drawing2D.MatrixOrder)">
+        <member name="M:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.RotateTransform(System.Single,System.Drawing.Drawing2D.MatrixOrder)">
             <summary>
             Applies the specified rotation to the transformation matrix of this Graphics object.
             </summary>
-            <param name="atr"></param>
-            <param name="btr"></param>
+            <param name="angle_11053_obf"></param>
+            <param name="matrixOrder_11054_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.jsr.ResetTransform">
+        <member name="M:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.ResetTransform">
             <summary>
             Resets the world transformation matrix of this Graphics object to the identity matrix.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jsr.ColorTransform">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.ColorTransform">
             <summary>
             Gets or sets the color transform object associated with this device
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jsr.Palette">
+        <member name="P:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.Palette">
             <summary>
             Gets or sets the device color palette
             </summary>
         </member>
-        <member name="M:Nevron.Internal.jsr.Clear">
+        <member name="M:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.Clear">
             <summary>
             Clears all current drawings fromt he render surface this device is attached to.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.jsr.Clear(System.Drawing.Color)">
+        <member name="M:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.Clear(System.Drawing.Color)">
             <summary>
             
             </summary>
-            <param name="ctr"></param>
+            <param name="color_11055_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.jsr.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NPointF)">
+        <member name="M:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NPointF)">
             <summary>
             Draws the specified Image object, using its original physical size, at the specified location.
             </summary>
-            <param name="dtr"></param>
-            <param name="etr"></param>
+            <param name="image_11056_obf"></param>
+            <param name="point_11057_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.jsr.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NRectangleF)">
+        <member name="M:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NRectangleF)">
             <summary>
             Draws the specified Image object to the specified rectangle
             </summary>
-            <param name="ftr"></param>
-            <param name="gtr"></param>
+            <param name="image_11058_obf"></param>
+            <param name="rect_11059_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.jsr.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NRectangleF,Nevron.GraphicsCore.NRectangleF,System.Drawing.GraphicsUnit)">
+        <member name="M:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NRectangleF,Nevron.GraphicsCore.NRectangleF,System.Drawing.GraphicsUnit)">
             <summary>
             Draws the specified portion of the specified Image object at the specified location and with the specified size.
             </summary>
-            <param name="htr"></param>
-            <param name="itr"></param>
-            <param name="jtr"></param>
-            <param name="ktr"></param>
+            <param name="image_11060_obf"></param>
+            <param name="destRect_11061_obf"></param>
+            <param name="srcRect_11062_obf"></param>
+            <param name="srcUnit_11063_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.jsr.DrawImageMap(System.Object,Nevron.GraphicsCore.NRectangleF)">
+        <member name="M:Nevron.Internal.N2DRasterImageMapDevice_11037_obf.DrawImageMap(System.Object,Nevron.GraphicsCore.NRectangleF)">
             <summary>
             Draws the specified image map, at the specified dest rectangle
             </summary>
-            <param name="ltr"></param>
-            <param name="mtr"></param>
+            <param name="imageMap_11064_obf"></param>
+            <param name="destRect_11065_obf"></param>
         </member>
-        <member name="P:Nevron.Internal.fus`1.Item(System.Int32)">
+        <member name="P:Nevron.Internal.NDxfSection_11708_obf`1.Item(System.Int32)">
             <summary>
             Gets the element at the specified index.
             </summary>
             <param name="index"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jot.Clear(Nevron.GraphicsCore.NColor)">
+        <member name="M:Nevron.Internal.NGraphicsSwf_12183_obf.Clear(Nevron.GraphicsCore.NColor)">
             <summary>
             Sets the background color of the SWF movie. Note that only the first 
             SetBackgroundColorTag is taken into account and all others are ignored.
             </summary>
-            <param name="sot"></param>
+            <param name="color_12191_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.jot.MoveTo(System.Single,System.Single)">
+        <member name="M:Nevron.Internal.NGraphicsSwf_12183_obf.MoveTo(System.Single,System.Single)">
             <summary>
             Moves the drawing point to the specified location.
             </summary>
-            <param name="tot"></param>
-            <param name="uot"></param>
+            <param name="x_12192_obf"></param>
+            <param name="y_12193_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.jot.LineTo(System.Single,System.Single)">
+        <member name="M:Nevron.Internal.NGraphicsSwf_12183_obf.LineTo(System.Single,System.Single)">
             <summary>
             Draws a line from the current drawing point to the specified point and
             updates the drawing point to the new one.
             </summary>
-            <param name="bpt"></param>
-            <param name="cpt"></param>
+            <param name="x_12199_obf"></param>
+            <param name="y_12200_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.jot.PaintString(Nevron.GraphicsCore.NPointF,System.String)">
+        <member name="M:Nevron.Internal.NGraphicsSwf_12183_obf.PaintString(Nevron.GraphicsCore.NPointF,System.String)">
             <summary>
             Draws a string (texts are rendered as graphics paths if they have rotation).
             </summary>
-            <param name="sqt"></param>
-            <param name="tqt"></param>
+            <param name="location_12241_obf"></param>
+            <param name="s_12242_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.ext.Dispose">
+        <member name="M:Nevron.Internal.NSwfWriter_12401_obf.Dispose">
             <summary>
             Closes the Swf writer and releases any resources used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.abu.ToString">
+        <member name="M:Nevron.Internal.NBaseTag_12472_obf.ToString">
             <summary>
             Returns the string representation of this swf tag.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.kev.Equals(System.Object)">
+        <member name="M:Nevron.Internal.NSwfFillStyle_13184_obf.Equals(System.Object)">
             <summary>
             Determines if the given fill style is equal to the current fill style.
             </summary>
-            <param name="lev"></param>
+            <param name="obj_13185_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.kev.GetHashCode">
+        <member name="M:Nevron.Internal.NSwfFillStyle_13184_obf.GetHashCode">
             <summary>
             Serves as a hash function for a FillStyle type.
             </summary>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.kiv.Item(System.Char)">
+        <member name="P:Nevron.Internal.NSwfGlyphShapesTable_13284_obf.Item(System.Char)">
             <summary>
-            Gets or sets the <see cref="T:Nevron.Internal.xwv"/> with the specified character.
+            Gets or sets the <see cref="T:Nevron.Internal.NSwfShapeRecordCollection_13647_obf"/> with the specified character.
             </summary>
             <value></value>
         </member>
-        <member name="M:Nevron.Internal.kmv.Equals(System.Object)">
+        <member name="M:Nevron.Internal.NSwfLineStyle_13384_obf.Equals(System.Object)">
             <summary>
             
             </summary>
-            <param name="rmv"></param>
+            <param name="obj_13391_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.kmv.GetHashCode">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Nevron.Internal.bnv.Equals(System.Object)">
-            <summary>
-            
-            </summary>
-            <param name="fov"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Nevron.Internal.bnv.GetHashCode">
+        <member name="M:Nevron.Internal.NSwfLineStyle_13384_obf.GetHashCode">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.cpv.Equals(System.Object)">
+        <member name="M:Nevron.Internal.NSwfLineStyle2_13400_obf.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="obj_13429_obf"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.NSwfLineStyle2_13400_obf.GetHashCode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.NSwfMatrix_13451_obf.Equals(System.Object)">
             <summary>
             Determines whether the specified matrix is equal to the current matrix.
             </summary>
-            <param name="npv"></param>
+            <param name="obj_13462_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.cpv.GetHashCode">
+        <member name="M:Nevron.Internal.NSwfMatrix_13451_obf.GetHashCode">
             <summary>
             Serves as a hash function for a matrix.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.gbw.ReadByte">
+        <member name="M:Nevron.Internal.NBufferedBinaryReader_13730_obf.ReadByte">
             <summary>
             Reads the byte.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.gbw.ReadUInt16">
+        <member name="M:Nevron.Internal.NBufferedBinaryReader_13730_obf.ReadUInt16">
             <summary>
             Reads an Unsigned int16.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.gbw.ReadUInt32">
+        <member name="M:Nevron.Internal.NBufferedBinaryReader_13730_obf.ReadUInt32">
             <summary>
             Reads an Unsigned int32.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.gbw.ReadUInt64">
+        <member name="M:Nevron.Internal.NBufferedBinaryReader_13730_obf.ReadUInt64">
             <summary>
             Reads an Unsigned int64.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.gbw.ReadChar">
+        <member name="M:Nevron.Internal.NBufferedBinaryReader_13730_obf.ReadChar">
             <summary>
             Reads the char.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.gbw.ReadInt16">
+        <member name="M:Nevron.Internal.NBufferedBinaryReader_13730_obf.ReadInt16">
             <summary>
             Reads the int16.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.gbw.ReadInt32">
+        <member name="M:Nevron.Internal.NBufferedBinaryReader_13730_obf.ReadInt32">
             <summary>
             Reads the int32.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.gbw.ReadInt64">
+        <member name="M:Nevron.Internal.NBufferedBinaryReader_13730_obf.ReadInt64">
             <summary>
             Reads the int64.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.gbw.ReadString">
+        <member name="M:Nevron.Internal.NBufferedBinaryReader_13730_obf.ReadString">
             <summary>
             Reads the string.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.gbw.ReadBoolean">
+        <member name="M:Nevron.Internal.NBufferedBinaryReader_13730_obf.ReadBoolean">
             <summary>
             Reads a bit value.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.rcw.Flush">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Flush">
             <summary>
             Flushes this instance.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.Byte)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.Byte)">
             <summary>
             Writes the specified value.
             </summary>
             <param name="value">Value.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.SByte)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.SByte)">
             <summary>
             Writes the specified value.
             </summary>
             <param name="value">Value.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.Int16)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.Int16)">
             <summary>
             Writes the specified value.
             </summary>
             <param name="value">Value.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.UInt16)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.UInt16)">
             <summary>
             Writes the specified value.
             </summary>
             <param name="value">Value.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.Int32)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.Int32)">
             <summary>
             Writes the specified value.
             </summary>
             <param name="value">Value.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.UInt32)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.UInt32)">
             <summary>
             Writes the specified value.
             </summary>
             <param name="value">Value.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.String)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.String)">
             <summary>
             Writes the specified value.
             </summary>
             <param name="value">Value.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.Decimal)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.Decimal)">
             <summary>
             Writes the specified value.
             </summary>
             <param name="value">Value.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.Double)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.Double)">
             <summary>
             Writes the specified value.
             </summary>
             <param name="value">Value.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.Single)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.Single)">
             <summary>
             Writes the specified value.
             </summary>
             <param name="value">Value.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.Int64)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.Int64)">
             <summary>
             Writes the specified value.
             </summary>
             <param name="value">Value.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.UInt64)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.UInt64)">
             <summary>
             Writes the specified value.
             </summary>
             <param name="value">Value.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.Char)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.Char)">
             <summary>
             Writes the specified ch.
             </summary>
-            <param name="bdw">Ch.</param>
+            <param name="ch_13775_obf">Ch.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.Char[])">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.Char[])">
             <summary>
             Writes the specified chars.
             </summary>
-            <param name="cdw">Chars.</param>
+            <param name="chars_13776_obf">Chars.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.Char[],System.Int32,System.Int32)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.Char[],System.Int32,System.Int32)">
             <summary>
             Writes the specified chars.
             </summary>
-            <param name="ddw">Chars.</param>
-            <param name="edw">Index.</param>
-            <param name="fdw">Count.</param>
+            <param name="chars_13777_obf">Chars.</param>
+            <param name="index_13778_obf">Index.</param>
+            <param name="count_13779_obf">Count.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.Byte[],System.Int32,System.Int32)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.Byte[],System.Int32,System.Int32)">
             <summary>
             Writes the specified buffer.
             </summary>
-            <param name="gdw">Buffer.</param>
-            <param name="hdw">Index.</param>
-            <param name="idw">Count.</param>
+            <param name="buffer_13780_obf">Buffer.</param>
+            <param name="index_13781_obf">Index.</param>
+            <param name="count_13782_obf">Count.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.Byte[])">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.Byte[])">
             <summary>
             Writes the specified buffer.
             </summary>
-            <param name="jdw">Buffer.</param>
+            <param name="buffer_13783_obf">Buffer.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Write(System.Boolean)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Write(System.Boolean)">
             <summary>
             Writes the specified value.
             </summary>
             <param name="value">Value.</param>
         </member>
-        <member name="M:Nevron.Internal.rcw.Seek(System.Int32,System.IO.SeekOrigin)">
+        <member name="M:Nevron.Internal.NBufferedBinaryWriter_13766_obf.Seek(System.Int32,System.IO.SeekOrigin)">
             <summary>
             Seeks the specified offset.
             </summary>
-            <param name="mdw">Offset.</param>
-            <param name="ndw">Origin.</param>
+            <param name="offset_13786_obf">Offset.</param>
+            <param name="origin_13787_obf">Origin.</param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jkw.SetBrush(Nevron.NewGraphics.NBrush)">
+        <member name="M:Nevron.Internal.NGraphicsXaml_13957_obf.SetBrush(Nevron.NewGraphics.NBrush)">
             <summary>
             Set the brush to use for filling.
             </summary>
-            <param name="pkw"></param>
+            <param name="brush_13963_obf"></param>
             <remarks>
             All image and linear gradient brushes (except for the diagonal linear gradient brushes)
             are added to a resource dictionary, so that they are created only once and can be reused
@@ -4153,11 +4153,11 @@
             gradient line.
             </remarks>
         </member>
-        <member name="M:Nevron.Internal.jkw.PaintEllipse(Nevron.GraphicsCore.NRectangleF)">
+        <member name="M:Nevron.Internal.NGraphicsXaml_13957_obf.PaintEllipse(Nevron.GraphicsCore.NRectangleF)">
             <summary>
             Renders an ellipse to Silverlight by approximating it with 4 cubic bezier splines.
             </summary>
-            <param name="plw"></param>
+            <param name="rect_13988_obf"></param>
             <remarks>
             <para>
             Using just four bezier curves, each representing 90 degrees of the original axis-aligned
@@ -4170,353 +4170,353 @@
             </para>
             </remarks>
         </member>
-        <member name="M:Nevron.Internal.jkw.PaintString(Nevron.GraphicsCore.NPointF,System.String)">
+        <member name="M:Nevron.Internal.NGraphicsXaml_13957_obf.PaintString(Nevron.GraphicsCore.NPointF,System.String)">
             <summary>
             
             </summary>
-            <param name="hmw"></param>
-            <param name="imw"></param>
+            <param name="location_14005_obf"></param>
+            <param name="s_14006_obf"></param>
         </member>
-        <member name="P:Nevron.Internal.xnw.Item(System.Int32)">
+        <member name="P:Nevron.Internal.NXamlDocument_14046_obf.Item(System.Int32)">
             <summary>
             Gets the silverlight tag at the specified index.
             </summary>
             <param name="index"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.wbx.InitFrom(Nevron.NewGraphics.NGraphicsObject)">
+        <member name="M:Nevron.Internal.NVectorImageBrush_14370_obf.InitFrom(Nevron.NewGraphics.NGraphicsObject)">
             <summary>
             Initializes a new graphics object from the given one.
             </summary>
-            <param name="acx"></param>
+            <param name="graphicsObject_14373_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.ccx.InitFrom(Nevron.NewGraphics.NGraphicsObject)">
+        <member name="M:Nevron.Internal.NVectorLinearGradientBrush_14375_obf.InitFrom(Nevron.NewGraphics.NGraphicsObject)">
             <summary>
             Initializes a new graphics object from the given one.
             </summary>
-            <param name="dcx"></param>
+            <param name="graphicsObject_14376_obf"></param>
         </member>
-        <member name="P:Nevron.Internal.mhx.SupportsAnimation">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.SupportsAnimation">
             <summary>
             Determines whether this device supports animation.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mhx.AnimationBounds">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.AnimationBounds">
             <summary>
             Gets or sets the animation bounds. Regarded only when AnimationBoundsMode is set to context
             </summary>
         </member>
-        <member name="M:Nevron.Internal.mhx.ClearStyles(Nevron.GraphicsCore.DeviceStyle)">
+        <member name="M:Nevron.Internal.N2DImageMapDevice_14510_obf.ClearStyles(Nevron.GraphicsCore.DeviceStyle)">
             <summary>
             Clears style state and optionally updates the painter 
             </summary>
-            <param name="vhx"></param>
+            <param name="styles_14519_obf"></param>
         </member>
-        <member name="P:Nevron.Internal.mhx.RenderTechnology">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.RenderTechnology">
             <summary>
             Obtains the rendering technology of the device
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mhx.FillStyle">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.FillStyle">
             <summary>
             Gets or sets the current fill style.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mhx.FillColor">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.FillColor">
             <summary>
             Sets the current fill color.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mhx.StrokeStyle">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.StrokeStyle">
             <summary>
             Gets or sets the current stroke style.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mhx.ImageFiltersStyle">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.ImageFiltersStyle">
             <summary>
             Gets or sets the current image filters style.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mhx.Painter">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.Painter">
             <summary>
             Obtains the current painter
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mhx.Transform">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.Transform">
             <summary>
             Gets/sets the world transformation for this device object.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mhx.TextureBoundsProvider">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.TextureBoundsProvider">
             <summary>
             The bounds providers used to calculate bounds for texture mapping
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mhx.ClipPath">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.ClipPath">
             <summary>
             Gets or sets the current clip path
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mhx.ClipInfo">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.ClipInfo">
             <summary>
             Gets or sets the current clip path
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mhx.ImageFiltersBoundsProvider">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.ImageFiltersBoundsProvider">
             <summary>
             The bounds privder used to calculate bounds for image filters canvas
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mhx.TextureMappingOrientation">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.TextureMappingOrientation">
             <summary>
             The orientation applied on textures when mapping them on objects
             </summary>
         </member>
-        <member name="M:Nevron.Internal.mhx.TranslateTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)">
+        <member name="M:Nevron.Internal.N2DImageMapDevice_14510_obf.TranslateTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)">
             <summary>
             Applies the specified translation to the transformation matrix of this Graphics object.
             </summary>
-            <param name="whx"></param>
-            <param name="xhx"></param>
-            <param name="yhx"></param>
+            <param name="dx_14520_obf"></param>
+            <param name="dy_14521_obf"></param>
+            <param name="matrixOrder_14522_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.mhx.ScaleTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)">
+        <member name="M:Nevron.Internal.N2DImageMapDevice_14510_obf.ScaleTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)">
             <summary>
             Applies the specified scaling operation to the transformation matrix of this Graphics object by prepending it to the object's transformation matrix.
             </summary>
-            <param name="aix"></param>
-            <param name="bix"></param>
-            <param name="cix"></param>
+            <param name="sx_14523_obf"></param>
+            <param name="sy_14524_obf"></param>
+            <param name="matrixOrder_14525_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.mhx.RotateTransform(System.Single,System.Drawing.Drawing2D.MatrixOrder)">
+        <member name="M:Nevron.Internal.N2DImageMapDevice_14510_obf.RotateTransform(System.Single,System.Drawing.Drawing2D.MatrixOrder)">
             <summary>
             Applies the specified rotation to the transformation matrix of this Graphics object.
             </summary>
-            <param name="dix"></param>
-            <param name="eix"></param>
+            <param name="angle_14526_obf"></param>
+            <param name="matrixOrder_14527_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.mhx.ResetTransform">
+        <member name="M:Nevron.Internal.N2DImageMapDevice_14510_obf.ResetTransform">
             <summary>
             Resets the world transformation matrix of this Graphics object to the identity matrix.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mhx.ColorTransform">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.ColorTransform">
             <summary>
             Gets or sets the color transform object associated with this device
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mhx.Palette">
+        <member name="P:Nevron.Internal.N2DImageMapDevice_14510_obf.Palette">
             <summary>
             Gets or sets the device color palette
             </summary>
         </member>
-        <member name="M:Nevron.Internal.mhx.Clear">
+        <member name="M:Nevron.Internal.N2DImageMapDevice_14510_obf.Clear">
             <summary>
             Clears all current drawings fromt he render surface this device is attached to.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.mhx.Clear(System.Drawing.Color)">
+        <member name="M:Nevron.Internal.N2DImageMapDevice_14510_obf.Clear(System.Drawing.Color)">
             <summary>
             
             </summary>
-            <param name="fix"></param>
+            <param name="color_14528_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.mhx.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NPointF)">
+        <member name="M:Nevron.Internal.N2DImageMapDevice_14510_obf.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NPointF)">
             <summary>
             Draws the specified Image object, using its original physical size, at the specified location.
             </summary>
-            <param name="gix"></param>
-            <param name="hix"></param>
+            <param name="image_14529_obf"></param>
+            <param name="point_14530_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.mhx.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NRectangleF)">
+        <member name="M:Nevron.Internal.N2DImageMapDevice_14510_obf.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NRectangleF)">
             <summary>
             Draws the specified Image object to the specified rectangle
             </summary>
-            <param name="iix"></param>
-            <param name="jix"></param>
+            <param name="image_14531_obf"></param>
+            <param name="rect_14532_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.mhx.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NRectangleF,Nevron.GraphicsCore.NRectangleF,System.Drawing.GraphicsUnit)">
+        <member name="M:Nevron.Internal.N2DImageMapDevice_14510_obf.DrawImage(System.Drawing.Bitmap,Nevron.GraphicsCore.NRectangleF,Nevron.GraphicsCore.NRectangleF,System.Drawing.GraphicsUnit)">
             <summary>
             Draws the specified portion of the specified Image object at the specified location and with the specified size.
             </summary>
-            <param name="kix"></param>
-            <param name="lix"></param>
-            <param name="mix"></param>
-            <param name="nix"></param>
+            <param name="image_14533_obf"></param>
+            <param name="destRect_14534_obf"></param>
+            <param name="srcRect_14535_obf"></param>
+            <param name="srcUnit_14536_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.mhx.DrawImageMap(System.Object,Nevron.GraphicsCore.NRectangleF)">
+        <member name="M:Nevron.Internal.N2DImageMapDevice_14510_obf.DrawImageMap(System.Object,Nevron.GraphicsCore.NRectangleF)">
             <summary>
             Draws the specified image map, at the specified dest rectangle
             </summary>
-            <param name="oix"></param>
-            <param name="pix"></param>
+            <param name="imageMap_14537_obf"></param>
+            <param name="destRect_14538_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.vty.Dispose">
+        <member name="M:Nevron.Internal.NBitmap_15443_obf.Dispose">
             <summary>
             Releases all resources used by the object
             </summary>
         </member>
-        <member name="M:Nevron.Internal.qbab.Dispose">
+        <member name="M:Nevron.Internal.NFilterContext_15613_obf.Dispose">
             <summary>
             Releases all resources used by the object
             </summary>
         </member>
-        <member name="P:Nevron.Internal.fgab.Item(System.Int32)">
+        <member name="P:Nevron.Internal.NSWImageFilterChain_15727_obf.Item(System.Int32)">
             <summary>
             Gets/Sets the filter with the specified index.
             </summary>
             <param name="index">The zero-based index of the element to get or set.</param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.voab.MoveNext">
+        <member name="M:Nevron.Internal.NRangeAtomEnumerator_15943_obf.MoveNext">
             <summary>
             Advances the enumerator to the next atom in the document
             </summary>
             <returns>true if advance succeeded, false if the end of the range was reached</returns>
         </member>
-        <member name="P:Nevron.Internal.voab.Current">
+        <member name="P:Nevron.Internal.NRangeAtomEnumerator_15943_obf.Current">
             <summary>
             Obtains the current node in the container or throws an exception if the enumerator was not started or has ended
             </summary>
         </member>
-        <member name="M:Nevron.Internal.voab.Reset">
+        <member name="M:Nevron.Internal.NRangeAtomEnumerator_15943_obf.Reset">
             <summary>
             Resets the enumerator (positions it before the first node in the container)
             </summary>
         </member>
-        <member name="M:Nevron.Internal.epab.MoveNext">
+        <member name="M:Nevron.Internal.NRangeElementEnumerator_15951_obf.MoveNext">
             <summary>
             Advances the enumerator to the next node in the container, which satifies the specified filter
             </summary>
             <returns>true if advance succeeded, false if the end of the container was reached</returns>
         </member>
-        <member name="P:Nevron.Internal.epab.Current">
+        <member name="P:Nevron.Internal.NRangeElementEnumerator_15951_obf.Current">
             <summary>
             Obtains the current node in the container or throws an exception if the enumerator was not started or has ended
             </summary>
         </member>
-        <member name="M:Nevron.Internal.epab.Reset">
+        <member name="M:Nevron.Internal.NRangeElementEnumerator_15951_obf.Reset">
             <summary>
             Resets the enumerator (positions it before the first node in the container)
             </summary>
         </member>
-        <member name="M:Nevron.Internal.opab.MoveNext">
+        <member name="M:Nevron.Internal.NRangeElementFilteredEnumerator_15961_obf.MoveNext">
             <summary>
             Advances the enumerator to the next node in the container, which satifies the specified filter
             </summary>
             <returns>true if advance succeeded, false if the end of the container was reached</returns>
         </member>
-        <member name="P:Nevron.Internal.opab.Current">
+        <member name="P:Nevron.Internal.NRangeElementFilteredEnumerator_15961_obf.Current">
             <summary>
             Obtains the current node in the container or throws an exception if the enumerator was not started or has ended
             </summary>
         </member>
-        <member name="M:Nevron.Internal.opab.Reset">
+        <member name="M:Nevron.Internal.NRangeElementFilteredEnumerator_15961_obf.Reset">
             <summary>
             Resets the enumerator (positions it before the first node in the container)
             </summary>
         </member>
-        <member name="M:Nevron.Internal.qxab.CanInsertChild(System.Int32,Nevron.Dom.INNode)">
+        <member name="M:Nevron.Internal.NTextElementCompositeImlp_16163_obf.CanInsertChild(System.Int32,Nevron.Dom.INNode)">
             <summary>
             Overriden to return false if the node is not an element
             </summary>
-            <param name="sxab"></param>
-            <param name="txab"></param>
+            <param name="index_16165_obf"></param>
+            <param name="node_16166_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.qxab.OnInserted(System.Int32,Nevron.Dom.INNode)">
+        <member name="M:Nevron.Internal.NTextElementCompositeImlp_16163_obf.OnInserted(System.Int32,Nevron.Dom.INNode)">
             <summary>
             Called when a node has been inserted in the base array list
             </summary>
             <remarks>
             This implementation fires the NodeInserted event if the implementation is connected to an event sink service
             </remarks>
-            <param name="uxab">index at which the node was inserted</param>
-            <param name="vxab">node which was inserted</param>
+            <param name="index_16167_obf">index at which the node was inserted</param>
+            <param name="node_16168_obf">node which was inserted</param>
         </member>
-        <member name="M:Nevron.Internal.qxab.OnRemoved(System.Int32,Nevron.Dom.INNode)">
+        <member name="M:Nevron.Internal.NTextElementCompositeImlp_16163_obf.OnRemoved(System.Int32,Nevron.Dom.INNode)">
             <summary>
             Called when a node has been removed from the base array list
             </summary>
             <remarks>
             This implementation fires the NodeRemoved event if the implementation is connected to an event sink service
             </remarks>
-            <param name="wxab">the former node index</param>
-            <param name="xxab">node which was removed</param>
+            <param name="index_16169_obf">the former node index</param>
+            <param name="node_16170_obf">node which was removed</param>
         </member>
-        <member name="M:Nevron.Internal.qxab.OnIndexChanged(Nevron.Dom.INNode,System.Int32,System.Int32)">
+        <member name="M:Nevron.Internal.NTextElementCompositeImlp_16163_obf.OnIndexChanged(Nevron.Dom.INNode,System.Int32,System.Int32)">
             <summary>
             Called when the index of the specified node has changed
             </summary>
-            <param name="yxab">node whose index has changed</param>
-            <param name="ayab">current node index</param>
-            <param name="byab">old node index</param>
+            <param name="node_16171_obf">node whose index has changed</param>
+            <param name="curIndex_16172_obf">current node index</param>
+            <param name="oldIndex_16173_obf">old node index</param>
         </member>
-        <member name="M:Nevron.Internal.dyab.CanInsertChild(System.Int32,Nevron.Dom.INNode)">
+        <member name="M:Nevron.Internal.NTextElementCompositeSuffixImlp_16175_obf.CanInsertChild(System.Int32,Nevron.Dom.INNode)">
             <summary>
             Overriden to return false if the node is not an element
             </summary>
-            <param name="iyab"></param>
-            <param name="jyab"></param>
+            <param name="index_16180_obf"></param>
+            <param name="node_16181_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.dyab.CanRemoveChild(Nevron.Dom.INNode)">
+        <member name="M:Nevron.Internal.NTextElementCompositeSuffixImlp_16175_obf.CanRemoveChild(Nevron.Dom.INNode)">
             <summary>
             Queries whether the specified child node can be removed
             </summary>
-            <param name="kyab">child node to remove</param>
+            <param name="node_16182_obf">child node to remove</param>
             <returns>true if the node can be removed, otherwise false</returns>
         </member>
-        <member name="M:Nevron.Internal.dyab.ChildrenCount(Nevron.Filters.INFilter)">
+        <member name="M:Nevron.Internal.NTextElementCompositeSuffixImlp_16175_obf.ChildrenCount(Nevron.Filters.INFilter)">
             <summary>
             Returns the number of child nodes which satisfy the specified filter
             </summary>
-            <param name="lyab">filter to use, or null if no filter should be applied</param> 
+            <param name="filter_16183_obf">filter to use, or null if no filter should be applied</param> 
             <returns>children count, which satisfy the filter</returns>
         </member>
-        <member name="M:Nevron.Internal.dyab.Children(Nevron.Filters.INFilter)">
+        <member name="M:Nevron.Internal.NTextElementCompositeSuffixImlp_16175_obf.Children(Nevron.Filters.INFilter)">
             <summary>
             Obtains the child nodes of this node
             </summary>
-            <param name="myab">filter to use, or null if no filter must be applied</param> 
+            <param name="filter_16184_obf">filter to use, or null if no filter must be applied</param> 
             <returns>list of child nodes, which satisfy the filter</returns>
         </member>
-        <member name="M:Nevron.Internal.dyab.AccumulateChildren(Nevron.Filters.INFilter,Nevron.Dom.NNodeList)">
+        <member name="M:Nevron.Internal.NTextElementCompositeSuffixImlp_16175_obf.AccumulateChildren(Nevron.Filters.INFilter,Nevron.Dom.NNodeList)">
             <summary>
             Accumulates the children contained in this node, which satisfy the filter to the provided node list
             </summary>
-            <param name="nyab">filter to use, or null if no filter must be applied</param> 
-            <param name="oyab">list to which to append the child nodes, which satisfy the filter</param>
+            <param name="filter_16185_obf">filter to use, or null if no filter must be applied</param> 
+            <param name="list_16186_obf">list to which to append the child nodes, which satisfy the filter</param>
         </member>
-        <member name="M:Nevron.Internal.dyab.IsDescendant(Nevron.Dom.INNode,System.Int32)">
+        <member name="M:Nevron.Internal.NTextElementCompositeSuffixImlp_16175_obf.IsDescendant(Nevron.Dom.INNode,System.Int32)">
             <summary>
             Queries whether the specified node is a descendant of this node
             </summary>
-            <param name="pyab">node to look for</param>
-            <param name="qyab">reqired depth, or -1 if the entire subtree must be explored</param>
+            <param name="node_16187_obf">node to look for</param>
+            <param name="depth_16188_obf">reqired depth, or -1 if the entire subtree must be explored</param>
             <returns>true if the node is a descendant node, otherwise false</returns>
         </member>
-        <member name="M:Nevron.Internal.dyab.GetChildFromId(System.Int32)">
+        <member name="M:Nevron.Internal.NTextElementCompositeSuffixImlp_16175_obf.GetChildFromId(System.Int32)">
             <summary>
             Obtains a child element by its id
             </summary>
-            <param name="ryab">id of the element</param>
+            <param name="id_16189_obf">id of the element</param>
             <returns>reference to the element if it was found, otherwise null</returns>
         </member>
-        <member name="M:Nevron.Internal.dyab.GetChildFromUniqueId(System.Guid)">
+        <member name="M:Nevron.Internal.NTextElementCompositeSuffixImlp_16175_obf.GetChildFromUniqueId(System.Guid)">
             <summary>
             Obtains a child element by its unique id
             </summary>
-            <param name="syab">unique id of the element</param>
+            <param name="uid_16190_obf">unique id of the element</param>
             <returns>reference to the element if it was found, otherwise null</returns>
         </member>
-        <member name="M:Nevron.Internal.dyab.UpdateReferences(Nevron.INReferenceProvider)">
+        <member name="M:Nevron.Internal.NTextElementCompositeSuffixImlp_16175_obf.UpdateReferences(Nevron.INReferenceProvider)">
             <summary>
             Overriden to store a reference to the element document
             </summary>
-            <param name="tyab"></param>
+            <param name="provider_16191_obf"></param>
         </member>
-        <member name="P:Nevron.Internal.mabb.UniqueId">
+        <member name="P:Nevron.Internal.NElement_16209_obf.UniqueId">
             <summary>
             Gets/sets the unique id of the element
             </summary>
@@ -4524,7 +4524,7 @@
             The set implementation has been provided for Cloning with new Ids. Do not call it directly.
             </remarks>
         </member>
-        <member name="P:Nevron.Internal.mabb.Id">
+        <member name="P:Nevron.Internal.NElement_16209_obf.Id">
             <summary>
             Gets/sets the id of the element
             </summary>
@@ -4532,192 +4532,192 @@
             The set implementation has been provided, so that the document can assign a valid id. Do not call it directly
             </remarks>
         </member>
-        <member name="P:Nevron.Internal.mabb.Tag">
+        <member name="P:Nevron.Internal.NElement_16209_obf.Tag">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.mabb.CloneWithNewUniqueId(System.Collections.Hashtable)">
+        <member name="M:Nevron.Internal.NElement_16209_obf.CloneWithNewUniqueId(System.Collections.Hashtable)">
             <summary>
             Creates an identical copy of the element, which differs only by the element unique id
             </summary>
-            <param name="cbbb">map of uids, which must be populated with the made unique id changes</param>
+            <param name="mapUIds_16224_obf">map of uids, which must be populated with the made unique id changes</param>
             <returns>cloning, which differs by unique Id only</returns>
         </member>
-        <member name="M:Nevron.Internal.mabb.ReplaceForeignUniqueIds(System.Collections.Hashtable,System.Boolean)">
+        <member name="M:Nevron.Internal.NElement_16209_obf.ReplaceForeignUniqueIds(System.Collections.Hashtable,System.Boolean)">
             <summary>
             Replaces any foreign unique ids (references to other nodes)
             </summary>
-            <param name="dbbb">map of uids which is used to find the new foreign uid value</param>
-            <param name="ebbb">indicates whether the not found foreign uids must be set to Guid.Empty</param>
+            <param name="mapUIds_16225_obf">map of uids which is used to find the new foreign uid value</param>
+            <param name="makeNotFoundEmpty_16226_obf">indicates whether the not found foreign uids must be set to Guid.Empty</param>
         </member>
-        <member name="M:Nevron.Internal.mabb.RegisterElement(Nevron.Dom.NElementIndex)">
+        <member name="M:Nevron.Internal.NElement_16209_obf.RegisterElement(Nevron.Dom.NElementIndex)">
             <summary>
             
             </summary>
-            <param name="fbbb"></param>
+            <param name="elementIndex_16227_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.mabb.UnregisterElement(Nevron.Dom.NElementIndex)">
+        <member name="M:Nevron.Internal.NElement_16209_obf.UnregisterElement(Nevron.Dom.NElementIndex)">
             <summary>
             
             </summary>
-            <param name="gbbb"></param>
+            <param name="elementIndex_16228_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.mabb.OnAttributePropertyChanging(System.String,System.String,System.Object)">
+        <member name="M:Nevron.Internal.NElement_16209_obf.OnAttributePropertyChanging(System.String,System.String,System.Object)">
             <summary>
             Called by child or descendants attributes when an attribute property is changing
             </summary>
-            <param name="hbbb">full attribute name</param>
-            <param name="ibbb">attribute property</param>
-            <param name="jbbb">new property value</param>
+            <param name="attributeFullName_16229_obf">full attribute name</param>
+            <param name="propertyName_16230_obf">attribute property</param>
+            <param name="newValue_16231_obf">new property value</param>
             <returns>true if the change is acceptable, otherwise false</returns>
         </member>
-        <member name="M:Nevron.Internal.mabb.OnAttributePropertyChanged(System.String,System.String)">
+        <member name="M:Nevron.Internal.NElement_16209_obf.OnAttributePropertyChanged(System.String,System.String)">
             <summary>
             Called by child or descendants attributes when an attribute property has changed
             </summary>
-            <param name="kbbb">full attribute name</param>
-            <param name="lbbb">attribute property</param>
+            <param name="attributeFullName_16232_obf">full attribute name</param>
+            <param name="propertyName_16233_obf">attribute property</param>
         </member>
-        <member name="M:Nevron.Internal.mabb.OnAttributeChanged(System.String)">
+        <member name="M:Nevron.Internal.NElement_16209_obf.OnAttributeChanged(System.String)">
             <summary>
             Called by child or descendants attributes when an attribute has changed
             </summary>
-            <param name="mbbb">full attribute name</param>
+            <param name="attributeFullName_16234_obf">full attribute name</param>
         </member>
-        <member name="P:Nevron.Internal.mabb.Attributes">
+        <member name="P:Nevron.Internal.NElement_16209_obf.Attributes">
             <summary>
             Gets an array of the child attributes of this container
             </summary>
             <returns>attributes of the container</returns>
         </member>
-        <member name="M:Nevron.Internal.mabb.GetAttributeName(Nevron.Dom.INAttribute)">
+        <member name="M:Nevron.Internal.NElement_16209_obf.GetAttributeName(Nevron.Dom.INAttribute)">
             <summary>
             Gets the name of the specified child attribute
             </summary>
-            <param name="nbbb">child attribute</param>
+            <param name="attribute_16235_obf">child attribute</param>
             <returns>name of the attribute</returns>
         </member>
-        <member name="M:Nevron.Internal.mabb.GetAttributeByName(System.String)">
+        <member name="M:Nevron.Internal.NElement_16209_obf.GetAttributeByName(System.String)">
             <summary>
             Gets a child or descendant attribute by its name
             </summary>
-            <param name="obbb">child attribute name or full attribute name</param>
+            <param name="attributeName_16236_obf">child attribute name or full attribute name</param>
             <returns>a reference to the attribute</returns>
         </member>
-        <member name="M:Nevron.Internal.mabb.SetAttributeByName(System.String,Nevron.Dom.INAttribute)">
+        <member name="M:Nevron.Internal.NElement_16209_obf.SetAttributeByName(System.String,Nevron.Dom.INAttribute)">
             <summary>
             Sets a child or descendant attribute by its name
             </summary>
-            <param name="pbbb">attribute name</param>
-            <param name="qbbb">attribute to set</param>
+            <param name="attributeName_16237_obf">attribute name</param>
+            <param name="attribute_16238_obf">attribute to set</param>
         </member>
-        <member name="M:Nevron.Internal.mabb.UpdateReferences(Nevron.INReferenceProvider)">
+        <member name="M:Nevron.Internal.NElement_16209_obf.UpdateReferences(Nevron.INReferenceProvider)">
             <summary>
             Updates the references stored by the object
             </summary>
             <remarks>
             Overriden to cashe references to the document, layer and history service. 
             </remarks>
-            <param name="rbbb"></param>
+            <param name="provider_16239_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.ddbb.GetChildFromId(System.Int32)">
+        <member name="M:Nevron.Internal.NElementComposite_16275_obf.GetChildFromId(System.Int32)">
             <summary>
             Obtains a child element by its id
             </summary>
-            <param name="xebb">id of the node</param>
+            <param name="id_16320_obf">id of the node</param>
             <returns>reference to the element if it was found, otherwise null</returns>
         </member>
-        <member name="M:Nevron.Internal.ddbb.GetChildFromUniqueId(System.Guid)">
+        <member name="M:Nevron.Internal.NElementComposite_16275_obf.GetChildFromUniqueId(System.Guid)">
             <summary>
             Obtains a child element by its unique id
             </summary>
-            <param name="yebb">unique id of the element</param>
+            <param name="uid_16321_obf">unique id of the element</param>
             <returns>reference to the element if it was found, otherwise null</returns>
         </member>
-        <member name="M:Nevron.Internal.ddbb.GetDescendantFromId(System.Int32,System.Int32)">
+        <member name="M:Nevron.Internal.NElementComposite_16275_obf.GetDescendantFromId(System.Int32,System.Int32)">
             <summary>
             Obtains a element node by its id
             </summary>
-            <param name="afbb">id of the element</param>
-            <param name="bfbb">required depth, or -1 if the entire subtree must be explored</param>
+            <param name="id_16322_obf">id of the element</param>
+            <param name="depth_16323_obf">required depth, or -1 if the entire subtree must be explored</param>
             <returns>reference to the element if it was found, otherwise null</returns>
         </member>
-        <member name="M:Nevron.Internal.ddbb.GetDescendantFromUniqueId(System.Guid,System.Int32)">
+        <member name="M:Nevron.Internal.NElementComposite_16275_obf.GetDescendantFromUniqueId(System.Guid,System.Int32)">
             <summary>
             Obtains a child element by its unique id
             </summary>
-            <param name="cfbb">unique id of the node</param>
-            <param name="dfbb">required depth, or -1 if the entire subtree must be explored</param>
+            <param name="uid_16324_obf">unique id of the node</param>
+            <param name="depth_16325_obf">required depth, or -1 if the entire subtree must be explored</param>
             <returns>reference to the element if it was found, otherwise null</returns>
         </member>
-        <member name="M:Nevron.Internal.dgbb.Clone">
+        <member name="M:Nevron.Internal.NNode_16350_obf.Clone">
             <summary>
             Creates an exact copy of this object
             </summary>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.dgbb.ParentNode">
+        <member name="P:Nevron.Internal.NNode_16350_obf.ParentNode">
             <summary>
             Obtains the parent node
             </summary>
         </member>
-        <member name="P:Nevron.Internal.dgbb.RootNode">
+        <member name="P:Nevron.Internal.NNode_16350_obf.RootNode">
             <summary>
             Obtains the root of this node
             </summary>
         </member>
-        <member name="M:Nevron.Internal.lgbb.GetElementFromId(System.Int32)">
+        <member name="M:Nevron.Internal.NTextDocument_16358_obf.GetElementFromId(System.Int32)">
             <summary>
             Obtains an element from its id
             </summary>
-            <param name="sibb">element id</param>
+            <param name="id_16415_obf">element id</param>
             <returns>reference to the element if it was found, otherwise null</returns>
         </member>
-        <member name="M:Nevron.Internal.lgbb.GetElementFromUniqueId(System.Guid)">
+        <member name="M:Nevron.Internal.NTextDocument_16358_obf.GetElementFromUniqueId(System.Guid)">
             <summary>
             Obtains an element from its unique id
             </summary>
-            <param name="tibb">unique id</param>
+            <param name="uid_16416_obf">unique id</param>
             <returns>reference to the element if it was found, otherwise null</returns>
         </member>
-        <member name="M:Nevron.Internal.lgbb.RegisterElement(Nevron.Dom.INElement)">
+        <member name="M:Nevron.Internal.NTextDocument_16358_obf.RegisterElement(Nevron.Dom.INElement)">
             <summary>
             Registers the specified element in the document
             </summary>
-            <param name="uibb">element to register</param>
+            <param name="element_16417_obf">element to register</param>
         </member>
-        <member name="M:Nevron.Internal.lgbb.UnregisterElement(Nevron.Dom.INElement)">
+        <member name="M:Nevron.Internal.NTextDocument_16358_obf.UnregisterElement(Nevron.Dom.INElement)">
             <summary>
             Unregisters the specified element from the document
             </summary>
-            <param name="vibb">element to unregister</param>
+            <param name="element_16418_obf">element to unregister</param>
         </member>
-        <member name="M:Nevron.Internal.lgbb.GetServiceOfType(System.Type)">
+        <member name="M:Nevron.Internal.NTextDocument_16358_obf.GetServiceOfType(System.Type)">
             <summary>
             Gets a reference to a service of the specified type
             </summary>
-            <param name="wibb">service type</param>
+            <param name="serviceType_16419_obf">service type</param>
             <returns>service instance or null if a service of this type cannot be located</returns>
         </member>
-        <member name="M:Nevron.Internal.sjbb.SaveControlStateToFile(System.String,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
+        <member name="M:Nevron.Internal.NTextDocumentComponentSerializer_16440_obf.SaveControlStateToFile(System.String,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
             <summary>
             Saves the current state of the text document to a file in the specified format.
             </summary>
-            <param name="ujbb">A relative or absolute path for the output file.</param>
-            <param name="vjbb">The format of the file.</param>
-            <param name="wjbb">A serialization filter.</param>
+            <param name="filePath_16442_obf">A relative or absolute path for the output file.</param>
+            <param name="format_16443_obf">The format of the file.</param>
+            <param name="filter_16444_obf">A serialization filter.</param>
             <remarks>
             The filter parameters is used only when the format is CustomXML or CustomBinary.
             </remarks>
         </member>
-        <member name="M:Nevron.Internal.sjbb.LoadControlStateFromFile(System.String,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
+        <member name="M:Nevron.Internal.NTextDocumentComponentSerializer_16440_obf.LoadControlStateFromFile(System.String,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
             <summary>
             Loads an existing text document from a file.
             </summary>
-            <param name="xjbb">A relative or absolute path for the input file.</param>
-            <param name="yjbb">The format of the file.</param>
-            <param name="akbb">A serialization filter.</param>
+            <param name="filePath_16445_obf">A relative or absolute path for the input file.</param>
+            <param name="format_16446_obf">The format of the file.</param>
+            <param name="filter_16447_obf">A serialization filter.</param>
             <remarks>
             The filter parameters is used only when the format is CustomXML or CustomBinary.
             </remarks>
@@ -4733,535 +4733,535 @@
             </code>
             </example>
         </member>
-        <member name="M:Nevron.Internal.sjbb.SaveControlStateToStream(System.IO.Stream,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
+        <member name="M:Nevron.Internal.NTextDocumentComponentSerializer_16440_obf.SaveControlStateToStream(System.IO.Stream,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
             <summary>
             Saves the text document in the passed stream.
             </summary>
-            <param name="bkbb">The stream to load the state from.</param>
-            <param name="ckbb">The format of the stream.</param>
-            <param name="dkbb">A serialization filter.</param>
+            <param name="stream_16448_obf">The stream to load the state from.</param>
+            <param name="format_16449_obf">The format of the stream.</param>
+            <param name="filter_16450_obf">A serialization filter.</param>
             <remarks>
             You're responsible for the stream creation and closure. The filter parameter is used only when the format is CustomXML or CustomBinary.
             </remarks>
         </member>
-        <member name="M:Nevron.Internal.sjbb.LoadControlStateFromStream(System.IO.Stream,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
+        <member name="M:Nevron.Internal.NTextDocumentComponentSerializer_16440_obf.LoadControlStateFromStream(System.IO.Stream,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
             <summary>
             Loads the text document from the passed stream.
             </summary>
-            <param name="ekbb">The stream to save the state to.</param>
-            <param name="fkbb">The format of the stream.</param>
-            <param name="gkbb">A serialization filter.</param>
+            <param name="stream_16451_obf">The stream to save the state to.</param>
+            <param name="format_16452_obf">The format of the stream.</param>
+            <param name="filter_16453_obf">A serialization filter.</param>
             <remarks>
             You're responsible for the stream creation and closure. The filter parameters is used only when the format is CustomXML or CustomBinary.
             </remarks>
         </member>
-        <member name="M:Nevron.Internal.wkbb.OnInserted(System.Int32,Nevron.Dom.INNode)">
+        <member name="M:Nevron.Internal.NTextNodeCompositeImpl_16469_obf.OnInserted(System.Int32,Nevron.Dom.INNode)">
             <summary>
             Called when a node has been inserted in the base array list
             </summary>
             <remarks>
             This implementation fires the NodeInserted event if the implementation is connected to an event sink service
             </remarks>
-            <param name="xkbb">index at which the node was inserted</param>
-            <param name="ykbb">node which was inserted</param>
+            <param name="index_16470_obf">index at which the node was inserted</param>
+            <param name="node_16471_obf">node which was inserted</param>
         </member>
-        <member name="M:Nevron.Internal.wkbb.OnRemoved(System.Int32,Nevron.Dom.INNode)">
+        <member name="M:Nevron.Internal.NTextNodeCompositeImpl_16469_obf.OnRemoved(System.Int32,Nevron.Dom.INNode)">
             <summary>
             Called when a node has been removed from the base array list
             </summary>
             <remarks>
             This implementation fires the NodeRemoved event if the implementation is connected to an event sink service
             </remarks>
-            <param name="albb">the former node index</param>
-            <param name="blbb">node which was removed</param>
+            <param name="index_16472_obf">the former node index</param>
+            <param name="node_16473_obf">node which was removed</param>
         </member>
-        <member name="M:Nevron.Internal.wkbb.OnIndexChanged(Nevron.Dom.INNode,System.Int32,System.Int32)">
+        <member name="M:Nevron.Internal.NTextNodeCompositeImpl_16469_obf.OnIndexChanged(Nevron.Dom.INNode,System.Int32,System.Int32)">
             <summary>
             Called when the index of the specified node has changed
             </summary>
-            <param name="clbb">node whose index has changed</param>
-            <param name="dlbb">current node index</param>
-            <param name="elbb">old node index</param>
+            <param name="node_16474_obf">node whose index has changed</param>
+            <param name="curIndex_16475_obf">current node index</param>
+            <param name="oldIndex_16476_obf">old node index</param>
         </member>
-        <member name="P:Nevron.Internal.jpbb.MaxWidth">
+        <member name="P:Nevron.Internal.NDocumentFrame_16581_obf.MaxWidth">
             <summary>
             Obtains the maximum width of the frame
             </summary>
         </member>
-        <member name="P:Nevron.Internal.jpbb.MaxHeight">
+        <member name="P:Nevron.Internal.NDocumentFrame_16581_obf.MaxHeight">
             <summary>
             Obtains the maximum height of the frame
             </summary>
         </member>
-        <member name="M:Nevron.Internal.xpbb.OnSizeChanged(Nevron.GraphicsCore.NSizeF)">
+        <member name="M:Nevron.Internal.NFrameComposite_16595_obf.OnSizeChanged(Nevron.GraphicsCore.NSizeF)">
             <summary>
             Container bounds have changed - invalidate the layout of all children
             </summary>
-            <param name="mqbb"></param>
+            <param name="oldSize_16609_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.xpbb.IndexOfChild(Nevron.Dom.INNode)">
+        <member name="M:Nevron.Internal.NFrameComposite_16595_obf.IndexOfChild(Nevron.Dom.INNode)">
             <summary>
             Gets the index of the specified node in the container
             </summary>
-            <param name="pqbb">the node to locate</param>
+            <param name="node_16612_obf">the node to locate</param>
             <returns>index of the node</returns>
         </member>
-        <member name="M:Nevron.Internal.xpbb.GetChildAt(System.Int32)">
+        <member name="M:Nevron.Internal.NFrameComposite_16595_obf.GetChildAt(System.Int32)">
             <summary>
             Gets the child node at the specified index
             </summary>
-            <param name="qqbb">index</param>
+            <param name="index_16613_obf">index</param>
             <returns>node at the specified index</returns>
         </member>
-        <member name="M:Nevron.Internal.xpbb.SetChildIndex(Nevron.Dom.INNode,System.Int32)">
+        <member name="M:Nevron.Internal.NFrameComposite_16595_obf.SetChildIndex(Nevron.Dom.INNode,System.Int32)">
             <summary>
             Sets a new index of the specified child node
             </summary>
-            <param name="rqbb">node whose index to change</param>
-            <param name="sqbb">new index</param>
+            <param name="node_16614_obf">node whose index to change</param>
+            <param name="index_16615_obf">new index</param>
             <returns>previous node index</returns>
         </member>
-        <member name="M:Nevron.Internal.xpbb.IsChild(Nevron.Dom.INNode)">
+        <member name="M:Nevron.Internal.NFrameComposite_16595_obf.IsChild(Nevron.Dom.INNode)">
             <summary>
             Determines whether the specified node is a child node for this container
             </summary>
-            <param name="tqbb">node to check</param>
+            <param name="node_16616_obf">node to check</param>
             <returns>true if it is a child node, otherwise false</returns>
         </member>
-        <member name="M:Nevron.Internal.xpbb.ChildrenCount(Nevron.Filters.INFilter)">
+        <member name="M:Nevron.Internal.NFrameComposite_16595_obf.ChildrenCount(Nevron.Filters.INFilter)">
             <summary>
             Returns the number of child nodes which satisfy the specified filter
             </summary>
-            <param name="uqbb">filter to use, or null if no filter should be applied</param> 
+            <param name="filter_16617_obf">filter to use, or null if no filter should be applied</param> 
             <returns>children count, which satisfy the filter</returns>
         </member>
-        <member name="M:Nevron.Internal.xpbb.Children(Nevron.Filters.INFilter)">
+        <member name="M:Nevron.Internal.NFrameComposite_16595_obf.Children(Nevron.Filters.INFilter)">
             <summary>
             Obtains the child nodes of this node
             </summary>
-            <param name="vqbb">filter to use, or null if no filter must be applied</param> 
+            <param name="filter_16618_obf">filter to use, or null if no filter must be applied</param> 
             <returns>list of child nodes, which satisfy the filter</returns>
         </member>
-        <member name="M:Nevron.Internal.xpbb.AccumulateChildren(Nevron.Filters.INFilter,Nevron.Dom.NNodeList)">
+        <member name="M:Nevron.Internal.NFrameComposite_16595_obf.AccumulateChildren(Nevron.Filters.INFilter,Nevron.Dom.NNodeList)">
             <summary>
             Accumulates the children contained in this node, which satisfy the filter to the provided node list
             </summary>
-            <param name="wqbb">filter to use, or null if no filter must be applied</param> 
-            <param name="xqbb">list to which to append the child nodes, which satisfy the filter</param>
+            <param name="filter_16619_obf">filter to use, or null if no filter must be applied</param> 
+            <param name="list_16620_obf">list to which to append the child nodes, which satisfy the filter</param>
         </member>
-        <member name="M:Nevron.Internal.xpbb.IsDescendant(Nevron.Dom.INNode,System.Int32)">
+        <member name="M:Nevron.Internal.NFrameComposite_16595_obf.IsDescendant(Nevron.Dom.INNode,System.Int32)">
             <summary>
             Queries whether the specified node is a descendant of this node
             </summary>
-            <param name="yqbb">node to look for</param>
-            <param name="arbb">reqired depth, or -1 if the entire subtree must be explored</param>
+            <param name="node_16621_obf">node to look for</param>
+            <param name="depth_16622_obf">reqired depth, or -1 if the entire subtree must be explored</param>
             <returns>true if the node is a descendant node, otherwise false</returns>
         </member>
-        <member name="M:Nevron.Internal.xpbb.DescendantsCount(Nevron.Filters.INFilter,System.Int32)">
+        <member name="M:Nevron.Internal.NFrameComposite_16595_obf.DescendantsCount(Nevron.Filters.INFilter,System.Int32)">
             <summary>
             Returns the number of descendant nodes, which satisfy the specified filter
             </summary>
-            <param name="brbb">filter to use, or null if no filter should be applied</param> 
-            <param name="crbb">reqired depth, or -1 if the entire subtree must be explored</param>
+            <param name="filter_16623_obf">filter to use, or null if no filter should be applied</param> 
+            <param name="depth_16624_obf">reqired depth, or -1 if the entire subtree must be explored</param>
             <returns>count of descendants, which satisfy the filter</returns>
         </member>
-        <member name="M:Nevron.Internal.xpbb.Descendants(Nevron.Filters.INFilter,System.Int32)">
+        <member name="M:Nevron.Internal.NFrameComposite_16595_obf.Descendants(Nevron.Filters.INFilter,System.Int32)">
             <summary>
             Obtains the descentant nodes of this node
             </summary>
-            <param name="drbb">filter to use, or null if no filter must be applied</param> 
-            <param name="erbb">reqired depth, or -1 if the entire subtree must be explored</param>
+            <param name="filter_16625_obf">filter to use, or null if no filter must be applied</param> 
+            <param name="depth_16626_obf">reqired depth, or -1 if the entire subtree must be explored</param>
             <returns>list of child nodes, which satisfy the filter</returns>
         </member>
-        <member name="M:Nevron.Internal.xpbb.AccumulateDescendants(Nevron.Filters.INFilter,System.Int32,Nevron.Dom.NNodeList)">
+        <member name="M:Nevron.Internal.NFrameComposite_16595_obf.AccumulateDescendants(Nevron.Filters.INFilter,System.Int32,Nevron.Dom.NNodeList)">
             <summary>
             Accumulates the descendants contained in this node, which satisfy the filter to the provided node list
             </summary>
-            <param name="frbb">filter to use, or null if no filter must be applied</param> 
-            <param name="grbb">reqired depth, or -1 if the entire subtree must be explored</param>
-            <param name="hrbb">list to which to append the descendant nodes, which satisfy the filter</param>
+            <param name="filter_16627_obf">filter to use, or null if no filter must be applied</param> 
+            <param name="depth_16628_obf">reqired depth, or -1 if the entire subtree must be explored</param>
+            <param name="list_16629_obf">list to which to append the descendant nodes, which satisfy the filter</param>
         </member>
-        <member name="M:Nevron.Internal.xpbb.GetEnumerator(Nevron.Filters.INFilter)">
+        <member name="M:Nevron.Internal.NFrameComposite_16595_obf.GetEnumerator(Nevron.Filters.INFilter)">
             <summary>
             Obtains a child node enumerator 
             </summary>
-            <param name="irbb">filter to use, or null if no filter must be applied</param> 
+            <param name="filter_16630_obf">filter to use, or null if no filter must be applied</param> 
             <returns>node enumerator</returns>
         </member>
-        <member name="M:Nevron.Internal.xpbb.GetEnumerator">
+        <member name="M:Nevron.Internal.NFrameComposite_16595_obf.GetEnumerator">
             <summary>
             Obtains a child node enumerator 
             </summary>
             <returns>node enumerator</returns>
         </member>
-        <member name="M:Nevron.Internal.eccb.Clone">
+        <member name="M:Nevron.Internal.NTextViewImpl_16876_obf.Clone">
             <summary>
             Creates an exact copy of this object
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.kqcb.Dispose">
+        <member name="M:Nevron.Internal.NImageMap_17232_obf.Dispose">
             <summary>
             Releases all resources used by the object
             </summary>
         </member>
-        <member name="M:Nevron.Internal.crcb.Dispose">
+        <member name="M:Nevron.Internal.NRasterImageMap_17249_obf.Dispose">
             <summary>
             Releases all resources used by the object
             </summary>
         </member>
-        <member name="M:Nevron.Internal.etcb.Dispose">
+        <member name="M:Nevron.Internal.NVectorImageMapBuilder_17301_obf.Dispose">
             <summary>
             Releases all resources used by the object
             </summary>
         </member>
-        <member name="M:Nevron.Internal.iwcb.Dispose">
+        <member name="M:Nevron.Internal.NVectorImageMap_17380_obf.Dispose">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.xxcb.Dispose">
+        <member name="M:Nevron.Internal.NRasterImageMapShape_17420_obf.Dispose">
             <summary>
             Disposes the shape
             </summary>
         </member>
-        <member name="M:Nevron.Internal.fidb.Dispose">
+        <member name="M:Nevron.Internal.NSharedObjectList_17652_obf.Dispose">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.jjdb.GetKey(Nevron.GraphicsCore.NFillStyle)">
+        <member name="M:Nevron.Internal.NFillStyleKeyFactoryComposite_17681_obf.GetKey(Nevron.GraphicsCore.NFillStyle)">
             <summary>
             Returns a key for a specified fill style
             </summary>
-            <param name="ljdb"></param>
+            <param name="fillStyle_17683_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.jjdb.ResetKey">
+        <member name="M:Nevron.Internal.NFillStyleKeyFactoryComposite_17681_obf.ResetKey">
             <summary>
             Forces the factory to create a new key
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ygeb.ToString">
+        <member name="M:Nevron.Internal.NFixed_18248_obf.ToString">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.gheb.GetHashCode">
+        <member name="M:Nevron.Internal.NTag_18255_obf.GetHashCode">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.gheb.Equals(System.Object)">
+        <member name="M:Nevron.Internal.NTag_18255_obf.Equals(System.Object)">
             <summary>
             
             </summary>
-            <param name="nheb"></param>
+            <param name="obj_18262_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.nieb.Load(System.IO.BinaryReader)">
+        <member name="M:Nevron.Internal.NOTNameRecord_18287_obf.Load(System.IO.BinaryReader)">
             <summary>
             Initializes the table from a set of bytes
             </summary>
-            <param name="oieb"></param>
+            <param name="reader_18288_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.vleb.Load(System.IO.BinaryReader)">
+        <member name="M:Nevron.Internal.NOTTableDirectoryRecord_18370_obf.Load(System.IO.BinaryReader)">
             <summary>
             Initializes the table from a set of bytes
             </summary>
-            <param name="wleb"></param>
+            <param name="reader_18371_obf"></param>
         </member>
-        <member name="M:Nevron.Internal.hagb.GetEnumerator">
+        <member name="M:Nevron.Internal.PdfArray_19331_obf.GetEnumerator">
             <summary>
             Returns an enumerator that iterates through a collection.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hagb.ToString">
+        <member name="M:Nevron.Internal.PdfArray_19331_obf.ToString">
             <summary>
             Returns a string with the content of this object in a readable form. Useful for debugging purposes only.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.hagb.ragb.IsReadOnly">
+        <member name="P:Nevron.Internal.PdfArray_19331_obf.ArrayElements_19341_obf.IsReadOnly">
             <summary>
             Returns false.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.hagb.ragb.Item(System.Int32)">
+        <member name="P:Nevron.Internal.PdfArray_19331_obf.ArrayElements_19341_obf.Item(System.Int32)">
             <summary>
             Gets or sets an item at the specified index.
             </summary>
             <value></value>
         </member>
-        <member name="M:Nevron.Internal.hagb.ragb.RemoveAt(System.Int32)">
+        <member name="M:Nevron.Internal.PdfArray_19331_obf.ArrayElements_19341_obf.RemoveAt(System.Int32)">
             <summary>
             Removes the item at the specified index.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hagb.ragb.Remove(Nevron.Internal.hmhb)">
+        <member name="M:Nevron.Internal.PdfArray_19331_obf.ArrayElements_19341_obf.Remove(Nevron.Internal.PdfItem_20261_obf)">
             <summary>
             Removes the first occurrence of a specific object from the array/>.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hagb.ragb.Insert(System.Int32,Nevron.Internal.hmhb)">
+        <member name="M:Nevron.Internal.PdfArray_19331_obf.ArrayElements_19341_obf.Insert(System.Int32,Nevron.Internal.PdfItem_20261_obf)">
             <summary>
             Inserts the item the specified index.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hagb.ragb.Contains(Nevron.Internal.hmhb)">
+        <member name="M:Nevron.Internal.PdfArray_19331_obf.ArrayElements_19341_obf.Contains(Nevron.Internal.PdfItem_20261_obf)">
             <summary>
             Determines whether the specified value is in the array.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hagb.ragb.Clear">
+        <member name="M:Nevron.Internal.PdfArray_19331_obf.ArrayElements_19341_obf.Clear">
             <summary>
             Removes all items from the array.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hagb.ragb.IndexOf(Nevron.Internal.hmhb)">
+        <member name="M:Nevron.Internal.PdfArray_19331_obf.ArrayElements_19341_obf.IndexOf(Nevron.Internal.PdfItem_20261_obf)">
             <summary>
             Gets the index of the specified item.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hagb.ragb.Add(Nevron.Internal.hmhb)">
+        <member name="M:Nevron.Internal.PdfArray_19331_obf.ArrayElements_19341_obf.Add(Nevron.Internal.PdfItem_20261_obf)">
             <summary>
             Appends the specified object to the array.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.hagb.ragb.Count">
+        <member name="P:Nevron.Internal.PdfArray_19331_obf.ArrayElements_19341_obf.Count">
             <summary>
             Gets the number of elements in the array.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hagb.ragb.CopyTo(Nevron.Internal.hmhb[],System.Int32)">
+        <member name="M:Nevron.Internal.PdfArray_19331_obf.ArrayElements_19341_obf.CopyTo(Nevron.Internal.PdfItem_20261_obf[],System.Int32)">
             <summary>
             Copies the elements of the array to the specified array.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hagb.ragb.GetEnumerator">
+        <member name="M:Nevron.Internal.PdfArray_19331_obf.ArrayElements_19341_obf.GetEnumerator">
             <summary>
             Returns an enumerator that iterates through the array.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.fcgb.ToString">
+        <member name="M:Nevron.Internal.PdfBoolean_19379_obf.ToString">
             <summary>
             Returns 'false' or 'true'.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.lcgb.ToString">
+        <member name="M:Nevron.Internal.PdfBooleanObject_19386_obf.ToString">
             <summary>
             Returns "false" or "true".
             </summary>
         </member>
-        <member name="P:Nevron.Internal.bhgb.Item(System.String)">
+        <member name="P:Nevron.Internal.PdfCustomValues_19502_obf.Item(System.String)">
             <summary>
             This function is intended for empira internal use only.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.mhgb.ToString">
+        <member name="M:Nevron.Internal.PdfDate_19513_obf.ToString">
             <summary>
             Returns the value in the PDF date format.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.vhgb.GetEnumerator">
+        <member name="M:Nevron.Internal.PdfDictionary_19522_obf.GetEnumerator">
             <summary>
             Returns an enumerator that iterates through a collection.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.vhgb.ToString">
+        <member name="M:Nevron.Internal.PdfDictionary_19522_obf.ToString">
             <summary>
             Returns a string with the content of this object in a readable form. Useful for debugging purposes only.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.vhgb.migb.IsReadOnly">
+        <member name="P:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.IsReadOnly">
             <summary>
             Gets a value indicating whether the System.Collections.IDictionary object is read-only.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.vhgb.migb.GetEnumerator">
+        <member name="M:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.GetEnumerator">
             <summary>
             Returns an System.Collections.IDictionaryEnumerator object for the System.Collections.IDictionary object.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.vhgb.migb.Item(System.String)">
+        <member name="P:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.Item(System.String)">
             <summary>
             Gets or sets an entry in the dictionary. The specified key must be a valid PDF name
             starting with a slash '/'. This property provides full access to the elements of the
             PDF dictionary. Wrong use can lead to errors or corrupt PDF files.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.vhgb.migb.Item(Nevron.Internal.tmhb)">
+        <member name="P:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.Item(Nevron.Internal.PdfName_20273_obf)">
             <summary>
             Gets or sets an entry in the dictionary identified by a PdfName object.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.vhgb.migb.Remove(System.String)">
+        <member name="M:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.Remove(System.String)">
             <summary>
             Removes the value with the specified key.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.vhgb.migb.Remove(System.Collections.Generic.KeyValuePair{System.String,Nevron.Internal.hmhb})">
+        <member name="M:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.Remove(System.Collections.Generic.KeyValuePair{System.String,Nevron.Internal.PdfItem_20261_obf})">
             <summary>
             Removes the value with the specified key.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.vhgb.migb.ContainsKey(System.String)">
+        <member name="M:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.ContainsKey(System.String)">
             <summary>
             Determines whether the dictionary contains the specified name.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.vhgb.migb.Contains(System.Collections.Generic.KeyValuePair{System.String,Nevron.Internal.hmhb})">
+        <member name="M:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.Contains(System.Collections.Generic.KeyValuePair{System.String,Nevron.Internal.PdfItem_20261_obf})">
             <summary>
             Determines whether the dictionary contains a specific value.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.vhgb.migb.Clear">
+        <member name="M:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.Clear">
             <summary>
             Removes all elements from the dictionary.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.vhgb.migb.Add(System.String,Nevron.Internal.hmhb)">
+        <member name="M:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.Add(System.String,Nevron.Internal.PdfItem_20261_obf)">
             <summary>
             Adds the specified value to the dictionary.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.vhgb.migb.Add(System.Collections.Generic.KeyValuePair{System.String,Nevron.Internal.hmhb})">
+        <member name="M:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.Add(System.Collections.Generic.KeyValuePair{System.String,Nevron.Internal.PdfItem_20261_obf})">
             <summary>
             Adds an item to the dictionary.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.vhgb.migb.Keys">
+        <member name="P:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.Keys">
             <summary>
             Get all keys currently in use in this dictionary as an array of string objects.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.vhgb.migb.TryGetValue(System.String,Nevron.Internal.hmhb@)">
+        <member name="M:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.TryGetValue(System.String,Nevron.Internal.PdfItem_20261_obf@)">
             <summary>
             Gets the value associated with the specified key.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.vhgb.migb.Values">
+        <member name="P:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.Values">
             <summary>
             Gets all values currently in use in this dictionary as an array of PdfItem objects.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.vhgb.migb.Count">
+        <member name="P:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.Count">
             <summary>
             Gets the number of elements contained in the dictionary.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.vhgb.migb.CopyTo(System.Collections.Generic.KeyValuePair{System.String,Nevron.Internal.hmhb}[],System.Int32)">
+        <member name="M:Nevron.Internal.PdfDictionary_19522_obf.DictionaryElements_19538_obf.CopyTo(System.Collections.Generic.KeyValuePair{System.String,Nevron.Internal.PdfItem_20261_obf}[],System.Int32)">
             <summary>
             Copies the elements of the dictionary to an array, starting at a particular index.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.vhgb.cngb.ToString">
+        <member name="M:Nevron.Internal.PdfDictionary_19522_obf.PdfStream_19653_obf.ToString">
             <summary>
             Returns the stream content as a raw string.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.wogb.Dispose">
+        <member name="M:Nevron.Internal.NPdfDocument_19699_obf.Dispose">
             <summary>
             Disposes all references to this document stored in other documents. This function should be called
             for documents you finished importing pages from. Calling Dispose is technically not necessary but
             useful for earlier reclaiming memory of documents you do not need anymore.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.wchb.idhb.ToString">
+        <member name="M:Nevron.Internal.PdfFontTable_20024_obf.FontSelector_20035_obf.ToString">
             <summary>
             Returns a string for diagnostic purposes only.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.dghb.ToString">
+        <member name="M:Nevron.Internal.PdfImage_20105_obf.ToString">
             <summary>
             Returns 'Image'.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.rihb.Item(Nevron.Internal.hphb)">
+        <member name="P:Nevron.Internal.PdfImportedObjectTable_20169_obf.Item(Nevron.Internal.PdfObjectID_20336_obf)">
             <summary>
             Gets the cloned object that corresponds to the specified external identifier.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.njhb.ToString">
+        <member name="M:Nevron.Internal.PdfInteger_20190_obf.ToString">
             <summary>
             Returns the integer as string.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.njhb.GetTypeCode">
+        <member name="M:Nevron.Internal.PdfInteger_20190_obf.GetTypeCode">
             <summary>
             Returns TypeCode for 32-bit integers.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.jkhb.ToString">
+        <member name="M:Nevron.Internal.PdfIntegerObject_20212_obf.ToString">
             <summary>
             Returns the integer as string.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.kmhb.ToString">
+        <member name="M:Nevron.Internal.PdfLiteral_20264_obf.ToString">
             <summary>
             Returns a string that represents the current value.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.tmhb.Equals(System.Object)">
+        <member name="M:Nevron.Internal.PdfName_20273_obf.Equals(System.Object)">
             <summary>
             Determines whether the specified object is equal to this name.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.tmhb.GetHashCode">
+        <member name="M:Nevron.Internal.PdfName_20273_obf.GetHashCode">
             <summary>
             Returns the hash code for this instance.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.tmhb.ToString">
+        <member name="M:Nevron.Internal.PdfName_20273_obf.ToString">
             <summary>
             Returns the name. The string always begins with a slash.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.tmhb.op_Equality(Nevron.Internal.tmhb,System.String)">
+        <member name="M:Nevron.Internal.PdfName_20273_obf.op_Equality(Nevron.Internal.PdfName_20273_obf,System.String)">
             <summary>
             Determines whether the specified name and string are equal.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.tmhb.op_Inequality(Nevron.Internal.tmhb,System.String)">
+        <member name="M:Nevron.Internal.PdfName_20273_obf.op_Inequality(Nevron.Internal.PdfName_20273_obf,System.String)">
             <summary>
             Determines whether the specified name and string are not equal.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.tmhb.dnhb.Compare(Nevron.Internal.tmhb,Nevron.Internal.tmhb)">
+        <member name="M:Nevron.Internal.PdfName_20273_obf.PdfXNameComparer_20282_obf.Compare(Nevron.Internal.PdfName_20273_obf,Nevron.Internal.PdfName_20273_obf)">
             <summary>
             Compares two objects and returns a value indicating whether one is less than, equal to, or greater than the other.
             </summary>
-            <param name="enhb">The first object to compare.</param>
-            <param name="fnhb">The second object to compare.</param>
+            <param name="x_20283_obf">The first object to compare.</param>
+            <param name="y_20284_obf">The second object to compare.</param>
         </member>
-        <member name="M:Nevron.Internal.gnhb.Equals(System.Object)">
+        <member name="M:Nevron.Internal.PdfNameObject_20285_obf.Equals(System.Object)">
             <summary>
             Determines whether the specified object is equal to the current object.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.gnhb.GetHashCode">
+        <member name="M:Nevron.Internal.PdfNameObject_20285_obf.GetHashCode">
             <summary>
             Serves as a hash function for this type.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.gnhb.ToString">
+        <member name="M:Nevron.Internal.PdfNameObject_20285_obf.ToString">
             <summary>
             Returns the name. The string always begins with a slash.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.gnhb.op_Equality(Nevron.Internal.gnhb,System.String)">
+        <member name="M:Nevron.Internal.PdfNameObject_20285_obf.op_Equality(Nevron.Internal.PdfNameObject_20285_obf,System.String)">
             <summary>
             Determines whether a name is equal to a string.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.gnhb.op_Inequality(Nevron.Internal.gnhb,System.String)">
+        <member name="M:Nevron.Internal.PdfNameObject_20285_obf.op_Inequality(Nevron.Internal.PdfNameObject_20285_obf,System.String)">
             <summary>
             Determines whether a name is not equal to a string.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.onhb.ToString">
+        <member name="M:Nevron.Internal.PdfNull_20293_obf.ToString">
             <summary>
             Returns a System.String that represents the current System.Object.
             </summary>
@@ -5269,316 +5269,316 @@
             A System.String that represents the current System.Object.
             </returns>
         </member>
-        <member name="M:Nevron.Internal.rnhb.ToString">
+        <member name="M:Nevron.Internal.PdfNullObject_20296_obf.ToString">
             <summary>
             Returns the string "null".
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hphb.Equals(System.Object)">
+        <member name="M:Nevron.Internal.PdfObjectID_20336_obf.Equals(System.Object)">
             <summary>
             Indicates whether this instance and a specified object are equal.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hphb.GetHashCode">
+        <member name="M:Nevron.Internal.PdfObjectID_20336_obf.GetHashCode">
             <summary>
             Returns the hash code for this instance.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hphb.op_Equality(Nevron.Internal.hphb,Nevron.Internal.hphb)">
+        <member name="M:Nevron.Internal.PdfObjectID_20336_obf.op_Equality(Nevron.Internal.PdfObjectID_20336_obf,Nevron.Internal.PdfObjectID_20336_obf)">
             <summary>
             Determines whether the tow objects are equal.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hphb.op_Inequality(Nevron.Internal.hphb,Nevron.Internal.hphb)">
+        <member name="M:Nevron.Internal.PdfObjectID_20336_obf.op_Inequality(Nevron.Internal.PdfObjectID_20336_obf,Nevron.Internal.PdfObjectID_20336_obf)">
             <summary>
             Determines whether the tow objects not are equal.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hphb.ToString">
+        <member name="M:Nevron.Internal.PdfObjectID_20336_obf.ToString">
             <summary>
             Returns the object and generation numbers as a string.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.hphb.CompareTo(System.Object)">
+        <member name="M:Nevron.Internal.PdfObjectID_20336_obf.CompareTo(System.Object)">
             <summary>
             Compares the current object id with another object.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lqhb.jshb.Item(System.Int32)">
+        <member name="P:Nevron.Internal.PdfOutline_20365_obf.PdfOutlineCollection_20413_obf.Item(System.Int32)">
             <summary>
             Gets the PdfOutline at the specified index.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.lqhb.jshb.GetEnumerator">
+        <member name="M:Nevron.Internal.PdfOutline_20365_obf.PdfOutlineCollection_20413_obf.GetEnumerator">
             <summary>
             Returns an enumerator that iterates through a collection.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.qaib.Item(System.Int32)">
+        <member name="P:Nevron.Internal.PdfPages_20595_obf.Item(System.Int32)">
             <summary>
             Gets the page with the specified index.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.qaib.GetEnumerator">
+        <member name="M:Nevron.Internal.PdfPages_20595_obf.GetEnumerator">
             <summary>
             Gets the enumerator.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.qcib.ToString">
+        <member name="M:Nevron.Internal.PdfReal_20645_obf.ToString">
             <summary>
             Returns the real number as string.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.vcib.ToString">
+        <member name="M:Nevron.Internal.PdfRealObject_20650_obf.ToString">
             <summary>
             Returns the real as a culture invariant string.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ddib.Equals(System.Object)">
+        <member name="M:Nevron.Internal.PdfRectangle_20657_obf.Equals(System.Object)">
             <summary>
             Tests whether the specified object is a PdfRectangle and has equal coordinates.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ddib.GetHashCode">
+        <member name="M:Nevron.Internal.PdfRectangle_20657_obf.GetHashCode">
             <summary>
             Serves as a hash function for a particular type.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ddib.op_Equality(Nevron.Internal.ddib,Nevron.Internal.ddib)">
+        <member name="M:Nevron.Internal.PdfRectangle_20657_obf.op_Equality(Nevron.Internal.PdfRectangle_20657_obf,Nevron.Internal.PdfRectangle_20657_obf)">
             <summary>
             Tests whether two structures have equal coordinates.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ddib.op_Inequality(Nevron.Internal.ddib,Nevron.Internal.ddib)">
+        <member name="M:Nevron.Internal.PdfRectangle_20657_obf.op_Inequality(Nevron.Internal.PdfRectangle_20657_obf,Nevron.Internal.PdfRectangle_20657_obf)">
             <summary>
             Tests whether two structures differ in one or more coordinates.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ddib.ToString">
+        <member name="M:Nevron.Internal.PdfRectangle_20657_obf.ToString">
             <summary>
             Returns the rectangle as a string in the form �[x1 y1 x2 y2]�.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ifib.ToString">
+        <member name="M:Nevron.Internal.PdfReference_20712_obf.ToString">
             <summary>
             Gets a string representing the object identifier.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.pgib.Item(Nevron.Internal.hphb)">
+        <member name="P:Nevron.Internal.PdfReferenceTable_20745_obf.Item(Nevron.Internal.PdfObjectID_20336_obf)">
             <summary>
             Gets a cross reference entry from an object identifier.
             Returns null if no object with the specified ID exists in the object table.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.boib.ToString">
+        <member name="M:Nevron.Internal.PdfString_20931_obf.ToString">
             <summary>
             Returns the string.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.voib.ToString">
+        <member name="M:Nevron.Internal.PdfStringObject_20952_obf.ToString">
             <summary>
             Returns the string.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToString">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToString">
             <summary>
             Returns the unsigned integer as string.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToUInt64(System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToUInt64(System.IFormatProvider)">
             <summary>
             Converts the value of this instance to an equivalent 64-bit unsigned integer.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToSByte(System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToSByte(System.IFormatProvider)">
             <summary>
             Converts the value of this instance to an equivalent 8-bit signed integer.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToDouble(System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToDouble(System.IFormatProvider)">
             <summary>
             Converts the value of this instance to an equivalent double-precision floating-point number.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToDateTime(System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToDateTime(System.IFormatProvider)">
             <summary>
             Returns an undefined DateTime structure.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToSingle(System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToSingle(System.IFormatProvider)">
             <summary>
             Converts the value of this instance to an equivalent single-precision floating-point number.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToBoolean(System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToBoolean(System.IFormatProvider)">
             <summary>
             Converts the value of this instance to an equivalent Boolean value.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToInt32(System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToInt32(System.IFormatProvider)">
             <summary>
             Converts the value of this instance to an equivalent 32-bit signed integer.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToUInt16(System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToUInt16(System.IFormatProvider)">
             <summary>
             Converts the value of this instance to an equivalent 16-bit unsigned integer.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToInt16(System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToInt16(System.IFormatProvider)">
             <summary>
             Converts the value of this instance to an equivalent 16-bit signed integer.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.System#IConvertible#ToString(System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.System#IConvertible#ToString(System.IFormatProvider)">
             <summary>
             Converts the value of this instance to an equivalent System.String.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToByte(System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToByte(System.IFormatProvider)">
             <summary>
             Converts the value of this instance to an equivalent 8-bit unsigned integer.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToChar(System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToChar(System.IFormatProvider)">
             <summary>
             Converts the value of this instance to an equivalent Unicode character.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToInt64(System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToInt64(System.IFormatProvider)">
             <summary>
             Converts the value of this instance to an equivalent 64-bit signed integer.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.GetTypeCode">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.GetTypeCode">
             <summary>
             Returns type code for 32-bit integers.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToDecimal(System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToDecimal(System.IFormatProvider)">
             <summary>
             Converts the value of this instance to an equivalent System.Decimal number.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToType(System.Type,System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToType(System.Type,System.IFormatProvider)">
             <summary>
             Returns null.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ruib.ToUInt32(System.IFormatProvider)">
+        <member name="M:Nevron.Internal.PdfUInteger_21099_obf.ToUInt32(System.IFormatProvider)">
             <summary>
             Converts the value of this instance to an equivalent 32-bit unsigned integer.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ovib.ToString">
+        <member name="M:Nevron.Internal.PdfUIntegerObject_21121_obf.ToString">
             <summary>
             Returns the integer as string.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.gajb.Dispose">
+        <member name="M:Nevron.Internal.XPrivateFontCollection_21213_obf.Dispose">
             <summary>
             Disposes all fonts from the collection.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.qijb.Clone">
+        <member name="M:Nevron.Internal.OpenTypeFontTable_21424_obf.Clone">
             <summary>
             Creates a deep copy of the current instance.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.exjb.sxjb.ToString">
+        <member name="M:Nevron.Internal.FontDescriptorStock_21787_obf.FontSelector_21802_obf.ToString">
             <summary>
             Returns a string for diagnostic purposes only.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.qjmb.LocalizationContextName">
+        <member name="P:Nevron.Internal.NCalculatorButton_23326_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.lsnb.HighlightText">
+        <member name="P:Nevron.Internal.NCheckBoxInfo_24171_obf.HighlightText">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ciob.LocalizationContextName">
+        <member name="P:Nevron.Internal.NCaptionCommand_24537_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.mnob.LocalizationContextName">
+        <member name="P:Nevron.Internal.NPendantCommand_24672_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.htpb.Dispose">
+        <member name="M:Nevron.Internal.NKeyboardTool_25442_obf.Dispose">
             <summary>
             Disposes all the resources used by the NKeyboardTool object.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ugqb.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NWebBrowserForm_25755_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
-            <param name="vgqb">true if managed resources should be disposed; otherwise, false.</param>
+            <param name="disposing_25756_obf">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:Nevron.Internal.ahqb.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NInputBoxForm_25760_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
-            <param name="ehqb">true if managed resources should be disposed; otherwise, false.</param>
+            <param name="disposing_25764_obf">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="P:Nevron.Internal.dtqb.LocalizationContextName">
+        <member name="P:Nevron.Internal.NTreeListGroupByBoxItem_26063_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.tvqb.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NTreeListColumnChooser_26129_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
-            <param name="awqb">true if managed resources should be disposed; otherwise, false.</param>
+            <param name="disposing_26135_obf">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="P:Nevron.Internal.fwqb.LocalizationContextName">
+        <member name="P:Nevron.Internal.NTreeListColumnDefaultMenu_26140_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.yxqb.LocalizationContextName">
+        <member name="P:Nevron.Internal.NTreeListNodeDefaultMenu_26184_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.kosb.LocalizationContextName">
+        <member name="P:Nevron.Internal.NDataGridViewColumnContextMenu_27197_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.xfub.LocalizationContextName">
+        <member name="P:Nevron.Internal.NTaskDialogForm_28235_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.vivb.Orientation">
+        <member name="P:Nevron.Internal.NFileLookupElement_28934_obf.Orientation">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Nevron.Internal.fpvb.LocalizationContextName">
+        <member name="P:Nevron.Internal.NMdiSystemMenu_29093_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.tlwb.LocalizationContextName">
+        <member name="P:Nevron.Internal.NNavigationPaneConfigureCommand_29632_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.vlwb.LocalizationContextName">
+        <member name="P:Nevron.Internal.NNavigationPaneConfigureDialog_29634_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.sjac.LocalizationContextName">
+        <member name="P:Nevron.Internal.NTabStripButtonsPanel_31456_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
@@ -42974,43 +42974,43 @@
             <summary>
             Provides method to process the MouseEnter event.
             </summary>
-            <param name="vhmb">The event arguments.</param>
+            <param name="e_23281_obf">The event arguments.</param>
         </member>
         <member name="M:Nevron.UI.NMouseInputElement.Nevron#UI#INMouseInputElement#OnMouseLeave(System.EventArgs)">
             <summary>
             Provides method to process the MouseLeave event.
             </summary>
-            <param name="whmb">The event arguments.</param>
+            <param name="e_23282_obf">The event arguments.</param>
         </member>
         <member name="M:Nevron.UI.NMouseInputElement.Nevron#UI#INMouseInputElement#OnMouseDown(Nevron.UI.NMouseEventArgs)">
             <summary>
             Provides method to process MouseDown event.
             </summary>
-            <param name="xhmb">The event arguments.</param>
+            <param name="e_23283_obf">The event arguments.</param>
         </member>
         <member name="M:Nevron.UI.NMouseInputElement.Nevron#UI#INMouseInputElement#OnMouseMove(Nevron.UI.NMouseEventArgs)">
             <summary>
             Provides method to process MouseMove event.
             </summary>
-            <param name="yhmb">The event arguments.</param>
+            <param name="e_23284_obf">The event arguments.</param>
         </member>
         <member name="M:Nevron.UI.NMouseInputElement.Nevron#UI#INMouseInputElement#OnMouseUp(Nevron.UI.NMouseEventArgs)">
             <summary>
             Provides method to process MouseDown event.
             </summary>
-            <param name="aimb">The event arguments.</param>
+            <param name="e_23285_obf">The event arguments.</param>
         </member>
         <member name="M:Nevron.UI.NMouseInputElement.Nevron#UI#INMouseInputElement#OnMouseWheel(Nevron.UI.NMouseEventArgs)">
             <summary>
             Provides method to process MouseWheel event.
             </summary>
-            <param name="bimb"></param>
+            <param name="e_23286_obf"></param>
         </member>
         <member name="M:Nevron.UI.NMouseInputElement.Nevron#UI#INMouseInputElement#OnContextMenuRequest(Nevron.UI.NContextMenuEventArgs)">
             <summary>
             Provides method to process ContextMenuRequest event.
             </summary>
-            <param name="cimb"></param>
+            <param name="e_23287_obf"></param>
         </member>
         <member name="M:Nevron.UI.NMouseInputElement.QueryCursor(Nevron.GraphicsCore.NPoint)">
             <summary>
@@ -51868,7 +51868,7 @@
             <summary>
             
             </summary>
-            <param name="iuob"></param>
+            <param name="doc_24843_obf"></param>
         </member>
         <member name="M:Nevron.UI.WinForm.Controls.NMenuBar.Nevron#UI#WinForm#Controls#INMdiMenuTarget#RefreshMenu">
             <summary>

@@ -11140,36 +11140,36 @@
             <param name="document">document in which to create a tree</param>
             <returns>tree elements</returns>
         </member>
-        <member name="M:Nevron.Internal.yeee.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NPropertyBrowserUC_65212_obf.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.yeee.LocalizationContextName">
+        <member name="P:Nevron.Internal.NPropertyBrowserUC_65212_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.yeee.UpdateFromTemplate">
+        <member name="M:Nevron.Internal.NPropertyBrowserUC_65212_obf.UpdateFromTemplate">
             <summary>
             Overriden to update the property grid from the template
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ffee.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NSelectTemplatePageUC_65218_obf.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.agee.LocalizationContextName">
+        <member name="P:Nevron.Internal.NWizardUC_65238_obf.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.agee.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.NWizardUC_65238_obf.Dispose(System.Boolean)">
             <summary>
             
             </summary>
-            <param name="kgee"></param>
+            <param name="disposing_65248_obf"></param>
         </member>
     </members>
 </doc>
