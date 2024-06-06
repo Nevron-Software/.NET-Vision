@@ -15,7 +15,8 @@ namespace Nevron.Examples.Chart.WinForm
 		private UI.WinForm.Controls.NCheckBox HasFillingCheckBox;
 		private UI.WinForm.Controls.NComboBox FrameModeCombo;
 		private Label label1;
-		private System.ComponentModel.Container components = null;
+        private UI.WinForm.Controls.NCheckBox UseShaderRenderingCheckBox;
+        private System.ComponentModel.Container components = null;
 
 		public NGridSurfaceCustomColorsUC()
 		{
@@ -44,62 +45,74 @@ namespace Nevron.Examples.Chart.WinForm
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.SmoothShadingCheckBox = new Nevron.UI.WinForm.Controls.NCheckBox();
-			this.HasFillingCheckBox = new Nevron.UI.WinForm.Controls.NCheckBox();
-			this.FrameModeCombo = new Nevron.UI.WinForm.Controls.NComboBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.SuspendLayout();
-			// 
-			// SmoothShadingCheckBox
-			// 
-			this.SmoothShadingCheckBox.ButtonProperties.BorderOffset = 2;
-			this.SmoothShadingCheckBox.Location = new System.Drawing.Point(9, 12);
-			this.SmoothShadingCheckBox.Name = "SmoothShadingCheckBox";
-			this.SmoothShadingCheckBox.Size = new System.Drawing.Size(160, 20);
-			this.SmoothShadingCheckBox.TabIndex = 1;
-			this.SmoothShadingCheckBox.Text = "Smooth Shading";
-			this.SmoothShadingCheckBox.CheckedChanged += new System.EventHandler(this.SmoothShadingCheckBox_CheckedChanged);
-			// 
-			// HasFillingCheckBox
-			// 
-			this.HasFillingCheckBox.ButtonProperties.BorderOffset = 2;
-			this.HasFillingCheckBox.Location = new System.Drawing.Point(9, 40);
-			this.HasFillingCheckBox.Name = "HasFillingCheckBox";
-			this.HasFillingCheckBox.Size = new System.Drawing.Size(160, 20);
-			this.HasFillingCheckBox.TabIndex = 2;
-			this.HasFillingCheckBox.Text = "Has Filling";
-			this.HasFillingCheckBox.CheckedChanged += new System.EventHandler(this.HasFillingCheckBox_CheckedChanged);
-			// 
-			// FrameModeCombo
-			// 
-			this.FrameModeCombo.ListProperties.CheckBoxDataMember = "";
-			this.FrameModeCombo.ListProperties.DataSource = null;
-			this.FrameModeCombo.ListProperties.DisplayMember = "";
-			this.FrameModeCombo.Location = new System.Drawing.Point(12, 88);
-			this.FrameModeCombo.Name = "FrameModeCombo";
-			this.FrameModeCombo.Size = new System.Drawing.Size(151, 21);
-			this.FrameModeCombo.TabIndex = 4;
-			this.FrameModeCombo.SelectedIndexChanged += new System.EventHandler(this.FrameModeCombo_SelectedIndexChanged);
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(9, 67);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(69, 13);
-			this.label1.TabIndex = 5;
-			this.label1.Text = "Frame Mode:";
-			// 
-			// NGridSurfaceCustomColorsUC
-			// 
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.FrameModeCombo);
-			this.Controls.Add(this.HasFillingCheckBox);
-			this.Controls.Add(this.SmoothShadingCheckBox);
-			this.Name = "NGridSurfaceCustomColorsUC";
-			this.Size = new System.Drawing.Size(180, 300);
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this.SmoothShadingCheckBox = new Nevron.UI.WinForm.Controls.NCheckBox();
+            this.HasFillingCheckBox = new Nevron.UI.WinForm.Controls.NCheckBox();
+            this.FrameModeCombo = new Nevron.UI.WinForm.Controls.NComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.UseShaderRenderingCheckBox = new Nevron.UI.WinForm.Controls.NCheckBox();
+            this.SuspendLayout();
+            // 
+            // SmoothShadingCheckBox
+            // 
+            this.SmoothShadingCheckBox.ButtonProperties.BorderOffset = 2;
+            this.SmoothShadingCheckBox.Location = new System.Drawing.Point(10, 12);
+            this.SmoothShadingCheckBox.Name = "SmoothShadingCheckBox";
+            this.SmoothShadingCheckBox.Size = new System.Drawing.Size(160, 20);
+            this.SmoothShadingCheckBox.TabIndex = 1;
+            this.SmoothShadingCheckBox.Text = "Smooth Shading";
+            this.SmoothShadingCheckBox.CheckedChanged += new System.EventHandler(this.SmoothShadingCheckBox_CheckedChanged);
+            // 
+            // HasFillingCheckBox
+            // 
+            this.HasFillingCheckBox.ButtonProperties.BorderOffset = 2;
+            this.HasFillingCheckBox.Location = new System.Drawing.Point(10, 40);
+            this.HasFillingCheckBox.Name = "HasFillingCheckBox";
+            this.HasFillingCheckBox.Size = new System.Drawing.Size(160, 20);
+            this.HasFillingCheckBox.TabIndex = 2;
+            this.HasFillingCheckBox.Text = "Has Filling";
+            this.HasFillingCheckBox.CheckedChanged += new System.EventHandler(this.HasFillingCheckBox_CheckedChanged);
+            // 
+            // FrameModeCombo
+            // 
+            this.FrameModeCombo.ListProperties.CheckBoxDataMember = "";
+            this.FrameModeCombo.ListProperties.DataSource = null;
+            this.FrameModeCombo.ListProperties.DisplayMember = "";
+            this.FrameModeCombo.Location = new System.Drawing.Point(12, 114);
+            this.FrameModeCombo.Name = "FrameModeCombo";
+            this.FrameModeCombo.Size = new System.Drawing.Size(151, 21);
+            this.FrameModeCombo.TabIndex = 4;
+            this.FrameModeCombo.SelectedIndexChanged += new System.EventHandler(this.FrameModeCombo_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(9, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 25);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Frame Mode:";
+            // 
+            // UseShaderRenderingCheckBox
+            // 
+            this.UseShaderRenderingCheckBox.ButtonProperties.BorderOffset = 2;
+            this.UseShaderRenderingCheckBox.Location = new System.Drawing.Point(10, 68);
+            this.UseShaderRenderingCheckBox.Name = "UseShaderRenderingCheckBox";
+            this.UseShaderRenderingCheckBox.Size = new System.Drawing.Size(160, 20);
+            this.UseShaderRenderingCheckBox.TabIndex = 6;
+            this.UseShaderRenderingCheckBox.Text = "Use Shader Rendering";
+            this.UseShaderRenderingCheckBox.CheckedChanged += new System.EventHandler(this.UseShaderRenderingCheckBox_CheckedChanged);
+            // 
+            // NGridSurfaceCustomColorsUC
+            // 
+            this.Controls.Add(this.UseShaderRenderingCheckBox);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.FrameModeCombo);
+            this.Controls.Add(this.HasFillingCheckBox);
+            this.Controls.Add(this.SmoothShadingCheckBox);
+            this.Name = "NGridSurfaceCustomColorsUC";
+            this.Size = new System.Drawing.Size(180, 300);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 		#endregion
@@ -162,7 +175,8 @@ namespace Nevron.Examples.Chart.WinForm
 			FrameModeCombo.Items.Add("Dots");
 			FrameModeCombo.SelectedIndex = 0;
 			SmoothShadingCheckBox.Checked = true;
-		}
+            UseShaderRenderingCheckBox.Checked = surface.EnableShaderRendering;
+        }
 
 		private void GenerateSurfaceData(NGridSurfaceSeries surface)
 		{
@@ -260,5 +274,13 @@ namespace Nevron.Examples.Chart.WinForm
 
 			nChartControl1.Refresh();
 		}
-	}
+
+        private void UseShaderRenderingCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            NGridSurfaceSeries gridSurface = (NGridSurfaceSeries)nChartControl1.Charts[0].Series[0];
+			gridSurface.EnableShaderRendering = UseShaderRenderingCheckBox.Checked;
+
+            nChartControl1.Refresh();
+        }
+    }
 }

@@ -98,6 +98,27 @@
 							</Items>
 						</Folder>
 
+						<Folder Title="Fast Bar" Name="Fast Bar">
+							<Items>
+								<Example Title="Fast Bar 2D" TypeName ="NFastBar2DUC" TreePath="ChartGallery\FastBar\"/>
+								<Example Title="Fast Bar 3D" TypeName ="NFastBar3DUC" TreePath="ChartGallery\FastBar\"/>
+							</Items>
+						</Folder>
+
+						<Folder Title="Fast Line" Name="Fast Line">
+							<Items>
+								<Example Title="Fast Line 2D" TypeName ="NFastLine2DUC" TreePath="ChartGallery\FastLine\"/>
+								<Example Title="Fast Line 3D" TypeName ="NFastLine3DUC" TreePath="ChartGallery\FastLine\"/>
+							</Items>
+						</Folder>
+							
+						<Folder Title="Fast Point" Name="Fast Point">
+							<Items>
+								<Example Title="Fast Point 2D" TypeName ="NFastPoint2DUC" TreePath="ChartGallery\FastPoint\"/>
+								<Example Title="Fast Point 3D" TypeName ="NFastPoint3DUC" TreePath="ChartGallery\FastPoint\"/>
+							</Items>
+						</Folder>
+
 						<Folder Title="Graphics Path" Name="GraphicsPath">
 							<Items>
 								<Example Title="Graphics Path" TypeName="NGraphicsPathSeriesUC" />
@@ -181,6 +202,7 @@
 								<Example Title="Custom Colors" TypeName ="NMeshSurfaceCustomColorsUC" />
 								<Example Title="Large Surface" TypeName="NLargeMeshSurfaceUC" />
 								<Example Title="Isolines" TypeName="NMeshSurfaceIsolinesUC" />
+								<Example Title="Hit Testing" TypeName ="NMeshSurfaceHitTestingUC" />
 							</Items>
 						</Folder>
 

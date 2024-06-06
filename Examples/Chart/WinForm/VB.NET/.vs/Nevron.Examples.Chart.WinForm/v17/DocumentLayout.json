@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Nevron\\Vision\\Examples\\VBNET\\Chart\\WinForm\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED91DC7-AF53-4EB4-85CF-A9A6DE0044A0}|Nevron.Examples.Chart.WinForm.vbproj|d:\\nevron\\vision\\examples\\vbnet\\chart\\winform\\chartgallery\\gridsurface\\ngridsurfacerealtimeuc.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{2ED91DC7-AF53-4EB4-85CF-A9A6DE0044A0}|Nevron.Examples.Chart.WinForm.vbproj|solutionrelative:chartgallery\\gridsurface\\ngridsurfacerealtimeuc.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED91DC7-AF53-4EB4-85CF-A9A6DE0044A0}|Nevron.Examples.Chart.WinForm.vbproj|D:\\Nevron\\Vision\\Examples\\VBNET\\Chart\\WinForm\\custompainting\\ncustompaintingusingnevrondeviceuc.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{2ED91DC7-AF53-4EB4-85CF-A9A6DE0044A0}|Nevron.Examples.Chart.WinForm.vbproj|solutionrelative:custompainting\\ncustompaintingusingnevrondeviceuc.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED91DC7-AF53-4EB4-85CF-A9A6DE0044A0}|Nevron.Examples.Chart.WinForm.vbproj|D:\\Nevron\\Vision\\Examples\\VBNET\\Chart\\WinForm\\custompainting\\ncustompaintingusinggdiplusuc.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{2ED91DC7-AF53-4EB4-85CF-A9A6DE0044A0}|Nevron.Examples.Chart.WinForm.vbproj|solutionrelative:custompainting\\ncustompaintingusinggdiplusuc.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED91DC7-AF53-4EB4-85CF-A9A6DE0044A0}|Nevron.Examples.Chart.WinForm.vbproj|D:\\Nevron\\Vision\\Examples\\VBNET\\Chart\\WinForm\\chartgallery\\custom\\ncustomseriesuc.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{2ED91DC7-AF53-4EB4-85CF-A9A6DE0044A0}|Nevron.Examples.Chart.WinForm.vbproj|solutionrelative:chartgallery\\custom\\ncustomseriesuc.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NGridSurfaceRealtimeUC.vb",
+              "DocumentMoniker": "D:\\Nevron\\Vision\\Examples\\VBNET\\Chart\\WinForm\\ChartGallery\\GridSurface\\NGridSurfaceRealtimeUC.vb",
+              "RelativeDocumentMoniker": "ChartGallery\\GridSurface\\NGridSurfaceRealtimeUC.vb",
+              "ToolTip": "D:\\Nevron\\Vision\\Examples\\VBNET\\Chart\\WinForm\\ChartGallery\\GridSurface\\NGridSurfaceRealtimeUC.vb",
+              "RelativeToolTip": "ChartGallery\\GridSurface\\NGridSurfaceRealtimeUC.vb",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAowLoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2023-09-04T13:16:12.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NCustomPaintingUsingNevronDeviceUC.vb",
+              "DocumentMoniker": "D:\\Nevron\\Vision\\Examples\\VBNET\\Chart\\WinForm\\CustomPainting\\NCustomPaintingUsingNevronDeviceUC.vb",
+              "RelativeDocumentMoniker": "CustomPainting\\NCustomPaintingUsingNevronDeviceUC.vb",
+              "ToolTip": "D:\\Nevron\\Vision\\Examples\\VBNET\\Chart\\WinForm\\CustomPainting\\NCustomPaintingUsingNevronDeviceUC.vb",
+              "RelativeToolTip": "CustomPainting\\NCustomPaintingUsingNevronDeviceUC.vb",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAswKUAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "WhenOpened": "2023-09-04T13:16:05.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NCustomPaintingUsingGDIPlusUC.vb",
+              "DocumentMoniker": "D:\\Nevron\\Vision\\Examples\\VBNET\\Chart\\WinForm\\CustomPainting\\NCustomPaintingUsingGDIPlusUC.vb",
+              "RelativeDocumentMoniker": "CustomPainting\\NCustomPaintingUsingGDIPlusUC.vb",
+              "ToolTip": "D:\\Nevron\\Vision\\Examples\\VBNET\\Chart\\WinForm\\CustomPainting\\NCustomPaintingUsingGDIPlusUC.vb",
+              "RelativeToolTip": "CustomPainting\\NCustomPaintingUsingGDIPlusUC.vb",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAswKQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "WhenOpened": "2023-09-04T13:15:45.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NCustomSeriesUC.vb",
+              "DocumentMoniker": "D:\\Nevron\\Vision\\Examples\\VBNET\\Chart\\WinForm\\ChartGallery\\Custom\\NCustomSeriesUC.vb",
+              "RelativeDocumentMoniker": "ChartGallery\\Custom\\NCustomSeriesUC.vb",
+              "ToolTip": "D:\\Nevron\\Vision\\Examples\\VBNET\\Chart\\WinForm\\ChartGallery\\Custom\\NCustomSeriesUC.vb",
+              "RelativeToolTip": "ChartGallery\\Custom\\NCustomSeriesUC.vb",
+              "ViewState": "AQIAAJoAAAAAAAAAAAAswK0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "WhenOpened": "2023-09-04T13:15:02.193Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

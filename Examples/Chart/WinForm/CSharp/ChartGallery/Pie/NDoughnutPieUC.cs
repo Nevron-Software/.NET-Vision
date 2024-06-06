@@ -94,9 +94,9 @@ namespace Nevron.Examples.Chart.WinForm
 			m_PieChart.InnerRadius = new NLength(10, NRelativeUnit.ParentPercentage);
 
 			Random random = new Random();
-			string[] labels = new string[] { "Ships", "Trains", "Automobiles", "Airplanes" };
+            string[] labels = new string[] { "Ships", "Trains", "Automobiles", "Airplanes" };
 
-			for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 4; i++)
 			{
 				NPieSeries pieSeries = new NPieSeries();
 
@@ -133,7 +133,6 @@ namespace Nevron.Examples.Chart.WinForm
 			NStyleSheet styleSheet = NStyleSheet.CreatePredefinedStyleSheet(PredefinedStyleSheet.FreshMultiColor);
             styleSheet.Apply(nChartControl1.Document);
 		}
-
 
 		private void ChangeDataButton_Click(object sender, System.EventArgs e)
 		{

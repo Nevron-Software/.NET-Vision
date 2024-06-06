@@ -1,16 +1,13 @@
-using System;
-using System.Collections;
-using System.ComponentModel;
-using System.Drawing;
-using System.Windows.Forms;
+using Nevron.Chart;
 using Nevron.Dom;
 using Nevron.GraphicsCore;
-using Nevron.Chart;
-using Nevron.Chart.WinForm;
+using System;
+using System.ComponentModel;
+using System.Drawing;
 
 namespace Nevron.Examples.Chart.WinForm
 {
-	[ToolboxItem(false)]
+    [ToolboxItem(false)]
 	public class NDateTimeStackFloatBarUC : NExampleBaseUC
 	{
 		private const int dataPointCount = 5;

@@ -200,7 +200,7 @@ Namespace Nevron.Examples.Chart.WebForm
 					vecModelPoint.Y = vertAxis.TransformScaleToModel(False, CSng(CDbl(bar.Values(i))))
 					vecModelPoint.Z = 0
 
-					If (Not chart.TransformModelToClient(vecModelPoint, vecClientPoint)) Then
+					If (Not chart.TransformModelToView(vecModelPoint, vecClientPoint)) Then
 						Continue Do
 					End If
 

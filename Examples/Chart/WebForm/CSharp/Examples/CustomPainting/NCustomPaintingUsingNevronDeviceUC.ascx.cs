@@ -222,7 +222,7 @@ namespace Nevron.Examples.Chart.WebForm
 					vecModelPoint.Y = vertAxis.TransformScaleToModel(false, (float)(double)bar.Values[i]);
 					vecModelPoint.Z = 0;
 
-					if (!chart.TransformModelToClient(vecModelPoint, ref vecClientPoint))
+					if (!chart.TransformModelToView(vecModelPoint, ref vecClientPoint))
 						continue;
 
 					RectangleF rcArrowRect = new RectangleF(vecClientPoint.X - nBarSize, vecClientPoint.Y - nBarSize, 2 * nBarSize, 2 * nBarSize);

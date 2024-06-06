@@ -131,7 +131,7 @@ Namespace Nevron.Examples.Chart.WebForm
 					vecModel.Y = rulerY.LogicalToScale(Points(i).Y)
 
 					' Transform model coordinates to view coordinates
-					m_Chart.TransformModelToClient(vecModel, vecView)
+					m_Chart.TransformModelToView(vecModel, vecView)
 
 					' Draw the current point
 					Dim isControlPoint As Boolean = (i Mod 3) <> 0

@@ -244,6 +244,24 @@
     <EmbeddedResource Include="ChartGallery\Bar\NErrorBarUC.resx">
       <DependentUpon>NErrorBarUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FastLine\NFastLine2DUC.resx">
+      <DependentUpon>NFastLine2DUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FastLine\NFastLine3DUC.resx">
+      <DependentUpon>NFastLine3DUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FastBar\NFastBar2DUC.resx">
+      <DependentUpon>NFastBar2DUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FastPoint\NFastPoint2DUC.resx">
+      <DependentUpon>NFastPoint2DUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FastBar\NFastBar3DUC.resx">
+      <DependentUpon>NFastBar3DUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\FastPoint\NFastPoint3DUC.resx">
+      <DependentUpon>NFastPoint3DUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChartGallery\GridSurface\NGridSurfaceRealtimeUC.resx">
       <DependentUpon>NGridSurfaceRealtimeUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChartGallery\GridSurface\NProjectedContourUC.resx">
       <DependentUpon>NProjectedContourUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartGallery\MeshSurface\NMeshSurfaceHitTestingUC.resx">
+      <DependentUpon>NMeshSurfaceHitTestingUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChartGallery\VertexSurface\NVertexSurfaceCustomIndicesUC.resx">
       <DependentUpon>NVertexSurfaceCustomIndicesUC.cs</DependentUpon>
@@ -869,6 +890,24 @@
     <Compile Include="ChartGallery\Bar\NErrorBarUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="ChartGallery\FastLine\NFastLine2DUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\FastLine\NFastLine3DUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\FastBar\NFastBar2DUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\FastPoint\NFastPoint2DUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\FastBar\NFastBar3DUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\FastPoint\NFastPoint3DUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ChartGallery\GridSurface\NGridSurfaceRealtimeUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -879,6 +918,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ChartGallery\GridSurface\NProjectedContourUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartGallery\MeshSurface\NMeshSurfaceHitTestingUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ChartGallery\VertexSurface\NVertexSurfaceCustomIndicesUC.cs">
@@ -2641,11 +2683,19 @@
     <Content Include="ChartGallery\Bar\NBarPaletteUC.htm" />
     <Content Include="ChartGallery\Bar\NBarConnectorLinesUC.htm" />
     <Content Include="ChartGallery\Bar\NErrorBarUC.htm" />
+    <Content Include="ChartGallery\FastLine\NFastLine2DUC.htm" />
+    <Content Include="ChartGallery\FastLine\NFastLine3DUC.htm" />
+    <Content Include="ChartGallery\FastBar\NFastBar2DUC.htm" />
+    <Content Include="ChartGallery\FastPoint\NFastPoint2DUC.htm" />
+    <Content Include="ChartGallery\FastBar\NFastBar3DUC.htm" />
+    <Content Include="ChartGallery\FastPoint\NFastPoint3DUC.htm" />
     <Content Include="ChartGallery\GridSurface\NGridSurfaceRealtimeUC.htm" />
     <Content Include="ChartGallery\GridSurface\NGridSurfaceSpacingUC.htm" />
     <Content Include="ChartGallery\GridSurface\NLargeGridSurfaceUC.htm" />
     <Content Include="ChartGallery\GridSurface\NProjectedContourUC.htm" />
     <Content Include="ChartGallery\Line\NRealTimeLineUC.htm" />
+    <Content Include="ChartGallery\MeshSurface\NMeshSurfaceHitTestingUC.htm" />
+    <Content Include="ChartGallery\TriangulatedSurface\NTriangulatedSurfaceZoningUC - Copy.htm" />
     <Content Include="ChartGallery\VertexSurface\NVertexSurfaceCustomIndicesUC.htm" />
     <Content Include="ChartGallery\VertexSurface\NVertexSurfaceFillCustomColorsUC.htm" />
     <Content Include="ChartGallery\VertexSurface\NVertexSurfaceLineCustomColorsUC.htm" />

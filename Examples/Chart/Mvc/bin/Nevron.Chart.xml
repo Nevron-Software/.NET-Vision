@@ -1079,6 +1079,27 @@
             <param name="values"></param>
             <param name="pointViews"></param>
         </member>
+        <member name="T:Nevron.Chart.NScale3DToModel3DTransformation">
+            <summary>
+            Converts coordinates from scale to model.
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NScale3DToModel3DTransformation.#ctor(Nevron.Chart.NChart,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new scale to model transformation for the specified chart and a set of three non-colinear axes.
+            </summary>
+            <param name="chart"></param>
+            <param name="horizontalAxisId"></param>
+            <param name="verticalAxisId"></param>
+            <param name="depthAxisId"></param>
+        </member>
+        <member name="M:Nevron.Chart.NScale3DToModel3DTransformation.Transform(Nevron.GraphicsCore.NVector3DD,Nevron.GraphicsCore.NVector3DF@)">
+            <summary>
+            Transforms a scale point to model coordinates.
+            </summary>
+            <param name="vecPointScale"></param>
+            <param name="vecPointModel"></param>
+        </member>
         <member name="T:Nevron.Chart.NScale2DToModel3DTransformation">
             <summary>
             Converts coordinates from scale to model.
@@ -1098,6 +1119,35 @@
             </summary>
             <param name="vecPointScale"></param>
             <param name="vecPointModel"></param>
+        </member>
+        <member name="T:Nevron.Chart.NScale3DToViewTransformation">
+            <summary>
+            Converts coordinates from 3D scale to view space.
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NScale3DToViewTransformation.#ctor(Nevron.Chart.NChart,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializer constructor
+            </summary>
+            <param name="chart"></param>
+            <param name="horizontalAxisId"></param>
+            <param name="verticalAxisId"></param>
+            <param name="depthAxisId"></param>
+        </member>
+        <member name="M:Nevron.Chart.NScale3DToViewTransformation.Transform(Nevron.GraphicsCore.NVector3DD,Nevron.GraphicsCore.NPointF@)">
+            <summary>
+            Transforms the point from scale to view
+            </summary>
+            <param name="pointScale"></param>
+            <param name="pointView"></param>
+        </member>
+        <member name="M:Nevron.Chart.NScale3DToViewTransformation.Transform(Nevron.GraphicsCore.NVector3DD[],Nevron.GraphicsCore.NPointF[]@)">
+            <summary>
+            Transforms the points from scale to view
+            </summary>
+            <param name="pointScales"></param>
+            <param name="pointViews"></param>
+            <exception cref="T:System.ArgumentException"></exception>
         </member>
         <member name="T:Nevron.Chart.NScale2DToViewTransformation">
             <summary>
@@ -1133,6 +1183,14 @@
             <param name="chart"></param>
             <param name="axisId1"></param>
             <param name="axisId2"></param>
+        </member>
+        <member name="M:Nevron.Chart.NViewToModel1DTransformation.Transform(Nevron.GraphicsCore.NPointF,System.Single@)">
+            <summary>
+            
+            </summary>
+            <param name="pointView"></param>
+            <param name="modelCoordinate"></param>
+            <returns></returns>
         </member>
         <member name="T:Nevron.Chart.NViewToModel2DTransformation">
             <summary>
@@ -1525,13 +1583,13 @@
             <summary>
             Register the element in the element index
             </summary>
-            <param name="elementIndex_43471_obf"></param>
+            <param name="jjtC"></param>
         </member>
         <member name="M:Nevron.Chart.NChartElement.Nevron#Dom#INElement#UnregisterElement(Nevron.Dom.NElementIndex)">
             <summary>
             Unregister the element from the element index
             </summary>
-            <param name="elementIndex_43472_obf"></param>
+            <param name="KjtC"></param>
         </member>
         <member name="M:Nevron.Chart.NChartElement.OnAttributePropertyChanging(System.String,System.String,System.Object)">
             <summary>
@@ -2267,6 +2325,12 @@
             </code>
             </example>
         </member>
+        <member name="M:Nevron.Chart.NHitTestResult.#ctor(Nevron.Chart.NChartNode)">
+            <summary>
+            Initializer constructor
+            </summary>
+            <param name="selectedNode"></param>
+        </member>
         <member name="P:Nevron.Chart.NHitTestResult.Object">
             <summary>
             Returns a reference to a chart object at the given window coordinates.
@@ -2417,6 +2481,21 @@
         <member name="P:Nevron.Chart.NHitTestResult.SurfaceTriangle">
             <summary>
             Returns the current surface triangle
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NHitTestResult.SurfacePointA">
+            <summary>
+            Gets the A surface point
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NHitTestResult.SurfacePointB">
+            <summary>
+            Gets the B surface point
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NHitTestResult.SurfacePointC">
+            <summary>
+            Gets the C surface point
             </summary>
         </member>
         <member name="P:Nevron.Chart.NHitTestResult.HeatMapDataPointX">
@@ -7279,6 +7358,36 @@
             Fresh palette, multiple colors per series
             </summary>
         </member>
+        <member name="F:Nevron.Chart.PredefinedStyleSheet.Earth">
+            <summary>
+            Earth palette, single color per series
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.PredefinedStyleSheet.EarthMultiColor">
+            <summary>
+            Earth palette, multiple colors per series
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.PredefinedStyleSheet.Excel">
+            <summary>
+            Excel
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.PredefinedStyleSheet.ExcelMultiColor">
+            <summary>
+            Excel multicolor
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.PredefinedStyleSheet.Cold">
+            <summary>
+            Cold,
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.PredefinedStyleSheet.ColdMultiColor">
+            <summary>
+            Cold multi color
+            </summary>
+        </member>
         <member name="T:Nevron.Chart.ChartPredefinedPalette">
             <summary>
             Enumerates the predefined palettes
@@ -7347,6 +7456,21 @@
         <member name="F:Nevron.Chart.ChartPredefinedPalette.Fresh">
             <summary>
             Fresh
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ChartPredefinedPalette.Earth">
+            <summary>
+            Earth
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ChartPredefinedPalette.Excel">
+            <summary>
+            Excel
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ChartPredefinedPalette.Cold">
+            <summary>
+            Cold
             </summary>
         </member>
         <member name="T:Nevron.Chart.NChartPalette">
@@ -11454,6 +11578,46 @@
             </summary>
             <param name="name">name of the data series</param>
         </member>
+        <member name="T:Nevron.Chart.ENSeriesDataChannelName">
+            <summary>
+            Enumerates all the possible series data channel names
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ENSeriesDataChannelName.XValueF">
+            <summary>
+            XValue
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ENSeriesDataChannelName.YValueF">
+            <summary>
+            YValue
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ENSeriesDataChannelName.ZValueF">
+            <summary>
+            ZValue
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ENSeriesDataChannelName.XValueD">
+            <summary>
+            XValue
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ENSeriesDataChannelName.YValueD">
+            <summary>
+            YValue
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ENSeriesDataChannelName.ZValueD">
+            <summary>
+            ZValue
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.ENSeriesDataChannelName.Color">
+            <summary>
+            Color
+            </summary>
+        </member>
         <member name="T:Nevron.Chart.NMatrixSeriesData">
             <summary>
             Represents a matrix series data object
@@ -11514,9 +11678,19 @@
             Copy constructor
             </summary>
         </member>
+        <member name="P:Nevron.Chart.NSeriesData.UseColors">
+            <summary>
+            Gets or sets whether the series must use custom colors
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NSeriesData.ColorOffset">
+            <summary>
+            Gets the offset of the color channel in words
+            </summary>
+        </member>
         <member name="P:Nevron.Chart.NSeriesData.Data">
             <summary>
-            Gets the data 
+            Gets the underlying data
             </summary>
         </member>
         <member name="P:Nevron.Chart.NSeriesData.DataItemSize">
@@ -11524,13 +11698,22 @@
             Gets the data item size in words
             </summary>
         </member>
-        <member name="P:Nevron.Chart.NSeriesData.ColorOffset">
+        <member name="M:Nevron.Chart.NSeriesData.IsPointerInBounds(System.Byte*,System.Byte*)">
             <summary>
-            Gets the offset of the color channel in words
+            Returns true if the specified pointer is inside the memory range (bounds) of this series data
             </summary>
-            <remarks>
-            The offset is returned in words
-            </remarks>
+            <param name="pBasePointer"></param>
+            <param name="pPointer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.NSeriesData.GetDataChannelPointer(Nevron.Chart.ENSeriesDataChannelName,System.Byte*,System.Int32)">
+            <summary>
+            Gets a pointers to the channel data with the specified name
+            </summary>
+            <param name="dataChannelName"></param>
+            <param name="pDataPointer"></param>
+            <param name="dataPointIndex"></param>
+            <returns></returns>
         </member>
         <member name="M:Nevron.Chart.NSeriesData.OnDataChanged">
             <summary>
@@ -11542,10 +11725,101 @@
             Get / sets the data series
             </summary>
         </member>
-        <member name="M:Nevron.Chart.NSeriesData.CreateNonSerializedObjects">
+        <member name="M:Nevron.Chart.NSeriesData.UpdateReferences(Nevron.INReferenceProvider)">
             <summary>
             
             </summary>
+            <param name="provider"></param>
+        </member>
+        <member name="M:Nevron.Chart.NSeriesData.CreateNonSerializedObjects">
+            <summary>
+            Create non serialized objects
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.NXYZVectorSeriesData">
+            <summary>
+            Represents an XYZ vector series data object
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NXYZVectorSeriesData.UseXValues">
+            <summary>
+            Specifies whether the series should use custom X positions for the data points.
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NXYZVectorSeriesData.UseZValues">
+            <summary>
+            Specifies whether the series should use custom X positions for the data points.
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NXYZVectorSeriesData.ClearValues">
+            <summary>
+            Sets the values in the pointSeries data to zero
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NXYZVectorSeriesData.ClearValues(System.Single)">
+            <summary>
+            Set the values in the pointSeries data to the specified value
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Nevron.Chart.NXYZVectorSeriesData.SetXYZValue(System.Int32,System.Single,System.Single,System.Single)">
+            <summary>
+            Sets the xyz position at the specified index
+            </summary>
+            <param name="index"></param>
+            <param name="yValue"></param>
+            <param name="xValue"></param>
+            <param name="zValue"></param>
+        </member>
+        <member name="M:Nevron.Chart.NXYZVectorSeriesData.SetXYValue(System.Int32,System.Single,System.Single)">
+            <summary>
+            Sets the xyz position at the specified index
+            </summary>
+            <param name="index"></param>
+            <param name="yValue"></param>
+            <param name="xValue"></param>
+        </member>
+        <member name="M:Nevron.Chart.NXYZVectorSeriesData.SetXValue(System.Int32,System.Single)">
+            <summary>
+            Sets the X value at the specified index.
+            </summary>
+            <param name="index"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Nevron.Chart.NXYZVectorSeriesData.GetXValue(System.Int32)">
+            <summary>
+            Gets the X value at the specified index.
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.NXYZVectorSeriesData.SetYValue(System.Int32,System.Single)">
+            <summary>
+            Sets the elevation value at the specified index.
+            </summary>
+            <param name="index"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Nevron.Chart.NXYZVectorSeriesData.GetYValue(System.Int32)">
+            <summary>
+            Gets the elevation value at the specified index.
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.NXYZVectorSeriesData.SetZValue(System.Int32,System.Single)">
+            <summary>
+            Sets the Z value at the specified index.
+            </summary>
+            <param name="index"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Nevron.Chart.NXYZVectorSeriesData.GetZValue(System.Int32)">
+            <summary>
+            Gets the Z value at the specified index.
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
         </member>
         <member name="T:Nevron.Chart.NVectorSeriesDataXmlSurrogate">
             <summary>
@@ -11646,30 +11920,440 @@
             </summary>
             <param name="count"></param>
         </member>
-        <member name="T:Nevron.Chart.NMatrixSurfaceSeries`2">
+        <member name="M:Nevron.Chart.NVectorSeriesData.SetColor(System.Int32,System.UInt32)">
             <summary>
-            Base class for the NGridSurfaceSreies and NMeshSurfaceSeries
+            Sets the color at the specified index.
+            </summary>
+            <param name="index">index of the data point.</param>
+            <param name="color">color value.</param>
+            <remarks>
+            Color is in ABGR format
+            </remarks>
+        </member>
+        <member name="M:Nevron.Chart.NVectorSeriesData.SetColor(System.Int32,System.Drawing.Color)">
+            <summary>
+            Sets the color at the specified index.
+            </summary>
+            <param name="index"></param>
+            <param name="color"></param>
+        </member>
+        <member name="M:Nevron.Chart.NVectorSeriesData.GetColor(System.Int32)">
+            <summary>
+            Gets the color at the specified index.
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Nevron.Chart.NFastLineSeries">
+            <summary>
+            Represents a fast line series.
+            </summary>
+            <seealso cref="T:Nevron.Chart.NSeries"/>
+            <seealso cref="T:Nevron.Chart.NXYScatterSeries"/>
+        </member>
+        <member name="M:Nevron.Chart.NFastLineSeries.#ctor">
+            <summary>
+            Default constructor
             </summary>
         </member>
-        <member name="M:Nevron.Chart.NMatrixSurfaceSeries`2.#ctor">
+        <member name="P:Nevron.Chart.NFastLineSeries.DataPointOriginIndex">
             <summary>
-            Default constructor.
+            Gets or sets the data point origin index
             </summary>
         </member>
-        <member name="P:Nevron.Chart.NMatrixSurfaceSeries`2.Data">
+        <member name="P:Nevron.Chart.NFastLineSeries.Data">
             <summary>
             Gets or sets the NGridSurfaceData object controlling the surface data storage.
             </summary>
         </member>
-        <member name="P:Nevron.Chart.NMatrixSurfaceSeries`2.CellTriangulationMode">
+        <member name="P:Nevron.Chart.NFastLineSeries.StrokeStyle">
+            <summary>
+            Gets/sets the stroke of the line
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NFastLineSeries.GetSeriesType">
+            <summary>
+            Gets the series type
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Nevron.Chart.NFastLineSeries.MinMaxValid">
+            <summary>
+            Gets or sets whether the min max of the node is valid
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.NFastLineSeriesData">
+            <summary>
+            Each NFastPointSeries instance has an associated NFastLineSeriesData object which
+            represents the data storage for the series. The data storage is 
+            one-dimensional and contains values and optionally xvalues, zvalues and color data.
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NFastLineSeriesData.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NFastLineSeriesData.#ctor(Nevron.Chart.NFastLineSeriesData)">
+            <summary>
+            Copy constructor
+            </summary>
+            <param name="pointSeriesData"></param>
+        </member>
+        <member name="M:Nevron.Chart.NFastLineSeriesData.Clone">
+            <summary>
+            Creates an identical copy of this NFastLineSeriesData object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Nevron.Chart.NFastBarSeries">
+            <summary>
+            Represents a quick bar series.
+            </summary>
+            <seealso cref="T:Nevron.Chart.NSeries"/>
+            <seealso cref="T:Nevron.Chart.NXYScatterSeries"/>
+        </member>
+        <member name="M:Nevron.Chart.NFastBarSeries.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NFastBarSeries.BarWidthMode">
+            <summary>
+            Gets or set the the bar width mode when the bar is in scatter mode
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NFastBarSeries.BarDepthMode">
+            <summary>
+            Gets or set the the bar depth mode when the bar is in scatter mode
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NFastBarSeries.LogicalBarWidth">
+            <summary>
+            Gets or sets the logical bar width
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NFastBarSeries.LogicalBarDepth">
+            <summary>
+            Gets or sets the logical bar depth
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NFastBarSeries.BarWidth">
+            <summary>
+            Controls the width of the bars in NLength format, when the series is in X scatter mode.
+            </summary>
+            <remarks>
+            By default set to 2 percent of the chart area.
+            </remarks>
+        </member>
+        <member name="P:Nevron.Chart.NFastBarSeries.BarDepth">
+            <summary>
+            Controls the depth of the bars in NLength format, when the series is in Z scatter mode.
+            </summary>
+            <remarks>
+            By default set to 2 percent of the chart area
+            </remarks>
+        </member>
+        <member name="P:Nevron.Chart.NFastBarSeries.WidthPercent">
+            <summary>
+            Controls the width of the bars in percents of the floor grid cell width.
+            </summary>
+            <remarks>
+            By default set to 70.
+            </remarks>
+            <example>
+            The following example changes the width percent to 50 (half of the cell).
+            <code lang = 'VB'>
+            bar.WidthPercent = 50
+            </code>
+            <code>
+            bar.WidthPercent = 50;
+            </code>
+            </example>
+        </member>
+        <member name="P:Nevron.Chart.NFastBarSeries.DepthPercent">
+            <summary>
+            Controls the depth of bars in percents of the floor grid cell depth.
+            </summary>
+            <remarks>
+            By default set to 50.
+            </remarks>
+            <example>
+            Increase the bars depth.
+            <code lang = 'VB'>
+            bar.DepthPercent = 65
+            </code>
+            <code>
+            bar.DepthPercent = 65;
+            </code>
+            </example>
+        </member>
+        <member name="P:Nevron.Chart.NFastBarSeries.Color">
+            <summary>
+            Controls the point color
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NFastBarSeries.Origin">
+            <summary>
+            Specifies the bars origin value when the UseOrigin is set to true.
+            </summary>
+            <remarks>
+            By default 0.
+            </remarks>
+        </member>
+        <member name="P:Nevron.Chart.NFastBarSeries.Data">
+            <summary>
+            Gets or sets the NGridSurfaceData object controlling the surface data storage.
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NFastBarSeries.OriginMode">
+            <summary>
+            Specifies which value should be used as a bar origin.
+            </summary>
+            <remarks>
+            If this property is set to SeriesOriginMode.CustomOrigin the 
+            bar origin is specified by the Origin property. If this property is set to 
+            SeriesOriginMode.MaxValue the origin is the max value of the bar series. If this 
+            property is set to SeriesOriginMode.MinValue the origin is the min value of the bar series.
+            <para>
+            By default this property is set to SeriesOriginMode.CustomOrigin.
+            </para>
+            </remarks>
+            <example>
+            The following code displays a bar series with origin value 20.
+            <code lang = 'VB'>
+            bar.OriginMode = SeriesOriginMode.CustomOrigin
+            bar.Origin = 20
+            </code>
+            <code>
+            bar.OriginMode = SeriesOriginMode.CustomOrigin;
+            bar.Origin = 20;
+            </code>
+            </example>
+        </member>
+        <member name="M:Nevron.Chart.NFastBarSeries.GetSeriesType">
+            <summary>
+            Gets the series type
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Nevron.Chart.NFastBarSeries.MinMaxValid">
+            <summary>
+            Gets or sets whether the min max of the node is valid
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NFastBarSeries.Render3D(Nevron.Chart.NChartRenderingContext3D)">
+            <summary>
+            Renders the series in 3D
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Nevron.Chart.NFastBarSeries.Render2D(Nevron.Chart.NChartRenderingContext2D)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Nevron.Chart.NFastPointSeries">
+            <summary>
+            Represents a quick point series.
+            </summary>
+            <seealso cref="T:Nevron.Chart.NSeries"/>
+            <seealso cref="T:Nevron.Chart.NXYScatterSeries"/>
+        </member>
+        <member name="M:Nevron.Chart.NFastPointSeries.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NFastPointSeries.Color">
+            <summary>
+            Controls the point color
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NFastPointSeries.Size">
+            <summary>
+            Controls the size of the value point marks.
+            </summary>
+            <remarks>
+            This property specifies the points width, height and depth dimensions. 
+            By default set to 4 percent of the chart size
+            </remarks>
+            <example>
+            The following example increases the size of the points.
+            <code lang = 'VB'>
+            pointSeries.Size = New NLength(5.5F, NRelativeUnit.ParentPercentage)
+            </code>
+            <code>
+            pointSeries.Size = New NLength(5.5F, NRelativeUnit.ParentPercentage);
+            </code>
+            </example>
+        </member>
+        <member name="P:Nevron.Chart.NFastPointSeries.Data">
+            <summary>
+            Gets or sets the NGridSurfaceData object controlling the surface data storage.
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NFastPointSeries.GetSeriesType">
+            <summary>
+            Gets the series type
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Nevron.Chart.NFastPointSeries.MinMaxValid">
+            <summary>
+            Gets or sets whether the min max of the node is valid
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.NFastBarSeriesData">
+            <summary>
+            Each NFastBarSeries instance has an associated NFastBarSeriesData object which
+            represents the data storage for the series. The data storage is 
+            one-dimensional and contains values and optionally xvalues, zvalues and color data.
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NFastBarSeriesData.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NFastBarSeriesData.#ctor(Nevron.Chart.NFastBarSeriesData)">
+            <summary>
+            Copy constructor
+            </summary>
+            <param name="pointSeriesData"></param>
+        </member>
+        <member name="M:Nevron.Chart.NFastBarSeriesData.Clone">
+            <summary>
+            Creates an identical copy of this NFastBarSeriesData object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Nevron.Chart.NXYZScatterFastSeriesBase">
+            <summary>
+            Represents a base class for fast series.
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NXYZScatterFastSeriesBase.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.NFastSeriesBase">
+            <summary>
+            Represents a base class for fast series.
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NFastSeriesBase.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NFastSeriesBase.EnableShaderRendering">
+            <summary>
+            Gets or sets whether the series will use shader rendering.
+            </summary>
+            <remarks>
+            In this mode all surface computations are executed by the GPU. You should set this property to true when you have large surfaces and you want 
+            the program to consume less memory as well as when displaying realtime surfaces.
+            </remarks>
+        </member>
+        <member name="M:Nevron.Chart.NFastSeriesBase.GetAttributeByNameAt(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="attributeName"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.NFastSeriesBase.BeforeRender3D(Nevron.Chart.NChartRenderingContext3D)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Nevron.Chart.NFastSeriesBase.AfterRender3D(Nevron.Chart.NChartRenderingContext3D)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Nevron.Chart.NFastSeriesBase.BeforeRender2D(Nevron.Chart.NChartRenderingContext2D)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Nevron.Chart.NFastSeriesBase.AfterRender2D(Nevron.Chart.NChartRenderingContext2D)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Nevron.Chart.NFastSeriesBase.EnsureScaledDataValid">
+            <summary>
+            Invalidates the render data
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NFastSeriesBase.InvalidateRenderData">
+            <summary>
+            Invalidates the render data
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.NFastSeriesBase.m_EnableShaderRendering">
+            <summary>
+            Whether shader rendering is enabled
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.NFastPointSeriesData">
+            <summary>
+            Each NFastPointSeries instance has an associated NFastPointSeriesData object which
+            represents the data storage for the series. The data storage is 
+            one-dimensional and contains values and optionally xvalues, zvalues and color data.
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NFastPointSeriesData.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NFastPointSeriesData.#ctor(Nevron.Chart.NFastPointSeriesData)">
+            <summary>
+            Copy constructor
+            </summary>
+            <param name="pointSeriesData"></param>
+        </member>
+        <member name="M:Nevron.Chart.NFastPointSeriesData.Clone">
+            <summary>
+            Creates an identical copy of this NFastPointSeriesData object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Nevron.Chart.NMatrixSurfaceSeries">
+            <summary>
+            Base class for the NGridSurfaceSreies and NMeshSurfaceSeries
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NMatrixSurfaceSeries.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NMatrixSurfaceSeries.CellTriangulationMode">
             <summary>
             Defined the way in which surface grid cells are triangulated.
             </summary>
         </member>
-        <member name="P:Nevron.Chart.NMatrixSurfaceSeries`2.MinMaxValid">
+        <member name="P:Nevron.Chart.NMatrixSurfaceSeries.MinMaxValid">
             <summary>
             Gets or sets whether the min max of the node is valid
             </summary>
+        </member>
+        <member name="M:Nevron.Chart.NMatrixSurfaceSeries.GetPointsFromIndices(System.Int32[],System.Int32)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:Nevron.Chart.NMeshSurfaceSeries">
             <summary>
@@ -11679,6 +12363,11 @@
         <member name="M:Nevron.Chart.NMeshSurfaceSeries.#ctor">
             <summary>
             Default constructor.
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NMeshSurfaceSeries.Data">
+            <summary>
+            Gets or sets the NGridSurfaceData object controlling the surface data storage.
             </summary>
         </member>
         <member name="P:Nevron.Chart.NMeshSurfaceSeries.MinMaxValid">
@@ -11715,6 +12404,31 @@
             Creates an identical copy of this NGridSurfaceData object
             </summary>
             <returns></returns>
+        </member>
+        <member name="P:Nevron.Chart.NMeshSurfaceData.Item(System.Int32,System.Int32)">
+            <summary>
+            Gets or sets the vector at the specified two-dimensional index.
+            </summary>
+            <param name="col">X-index of the data point.</param>
+            <param name="row">Z-index of the data point.</param>
+            <returns>the vector at the specified two dimensional index</returns>
+        </member>
+        <member name="M:Nevron.Chart.NMeshSurfaceData.FillFromNurbsSurface(Nevron.GraphicsCore.Nurbs.NNurbsSurface,System.Int32,System.Int32,Nevron.GraphicsCore.NVector3DD)">
+            <summary>
+            Fills the mesh surface data from the specified nurbs surface
+            </summary>
+            <param name="nurbsSurface"></param>
+            <param name="xSamples"></param>
+            <param name="ySamples"></param>
+            <param name="offset"></param>
+        </member>
+        <member name="M:Nevron.Chart.NMeshSurfaceData.SetValue(System.Int32,System.Int32,Nevron.GraphicsCore.NVector3DD)">
+            <summary>
+            Sets the xyz position at the specified grid indices
+            </summary>
+            <param name="col"></param>
+            <param name="row"></param>
+            <param name="vec"></param>
         </member>
         <member name="M:Nevron.Chart.NMeshSurfaceData.SetValue(System.Int32,System.Int32,Nevron.GraphicsCore.NVector3DF)">
             <summary>
@@ -11840,6 +12554,14 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="P:Nevron.Chart.NGridSurfaceData.Item(System.Int32,System.Int32)">
+            <summary>
+            Gets or sets the elevation value at the specified two-dimensional index.
+            </summary>
+            <param name="col">X-index of the data point.</param>
+            <param name="row">Z-index of the data point.</param>
+            <returns>the surface elevation value at the specified two dimensional index</returns>
+        </member>
         <member name="M:Nevron.Chart.NGridSurfaceData.ClearValues">
             <summary>
             Sets the values in the surface data to zero
@@ -11950,6 +12672,11 @@
         <member name="M:Nevron.Chart.NGridSurfaceSeries.#ctor">
             <summary>
             Default constructor.
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NGridSurfaceSeries.Data">
+            <summary>
+            Gets or sets the NGridSurfaceData object controlling the surface data storage.
             </summary>
         </member>
         <member name="P:Nevron.Chart.NGridSurfaceSeries.OriginX">
@@ -12085,33 +12812,18 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:Nevron.Chart.NMatrixSurfaceSeriesData`1">
+        <member name="T:Nevron.Chart.NMatrixSurfaceSeriesData">
             <summary>
-            Each NGridSurfaceSeries instance has an associated NGridSurfaceData object which
-            represents the data storage for the surface series. The data storage is 
-            two-dimensional and contains only elevation data.
+            The NMatrixSurfaceSeriesData is the base class for the grid and mesh surface series data objects
             </summary>
         </member>
-        <member name="M:Nevron.Chart.NMatrixSurfaceSeriesData`1.#ctor(Nevron.Chart.NMatrixSurfaceSeriesData{`0})">
+        <member name="M:Nevron.Chart.NMatrixSurfaceSeriesData.#ctor(Nevron.Chart.NMatrixSurfaceSeriesData)">
             <summary>
             Copy constructor
             </summary>
-            <param name="surface"></param>
+            <param name="seriesData"></param>
         </member>
-        <member name="P:Nevron.Chart.NMatrixSurfaceSeriesData`1.UseColors">
-            <summary>
-            Gets or sets whether the grid surface must use custom colors
-            </summary>
-        </member>
-        <member name="P:Nevron.Chart.NMatrixSurfaceSeriesData`1.Item(System.Int32,System.Int32)">
-            <summary>
-            Gets or sets the elevation value at the specified two-dimensional index.
-            </summary>
-            <param name="col">X-index of the data point.</param>
-            <param name="row">Z-index of the data point.</param>
-            <returns>the surface elevation value at the specified two dimensional index</returns>
-        </member>
-        <member name="M:Nevron.Chart.NMatrixSurfaceSeriesData`1.SetColor(System.Int32,System.Int32,System.UInt32)">
+        <member name="M:Nevron.Chart.NMatrixSurfaceSeriesData.SetColor(System.Int32,System.Int32,System.UInt32)">
             <summary>
             Sets the color at the specified two-dimensional index.
             </summary>
@@ -12122,7 +12834,7 @@
             Color is in ABGR format
             </remarks>
         </member>
-        <member name="M:Nevron.Chart.NMatrixSurfaceSeriesData`1.SetColor(System.Int32,System.Int32,System.Drawing.Color)">
+        <member name="M:Nevron.Chart.NMatrixSurfaceSeriesData.SetColor(System.Int32,System.Int32,System.Drawing.Color)">
             <summary>
             Sets the color at the specified two-dimensional index.
             </summary>
@@ -12130,7 +12842,7 @@
             <param name="row"></param>
             <param name="color"></param>
         </member>
-        <member name="M:Nevron.Chart.NMatrixSurfaceSeriesData`1.GetColor(System.Int32,System.Int32)">
+        <member name="M:Nevron.Chart.NMatrixSurfaceSeriesData.GetColor(System.Int32,System.Int32)">
             <summary>
             Gets the color at the specified two-dimensional index.
             </summary>
@@ -12138,13 +12850,13 @@
             <param name="row"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Chart.NMatrixSurfaceSeriesData`1.InitFromBitmap(System.Drawing.Bitmap)">
+        <member name="M:Nevron.Chart.NMatrixSurfaceSeriesData.InitFromBitmap(System.Drawing.Bitmap)">
             <summary>
             Initializes the grid surface data from a Bitmap image. 
             </summary>
             <param name="bitmap">The bitmap image that is used as a source of data.</param>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Nevron.Chart.NMatrixSurfaceSeriesData`1.OnDataChanged" -->
+        <!-- Badly formed XML comment ignored for member "M:Nevron.Chart.NMatrixSurfaceSeriesData.OnDataChanged" -->
         <member name="T:Nevron.Chart.NSurfaceSeriesBase">
             <summary>
             Abstract base class for the NGridSurfaceSeries, NMeshSurfaceSeries and NTriangulatedSurfaceSeries. This class
@@ -12164,26 +12876,6 @@
             <param name="attributeName">name of the attribute</param>
             <param name="index">index of the attribute</param>
             <returns>a reference to the attribute</returns>
-        </member>
-        <member name="M:Nevron.Chart.NSurfaceSeriesBase.GetTransform">
-            <summary>
-            Gets the palette transform in the form scale/offset
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Nevron.Chart.NSurfaceSeriesBase.ActivatePaletteTexture(Nevron.Chart.NChartRenderingContext3D)">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Nevron.Chart.NSurfaceSeriesBase.EnableShaderRendering">
-            <summary>
-            Gets or sets whether the series will use shader rendering.
-            </summary>
-            <remarks>
-            In this mode all surface computations are executed by the GPU. You should set this property to true when you have large surfaces and you want 
-            the program to consume less memory as well as when displaying realtime surfaces.
-            </remarks>
         </member>
         <member name="P:Nevron.Chart.NSurfaceSeriesBase.Palette">
             <summary>
@@ -12470,11 +13162,6 @@
             Gets or sets whether the min max of the node is valid
             </summary>
         </member>
-        <member name="F:Nevron.Chart.NSurfaceSeriesBase.m_EnableShaderRendering">
-            <summary>
-            Whether shader rendering is enabled
-            </summary>
-        </member>
         <member name="F:Nevron.Chart.NSurfaceSeriesBase.m_DrawFlat">
             <summary>
             Whether the surface is rendered as flat
@@ -12590,6 +13277,11 @@
             Gets the data point index of the trird triangle vertex
             </summary>
         </member>
+        <member name="P:Nevron.Chart.NSurfaceTriangle.DataPointIndices">
+            <summary>
+            Gets the data point indices of the triangle that is currently hit
+            </summary>
+        </member>
         <member name="P:Nevron.Chart.NSurfaceTriangle.Id">
             <summary>
             Gets or sets the id of this triangle
@@ -12668,11 +13360,6 @@
             Creates an identical copy of this NGridSurfaceData object
             </summary>
             <returns></returns>
-        </member>
-        <member name="P:Nevron.Chart.NVertexSurfaceDataBase.UseColors">
-            <summary>
-            Gets or sets whether the grid surface must use custom colors
-            </summary>
         </member>
         <member name="M:Nevron.Chart.NVertexSurfaceDataBase.AddValues(Nevron.GraphicsCore.NVector3DD[])">
             <summary>
@@ -12827,26 +13514,19 @@
             <param name="index"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Chart.NVertexSurfaceDataBase.SetColor(System.Int32,System.UInt32)">
+        <member name="M:Nevron.Chart.NVertexSurfaceDataBase.GetVertex(System.Int32)">
             <summary>
-            Sets the color at the specified index
-            </summary>
-            <param name="index"></param>
-            <param name="color"></param>
-        </member>
-        <member name="M:Nevron.Chart.NVertexSurfaceDataBase.SetColor(System.Int32,System.Drawing.Color)">
-            <summary>
-            Sets the color at the specified index
-            </summary>
-            <param name="index"></param>
-            <param name="color"></param>
-        </member>
-        <member name="M:Nevron.Chart.NVertexSurfaceDataBase.GetColor(System.Int32)">
-            <summary>
-            Gets the color at the specified index
+            Gets the vertex at the specified index
             </summary>
             <param name="index"></param>
             <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.NVertexSurfaceDataBase.SetVertex(System.Int32,Nevron.GraphicsCore.NVector3DF)">
+            <summary>
+            Sets the vertex at the specified index
+            </summary>
+            <param name="index"></param>
+            <param name="vertex"></param>
         </member>
         <member name="T:Nevron.Chart.NVertexSurfaceData">
             <summary>
@@ -12895,12 +13575,6 @@
             Creates an identical copy of this NGridSurfaceData object
             </summary>
             <returns></returns>
-        </member>
-        <member name="M:Nevron.Chart.NTriangulatedSurfaceData.UpdateReferences(Nevron.INReferenceProvider)">
-            <summary>
-            
-            </summary>
-            <param name="provider"></param>
         </member>
         <member name="T:Nevron.Chart.NTriangulatedSurfaceSeries">
             <summary>
@@ -14200,7 +14874,7 @@
         </member>
         <member name="T:Nevron.Chart.NTernarySeries">
             <summary>
-            Represents a quick point series.
+            Represents a ternary series
             </summary>
             <seealso cref="T:Nevron.Chart.NSeries"/>
             <seealso cref="T:Nevron.Chart.NXYScatterSeries"/>
@@ -14628,6 +15302,40 @@
             <param name="obj"></param>
             <returns></returns>
         </member>
+        <member name="T:Nevron.Chart.NPolygonLineIntersector">
+            <summary>
+            Represents an intersector that can get the intersections of a line and a polygon
+            </summary>
+        </member>
+        <member name="M:Nevron.Chart.NPolygonLineIntersector.#ctor(Nevron.GraphicsCore.NPolygonF)">
+            <summary>
+            Initializer constructor
+            </summary>
+            <param name="polygon"></param>
+        </member>
+        <member name="M:Nevron.Chart.NPolygonLineIntersector.#ctor(System.Collections.Generic.List{Nevron.GraphicsCore.NPointF})">
+            <summary>
+            Initializer constructor
+            </summary>
+            <param name="polygon"></param>
+        </member>
+        <member name="M:Nevron.Chart.NPolygonLineIntersector.IntersectsWithRange(System.Single,System.Single,System.Single)">
+            <summary>
+            Returns true if the polygon vertical profile intersects with the specified x range at the specified y value
+            </summary>
+            <param name="y"></param>
+            <param name="xMin"></param>
+            <param name="xMax"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.NPolygonLineIntersector.IntersectWithHorizontalLine(System.Single,System.Collections.Generic.List{System.Single})">
+            <summary>
+            Returns the polygon interections with 
+            </summary>
+            <param name="y"></param>
+            <param name="intersections"></param>
+            <returns></returns>
+        </member>
         <member name="P:Nevron.Chart.NTernaryWall.Name">
             <summary>
             The name of the wall. 
@@ -15032,6 +15740,16 @@
         <member name="P:Nevron.Chart.NLegendPaletteCellData.PaletteAxis">
             <summary>
             Gets or sets the palette width
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NLegendPaletteCellData.Range">
+            <summary>
+            Gets or sets the range displayed by this axis
+            </summary>
+        </member>
+        <member name="P:Nevron.Chart.NLegendPaletteCellData.Palette">
+            <summary>
+            Gets or sets the range displayed by this axis
             </summary>
         </member>
         <member name="T:Nevron.Chart.NLegendCellData">
@@ -16610,6 +17328,11 @@
             <remarks>
             If the number of layout items in the chart exceeds this value, automatic layout is not performed.
             </remarks>
+        </member>
+        <member name="P:Nevron.Chart.NChartLabelLayoutSettings.MinLabelDistance">
+            <summary>
+            Gets or sets the length of the minimum label distance in case labels are instructed to not overlap
+            </summary>
         </member>
         <member name="T:Nevron.Chart.NSeriesLabelLayoutSettings">
             <summary>
@@ -22156,6 +22879,16 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Nevron.Chart.NCartesianChart.GetModelLineFromViewPoint(Nevron.GraphicsCore.NPointF,System.Int32,System.Int32,System.Int32,Nevron.GraphicsCore.NLine3DF@)">
+            <summary>
+            Gets a line in model coordinates that corresponds to the specified view point
+            </summary>
+            <param name="pointView"></param>
+            <param name="horizontalAxisId"></param>
+            <param name="verticalAxisId"></param>
+            <param name="depthAxisId"></param>
+            <returns></returns>
+        </member>
         <member name="M:Nevron.Chart.NCartesianChart.RecalcLayout(Nevron.Chart.NChartRenderingContext)">
             <summary>
             
@@ -22325,31 +23058,23 @@
             Applies a predefined chart style.
             </summary>
         </member>
-        <member name="M:Nevron.Chart.NChart.TransformModelToClient(Nevron.GraphicsCore.NVector3DF,Nevron.GraphicsCore.NVector3DF@)">
+        <member name="M:Nevron.Chart.NChart.TransformModelToView(Nevron.GraphicsCore.NVector3DF,Nevron.GraphicsCore.NVector3DF@)">
             <summary>
-            Converts a model point in the chart model space to the control client viewport point.
+            Converts a model point in the chart model space to view point.
             </summary>
             <param name="vecModelPoint"></param>
             <param name="vecClientPoint"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Chart.NChart.TransformClientToModel(Nevron.GraphicsCore.NVector3DF,Nevron.GraphicsCore.NVector3DF@)">
+        <member name="M:Nevron.Chart.NChart.TransformViewToModel(Nevron.GraphicsCore.NVector3DF,Nevron.GraphicsCore.NVector3DF@)">
             <summary>
-            Converts a point in control client coordinates to chart model coordinates
+            Converts a point in control view coordinates to chart model coordinates
             </summary>
             <param name="vecViewPoint"></param>
             <param name="vecModelPoint"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Chart.NChart.TransformModelToViewport(Nevron.GraphicsCore.NVector3DF,Nevron.GraphicsCore.NVector3DF@)">
-            <summary>
-            Converts a model point in the chart model space to a view point in the chart viewport.
-            </summary>
-            <param name="vecModelPoint"></param>
-            <param name="vecViewPoint"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Nevron.Chart.NChart.TransformClientToModel(Nevron.Chart.NAxis,Nevron.Chart.NAxis,Nevron.Chart.NAxis,System.Single,System.Drawing.Point,Nevron.GraphicsCore.NVector3DF@)">
+        <member name="M:Nevron.Chart.NChart.TransformViewToModel(Nevron.Chart.NAxis,Nevron.Chart.NAxis,Nevron.Chart.NAxis,System.Single,System.Drawing.Point,Nevron.GraphicsCore.NVector3DF@)">
             <summary>
             Transforms a client point to a point in model space. 
             </summary>
@@ -22514,12 +23239,23 @@
             </summary>
             <param name="context"></param>
         </member>
-        <member name="M:Nevron.Chart.NPieChart.GetFitParameters(System.Double@,Nevron.GraphicsCore.NPointF@)">
+        <member name="M:Nevron.Chart.NPieChart.PreOrderPaint2D(Nevron.Chart.NChartRenderingContext2D)">
             <summary>
-            Gets the fitting parameters
+            
             </summary>
-            <param name="fitScale"></param>
-            <param name="fitTranslate"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:Nevron.Chart.NPieChart.PreOrderPaint3D(Nevron.Chart.NChartRenderingContext3D)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Nevron.Chart.NPieChart.PostOrderPaint2D(Nevron.Chart.NChartRenderingContext2D)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
         </member>
         <member name="T:Nevron.Chart.NPolarChart">
             <summary>
@@ -25801,6 +26537,11 @@
             Gets or sets the length of the label connector.
             </summary>
         </member>
+        <member name="P:Nevron.Chart.NPieSeries.MinLabelDistance">
+            <summary>
+            Gets or sets the length of the minimum label distance in case labels are instructed to not overlap
+            </summary>
+        </member>
         <member name="P:Nevron.Chart.NPieSeries.ShowFullPieAsCircle">
             <summary>
             Gets or sets a value indicating whether full pie sectors (360 degrees) should be displayed as circles.
@@ -25834,6 +26575,23 @@
             Gets the series type
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:Nevron.Chart.NPieSeries.Render3D(Nevron.Chart.NChartRenderingContext3D)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Nevron.Chart.NPieSeries.RenderTexts3D(Nevron.Chart.NChartRenderingContext3D)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="P:Nevron.Chart.NPieSeries.Is3DPlotValid">
+            <summary>
+            
+            </summary>
         </member>
         <member name="T:Nevron.Chart.NPointAndFigureSeries">
             <summary>
@@ -26835,7 +27593,7 @@
         </member>
         <member name="F:Nevron.Chart.PaletteMode.Custom">
             <summary>
-            The color value pairs are specified by the user
+            The color value pairs are specified bSy the user
             </summary>
         </member>
         <member name="F:Nevron.Chart.PaletteMode.AutoMinMaxColor">
@@ -30069,7 +30827,7 @@
             <param name="scaleValue"></param>
             <returns></returns>
             <remarks>
-            Note that you can use this method only after the axis is calculated - typically while handling a chart BeforeRender or AfterRender event.
+            Note that you can use this method only after the axis is calculated.
             </remarks>
         </member>
         <member name="M:Nevron.Chart.NAxisBase.TransformModelToScale(System.Single,System.Boolean)">
@@ -30080,7 +30838,7 @@
             <param name="clampToRuler"></param>
             <returns></returns>
             <remarks>
-            Note that you can use this method only after the axis is calculated - typically while handling a chart BeforeRender or AfterRender event.
+            Note that you can use this method only after the axis is calculated.
             </remarks>
         </member>
         <member name="M:Nevron.Chart.NAxisBase.TransformOriginModelBeginToScale(System.Single,System.Boolean)">
@@ -36869,6 +37627,26 @@
             The bar width is specified through the LogicalBarWidth property in logical units
             </summary>
         </member>
+        <member name="T:Nevron.Chart.BarDepthMode">
+            <summary>
+            Enumerates the bar width modes
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.BarDepthMode.Absolute">
+            <summary>
+            The bar width is specified through the BarDepth property in NLength format
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.BarDepthMode.Logical">
+            <summary>
+            The bar width is specified through the LogicalBarDepth property in logical units
+            </summary>
+        </member>
+        <member name="T:Nevron.Chart.CalloutPositionMode">
+            <summary>
+            Enumerates the callout position modes
+            </summary>
+        </member>
         <member name="T:Nevron.Chart.ClusterMode">
             <summary>
             Enumerates the point series clustering modes
@@ -38047,6 +38825,21 @@
             represents a NGraphicsPathSeries object
             </summary>
         </member>
+        <member name="F:Nevron.Chart.SeriesType.FastLine">
+            <summary>
+            represents a NFastLineSeries
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.SeriesType.FastPoint">
+            <summary>
+            represents a NFastPointSeries
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.SeriesType.FastBar">
+            <summary>
+            represents a NFastBarSeries
+            </summary>
+        </member>
         <member name="F:Nevron.Chart.SeriesType.Custom">
             <summary>
             represents a NCustomSeries object
@@ -38859,6 +39652,71 @@
             the const line is displayed as a plane
             </summary>
         </member>
+        <member name="T:Nevron.Chart.FastPointShape">
+            <summary>
+            Defines the possible marker styles.
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.FastPointShape.Point">
+            <summary>
+            Point
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.FastPointShape.Bar">
+            <summary>
+            Bar
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.FastPointShape.Pyramid">
+            <summary>
+            Pyramid
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.FastPointShape.InvertedPyramid">
+            <summary>
+            Inverted pyramid
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.FastPointShape.Circle">
+            <summary>
+            Sphere
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.FastPointShape.Cross">
+            <summary>
+            Cross
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.FastPointShape.DiagonalCross">
+            <summary>
+            Diagonal cross 
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.FastPointShape.LineCross">
+            <summary>
+            A cross rendered with lines
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.FastPointShape.LineDiagonalCross">
+            <summary>
+            A diagonal cross rendered with lines
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.FastPointShape.Star">
+            <summary>
+            Star
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.FastPointShape.Diamond">
+            <summary>
+            Diamond
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.FastPointShape.Asterisk">
+            <summary>
+            Asterisk
+            </summary>
+        </member>
         <member name="T:Nevron.Chart.PointShape">
             <summary>
             Defines the possible marker styles.
@@ -38997,6 +39855,11 @@
         <member name="F:Nevron.Chart.PieLabelMode.Rim">
             <summary>
             pie labels are displayed on the rim of the pie segment
+            </summary>
+        </member>
+        <member name="F:Nevron.Chart.PieLabelMode.RimNoOverlap">
+            <summary>
+            pie labels are displayed on the rim of the pie segment. Labels are automatically shifted to avoid overlapping
             </summary>
         </member>
         <member name="F:Nevron.Chart.PieLabelMode.Spider">
@@ -40778,95 +41641,95 @@
             Returns true if the render device can be 2D
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NAnchorEditor_43278_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.IbtC.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NAddPanelTreeCommand_43466_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.EjtC.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NExcelDataWizard_44118_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.IKUC.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NExcelDataWizard_44118_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.IKUC.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NXlsxDecompressor_45239_obf.Filter(System.String)">
+        <member name="M:Nevron.Internal.dfWC.Filter(System.String)">
             <summary>
             Returns true.
             </summary>
-            <param name="entryName_45240_obf"></param>
+            <param name="EfWC"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NXlsxDecompressor_45239_obf.OnEntryDecompressed(System.String,System.IO.MemoryStream)">
+        <member name="M:Nevron.Internal.dfWC.OnEntryDecompressed(System.String,System.IO.MemoryStream)">
             <summary>
             
             </summary>
-            <param name="entryName_45241_obf"></param>
-            <param name="decompressedStream_45242_obf"></param>
+            <param name="ffWC"></param>
+            <param name="GfWC"></param>
         </member>
-        <member name="M:Nevron.Internal.NImageExportDialog_45684_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.xWWC.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NImageExportDialog_45684_obf.LocalizationContextName">
-            <summary>
-            Gets the localization context name for this class.
-            </summary>
-        </member>
-        <member name="P:Nevron.Internal.NChartWizardForm_46266_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.xWWC.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NPageAxes_46305_obf.Dispose(System.Boolean)">
+        <member name="P:Nevron.Internal.fvxC.LocalizationContextName">
+            <summary>
+            Gets the localization context name for this class.
+            </summary>
+        </member>
+        <member name="M:Nevron.Internal.tWxC.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NPageBorders_46357_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.vYxC.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NPageLabels_46543_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.hhYC.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NPageLights_46630_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.tKYC.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NPageView_46640_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.ElYC.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NWizardPageBase_46758_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.WpYC.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NPair_44989_obf`2.Equals(Nevron.Internal.NPair_44989_obf{`0,`1})">
+        <member name="M:Nevron.Internal.dUvC`2.Equals(Nevron.Internal.dUvC{`0,`1})">
             <summary>
             Indicates whether the current object is equal to another object of the same type.
             </summary>
-            <param name="other_44992_obf">An object to compare with this object.</param>
+            <param name="GUvC">An object to compare with this object.</param>
             <returns>
             true if the current object is equal to the other parameter; otherwise, false.
             </returns>
         </member>
-        <member name="M:Nevron.Internal.NPair_44989_obf`2.ToString">
+        <member name="M:Nevron.Internal.dUvC`2.ToString">
             <summary>
             Returns a <see cref="T:System.String"></see> that represents the current <see cref="T:System.Object"></see>.
             </summary>
@@ -40874,7 +41737,7 @@
             A <see cref="T:System.String"></see> that represents the current <see cref="T:System.Object"></see>.
             </returns>
         </member>
-        <member name="M:Nevron.Internal.NPair_44989_obf`2.GetHashCode">
+        <member name="M:Nevron.Internal.dUvC`2.GetHashCode">
             <summary>
             Serves as a hash function for a particular type. <see cref="M:System.Object.GetHashCode"></see> is suitable for use in hashing algorithms and data structures like a hash table.
             </summary>
@@ -40882,16 +41745,16 @@
             A hash code for the current <see cref="T:System.Object"></see>.
             </returns>
         </member>
-        <member name="M:Nevron.Internal.NPair_44989_obf`2.Equals(System.Object)">
+        <member name="M:Nevron.Internal.dUvC`2.Equals(System.Object)">
             <summary>
             Determines whether the specified <see cref="T:System.Object"></see> is equal to the current <see cref="T:System.Object"></see>.
             </summary>
-            <param name="obj_44993_obf">The <see cref="T:System.Object"></see> to compare with the current <see cref="T:System.Object"></see>.</param>
+            <param name="hUvC">The <see cref="T:System.Object"></see> to compare with the current <see cref="T:System.Object"></see>.</param>
             <returns>
             true if the specified <see cref="T:System.Object"></see> is equal to the current <see cref="T:System.Object"></see>; otherwise, false.
             </returns>
         </member>
-        <member name="M:Nevron.Internal.NPair_44989_obf`2.op_Equality(Nevron.Internal.NPair_44989_obf{`0,`1},Nevron.Internal.NPair_44989_obf{`0,`1})">
+        <member name="M:Nevron.Internal.dUvC`2.op_Equality(Nevron.Internal.dUvC{`0,`1},Nevron.Internal.dUvC{`0,`1})">
             <summary>
             Implements the operator ==.
             </summary>
@@ -40899,7 +41762,7 @@
             <param name="other">The other.</param>
             <returns>The result of the operator.</returns>
         </member>
-        <member name="M:Nevron.Internal.NPair_44989_obf`2.op_Inequality(Nevron.Internal.NPair_44989_obf{`0,`1},Nevron.Internal.NPair_44989_obf{`0,`1})">
+        <member name="M:Nevron.Internal.dUvC`2.op_Inequality(Nevron.Internal.dUvC{`0,`1},Nevron.Internal.dUvC{`0,`1})">
             <summary>
             Implements the operator !=.
             </summary>
@@ -40907,7 +41770,7 @@
             <param name="other">The other.</param>
             <returns>The result of the operator.</returns>
         </member>
-        <member name="P:Nevron.Internal.NCellCollection_45119_obf.Item(System.Int32,System.Int32)">
+        <member name="P:Nevron.Internal.IAWC.Item(System.Int32,System.Int32)">
             <summary>
             Get cell by row and col index
             </summary>
@@ -40915,7 +41778,7 @@
             <param name="col">starts from 0.</param>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.NColumnWidth_45140_obf.Item(System.UInt16,System.UInt16)">
+        <member name="P:Nevron.Internal.EbWC.Item(System.UInt16,System.UInt16)">
             <summary>
             Get or set column width, the unit is 1/256 of the width of the zero character, using default font.
             </summary>
@@ -40923,380 +41786,469 @@
             <param name="lastColIndex">Index to last column in the range</param>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.INCacheablePanel_46774_obf.Cache">
+        <member name="P:Nevron.Internal.nQYC.Cache">
             <summary>
             Indicates whether the object must cashe its content
             </summary>
         </member>
-        <member name="M:Nevron.Internal.INCacheablePanel_46774_obf.GetCachedPanelKey(Nevron.GraphicsCore.NSize@)">
+        <member name="M:Nevron.Internal.nQYC.GetCachedPanelKey(Nevron.GraphicsCore.NSize@)">
             <summary>
             Gets the composite key for the cashed bitmap
             </summary>
-            <param name="bitmapSize_46775_obf"></param>
+            <param name="OQYC"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NAddAxisForm_47012_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.bbAd.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NAddAxisForm_47012_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.bbAd.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NAddPolarAxisForm_47059_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.xCAd.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NAddPolarAxisForm_47059_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.xCAd.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NSeriesDataChannel_47387_obf.GetHashCode">
+        <member name="M:Nevron.Internal.nUAd.GetHashCode">
             <summary>
             Overriden to avoid compilation warnings
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NSeriesDataChannel_47387_obf.Equals(System.Object)">
+        <member name="M:Nevron.Internal.nUAd.Equals(System.Object)">
             <summary>
             Returns true if the objects are equal
             </summary>
-            <param name="obj_47396_obf"></param>
+            <param name="EvAd"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NSeriesDataFormat_47402_obf.GetHashCode">
+        <member name="M:Nevron.Internal.KvAd.GetHashCode">
             <summary>
             Overriden to avoid compilation warnings
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NSeriesDataFormat_47402_obf.Equals(System.Object)">
+        <member name="M:Nevron.Internal.KvAd.Equals(System.Object)">
             <summary>
             Returns true if the objects are equal
             </summary>
-            <param name="obj_47439_obf"></param>
+            <param name="MWAd"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NSurfaceShaderProgramState_48104_obf.Equals(System.Object)">
+        <member name="M:Nevron.Internal.xdbd.GetHashCode">
             <summary>
             
             </summary>
-            <param name="obj_48106_obf"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.INPaletteHost_48635_obf.GetTransform">
-            <summary>
-            Gets the palette transform in the form scale/offset
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Nevron.Internal.INPaletteHost_48635_obf.ActivatePaletteTexture(Nevron.Chart.NChartRenderingContext3D)">
+        <member name="M:Nevron.Internal.xdbd.Equals(System.Object)">
             <summary>
             
             </summary>
-            <param name="context_48636_obf"></param>
-        </member>
-        <member name="M:Nevron.Internal.NLinearPaletteFill_48637_obf.Equals(System.Object)">
-            <summary>
-            Returns true if the objects are equal
-            </summary>
-            <param name="obj_48642_obf"></param>
+            <param name="AEbd"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NLinearPaletteFill_48637_obf.GetHashCode">
+        <member name="M:Nevron.Internal.YEbd.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="bfbd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.AIbd.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="CIbd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.Ilbd.GetHashCode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.Ilbd.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="Klbd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.nlbd.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="plbd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.nMbd.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="pMbd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.SMbd.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="vMbd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.SMbd.GetHashCode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.jOCd.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="lOCd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.MOCd.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="OOCd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.rOCd.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="tOCd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.YWCd.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="bxCd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.Qjdd.GetHashCode">
             <summary>
             Overriden to avoid warnings
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NPaletteFill2_48645_obf.Equals(System.Object)">
+        <member name="M:Nevron.Internal.Qjdd.Equals(System.Object)">
             <summary>
             Returns true if the objects are equal
             </summary>
-            <param name="obj_48649_obf"></param>
+            <param name="Cldd"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NPaletteFill2_48645_obf.GetHashCode">
+        <member name="M:Nevron.Internal.nCEd.Equals(System.Object)">
+            <summary>
+            Returns true if the objects are equal
+            </summary>
+            <param name="SCEd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.nCEd.GetHashCode">
             <summary>
             Overriden to avoid warnings
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NRadialPaletteFill_48653_obf.Equals(System.Object)">
+        <member name="M:Nevron.Internal.vCEd.Equals(System.Object)">
             <summary>
             Returns true if the objects are equal
             </summary>
-            <param name="obj_48659_obf"></param>
+            <param name="AdEd"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NRadialPaletteFill_48653_obf.GetHashCode">
+        <member name="M:Nevron.Internal.vCEd.GetHashCode">
             <summary>
             Overriden to avoid warnings
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NPaletteMap_49986_obf.GetHashCode">
+        <member name="M:Nevron.Internal.EdEd.Equals(System.Object)">
+            <summary>
+            Returns true if the objects are equal
+            </summary>
+            <param name="KdEd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.EdEd.GetHashCode">
+            <summary>
+            Overriden to avoid warnings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.blGd.GetHashCode">
             <summary>
             Gets the hash code of the object
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NPaletteMap_49986_obf.Equals(System.Object)">
+        <member name="M:Nevron.Internal.blGd.Equals(System.Object)">
             <summary>
             Returns true if the objects are equal
             </summary>
-            <param name="obj_50040_obf"></param>
+            <param name="fnGd"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NPaletteMap_49986_obf.Clone">
+        <member name="M:Nevron.Internal.blGd.Clone">
             <summary>
             Creates an identical copy of this object
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NGridCore_50219_obf.Clone">
+        <member name="M:Nevron.Internal.jUGd.Clone">
             <summary>
             Creates an identical copy of this grid object
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NMergeCellsCollection_50365_obf.Clone">
+        <member name="M:Nevron.Internal.fbhd.Clone">
             <summary>
             Creates an identical copy of this merge cells collection
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NRowColStyleCollection_50377_obf.Clone">
+        <member name="M:Nevron.Internal.rbhd.Clone">
             <summary>
             Creates an identical copy of this row/col style object
             </summary>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.NSortedArrayDataSeriesStorage_50612_obf.Item(System.Int32)">
+        <member name="P:Nevron.Internal.Clhd.Item(System.Int32)">
             <summary>
             
             </summary>
             <param name="key"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NSortedArrayDataSeriesStorage_50612_obf.UpdateReferences(Nevron.INReferenceProvider)">
+        <member name="M:Nevron.Internal.Clhd.UpdateReferences(Nevron.INReferenceProvider)">
             <summary>
             
             </summary>
-            <param name="provider_50624_obf"></param>
+            <param name="Olhd"></param>
         </member>
-        <member name="M:Nevron.Internal.NSortedArrayDataSeriesStorage_50612_obf.CreateNonSerializedObjects">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Nevron.Internal.NHashDataSeriesValueEnumerator_50639_obf.Current">
+        <member name="M:Nevron.Internal.Clhd.CreateNonSerializedObjects">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NHashDataSeriesValueEnumerator_50639_obf.Dispose">
+        <member name="P:Nevron.Internal.EMhd.Current">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NHashDataSeriesValueEnumerator_50639_obf.MoveNext">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Nevron.Internal.NHashDataSeriesValueEnumerator_50639_obf.Reset">
+        <member name="M:Nevron.Internal.EMhd.Dispose">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NHashDataSeriesKeyValueEnumerator_50642_obf.Dispose">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Nevron.Internal.NHashDataSeriesKeyValueEnumerator_50642_obf.MoveNext">
+        <member name="M:Nevron.Internal.EMhd.MoveNext">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NHashDataSeriesKeyValueEnumerator_50642_obf.Reset">
+        <member name="M:Nevron.Internal.EMhd.Reset">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NHashDataSeriesStorage_50645_obf.Item(System.Int32)">
+        <member name="M:Nevron.Internal.hMhd.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Internal.hMhd.MoveNext">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Internal.hMhd.Reset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Nevron.Internal.KMhd.Item(System.Int32)">
             <summary>
             
             </summary>
             <param name="key"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NHashDataSeriesStorage_50645_obf.UpdateReferences(Nevron.INReferenceProvider)">
+        <member name="M:Nevron.Internal.KMhd.UpdateReferences(Nevron.INReferenceProvider)">
             <summary>
             
             </summary>
-            <param name="provider_50657_obf"></param>
+            <param name="WMhd"></param>
         </member>
-        <member name="M:Nevron.Internal.NHashDataSeriesStorage_50645_obf.CreateNonSerializedObjects">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Nevron.Internal.NArrayDataSeriesStorageValueEnumerator_50662_obf.Current">
+        <member name="M:Nevron.Internal.KMhd.CreateNonSerializedObjects">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NArrayDataSeriesStorageValueEnumerator_50662_obf.MoveNext">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Nevron.Internal.NArrayDataSeriesStorageValueEnumerator_50662_obf.Reset">
+        <member name="P:Nevron.Internal.Cnhd.Current">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NArrayDataSeriesStorageValueEnumerator_50662_obf.Dispose">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Nevron.Internal.NArrayDataSeriesStorageKeyValueEnumerator_50667_obf.System#Collections#IEnumerator#Current">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Nevron.Internal.NArrayDataSeriesStorageKeyValueEnumerator_50667_obf.MoveNext">
+        <member name="M:Nevron.Internal.Cnhd.MoveNext">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.NArrayDataSeriesStorage_50672_obf.Item(System.Int32)">
+        <member name="M:Nevron.Internal.Cnhd.Reset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Internal.Cnhd.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Nevron.Internal.hnhd.System#Collections#IEnumerator#Current">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nevron.Internal.hnhd.MoveNext">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Nevron.Internal.Mnhd.Item(System.Int32)">
             <summary>
             
             </summary>
             <param name="key"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NArrayDataSeriesStorage_50672_obf.UpdateReferences(Nevron.INReferenceProvider)">
+        <member name="M:Nevron.Internal.Mnhd.UpdateReferences(Nevron.INReferenceProvider)">
             <summary>
             
             </summary>
-            <param name="provider_50684_obf"></param>
+            <param name="Ynhd"></param>
         </member>
-        <member name="M:Nevron.Internal.NArrayDataSeriesStorage_50672_obf.CreateNonSerializedObjects">
+        <member name="M:Nevron.Internal.Mnhd.CreateNonSerializedObjects">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NIndexedDataSeriesStorage_50693_obf.Item(System.Int32)">
+        <member name="P:Nevron.Internal.IOhd.Item(System.Int32)">
             <summary>
             
             </summary>
             <param name="key"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NIndexedDataSeriesStorage_50693_obf.UpdateReferences(Nevron.INReferenceProvider)">
+        <member name="M:Nevron.Internal.IOhd.UpdateReferences(Nevron.INReferenceProvider)">
             <summary>
             
             </summary>
-            <param name="provider_50704_obf"></param>
+            <param name="tOhd"></param>
         </member>
-        <member name="M:Nevron.Internal.NIndexedDataSeriesStorage_50693_obf.CreateNonSerializedObjects">
+        <member name="M:Nevron.Internal.IOhd.CreateNonSerializedObjects">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NIndexedDataSeriesStorage_50693_obf.GetReferenceProvider">
+        <member name="M:Nevron.Internal.IOhd.GetReferenceProvider">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NIndexedDataSeriesStorage_50693_obf.UpdateFieldReferences(Nevron.INReferenceProvider)">
+        <member name="M:Nevron.Internal.IOhd.UpdateFieldReferences(Nevron.INReferenceProvider)">
             <summary>
             Updates the field references of this object
             </summary>
-            <param name="provider_50705_obf"></param>
+            <param name="UOhd"></param>
             <remark>AUTO GENERATED IN DERIVED CLASSES</remark>
         </member>
-        <member name="M:Nevron.Internal.NIndexedDataSeriesStorage_50693_obf.CreateFieldNonSerializedObjects">
+        <member name="M:Nevron.Internal.IOhd.CreateFieldNonSerializedObjects">
             <summary>
             
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NDataSeriesEnumerator_50762_obf.Current">
+        <member name="P:Nevron.Internal.brhd.Current">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NDataSeriesEnumerator_50762_obf.MoveNext">
+        <member name="M:Nevron.Internal.brhd.MoveNext">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NVectorDataChunk_51250_obf`3.Clear">
+        <member name="M:Nevron.Internal.hlId`3.Clear">
             <summary>
             Clears the chunk
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NDataSeriesSubsetUserControl_53348_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.tMld.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NSeriesEditorUC_55972_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.pQpd.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NPaletteEditorUC_57050_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.Qfrd.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NSurfaceDataUserControl_57061_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.CGrd.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NAutoLegendItemCollection_58074_obf.Name">
+        <member name="P:Nevron.Internal.pvSd.Name">
             <summary>
             User defined name of the node
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NScaleRangeLabelFactory_59368_obf.CreateScaleDecoration(Nevron.GraphicsCore.NRange1DD,Nevron.GraphicsCore.NRange1DD)">
+        <member name="M:Nevron.Internal.hxUd.CreateScaleDecoration(Nevron.GraphicsCore.NRange1DD,Nevron.GraphicsCore.NRange1DD)">
             <summary>
             Creates a scale decoration based on the current and view ranges.
             </summary>
-            <param name="viewRange_59390_obf">The view range.</param>
-            <param name="currentRange_59391_obf">The current range.</param>
+            <param name="EYUd">The view range.</param>
+            <param name="fYUd">The current range.</param>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.NMultiGridLine_60079_obf.WallDecorationType">
+        <member name="P:Nevron.Internal.SbWd.WallDecorationType">
             <summary>
             Gets the wall decoration type
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NMultiGridLine_60079_obf.IsContainedInRange(Nevron.GraphicsCore.NRange1DD)">
+        <member name="M:Nevron.Internal.SbWd.IsContainedInRange(Nevron.GraphicsCore.NRange1DD)">
             <summary>
             Returns true if the decoration is contained in the range
             </summary>
-            <param name="range_60087_obf"></param>
+            <param name="bCWd"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NTransform_60739_obf.Clone">
+        <member name="M:Nevron.Internal.jdxd.Clone">
             <summary>
             
             </summary>

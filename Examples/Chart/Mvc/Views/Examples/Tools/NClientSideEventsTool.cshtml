@@ -1,0 +1,11 @@
+﻿@{
+	Layout = "~/Views/Shared/_ExampleLayoutPage.cshtml";
+}
+
+@section ExampleContent {
+                    @{ Html.RenderAction("Script", "NClientSideEventsToolExample");}
+                    @{ Html.RenderAction("Content", "NClientSideEventsToolExample");}
+}
+@section ExampleDescription {
+    The example shows how to intercept client side events. 
+}

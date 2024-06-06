@@ -84,7 +84,7 @@ namespace Nevron.Examples.Chart.WinForm
 
 			m_Pie = (NPieSeries)m_Chart.Series.Add(SeriesType.Pie);
 			m_Pie.PieEdgePercent = 30;
-			m_Pie.PieStyle = PieStyle.SmoothEdgePie;
+			m_Pie.PieStyle = PieStyle.SmoothEdgeRing;
 			m_Pie.Legend.Mode = SeriesLegendMode.DataPoints;
 			m_Pie.Legend.Format = "<label> <percent>";
 			m_Pie.UseBeginEndWidthPercents = true;
@@ -92,7 +92,7 @@ namespace Nevron.Examples.Chart.WinForm
 			for (int i = 0; i < 9; i++)
 			{
 				m_Pie.Values.Add(10 + i * 10);
-				m_Pie.BeginWidthPercents.Add(0);
+				m_Pie.BeginWidthPercents.Add(i * 5);
 				m_Pie.EndWidthPercents.Add(10 + i * 10);
 			}
 

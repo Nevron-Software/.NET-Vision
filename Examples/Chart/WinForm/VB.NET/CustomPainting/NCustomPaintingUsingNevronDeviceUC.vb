@@ -163,48 +163,48 @@ Namespace Nevron.Examples.Chart.WinForm
 				vecModelPoint.Y = vertAxis.TransformScaleToModel(False, CSng(DirectCast(m_Bar.Values(i), Double)))
 				vecModelPoint.Z = 0
 
-                If m_Chart.TransformModelToClient(vecModelPoint, vecClientPoint) Then
-                    Dim rcArrowRect As New RectangleF(vecClientPoint.X - nBarSize, vecClientPoint.Y - nBarSize, 2 * nBarSize, 2 * nBarSize)
+				If m_Chart.TransformModelToView(vecModelPoint, vecClientPoint) Then
+					Dim rcArrowRect As New RectangleF(vecClientPoint.X - nBarSize, vecClientPoint.Y - nBarSize, 2 * nBarSize, 2 * nBarSize)
 
-                    If rcArrowRect.Width > 0 AndAlso rcArrowRect.Height > 0 AndAlso DisplayMark(dCurrentValue, dPreviousValue) Then
-                        ' draw arrow background
-                        Dim path As GraphicsPath = GetRoundRectanglePath(rcArrowRect)
+					If rcArrowRect.Width > 0 AndAlso rcArrowRect.Height > 0 AndAlso DisplayMark(dCurrentValue, dPreviousValue) Then
+						' draw arrow background
+						Dim path As GraphicsPath = GetRoundRectanglePath(rcArrowRect)
 
-                        graphics.PaintPath(rectFillStyle, rectStrokeStyle, path)
+						graphics.PaintPath(rectFillStyle, rectStrokeStyle, path)
 
-                        path.Dispose()
+						path.Dispose()
 
-                        rcArrowRect.Inflate(-5, -5)
+						rcArrowRect.Inflate(-5, -5)
 
-                        ' draw the arrow itself
-                        If rcArrowRect.Width > 0 AndAlso rcArrowRect.Height > 0 Then
-                            If dCurrentValue < dPreviousValue Then
-                                ' draw negative arrow
-                                path = GetArrowPath(rcArrowRect, False)
+						' draw the arrow itself
+						If rcArrowRect.Width > 0 AndAlso rcArrowRect.Height > 0 Then
+							If dCurrentValue < dPreviousValue Then
+								' draw negative arrow
+								path = GetArrowPath(rcArrowRect, False)
 
-                                graphics.PaintPath(negativeArrowFillStyle, negativeArrowStrokeStyle, path)
+								graphics.PaintPath(negativeArrowFillStyle, negativeArrowStrokeStyle, path)
 
-                                path.Dispose()
-                            ElseIf dCurrentValue > dPreviousValue Then
-                                ' draw positive arrow
-                                path = GetArrowPath(rcArrowRect, True)
+								path.Dispose()
+							ElseIf dCurrentValue > dPreviousValue Then
+								' draw positive arrow
+								path = GetArrowPath(rcArrowRect, True)
 
-                                graphics.PaintPath(positiveArrowFillStyle, positiveArrowStrokeStyle, path)
+								graphics.PaintPath(positiveArrowFillStyle, positiveArrowStrokeStyle, path)
 
-                                path.Dispose()
-                            Else
-                                ' draw equal sign
-                                Dim rect As New NRectangleF(rcArrowRect.Left, rcArrowRect.Top, rcArrowRect.Width, rcArrowRect.Height / 3.0F)
+								path.Dispose()
+							Else
+								' draw equal sign
+								Dim rect As New NRectangleF(rcArrowRect.Left, rcArrowRect.Top, rcArrowRect.Width, rcArrowRect.Height / 3.0F)
 
-                                graphics.PaintRectangle(equalSignFillStyle, equalSignStrokeStyle, rect)
+								graphics.PaintRectangle(equalSignFillStyle, equalSignStrokeStyle, rect)
 
-                                rect = New NRectangleF(rcArrowRect.Left, rcArrowRect.Bottom - rect.Height, rcArrowRect.Width, rect.Height)
+								rect = New NRectangleF(rcArrowRect.Left, rcArrowRect.Bottom - rect.Height, rcArrowRect.Width, rect.Height)
 
-                                graphics.PaintRectangle(equalSignFillStyle, equalSignStrokeStyle, rect)
-                            End If
-                        End If
-                    End If
-                End If
+								graphics.PaintRectangle(equalSignFillStyle, equalSignStrokeStyle, rect)
+							End If
+						End If
+					End If
+				End If
 			Next i
 		End Sub
 

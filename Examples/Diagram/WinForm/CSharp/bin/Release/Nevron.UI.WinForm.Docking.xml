@@ -9194,128 +9194,128 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NAutoHideTabStripCollection_32251_obf.UpdateReferences(Nevron.INReferenceProvider)">
+        <member name="M:Nevron.Internal.lQbC.UpdateReferences(Nevron.INReferenceProvider)">
             <summary>
             
             </summary>
-            <param name="provider_32252_obf"></param>
+            <param name="MQbC"></param>
         </member>
-        <member name="M:Nevron.Internal.NAutoHideTabStripCollection_32251_obf.CreateNonSerializedObjects">
+        <member name="M:Nevron.Internal.lQbC.CreateNonSerializedObjects">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NAutoHideTabStripCollection_32251_obf.GetReferenceProvider">
+        <member name="M:Nevron.Internal.lQbC.GetReferenceProvider">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.NSingleDocumentHost_32364_obf.Document">
+        <member name="P:Nevron.Internal.YUbC.Document">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NSingleDocumentHost_32364_obf.OnDocumentChanged(System.String)">
+        <member name="M:Nevron.Internal.YUbC.OnDocumentChanged(System.String)">
             <summary>
             
             </summary>
-            <param name="propName_32366_obf"></param>
+            <param name="bvbC"></param>
         </member>
-        <member name="M:Nevron.Internal.NSingleDocumentHost_32364_obf.Attach(Nevron.UI.WinForm.Controls.NUIDocument)">
+        <member name="M:Nevron.Internal.YUbC.Attach(Nevron.UI.WinForm.Controls.NUIDocument)">
             <summary>
             
             </summary>
-            <param name="doc_32367_obf"></param>
+            <param name="CvbC"></param>
         </member>
-        <member name="P:Nevron.Internal.NSingleDocumentView_32372_obf.BorderWidth">
+        <member name="P:Nevron.Internal.hvbC.BorderWidth">
             <summary>
             Gets the preffered width of the border.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NStandardMdiView_32375_obf.BorderWidth">
+        <member name="P:Nevron.Internal.KvbC.BorderWidth">
             <summary>
             Gets the preffered width of the border.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NDockZoneDesignerSerializer_32898_obf.Deserialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+        <member name="M:Nevron.Internal.hrCC.Deserialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
             <summary>
             
             </summary>
-            <param name="manager_32899_obf"></param>
-            <param name="codeObject_32900_obf"></param>
+            <param name="IrCC"></param>
+            <param name="jrCC"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NDockZoneDesignerSerializer_32898_obf.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+        <member name="M:Nevron.Internal.hrCC.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
             <summary>
             
             </summary>
-            <param name="manager_32901_obf"></param>
+            <param name="KrCC"></param>
             <param name="value"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NSplitterDesigner_32902_obf.GetHitTest(System.Drawing.Point)">
+        <member name="M:Nevron.Internal.lrCC.GetHitTest(System.Drawing.Point)">
             <summary>
             
             </summary>
-            <param name="point_32903_obf"></param>
+            <param name="MrCC"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NDockingStickerTemplateCollectionEditor_32942_obf.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+        <member name="M:Nevron.Internal.btCC.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
             <summary>
             
             </summary>
-            <param name="context_32943_obf"></param>
-            <param name="provider_32944_obf"></param>
+            <param name="CtCC"></param>
+            <param name="dtCC"></param>
             <param name="value"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NDockingStickerTemplateCollectionEditor_32942_obf.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+        <member name="M:Nevron.Internal.btCC.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
             <summary>
             
             </summary>
-            <param name="context_32945_obf"></param>
+            <param name="EtCC"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NDockingStickerTemplateEditor_32946_obf.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+        <member name="M:Nevron.Internal.ftCC.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
             <summary>
             
             </summary>
-            <param name="context_32947_obf"></param>
-            <param name="provider_32948_obf"></param>
+            <param name="GtCC"></param>
+            <param name="htCC"></param>
             <param name="value"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NDockingStickerTemplateEditor_32946_obf.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+        <member name="M:Nevron.Internal.ftCC.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
             <summary>
             
             </summary>
-            <param name="context_32949_obf"></param>
+            <param name="ItCC"></param>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.NNevronDockingStickerTemplate_32993_obf.Editable">
+        <member name="P:Nevron.Internal.CvCC.Editable">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NNevronDockingStickerTemplate_32993_obf.ShouldSerialize">
+        <member name="M:Nevron.Internal.CvCC.ShouldSerialize">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NDockingServiceCollection_33718_obf.UpdateReferences(Nevron.INReferenceProvider)">
+        <member name="M:Nevron.Internal.bAEC.UpdateReferences(Nevron.INReferenceProvider)">
             <summary>
             
             </summary>
-            <param name="provider_33719_obf"></param>
+            <param name="CAEC"></param>
         </member>
-        <member name="M:Nevron.Internal.NDockingServiceCollection_33718_obf.CreateNonSerializedObjects">
+        <member name="M:Nevron.Internal.bAEC.CreateNonSerializedObjects">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NDockingServiceCollection_33718_obf.GetReferenceProvider">
+        <member name="M:Nevron.Internal.bAEC.GetReferenceProvider">
             <summary>
             
             </summary>

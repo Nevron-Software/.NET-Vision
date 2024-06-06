@@ -10,51 +10,50 @@ using Nevron.Chart;
 
 namespace Nevron.Examples.Chart.WinForm
 {
-	[ToolboxItem(false)]
-	public class NLegendCustomItemsUC : NExampleBaseUC
+    [ToolboxItem(false)]
+    public class NLegendCustomItemsUC : NExampleBaseUC
     {
-		private System.ComponentModel.Container components = null;
+        private System.ComponentModel.Container components = null;
 
-		public NLegendCustomItemsUC()
-		{
-			InitializeComponent();
-		}
+        public NLegendCustomItemsUC()
+        {
+            InitializeComponent();
+        }
 
-		/// <summary> 
-		/// Clean up any resources being used.
-		/// </summary>
-		protected override void Dispose( bool disposing )
-		{
-			if( disposing )
-			{
-				if(components != null)
-				{
-					components.Dispose();
-				}
-			}
-			base.Dispose( disposing );
-		}
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                if (components != null)
+                {
+                    components.Dispose();
+                }
+            }
+            base.Dispose(disposing);
+        }
 
+        #region Component Designer generated code
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // NLegendCustomItemsUC
+            // 
+            this.Name = "NLegendCustomItemsUC";
+            this.Size = new System.Drawing.Size(180, 680);
+            this.ResumeLayout(false);
 
-		#region Component Designer generated code
-		/// <summary> 
-		/// Required method for Designer support - do not modify 
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
-			this.SuspendLayout();
-			// 
-			// NLegendCustomItemsUC
-			// 
-			this.Name = "NLegendCustomItemsUC";
-			this.Size = new System.Drawing.Size(180, 680);
-			this.ResumeLayout(false);
+        }
+        #endregion
 
-		}
-		#endregion
-
-		public override void Initialize()
+        public override void Initialize()
         {
             base.Initialize();
 
@@ -76,86 +75,84 @@ namespace Nevron.Examples.Chart.WinForm
             nChartControl1.Panels.Add(container);
 
             // configure the legend
-			CreateCustomLegend1(container);
-			CreateCustomLegend2(container);
-			CreateCustomLegend3(container);
+            CreateCustomLegend1(container);
+            CreateCustomLegend2(container);
+            CreateCustomLegend3(container);
 
             // apply style sheet
             NStyleSheet styleSheet = NStyleSheet.CreatePredefinedStyleSheet(PredefinedStyleSheet.Fresh);
             styleSheet.Apply(nChartControl1.Document);
         }
 
-		private void CreateCustomLegend1(NDockPanel container)
-		{
-			NLegend markShapesLegend = CreateLegend(container, "Mark Shapes");
+        private void CreateCustomLegend1(NDockPanel container)
+        {
+            NLegend markShapesLegend = CreateLegend(container, "Mark Shapes");
 
-			Array markShapes = Enum.GetValues(typeof(LegendMarkShape));
-			NChartPalette palette = new NChartPalette(ChartPredefinedPalette.Fresh);
+            Array markShapes = Enum.GetValues(typeof(LegendMarkShape));
+            NChartPalette palette = new NChartPalette(ChartPredefinedPalette.Fresh);
 
-			for (int i = 0; i < markShapes.Length; i++)
-			{
-				NLegendItemCellData licd = new NLegendItemCellData();
-				LegendMarkShape markShape = (LegendMarkShape)markShapes.GetValue(i);
+            for (int i = 0; i < markShapes.Length; i++)
+            {
+                NLegendItemCellData licd = new NLegendItemCellData();
+                LegendMarkShape markShape = (LegendMarkShape)markShapes.GetValue(i);
 
-				licd.Text = markShape.ToString();
-				licd.MarkShape = markShape;
-				licd.MarkFillStyle = new NColorFillStyle(palette.SeriesColors[i % palette.SeriesColors.Count]);
+                licd.Text = markShape.ToString();
+                licd.MarkShape = markShape;
+                licd.MarkFillStyle = new NColorFillStyle(palette.SeriesColors[i % palette.SeriesColors.Count]);
 
-				markShapesLegend.Data.Items.Add(licd);
-			}
+                markShapesLegend.Data.Items.Add(licd);
+            }
+        }
 
-		}
+        private void CreateCustomLegend2(NDockPanel container)
+        {
+            NLegend markShapesNoStroke = CreateLegend(container, "Mark Shapes (No stroke)");
 
-		private void CreateCustomLegend2(NDockPanel container)
-		{
-			NLegend markShapesNoStroke = CreateLegend(container, "Mark Shapes (No stroke)");
+            Array markShapes = Enum.GetValues(typeof(LegendMarkShape));
+            NChartPalette palette = new NChartPalette(ChartPredefinedPalette.Fresh);
 
-			Array markShapes = Enum.GetValues(typeof(LegendMarkShape));
-			NChartPalette palette = new NChartPalette(ChartPredefinedPalette.Fresh);
+            for (int i = 0; i < markShapes.Length; i++)
+            {
+                NLegendItemCellData licd = new NLegendItemCellData();
+                LegendMarkShape markShape = (LegendMarkShape)markShapes.GetValue(i);
 
-			for (int i = 0; i < markShapes.Length; i++)
-			{
-				NLegendItemCellData licd = new NLegendItemCellData();
-				LegendMarkShape markShape = (LegendMarkShape)markShapes.GetValue(i);
+                licd.Text = markShape.ToString();
+                licd.MarkShape = markShape;
+                licd.MarkFillStyle = new NColorFillStyle(palette.SeriesColors[i % palette.SeriesColors.Count]);
+                licd.MarkBorderStyle.Width = new NLength(0);
+                licd.MarkLineStyle.Width = new NLength(0);
 
-				licd.Text = markShape.ToString();
-				licd.MarkShape = markShape;
-				licd.MarkFillStyle = new NColorFillStyle(palette.SeriesColors[i % palette.SeriesColors.Count]);
-				licd.MarkBorderStyle.Width = new NLength(0);
-				licd.MarkLineStyle.Width = new NLength(0);
+                markShapesNoStroke.Data.Items.Add(licd);
+            }
+        }
 
-				markShapesNoStroke.Data.Items.Add(licd);
-			}
+        private void CreateCustomLegend3(NDockPanel container)
+        {
+            NLegend markShapesBackground = CreateLegend(container, "Mark Shapes (Margins, Background)");
 
-		}
+            Array markShapes = Enum.GetValues(typeof(LegendMarkShape));
+            NChartPalette palette = new NChartPalette(ChartPredefinedPalette.Fresh);
 
-		private void CreateCustomLegend3(NDockPanel container)
-		{
-			NLegend markShapesBackground = CreateLegend(container, "Mark Shapes (Margins, Background)");
+            for (int i = 0; i < markShapes.Length; i++)
+            {
+                NLegendItemCellData licd = new NLegendItemCellData();
+                LegendMarkShape markShape = (LegendMarkShape)markShapes.GetValue(i);
 
-			Array markShapes = Enum.GetValues(typeof(LegendMarkShape));
-			NChartPalette palette = new NChartPalette(ChartPredefinedPalette.Fresh);
+                licd.Text = markShape.ToString();
+                licd.TextStyle.FillStyle = new NColorFillStyle(Color.White);
+                licd.TextStyle.FontStyle.EmSize = new NLength(10 + i);
+                licd.MarkShape = markShape;
+                licd.MarkFillStyle = new NColorFillStyle(Color.White);
+                licd.MarkBorderStyle.Width = new NLength(0);
+                licd.MarkLineStyle.Width = new NLength(0);
+                licd.BackgroundFillStyle = new NColorFillStyle(palette.SeriesColors[i % palette.SeriesColors.Count]);
 
-			for (int i = 0; i < markShapes.Length; i++)
-			{
-				NLegendItemCellData licd = new NLegendItemCellData();
-				LegendMarkShape markShape = (LegendMarkShape)markShapes.GetValue(i);
+                markShapesBackground.Data.Items.Add(licd);
+            }
 
-				licd.Text = markShape.ToString();
-				licd.TextStyle.FillStyle = new NColorFillStyle(Color.White);
-				licd.TextStyle.FontStyle.EmSize = new NLength(10 + i);
-				licd.MarkShape = markShape;
-				licd.MarkFillStyle = new NColorFillStyle(Color.White);
-				licd.MarkBorderStyle.Width = new NLength(0);
-				licd.MarkLineStyle.Width = new NLength(0);
-				licd.BackgroundFillStyle = new NColorFillStyle(palette.SeriesColors[i % palette.SeriesColors.Count]);
-
-				markShapesBackground.Data.Items.Add(licd);
-			}
-
-			// increase teh margins around each cell
-			markShapesBackground.Data.CellMargins = new NMarginsL(10, 10, 10, 10);
-		}
+            // increase teh margins around each cell
+            markShapesBackground.Data.CellMargins = new NMarginsL(10, 10, 10, 10);
+        }
 
         private NLegend CreateLegend(NDockPanel container, string title)
         {
@@ -171,5 +168,5 @@ namespace Nevron.Examples.Chart.WinForm
             return legend;
         }
 
-	}
+    }
 }

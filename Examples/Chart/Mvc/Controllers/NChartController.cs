@@ -63,8 +63,6 @@ namespace Nevron.Examples.Chart.Mvc
             NThinChartControl control = this.Control;
             control.ConfigureInitialResponse();
 
-            control.ServerSettings.Css.StateHover = "border: 1px solid rgb(38, 148, 232);background: rgb(255, 0, 0);";
-
             Initialize(control);
             
             return new NThinControlResult(control.ProcessResponses());

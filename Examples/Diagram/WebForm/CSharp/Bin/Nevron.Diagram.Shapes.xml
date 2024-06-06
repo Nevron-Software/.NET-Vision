@@ -11140,36 +11140,36 @@
             <param name="document">document in which to create a tree</param>
             <returns>tree elements</returns>
         </member>
-        <member name="M:Nevron.Internal.NPropertyBrowserUC_65212_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.fhfE.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NPropertyBrowserUC_65212_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.fhfE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NPropertyBrowserUC_65212_obf.UpdateFromTemplate">
+        <member name="M:Nevron.Internal.fhfE.UpdateFromTemplate">
             <summary>
             Overriden to update the property grid from the template
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NSelectTemplatePageUC_65218_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.lhfE.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NWizardUC_65238_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.GIfE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NWizardUC_65238_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.GIfE.Dispose(System.Boolean)">
             <summary>
             
             </summary>
-            <param name="disposing_65248_obf"></param>
+            <param name="QIfE"></param>
         </member>
     </members>
 </doc>

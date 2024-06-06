@@ -153,7 +153,7 @@ namespace Nevron.Examples.Chart.WebForm
 					vecModel.Y = rulerY.LogicalToScale(Points[i].Y);
 
 					// Transform model coordinates to view coordinates
-					m_Chart.TransformModelToClient(vecModel, ref vecView);
+					m_Chart.TransformModelToView(vecModel, ref vecView);
 
 					// Draw the current point
 					bool isControlPoint = (i % 3) != 0;

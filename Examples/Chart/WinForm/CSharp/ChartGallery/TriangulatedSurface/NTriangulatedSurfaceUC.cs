@@ -392,7 +392,7 @@ namespace Nevron.Examples.Chart.WinForm
 
 				int nDataPointsCount = (int)stream.Length / 12;
 
-				//surface.Data.SetCapacity(nDataPointsCount);
+				surface.Data.SetCapacity(nDataPointsCount);
 				NVector3DF[] data = new NVector3DF[nDataPointsCount];
 
 				// fill Y values

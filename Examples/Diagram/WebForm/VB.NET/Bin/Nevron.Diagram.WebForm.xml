@@ -1177,43 +1177,43 @@
             A state manager.
             </returns>
         </member>
-        <member name="M:Nevron.Internal.NDocumentSerializer_68315_obf.SaveControlStateToFile(System.String,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
+        <member name="M:Nevron.Internal.nGKE.SaveControlStateToFile(System.String,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
             <summary>
             Saves the current state of the chart control to a file in the specified format.
             </summary>
-            <param name="filePath_68317_obf">A relative or absolute path for the output file.</param>
-            <param name="format_68318_obf">The format of the file.</param>
-            <param name="filter_68319_obf">A serialization filter.</param>
+            <param name="pGKE">A relative or absolute path for the output file.</param>
+            <param name="QGKE">The format of the file.</param>
+            <param name="rGKE">A serialization filter.</param>
             <remarks>
             The filter parameters is used only when the format is CustomXML or CustomBinary.
             </remarks>
         </member>
-        <member name="M:Nevron.Internal.NDocumentSerializer_68315_obf.LoadControlStateFromFile(System.String,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
+        <member name="M:Nevron.Internal.nGKE.LoadControlStateFromFile(System.String,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
             <summary>
             Loads an existing document state from a file.
             </summary>
-            <param name="filePath_68320_obf"></param>
-            <param name="format_68321_obf"></param>
-            <param name="filter_68322_obf"></param>
+            <param name="SGKE"></param>
+            <param name="tGKE"></param>
+            <param name="UGKE"></param>
         </member>
-        <member name="M:Nevron.Internal.NDocumentSerializer_68315_obf.SaveControlStateToStream(System.IO.Stream,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
+        <member name="M:Nevron.Internal.nGKE.SaveControlStateToStream(System.IO.Stream,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
             <summary>
             Saves the document state in the passed stream.
             </summary>
-            <param name="stream_68323_obf">The stream to load the state from.</param>
-            <param name="format_68324_obf">The format of the stream.</param>
-            <param name="filter_68325_obf">A serialization filter.</param>
+            <param name="vGKE">The stream to load the state from.</param>
+            <param name="WGKE">The format of the stream.</param>
+            <param name="xGKE">A serialization filter.</param>
             <remarks>
             You're responsible for the stream creation and closure. The filter parameter is used only when the format is CustomXML or CustomBinary.
             </remarks>
         </member>
-        <member name="M:Nevron.Internal.NDocumentSerializer_68315_obf.LoadControlStateFromStream(System.IO.Stream,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
+        <member name="M:Nevron.Internal.nGKE.LoadControlStateFromStream(System.IO.Stream,Nevron.Serialization.PersistencyFormat,Nevron.Serialization.INSerializationFilter)">
             <summary>
             Loads the document state from the passed stream.
             </summary>
-            <param name="stream_68326_obf">The stream to save the state to.</param>
-            <param name="format_68327_obf">The format of the stream.</param>
-            <param name="filter_68328_obf">A serialization filter.</param>
+            <param name="YGKE">The stream to save the state to.</param>
+            <param name="AhKE">The format of the stream.</param>
+            <param name="bhKE">A serialization filter.</param>
             <remarks>
             You're responsible for the stream creation and closure. The filter parameters is used only when the format is CustomXML or CustomBinary.
             </remarks>

@@ -116,7 +116,7 @@ namespace Nevron.Examples.Chart.WinForm
 			surface.ValueFormatter.FormatSpecifier = "0.000";
 			surface.FillMode = SurfaceFillMode.ZoneTexture;
 
-			FillData(surface);
+            FillData(surface);
 
 			// apply layout
 			ConfigureStandardLayout(chart, title, nChartControl1.Legends[0]);

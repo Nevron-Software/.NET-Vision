@@ -162,9 +162,9 @@ Namespace Nevron.Examples.Chart.WinForm
 				vecModelPoint.Y = vertAxis.TransformScaleToModel(False, CSng(DirectCast(m_Bar.Values(i), Double)))
 				vecModelPoint.Z = 0
 
-                If Not m_Chart.TransformModelToClient(vecModelPoint, vecClientPoint) Then
-                    Continue For
-                End If
+				If Not m_Chart.TransformModelToView(vecModelPoint, vecClientPoint) Then
+					Continue For
+				End If
 
 				Dim rcArrowRect As New RectangleF(vecClientPoint.X - nBarSize, vecClientPoint.Y - nBarSize, 2* nBarSize, 2 * nBarSize)
 

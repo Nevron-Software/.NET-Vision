@@ -1,21 +1,15 @@
-using System;
-using System.Collections;
-using System.ComponentModel;
-using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Data;
-using System.Windows.Forms;
-using System.Resources;
+using Nevron.Chart;
+using Nevron.Chart.Windows;
+using Nevron.Chart.WinForm;
 using Nevron.Dom;
 using Nevron.GraphicsCore;
-using Nevron.Editors;
-using Nevron.Chart;
-using Nevron.Chart.WinForm;
-using Nevron.Chart.Windows;
+using System;
+using System.ComponentModel;
+using System.Drawing;
 
 namespace Nevron.Examples.Chart.WinForm
 {
-	[ToolboxItem(false)]
+    [ToolboxItem(false)]
 	public class NChartGridUC : NExampleBaseUC
 	{
 		private NChart m_Chart1;

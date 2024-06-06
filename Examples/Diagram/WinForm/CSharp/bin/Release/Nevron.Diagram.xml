@@ -3780,25 +3780,25 @@
             Default constructor
             </summary>
         </member>
-        <member name="M:Nevron.Diagram.NWinFormControlHostPrimitive.NXmlDocumentSaver_63456_obf.PerformLoad(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)">
+        <member name="M:Nevron.Diagram.NWinFormControlHostPrimitive.bMCE.PerformLoad(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)">
             <summary>
             Called by the host when we load a document.
             </summary>
-            <param name="designerSerializationManager_63458_obf"></param>
+            <param name="dMCE"></param>
         </member>
-        <member name="M:Nevron.Diagram.NWinFormControlHostPrimitive.NXmlDocumentSaver_63456_obf.PerformFlush(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)">
+        <member name="M:Nevron.Diagram.NWinFormControlHostPrimitive.bMCE.PerformFlush(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)">
             <summary>
             
             </summary>
-            <param name="designerSerializationManager_63459_obf"></param>
+            <param name="EMCE"></param>
         </member>
-        <member name="M:Nevron.Diagram.NWinFormControlHostPrimitive.NXmlDocumentLoader_63485_obf.PerformLoad(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)">
+        <member name="M:Nevron.Diagram.NWinFormControlHostPrimitive.fnCE.PerformLoad(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)">
             <summary>
             Called by the host when we load a document.
             </summary>
-            <param name="designerSerializationManager_63487_obf"></param>
+            <param name="hnCE"></param>
         </member>
-        <member name="M:Nevron.Diagram.NWinFormControlHostPrimitive.NXmlDocumentLoader_63485_obf.PerformFlush(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)">
+        <member name="M:Nevron.Diagram.NWinFormControlHostPrimitive.fnCE.PerformFlush(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)">
             <summary>
             This method is called by the designer host whenever it wants the
             designer loader to flush any pending changes.  Flushing changes
@@ -4311,23 +4311,23 @@
             Invalidates the bridges of all INBridgeablePath descendants of the container
             </summary>
         </member>
-        <member name="M:Nevron.Diagram.NBridgeManager.NPauseResumeOperation_63560_obf.Undo(Nevron.Dom.NElementHistoryService)">
+        <member name="M:Nevron.Diagram.NBridgeManager.fQCE.Undo(Nevron.Dom.NElementHistoryService)">
             <summary>
             Undoes the operation
             </summary>
             <remarks>
             Destroys the connection
             </remarks>
-            <param name="service_63563_obf">reference to the history service</param>
+            <param name="IQCE">reference to the history service</param>
         </member>
-        <member name="M:Nevron.Diagram.NBridgeManager.NPauseResumeOperation_63560_obf.Redo(Nevron.Dom.NElementHistoryService)">
+        <member name="M:Nevron.Diagram.NBridgeManager.fQCE.Redo(Nevron.Dom.NElementHistoryService)">
             <summary>
             Redoes the operation
             </summary>
             <remarks>
             Creates the connection
             </remarks> 
-            <param name="service_63564_obf">reference to the history service</param>
+            <param name="jQCE">reference to the history service</param>
         </member>
         <member name="T:Nevron.Diagram.NBridgeStyle">
             <summary>
@@ -4522,59 +4522,59 @@
             <param name="filter">filter to use</param> 
             <returns>array of elements corresponding to the specified uids, which satisfy the filter criteria</returns>
         </member>
-        <member name="M:Nevron.Diagram.NConnectionContainer.NConnectElementsOperation_63587_obf.Undo(Nevron.Dom.NElementHistoryService)">
+        <member name="M:Nevron.Diagram.NConnectionContainer.hrCE.Undo(Nevron.Dom.NElementHistoryService)">
             <summary>
             Undoes the operation
             </summary>
             <remarks>
             Destroys the connection
             </remarks>
-            <param name="service_63591_obf">reference to the history service</param>
+            <param name="lrCE">reference to the history service</param>
         </member>
-        <member name="M:Nevron.Diagram.NConnectionContainer.NConnectElementsOperation_63587_obf.Redo(Nevron.Dom.NElementHistoryService)">
+        <member name="M:Nevron.Diagram.NConnectionContainer.hrCE.Redo(Nevron.Dom.NElementHistoryService)">
             <summary>
             Redoes the operation
             </summary>
             <remarks>
             Creates the connection
             </remarks> 
-            <param name="service_63592_obf">reference to the history service</param>
+            <param name="MrCE">reference to the history service</param>
         </member>
-        <member name="M:Nevron.Diagram.NConnectionContainer.NDisconnectElementsOperation_63593_obf.Undo(Nevron.Dom.NElementHistoryService)">
+        <member name="M:Nevron.Diagram.NConnectionContainer.nrCE.Undo(Nevron.Dom.NElementHistoryService)">
             <summary>
             Undoes the operation
             </summary>
             <remarks>
             Creates the connection
             </remarks>
-            <param name="service_63597_obf">reference to the history service</param>
+            <param name="rrCE">reference to the history service</param>
         </member>
-        <member name="M:Nevron.Diagram.NConnectionContainer.NDisconnectElementsOperation_63593_obf.Redo(Nevron.Dom.NElementHistoryService)">
+        <member name="M:Nevron.Diagram.NConnectionContainer.nrCE.Redo(Nevron.Dom.NElementHistoryService)">
             <summary>
             Redoes the operation
             </summary>
             <remarks>
             Destroys the connection
             </remarks> 
-            <param name="service_63598_obf">reference to the history service</param>
+            <param name="SrCE">reference to the history service</param>
         </member>
-        <member name="M:Nevron.Diagram.NConnectionContainer.NImportConnectionsOperation_63599_obf.Undo(Nevron.Dom.NElementHistoryService)">
+        <member name="M:Nevron.Diagram.NConnectionContainer.trCE.Undo(Nevron.Dom.NElementHistoryService)">
             <summary>
             Undoes the operation
             </summary>
             <remarks>
             Destroys the connection
             </remarks>
-            <param name="service_63602_obf">reference to the history service</param>
+            <param name="WrCE">reference to the history service</param>
         </member>
-        <member name="M:Nevron.Diagram.NConnectionContainer.NImportConnectionsOperation_63599_obf.Redo(Nevron.Dom.NElementHistoryService)">
+        <member name="M:Nevron.Diagram.NConnectionContainer.trCE.Redo(Nevron.Dom.NElementHistoryService)">
             <summary>
             Redoes the operation
             </summary>
             <remarks>
             Creates the connection
             </remarks> 
-            <param name="service_63603_obf">reference to the history service</param>
+            <param name="xrCE">reference to the history service</param>
         </member>
         <member name="P:Nevron.Diagram.NConnectionContainer.Connections">
             <summary>
@@ -5330,23 +5330,23 @@
             </summary>
             <param name="routes"></param>
         </member>
-        <member name="M:Nevron.Diagram.NRoutingManager.NPauseResumeOperation_63681_obf.Undo(Nevron.Dom.NElementHistoryService)">
+        <member name="M:Nevron.Diagram.NRoutingManager.bvCE.Undo(Nevron.Dom.NElementHistoryService)">
             <summary>
             Undoes the operation
             </summary>
             <remarks>
             Destroys the connection
             </remarks>
-            <param name="service_63684_obf">reference to the history service</param>
+            <param name="EvCE">reference to the history service</param>
         </member>
-        <member name="M:Nevron.Diagram.NRoutingManager.NPauseResumeOperation_63681_obf.Redo(Nevron.Dom.NElementHistoryService)">
+        <member name="M:Nevron.Diagram.NRoutingManager.bvCE.Redo(Nevron.Dom.NElementHistoryService)">
             <summary>
             Redoes the operation
             </summary>
             <remarks>
             Creates the connection
             </remarks> 
-            <param name="service_63685_obf">reference to the history service</param>
+            <param name="fvCE">reference to the history service</param>
         </member>
         <member name="T:Nevron.Diagram.NSnapStrength">
             <summary>
@@ -6831,20 +6831,20 @@
             <param name="comparer">comparer to use</param>
             <returns>NNodeList containing the sorted batch nodes</returns>
         </member>
-        <member name="M:Nevron.Diagram.Batches.NBatchLayout.NComparerBoundsXPosition_63720_obf.Compare(System.Object,System.Object)">
+        <member name="M:Nevron.Diagram.Batches.NBatchLayout.pWCE.Compare(System.Object,System.Object)">
             <summary>
             Compares the X position of the a and b object bounds
             </summary>
-            <param name="a_63721_obf"></param>
-            <param name="b_63722_obf"></param>
+            <param name="QWCE"></param>
+            <param name="rWCE"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Diagram.Batches.NBatchLayout.NComparerBoundsYPosition_63723_obf.Compare(System.Object,System.Object)">
+        <member name="M:Nevron.Diagram.Batches.NBatchLayout.SWCE.Compare(System.Object,System.Object)">
             <summary>
             Compares the Y position of the a and b object bounds
             </summary>
-            <param name="a_63724_obf"></param>
-            <param name="b_63725_obf"></param>
+            <param name="tWCE"></param>
+            <param name="UWCE"></param>
             <returns></returns>
         </member>
         <member name="T:Nevron.Diagram.Batches.NBatchReorder">
@@ -9216,18 +9216,16 @@
             <param name="state">state string</param>
             <returns>true if deserialization succeeded, othwerwise false</returns>
         </member>
-        <member name="M:Nevron.Diagram.NDiagramDataObject.Serialize(System.Runtime.Serialization.IFormatter,System.IO.Stream)">
+        <member name="M:Nevron.Diagram.NDiagramDataObject.Serialize(System.IO.Stream)">
             <summary>
             Must override to serialize the state of the data object
             </summary>
-            <param name="formatter"></param>
             <param name="stream"></param>
         </member>
-        <member name="M:Nevron.Diagram.NDiagramDataObject.Deserialize(System.Runtime.Serialization.IFormatter,System.IO.Stream)">
+        <member name="M:Nevron.Diagram.NDiagramDataObject.Deserialize(System.IO.Stream)">
             <summary>
             Must override to deserialize the state of the data object
             </summary>
-            <param name="formatter"></param>
             <param name="stream"></param>
         </member>
         <member name="T:Nevron.Diagram.NDrawingDataObject">
@@ -9325,18 +9323,16 @@
             <param name="index">index at which to insert the elements</param>
             <returns>batch result</returns>
         </member>
-        <member name="M:Nevron.Diagram.NDrawingDataObject.Serialize(System.Runtime.Serialization.IFormatter,System.IO.Stream)">
+        <member name="M:Nevron.Diagram.NDrawingDataObject.Serialize(System.IO.Stream)">
             <summary>
             Overriden to serialize the data object
             </summary>
-            <param name="formatter"></param>
             <param name="stream"></param>
         </member>
-        <member name="M:Nevron.Diagram.NDrawingDataObject.Deserialize(System.Runtime.Serialization.IFormatter,System.IO.Stream)">
+        <member name="M:Nevron.Diagram.NDrawingDataObject.Deserialize(System.IO.Stream)">
             <summary>
             Overriden to deserialize the data object
             </summary>
-            <param name="formatter"></param>
             <param name="stream"></param>
         </member>
         <member name="F:Nevron.Diagram.NDrawingDataObject.FormatName">
@@ -9431,18 +9427,16 @@
             <param name="index">index at which to insert the masters</param> 
             <returns>batch result</returns>
         </member>
-        <member name="M:Nevron.Diagram.NLibraryDataObject.Serialize(System.Runtime.Serialization.IFormatter,System.IO.Stream)">
+        <member name="M:Nevron.Diagram.NLibraryDataObject.Serialize(System.IO.Stream)">
             <summary>
             Overriden to serialize the data object
             </summary>
-            <param name="formatter"></param>
             <param name="stream"></param>
         </member>
-        <member name="M:Nevron.Diagram.NLibraryDataObject.Deserialize(System.Runtime.Serialization.IFormatter,System.IO.Stream)">
+        <member name="M:Nevron.Diagram.NLibraryDataObject.Deserialize(System.IO.Stream)">
             <summary>
             Overriden to deserialize the data object
             </summary>
-            <param name="formatter"></param>
             <param name="stream"></param>
         </member>
         <member name="F:Nevron.Diagram.NLibraryDataObject.FormatName">
@@ -11138,13 +11132,13 @@
             <summary>
             Register the element in the element index
             </summary>
-            <param name="elementIndex_63857_obf"></param>
+            <param name="AddE"></param>
         </member>
         <member name="M:Nevron.Diagram.NDocument.Nevron#Dom#INElement#UnregisterElement(Nevron.Dom.NElementIndex)">
             <summary>
             Unregister the element from the element index
             </summary>
-            <param name="elementIndex_63858_obf"></param>
+            <param name="bddE"></param>
         </member>
         <member name="M:Nevron.Diagram.NDocument.GetChildByName(System.String)">
             <summary>
@@ -12334,14 +12328,14 @@
             <param name="pin">pin in model coordinates</param>
             <returns>scale 2D info</returns>
         </member>
-        <member name="M:Nevron.Diagram.NAggregateModel.ScaleAggregatedModel(Nevron.Diagram.NModel,Nevron.Diagram.NAggregateModel.NAggregateScaleInfo_63886_obf)">
+        <member name="M:Nevron.Diagram.NAggregateModel.ScaleAggregatedModel(Nevron.Diagram.NModel,Nevron.Diagram.NAggregateModel.EEdE)">
             <summary>
             Called by the ScaleModel method in order to scale the specified aggregated model
             </summary>
             <param name="model">aggregated model which must be scaled</param>
             <param name="info">info associated with the scaling</param>
         </member>
-        <member name="M:Nevron.Diagram.NAggregateModel.OnAggregateScalingEnded(System.Boolean,Nevron.Diagram.NAggregateModel.NAggregateScaleInfo_63886_obf)">
+        <member name="M:Nevron.Diagram.NAggregateModel.OnAggregateScalingEnded(System.Boolean,Nevron.Diagram.NAggregateModel.EEdE)">
             <summary>
             Called when the aggregate model has scaled the models it aggregates
             </summary>
@@ -13481,13 +13475,13 @@
             <summary>
             Register the element in the element index
             </summary>
-            <param name="elementIndex_63906_obf"></param>
+            <param name="YEdE"></param>
         </member>
         <member name="M:Nevron.Diagram.NDiagramElement.Nevron#Dom#INElement#UnregisterElement(Nevron.Dom.NElementIndex)">
             <summary>
             Unregister the element from the element index
             </summary>
-            <param name="elementIndex_63907_obf"></param>
+            <param name="AfdE"></param>
         </member>
         <member name="M:Nevron.Diagram.NDiagramElement.ConvertMeasurementUnit(Nevron.GraphicsCore.NMeasurementUnitConverter,Nevron.GraphicsCore.NMeasurementUnit,Nevron.GraphicsCore.NMeasurementUnit)">
             <summary>
@@ -20272,7 +20266,7 @@
             <summary>
             Queries for the next unique name, which will be assigned to the specified element if it is inserted to this composite
             </summary>
-            <param name="element_64178_obf">element for which to obtain unique name</param>
+            <param name="vpdE">element for which to obtain unique name</param>
             <returns>unique name</returns>
         </member>
         <member name="P:Nevron.Diagram.NShape.AutoGenerateUniqueNames">
@@ -20285,34 +20279,34 @@
             <summary>
             Adds a child node
             </summary>
-            <param name="node_64179_obf">node to add</param>
+            <param name="WpdE">node to add</param>
         </member>
         <member name="M:Nevron.Diagram.NShape.Nevron#Dom#INNodeComposite#InsertChild(System.Int32,Nevron.Dom.INNode)">
             <summary>
             Inserts a child node at the specified index
             </summary>
-            <param name="index_64180_obf">index at which to insert the child node</param>
-            <param name="node_64181_obf">node to insert</param>
+            <param name="xpdE">index at which to insert the child node</param>
+            <param name="YpdE">node to insert</param>
         </member>
         <member name="M:Nevron.Diagram.NShape.Nevron#Dom#INNodeComposite#CanInsertChild(System.Int32,Nevron.Dom.INNode)">
             <summary>
             Queries whether the specified node can be inserted at the specified index
             </summary>
-            <param name="index_64182_obf">index at which the child node will be inserted</param>
-            <param name="node_64183_obf">child node to insert</param>
+            <param name="AQdE">index at which the child node will be inserted</param>
+            <param name="bQdE">child node to insert</param>
             <returns>true if the node can be inserted at the specified index, otherwise false</returns>
         </member>
         <member name="M:Nevron.Diagram.NShape.Nevron#Dom#INNodeComposite#RemoveChild(Nevron.Dom.INNode)">
             <summary>
             Removes the specified child node from the container children
             </summary>
-            <param name="node_64184_obf">child node to remove</param>
+            <param name="CQdE">child node to remove</param>
         </member>
         <member name="M:Nevron.Diagram.NShape.Nevron#Dom#INNodeComposite#RemoveChildAt(System.Int32)">
             <summary>
             Removes the child node at the specified index
             </summary>
-            <param name="index_64185_obf">index of child node to remove</param>
+            <param name="dQdE">index of child node to remove</param>
         </member>
         <member name="M:Nevron.Diagram.NShape.Nevron#Dom#INNodeComposite#RemoveAllChildren">
             <summary>
@@ -20323,7 +20317,7 @@
             <summary>
             Queries whether the specified child node can be removed
             </summary>
-            <param name="node_64186_obf">child node to remove</param>
+            <param name="EQdE">child node to remove</param>
             <returns>true if the node can be removed, otherwise false</returns>
         </member>
         <member name="M:Nevron.Diagram.NShape.CreateTrackers">
@@ -20898,7 +20892,7 @@
             <param name="pin">pin in model coordinates</param>
             <returns>scale 2D info</returns>
         </member>
-        <member name="M:Nevron.Diagram.NShape.OnAggregateScalingEnded(System.Boolean,Nevron.Diagram.NAggregateModel.NAggregateScaleInfo_63886_obf)">
+        <member name="M:Nevron.Diagram.NShape.OnAggregateScalingEnded(System.Boolean,Nevron.Diagram.NAggregateModel.EEdE)">
             <summary>
             Called when the aggregate model has scaled the models it aggregates
             </summary>
@@ -41968,526 +41962,581 @@
             </summary>
             <param name="stream"></param>
         </member>
-        <member name="M:Nevron.Internal.NBridgeableSegment_62499_obf.Sort">
+        <member name="T:Nevron.Diagram.NNurbsCurveF">
+            <summary>
+            Represents a non-uniform rational B-spline (NURBS) curve.
+            </summary>
+        </member>
+        <member name="M:Nevron.Diagram.NNurbsCurveF.#ctor(System.Int32)">
+            <summary>
+            Initializing constructor.
+            </summary>
+            <param name="degree"></param>
+        </member>
+        <member name="P:Nevron.Diagram.NNurbsCurveF.Degree">
+            <summary>
+            Gets/Sets the degree of the NURBS.
+            </summary>
+        </member>
+        <member name="P:Nevron.Diagram.NNurbsCurveF.ConrolPoints">
+            <summary>
+            Gets the control points of the NURBS.
+            </summary>
+        </member>
+        <member name="P:Nevron.Diagram.NNurbsCurveF.Knots">
+            <summary>
+            Gets the knot vector of the NURBS.
+            </summary>
+        </member>
+        <member name="M:Nevron.Diagram.NNurbsCurveF.Refine">
+            <summary>
+            Refines the NURBS curve by inserting knot (and control points) in order to make
+            each knot multiplicity equal to the NURBS curve degree.
+            </summary>
+        </member>
+        <member name="M:Nevron.Diagram.NNurbsCurveF.InsertKnot(System.Single)">
+            <summary>
+            Inserts a knot and modifies and inserts control points as needed.
+            </summary>
+            <param name="knot"></param>
+            <remarks>
+            The algorithm is described at:
+            http://www.cs.mtu.edu/~shene/COURSES/cs3621/NOTES/spline/NURBS-knot-insert.html
+            </remarks>
+        </member>
+        <member name="M:Nevron.Diagram.NNurbsCurveF.GetKnotMultiplicity(System.Single)">
+            <summary>
+            Gets the number of times the given knot value exists in the NURBS
+            curve knot vector.
+            </summary>
+            <param name="knot"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Nevron.Diagram.NNurbsControlPoint">
+            <summary>
+            Represents a weighted NURBS control point.
+            </summary>
+        </member>
+        <member name="M:Nevron.Internal.vxAE.Sort">
             <summary>
             Sorts the brige collection based on the slope angle defined by the line segment to which the bridges belong
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NBridgeableSegment_62499_obf.NBridgeIncreaseX_62510_obf.Compare(System.Object,System.Object)">
+        <member name="M:Nevron.Internal.vxAE.hYAE.Compare(System.Object,System.Object)">
             <summary>
             
             </summary>
-            <param name="obj1_62511_obf"></param>
-            <param name="obj2_62512_obf"></param>
+            <param name="IYAE"></param>
+            <param name="jYAE"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NBridgeableSegment_62499_obf.NBridgeDecreaseX_62513_obf.Compare(System.Object,System.Object)">
+        <member name="M:Nevron.Internal.vxAE.KYAE.Compare(System.Object,System.Object)">
             <summary>
             
             </summary>
-            <param name="obj1_62514_obf"></param>
-            <param name="obj2_62515_obf"></param>
+            <param name="lYAE"></param>
+            <param name="MYAE"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NBridgeableSegment_62499_obf.NBridgeIncreaseY_62516_obf.Compare(System.Object,System.Object)">
+        <member name="M:Nevron.Internal.vxAE.nYAE.Compare(System.Object,System.Object)">
             <summary>
             
             </summary>
-            <param name="obj1_62517_obf"></param>
-            <param name="obj2_62518_obf"></param>
+            <param name="OYAE"></param>
+            <param name="pYAE"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NBridgeableSegment_62499_obf.NBridgeDecreaseY_62519_obf.Compare(System.Object,System.Object)">
+        <member name="M:Nevron.Internal.vxAE.QYAE.Compare(System.Object,System.Object)">
             <summary>
             
             </summary>
-            <param name="obj1_62520_obf"></param>
-            <param name="obj2_62521_obf"></param>
+            <param name="rYAE"></param>
+            <param name="SYAE"></param>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.NAbilitiesTypeConverter_62590_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.MCbE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NDataSourceEnumerator_62703_obf.Current">
+        <member name="P:Nevron.Internal.AhbE.Current">
             <summary>
             Gets the current data source record
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NDataSourceEnumerator_62703_obf.MoveNext">
+        <member name="M:Nevron.Internal.AhbE.MoveNext">
             <summary>
             Moves the enumerator to the next data source record
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NDataSourceEnumerator_62703_obf.Reset">
+        <member name="M:Nevron.Internal.AhbE.Reset">
             <summary>
             Resets the enumerator
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NDataSourceEnumerator_62703_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.AhbE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NDataRecord_62712_obf.GetColumnValue(System.String)">
+        <member name="M:Nevron.Internal.jhbE.GetColumnValue(System.String)">
             <summary>
             Gets the data record value for a given column name
             </summary>
-            <param name="columnName_62715_obf"></param>
+            <param name="MhbE"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NDataSource_62718_obf.GetEnumerator">
+        <member name="M:Nevron.Internal.phbE.GetEnumerator">
             <summary>
             Gets a data source enumerator, which enumerates the data source records.
             </summary>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.NPGraphFace_63066_obf.Item(System.Int32)">
+        <member name="P:Nevron.Internal.nvbE.Item(System.Int32)">
             <summary>
             Gets the index of the vertex at the specified position of the face.
             </summary>
             <param name="index">The index of the desired vertex.</param>
             <returns>The index of the verex at the specified position.</returns>
         </member>
-        <member name="M:Nevron.Internal.NPGraphNode_63123_obf.Clone">
+        <member name="M:Nevron.Internal.UxbE.Clone">
             <summary>
-            Creates an exact copy of the current <see cref="T:Nevron.Internal.NPGraphNode_63123_obf"/>.
+            Creates an exact copy of the current <see cref="T:Nevron.Internal.UxbE"/>.
             </summary>
             <returns>The clone of the current object.</returns>
         </member>
-        <member name="M:Nevron.Internal.NPListNode_63167_obf.GetHashCode">
+        <member name="M:Nevron.Internal.OACE.GetHashCode">
             <summary>
             Returns the hash code of the current object.
             </summary>
             <returns>The hash code of the current object.</returns>
         </member>
-        <member name="M:Nevron.Internal.NPListNode_63167_obf.Equals(System.Object)">
+        <member name="M:Nevron.Internal.OACE.Equals(System.Object)">
             <summary>
             Determines whether the specified object is equal to the current one.
             </summary>
-            <param name="obj_63171_obf">The object to compare with the current one.</param>
+            <param name="SACE">The object to compare with the current one.</param>
             <returns>True if the objects are equal.</returns>
         </member>
-        <member name="M:Nevron.Internal.NPVertexRec_63198_obf.Clone">
+        <member name="M:Nevron.Internal.UbCE.Clone">
             <summary>
-            Creates an exact copy of the current <see cref="T:Nevron.Internal.NPVertexRec_63198_obf"/>.
+            Creates an exact copy of the current <see cref="T:Nevron.Internal.UbCE"/>.
             </summary>
             <returns>The clone of the current object.</returns>
         </member>
-        <member name="P:Nevron.Internal.NPTree_63249_obf.Item(System.Int32)">
+        <member name="P:Nevron.Internal.vdCE.Item(System.Int32)">
             <summary>
             Gets the tree vertex at the specified index in the vertex list of the tree.
             </summary>
             <param name="index">The tree vertex index.</param>
             <returns>The tree vertex at the specified position.</returns>
         </member>
-        <member name="P:Nevron.Internal.NExportBoundsUC_64352_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.UWdE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NExportBoundsUC_64352_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.UWdE.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NImageExporterUC_64399_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.rYdE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NImageExporterUC_64399_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.rYdE.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NImageOptionsUC_64432_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.AbEE.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NImageOptionsUC_64432_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.AbEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NPreviewUC_64522_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.pEEE.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NPreviewUC_64522_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.pEEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NColumnNameSelectorUC_64537_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.ffEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NAddDiagramElementUC_64617_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.KIEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NAddDiagramElementUC_64617_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.KIEE.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NBridgeManagerTypeEditor_64626_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.tIEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NContentAlignmentEditorUC_64631_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.YIEE.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NContentAlignmentEditorUC_64631_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.YIEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NDiagramElementContainerEditorUC_64655_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.xjEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NDiagramElementContainerEditorUC_64655_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.xjEE.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NDiagramElementEditorUC_64693_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.llEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NDiagramElementEditorUC_64693_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.llEE.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NDiagramElementReferenceConverter_64703_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.vlEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NDiagramElementIdSelectorEditor_64707_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.AMEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NDrawingSettingsTypeEditor_64719_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.MMEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NGlobalVisibilityEditorUC_64724_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.rMEE.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NGlobalVisibilityEditorUC_64724_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.rMEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NGraphicsSettingsEditorUC_64760_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.dOEE.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NGraphicsSettingsEditorUC_64760_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.dOEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NInteractionStyleEditorUC_64816_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.jQEE.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NInteractionStyleEditorUC_64816_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.jQEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NInteractiveAppearanceTypeEditor_64876_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.tSEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NMarginsEditorUC_64883_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.btEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NMarginsEditorUC_64883_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.btEE.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NProtectionEditorUC_64916_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.jUEE.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NProtectionEditorUC_64916_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.jUEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NRoutingManagerTypeEditor_64940_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.IvEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NSnapTargetsEditorUC_64945_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.nvEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NSnapTargetsEditorUC_64945_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.nvEE.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NTranslationSlavesEditorUC_65010_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.dYEE.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NTranslationSlavesEditorUC_65010_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.dYEE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NTranslationSlavesEditorUC_65010_obf.GetFormTitle">
+        <member name="M:Nevron.Internal.dYEE.GetFormTitle">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.NPrintPreviewUC_65033_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.bAfE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NPrintPreviewUC_65033_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.bAfE.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NArrowheadStyleTypeEditorUC_65108_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.bdfE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NArrowheadStyleTypeEditorUC_65108_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.bdfE.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NBridgeStyleEditorUC_65148_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.QEfE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NBridgeStyleEditorUC_65148_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.QEfE.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NSvgExporterUC_65172_obf.LocalizationContextName">
+        <member name="P:Nevron.Internal.pffE.LocalizationContextName">
             <summary>
             Gets the localization context name for this class.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NSvgExporterUC_65172_obf.Dispose(System.Boolean)">
+        <member name="M:Nevron.Internal.pffE.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NBitMatrixExtended_65546_obf.GetCount(System.Int32,System.Boolean)">
+        <member name="M:Nevron.Internal.OUfE.GetCount(System.Int32,System.Boolean)">
             <summary>
             Gets the number of values equal to the given one in the specified row.
             </summary>
-            <param name="rowIndex_65550_obf"></param>
+            <param name="SUfE"></param>
             <param name="value"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NBitMatrixExtended_65546_obf.SetBit(System.Int32,System.Int32,System.Boolean)">
+        <member name="M:Nevron.Internal.OUfE.SetBit(System.Int32,System.Int32,System.Boolean)">
             <summary>
             Sets the bit on the specified location to the given value and returns
             true if the bit value has been changed (that is if it has a value different
             from the given one).
             </summary>
-            <param name="x_65551_obf"></param>
-            <param name="y_65552_obf"></param>
+            <param name="tUfE"></param>
+            <param name="UUfE"></param>
             <param name="value"></param>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.NEsriBoundBoxedFeature_65639_obf.Bounds">
+        <member name="P:Nevron.Internal.hYfE.Bounds">
             <summary>
             Gets the bounds of this shape.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NEsriBoundBoxedFeature_65639_obf.ToString">
+        <member name="M:Nevron.Internal.hYfE.ToString">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NEsriFeature_65642_obf.ToString">
+        <member name="M:Nevron.Internal.KYfE.ToString">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NEsriFeature_65642_obf.GetAttributeValue(System.String)">
+        <member name="M:Nevron.Internal.KYfE.GetAttributeValue(System.String)">
             <summary>
             Returns the value of the attribute with the given name. Throws an exception
             if the shape does not have an attribute with the given name.
             </summary>
-            <param name="attributeName_65644_obf"></param>
+            <param name="MYfE"></param>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.NGisNullShape_65667_obf.Bounds">
+        <member name="P:Nevron.Internal.KAGE.Bounds">
             <summary>
             Gets the bounds of this shape.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NEsriPoint_65669_obf.Bounds">
+        <member name="P:Nevron.Internal.MAGE.Bounds">
             <summary>
             Gets the bounds of this shape.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NOrthographicRegion_65994_obf.ToString">
+        <member name="M:Nevron.Internal.MnGE.ToString">
             <summary>
             Gets the string representation of this region.
             </summary>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.NGraphEdgeBody_66130_obf.FromBody">
+        <member name="P:Nevron.Internal.xSGE.FromBody">
             <summary>
             Gets the 2D body from which the 1D body starts
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NGraphEdgeBody_66130_obf.ToBody">
+        <member name="P:Nevron.Internal.xSGE.ToBody">
             <summary>
             Gets the end point
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NTreeEdgeBody_66136_obf.FromBody">
+        <member name="P:Nevron.Internal.EtGE.FromBody">
             <summary>
             Gets the 2D body from which the 1D body starts
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NTreeEdgeBody_66136_obf.ToBody">
+        <member name="P:Nevron.Internal.EtGE.ToBody">
             <summary>
             Gets the 2D body at which the 1D body end
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NCellsConstrainLayouter_66293_obf.Layout">
+        <member name="M:Nevron.Internal.lAhE.Layout">
             <summary>
             Performs the layout of the cells.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NDockingCellBody_66351_obf.Initialize(Nevron.Diagram.Layout.NCellsLayout,Nevron.Diagram.Layout.NLayoutContext)">
+        <member name="M:Nevron.Internal.tChE.Initialize(Nevron.Diagram.Layout.NCellsLayout,Nevron.Diagram.Layout.NLayoutContext)">
             <summary>
             Initializes the cell body
             </summary>
-            <param name="layout_66352_obf"></param>
-            <param name="context_66353_obf"></param>
+            <param name="UChE"></param>
+            <param name="vChE"></param>
         </member>
-        <member name="M:Nevron.Internal.NLayeredEdgeBody_66532_obf.ToString">
+        <member name="M:Nevron.Internal.AKhE.ToString">
             <summary>
             Retusrns a string that represents the current body
             </summary>
             <returns>A string that represents the current body</returns>
         </member>
-        <member name="M:Nevron.Internal.NForceTypeConverter_66716_obf.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+        <member name="M:Nevron.Internal.jrhE.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
             <summary>
             Overriden to return force info
             </summary>
-            <param name="context_66717_obf"></param>
-            <param name="culture_66718_obf"></param>
+            <param name="KrhE"></param>
+            <param name="lrhE"></param>
             <param name="value"></param>
-            <param name="destinationType_66719_obf"></param>
+            <param name="MrhE"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NOrthogonalCell_66955_obf.ToString">
+        <member name="M:Nevron.Internal.xbIE.ToString">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NOrthogonalCell_66955_obf.Equals(System.Object)">
+        <member name="M:Nevron.Internal.xbIE.Equals(System.Object)">
             <summary>
             
             </summary>
-            <param name="obj_66997_obf"></param>
+            <param name="pdIE"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NOrthogonalCell_66955_obf.GetHashCode">
+        <member name="M:Nevron.Internal.xbIE.GetHashCode">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NOrthogonalGrid_67069_obf.ToString">
+        <member name="M:Nevron.Internal.MGIE.ToString">
             <summary>
             Returns the string representation of the grid.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NOrthogonalPath_67118_obf.ToString">
+        <member name="M:Nevron.Internal.lIIE.ToString">
             <summary>
             Retusrns the string representation of the object.
             </summary>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.NOrthogonalRow_67158_obf.Item(System.Int32)">
+        <member name="P:Nevron.Internal.bKIE.Item(System.Int32)">
             <summary>
             Indexer for the cells collection of the current row.
             </summary>
             <param name="index"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NRouteFinder_67498_obf.NTotalCostComparer_67513_obf.Compare(Nevron.Internal.NRouteVertex_67518_obf,Nevron.Internal.NRouteVertex_67518_obf)">
+        <member name="M:Nevron.Internal.pxIE.fYIE.Compare(Nevron.Internal.KYIE,Nevron.Internal.KYIE)">
             <summary>
             
             </summary>
-            <param name="obj1_67515_obf"></param>
-            <param name="obj2_67516_obf"></param>
+            <param name="hYIE"></param>
+            <param name="IYIE"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NVisioPoint_67815_obf.Equals(System.Object)">
+        <member name="M:Nevron.Internal.hljE.Equals(System.Object)">
             <summary>
             
             </summary>
-            <param name="obj_67818_obf"></param>
+            <param name="KljE"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NVisioPoint_67815_obf.GetHashCode">
+        <member name="M:Nevron.Internal.hljE.GetHashCode">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NVisioPoint_67815_obf.ToString">
+        <member name="M:Nevron.Internal.hljE.ToString">
             <summary>
             Returns the string representation of this object.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NVisioPoint_67815_obf.op_Equality(Nevron.Internal.NVisioPoint_67815_obf,Nevron.Internal.NVisioPoint_67815_obf)">
+        <member name="M:Nevron.Internal.hljE.op_Equality(Nevron.Internal.hljE,Nevron.Internal.hljE)">
             <summary>
             Determines whether a is equal to b.
             </summary>
@@ -42495,7 +42544,7 @@
             <param name="b"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NVisioPoint_67815_obf.op_Inequality(Nevron.Internal.NVisioPoint_67815_obf,Nevron.Internal.NVisioPoint_67815_obf)">
+        <member name="M:Nevron.Internal.hljE.op_Inequality(Nevron.Internal.hljE,Nevron.Internal.hljE)">
             <summary>
             Determines whether a is not equal to b.
             </summary>

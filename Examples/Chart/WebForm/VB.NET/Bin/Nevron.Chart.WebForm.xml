@@ -798,45 +798,45 @@
             SVG content is send to the client browser
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NChartImageFormatProvider_61865_obf.ProvideImage(Nevron.GraphicsCore.NSize,Nevron.GraphicsCore.NResolution,Nevron.GraphicsCore.INImageFormat)">
+        <member name="M:Nevron.Internal.MxYd.ProvideImage(Nevron.GraphicsCore.NSize,Nevron.GraphicsCore.NResolution,Nevron.GraphicsCore.INImageFormat)">
             <summary>
             Provides an image with the specifies dimensions and format.
             </summary>
-            <param name="dimensions_61868_obf"></param>
-            <param name="resolution_61869_obf"></param>
-            <param name="imageFormat_61870_obf"></param>
+            <param name="pxYd"></param>
+            <param name="QxYd"></param>
+            <param name="rxYd"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NChartImageFormatProvider_61865_obf.ProvideImage(Nevron.GraphicsCore.NSize,Nevron.GraphicsCore.NRectangle,Nevron.GraphicsCore.NResolution,Nevron.GraphicsCore.INImageFormat)">
+        <member name="M:Nevron.Internal.MxYd.ProvideImage(Nevron.GraphicsCore.NSize,Nevron.GraphicsCore.NRectangle,Nevron.GraphicsCore.NResolution,Nevron.GraphicsCore.INImageFormat)">
             <summary>
             Provides an image with the specifies dimensions and format.
             </summary>
-            <param name="dimensions_61871_obf"></param>
-            <param name="viewport_61872_obf"></param>
-            <param name="resolution_61873_obf"></param>
-            <param name="imageFormat_61874_obf"></param>
+            <param name="SxYd"></param>
+            <param name="txYd"></param>
+            <param name="UxYd"></param>
+            <param name="vxYd"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NChartRasterImageFormatProvider_61877_obf.ProvideImage(Nevron.GraphicsCore.NSize,Nevron.GraphicsCore.NResolution,Nevron.GraphicsCore.INImageFormat)">
+        <member name="M:Nevron.Internal.YxYd.ProvideImage(Nevron.GraphicsCore.NSize,Nevron.GraphicsCore.NResolution,Nevron.GraphicsCore.INImageFormat)">
             <summary>
             Provides a raster image with the specifies dimensions and format.
             </summary>
-            <param name="dimensions_61880_obf"></param>
-            <param name="resolution_61881_obf"></param>
-            <param name="imageFormat_61882_obf"></param>
+            <param name="CYYd"></param>
+            <param name="dYYd"></param>
+            <param name="EYYd"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NChartRasterImageFormatProvider_61877_obf.ProvideImage(Nevron.GraphicsCore.NSize,Nevron.GraphicsCore.NRectangle,Nevron.GraphicsCore.NResolution,Nevron.GraphicsCore.INImageFormat)">
+        <member name="M:Nevron.Internal.YxYd.ProvideImage(Nevron.GraphicsCore.NSize,Nevron.GraphicsCore.NRectangle,Nevron.GraphicsCore.NResolution,Nevron.GraphicsCore.INImageFormat)">
             <summary>
             Provides a raster image with the specifies dimensions and format.
             </summary>
-            <param name="dimensions_61883_obf"></param>
-            <param name="viewport_61884_obf"></param>
-            <param name="resolution_61885_obf"></param>
-            <param name="imageFormat_61886_obf"></param>
+            <param name="fYYd"></param>
+            <param name="GYYd"></param>
+            <param name="hYYd"></param>
+            <param name="IYYd"></param>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.NChartRasterImageFormatProvider_61877_obf.ProvidedMimeTypes">
+        <member name="P:Nevron.Internal.YxYd.ProvidedMimeTypes">
             <summary>
             Obtains an array of the provided mime types
             </summary>

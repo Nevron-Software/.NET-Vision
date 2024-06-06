@@ -164,7 +164,7 @@ namespace Nevron.Examples.Chart.WinForm
 				vecModelPoint.Y = vertAxis.TransformScaleToModel(false, (float)(double)m_Bar.Values[i]);
 				vecModelPoint.Z = 0;
 
-				if (!m_Chart.TransformModelToClient(vecModelPoint, ref vecClientPoint))
+				if (!m_Chart.TransformModelToView(vecModelPoint, ref vecClientPoint))
 					continue;
 
 				RectangleF rcArrowRect = new RectangleF(vecClientPoint.X - nBarSize, vecClientPoint.Y - nBarSize, 2* nBarSize, 2 * nBarSize);

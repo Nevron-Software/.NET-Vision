@@ -191,12 +191,15 @@
     </Compile>
     <Compile Include="Frames\Footer.aspx.cs">
       <DependentUpon>Footer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Frames\NNavigationFrame.aspx.cs">
       <DependentUpon>NNavigationFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Frames\TopBanner.aspx.cs">
       <DependentUpon>TopBanner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

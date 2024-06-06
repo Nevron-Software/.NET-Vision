@@ -1807,14 +1807,14 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Collections.NSequentialPropertyStorage.NBucket_1944_obf.Equals(System.Object)">
+        <member name="M:Nevron.Collections.NSequentialPropertyStorage.vdd.Equals(System.Object)">
             <summary>
             Determines if the objects are equal
             </summary>
-            <param name="obj_1952_obf"></param>
+            <param name="EEd"></param>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Collections.NSequentialPropertyStorage.NBucket_1944_obf.GetHashCode">
+        <member name="M:Nevron.Collections.NSequentialPropertyStorage.vdd.GetHashCode">
             <summary>
             
             </summary>
@@ -2197,7 +2197,7 @@
             Returns the object type
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NBPlusTree_1782_obf.Item(System.Object)">
+        <member name="P:Nevron.Internal.jWC.Item(System.Object)">
             <summary>
             Tree indexer
             </summary>
@@ -2205,210 +2205,210 @@
             This operation is only allowed when the tree does not allow duplicate keys
             </remarks>
         </member>
-        <member name="M:Nevron.Internal.NBPlusTree_1782_obf.GetEnumerator">
+        <member name="M:Nevron.Internal.jWC.GetEnumerator">
             <summary>
             Returns an enumerator that iterates through a collection. 
             </summary>
             <returns></returns>
         </member>
-        <member name="P:Nevron.Internal.NBplusTreeEnumerator_1828_obf.Current">
+        <member name="P:Nevron.Internal.fYC.Current">
             <summary>
             Gets the current element in the collection. 
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NBplusTreeEnumerator_1828_obf.CurrentKey">
+        <member name="P:Nevron.Internal.fYC.CurrentKey">
             <summary>
             Gets the current key
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NBplusTreeEnumerator_1828_obf.Count">
+        <member name="P:Nevron.Internal.fYC.Count">
             <summary>
             Gets the count of the key/value pairs
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NBplusTreeEnumerator_1828_obf.FirstKey">
+        <member name="P:Nevron.Internal.fYC.FirstKey">
             <summary>
             Returns the first key
             </summary>
         </member>
-        <member name="P:Nevron.Internal.NBplusTreeEnumerator_1828_obf.LastKey">
+        <member name="P:Nevron.Internal.fYC.LastKey">
             <summary>
             Returns the last key
             </summary>
         </member>
-        <member name="M:Nevron.Internal.NBplusTreeEnumerator_1828_obf.MoveNext">
+        <member name="M:Nevron.Internal.fYC.MoveNext">
             <summary>
             Advances the enumerator to the next element of the collection. 
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Nevron.Internal.NBplusTreeEnumerator_1828_obf.Reset">
+        <member name="M:Nevron.Internal.fYC.Reset">
             <summary>
             Sets the enumerator to its initial position, which is before the first element in the collection. 
             </summary>
         </member>
-        <member name="M:Nevron.Internal.PkzipClassicEncryptCryptoTransform_2708_obf.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)">
+        <member name="M:Nevron.Internal.jjE.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)">
             <summary>
             Transforms the specified region of the specified byte array.
             </summary>
-            <param name="inputBuffer_2710_obf">The input for which to compute the transform.</param>
-            <param name="inputOffset_2711_obf">The offset into the byte array from which to begin using data.</param>
-            <param name="inputCount_2712_obf">The number of bytes in the byte array to use as data.</param>
+            <param name="ljE">The input for which to compute the transform.</param>
+            <param name="MjE">The offset into the byte array from which to begin using data.</param>
+            <param name="njE">The number of bytes in the byte array to use as data.</param>
             <returns>The computed transform.</returns>
         </member>
-        <member name="M:Nevron.Internal.PkzipClassicEncryptCryptoTransform_2708_obf.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)">
+        <member name="M:Nevron.Internal.jjE.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)">
             <summary>
             Transforms the specified region of the input byte array and copies 
             the resulting transform to the specified region of the output byte array.
             </summary>
-            <param name="inputBuffer_2713_obf">The input for which to compute the transform.</param>
-            <param name="inputOffset_2714_obf">The offset into the input byte array from which to begin using data.</param>
-            <param name="inputCount_2715_obf">The number of bytes in the input byte array to use as data.</param>
-            <param name="outputBuffer_2716_obf">The output to which to write the transform.</param>
-            <param name="outputOffset_2717_obf">The offset into the output byte array from which to begin writing data.</param>
+            <param name="OjE">The input for which to compute the transform.</param>
+            <param name="pjE">The offset into the input byte array from which to begin using data.</param>
+            <param name="QjE">The number of bytes in the input byte array to use as data.</param>
+            <param name="rjE">The output to which to write the transform.</param>
+            <param name="SjE">The offset into the output byte array from which to begin writing data.</param>
             <returns>The number of bytes written.</returns>
         </member>
-        <member name="P:Nevron.Internal.PkzipClassicEncryptCryptoTransform_2708_obf.CanReuseTransform">
+        <member name="P:Nevron.Internal.jjE.CanReuseTransform">
             <summary>
             Gets a value indicating whether the current transform can be reused.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.PkzipClassicEncryptCryptoTransform_2708_obf.InputBlockSize">
+        <member name="P:Nevron.Internal.jjE.InputBlockSize">
             <summary>
             Gets the size of the input data blocks in bytes.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.PkzipClassicEncryptCryptoTransform_2708_obf.OutputBlockSize">
+        <member name="P:Nevron.Internal.jjE.OutputBlockSize">
             <summary>
             Gets the size of the output data blocks in bytes.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.PkzipClassicEncryptCryptoTransform_2708_obf.CanTransformMultipleBlocks">
+        <member name="P:Nevron.Internal.jjE.CanTransformMultipleBlocks">
             <summary>
             Gets a value indicating whether multiple blocks can be transformed.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.PkzipClassicEncryptCryptoTransform_2708_obf.Dispose">
+        <member name="M:Nevron.Internal.jjE.Dispose">
             <summary>
             Cleanup internal state.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.PkzipClassicDecryptCryptoTransform_2718_obf.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)">
+        <member name="M:Nevron.Internal.tjE.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)">
             <summary>
             Transforms the specified region of the specified byte array.
             </summary>
-            <param name="inputBuffer_2720_obf">The input for which to compute the transform.</param>
-            <param name="inputOffset_2721_obf">The offset into the byte array from which to begin using data.</param>
-            <param name="inputCount_2722_obf">The number of bytes in the byte array to use as data.</param>
+            <param name="vjE">The input for which to compute the transform.</param>
+            <param name="WjE">The offset into the byte array from which to begin using data.</param>
+            <param name="xjE">The number of bytes in the byte array to use as data.</param>
             <returns>The computed transform.</returns>
         </member>
-        <member name="M:Nevron.Internal.PkzipClassicDecryptCryptoTransform_2718_obf.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)">
+        <member name="M:Nevron.Internal.tjE.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)">
             <summary>
             Transforms the specified region of the input byte array and copies 
             the resulting transform to the specified region of the output byte array.
             </summary>
-            <param name="inputBuffer_2723_obf">The input for which to compute the transform.</param>
-            <param name="inputOffset_2724_obf">The offset into the input byte array from which to begin using data.</param>
-            <param name="inputCount_2725_obf">The number of bytes in the input byte array to use as data.</param>
-            <param name="outputBuffer_2726_obf">The output to which to write the transform.</param>
-            <param name="outputOffset_2727_obf">The offset into the output byte array from which to begin writing data.</param>
+            <param name="YjE">The input for which to compute the transform.</param>
+            <param name="AKE">The offset into the input byte array from which to begin using data.</param>
+            <param name="bKE">The number of bytes in the input byte array to use as data.</param>
+            <param name="CKE">The output to which to write the transform.</param>
+            <param name="dKE">The offset into the output byte array from which to begin writing data.</param>
             <returns>The number of bytes written.</returns>
         </member>
-        <member name="P:Nevron.Internal.PkzipClassicDecryptCryptoTransform_2718_obf.CanReuseTransform">
+        <member name="P:Nevron.Internal.tjE.CanReuseTransform">
             <summary>
             Gets a value indicating whether the current transform can be reused.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.PkzipClassicDecryptCryptoTransform_2718_obf.InputBlockSize">
+        <member name="P:Nevron.Internal.tjE.InputBlockSize">
             <summary>
             Gets the size of the input data blocks in bytes.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.PkzipClassicDecryptCryptoTransform_2718_obf.OutputBlockSize">
+        <member name="P:Nevron.Internal.tjE.OutputBlockSize">
             <summary>
             Gets the size of the output data blocks in bytes.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.PkzipClassicDecryptCryptoTransform_2718_obf.CanTransformMultipleBlocks">
+        <member name="P:Nevron.Internal.tjE.CanTransformMultipleBlocks">
             <summary>
             Gets a value indicating whether multiple blocks can be transformed.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.PkzipClassicDecryptCryptoTransform_2718_obf.Dispose">
+        <member name="M:Nevron.Internal.tjE.Dispose">
             <summary>
             Cleanup internal state.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.PkzipClassicManaged_2728_obf.BlockSize">
+        <member name="P:Nevron.Internal.EKE.BlockSize">
             <summary>
             Get / set the applicable block size in bits.
             </summary>
             <remarks>The only valid block size is 8.</remarks>
         </member>
-        <member name="P:Nevron.Internal.PkzipClassicManaged_2728_obf.LegalKeySizes">
+        <member name="P:Nevron.Internal.EKE.LegalKeySizes">
             <summary>
             Get an array of legal <see cref="T:System.Security.Cryptography.KeySizes">key sizes.</see>
             </summary>
         </member>
-        <member name="M:Nevron.Internal.PkzipClassicManaged_2728_obf.GenerateIV">
+        <member name="M:Nevron.Internal.EKE.GenerateIV">
             <summary>
             Generate an initial vector.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.PkzipClassicManaged_2728_obf.LegalBlockSizes">
+        <member name="P:Nevron.Internal.EKE.LegalBlockSizes">
             <summary>
             Get an array of legal <see cref="T:System.Security.Cryptography.KeySizes">block sizes</see>.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.PkzipClassicManaged_2728_obf.Key">
+        <member name="P:Nevron.Internal.EKE.Key">
             <summary>
             Get / set the key value applicable.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.PkzipClassicManaged_2728_obf.GenerateKey">
+        <member name="M:Nevron.Internal.EKE.GenerateKey">
             <summary>
             Generate a new random key.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.PkzipClassicManaged_2728_obf.CreateEncryptor(System.Byte[],System.Byte[])">
+        <member name="M:Nevron.Internal.EKE.CreateEncryptor(System.Byte[],System.Byte[])">
             <summary>
             Create an encryptor.
             </summary>
-            <param name="rgbKey_2729_obf">The key to use for this encryptor.</param>
-            <param name="rgbIV_2730_obf">Initialisation vector for the new encryptor.</param>
+            <param name="fKE">The key to use for this encryptor.</param>
+            <param name="GKE">Initialisation vector for the new encryptor.</param>
             <returns>Returns a new PkzipClassic encryptor</returns>
         </member>
-        <member name="M:Nevron.Internal.PkzipClassicManaged_2728_obf.CreateDecryptor(System.Byte[],System.Byte[])">
+        <member name="M:Nevron.Internal.EKE.CreateDecryptor(System.Byte[],System.Byte[])">
             <summary>
             Create a decryptor.
             </summary>
-            <param name="rgbKey_2731_obf">Keys to use for this new decryptor.</param>
-            <param name="rgbIV_2732_obf">Initialisation vector for the new decryptor.</param>
+            <param name="hKE">Keys to use for this new decryptor.</param>
+            <param name="IKE">Initialisation vector for the new decryptor.</param>
             <returns>Returns a new decryptor.</returns>
         </member>
-        <member name="M:Nevron.Internal.ZipEntry_2894_obf.Clone">
+        <member name="M:Nevron.Internal.UQE.Clone">
             <summary>
             Creates a copy of this zip entry.
             </summary>
             <returns>An <see cref="T:System.Object"/> that is a copy of the current instance.</returns>
         </member>
-        <member name="M:Nevron.Internal.ZipEntry_2894_obf.ToString">
+        <member name="M:Nevron.Internal.UQE.ToString">
             <summary>
             Gets a string representation of this ZipEntry.
             </summary>
-            <returns>A readable textual representation of this <see cref="T:Nevron.Internal.ZipEntry_2894_obf"/></returns>
+            <returns>A readable textual representation of this <see cref="T:Nevron.Internal.UQE"/></returns>
         </member>
-        <member name="M:Nevron.Internal.ZipExtraData_3120_obf.Dispose">
+        <member name="M:Nevron.Internal.vAf.Dispose">
             <summary>
             Dispose of this instance.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ZipFile_3240_obf.Item(System.Int32)">
+        <member name="P:Nevron.Internal.Off.Item(System.Int32)">
             <summary>
             Indexer property for ZipEntries
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.GetEnumerator">
+        <member name="M:Nevron.Internal.Off.GetEnumerator">
             <summary>
             Gets an enumerator for the Zip entries in this Zip file.
             </summary>
@@ -2417,7 +2417,7 @@
             The Zip file has been closed.
             </exception>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.UpdateComparer_3488_obf.Compare(Nevron.Internal.ZipFile_3240_obf.ZipUpdate_3491_obf,Nevron.Internal.ZipFile_3240_obf.ZipUpdate_3491_obf)">
+        <member name="M:Nevron.Internal.Off.Kpf.Compare(Nevron.Internal.Off.npf,Nevron.Internal.Off.npf)">
             <summary>
             Compares two objects and returns a value indicating whether one is 
             less than, equal to or greater than the other.
@@ -2426,55 +2426,55 @@
             <param name="y">Second object to compare.</param>
             <returns>Compare result.</returns>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.ZipString_3535_obf.op_Implicit(Nevron.Internal.ZipFile_3240_obf.ZipString_3535_obf)~System.String">
+        <member name="M:Nevron.Internal.Off.hrf.op_Implicit(Nevron.Internal.Off.hrf)~System.String">
             <summary>
             Implicit conversion of comment to a string.
             </summary>
-            <param name="zipString_3545_obf">The <see cref="T:Nevron.Internal.ZipFile_3240_obf.ZipString_3535_obf"/> to convert to a string.</param>
+            <param name="rrf">The <see cref="T:Nevron.Internal.Off.hrf"/> to convert to a string.</param>
             <returns>The textual equivalent for the input value.</returns>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.UncompressedStream_3556_obf.Close">
+        <member name="M:Nevron.Internal.Off.dSf.Close">
             <summary>
             Close this stream instance.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ZipFile_3240_obf.UncompressedStream_3556_obf.CanRead">
+        <member name="P:Nevron.Internal.Off.dSf.CanRead">
             <summary>
             Gets a value indicating whether the current stream supports reading.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.UncompressedStream_3556_obf.Flush">
+        <member name="M:Nevron.Internal.Off.dSf.Flush">
             <summary>
             Write any buffered data to underlying storage.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ZipFile_3240_obf.UncompressedStream_3556_obf.CanWrite">
+        <member name="P:Nevron.Internal.Off.dSf.CanWrite">
             <summary>
             Gets a value indicating whether the current stream supports writing.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ZipFile_3240_obf.UncompressedStream_3556_obf.CanSeek">
+        <member name="P:Nevron.Internal.Off.dSf.CanSeek">
             <summary>
             Gets a value indicating whether the current stream supports seeking.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ZipFile_3240_obf.UncompressedStream_3556_obf.Length">
+        <member name="P:Nevron.Internal.Off.dSf.Length">
             <summary>
             Get the length in bytes of the stream.
             </summary>
         </member>
-        <member name="P:Nevron.Internal.ZipFile_3240_obf.UncompressedStream_3556_obf.Position">
+        <member name="P:Nevron.Internal.Off.dSf.Position">
             <summary>
             Gets or sets the position within the current stream.
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.UncompressedStream_3556_obf.Read(System.Byte[],System.Int32,System.Int32)">
+        <member name="M:Nevron.Internal.Off.dSf.Read(System.Byte[],System.Int32,System.Int32)">
             <summary>
             Reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read.
             </summary>
-            <param name="buffer_3558_obf">An array of bytes. When this method returns, the buffer contains the specified byte array with the values between offset and (offset + count - 1) replaced by the bytes read from the current source.</param>
-            <param name="offset_3559_obf">The zero-based byte offset in buffer at which to begin storing the data read from the current stream.</param>
-            <param name="count_3560_obf">The maximum number of bytes to be read from the current stream.</param>
+            <param name="fSf">An array of bytes. When this method returns, the buffer contains the specified byte array with the values between offset and (offset + count - 1) replaced by the bytes read from the current source.</param>
+            <param name="GSf">The zero-based byte offset in buffer at which to begin storing the data read from the current stream.</param>
+            <param name="hSf">The maximum number of bytes to be read from the current stream.</param>
             <returns>
             The total number of bytes read into the buffer. This can be less than the number of bytes requested if that many bytes are not currently available, or zero (0) if the end of the stream has been reached.
             </returns>
@@ -2485,12 +2485,12 @@
             <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
             <exception cref="T:System.ArgumentOutOfRangeException">offset or count is negative. </exception>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.UncompressedStream_3556_obf.Seek(System.Int64,System.IO.SeekOrigin)">
+        <member name="M:Nevron.Internal.Off.dSf.Seek(System.Int64,System.IO.SeekOrigin)">
             <summary>
             Sets the position within the current stream.
             </summary>
-            <param name="offset_3561_obf">A byte offset relative to the origin parameter.</param>
-            <param name="origin_3562_obf">A value of type <see cref="T:System.IO.SeekOrigin"></see> indicating the reference point used to obtain the new position.</param>
+            <param name="ISf">A byte offset relative to the origin parameter.</param>
+            <param name="jSf">A value of type <see cref="T:System.IO.SeekOrigin"></see> indicating the reference point used to obtain the new position.</param>
             <returns>
             The new position within the current stream.
             </returns>
@@ -2498,7 +2498,7 @@
             <exception cref="T:System.NotSupportedException">The stream does not support seeking, such as if the stream is constructed from a pipe or console output. </exception>
             <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed. </exception>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.UncompressedStream_3556_obf.SetLength(System.Int64)">
+        <member name="M:Nevron.Internal.Off.dSf.SetLength(System.Int64)">
             <summary>
             Sets the length of the current stream.
             </summary>
@@ -2507,13 +2507,13 @@
             <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
             <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed. </exception>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.UncompressedStream_3556_obf.Write(System.Byte[],System.Int32,System.Int32)">
+        <member name="M:Nevron.Internal.Off.dSf.Write(System.Byte[],System.Int32,System.Int32)">
             <summary>
             Writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written.
             </summary>
-            <param name="buffer_3563_obf">An array of bytes. This method copies count bytes from buffer to the current stream.</param>
-            <param name="offset_3564_obf">The zero-based byte offset in buffer at which to begin copying bytes to the current stream.</param>
-            <param name="count_3565_obf">The number of bytes to be written to the current stream.</param>
+            <param name="KSf">An array of bytes. This method copies count bytes from buffer to the current stream.</param>
+            <param name="lSf">The zero-based byte offset in buffer at which to begin copying bytes to the current stream.</param>
+            <param name="MSf">The number of bytes to be written to the current stream.</param>
             <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
             <exception cref="T:System.NotSupportedException">The stream does not support writing. </exception>
             <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed. </exception>
@@ -2521,27 +2521,27 @@
             <exception cref="T:System.ArgumentException">The sum of offset and count is greater than the buffer length. </exception>
             <exception cref="T:System.ArgumentOutOfRangeException">offset or count is negative. </exception>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.PartialInputStream_3567_obf.ReadByte">
+        <member name="M:Nevron.Internal.Off.OSf.ReadByte">
             <summary>
             Read a byte from this stream.
             </summary>
             <returns>Returns the byte read or -1 on end of stream.</returns>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.PartialInputStream_3567_obf.Close">
+        <member name="M:Nevron.Internal.Off.OSf.Close">
             <summary>
-            Close this <see cref="T:Nevron.Internal.ZipFile_3240_obf.PartialInputStream_3567_obf">partial input stream</see>.
+            Close this <see cref="T:Nevron.Internal.Off.OSf">partial input stream</see>.
             </summary>
             <remarks>
             The underlying stream is not closed.  Close the parent ZipFile class to do that.
             </remarks>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.PartialInputStream_3567_obf.Read(System.Byte[],System.Int32,System.Int32)">
+        <member name="M:Nevron.Internal.Off.OSf.Read(System.Byte[],System.Int32,System.Int32)">
             <summary>
             Reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read.
             </summary>
-            <param name="buffer_3571_obf">An array of bytes. When this method returns, the buffer contains the specified byte array with the values between offset and (offset + count - 1) replaced by the bytes read from the current source.</param>
-            <param name="offset_3572_obf">The zero-based byte offset in buffer at which to begin storing the data read from the current stream.</param>
-            <param name="count_3573_obf">The maximum number of bytes to be read from the current stream.</param>
+            <param name="SSf">An array of bytes. When this method returns, the buffer contains the specified byte array with the values between offset and (offset + count - 1) replaced by the bytes read from the current source.</param>
+            <param name="tSf">The zero-based byte offset in buffer at which to begin storing the data read from the current stream.</param>
+            <param name="USf">The maximum number of bytes to be read from the current stream.</param>
             <returns>
             The total number of bytes read into the buffer. This can be less than the number of bytes requested if that many bytes are not currently available, or zero (0) if the end of the stream has been reached.
             </returns>
@@ -2552,13 +2552,13 @@
             <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
             <exception cref="T:System.ArgumentOutOfRangeException">offset or count is negative. </exception>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.PartialInputStream_3567_obf.Write(System.Byte[],System.Int32,System.Int32)">
+        <member name="M:Nevron.Internal.Off.OSf.Write(System.Byte[],System.Int32,System.Int32)">
             <summary>
             Writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written.
             </summary>
-            <param name="buffer_3574_obf">An array of bytes. This method copies count bytes from buffer to the current stream.</param>
-            <param name="offset_3575_obf">The zero-based byte offset in buffer at which to begin copying bytes to the current stream.</param>
-            <param name="count_3576_obf">The number of bytes to be written to the current stream.</param>
+            <param name="vSf">An array of bytes. This method copies count bytes from buffer to the current stream.</param>
+            <param name="WSf">The zero-based byte offset in buffer at which to begin copying bytes to the current stream.</param>
+            <param name="xSf">The number of bytes to be written to the current stream.</param>
             <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
             <exception cref="T:System.NotSupportedException">The stream does not support writing. </exception>
             <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed. </exception>
@@ -2566,7 +2566,7 @@
             <exception cref="T:System.ArgumentException">The sum of offset and count is greater than the buffer length. </exception>
             <exception cref="T:System.ArgumentOutOfRangeException">offset or count is negative. </exception>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.PartialInputStream_3567_obf.SetLength(System.Int64)">
+        <member name="M:Nevron.Internal.Off.OSf.SetLength(System.Int64)">
             <summary>
             When overridden in a derived class, sets the length of the current stream.
             </summary>
@@ -2575,12 +2575,12 @@
             <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
             <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed. </exception>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.PartialInputStream_3567_obf.Seek(System.Int64,System.IO.SeekOrigin)">
+        <member name="M:Nevron.Internal.Off.OSf.Seek(System.Int64,System.IO.SeekOrigin)">
             <summary>
             When overridden in a derived class, sets the position within the current stream.
             </summary>
-            <param name="offset_3577_obf">A byte offset relative to the origin parameter.</param>
-            <param name="origin_3578_obf">A value of type <see cref="T:System.IO.SeekOrigin"></see> indicating the reference point used to obtain the new position.</param>
+            <param name="YSf">A byte offset relative to the origin parameter.</param>
+            <param name="Atf">A value of type <see cref="T:System.IO.SeekOrigin"></see> indicating the reference point used to obtain the new position.</param>
             <returns>
             The new position within the current stream.
             </returns>
@@ -2588,13 +2588,13 @@
             <exception cref="T:System.NotSupportedException">The stream does not support seeking, such as if the stream is constructed from a pipe or console output. </exception>
             <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed. </exception>
         </member>
-        <member name="M:Nevron.Internal.ZipFile_3240_obf.PartialInputStream_3567_obf.Flush">
+        <member name="M:Nevron.Internal.Off.OSf.Flush">
             <summary>
             Clears all buffers for this stream and causes any buffered data to be written to the underlying device.
             </summary>
             <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
         </member>
-        <member name="P:Nevron.Internal.ZipFile_3240_obf.PartialInputStream_3567_obf.Position">
+        <member name="P:Nevron.Internal.Off.OSf.Position">
             <summary>
             Gets or sets the position within the current stream.
             </summary>
@@ -2604,7 +2604,7 @@
             <exception cref="T:System.NotSupportedException">The stream does not support seeking. </exception>
             <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed. </exception>
         </member>
-        <member name="P:Nevron.Internal.ZipFile_3240_obf.PartialInputStream_3567_obf.Length">
+        <member name="P:Nevron.Internal.Off.OSf.Length">
             <summary>
             Gets the length in bytes of the stream.
             </summary>
@@ -2613,50 +2613,50 @@
             <exception cref="T:System.NotSupportedException">A class derived from Stream does not support seeking. </exception>
             <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed. </exception>
         </member>
-        <member name="P:Nevron.Internal.ZipFile_3240_obf.PartialInputStream_3567_obf.CanWrite">
+        <member name="P:Nevron.Internal.Off.OSf.CanWrite">
             <summary>
             Gets a value indicating whether the current stream supports writing.
             </summary>
             <value>false</value>
             <returns>true if the stream supports writing; otherwise, false.</returns>
         </member>
-        <member name="P:Nevron.Internal.ZipFile_3240_obf.PartialInputStream_3567_obf.CanSeek">
+        <member name="P:Nevron.Internal.Off.OSf.CanSeek">
             <summary>
             Gets a value indicating whether the current stream supports seeking.
             </summary>
             <value>true</value>
             <returns>true if the stream supports seeking; otherwise, false.</returns>
         </member>
-        <member name="P:Nevron.Internal.ZipFile_3240_obf.PartialInputStream_3567_obf.CanRead">
+        <member name="P:Nevron.Internal.Off.OSf.CanRead">
             <summary>
             Gets a value indicating whether the current stream supports reading.
             </summary>
             <value>true.</value>
             <returns>true if the stream supports reading; otherwise, false.</returns>
         </member>
-        <member name="P:Nevron.Internal.ZipFile_3240_obf.PartialInputStream_3567_obf.CanTimeout">
+        <member name="P:Nevron.Internal.Off.OSf.CanTimeout">
             <summary>
             Gets a value that determines whether the current stream can time out.
             </summary>
             <value></value>
             <returns>A value that determines whether the current stream can time out.</returns>
         </member>
-        <member name="M:Nevron.Internal.ZipHelperStream_3645_obf.Close">
+        <member name="M:Nevron.Internal.rvf.Close">
             <summary>
             Close the stream.
             </summary>
             <remarks>
-            The underlying stream is closed only if <see cref="P:Nevron.Internal.ZipHelperStream_3645_obf.IsStreamOwner_3689_obf"/> is true.
+            The underlying stream is closed only if <see cref="P:Nevron.Internal.rvf.lxf"/> is true.
             </remarks>
         </member>
-        <member name="P:Nevron.Internal.ZipInputStream_3692_obf.Length">
+        <member name="P:Nevron.Internal.Oxf.Length">
             <summary>
             Returns the current size that can be read from the current entry if available
             </summary>
-            <exception cref="T:Nevron.Internal.ZipException_3059_obf">Thrown if the entry size is not known.</exception>
+            <exception cref="T:Nevron.Internal.KxE">Thrown if the entry size is not known.</exception>
             <exception cref="T:System.InvalidOperationException">Thrown if no entry is currently available.</exception>
         </member>
-        <member name="M:Nevron.Internal.ZipInputStream_3692_obf.ReadByte">
+        <member name="M:Nevron.Internal.Oxf.ReadByte">
             <summary>
             Reads a byte from the current zip entry.
             </summary>
@@ -2664,32 +2664,32 @@
             The byte or -1 if end of stream is reached.
             </returns>
         </member>
-        <member name="M:Nevron.Internal.ZipInputStream_3692_obf.Read(System.Byte[],System.Int32,System.Int32)">
+        <member name="M:Nevron.Internal.Oxf.Read(System.Byte[],System.Int32,System.Int32)">
             <summary>
             Read a block of bytes from the stream.
             </summary>
-            <param name="buffer_3716_obf">The destination for the bytes.</param>
-            <param name="offset_3717_obf">The index to start storing data.</param>
-            <param name="count_3718_obf">The number of bytes to attempt to read.</param>
+            <param name="nYf">The destination for the bytes.</param>
+            <param name="OYf">The index to start storing data.</param>
+            <param name="pYf">The number of bytes to attempt to read.</param>
             <returns>Returns the number of bytes read.</returns>
             <remarks>Zero bytes read means end of stream.</remarks>
         </member>
-        <member name="M:Nevron.Internal.ZipInputStream_3692_obf.Close">
+        <member name="M:Nevron.Internal.Oxf.Close">
             <summary>
             Closes the zip input stream
             </summary>
         </member>
-        <member name="M:Nevron.Internal.ZipOutputStream_3762_obf.Write(System.Byte[],System.Int32,System.Int32)">
+        <member name="M:Nevron.Internal.hbG.Write(System.Byte[],System.Int32,System.Int32)">
             <summary>
             Writes the given buffer to the current entry.
             </summary>
-            <param name="buffer_3771_obf">The buffer containing data to write.</param>
-            <param name="offset_3772_obf">The offset of the first byte to write.</param>
-            <param name="count_3773_obf">The number of bytes to write.</param>
-            <exception cref="T:Nevron.Internal.ZipException_3059_obf">Archive size is invalid</exception>
+            <param name="QbG">The buffer containing data to write.</param>
+            <param name="rbG">The offset of the first byte to write.</param>
+            <param name="SbG">The number of bytes to write.</param>
+            <exception cref="T:Nevron.Internal.KxE">Archive size is invalid</exception>
             <exception cref="T:System.InvalidOperationException">No entry is active.</exception>
         </member>
-        <member name="M:Nevron.Internal.ZipOutputStream_3762_obf.Finish">
+        <member name="M:Nevron.Internal.hbG.Finish">
             <summary>
             Finishes the stream.  This will write the central directory at the
             end of the zip file and flush the stream.
@@ -2700,178 +2700,178 @@
             <exception cref="T:System.IO.IOException">
             An I/O error occurs.
             </exception>
-            <exception cref="T:Nevron.Internal.ZipException_3059_obf">
+            <exception cref="T:Nevron.Internal.KxE">
             Comment exceeds the maximum length<br/>
             Entry name exceeds the maximum length
             </exception>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.NAdjustmentRule_5251_obf.Equals(Nevron.Internal.NTimeZoneInfo_4953_obf.NAdjustmentRule_5251_obf)">
+        <member name="M:Nevron.Internal.txh.rKI.Equals(Nevron.Internal.txh.rKI)">
             <summary>Determines whether the current <see cref="T:System.TimeZoneInfo.AdjustmentRule" /> object is equal to a second <see cref="T:System.TimeZoneInfo.AdjustmentRule" /> object.</summary>
             <returns>true if both <see cref="T:System.TimeZoneInfo.AdjustmentRule" /> objects have equal values; otherwise, false.</returns>
-            <param name="other_5262_obf">A second <see cref="T:System.TimeZoneInfo.AdjustmentRule" /> object.</param>
+            <param name="dlI">A second <see cref="T:System.TimeZoneInfo.AdjustmentRule" /> object.</param>
             <filterpriority>2</filterpriority>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.NAdjustmentRule_5251_obf.GetHashCode">
+        <member name="M:Nevron.Internal.txh.rKI.GetHashCode">
             <summary>Serves as a hash function for hashing algorithms and data structures such as hash tables.</summary>
             <returns>A 32-bit signed integer that serves as the hash code for the current <see cref="T:System.TimeZoneInfo.AdjustmentRule" /> object.</returns>
             <filterpriority>2</filterpriority>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.NAdjustmentRule_5251_obf.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)">
+        <member name="M:Nevron.Internal.txh.rKI.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)">
             <summary>Runs when the deserialization of a <see cref="T:System.TimeZoneInfo.AdjustmentRule" /> object is completed.</summary>
-            <param name="sender_5275_obf">The object that initiated the callback. The functionality for this parameter is not currently implemented.   </param>
+            <param name="QlI">The object that initiated the callback. The functionality for this parameter is not currently implemented.   </param>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.NAdjustmentRule_5251_obf.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+        <member name="M:Nevron.Internal.txh.rKI.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
             <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the data that is required to serialize this object.</summary>
-            <param name="info_5276_obf">The SerializationInfo object to populate with data.</param>
-            <param name="context_5277_obf">The destination for this serialization (see <see cref="T:System.Runtime.Serialization.StreamingContext" />).</param>
+            <param name="rlI">The SerializationInfo object to populate with data.</param>
+            <param name="SlI">The destination for this serialization (see <see cref="T:System.Runtime.Serialization.StreamingContext" />).</param>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.NTransitionTime_5290_obf.Equals(System.Object)">
+        <member name="M:Nevron.Internal.txh.GMI.Equals(System.Object)">
             <summary>Determines whether an object has identical values to the current <see cref="T:System.TimeZoneInfo.TransitionTime" /> object.</summary>
             <returns>true if the two objects are equal; otherwise, false.</returns>
-            <param name="obj_5303_obf">An object to compare with the current <see cref="T:System.TimeZoneInfo.TransitionTime" /> object.   </param>
+            <param name="tMI">An object to compare with the current <see cref="T:System.TimeZoneInfo.TransitionTime" /> object.   </param>
             <filterpriority>2</filterpriority>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.NTransitionTime_5290_obf.op_Equality(Nevron.Internal.NTimeZoneInfo_4953_obf.NTransitionTime_5290_obf,Nevron.Internal.NTimeZoneInfo_4953_obf.NTransitionTime_5290_obf)">
+        <member name="M:Nevron.Internal.txh.GMI.op_Equality(Nevron.Internal.txh.GMI,Nevron.Internal.txh.GMI)">
             <summary>Determines whether two specified <see cref="T:System.TimeZoneInfo.TransitionTime" /> objects are equal.</summary>
             <returns>true if <paramref name="t1" /> and <paramref name="t2" /> have identical values; otherwise, false. </returns>
             <param name="t1">The first object to compare.</param>
             <param name="t2">The second object to compare.</param>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.NTransitionTime_5290_obf.op_Inequality(Nevron.Internal.NTimeZoneInfo_4953_obf.NTransitionTime_5290_obf,Nevron.Internal.NTimeZoneInfo_4953_obf.NTransitionTime_5290_obf)">
+        <member name="M:Nevron.Internal.txh.GMI.op_Inequality(Nevron.Internal.txh.GMI,Nevron.Internal.txh.GMI)">
             <summary>Determines whether two specified <see cref="T:System.TimeZoneInfo.TransitionTime" /> objects are not equal.</summary>
             <returns>true if <paramref name="t1" /> and <paramref name="t2" /> have any different member values; otherwise, false.</returns>
             <param name="t1">The first object to compare.</param>
             <param name="t2">The second object to compare.</param>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.NTransitionTime_5290_obf.Equals(Nevron.Internal.NTimeZoneInfo_4953_obf.NTransitionTime_5290_obf)">
+        <member name="M:Nevron.Internal.txh.GMI.Equals(Nevron.Internal.txh.GMI)">
             <summary>Determines whether the current <see cref="T:System.TimeZoneInfo.TransitionTime" /> object has identical values to a second <see cref="T:System.TimeZoneInfo.TransitionTime" /> object.</summary>
             <returns>true if the two objects have identical property values; otherwise, false.</returns>
-            <param name="other_5304_obf">An object to compare to the current instance. </param>
+            <param name="UMI">An object to compare to the current instance. </param>
             <filterpriority>2</filterpriority>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.NTransitionTime_5290_obf.GetHashCode">
+        <member name="M:Nevron.Internal.txh.GMI.GetHashCode">
             <summary>Serves as a hash function for hashing algorithms and data structures such as hash tables.</summary>
             <returns>A 32-bit signed integer that serves as the hash code for this <see cref="T:System.TimeZoneInfo.TransitionTime" /> object.</returns>
             <filterpriority>2</filterpriority>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.NTransitionTime_5290_obf.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)">
+        <member name="M:Nevron.Internal.txh.GMI.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)">
             <summary>Runs when the deserialization of an object has been completed.</summary>
-            <param name="sender_5327_obf">The object that initiated the callback. The functionality for this parameter is not currently implemented.   </param>
+            <param name="SnI">The object that initiated the callback. The functionality for this parameter is not currently implemented.   </param>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.NTransitionTime_5290_obf.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+        <member name="M:Nevron.Internal.txh.GMI.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
             <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the data that is required to serialize this object.</summary>
-            <param name="info_5328_obf">The SerializationInfo object to populate with data.</param>
-            <param name="context_5329_obf">The destination for this serialization (see <see cref="T:System.Runtime.Serialization.StreamingContext" />).</param>
+            <param name="tnI">The SerializationInfo object to populate with data.</param>
+            <param name="UnI">The destination for this serialization (see <see cref="T:System.Runtime.Serialization.StreamingContext" />).</param>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.Equals(Nevron.Internal.NTimeZoneInfo_4953_obf)">
+        <member name="M:Nevron.Internal.txh.Equals(Nevron.Internal.txh)">
             <summary>Determines whether the current <see cref="T:System.TimeZoneInfo" /> object and another <see cref="T:System.TimeZoneInfo" /> object are equal.</summary>
             <returns>true if the two <see cref="T:System.TimeZoneInfo" /> objects are equal; otherwise, false.</returns>
-            <param name="other_5030_obf">A second object to compare with the current object.  </param>
+            <param name="vbI">A second object to compare with the current object.  </param>
             <filterpriority>2</filterpriority>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.GetHashCode">
+        <member name="M:Nevron.Internal.txh.GetHashCode">
             <summary>Serves as a hash function for hashing algorithms and data structures such as hash tables.</summary>
             <returns>A 32-bit signed integer that serves as the hash code for this <see cref="T:System.TimeZoneInfo" /> object.</returns>
             <filterpriority>2</filterpriority>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.ToString">
+        <member name="M:Nevron.Internal.txh.ToString">
             <summary>Returns the current <see cref="T:System.TimeZoneInfo" /> object's display name.</summary>
             <returns>The value of the <see cref="P:System.TimeZoneInfo.DisplayName" /> property of the current <see cref="T:System.TimeZoneInfo" /> object.</returns>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)">
+        <member name="M:Nevron.Internal.txh.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)">
             <summary>Runs when the deserialization of an object has been completed.</summary>
-            <param name="sender_5068_obf">The object that initiated the callback. The functionality for this parameter is not currently implemented.</param>
+            <param name="jdI">The object that initiated the callback. The functionality for this parameter is not currently implemented.</param>
             <exception cref="T:System.Runtime.Serialization.SerializationException">The <see cref="T:System.TimeZoneInfo" /> object contains invalid or corrupted data.</exception>
         </member>
-        <member name="M:Nevron.Internal.NTimeZoneInfo_4953_obf.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+        <member name="M:Nevron.Internal.txh.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
             <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the data needed to serialize the current <see cref="T:System.TimeZoneInfo" /> object.</summary>
-            <param name="info_5069_obf">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object to populate with data.</param>
-            <param name="context_5070_obf">The destination for this serialization (see <see cref="T:System.Runtime.Serialization.StreamingContext" />).</param>
-            <exception cref="T:System.ArgumentNullException">The <paramref name="info_5069_obf" /> parameter is null.</exception>
+            <param name="KdI">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object to populate with data.</param>
+            <param name="ldI">The destination for this serialization (see <see cref="T:System.Runtime.Serialization.StreamingContext" />).</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="KdI" /> parameter is null.</exception>
         </member>
-        <member name="M:Nevron.Internal.NOMAttribute_5564_obf.StreamToWriter(System.IO.BinaryWriter)">
+        <member name="M:Nevron.Internal.fxI.StreamToWriter(System.IO.BinaryWriter)">
             <summary>
             Writes the object content to the specified writer
             </summary>
-            <param name="writer_5566_obf"></param>
+            <param name="hxI"></param>
         </member>
-        <member name="M:Nevron.Internal.NOMAttribute_5564_obf.StreamFromReader(System.IO.BinaryReader)">
+        <member name="M:Nevron.Internal.fxI.StreamFromReader(System.IO.BinaryReader)">
             <summary>
             Reads the object content from the specified reader
             </summary>
-            <param name="reader_5567_obf"></param>
+            <param name="IxI"></param>
         </member>
-        <member name="M:Nevron.Internal.NOMAttributes_5569_obf.StreamToWriter(System.IO.BinaryWriter)">
+        <member name="M:Nevron.Internal.KxI.StreamToWriter(System.IO.BinaryWriter)">
             <summary>
             Writes the object content to the specified writer
             </summary>
-            <param name="writer_5571_obf"></param>
+            <param name="MxI"></param>
         </member>
-        <member name="M:Nevron.Internal.NOMAttributes_5569_obf.StreamFromReader(System.IO.BinaryReader)">
+        <member name="M:Nevron.Internal.KxI.StreamFromReader(System.IO.BinaryReader)">
             <summary>
             Reads the object content from the specified reader
             </summary>
-            <param name="reader_5572_obf"></param>
+            <param name="nxI"></param>
         </member>
-        <member name="M:Nevron.Internal.NOMElement_5586_obf.StreamToWriter(System.IO.BinaryWriter)">
+        <member name="M:Nevron.Internal.CYI.StreamToWriter(System.IO.BinaryWriter)">
             <summary>
             Writes the object content to the specified writer
             </summary>
-            <param name="writer_5588_obf"></param>
+            <param name="EYI"></param>
         </member>
-        <member name="M:Nevron.Internal.NOMElement_5586_obf.StreamFromReader(System.IO.BinaryReader)">
+        <member name="M:Nevron.Internal.CYI.StreamFromReader(System.IO.BinaryReader)">
             <summary>
             Reads the object content from the specified reader
             </summary>
-            <param name="reader_5589_obf"></param>
+            <param name="fYI"></param>
         </member>
-        <member name="M:Nevron.Internal.NOMIdToTypeTable_5592_obf.StreamToWriter(System.IO.BinaryWriter)">
+        <member name="M:Nevron.Internal.IYI.StreamToWriter(System.IO.BinaryWriter)">
             <summary>
             Writes the object content to the specified writer
             </summary>
-            <param name="writer_5596_obf"></param>
+            <param name="MYI"></param>
         </member>
-        <member name="M:Nevron.Internal.NOMIdToTypeTable_5592_obf.StreamFromReader(System.IO.BinaryReader)">
+        <member name="M:Nevron.Internal.IYI.StreamFromReader(System.IO.BinaryReader)">
             <summary>
             Reads the object content from the specified reader
             </summary>
-            <param name="reader_5597_obf"></param>
+            <param name="nYI"></param>
         </member>
-        <member name="M:Nevron.Internal.NOMItem_5600_obf.StreamToWriter(System.IO.BinaryWriter)">
+        <member name="M:Nevron.Internal.QYI.StreamToWriter(System.IO.BinaryWriter)">
             <summary>
             Writes the object content to the specified writer
             </summary>
-            <param name="writer_5602_obf"></param>
+            <param name="SYI"></param>
         </member>
-        <member name="M:Nevron.Internal.NOMItem_5600_obf.StreamFromReader(System.IO.BinaryReader)">
+        <member name="M:Nevron.Internal.QYI.StreamFromReader(System.IO.BinaryReader)">
             <summary>
             Reads the object content from the specified reader
             </summary>
-            <param name="reader_5603_obf"></param>
+            <param name="tYI"></param>
         </member>
-        <member name="M:Nevron.Internal.NOMPrimitiveItem_5630_obf.StreamToWriter(System.IO.BinaryWriter)">
+        <member name="M:Nevron.Internal.vAj.StreamToWriter(System.IO.BinaryWriter)">
             <summary>
             Writes the object content to the specified writer
             </summary>
-            <param name="writer_5634_obf"></param>
+            <param name="Abj"></param>
         </member>
-        <member name="M:Nevron.Internal.NOMPrimitiveItem_5630_obf.StreamFromReader(System.IO.BinaryReader)">
+        <member name="M:Nevron.Internal.vAj.StreamFromReader(System.IO.BinaryReader)">
             <summary>
             Reads the object content from the specified reader
             </summary>
-            <param name="reader_5635_obf"></param>
+            <param name="bbj"></param>
         </member>
-        <member name="M:Nevron.Internal.NOMTypeToIdTable_5644_obf.StreamToWriter(System.IO.BinaryWriter)">
+        <member name="M:Nevron.Internal.Kbj.StreamToWriter(System.IO.BinaryWriter)">
             <summary>
             Writes the object content to the specified writer
             </summary>
-            <param name="writer_5648_obf"></param>
+            <param name="Obj"></param>
         </member>
-        <member name="M:Nevron.Internal.NOMTypeToIdTable_5644_obf.StreamFromReader(System.IO.BinaryReader)">
+        <member name="M:Nevron.Internal.Kbj.StreamFromReader(System.IO.BinaryReader)">
             <summary>
             Reads the object content from the specified reader
             </summary>
-            <param name="reader_5649_obf"></param>
+            <param name="pbj"></param>
         </member>
         <member name="T:Nevron.Compression.BZip2">
             <summary>
@@ -3308,7 +3308,7 @@
             <summary>
             Finishes the stream by calling finish() on the deflater. 
             </summary>
-            <exception cref="T:Nevron.Internal.NCompressionException_2802_obf">
+            <exception cref="T:Nevron.Internal.dnE">
             Not all input is deflated
             </exception>
         </member>
@@ -3437,7 +3437,7 @@
         <member name="M:Nevron.Compression.DeflaterOutputStream.Close">
             <summary>
             Calls <see cref="M:Nevron.Compression.DeflaterOutputStream.Finish"/> and closes the underlying
-            stream when <see cref="P:Nevron.Compression.DeflaterOutputStream.IsStreamOwner_2591_obf"></see> is true.
+            stream when <see cref="P:Nevron.Compression.DeflaterOutputStream.rEE"></see> is true.
             </summary>
         </member>
         <member name="M:Nevron.Compression.DeflaterOutputStream.WriteByte(System.Byte)">
@@ -3550,7 +3550,7 @@
             <summary>
             Fills the buffer with more data to decompress.
             </summary>
-            <exception cref="T:Nevron.Internal.NCompressionException_2802_obf">
+            <exception cref="T:Nevron.Internal.dnE">
             Stream ends early
             </exception>
         </member>
@@ -3636,7 +3636,7 @@
         </member>
         <member name="M:Nevron.Compression.InflaterInputStream.Close">
             <summary>
-            Closes the input stream.  When <see cref="P:Nevron.Compression.InflaterInputStream.IsStreamOwner_2642_obf"></see>
+            Closes the input stream.  When <see cref="P:Nevron.Compression.InflaterInputStream.SGE"></see>
             is true the underlying stream is also closed.
             </summary>
         </member>
@@ -3654,7 +3654,7 @@
             The number of bytes to decompress
             </param>
             <returns>The number of bytes read.  Zero signals the end of stream</returns>
-            <exception cref="T:Nevron.Internal.NCompressionException_2802_obf">
+            <exception cref="T:Nevron.Internal.dnE">
             Inflater needs a dictionary
             </exception>
         </member>
@@ -19859,6 +19859,34 @@
             <summary>
             
             </summary>
+        </member>
+        <member name="M:Nevron.Serialization.NSerialization.Object2Stream(System.Object,System.IO.Stream)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Serialization.NSerialization.Stream2Object(System.IO.Stream)">
+            <summary>
+            
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Serialization.NSerialization.BytesToObject(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nevron.Serialization.NSerialization.Object2Bytes(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
         </member>
         <member name="M:Nevron.Serialization.NSerialization.Object2Base64String(System.Object)">
             <summary>

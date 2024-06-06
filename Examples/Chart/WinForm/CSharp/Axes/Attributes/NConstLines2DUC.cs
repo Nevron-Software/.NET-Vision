@@ -366,7 +366,8 @@ namespace Nevron.Examples.Chart.WinForm
 
 			// Add a constline for the left axis
 			NAxisConstLine cl1 = m_Chart.Axis(StandardAxis.PrimaryY).ConstLines.Add();
-			cl1.StrokeStyle.Color = Color.SteelBlue;
+
+            cl1.StrokeStyle.Color = Color.SteelBlue;
             cl1.StrokeStyle.Width = new NLength(1.5f);
             cl1.FillStyle = new NColorFillStyle(new NArgbColor(125, Color.SteelBlue));
 			cl1.Value = 40;
